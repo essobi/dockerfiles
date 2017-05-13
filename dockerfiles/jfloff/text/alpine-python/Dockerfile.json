@@ -1,0 +1,126 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ALPINE_VERSION=3.5\",\"PACKAGES=  dumb-init   musl   linux-headers   build-base   bash   git   ca-certificates   python3   python3-dev \"],\"Cmd\":[\"python\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8980e5f327bc61217aceaa2cc2abf613835b514be5dbd0b7067798d04ec0a8e0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/dumb-init\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"e9aeadda66574144f3f126955cd1754ae46dd2ad860a9306a488e405ede48358\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ALPINE_VERSION=3.5\",\"PACKAGES=  dumb-init   musl   linux-headers   build-base   bash   git   ca-certificates   python3   python3-dev \"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"python\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8980e5f327bc61217aceaa2cc2abf613835b514be5dbd0b7067798d04ec0a8e0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/dumb-init\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-26T18:05:24.85746171Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"895b04caf6beb1618f8f924c46da0087977617bc435865a8481515a0e709be6b\",\"os\":\"linux\",\"parent\":\"64a4125ec0a22e8edd3ef49ef95d6d26e4d833b19290638da420f62327aa6bf5\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64a4125ec0a22e8edd3ef49ef95d6d26e4d833b19290638da420f62327aa6bf5\",\"parent\":\"1105941558d5a5912ff8acec00a7453504ac15e915523c50af7b0abf499bbfa5\",\"created\":\"2017-03-26T18:05:22.727175758Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/dumb-init\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1105941558d5a5912ff8acec00a7453504ac15e915523c50af7b0abf499bbfa5\",\"parent\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"created\":\"2017-03-26T18:05:20.336744433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/edge/testing\\\" \\u003e /etc/apk/repositories   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/edge/community\\\" \\u003e\\u003e /etc/apk/repositories   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/edge/main\\\" \\u003e\\u003e /etc/apk/repositories   \\u0026\\u0026 apk add --no-cache $PACKAGES ||     (sed -i -e 's/dl-cdn/dl-4/g' /etc/apk/repositories \\u0026\\u0026 apk add --no-cache $PACKAGES)   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION/main/\\\" \\u003e /etc/apk/repositories   \\u0026\\u0026 if [[ ! -e /usr/bin/python ]];        then ln -sf /usr/bin/python3 /usr/bin/python; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/python-config ]]; then ln -sf /usr/bin/python3-config /usr/bin/python-config; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/idle ]];          then ln -sf /usr/bin/idle3 /usr/bin/idle; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/pydoc ]];         then ln -sf /usr/bin/pydoc3 /usr/bin/pydoc; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/easy_install ]];  then ln -sf /usr/bin/easy_install-3* /usr/bin/easy_install; fi   \\u0026\\u0026 easy_install pip   \\u0026\\u0026 pip install --upgrade pip   \\u0026\\u0026 if [[ ! -e /usr/bin/pip ]]; then ln -sf /usr/bin/pip3 /usr/bin/pip; fi\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-03-26T18:04:53.727484753Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PACKAGES=  dumb-init   musl   linux-headers   build-base   bash   git   ca-certificates   python3   python3-dev \"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-26T18:04:53.502124026Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ALPINE_VERSION=3.5\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:99b6c2534ec212583b4dcffc92c815c9ffa92a3ec87a1e1ff635904c2323710d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "jfloff/alpine-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjU2OTksImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzoxNTozOVoifQ",
+                "signature": "rYNopcCXp8ybRqhZaEUl6zN-lNu4t99hFl1aLmTz4vG8419pDU1PGvpVr61-2_23WwUhfMJvngGy3Ht6fxwmug",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "-McVxIx7QB_Rnwi-XZgbzwO8MKFGNsPdD4Q7gh3dbZw",
+                        "kid": "6D37:ALRV:7EGE:Q73O:OOBQ:PAM3:HLZX:2E4Q:SAYB:5SCK:SOCC:N4AQ",
+                        "x": "LD9TIQwCKlp4MBwn0r76xNUvY4mZUdIRae0jMpUZJfA"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ALPINE_VERSION=3.5\",\"PACKAGES=  dumb-init   musl   linux-headers   build-base   bash   git   ca-certificates   python3   python3-dev \"],\"Cmd\":[\"python\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8980e5f327bc61217aceaa2cc2abf613835b514be5dbd0b7067798d04ec0a8e0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/dumb-init\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"e9aeadda66574144f3f126955cd1754ae46dd2ad860a9306a488e405ede48358\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ALPINE_VERSION=3.5\",\"PACKAGES=  dumb-init   musl   linux-headers   build-base   bash   git   ca-certificates   python3   python3-dev \"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"python\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8980e5f327bc61217aceaa2cc2abf613835b514be5dbd0b7067798d04ec0a8e0\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/dumb-init\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-26T18:05:24.85746171Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"895b04caf6beb1618f8f924c46da0087977617bc435865a8481515a0e709be6b\",\"os\":\"linux\",\"parent\":\"64a4125ec0a22e8edd3ef49ef95d6d26e4d833b19290638da420f62327aa6bf5\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64a4125ec0a22e8edd3ef49ef95d6d26e4d833b19290638da420f62327aa6bf5\",\"parent\":\"1105941558d5a5912ff8acec00a7453504ac15e915523c50af7b0abf499bbfa5\",\"created\":\"2017-03-26T18:05:22.727175758Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/dumb-init\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1105941558d5a5912ff8acec00a7453504ac15e915523c50af7b0abf499bbfa5\",\"parent\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"created\":\"2017-03-26T18:05:20.336744433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/edge/testing\\\" \\u003e /etc/apk/repositories   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/edge/community\\\" \\u003e\\u003e /etc/apk/repositories   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/edge/main\\\" \\u003e\\u003e /etc/apk/repositories   \\u0026\\u0026 apk add --no-cache $PACKAGES ||     (sed -i -e 's/dl-cdn/dl-4/g' /etc/apk/repositories \\u0026\\u0026 apk add --no-cache $PACKAGES)   \\u0026\\u0026 echo \\\"http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION/main/\\\" \\u003e /etc/apk/repositories   \\u0026\\u0026 if [[ ! -e /usr/bin/python ]];        then ln -sf /usr/bin/python3 /usr/bin/python; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/python-config ]]; then ln -sf /usr/bin/python3-config /usr/bin/python-config; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/idle ]];          then ln -sf /usr/bin/idle3 /usr/bin/idle; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/pydoc ]];         then ln -sf /usr/bin/pydoc3 /usr/bin/pydoc; fi   \\u0026\\u0026 if [[ ! -e /usr/bin/easy_install ]];  then ln -sf /usr/bin/easy_install-3* /usr/bin/easy_install; fi   \\u0026\\u0026 easy_install pip   \\u0026\\u0026 pip install --upgrade pip   \\u0026\\u0026 if [[ ! -e /usr/bin/pip ]]; then ln -sf /usr/bin/pip3 /usr/bin/pip; fi\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-03-26T18:04:53.727484753Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PACKAGES=  dumb-init   musl   linux-headers   build-base   bash   git   ca-certificates   python3   python3-dev \"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-26T18:04:53.502124026Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ALPINE_VERSION=3.5\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:99b6c2534ec212583b4dcffc92c815c9ffa92a3ec87a1e1ff635904c2323710d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "jfloff/alpine-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjU2OTksImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzoxNTo0MFoifQ",
+                "signature": "usxJzPXzmc04TbY3xljos5vb03mSaZVc5uohVPk1F629_Qe__bURQRT5tQRrySVrnT6u_ydvLu_HaLLJi73hQw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "jKwuTJa5npR7IqP6F_tQ_E6DXjIC00UBL2zpj7vn7ME",
+                        "kid": "6JLX:PQSL:2EMG:WH2Z:Q74M:MGJO:HOEC:LTAQ:2CRD:FLEQ:HGTS:WCT3",
+                        "x": "_GLuuvcq2gBtHMuL96jAOSlux7a9_ghxqSbWkLHkN9g"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "v1": {
+        "errors": [
+            {
+                "message": "authentication required",
+                "code": "UNAUTHORIZED",
+                "detail": [
+                    {
+                        "Name": "biodckr/denovogui",
+                        "Class": "",
+                        "Action": "pull",
+                        "Type": "repository"
+                    }
+                ]
+            }
+        ]
+    },
+    "v2": {
+        "errors": [
+            {
+                "message": "authentication required",
+                "code": "UNAUTHORIZED",
+                "detail": [
+                    {
+                        "Name": "biodckr/denovogui",
+                        "Class": "",
+                        "Action": "pull",
+                        "Type": "repository"
+                    }
+                ]
+            }
+        ]
+    }
+}

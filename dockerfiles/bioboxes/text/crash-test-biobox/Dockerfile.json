@@ -1,0 +1,198 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"INPUT=/bbx/input/biobox.yaml\",\"OUTPUT=/bbx/output\",\"METADATA=/bbx/metadata\",\"SRC=/usr/local/share/scenario\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:643b388658db04dee5ff6638b261c5f7832f1571302ea38736f01c0a4208b926\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"crash_test.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"14d8ff7377ad710b3c37f8c9f53a3568ab7d74350bd4752021d4246a23c5bb43\",\"container_config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"INPUT=/bbx/input/biobox.yaml\",\"OUTPUT=/bbx/output\",\"METADATA=/bbx/metadata\",\"SRC=/usr/local/share/scenario\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD []\"],\"ArgsEscaped\":true,\"Image\":\"sha256:643b388658db04dee5ff6638b261c5f7832f1571302ea38736f01c0a4208b926\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"crash_test.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-19T21:25:41.782159454Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"433b7f5f6a6bee232c7d3e35b076604c907677d8d652183338518851876e619c\",\"os\":\"linux\",\"parent\":\"b0dadfbdce38e972eed5e74a26e0476f7c29a6decc285256f75bfb6810a62a52\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0dadfbdce38e972eed5e74a26e0476f7c29a6decc285256f75bfb6810a62a52\",\"parent\":\"837c909932a4af8229953814319e7db81689c95dcd44329fc414cc80a9921176\",\"created\":\"2017-01-19T21:25:38.131131316Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"crash_test.sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"837c909932a4af8229953814319e7db81689c95dcd44329fc414cc80a9921176\",\"parent\":\"3211c97f200e75c0a2cd691a40ce1584c9a80f381880defa0c273682d9891ca1\",\"created\":\"2017-01-19T21:25:34.80702413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SRC=/usr/local/share/scenario\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3211c97f200e75c0a2cd691a40ce1584c9a80f381880defa0c273682d9891ca1\",\"parent\":\"15f11c9b3297114b4c1ad267504f6a60fbc9efea997acb1b1e2589f87492c040\",\"created\":\"2017-01-19T21:25:32.441630801Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:74acc07fbd2b097bc0beb19d6bb4d060a11da3c889d57b5b7dcb12f354820001 in /usr/local \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"15f11c9b3297114b4c1ad267504f6a60fbc9efea997acb1b1e2589f87492c040\",\"parent\":\"b11a1deb231c7158d1ffee4bc25fa291b076815d6af04502645e8d5795364ddb\",\"created\":\"2016-08-12T20:37:31.711921033Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"validate_inputs.sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b11a1deb231c7158d1ffee4bc25fa291b076815d6af04502645e8d5795364ddb\",\"parent\":\"b3601b09841d319e071f9c6475e59af4102dda383e166a6fa016bc7e1b84fea0\",\"created\":\"2016-08-12T20:37:30.268096456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV METADATA=/bbx/metadata\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3601b09841d319e071f9c6475e59af4102dda383e166a6fa016bc7e1b84fea0\",\"parent\":\"8cc5cd2022b2d3cad8787a6418dca8b962fc23fde2f127430dbc832bc3eb435a\",\"created\":\"2016-08-12T20:37:28.811086265Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OUTPUT=/bbx/output\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8cc5cd2022b2d3cad8787a6418dca8b962fc23fde2f127430dbc832bc3eb435a\",\"parent\":\"2ea9484d8608218680f430f7d8acc86413fe108d430a831e8f18f66b18617b18\",\"created\":\"2016-08-12T20:37:27.372374596Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV INPUT=/bbx/input/biobox.yaml\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ea9484d8608218680f430f7d8acc86413fe108d430a831e8f18f66b18617b18\",\"parent\":\"c655a9305084244e6410378b4b779448a1dc98d6df6ba9231c74215c762030d9\",\"created\":\"2016-08-12T20:37:26.044088795Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.sh \\u0026\\u0026 rm /usr/local/bin/install.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c655a9305084244e6410378b4b779448a1dc98d6df6ba9231c74215c762030d9\",\"parent\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"created\":\"2016-08-12T20:36:54.501370737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:64c75c92cc76022c997dad6c40c82bff1d405de67c9cd895dddec878db281724 in /usr/local/bin \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"parent\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:55.809686499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:54.990622865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:67ae14ec23c1d0f7f876159c6b731775148c109b939732fc9aed3f0ffa6cbd35"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c71165e7752c35f93bbfa6f51c5add83e05ed9bf6afe1bb74cf846851a2d015a"
+            },
+            {
+                "blobSum": "sha256:45be820e24f209b937363409399c937706f257b55da96bb79e757e2815cbca8d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab"
+            }
+        ],
+        "name": "bioboxes/crash-test-biobox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjcxNTgsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzoxMzo1OFoifQ",
+                "signature": "YNlc2MAQKIyFa8EiaKz6MnrFWag8GoxVv8-VHlsmTL7h4r8gLXchfTRe-zdMlCT4XAJb7jrpiuM_R_9kVnwmkw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "2hp7ae1koj6lH0JHtp_UeSvcc-n3cBeVReL5gzgjc1s",
+                        "kid": "DPI6:UKJO:IIK3:WLLD:46GX:6ADW:XQPP:CLKL:WNMW:7QEW:HX3K:NFZ4",
+                        "x": "H6JXbcxZDXsP7K8nvsu0NFIb69uEDJvAtX76ewYhM5k"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"INPUT=/bbx/input/biobox.yaml\",\"OUTPUT=/bbx/output\",\"METADATA=/bbx/metadata\",\"SRC=/usr/local/share/scenario\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:643b388658db04dee5ff6638b261c5f7832f1571302ea38736f01c0a4208b926\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"crash_test.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"14d8ff7377ad710b3c37f8c9f53a3568ab7d74350bd4752021d4246a23c5bb43\",\"container_config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"INPUT=/bbx/input/biobox.yaml\",\"OUTPUT=/bbx/output\",\"METADATA=/bbx/metadata\",\"SRC=/usr/local/share/scenario\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD []\"],\"ArgsEscaped\":true,\"Image\":\"sha256:643b388658db04dee5ff6638b261c5f7832f1571302ea38736f01c0a4208b926\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"crash_test.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-19T21:25:41.782159454Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"433b7f5f6a6bee232c7d3e35b076604c907677d8d652183338518851876e619c\",\"os\":\"linux\",\"parent\":\"b0dadfbdce38e972eed5e74a26e0476f7c29a6decc285256f75bfb6810a62a52\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0dadfbdce38e972eed5e74a26e0476f7c29a6decc285256f75bfb6810a62a52\",\"parent\":\"837c909932a4af8229953814319e7db81689c95dcd44329fc414cc80a9921176\",\"created\":\"2017-01-19T21:25:38.131131316Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"crash_test.sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"837c909932a4af8229953814319e7db81689c95dcd44329fc414cc80a9921176\",\"parent\":\"3211c97f200e75c0a2cd691a40ce1584c9a80f381880defa0c273682d9891ca1\",\"created\":\"2017-01-19T21:25:34.80702413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SRC=/usr/local/share/scenario\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3211c97f200e75c0a2cd691a40ce1584c9a80f381880defa0c273682d9891ca1\",\"parent\":\"15f11c9b3297114b4c1ad267504f6a60fbc9efea997acb1b1e2589f87492c040\",\"created\":\"2017-01-19T21:25:32.441630801Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:74acc07fbd2b097bc0beb19d6bb4d060a11da3c889d57b5b7dcb12f354820001 in /usr/local \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"15f11c9b3297114b4c1ad267504f6a60fbc9efea997acb1b1e2589f87492c040\",\"parent\":\"b11a1deb231c7158d1ffee4bc25fa291b076815d6af04502645e8d5795364ddb\",\"created\":\"2016-08-12T20:37:31.711921033Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"validate_inputs.sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b11a1deb231c7158d1ffee4bc25fa291b076815d6af04502645e8d5795364ddb\",\"parent\":\"b3601b09841d319e071f9c6475e59af4102dda383e166a6fa016bc7e1b84fea0\",\"created\":\"2016-08-12T20:37:30.268096456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV METADATA=/bbx/metadata\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3601b09841d319e071f9c6475e59af4102dda383e166a6fa016bc7e1b84fea0\",\"parent\":\"8cc5cd2022b2d3cad8787a6418dca8b962fc23fde2f127430dbc832bc3eb435a\",\"created\":\"2016-08-12T20:37:28.811086265Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OUTPUT=/bbx/output\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8cc5cd2022b2d3cad8787a6418dca8b962fc23fde2f127430dbc832bc3eb435a\",\"parent\":\"2ea9484d8608218680f430f7d8acc86413fe108d430a831e8f18f66b18617b18\",\"created\":\"2016-08-12T20:37:27.372374596Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV INPUT=/bbx/input/biobox.yaml\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ea9484d8608218680f430f7d8acc86413fe108d430a831e8f18f66b18617b18\",\"parent\":\"c655a9305084244e6410378b4b779448a1dc98d6df6ba9231c74215c762030d9\",\"created\":\"2016-08-12T20:37:26.044088795Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.sh \\u0026\\u0026 rm /usr/local/bin/install.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c655a9305084244e6410378b4b779448a1dc98d6df6ba9231c74215c762030d9\",\"parent\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"created\":\"2016-08-12T20:36:54.501370737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:64c75c92cc76022c997dad6c40c82bff1d405de67c9cd895dddec878db281724 in /usr/local/bin \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"parent\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:55.809686499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:54.990622865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:67ae14ec23c1d0f7f876159c6b731775148c109b939732fc9aed3f0ffa6cbd35"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c71165e7752c35f93bbfa6f51c5add83e05ed9bf6afe1bb74cf846851a2d015a"
+            },
+            {
+                "blobSum": "sha256:45be820e24f209b937363409399c937706f257b55da96bb79e757e2815cbca8d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab"
+            }
+        ],
+        "name": "bioboxes/crash-test-biobox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjcxNTgsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzoxMzo1OVoifQ",
+                "signature": "vxUha0zXd3niMB3LkJNsSGbAYVe8wDypZFFpixhva7S-GvwxA4nRqjtQJg9goNwx68lKAFtHkKet_h3EN4GIsQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "r8hqG9BU83c1rtNf3kacyJ_w0brRAw6HseamB7nxpEY",
+                        "kid": "HSLJ:6TGA:ZANK:EYFX:G6KX:VOEA:UBR2:AGR2:5RVX:OTTO:4FBP:2ZM6",
+                        "x": "syXzZ-Bs5DgnuKbHN_9MdWWhXsOxkbVCkvCSMsnJpFs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

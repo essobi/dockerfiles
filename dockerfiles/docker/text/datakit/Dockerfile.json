@@ -1,0 +1,522 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"opam\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5640/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OPAMERRLOGLEN=0\",\"OPAMYES=1\"],\"Cmd\":[\"--url=tcp://0.0.0.0:5640\",\"--git=/data\",\"-v\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bde81bc4a4f0f7c025fd0c5981a2c2151bae25aacdf64ac75d2e6c66b9a35087\",\"Volumes\":null,\"WorkingDir\":\"/home/opam\",\"Entrypoint\":[\"/usr/bin/datakit\"],\"OnBuild\":[],\"Labels\":{\"arch\":\"x86_64\",\"distro\":\"alpine\",\"distro_long\":\"alpine-3.5\",\"distro_style\":\"apk\",\"ocaml_version\":\"4.04.0\",\"opam_version\":\"master\",\"operatingsystem\":\"linux\"}},\"container\":\"8401c566f230911199ebe7166dbcdc13ea52f02d3572b53b6ed83f2ea09c4257\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"opam\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5640/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OPAMERRLOGLEN=0\",\"OPAMYES=1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"--url=tcp://0.0.0.0:5640\\\" \\\"--git=/data\\\" \\\"-v\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bde81bc4a4f0f7c025fd0c5981a2c2151bae25aacdf64ac75d2e6c66b9a35087\",\"Volumes\":null,\"WorkingDir\":\"/home/opam\",\"Entrypoint\":[\"/usr/bin/datakit\"],\"OnBuild\":[],\"Labels\":{\"arch\":\"x86_64\",\"distro\":\"alpine\",\"distro_long\":\"alpine-3.5\",\"distro_style\":\"apk\",\"ocaml_version\":\"4.04.0\",\"opam_version\":\"master\",\"operatingsystem\":\"linux\"}},\"created\":\"2017-04-12T10:55:25.580986468Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"06ffc902e5df48a1b034ca9a983461b810217036ca603a1852887da9709df9fb\",\"os\":\"linux\",\"parent\":\"64754cc2dcb626fff667948f6db3b408d3acdbf40f9829404a9a99f95ddb27be\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64754cc2dcb626fff667948f6db3b408d3acdbf40f9829404a9a99f95ddb27be\",\"parent\":\"1f5acd8caaba25b39a5ba5d90cb5734403ddce68b5ca34567048075d4323d7bb\",\"created\":\"2017-04-12T10:55:06.568293286Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/datakit\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1f5acd8caaba25b39a5ba5d90cb5734403ddce68b5ca34567048075d4323d7bb\",\"parent\":\"8c61b628e69663494ffea68384c70f37b829e5a60cb7fc3b2a6b0949d643dc35\",\"created\":\"2017-04-12T10:54:47.903950306Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam config exec -- ocaml /home/opam/src/datakit/check-libev.ml\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c61b628e69663494ffea68384c70f37b829e5a60cb7fc3b2a6b0949d643dc35\",\"parent\":\"bc8f72274149b422dfd6c98d7b81c3cce43e9f844cab74b0a9306e3062ce0e52\",\"created\":\"2017-04-12T10:54:30.686004818Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo mkdir /data \\u0026\\u0026 sudo chown opam.nogroup /data \\u0026\\u0026 chmod 700 /data \\u0026\\u0026     sudo cp $(opam config exec -- which datakit) /usr/bin/datakit \\u0026\\u0026     sudo cp $(opam config exec -- which datakit-mount) /usr/bin/datakit-mount\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bc8f72274149b422dfd6c98d7b81c3cce43e9f844cab74b0a9306e3062ce0e52\",\"parent\":\"d407ace9b6be11fb65ae188c380971922a053df04602bfd389feac2e8f2080a7\",\"created\":\"2017-04-12T10:54:10.733725402Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 5640/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d407ace9b6be11fb65ae188c380971922a053df04602bfd389feac2e8f2080a7\",\"parent\":\"589e15ed4e779ee9db4104c5cd890182e48ebfc2758d316f57f580094af97841\",\"created\":\"2017-04-12T10:53:54.645943536Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam install datakit -vv -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"589e15ed4e779ee9db4104c5cd890182e48ebfc2758d316f57f580094af97841\",\"parent\":\"e0576b22f6d62120e710c18c1cf42ad43e04c598236da81059211092dba5db55\",\"created\":\"2017-04-12T10:53:12.426539671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam update datakit\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0576b22f6d62120e710c18c1cf42ad43e04c598236da81059211092dba5db55\",\"parent\":\"51e3c529f7fc324bf256d28b30521d539254d097ace2d2cd4cc6481aa81f6cdd\",\"created\":\"2017-04-12T10:52:54.637887157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /home/opam/src/datakit \\u0026\\u0026     git diff \\u0026\\u0026 git status --porcelain \\u0026\\u0026     git checkout . \\u0026\\u0026 scripts/watermark.sh \\u0026\\u0026     git status --porcelain\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51e3c529f7fc324bf256d28b30521d539254d097ace2d2cd4cc6481aa81f6cdd\",\"parent\":\"72bc1ada70034843bb9eb9c056cf5044e58b06d8999b2a413c9a978b93d30e7f\",\"created\":\"2017-04-12T10:52:38.66963563Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo chown opam.nogroup -R /home/opam/src/datakit\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72bc1ada70034843bb9eb9c056cf5044e58b06d8999b2a413c9a978b93d30e7f\",\"parent\":\"63a89021e01507f2e6b6a347b33ac70c686f903fae718031b188f2c5467f5deb\",\"created\":\"2017-04-12T10:52:20.246155643Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:beabf5b0727cda122327519e4b752ed3e3ca8427e10bd3f9ee6183ca6ff9d0e6 in /home/opam/src/datakit/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63a89021e01507f2e6b6a347b33ac70c686f903fae718031b188f2c5467f5deb\",\"parent\":\"cc67812e8036efa84d240020fb35ff29b42365fe668034643bbcc2dedcef7a01\",\"created\":\"2017-04-12T10:52:03.814973614Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam depext datakit \\u0026\\u0026 opam install datakit -y --deps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cc67812e8036efa84d240020fb35ff29b42365fe668034643bbcc2dedcef7a01\",\"parent\":\"571e17d3bc02752233c3465a8fbdd035e2086c8d1d9854b06bd07b1b71e26147\",\"created\":\"2017-04-12T10:47:21.245339912Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit-github.dev /home/opam/src/datakit -n\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"571e17d3bc02752233c3465a8fbdd035e2086c8d1d9854b06bd07b1b71e26147\",\"parent\":\"b9d202a2452ff60642223c5fae7ce9648d4ed08886f040580df6b8b3647322cc\",\"created\":\"2017-04-12T10:47:05.224353255Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit.dev /home/opam/src/datakit -n\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b9d202a2452ff60642223c5fae7ce9648d4ed08886f040580df6b8b3647322cc\",\"parent\":\"39df3866828f33291b242dc9f8ce17bcbff136053dfaa8d7590c9d5bd6a35423\",\"created\":\"2017-04-12T10:46:47.679863794Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8c9593bf54f7e295a9f81333fa00f8049ada36ad5b0e2aad080661f94f95a690 in /home/opam/src/datakit/opam \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39df3866828f33291b242dc9f8ce17bcbff136053dfaa8d7590c9d5bd6a35423\",\"parent\":\"1dde238f4d08ad6ce615e94c3ad996c1ba711983d9f43587f7f2f75037cebc9b\",\"created\":\"2017-04-07T15:27:36.099621587Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam install datakit-server.dev -vv\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1dde238f4d08ad6ce615e94c3ad996c1ba711983d9f43587f7f2f75037cebc9b\",\"parent\":\"f4bdba6ff6b04fa2dd7b17b421c8baeac097223d26a68ba1b6964f0d48ffb2ba\",\"created\":\"2017-04-07T15:27:03.077142477Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam update datakit-server\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f4bdba6ff6b04fa2dd7b17b421c8baeac097223d26a68ba1b6964f0d48ffb2ba\",\"parent\":\"1a26d2ca8ef1c94049d9d8e82ed3356dba9ac122d9067b56883f6defcd42c398\",\"created\":\"2017-04-07T15:26:43.082505242Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /home/opam/src/datakit \\u0026\\u0026     git diff \\u0026\\u0026 git status --porcelain \\u0026\\u0026     git checkout . \\u0026\\u0026 scripts/watermark.sh \\u0026\\u0026     git status --porcelain\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a26d2ca8ef1c94049d9d8e82ed3356dba9ac122d9067b56883f6defcd42c398\",\"parent\":\"f49923e18cf5ed75fd1034be8a711eb5f961ded2afa76f6443fdcb999a4c98df\",\"created\":\"2017-04-07T15:26:23.897347515Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo chown opam.nogroup -R /home/opam/src/datakit\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f49923e18cf5ed75fd1034be8a711eb5f961ded2afa76f6443fdcb999a4c98df\",\"parent\":\"7841bf5695ee706ad9613a8cf7182c71e56cdad85dacd036d77b5e26fdf70055\",\"created\":\"2017-04-07T15:26:02.507452162Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:6ff9863df5b169de16dc565a34439c194f0668916a95a2d86fd77f1d6b010de9 in /home/opam/src/datakit \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7841bf5695ee706ad9613a8cf7182c71e56cdad85dacd036d77b5e26fdf70055\",\"parent\":\"a9a9765ae409e87fdbdbeef8969d857b2845f3e7579ad0db0d60207860ec58ee\",\"created\":\"2017-04-07T15:25:43.347319079Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam depext datakit-server \\u0026\\u0026 opam install datakit-server --deps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a9a9765ae409e87fdbdbeef8969d857b2845f3e7579ad0db0d60207860ec58ee\",\"parent\":\"db23859c225bc8d33b2d4dccce8c7229f8e9318a61e622d07708592aba0ab8b1\",\"created\":\"2017-04-07T15:21:03.246840258Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit-client.dev /home/opam/src/datakit -yn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db23859c225bc8d33b2d4dccce8c7229f8e9318a61e622d07708592aba0ab8b1\",\"parent\":\"3c03ac61017bf3353550525db74d7f024db96dfebd57bf01a6f56a1e66d2801e\",\"created\":\"2017-04-07T15:20:43.228388174Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit-server.dev /home/opam/src/datakit -yn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3c03ac61017bf3353550525db74d7f024db96dfebd57bf01a6f56a1e66d2801e\",\"parent\":\"f3e62effbd0da2cada0a66c86d10f8e7b8233dffae1a4d3a13864fb51637bf56\",\"created\":\"2017-04-07T15:20:24.236334051Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:f9190a514fc055596f03f6f5253bd72b6a6e40159ecd8745b49f02ee7cd56a36 in /home/opam/src/datakit/datakit-server.opam \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3e62effbd0da2cada0a66c86d10f8e7b8233dffae1a4d3a13864fb51637bf56\",\"parent\":\"e4c6450ac7c8037f5d0dd1b2826259f9280f649b37688f64bc4b9d853a14d447\",\"created\":\"2017-04-07T15:20:03.807916427Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:d0a6687d3bc2232268210f6e17a1d037d4158451d45ec2268c3b1391cae0f01c in /home/opam/src/datakit/datakit-client.opam \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e4c6450ac7c8037f5d0dd1b2826259f9280f649b37688f64bc4b9d853a14d447\",\"parent\":\"0560d0fc9e8d5f3d3e321bb63b87c052ed43104c96be540f608b5c28be4d67f7\",\"created\":\"2017-04-07T15:19:44.374738795Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add -yn protocol-9p.0.8.0 'https://github.com/talex5/ocaml-9p.git#ping'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0560d0fc9e8d5f3d3e321bb63b87c052ed43104c96be540f608b5c28be4d67f7\",\"parent\":\"b35635fb5ef8f2ba1d1b62def03eab317332aa77019b8738baee285f2af555db\",\"created\":\"2017-04-07T15:19:25.722324739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam depext -ui lwt inotify alcotest conf-libev lambda-term\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b35635fb5ef8f2ba1d1b62def03eab317332aa77019b8738baee285f2af555db\",\"parent\":\"363bc87c8f3e358889fed65a5e5ad063d4740544be129d91d7db0e8042a87360\",\"created\":\"2017-04-07T15:12:41.434499606Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add cmdliner 0.9.8\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"363bc87c8f3e358889fed65a5e5ad063d4740544be129d91d7db0e8042a87360\",\"parent\":\"97927d15f2b45eebe546fc16f4374a3e91537c89e32a2656805acf295f836eb3\",\"created\":\"2017-04-07T15:11:56.957901805Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo apk add tzdata aspcud\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"97927d15f2b45eebe546fc16f4374a3e91537c89e32a2656805acf295f836eb3\",\"parent\":\"8d6c2e40428855b3a8e33b015a4ce6b4a7f737005296cf5162599adb0484c2c0\",\"created\":\"2017-04-07T15:11:19.545219246Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OPAMERRLOGLEN=0 OPAMYES=1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8d6c2e40428855b3a8e33b015a4ce6b4a7f737005296cf5162599adb0484c2c0\",\"parent\":\"8a71a974e700f3108af12eee3da4311baa4d4aa9d8a7e9e9ebd0e656dc067ad6\",\"created\":\"2017-03-10T11:58:18.455408557Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a71a974e700f3108af12eee3da4311baa4d4aa9d8a7e9e9ebd0e656dc067ad6\",\"parent\":\"cb46629cf7387ddffb3d92b06072b5a0f10fcb6e4f13ea0acbcf4e0c88a1ffdf\",\"created\":\"2017-03-10T11:58:00.247207165Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"opam\\\" \\\"config\\\" \\\"exec\\\" \\\"--\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb46629cf7387ddffb3d92b06072b5a0f10fcb6e4f13ea0acbcf4e0c88a1ffdf\",\"parent\":\"85da8aec1d5873048762e8a55671c51fd27983d2908e6eeb9d8c4e29b3e658c9\",\"created\":\"2017-03-10T11:57:40.134491059Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir .ssh \\u0026\\u0026   chmod 700 .ssh \\u0026\\u0026   git config --global user.email \\\"docker@example.com\\\" \\u0026\\u0026   git config --global user.name \\\"Docker CI\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"git clone -b master git://github.com/ocaml/opam-repository\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"cd /home/opam/opam-repository \\u0026\\u0026 opam admin upgrade \\u0026\\u0026 git checkout -b v2 \\u0026\\u0026 git add . \\u0026\\u0026 git commit -a -m 'opam admin upgrade'\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"opam init -a -y /home/opam/opam-repository\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"opam install -y depext travis-opam\\\"\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"85da8aec1d5873048762e8a55671c51fd27983d2908e6eeb9d8c4e29b3e658c9\",\"parent\":\"abe2fef72cae741f301adee1fba3702ac70986dabcca72c34bf2ab66d0e1af78\",\"created\":\"2017-03-10T11:52:02.269547136Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/opam\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"abe2fef72cae741f301adee1fba3702ac70986dabcca72c34bf2ab66d0e1af78\",\"parent\":\"546696dad380b67e4b89ac117e20cfde653d910f5967fba4753d090108951fe0\",\"created\":\"2017-03-10T11:52:00.557721146Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [opam]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"546696dad380b67e4b89ac117e20cfde653d910f5967fba4753d090108951fe0\",\"parent\":\"232d1fa35ecc6142b432f1ffc35033abfcc774c43051679fa26416ec17be3844\",\"created\":\"2017-03-10T11:51:59.030648059Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk update \\u0026\\u0026 apk upgrade \\u0026\\u0026   apk add rsync xz \\u0026\\u0026   git clone -b master git://github.com/ocaml/opam /tmp/opam \\u0026\\u0026   sh -c \\\"cd /tmp/opam \\u0026\\u0026 make cold \\u0026\\u0026 make prefix=\\\\\\\"/usr\\\\\\\" install \\u0026\\u0026 rm -rf /tmp/opam\\\" \\u0026\\u0026   adduser -S opam \\u0026\\u0026   echo 'opam ALL=(ALL:ALL) NOPASSWD:ALL' \\u003e /etc/sudoers.d/opam \\u0026\\u0026   chmod 440 /etc/sudoers.d/opam \\u0026\\u0026   chown root:root /etc/sudoers.d/opam \\u0026\\u0026   sed -i.bak 's/^Defaults.*requiretty//g' /etc/sudoers\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"232d1fa35ecc6142b432f1ffc35033abfcc774c43051679fa26416ec17be3844\",\"parent\":\"909c9ccb46ad1a32c94f75900d10e8583236c2f0ee591d6188529bc32f3ca97b\",\"created\":\"2017-03-10T11:42:15.248701966Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  LABEL distro_style=apk distro=alpine distro_long=alpine-3.5 arch=x86_64 ocaml_version=4.04.0 opam_version=master operatingsystem=linux\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"909c9ccb46ad1a32c94f75900d10e8583236c2f0ee591d6188529bc32f3ca97b\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-03-08T11:32:52.134630691Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk update \\u0026\\u0026 apk upgrade \\u0026\\u0026   apk add alpine-sdk openssh bash nano ncurses-dev  \\u0026\\u0026   apk add -X http://dl-3.alpinelinux.org/alpine/edge/community --update-cache camlp4\\u003e4.04\"]},\"author\":\"Anil Madhavapeddy \\u003canil@recoil.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-08T11:31:37.184717403Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anil Madhavapeddy \\u003canil@recoil.org\\u003e\"]},\"author\":\"Anil Madhavapeddy \\u003canil@recoil.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a826d91774c05cac010061731d3498c3760ec26eceb12625cb3e270b915e13b8"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c8329cf48768b0b63b3db744d75c4f253bcaedf7a296d73496b17260e23da6c6"
+            },
+            {
+                "blobSum": "sha256:79ac44d850c4eed37977317d19427d9680f349beac9719d4b7dd7fb1c9eae032"
+            },
+            {
+                "blobSum": "sha256:3f235e62511aba3c304ba53246f09da153fe41423e5485d3485b7f74f92cd8d8"
+            },
+            {
+                "blobSum": "sha256:b91462d92a8636cf33b42d817617d1094e203b96560594eeeeac6aeab2add476"
+            },
+            {
+                "blobSum": "sha256:b58b9a5e9505c39a63b53706adfd42fa9b340a51075632783762d13b966470b1"
+            },
+            {
+                "blobSum": "sha256:caf044adb97eaa90cefbf9b4ab6dc8b1d1845c22060f2f07d5e894d9aa821b08"
+            },
+            {
+                "blobSum": "sha256:2d27f80421704ec5a468862d0985c461f3f8df7e984f662a4ce21f9d04cf2d30"
+            },
+            {
+                "blobSum": "sha256:a6349d14fa7fa8763a84bbb03cab997398c0b3576965fd276933ac030a2e0ffd"
+            },
+            {
+                "blobSum": "sha256:59c864134305a3d8f7da13e68ac0a412ecb5a858109323fc8f68197160e8f99b"
+            },
+            {
+                "blobSum": "sha256:c4e52c561892a0d5ab89c4fdc6aa0e7a9126b7f557e3ce3886ae258688d8bef9"
+            },
+            {
+                "blobSum": "sha256:7927e9973b5cf4e5d0909eec7ba462bef52b1bd62f92a1cac53e70122fe737db"
+            },
+            {
+                "blobSum": "sha256:1d6cc04697965dfd85bde7977ef3baf026412ee11ace6e852b6d554ab3da7bf4"
+            },
+            {
+                "blobSum": "sha256:294300a90dd872b63f564a5b6bc11423babe5aaf72e6849fce1500afabb7a130"
+            },
+            {
+                "blobSum": "sha256:d52e97b850aae2e60ecf85ce9f47e7949e3a21066c29c81e915cf5bfee418f21"
+            },
+            {
+                "blobSum": "sha256:277849d3b61a8abad363cf6567c062014317bb9899c41eefb00e3e05e5de2ff0"
+            },
+            {
+                "blobSum": "sha256:097a727d982f08f6f3a9f52b8416f9ccc0f03d07ea969136e8d25aec3dbe1600"
+            },
+            {
+                "blobSum": "sha256:c4a33fff1d6df7ed41cd0fd1218ab1ae6d372b85cdad07647a33a72cc988f6b8"
+            },
+            {
+                "blobSum": "sha256:e8c04c8051361ad40af95ef23f0d713e7570a177038b9d8d330c6a8cef35b581"
+            },
+            {
+                "blobSum": "sha256:290d1425260b529d9ae19a628201ae23464880d8f3e8bfa83a972197a1318a9b"
+            },
+            {
+                "blobSum": "sha256:9f38a0d3035f023fcbaa231292fae27cfb559fbb2f54103df00c6d45e3222844"
+            },
+            {
+                "blobSum": "sha256:b3cd939f73f075330d46dc9cbb54503b1abf022e7fdba43cf9c61ddd9a8b917f"
+            },
+            {
+                "blobSum": "sha256:fa93ee908a71cf2ba4f7df4bebb821d4cf4b8420a3c6fe48abc5005e16ec9daf"
+            },
+            {
+                "blobSum": "sha256:75df5e8b9b56c8fb700fb179ef63674bc07cef8d9d24cec6d4f678ce3879626e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:199a68aaa28d7d54bf201ceea36e422ba724d257cd487901c675664794774673"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8369b3912e5969984f1379578dc5c3f5b89a4e87257447ab0e77338e16b53b3a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a8da75275fdb3a27198fe24c3daed15e4d5ece11a563d5a4984bc57c2ea81287"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "docker/datakit",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIyMzc2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDg6MDBaIn0",
+                "signature": "1TK1vLapm8B4QSiV3r8TUBj42BdtDWBA2_pdE23DKsT8l5VZ2psoBSNKUsiPSdhzyZWAYEICS6U2TPmjWv5L2g",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Utb3sahOfqJu7aBnY5xcTocRBVYHtbgoRn-J4k8f4vc",
+                        "kid": "7LSF:N5QK:SS2F:Z4ZS:O3AM:4TQT:RZXF:BY53:BD6Y:4STT:3IZZ:MFPN",
+                        "x": "spr2E2wra1w0t_Yc5zh1fC90fRKNoo2PQMscv4boni0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"opam\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5640/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OPAMERRLOGLEN=0\",\"OPAMYES=1\"],\"Cmd\":[\"--url=tcp://0.0.0.0:5640\",\"--git=/data\",\"-v\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bde81bc4a4f0f7c025fd0c5981a2c2151bae25aacdf64ac75d2e6c66b9a35087\",\"Volumes\":null,\"WorkingDir\":\"/home/opam\",\"Entrypoint\":[\"/usr/bin/datakit\"],\"OnBuild\":[],\"Labels\":{\"arch\":\"x86_64\",\"distro\":\"alpine\",\"distro_long\":\"alpine-3.5\",\"distro_style\":\"apk\",\"ocaml_version\":\"4.04.0\",\"opam_version\":\"master\",\"operatingsystem\":\"linux\"}},\"container\":\"8401c566f230911199ebe7166dbcdc13ea52f02d3572b53b6ed83f2ea09c4257\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"opam\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5640/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"OPAMERRLOGLEN=0\",\"OPAMYES=1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"--url=tcp://0.0.0.0:5640\\\" \\\"--git=/data\\\" \\\"-v\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bde81bc4a4f0f7c025fd0c5981a2c2151bae25aacdf64ac75d2e6c66b9a35087\",\"Volumes\":null,\"WorkingDir\":\"/home/opam\",\"Entrypoint\":[\"/usr/bin/datakit\"],\"OnBuild\":[],\"Labels\":{\"arch\":\"x86_64\",\"distro\":\"alpine\",\"distro_long\":\"alpine-3.5\",\"distro_style\":\"apk\",\"ocaml_version\":\"4.04.0\",\"opam_version\":\"master\",\"operatingsystem\":\"linux\"}},\"created\":\"2017-04-12T10:55:25.580986468Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"06ffc902e5df48a1b034ca9a983461b810217036ca603a1852887da9709df9fb\",\"os\":\"linux\",\"parent\":\"64754cc2dcb626fff667948f6db3b408d3acdbf40f9829404a9a99f95ddb27be\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64754cc2dcb626fff667948f6db3b408d3acdbf40f9829404a9a99f95ddb27be\",\"parent\":\"1f5acd8caaba25b39a5ba5d90cb5734403ddce68b5ca34567048075d4323d7bb\",\"created\":\"2017-04-12T10:55:06.568293286Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/datakit\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1f5acd8caaba25b39a5ba5d90cb5734403ddce68b5ca34567048075d4323d7bb\",\"parent\":\"8c61b628e69663494ffea68384c70f37b829e5a60cb7fc3b2a6b0949d643dc35\",\"created\":\"2017-04-12T10:54:47.903950306Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam config exec -- ocaml /home/opam/src/datakit/check-libev.ml\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c61b628e69663494ffea68384c70f37b829e5a60cb7fc3b2a6b0949d643dc35\",\"parent\":\"bc8f72274149b422dfd6c98d7b81c3cce43e9f844cab74b0a9306e3062ce0e52\",\"created\":\"2017-04-12T10:54:30.686004818Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo mkdir /data \\u0026\\u0026 sudo chown opam.nogroup /data \\u0026\\u0026 chmod 700 /data \\u0026\\u0026     sudo cp $(opam config exec -- which datakit) /usr/bin/datakit \\u0026\\u0026     sudo cp $(opam config exec -- which datakit-mount) /usr/bin/datakit-mount\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bc8f72274149b422dfd6c98d7b81c3cce43e9f844cab74b0a9306e3062ce0e52\",\"parent\":\"d407ace9b6be11fb65ae188c380971922a053df04602bfd389feac2e8f2080a7\",\"created\":\"2017-04-12T10:54:10.733725402Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 5640/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d407ace9b6be11fb65ae188c380971922a053df04602bfd389feac2e8f2080a7\",\"parent\":\"589e15ed4e779ee9db4104c5cd890182e48ebfc2758d316f57f580094af97841\",\"created\":\"2017-04-12T10:53:54.645943536Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam install datakit -vv -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"589e15ed4e779ee9db4104c5cd890182e48ebfc2758d316f57f580094af97841\",\"parent\":\"e0576b22f6d62120e710c18c1cf42ad43e04c598236da81059211092dba5db55\",\"created\":\"2017-04-12T10:53:12.426539671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam update datakit\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0576b22f6d62120e710c18c1cf42ad43e04c598236da81059211092dba5db55\",\"parent\":\"51e3c529f7fc324bf256d28b30521d539254d097ace2d2cd4cc6481aa81f6cdd\",\"created\":\"2017-04-12T10:52:54.637887157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /home/opam/src/datakit \\u0026\\u0026     git diff \\u0026\\u0026 git status --porcelain \\u0026\\u0026     git checkout . \\u0026\\u0026 scripts/watermark.sh \\u0026\\u0026     git status --porcelain\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51e3c529f7fc324bf256d28b30521d539254d097ace2d2cd4cc6481aa81f6cdd\",\"parent\":\"72bc1ada70034843bb9eb9c056cf5044e58b06d8999b2a413c9a978b93d30e7f\",\"created\":\"2017-04-12T10:52:38.66963563Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo chown opam.nogroup -R /home/opam/src/datakit\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72bc1ada70034843bb9eb9c056cf5044e58b06d8999b2a413c9a978b93d30e7f\",\"parent\":\"63a89021e01507f2e6b6a347b33ac70c686f903fae718031b188f2c5467f5deb\",\"created\":\"2017-04-12T10:52:20.246155643Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:beabf5b0727cda122327519e4b752ed3e3ca8427e10bd3f9ee6183ca6ff9d0e6 in /home/opam/src/datakit/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63a89021e01507f2e6b6a347b33ac70c686f903fae718031b188f2c5467f5deb\",\"parent\":\"cc67812e8036efa84d240020fb35ff29b42365fe668034643bbcc2dedcef7a01\",\"created\":\"2017-04-12T10:52:03.814973614Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam depext datakit \\u0026\\u0026 opam install datakit -y --deps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cc67812e8036efa84d240020fb35ff29b42365fe668034643bbcc2dedcef7a01\",\"parent\":\"571e17d3bc02752233c3465a8fbdd035e2086c8d1d9854b06bd07b1b71e26147\",\"created\":\"2017-04-12T10:47:21.245339912Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit-github.dev /home/opam/src/datakit -n\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"571e17d3bc02752233c3465a8fbdd035e2086c8d1d9854b06bd07b1b71e26147\",\"parent\":\"b9d202a2452ff60642223c5fae7ce9648d4ed08886f040580df6b8b3647322cc\",\"created\":\"2017-04-12T10:47:05.224353255Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit.dev /home/opam/src/datakit -n\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b9d202a2452ff60642223c5fae7ce9648d4ed08886f040580df6b8b3647322cc\",\"parent\":\"39df3866828f33291b242dc9f8ce17bcbff136053dfaa8d7590c9d5bd6a35423\",\"created\":\"2017-04-12T10:46:47.679863794Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8c9593bf54f7e295a9f81333fa00f8049ada36ad5b0e2aad080661f94f95a690 in /home/opam/src/datakit/opam \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39df3866828f33291b242dc9f8ce17bcbff136053dfaa8d7590c9d5bd6a35423\",\"parent\":\"1dde238f4d08ad6ce615e94c3ad996c1ba711983d9f43587f7f2f75037cebc9b\",\"created\":\"2017-04-07T15:27:36.099621587Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam install datakit-server.dev -vv\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1dde238f4d08ad6ce615e94c3ad996c1ba711983d9f43587f7f2f75037cebc9b\",\"parent\":\"f4bdba6ff6b04fa2dd7b17b421c8baeac097223d26a68ba1b6964f0d48ffb2ba\",\"created\":\"2017-04-07T15:27:03.077142477Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam update datakit-server\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f4bdba6ff6b04fa2dd7b17b421c8baeac097223d26a68ba1b6964f0d48ffb2ba\",\"parent\":\"1a26d2ca8ef1c94049d9d8e82ed3356dba9ac122d9067b56883f6defcd42c398\",\"created\":\"2017-04-07T15:26:43.082505242Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /home/opam/src/datakit \\u0026\\u0026     git diff \\u0026\\u0026 git status --porcelain \\u0026\\u0026     git checkout . \\u0026\\u0026 scripts/watermark.sh \\u0026\\u0026     git status --porcelain\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a26d2ca8ef1c94049d9d8e82ed3356dba9ac122d9067b56883f6defcd42c398\",\"parent\":\"f49923e18cf5ed75fd1034be8a711eb5f961ded2afa76f6443fdcb999a4c98df\",\"created\":\"2017-04-07T15:26:23.897347515Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo chown opam.nogroup -R /home/opam/src/datakit\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f49923e18cf5ed75fd1034be8a711eb5f961ded2afa76f6443fdcb999a4c98df\",\"parent\":\"7841bf5695ee706ad9613a8cf7182c71e56cdad85dacd036d77b5e26fdf70055\",\"created\":\"2017-04-07T15:26:02.507452162Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:6ff9863df5b169de16dc565a34439c194f0668916a95a2d86fd77f1d6b010de9 in /home/opam/src/datakit \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7841bf5695ee706ad9613a8cf7182c71e56cdad85dacd036d77b5e26fdf70055\",\"parent\":\"a9a9765ae409e87fdbdbeef8969d857b2845f3e7579ad0db0d60207860ec58ee\",\"created\":\"2017-04-07T15:25:43.347319079Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam depext datakit-server \\u0026\\u0026 opam install datakit-server --deps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a9a9765ae409e87fdbdbeef8969d857b2845f3e7579ad0db0d60207860ec58ee\",\"parent\":\"db23859c225bc8d33b2d4dccce8c7229f8e9318a61e622d07708592aba0ab8b1\",\"created\":\"2017-04-07T15:21:03.246840258Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit-client.dev /home/opam/src/datakit -yn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db23859c225bc8d33b2d4dccce8c7229f8e9318a61e622d07708592aba0ab8b1\",\"parent\":\"3c03ac61017bf3353550525db74d7f024db96dfebd57bf01a6f56a1e66d2801e\",\"created\":\"2017-04-07T15:20:43.228388174Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add datakit-server.dev /home/opam/src/datakit -yn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3c03ac61017bf3353550525db74d7f024db96dfebd57bf01a6f56a1e66d2801e\",\"parent\":\"f3e62effbd0da2cada0a66c86d10f8e7b8233dffae1a4d3a13864fb51637bf56\",\"created\":\"2017-04-07T15:20:24.236334051Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:f9190a514fc055596f03f6f5253bd72b6a6e40159ecd8745b49f02ee7cd56a36 in /home/opam/src/datakit/datakit-server.opam \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3e62effbd0da2cada0a66c86d10f8e7b8233dffae1a4d3a13864fb51637bf56\",\"parent\":\"e4c6450ac7c8037f5d0dd1b2826259f9280f649b37688f64bc4b9d853a14d447\",\"created\":\"2017-04-07T15:20:03.807916427Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:d0a6687d3bc2232268210f6e17a1d037d4158451d45ec2268c3b1391cae0f01c in /home/opam/src/datakit/datakit-client.opam \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e4c6450ac7c8037f5d0dd1b2826259f9280f649b37688f64bc4b9d853a14d447\",\"parent\":\"0560d0fc9e8d5f3d3e321bb63b87c052ed43104c96be540f608b5c28be4d67f7\",\"created\":\"2017-04-07T15:19:44.374738795Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add -yn protocol-9p.0.8.0 'https://github.com/talex5/ocaml-9p.git#ping'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0560d0fc9e8d5f3d3e321bb63b87c052ed43104c96be540f608b5c28be4d67f7\",\"parent\":\"b35635fb5ef8f2ba1d1b62def03eab317332aa77019b8738baee285f2af555db\",\"created\":\"2017-04-07T15:19:25.722324739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam depext -ui lwt inotify alcotest conf-libev lambda-term\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b35635fb5ef8f2ba1d1b62def03eab317332aa77019b8738baee285f2af555db\",\"parent\":\"363bc87c8f3e358889fed65a5e5ad063d4740544be129d91d7db0e8042a87360\",\"created\":\"2017-04-07T15:12:41.434499606Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c opam pin add cmdliner 0.9.8\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"363bc87c8f3e358889fed65a5e5ad063d4740544be129d91d7db0e8042a87360\",\"parent\":\"97927d15f2b45eebe546fc16f4374a3e91537c89e32a2656805acf295f836eb3\",\"created\":\"2017-04-07T15:11:56.957901805Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo apk add tzdata aspcud\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"97927d15f2b45eebe546fc16f4374a3e91537c89e32a2656805acf295f836eb3\",\"parent\":\"8d6c2e40428855b3a8e33b015a4ce6b4a7f737005296cf5162599adb0484c2c0\",\"created\":\"2017-04-07T15:11:19.545219246Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OPAMERRLOGLEN=0 OPAMYES=1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8d6c2e40428855b3a8e33b015a4ce6b4a7f737005296cf5162599adb0484c2c0\",\"parent\":\"8a71a974e700f3108af12eee3da4311baa4d4aa9d8a7e9e9ebd0e656dc067ad6\",\"created\":\"2017-03-10T11:58:18.455408557Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a71a974e700f3108af12eee3da4311baa4d4aa9d8a7e9e9ebd0e656dc067ad6\",\"parent\":\"cb46629cf7387ddffb3d92b06072b5a0f10fcb6e4f13ea0acbcf4e0c88a1ffdf\",\"created\":\"2017-03-10T11:58:00.247207165Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"opam\\\" \\\"config\\\" \\\"exec\\\" \\\"--\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb46629cf7387ddffb3d92b06072b5a0f10fcb6e4f13ea0acbcf4e0c88a1ffdf\",\"parent\":\"85da8aec1d5873048762e8a55671c51fd27983d2908e6eeb9d8c4e29b3e658c9\",\"created\":\"2017-03-10T11:57:40.134491059Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir .ssh \\u0026\\u0026   chmod 700 .ssh \\u0026\\u0026   git config --global user.email \\\"docker@example.com\\\" \\u0026\\u0026   git config --global user.name \\\"Docker CI\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"git clone -b master git://github.com/ocaml/opam-repository\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"cd /home/opam/opam-repository \\u0026\\u0026 opam admin upgrade \\u0026\\u0026 git checkout -b v2 \\u0026\\u0026 git add . \\u0026\\u0026 git commit -a -m 'opam admin upgrade'\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"opam init -a -y /home/opam/opam-repository\\\" \\u0026\\u0026   sudo -u opam sh -c \\\"opam install -y depext travis-opam\\\"\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"85da8aec1d5873048762e8a55671c51fd27983d2908e6eeb9d8c4e29b3e658c9\",\"parent\":\"abe2fef72cae741f301adee1fba3702ac70986dabcca72c34bf2ab66d0e1af78\",\"created\":\"2017-03-10T11:52:02.269547136Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/opam\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"abe2fef72cae741f301adee1fba3702ac70986dabcca72c34bf2ab66d0e1af78\",\"parent\":\"546696dad380b67e4b89ac117e20cfde653d910f5967fba4753d090108951fe0\",\"created\":\"2017-03-10T11:52:00.557721146Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [opam]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"546696dad380b67e4b89ac117e20cfde653d910f5967fba4753d090108951fe0\",\"parent\":\"232d1fa35ecc6142b432f1ffc35033abfcc774c43051679fa26416ec17be3844\",\"created\":\"2017-03-10T11:51:59.030648059Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk update \\u0026\\u0026 apk upgrade \\u0026\\u0026   apk add rsync xz \\u0026\\u0026   git clone -b master git://github.com/ocaml/opam /tmp/opam \\u0026\\u0026   sh -c \\\"cd /tmp/opam \\u0026\\u0026 make cold \\u0026\\u0026 make prefix=\\\\\\\"/usr\\\\\\\" install \\u0026\\u0026 rm -rf /tmp/opam\\\" \\u0026\\u0026   adduser -S opam \\u0026\\u0026   echo 'opam ALL=(ALL:ALL) NOPASSWD:ALL' \\u003e /etc/sudoers.d/opam \\u0026\\u0026   chmod 440 /etc/sudoers.d/opam \\u0026\\u0026   chown root:root /etc/sudoers.d/opam \\u0026\\u0026   sed -i.bak 's/^Defaults.*requiretty//g' /etc/sudoers\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"232d1fa35ecc6142b432f1ffc35033abfcc774c43051679fa26416ec17be3844\",\"parent\":\"909c9ccb46ad1a32c94f75900d10e8583236c2f0ee591d6188529bc32f3ca97b\",\"created\":\"2017-03-10T11:42:15.248701966Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  LABEL distro_style=apk distro=alpine distro_long=alpine-3.5 arch=x86_64 ocaml_version=4.04.0 opam_version=master operatingsystem=linux\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"909c9ccb46ad1a32c94f75900d10e8583236c2f0ee591d6188529bc32f3ca97b\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-03-08T11:32:52.134630691Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk update \\u0026\\u0026 apk upgrade \\u0026\\u0026   apk add alpine-sdk openssh bash nano ncurses-dev  \\u0026\\u0026   apk add -X http://dl-3.alpinelinux.org/alpine/edge/community --update-cache camlp4\\u003e4.04\"]},\"author\":\"Anil Madhavapeddy \\u003canil@recoil.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-08T11:31:37.184717403Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anil Madhavapeddy \\u003canil@recoil.org\\u003e\"]},\"author\":\"Anil Madhavapeddy \\u003canil@recoil.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a826d91774c05cac010061731d3498c3760ec26eceb12625cb3e270b915e13b8"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c8329cf48768b0b63b3db744d75c4f253bcaedf7a296d73496b17260e23da6c6"
+            },
+            {
+                "blobSum": "sha256:79ac44d850c4eed37977317d19427d9680f349beac9719d4b7dd7fb1c9eae032"
+            },
+            {
+                "blobSum": "sha256:3f235e62511aba3c304ba53246f09da153fe41423e5485d3485b7f74f92cd8d8"
+            },
+            {
+                "blobSum": "sha256:b91462d92a8636cf33b42d817617d1094e203b96560594eeeeac6aeab2add476"
+            },
+            {
+                "blobSum": "sha256:b58b9a5e9505c39a63b53706adfd42fa9b340a51075632783762d13b966470b1"
+            },
+            {
+                "blobSum": "sha256:caf044adb97eaa90cefbf9b4ab6dc8b1d1845c22060f2f07d5e894d9aa821b08"
+            },
+            {
+                "blobSum": "sha256:2d27f80421704ec5a468862d0985c461f3f8df7e984f662a4ce21f9d04cf2d30"
+            },
+            {
+                "blobSum": "sha256:a6349d14fa7fa8763a84bbb03cab997398c0b3576965fd276933ac030a2e0ffd"
+            },
+            {
+                "blobSum": "sha256:59c864134305a3d8f7da13e68ac0a412ecb5a858109323fc8f68197160e8f99b"
+            },
+            {
+                "blobSum": "sha256:c4e52c561892a0d5ab89c4fdc6aa0e7a9126b7f557e3ce3886ae258688d8bef9"
+            },
+            {
+                "blobSum": "sha256:7927e9973b5cf4e5d0909eec7ba462bef52b1bd62f92a1cac53e70122fe737db"
+            },
+            {
+                "blobSum": "sha256:1d6cc04697965dfd85bde7977ef3baf026412ee11ace6e852b6d554ab3da7bf4"
+            },
+            {
+                "blobSum": "sha256:294300a90dd872b63f564a5b6bc11423babe5aaf72e6849fce1500afabb7a130"
+            },
+            {
+                "blobSum": "sha256:d52e97b850aae2e60ecf85ce9f47e7949e3a21066c29c81e915cf5bfee418f21"
+            },
+            {
+                "blobSum": "sha256:277849d3b61a8abad363cf6567c062014317bb9899c41eefb00e3e05e5de2ff0"
+            },
+            {
+                "blobSum": "sha256:097a727d982f08f6f3a9f52b8416f9ccc0f03d07ea969136e8d25aec3dbe1600"
+            },
+            {
+                "blobSum": "sha256:c4a33fff1d6df7ed41cd0fd1218ab1ae6d372b85cdad07647a33a72cc988f6b8"
+            },
+            {
+                "blobSum": "sha256:e8c04c8051361ad40af95ef23f0d713e7570a177038b9d8d330c6a8cef35b581"
+            },
+            {
+                "blobSum": "sha256:290d1425260b529d9ae19a628201ae23464880d8f3e8bfa83a972197a1318a9b"
+            },
+            {
+                "blobSum": "sha256:9f38a0d3035f023fcbaa231292fae27cfb559fbb2f54103df00c6d45e3222844"
+            },
+            {
+                "blobSum": "sha256:b3cd939f73f075330d46dc9cbb54503b1abf022e7fdba43cf9c61ddd9a8b917f"
+            },
+            {
+                "blobSum": "sha256:fa93ee908a71cf2ba4f7df4bebb821d4cf4b8420a3c6fe48abc5005e16ec9daf"
+            },
+            {
+                "blobSum": "sha256:75df5e8b9b56c8fb700fb179ef63674bc07cef8d9d24cec6d4f678ce3879626e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:199a68aaa28d7d54bf201ceea36e422ba724d257cd487901c675664794774673"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8369b3912e5969984f1379578dc5c3f5b89a4e87257447ab0e77338e16b53b3a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a8da75275fdb3a27198fe24c3daed15e4d5ece11a563d5a4984bc57c2ea81287"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "docker/datakit",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIyMzc2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDg6MDFaIn0",
+                "signature": "mLtLRpoE8xJ3oKeqmWXKK2tO2kDE9t1Yj4hOiNrPb65jDpuTcELqXwQs2NGHZp-84vktmpCIWYLEwNvitBrTVw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "r8hqG9BU83c1rtNf3kacyJ_w0brRAw6HseamB7nxpEY",
+                        "kid": "HSLJ:6TGA:ZANK:EYFX:G6KX:VOEA:UBR2:AGR2:5RVX:OTTO:4FBP:2ZM6",
+                        "x": "syXzZ-Bs5DgnuKbHN_9MdWWhXsOxkbVCkvCSMsnJpFs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"WOW! Group Development\",\"config\":{\"Hostname\":\"4cfe65ad68c6\",\"Domainname\":\"\",\"User\":\"nexus\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c1dc79fcfdffc7663a3ef8550b85ac7a71ba8f90d16788d9203103c8164ab9af\",\"Volumes\":{\"/sonatype-work\":{}},\"WorkingDir\":\"/sonatype-work\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"a500a86f88e3ea10f86cb6f5ec54b734eed6b288d6e9994746a73b9105414704\",\"container_config\":{\"Hostname\":\"4cfe65ad68c6\",\"Domainname\":\"\",\"User\":\"nexus\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER [nexus]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c1dc79fcfdffc7663a3ef8550b85ac7a71ba8f90d16788d9203103c8164ab9af\",\"Volumes\":{\"/sonatype-work\":{}},\"WorkingDir\":\"/sonatype-work\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-19T14:19:45.633234803Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"a4f8db68918a1a3c109b545e824e4a7bcdc1f0070ac6b6f56303e6d7d258107a\",\"os\":\"linux\",\"parent\":\"3b6c77b23e01b31f53c36dcc3a44bae284838f9597bc10e9adfd37f45a7b3393\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3b6c77b23e01b31f53c36dcc3a44bae284838f9597bc10e9adfd37f45a7b3393\",\"parent\":\"8a4c493c4b946379ddf8c3a099e93d5eeee19b53d68466e66ec8c8e03dcb8a60\",\"created\":\"2017-01-19T14:19:45.500061202Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /sonatype-work\"]},\"author\":\"WOW! Group Development\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a4c493c4b946379ddf8c3a099e93d5eeee19b53d68466e66ec8c8e03dcb8a60\",\"parent\":\"22b8c35bc46edacdb42189e98541f55a66119d941ae1ef8137c53e035fc0fe9e\",\"created\":\"2017-01-19T14:19:45.319097458Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/sonatype-work]\"]},\"author\":\"WOW! Group Development\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"22b8c35bc46edacdb42189e98541f55a66119d941ae1ef8137c53e035fc0fe9e\",\"parent\":\"a7a1fdc6be4763d7a8e555d10f2135d92e7abfb96f9b1d3d00261538d06b080b\",\"created\":\"2017-01-19T14:19:45.177639111Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c adduser -h /sonatype-work -u 200 -D nexus\"]},\"author\":\"WOW! Group Development\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7a1fdc6be4763d7a8e555d10f2135d92e7abfb96f9b1d3d00261538d06b080b\",\"parent\":\"ac404e65f45d4f0c5ead61b2d50e26ef1a87f67f08c620d9ad3579dbd3315d69\",\"created\":\"2017-01-19T14:19:44.686394925Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER WOW! Group Development\"]},\"author\":\"WOW! Group Development\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ac404e65f45d4f0c5ead61b2d50e26ef1a87f67f08c620d9ad3579dbd3315d69\",\"parent\":\"8243b36f9bd41166cc1fd0a66bab2200bc7bc108f2aa5a301e35ab7bfbc5f8b3\",\"created\":\"2017-01-13T22:13:54.401355854Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8243b36f9bd41166cc1fd0a66bab2200bc7bc108f2aa5a301e35ab7bfbc5f8b3\",\"created\":\"2017-01-13T22:13:53.949637331Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:707e63805c0be1a22662851e9149b8929fb94fd3bd6a6ebe75c8d69d580d8bcb in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7f0588069ab1b5a6371030c1bcf6664840254fb4d1f077fece46dfeba25e318f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4b0bc1c4050b03c95ef2a8e36e25feac42fd31283e8c30b3ee5df6b043155d3c"
+            }
+        ],
+        "name": "wowgroup/nexus-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjQ3MDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDozMloifQ",
+                "signature": "r73oq6DaJG-ksrAsvCJaOpb3Bg9skwkZujZ4-lNjgx-ayI_ADpRkw9_tUDyEo00d5ROONWlQvXeOflfq1WZGpg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "IikXGu4CqzHuHQ-1DFJ5AGxrqOTgiGCF7z8cfwicW40",
+                        "kid": "A5FE:OM5P:MTXA:FXMG:KSP2:V2HH:OII7:XSSA:P5PG:AOD2:EGA4:OIGK",
+                        "x": "4pZJGM5lV6SEQPB7ujPU7fEdmnFNE4t3xrQhIsKxXp0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"WOW! Group Development\",\"config\":{\"Hostname\":\"4cfe65ad68c6\",\"Domainname\":\"\",\"User\":\"nexus\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c1dc79fcfdffc7663a3ef8550b85ac7a71ba8f90d16788d9203103c8164ab9af\",\"Volumes\":{\"/sonatype-work\":{}},\"WorkingDir\":\"/sonatype-work\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"a500a86f88e3ea10f86cb6f5ec54b734eed6b288d6e9994746a73b9105414704\",\"container_config\":{\"Hostname\":\"4cfe65ad68c6\",\"Domainname\":\"\",\"User\":\"nexus\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER [nexus]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c1dc79fcfdffc7663a3ef8550b85ac7a71ba8f90d16788d9203103c8164ab9af\",\"Volumes\":{\"/sonatype-work\":{}},\"WorkingDir\":\"/sonatype-work\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-19T14:19:45.633234803Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"a4f8db68918a1a3c109b545e824e4a7bcdc1f0070ac6b6f56303e6d7d258107a\",\"os\":\"linux\",\"parent\":\"3b6c77b23e01b31f53c36dcc3a44bae284838f9597bc10e9adfd37f45a7b3393\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3b6c77b23e01b31f53c36dcc3a44bae284838f9597bc10e9adfd37f45a7b3393\",\"parent\":\"8a4c493c4b946379ddf8c3a099e93d5eeee19b53d68466e66ec8c8e03dcb8a60\",\"created\":\"2017-01-19T14:19:45.500061202Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /sonatype-work\"]},\"author\":\"WOW! Group Development\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a4c493c4b946379ddf8c3a099e93d5eeee19b53d68466e66ec8c8e03dcb8a60\",\"parent\":\"22b8c35bc46edacdb42189e98541f55a66119d941ae1ef8137c53e035fc0fe9e\",\"created\":\"2017-01-19T14:19:45.319097458Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/sonatype-work]\"]},\"author\":\"WOW! Group Development\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"22b8c35bc46edacdb42189e98541f55a66119d941ae1ef8137c53e035fc0fe9e\",\"parent\":\"a7a1fdc6be4763d7a8e555d10f2135d92e7abfb96f9b1d3d00261538d06b080b\",\"created\":\"2017-01-19T14:19:45.177639111Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c adduser -h /sonatype-work -u 200 -D nexus\"]},\"author\":\"WOW! Group Development\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7a1fdc6be4763d7a8e555d10f2135d92e7abfb96f9b1d3d00261538d06b080b\",\"parent\":\"ac404e65f45d4f0c5ead61b2d50e26ef1a87f67f08c620d9ad3579dbd3315d69\",\"created\":\"2017-01-19T14:19:44.686394925Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER WOW! Group Development\"]},\"author\":\"WOW! Group Development\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ac404e65f45d4f0c5ead61b2d50e26ef1a87f67f08c620d9ad3579dbd3315d69\",\"parent\":\"8243b36f9bd41166cc1fd0a66bab2200bc7bc108f2aa5a301e35ab7bfbc5f8b3\",\"created\":\"2017-01-13T22:13:54.401355854Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8243b36f9bd41166cc1fd0a66bab2200bc7bc108f2aa5a301e35ab7bfbc5f8b3\",\"created\":\"2017-01-13T22:13:53.949637331Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:707e63805c0be1a22662851e9149b8929fb94fd3bd6a6ebe75c8d69d580d8bcb in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7f0588069ab1b5a6371030c1bcf6664840254fb4d1f077fece46dfeba25e318f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4b0bc1c4050b03c95ef2a8e36e25feac42fd31283e8c30b3ee5df6b043155d3c"
+            }
+        ],
+        "name": "wowgroup/nexus-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjQ3MDcsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDozM1oifQ",
+                "signature": "rtm5vuLfuIEM6AK9pAlE4EqudXOzu_d2_o_ot1Hke_ybaLOt1do2fcJq2fW900b_iUKGgILC80IaJhfpMW9HDA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "8zjaS9BQJ5-ZaD755cf0bEssE5cwyy_TuwWZg4N6fnc",
+                        "kid": "DOW7:OSAH:IQUL:7SZX:AMES:CS5P:KX2T:HP2S:Z43B:FZFN:F5DT:NOLS",
+                        "x": "_z7h1mvfXYNGvslNoUyBWbkPlZKC15F2IorKFUzUBSk"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

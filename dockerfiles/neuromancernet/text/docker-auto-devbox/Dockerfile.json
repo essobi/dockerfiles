@@ -1,0 +1,162 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"8e7df964db97\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:e05b95f7a0b4646edb4d0141c812685fd85d1e994e436c29899d3e613b81a843\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"bash\",\"/toolVersions.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"79dc67c572a0552fd71663a60f54df50d1541d645c2fac1cc3d861f330ebd47c\",\"container_config\":{\"Hostname\":\"8e7df964db97\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT [\\\"bash\\\" \\\"/toolVersions.sh\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:e05b95f7a0b4646edb4d0141c812685fd85d1e994e436c29899d3e613b81a843\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"bash\",\"/toolVersions.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-07-27T14:59:26.081253286Z\",\"docker_version\":\"1.11.2\",\"id\":\"568599983b49be1411e2a855c633e61bf7888135d5085ec5665956525653a41b\",\"os\":\"linux\",\"parent\":\"c776e62dde4682abbcbaf87b85ed7f46e1ce31180f52a4fca9c722b1c0f13653\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c776e62dde4682abbcbaf87b85ed7f46e1ce31180f52a4fca9c722b1c0f13653\",\"parent\":\"b7a21836461b163606d0c4dfa84120393e583595db7a28a8405cf4a945a3963a\",\"created\":\"2016-07-27T14:59:21.184432566Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /toolVersions.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b7a21836461b163606d0c4dfa84120393e583595db7a28a8405cf4a945a3963a\",\"parent\":\"66cd6d7a8744ff007d269f6b003b6b416e6b34329e1f0b6617ca2d83b5f8b0db\",\"created\":\"2016-07-27T14:59:16.024347948Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:24cac71f5a31ff6733c3e61fca3fa8e2aefb7187f0d27f425be05d430bee6820 in /\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"66cd6d7a8744ff007d269f6b003b6b416e6b34329e1f0b6617ca2d83b5f8b0db\",\"parent\":\"3bf938f50325ce1f8b0a50e06ebcce6a5842fa1f5b796808bcd6b7f5a7f1072f\",\"created\":\"2016-07-27T14:59:09.968189061Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -y update \\u0026\\u0026 apt-get install -y \\t\\tant \\t\\tbuild-essential \\t\\tcmake \\t\\tdoxygen \\t\\tdefault-jdk \\t\\tfiglet \\t\\tmaven \\t\\tgit-core \\t\\tpython-dev \\t\\tpython-numpy \\t\\tpython-tk \\t\\tpython3-dev \\t\\tpython3-numpy \\t\\tpython3-tk  \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3bf938f50325ce1f8b0a50e06ebcce6a5842fa1f5b796808bcd6b7f5a7f1072f\",\"parent\":\"eba9b2146c5e4234406143fb59d94a1fb10f04ac9de50b6d985dd744339b446f\",\"created\":\"2016-07-22T15:19:49.014400707Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eba9b2146c5e4234406143fb59d94a1fb10f04ac9de50b6d985dd744339b446f\",\"parent\":\"00cc39d7b05c987d9bb48ebfe393fdd5e391c116ab6ac6cbfae4c53e07667eb6\",\"created\":\"2016-07-22T15:19:48.36410928Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"00cc39d7b05c987d9bb48ebfe393fdd5e391c116ab6ac6cbfae4c53e07667eb6\",\"parent\":\"6058f090c40366de1b001b5cd0217f963264bffe630a7226c88a9e636d3f9cd6\",\"created\":\"2016-07-22T15:19:46.638152178Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6058f090c40366de1b001b5cd0217f963264bffe630a7226c88a9e636d3f9cd6\",\"parent\":\"cf8874df35a95fe4a135e47ba9741ae3da4f7adb038e27dbf28acf7a46e0d677\",\"created\":\"2016-07-22T15:19:44.990573482Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cf8874df35a95fe4a135e47ba9741ae3da4f7adb038e27dbf28acf7a46e0d677\",\"created\":\"2016-07-22T15:19:43.005000854Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:82c8008af11d2eb33438f6fc768606e7e2468b7a87e09af447c57fb7ba689fbd in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:df2a3e4c7c0d11cdc6cd140b7e0c4dcfcd84c5e1d32d690eff2557c078afc441"
+            },
+            {
+                "blobSum": "sha256:3ffdae8ff41d343bebecd1f2983c1df37417b012a97e159e8af98ac2cad66a10"
+            },
+            {
+                "blobSum": "sha256:03628f6dac5c20b400f23823ff3e2f297f3db5a8d7433d2e1c9d3af235b84239"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6450d7bf258fabcb8ae17736096f28b89d010e3134091051cc5a54340d8414fd"
+            },
+            {
+                "blobSum": "sha256:f72f46e336180483da93a71be9411ea0c72385c0acb5d9fd68e62ce307e1b70d"
+            },
+            {
+                "blobSum": "sha256:19758b3f895381f0b57c47b3968df75c37a94f92557233308c35e01408ccaa84"
+            },
+            {
+                "blobSum": "sha256:e603d74d09dbf451a844b3332c225ab9092293d5de8d159a67551be15438e667"
+            }
+        ],
+        "name": "neuromancernet/docker-auto-devbox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjcxMjQsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowOTo1M1oifQ",
+                "signature": "TuoE5C0c8z_cd-eXMfUmwI-iDJG2fxcdu5_y4eQXb5rkuPgffeDai15YPd9T1NDjeOHrsbr7UO4Wo7vz8Fr0mg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"8e7df964db97\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:e05b95f7a0b4646edb4d0141c812685fd85d1e994e436c29899d3e613b81a843\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"bash\",\"/toolVersions.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"79dc67c572a0552fd71663a60f54df50d1541d645c2fac1cc3d861f330ebd47c\",\"container_config\":{\"Hostname\":\"8e7df964db97\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ENTRYPOINT [\\\"bash\\\" \\\"/toolVersions.sh\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:e05b95f7a0b4646edb4d0141c812685fd85d1e994e436c29899d3e613b81a843\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"bash\",\"/toolVersions.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-07-27T14:59:26.081253286Z\",\"docker_version\":\"1.11.2\",\"id\":\"568599983b49be1411e2a855c633e61bf7888135d5085ec5665956525653a41b\",\"os\":\"linux\",\"parent\":\"c776e62dde4682abbcbaf87b85ed7f46e1ce31180f52a4fca9c722b1c0f13653\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c776e62dde4682abbcbaf87b85ed7f46e1ce31180f52a4fca9c722b1c0f13653\",\"parent\":\"b7a21836461b163606d0c4dfa84120393e583595db7a28a8405cf4a945a3963a\",\"created\":\"2016-07-27T14:59:21.184432566Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /toolVersions.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b7a21836461b163606d0c4dfa84120393e583595db7a28a8405cf4a945a3963a\",\"parent\":\"66cd6d7a8744ff007d269f6b003b6b416e6b34329e1f0b6617ca2d83b5f8b0db\",\"created\":\"2016-07-27T14:59:16.024347948Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:24cac71f5a31ff6733c3e61fca3fa8e2aefb7187f0d27f425be05d430bee6820 in /\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"66cd6d7a8744ff007d269f6b003b6b416e6b34329e1f0b6617ca2d83b5f8b0db\",\"parent\":\"3bf938f50325ce1f8b0a50e06ebcce6a5842fa1f5b796808bcd6b7f5a7f1072f\",\"created\":\"2016-07-27T14:59:09.968189061Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -y update \\u0026\\u0026 apt-get install -y \\t\\tant \\t\\tbuild-essential \\t\\tcmake \\t\\tdoxygen \\t\\tdefault-jdk \\t\\tfiglet \\t\\tmaven \\t\\tgit-core \\t\\tpython-dev \\t\\tpython-numpy \\t\\tpython-tk \\t\\tpython3-dev \\t\\tpython3-numpy \\t\\tpython3-tk  \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3bf938f50325ce1f8b0a50e06ebcce6a5842fa1f5b796808bcd6b7f5a7f1072f\",\"parent\":\"eba9b2146c5e4234406143fb59d94a1fb10f04ac9de50b6d985dd744339b446f\",\"created\":\"2016-07-22T15:19:49.014400707Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eba9b2146c5e4234406143fb59d94a1fb10f04ac9de50b6d985dd744339b446f\",\"parent\":\"00cc39d7b05c987d9bb48ebfe393fdd5e391c116ab6ac6cbfae4c53e07667eb6\",\"created\":\"2016-07-22T15:19:48.36410928Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"00cc39d7b05c987d9bb48ebfe393fdd5e391c116ab6ac6cbfae4c53e07667eb6\",\"parent\":\"6058f090c40366de1b001b5cd0217f963264bffe630a7226c88a9e636d3f9cd6\",\"created\":\"2016-07-22T15:19:46.638152178Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6058f090c40366de1b001b5cd0217f963264bffe630a7226c88a9e636d3f9cd6\",\"parent\":\"cf8874df35a95fe4a135e47ba9741ae3da4f7adb038e27dbf28acf7a46e0d677\",\"created\":\"2016-07-22T15:19:44.990573482Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cf8874df35a95fe4a135e47ba9741ae3da4f7adb038e27dbf28acf7a46e0d677\",\"created\":\"2016-07-22T15:19:43.005000854Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:82c8008af11d2eb33438f6fc768606e7e2468b7a87e09af447c57fb7ba689fbd in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:df2a3e4c7c0d11cdc6cd140b7e0c4dcfcd84c5e1d32d690eff2557c078afc441"
+            },
+            {
+                "blobSum": "sha256:3ffdae8ff41d343bebecd1f2983c1df37417b012a97e159e8af98ac2cad66a10"
+            },
+            {
+                "blobSum": "sha256:03628f6dac5c20b400f23823ff3e2f297f3db5a8d7433d2e1c9d3af235b84239"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6450d7bf258fabcb8ae17736096f28b89d010e3134091051cc5a54340d8414fd"
+            },
+            {
+                "blobSum": "sha256:f72f46e336180483da93a71be9411ea0c72385c0acb5d9fd68e62ce307e1b70d"
+            },
+            {
+                "blobSum": "sha256:19758b3f895381f0b57c47b3968df75c37a94f92557233308c35e01408ccaa84"
+            },
+            {
+                "blobSum": "sha256:e603d74d09dbf451a844b3332c225ab9092293d5de8d159a67551be15438e667"
+            }
+        ],
+        "name": "neuromancernet/docker-auto-devbox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjcxMjQsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowOTo1NFoifQ",
+                "signature": "seaE84stQWNE3uBPMvh3MzUrOMeJELixsStWJHKKPMBJW05OlV5pdfbsJftgNk8AJRTwkdL02MdE2ZsnyNy38w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Ywqms4dzRiWoEftnMhQw2RUF7BRjMEQRl8G6TVKxnPw",
+                        "kid": "YB3Z:5N6P:UQRN:ZMMF:HCA5:PDTK:CIMC:EICQ:XPPS:MSTV:DRYF:BUDS",
+                        "x": "DpHXmJ9gMBPYAoSPcWH3CgROs2NQa4FUTnBbl7ITgUw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

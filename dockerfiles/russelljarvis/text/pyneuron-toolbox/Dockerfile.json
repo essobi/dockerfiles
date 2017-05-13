@@ -1,0 +1,762 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"52d6286dd6a2\",\"Domainname\":\"\",\"User\":\"docker\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/docker/neuron/nrn-7.4/x86_64/bin:/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"HOME=/home/docker\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:cc56c12c40e1a0d3c9360b4533f17eda86b1f0866af160af31d7f9d521c8d354\",\"Volumes\":null,\"WorkingDir\":\"/home/docker\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"19803d72aeff855bbc2db45c567e0d2728ee1c20cb68ce69c4cc2d3289af4b06\",\"container_config\":{\"Hostname\":\"52d6286dd6a2\",\"Domainname\":\"\",\"User\":\"docker\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/docker/neuron/nrn-7.4/x86_64/bin:/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"HOME=/home/docker\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"WORKDIR /home/docker/\"],\"ArgsEscaped\":true,\"Image\":\"sha256:cc56c12c40e1a0d3c9360b4533f17eda86b1f0866af160af31d7f9d521c8d354\",\"Volumes\":null,\"WorkingDir\":\"/home/docker\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-29T03:56:56.68735603Z\",\"docker_version\":\"1.12.0\",\"id\":\"0512f1f400928482591da7242946f94ea9e22c5e6f97ac72c96576ac3f81542d\",\"os\":\"linux\",\"parent\":\"72dd4a8aa7bf4640086ac13fdaf6865b5e7e3f1063d38a1b8a7f15a3102e1997\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72dd4a8aa7bf4640086ac13fdaf6865b5e7e3f1063d38a1b8a7f15a3102e1997\",\"parent\":\"2fdabda60f6425bf8db6c23b1d0c42ba6e36028ac2b0176f8d82c9eb000f1b7f\",\"created\":\"2016-09-29T03:56:32.644309085Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo chown -R docker $HOME\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2fdabda60f6425bf8db6c23b1d0c42ba6e36028ac2b0176f8d82c9eb000f1b7f\",\"parent\":\"3aade4056f5b5f0bc7abb2c58a665fecb17383428977936294a5f389e5c8770b\",\"created\":\"2016-09-29T03:55:22.623593225Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3aade4056f5b5f0bc7abb2c58a665fecb17383428977936294a5f389e5c8770b\",\"parent\":\"37998e7d08792c107530bcf468f4644a7abe47667f8a327422b921ab96762c26\",\"created\":\"2016-09-29T03:54:49.121528786Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/neuronunit\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37998e7d08792c107530bcf468f4644a7abe47667f8a327422b921ab96762c26\",\"parent\":\"b0b762141df0545de58248b224f8a33ca2c633b78e00059d3cbd48ba036127ea\",\"created\":\"2016-09-29T03:54:27.03379381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/scidash/neuronunit -b dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0b762141df0545de58248b224f8a33ca2c633b78e00059d3cbd48ba036127ea\",\"parent\":\"321d40f02f8cb2756584b11ff7776ec7a2a51770a5167fe2a553026b7e863835\",\"created\":\"2016-09-29T03:54:00.235349445Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"321d40f02f8cb2756584b11ff7776ec7a2a51770a5167fe2a553026b7e863835\",\"parent\":\"53f1d3b0bfe4fd56c70af10d6633d0165174180d7c63be506b75ab1ec20cb000\",\"created\":\"2016-09-29T03:53:37.534665639Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"53f1d3b0bfe4fd56c70af10d6633d0165174180d7c63be506b75ab1ec20cb000\",\"parent\":\"009a2b0ab0f2b5575819530a8d110eb1cb774b8ab8a0034034bf2bf8d695b252\",\"created\":\"2016-09-29T03:45:23.457139981Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/sciunit\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"009a2b0ab0f2b5575819530a8d110eb1cb774b8ab8a0034034bf2bf8d695b252\",\"parent\":\"193fbf0ef07891d73b95173aed178481269fc1801b60aecb8b1cd5eb2cd94fa6\",\"created\":\"2016-09-29T03:45:01.360128363Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/scidash/sciunit -b dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"193fbf0ef07891d73b95173aed178481269fc1801b60aecb8b1cd5eb2cd94fa6\",\"parent\":\"cd5d7e452bff3ce6273461a8359a9eb2078ec427f40ff360942af11ea7048551\",\"created\":\"2016-09-29T03:44:34.891630767Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd5d7e452bff3ce6273461a8359a9eb2078ec427f40ff360942af11ea7048551\",\"parent\":\"849a72cb0658111083a9b10c2c794ad2fa8d8eb1b58f8b530d357e4e6d8f78db\",\"created\":\"2016-09-29T03:44:09.559618578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python -c \\\"import entrypoints\\\"\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"849a72cb0658111083a9b10c2c794ad2fa8d8eb1b58f8b530d357e4e6d8f78db\",\"parent\":\"a76f40f1b92a007faaeec5f259c4dfd2feb660c3948e90ec10a83a2cb1e49714\",\"created\":\"2016-09-29T03:43:43.658057209Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a76f40f1b92a007faaeec5f259c4dfd2feb660c3948e90ec10a83a2cb1e49714\",\"parent\":\"dcf185cfc162d7fe30eadd7d667a09a29c42cc491b22beef5b55a0b7ae72800d\",\"created\":\"2016-09-29T03:43:20.471028617Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y jupyter\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dcf185cfc162d7fe30eadd7d667a09a29c42cc491b22beef5b55a0b7ae72800d\",\"parent\":\"ed1f8fc79a61538e5aa25685eebbbbcd57a4e174456b871f9cdc233d00cf98a2\",\"created\":\"2016-09-29T03:41:28.930265156Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo apt-get install -y gcc\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed1f8fc79a61538e5aa25685eebbbbcd57a4e174456b871f9cdc233d00cf98a2\",\"parent\":\"d7af44ef736b66273478ff8e63cba75a017d426c6f861c19d41c41f9dbbc3f26\",\"created\":\"2016-09-29T03:41:11.18842768Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y libxml2 libxslt lxml\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d7af44ef736b66273478ff8e63cba75a017d426c6f861c19d41c41f9dbbc3f26\",\"parent\":\"0d47c9d64510e22f0beeea38bf232286e8fceb4c56704fdb74c96e31de0e3c94\",\"created\":\"2016-09-29T03:40:39.987014195Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /opt/conda/bin/python -c \\\"import tempita\\\"\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0d47c9d64510e22f0beeea38bf232286e8fceb4c56704fdb74c96e31de0e3c94\",\"parent\":\"004d299526693eea07ddf4120fbf2446a39e7dd48ffbea18ecfaafdc1f97d533\",\"created\":\"2016-09-29T03:40:22.304464621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y tempita cython\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"004d299526693eea07ddf4120fbf2446a39e7dd48ffbea18ecfaafdc1f97d533\",\"parent\":\"3673c4c90f03233a8e570fde4c64de04ba9b10f8c40f82879c17ff90f92e080c\",\"created\":\"2016-09-29T03:39:52.825460973Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3673c4c90f03233a8e570fde4c64de04ba9b10f8c40f82879c17ff90f92e080c\",\"parent\":\"e94e470ef25b6acfd23359fe460f22072f044257da23890afac50846d1219988\",\"created\":\"2016-09-29T03:39:35.859943181Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e94e470ef25b6acfd23359fe460f22072f044257da23890afac50846d1219988\",\"parent\":\"b1aaadb640e4f866c5efa36704987b9c65c73adce683b73cfb75e0ed800c9d13\",\"created\":\"2016-09-29T03:39:08.246648786Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/rickpy\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1aaadb640e4f866c5efa36704987b9c65c73adce683b73cfb75e0ed800c9d13\",\"parent\":\"b01d56a0d7ce2e3a57849a1709c0e4709b7195c53c34dc65ec6be115f813ce28\",\"created\":\"2016-09-29T03:38:50.999455528Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/rgerkin/rickpy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b01d56a0d7ce2e3a57849a1709c0e4709b7195c53c34dc65ec6be115f813ce28\",\"parent\":\"d7eba905cd08bf86992a4a0c610188166746a29e93e9464c0eb1a165fa108296\",\"created\":\"2016-09-29T03:38:29.966030936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d7eba905cd08bf86992a4a0c610188166746a29e93e9464c0eb1a165fa108296\",\"parent\":\"7134aa7cd3f6ba8ea897d5777cf6e8b72b66a1702449228a08374af7598b5d8f\",\"created\":\"2016-09-29T03:38:11.976720512Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python getNeuroML.py\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7134aa7cd3f6ba8ea897d5777cf6e8b72b66a1702449228a08374af7598b5d8f\",\"parent\":\"04f7094fe44110ee69438aa56d45a83988d64bba4eff6edc514fa5a266f8eb23\",\"created\":\"2016-09-29T03:30:02.527401998Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/jNeuroML\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"04f7094fe44110ee69438aa56d45a83988d64bba4eff6edc514fa5a266f8eb23\",\"parent\":\"e46ec887e5a081bd0370bb95bee4ca400316f45f49a095f12449f2d833790be5\",\"created\":\"2016-09-29T03:29:47.366005574Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/russelljjarvis/jNeuroML.git\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e46ec887e5a081bd0370bb95bee4ca400316f45f49a095f12449f2d833790be5\",\"parent\":\"93a99811f4430166e0d8fd7ece6fa1956d94c5b74044053e781e28822ee3454d\",\"created\":\"2016-09-29T03:29:31.603493843Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93a99811f4430166e0d8fd7ece6fa1956d94c5b74044053e781e28822ee3454d\",\"parent\":\"da0628f266d8de8f55e06437305ab678a972d741f3081a90cb439e5d40abf6f2\",\"created\":\"2016-09-29T03:29:14.552500185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo $PATH\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da0628f266d8de8f55e06437305ab678a972d741f3081a90cb439e5d40abf6f2\",\"parent\":\"ec623fa193bce6b41a2df451c545315fc1da05de3efdde1e9cd9005c0759de6b\",\"created\":\"2016-09-29T03:28:57.652119185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/home/docker/neuron/nrn-7.4/x86_64/bin:/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec623fa193bce6b41a2df451c545315fc1da05de3efdde1e9cd9005c0759de6b\",\"parent\":\"1a3247495d99ae720ad1afd0f7994df91567aebaaa7c3f857c377c76b1f5836f\",\"created\":\"2016-09-29T03:28:42.664961036Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a3247495d99ae720ad1afd0f7994df91567aebaaa7c3f857c377c76b1f5836f\",\"parent\":\"e095c50284ef02bf9eb72b63b0081d49bde2dbc1aec889a1f8d99fdfe29840d1\",\"created\":\"2016-09-29T03:28:24.578951911Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/neuron/nrn-7.4/src/nrnpython\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e095c50284ef02bf9eb72b63b0081d49bde2dbc1aec889a1f8d99fdfe29840d1\",\"parent\":\"4d0f550f98a2effc23862df1fc76c789c88ef5c74b67ab465b3c3038c5b06b32\",\"created\":\"2016-09-29T03:28:10.39808302Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo make all \\u0026\\u0026    sudo make install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d0f550f98a2effc23862df1fc76c789c88ef5c74b67ab465b3c3038c5b06b32\",\"parent\":\"538ba9a12e7d559824cec4a14ea759a5114ccb4273ee2eb73f3ac85687f184f9\",\"created\":\"2016-09-29T03:21:34.889378865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo ./configure --prefix=`pwd` --without-iv --with-nrnpython=/opt/conda/bin/python --with-paranrn=/usr/bin/mpiexec\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"538ba9a12e7d559824cec4a14ea759a5114ccb4273ee2eb73f3ac85687f184f9\",\"parent\":\"edf01cffd202e10a395e471dd15c179cec23db3b04a79e50dde53d2e8dd39e79\",\"created\":\"2016-09-29T03:20:55.441244442Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/neuron/nrn-7.4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"edf01cffd202e10a395e471dd15c179cec23db3b04a79e50dde53d2e8dd39e79\",\"parent\":\"ae0538dcdb92d0cd6a56da707d11d02aa8bec88d502640b45ebbea156e529654\",\"created\":\"2016-09-29T03:20:41.398970606Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo wget http://www.neuron.yale.edu/ftp/neuron/versions/v7.4/nrn-7.4.tar.gz \\u0026\\u0026   sudo tar -xzf nrn-7.4.tar.gz \\u0026\\u0026   sudo rm nrn-7.4.tar.gz\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae0538dcdb92d0cd6a56da707d11d02aa8bec88d502640b45ebbea156e529654\",\"parent\":\"c80863a3df91c1fadb0be731c9b6a3ff44383cb733e1532250bd9624f077315c\",\"created\":\"2016-09-29T03:20:24.085726201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/neuron\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c80863a3df91c1fadb0be731c9b6a3ff44383cb733e1532250bd9624f077315c\",\"parent\":\"b4363677214df89392413720a463d58a529133212ba04e22c3028733d0d9b7ac\",\"created\":\"2016-09-29T03:20:10.406045037Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y mpi4py ipython\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4363677214df89392413720a463d58a529133212ba04e22c3028733d0d9b7ac\",\"parent\":\"b3359c86cb2cd45b3e225f24c5ed380629e09671bc55fb13e159221d9cab003d\",\"created\":\"2016-09-29T03:19:40.365504243Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3359c86cb2cd45b3e225f24c5ed380629e09671bc55fb13e159221d9cab003d\",\"parent\":\"ec234bd59c870c0f8bdfb76a8e3e541565c6d05d11b17e0ef08e04a94190175e\",\"created\":\"2016-09-29T03:19:27.14711508Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo ./configure \\u0026\\u0026   sudo make all \\u0026\\u0026   sudo make install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec234bd59c870c0f8bdfb76a8e3e541565c6d05d11b17e0ef08e04a94190175e\",\"parent\":\"87bac1fc99e35026420584183a077ae3045ace86859efb879f1e3274329e8a1e\",\"created\":\"2016-09-29T03:01:09.684355359Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/openmpi-2.0.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87bac1fc99e35026420584183a077ae3045ace86859efb879f1e3274329e8a1e\",\"parent\":\"42c86563452fae884b02e3b3beaf11c79e8bf9fe24801d81f1838e0d9ed487be\",\"created\":\"2016-09-29T03:00:57.296995902Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo wget https://www.open-mpi.org/software/ompi/v2.0/downloads/openmpi-2.0.0.tar.gz \\u0026\\u0026    sudo tar -xzf openmpi-2.0.0.tar.gz \\u0026\\u0026    sudo rm openmpi-2.0.0.tar.gz\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"42c86563452fae884b02e3b3beaf11c79e8bf9fe24801d81f1838e0d9ed487be\",\"parent\":\"90aa39938aa4cc153fb68a06de1643e3ea477d42ed58010859a15efc7b411cdd\",\"created\":\"2016-09-29T03:00:35.130248156Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90aa39938aa4cc153fb68a06de1643e3ea477d42ed58010859a15efc7b411cdd\",\"parent\":\"4d0fa46226b0ea41c6b3875d70f3a1df3655d6d389839d2f6184ac11364d73d7\",\"created\":\"2016-09-29T03:00:24.754357601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install scipy numpy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d0fa46226b0ea41c6b3875d70f3a1df3655d6d389839d2f6184ac11364d73d7\",\"parent\":\"8dd972930a9952423e2dd4f03837f21ab25e5297df56f71b42d094fb4685ce8d\",\"created\":\"2016-09-29T02:58:22.028888086Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8dd972930a9952423e2dd4f03837f21ab25e5297df56f71b42d094fb4685ce8d\",\"parent\":\"90a6499c5144482c881390f021baf03eb6e262a0ece8be6275b7ab3f2a79ce54\",\"created\":\"2016-09-29T02:58:10.937460556Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HOME=/home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90a6499c5144482c881390f021baf03eb6e262a0ece8be6275b7ab3f2a79ce54\",\"parent\":\"c2062700d1aa6f27d93e309a6fed9800f828c84a08be1541403ebdb39e4ebad2\",\"created\":\"2016-09-29T02:57:59.692803974Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R docker:docker /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c2062700d1aa6f27d93e309a6fed9800f828c84a08be1541403ebdb39e4ebad2\",\"parent\":\"ea12fb01cc1ec444600892ed02fb7099d5638971bd83d24976d42845a5921666\",\"created\":\"2016-09-29T02:57:48.237451907Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea12fb01cc1ec444600892ed02fb7099d5638971bd83d24976d42845a5921666\",\"parent\":\"d6b6824d6d1e6b5b9255f59a6243c4f1aa59a5ad2fa3e57457103e44bb135274\",\"created\":\"2016-09-29T02:57:36.688553125Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [docker]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d6b6824d6d1e6b5b9255f59a6243c4f1aa59a5ad2fa3e57457103e44bb135274\",\"parent\":\"a0419bc5b36464a71c3ffa09c71d572a71d217d14a2c9a64ef97bc109e54bcc8\",\"created\":\"2016-09-29T02:57:27.073548959Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"docker ALL=NOPASSWD: ALL\\\" \\u003e\\u003e /etc/sudoers\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0419bc5b36464a71c3ffa09c71d572a71d217d14a2c9a64ef97bc109e54bcc8\",\"parent\":\"0268abc3555572548551a63389c7e3c1f9ec4e67a372b7f89121221df8306a44\",\"created\":\"2016-09-29T02:57:17.383759458Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update       \\u0026\\u0026 apt-get install -y sudo       \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0268abc3555572548551a63389c7e3c1f9ec4e67a372b7f89121221df8306a44\",\"parent\":\"c7d8db2019653bc7918ffc79914b146e3566c6b2ec4bc066f52998dec3d87fc8\",\"created\":\"2016-09-29T02:56:58.490868128Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c7d8db2019653bc7918ffc79914b146e3566c6b2ec4bc066f52998dec3d87fc8\",\"parent\":\"ae8f1bfb6d0989c309c23d5180f368b80131b6eb79e257d826e2eba511b92872\",\"created\":\"2016-09-29T02:56:49.138257769Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -ms /bin/bash docker\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae8f1bfb6d0989c309c23d5180f368b80131b6eb79e257d826e2eba511b92872\",\"parent\":\"5ee49eeb1f03ac3f45bd65deb27e322e7e3437bb0fa50008b61a90d8c1dc9c43\",\"created\":\"2016-09-29T02:56:38.956923614Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O miniconda.sh -O ~/miniconda.sh \\u0026\\u0026     /bin/bash ~/miniconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/miniconda.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5ee49eeb1f03ac3f45bd65deb27e322e7e3437bb0fa50008b61a90d8c1dc9c43\",\"parent\":\"950945f4d9f923de0eee0b01a250472c35606d2568f16889b71af657f7faf52d\",\"created\":\"2016-09-29T02:56:06.098005297Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git gcc g++ build-essential     libglib2.0-0 libxext6 libsm6 libxrender1     libncurses-dev openmpi-bin openmpi-doc libopenmpi-dev     emacs vim     default-jre default-jdk maven xterm\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"950945f4d9f923de0eee0b01a250472c35606d2568f16889b71af657f7faf52d\",\"parent\":\"dc89262397648968db9bda5cabacaadf72dd0a6fbbc5849a600bef184032f78a\",\"created\":\"2016-09-26T21:26:23.909853931Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dc89262397648968db9bda5cabacaadf72dd0a6fbbc5849a600bef184032f78a\",\"parent\":\"deb1271c58c2ab1b787b44b7f0f9c135e23e29c534643eefb5b5f1d9997c35b1\",\"created\":\"2016-09-26T21:26:23.535369955Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"deb1271c58c2ab1b787b44b7f0f9c135e23e29c534643eefb5b5f1d9997c35b1\",\"parent\":\"becb37d9bcba8a0d1380659b1b75ce1952421cf8cd9a894fdc91a6343e2d61b8\",\"created\":\"2016-09-26T21:26:22.58209293Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"becb37d9bcba8a0d1380659b1b75ce1952421cf8cd9a894fdc91a6343e2d61b8\",\"parent\":\"3655e01645ac2192aae087ce0505d936d955aec0731fa8d5a309f25fb2ce22a7\",\"created\":\"2016-09-26T21:26:21.654314265Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3655e01645ac2192aae087ce0505d936d955aec0731fa8d5a309f25fb2ce22a7\",\"parent\":\"31711d35995a40a4ae65f16286b3a302af9803a61856525634a917ae7c52584e\",\"created\":\"2016-09-26T21:26:20.734562669Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31711d35995a40a4ae65f16286b3a302af9803a61856525634a917ae7c52584e\",\"created\":\"2016-09-26T21:26:19.579628812Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:cd937b840fff16e04e1f59d56f4424d08544b0bb8ac30d9804d25e28fb15ded3 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7807e3f08e6ee62b166bdd8fd17e523ae0e1511d3a3e498f0d6246b3788c623e"
+            },
+            {
+                "blobSum": "sha256:23cc360cc3a0ec73e02e51a9ed6c850a770fdc1d5f20a28b144127b84d054196"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6ae68d32e921351a54e83ef5a618ef255c709f9cbeeec8b3199d936b71c91182"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5e12b3d583d19814e412a5f955f1d1ca508f3b9d705978953b6318f555c83940"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c422a816caf116450114e18e4ea41829a066c4c929a1a5a83cb40b33b54015d8"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7d51ee120770c6fb02976f78962a1b60be2c77d78c1fb02fd16707faa63eef44"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d92983854ec35b55ccc5fccc34ccf43dc753916ccf2bd5fea5ad5b64e2b7b8cb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:76b18c56253e2b08a3ce5d4ced8e0ec25db47710af1cdf667ac5c6da76639ccc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8c000d23ade298220ec160f337f3c8f3629227e2dfecfb2378b55bda0d3d4d93"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7993c8dd08eb32cf30f554603a94f424efc8b4b34f0481857fac5ea51a2b41e1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1c14d5f471b0583705fd795efef6bd44aae24d5fdfdf35359a0ce7f637ce05ab"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:77a6ed68cce6ac0dce6c2bdc69035c5c20aa8f1b9bafb7819a3a98c4293022ea"
+            },
+            {
+                "blobSum": "sha256:00740a4ffbe20dce3225b3b04a4038b482590c293fd5c4a9f619dd069faae696"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fd60ad2822f32f6ad9de13877ac069995c172b74536b3ba0a1ca1829df57cbe9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8571138a380cefcbaca1fdac7624d8dd868be478e54db803fa89cc5b8416bdb5"
+            },
+            {
+                "blobSum": "sha256:22deb05d57b103a8fef470ef42512581e03d0eca0c1fb765d986f6d604e0001e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:53173be4800315cf58883bd1a7d5bf756c05f597630af60db485030a3d5cae51"
+            },
+            {
+                "blobSum": "sha256:9f980ee2673d18b53796cd3282f31b70eb2b4c03c9d6fd7c3b327f8dc385ec0c"
+            },
+            {
+                "blobSum": "sha256:230ee5efdc1cb126f8553771d3354cd6d74e260f990b9588f11e8c41ba073812"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:85db8c70bdc0b73a03dcbdd035377677abcd7bba1eae1e12b6977f66d560b859"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d15e093f8e65d1ff62ecc82c2ec2bc843d230528d8afb73749f3bc477b9bc003"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:970069f124277abdaf1d7d8cd341329079b9b0fe62c6d302bb2b4366f817521b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2627cc2741d08c639bfa2976a688d568fbc9a06d4cd46e5e59008cb7f2319933"
+            },
+            {
+                "blobSum": "sha256:fddd825e92516e6b79f41b09a4b3745b5b59906d0cbbbdff232126813bb3af27"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:458893be026f5db85c8c3a9b330731294a64dc21834acd32606db664ad2d0aa2"
+            },
+            {
+                "blobSum": "sha256:eb2d0889350bd20b02e5af648cf1486760c685552a4910051b389748b923a391"
+            },
+            {
+                "blobSum": "sha256:9efca0bf0f3b213eb6b70d085ec86b72238593f051e3e3ddf7a584869a883ae9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:9f03ce1741bf604c84258a4c4f1dc98cc35aebdd76c14ed4ffeb6bc3584c1f9b"
+            },
+            {
+                "blobSum": "sha256:61e032b8f2cb04e7a2d4efa83eb6837c6b92bd1553cbe46cffa76121091d8301"
+            },
+            {
+                "blobSum": "sha256:50de990d7957c304603ac78d094f3acf634c1261a3a5a89229fa81d18cdb7945"
+            },
+            {
+                "blobSum": "sha256:3a80a22fea63572c387efb1943e6095587f9ea8343af129934d4c81e593374a4"
+            },
+            {
+                "blobSum": "sha256:cad964aed91d2ace084302c587dfc502b5869c5b1d15a1f0e458a45e3cadfaa6"
+            }
+        ],
+        "name": "russelljarvis/pyneuron-toolbox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMxMzkzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDk6MjVaIn0",
+                "signature": "c4t3Jea_-MPFcO4RqCJR-QfRrbQwWIe5pfp5BZCLB77KjHnfkkGEny7p007xdKm7H_0nqBCAMKRWyFfLXCznWw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "YPNa0BA6vgnUzOgx2P9MWJ0jQ77fpXA7RN52pn6DBOA",
+                        "kid": "DL3U:CHTF:ZPWK:6A34:T5F5:ZYBX:2IGR:UHYM:PAYU:XBXZ:BI2S:CKSV",
+                        "x": "qO3uWUY_RxHMF8RzvFhN8yq3jiuVPTcSy-EXEJr_W0M"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"52d6286dd6a2\",\"Domainname\":\"\",\"User\":\"docker\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/docker/neuron/nrn-7.4/x86_64/bin:/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"HOME=/home/docker\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:cc56c12c40e1a0d3c9360b4533f17eda86b1f0866af160af31d7f9d521c8d354\",\"Volumes\":null,\"WorkingDir\":\"/home/docker\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"19803d72aeff855bbc2db45c567e0d2728ee1c20cb68ce69c4cc2d3289af4b06\",\"container_config\":{\"Hostname\":\"52d6286dd6a2\",\"Domainname\":\"\",\"User\":\"docker\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/docker/neuron/nrn-7.4/x86_64/bin:/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"HOME=/home/docker\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"WORKDIR /home/docker/\"],\"ArgsEscaped\":true,\"Image\":\"sha256:cc56c12c40e1a0d3c9360b4533f17eda86b1f0866af160af31d7f9d521c8d354\",\"Volumes\":null,\"WorkingDir\":\"/home/docker\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-29T03:56:56.68735603Z\",\"docker_version\":\"1.12.0\",\"id\":\"0512f1f400928482591da7242946f94ea9e22c5e6f97ac72c96576ac3f81542d\",\"os\":\"linux\",\"parent\":\"72dd4a8aa7bf4640086ac13fdaf6865b5e7e3f1063d38a1b8a7f15a3102e1997\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72dd4a8aa7bf4640086ac13fdaf6865b5e7e3f1063d38a1b8a7f15a3102e1997\",\"parent\":\"2fdabda60f6425bf8db6c23b1d0c42ba6e36028ac2b0176f8d82c9eb000f1b7f\",\"created\":\"2016-09-29T03:56:32.644309085Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo chown -R docker $HOME\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2fdabda60f6425bf8db6c23b1d0c42ba6e36028ac2b0176f8d82c9eb000f1b7f\",\"parent\":\"3aade4056f5b5f0bc7abb2c58a665fecb17383428977936294a5f389e5c8770b\",\"created\":\"2016-09-29T03:55:22.623593225Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3aade4056f5b5f0bc7abb2c58a665fecb17383428977936294a5f389e5c8770b\",\"parent\":\"37998e7d08792c107530bcf468f4644a7abe47667f8a327422b921ab96762c26\",\"created\":\"2016-09-29T03:54:49.121528786Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/neuronunit\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37998e7d08792c107530bcf468f4644a7abe47667f8a327422b921ab96762c26\",\"parent\":\"b0b762141df0545de58248b224f8a33ca2c633b78e00059d3cbd48ba036127ea\",\"created\":\"2016-09-29T03:54:27.03379381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/scidash/neuronunit -b dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0b762141df0545de58248b224f8a33ca2c633b78e00059d3cbd48ba036127ea\",\"parent\":\"321d40f02f8cb2756584b11ff7776ec7a2a51770a5167fe2a553026b7e863835\",\"created\":\"2016-09-29T03:54:00.235349445Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"321d40f02f8cb2756584b11ff7776ec7a2a51770a5167fe2a553026b7e863835\",\"parent\":\"53f1d3b0bfe4fd56c70af10d6633d0165174180d7c63be506b75ab1ec20cb000\",\"created\":\"2016-09-29T03:53:37.534665639Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"53f1d3b0bfe4fd56c70af10d6633d0165174180d7c63be506b75ab1ec20cb000\",\"parent\":\"009a2b0ab0f2b5575819530a8d110eb1cb774b8ab8a0034034bf2bf8d695b252\",\"created\":\"2016-09-29T03:45:23.457139981Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/sciunit\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"009a2b0ab0f2b5575819530a8d110eb1cb774b8ab8a0034034bf2bf8d695b252\",\"parent\":\"193fbf0ef07891d73b95173aed178481269fc1801b60aecb8b1cd5eb2cd94fa6\",\"created\":\"2016-09-29T03:45:01.360128363Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/scidash/sciunit -b dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"193fbf0ef07891d73b95173aed178481269fc1801b60aecb8b1cd5eb2cd94fa6\",\"parent\":\"cd5d7e452bff3ce6273461a8359a9eb2078ec427f40ff360942af11ea7048551\",\"created\":\"2016-09-29T03:44:34.891630767Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd5d7e452bff3ce6273461a8359a9eb2078ec427f40ff360942af11ea7048551\",\"parent\":\"849a72cb0658111083a9b10c2c794ad2fa8d8eb1b58f8b530d357e4e6d8f78db\",\"created\":\"2016-09-29T03:44:09.559618578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python -c \\\"import entrypoints\\\"\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"849a72cb0658111083a9b10c2c794ad2fa8d8eb1b58f8b530d357e4e6d8f78db\",\"parent\":\"a76f40f1b92a007faaeec5f259c4dfd2feb660c3948e90ec10a83a2cb1e49714\",\"created\":\"2016-09-29T03:43:43.658057209Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a76f40f1b92a007faaeec5f259c4dfd2feb660c3948e90ec10a83a2cb1e49714\",\"parent\":\"dcf185cfc162d7fe30eadd7d667a09a29c42cc491b22beef5b55a0b7ae72800d\",\"created\":\"2016-09-29T03:43:20.471028617Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y jupyter\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dcf185cfc162d7fe30eadd7d667a09a29c42cc491b22beef5b55a0b7ae72800d\",\"parent\":\"ed1f8fc79a61538e5aa25685eebbbbcd57a4e174456b871f9cdc233d00cf98a2\",\"created\":\"2016-09-29T03:41:28.930265156Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo apt-get install -y gcc\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed1f8fc79a61538e5aa25685eebbbbcd57a4e174456b871f9cdc233d00cf98a2\",\"parent\":\"d7af44ef736b66273478ff8e63cba75a017d426c6f861c19d41c41f9dbbc3f26\",\"created\":\"2016-09-29T03:41:11.18842768Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y libxml2 libxslt lxml\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d7af44ef736b66273478ff8e63cba75a017d426c6f861c19d41c41f9dbbc3f26\",\"parent\":\"0d47c9d64510e22f0beeea38bf232286e8fceb4c56704fdb74c96e31de0e3c94\",\"created\":\"2016-09-29T03:40:39.987014195Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /opt/conda/bin/python -c \\\"import tempita\\\"\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0d47c9d64510e22f0beeea38bf232286e8fceb4c56704fdb74c96e31de0e3c94\",\"parent\":\"004d299526693eea07ddf4120fbf2446a39e7dd48ffbea18ecfaafdc1f97d533\",\"created\":\"2016-09-29T03:40:22.304464621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y tempita cython\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"004d299526693eea07ddf4120fbf2446a39e7dd48ffbea18ecfaafdc1f97d533\",\"parent\":\"3673c4c90f03233a8e570fde4c64de04ba9b10f8c40f82879c17ff90f92e080c\",\"created\":\"2016-09-29T03:39:52.825460973Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3673c4c90f03233a8e570fde4c64de04ba9b10f8c40f82879c17ff90f92e080c\",\"parent\":\"e94e470ef25b6acfd23359fe460f22072f044257da23890afac50846d1219988\",\"created\":\"2016-09-29T03:39:35.859943181Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e94e470ef25b6acfd23359fe460f22072f044257da23890afac50846d1219988\",\"parent\":\"b1aaadb640e4f866c5efa36704987b9c65c73adce683b73cfb75e0ed800c9d13\",\"created\":\"2016-09-29T03:39:08.246648786Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/rickpy\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1aaadb640e4f866c5efa36704987b9c65c73adce683b73cfb75e0ed800c9d13\",\"parent\":\"b01d56a0d7ce2e3a57849a1709c0e4709b7195c53c34dc65ec6be115f813ce28\",\"created\":\"2016-09-29T03:38:50.999455528Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/rgerkin/rickpy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b01d56a0d7ce2e3a57849a1709c0e4709b7195c53c34dc65ec6be115f813ce28\",\"parent\":\"d7eba905cd08bf86992a4a0c610188166746a29e93e9464c0eb1a165fa108296\",\"created\":\"2016-09-29T03:38:29.966030936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d7eba905cd08bf86992a4a0c610188166746a29e93e9464c0eb1a165fa108296\",\"parent\":\"7134aa7cd3f6ba8ea897d5777cf6e8b72b66a1702449228a08374af7598b5d8f\",\"created\":\"2016-09-29T03:38:11.976720512Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python getNeuroML.py\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7134aa7cd3f6ba8ea897d5777cf6e8b72b66a1702449228a08374af7598b5d8f\",\"parent\":\"04f7094fe44110ee69438aa56d45a83988d64bba4eff6edc514fa5a266f8eb23\",\"created\":\"2016-09-29T03:30:02.527401998Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git/jNeuroML\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"04f7094fe44110ee69438aa56d45a83988d64bba4eff6edc514fa5a266f8eb23\",\"parent\":\"e46ec887e5a081bd0370bb95bee4ca400316f45f49a095f12449f2d833790be5\",\"created\":\"2016-09-29T03:29:47.366005574Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo git clone https://github.com/russelljjarvis/jNeuroML.git\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e46ec887e5a081bd0370bb95bee4ca400316f45f49a095f12449f2d833790be5\",\"parent\":\"93a99811f4430166e0d8fd7ece6fa1956d94c5b74044053e781e28822ee3454d\",\"created\":\"2016-09-29T03:29:31.603493843Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/git\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93a99811f4430166e0d8fd7ece6fa1956d94c5b74044053e781e28822ee3454d\",\"parent\":\"da0628f266d8de8f55e06437305ab678a972d741f3081a90cb439e5d40abf6f2\",\"created\":\"2016-09-29T03:29:14.552500185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo $PATH\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da0628f266d8de8f55e06437305ab678a972d741f3081a90cb439e5d40abf6f2\",\"parent\":\"ec623fa193bce6b41a2df451c545315fc1da05de3efdde1e9cd9005c0759de6b\",\"created\":\"2016-09-29T03:28:57.652119185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/home/docker/neuron/nrn-7.4/x86_64/bin:/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec623fa193bce6b41a2df451c545315fc1da05de3efdde1e9cd9005c0759de6b\",\"parent\":\"1a3247495d99ae720ad1afd0f7994df91567aebaaa7c3f857c377c76b1f5836f\",\"created\":\"2016-09-29T03:28:42.664961036Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/python setup.py install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a3247495d99ae720ad1afd0f7994df91567aebaaa7c3f857c377c76b1f5836f\",\"parent\":\"e095c50284ef02bf9eb72b63b0081d49bde2dbc1aec889a1f8d99fdfe29840d1\",\"created\":\"2016-09-29T03:28:24.578951911Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/neuron/nrn-7.4/src/nrnpython\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e095c50284ef02bf9eb72b63b0081d49bde2dbc1aec889a1f8d99fdfe29840d1\",\"parent\":\"4d0f550f98a2effc23862df1fc76c789c88ef5c74b67ab465b3c3038c5b06b32\",\"created\":\"2016-09-29T03:28:10.39808302Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo make all \\u0026\\u0026    sudo make install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d0f550f98a2effc23862df1fc76c789c88ef5c74b67ab465b3c3038c5b06b32\",\"parent\":\"538ba9a12e7d559824cec4a14ea759a5114ccb4273ee2eb73f3ac85687f184f9\",\"created\":\"2016-09-29T03:21:34.889378865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo ./configure --prefix=`pwd` --without-iv --with-nrnpython=/opt/conda/bin/python --with-paranrn=/usr/bin/mpiexec\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"538ba9a12e7d559824cec4a14ea759a5114ccb4273ee2eb73f3ac85687f184f9\",\"parent\":\"edf01cffd202e10a395e471dd15c179cec23db3b04a79e50dde53d2e8dd39e79\",\"created\":\"2016-09-29T03:20:55.441244442Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/neuron/nrn-7.4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"edf01cffd202e10a395e471dd15c179cec23db3b04a79e50dde53d2e8dd39e79\",\"parent\":\"ae0538dcdb92d0cd6a56da707d11d02aa8bec88d502640b45ebbea156e529654\",\"created\":\"2016-09-29T03:20:41.398970606Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo wget http://www.neuron.yale.edu/ftp/neuron/versions/v7.4/nrn-7.4.tar.gz \\u0026\\u0026   sudo tar -xzf nrn-7.4.tar.gz \\u0026\\u0026   sudo rm nrn-7.4.tar.gz\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae0538dcdb92d0cd6a56da707d11d02aa8bec88d502640b45ebbea156e529654\",\"parent\":\"c80863a3df91c1fadb0be731c9b6a3ff44383cb733e1532250bd9624f077315c\",\"created\":\"2016-09-29T03:20:24.085726201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/neuron\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c80863a3df91c1fadb0be731c9b6a3ff44383cb733e1532250bd9624f077315c\",\"parent\":\"b4363677214df89392413720a463d58a529133212ba04e22c3028733d0d9b7ac\",\"created\":\"2016-09-29T03:20:10.406045037Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install -y mpi4py ipython\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4363677214df89392413720a463d58a529133212ba04e22c3028733d0d9b7ac\",\"parent\":\"b3359c86cb2cd45b3e225f24c5ed380629e09671bc55fb13e159221d9cab003d\",\"created\":\"2016-09-29T03:19:40.365504243Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3359c86cb2cd45b3e225f24c5ed380629e09671bc55fb13e159221d9cab003d\",\"parent\":\"ec234bd59c870c0f8bdfb76a8e3e541565c6d05d11b17e0ef08e04a94190175e\",\"created\":\"2016-09-29T03:19:27.14711508Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo ./configure \\u0026\\u0026   sudo make all \\u0026\\u0026   sudo make install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec234bd59c870c0f8bdfb76a8e3e541565c6d05d11b17e0ef08e04a94190175e\",\"parent\":\"87bac1fc99e35026420584183a077ae3045ace86859efb879f1e3274329e8a1e\",\"created\":\"2016-09-29T03:01:09.684355359Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker/openmpi-2.0.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87bac1fc99e35026420584183a077ae3045ace86859efb879f1e3274329e8a1e\",\"parent\":\"42c86563452fae884b02e3b3beaf11c79e8bf9fe24801d81f1838e0d9ed487be\",\"created\":\"2016-09-29T03:00:57.296995902Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo wget https://www.open-mpi.org/software/ompi/v2.0/downloads/openmpi-2.0.0.tar.gz \\u0026\\u0026    sudo tar -xzf openmpi-2.0.0.tar.gz \\u0026\\u0026    sudo rm openmpi-2.0.0.tar.gz\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"42c86563452fae884b02e3b3beaf11c79e8bf9fe24801d81f1838e0d9ed487be\",\"parent\":\"90aa39938aa4cc153fb68a06de1643e3ea477d42ed58010859a15efc7b411cdd\",\"created\":\"2016-09-29T03:00:35.130248156Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90aa39938aa4cc153fb68a06de1643e3ea477d42ed58010859a15efc7b411cdd\",\"parent\":\"4d0fa46226b0ea41c6b3875d70f3a1df3655d6d389839d2f6184ac11364d73d7\",\"created\":\"2016-09-29T03:00:24.754357601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sudo /opt/conda/bin/conda install scipy numpy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d0fa46226b0ea41c6b3875d70f3a1df3655d6d389839d2f6184ac11364d73d7\",\"parent\":\"8dd972930a9952423e2dd4f03837f21ab25e5297df56f71b42d094fb4685ce8d\",\"created\":\"2016-09-29T02:58:22.028888086Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/opt/conda/bin/conda:/opt/conda/bin/python:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8dd972930a9952423e2dd4f03837f21ab25e5297df56f71b42d094fb4685ce8d\",\"parent\":\"90a6499c5144482c881390f021baf03eb6e262a0ece8be6275b7ab3f2a79ce54\",\"created\":\"2016-09-29T02:58:10.937460556Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HOME=/home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90a6499c5144482c881390f021baf03eb6e262a0ece8be6275b7ab3f2a79ce54\",\"parent\":\"c2062700d1aa6f27d93e309a6fed9800f828c84a08be1541403ebdb39e4ebad2\",\"created\":\"2016-09-29T02:57:59.692803974Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R docker:docker /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c2062700d1aa6f27d93e309a6fed9800f828c84a08be1541403ebdb39e4ebad2\",\"parent\":\"ea12fb01cc1ec444600892ed02fb7099d5638971bd83d24976d42845a5921666\",\"created\":\"2016-09-29T02:57:48.237451907Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea12fb01cc1ec444600892ed02fb7099d5638971bd83d24976d42845a5921666\",\"parent\":\"d6b6824d6d1e6b5b9255f59a6243c4f1aa59a5ad2fa3e57457103e44bb135274\",\"created\":\"2016-09-29T02:57:36.688553125Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [docker]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d6b6824d6d1e6b5b9255f59a6243c4f1aa59a5ad2fa3e57457103e44bb135274\",\"parent\":\"a0419bc5b36464a71c3ffa09c71d572a71d217d14a2c9a64ef97bc109e54bcc8\",\"created\":\"2016-09-29T02:57:27.073548959Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"docker ALL=NOPASSWD: ALL\\\" \\u003e\\u003e /etc/sudoers\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0419bc5b36464a71c3ffa09c71d572a71d217d14a2c9a64ef97bc109e54bcc8\",\"parent\":\"0268abc3555572548551a63389c7e3c1f9ec4e67a372b7f89121221df8306a44\",\"created\":\"2016-09-29T02:57:17.383759458Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update       \\u0026\\u0026 apt-get install -y sudo       \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0268abc3555572548551a63389c7e3c1f9ec4e67a372b7f89121221df8306a44\",\"parent\":\"c7d8db2019653bc7918ffc79914b146e3566c6b2ec4bc066f52998dec3d87fc8\",\"created\":\"2016-09-29T02:56:58.490868128Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c7d8db2019653bc7918ffc79914b146e3566c6b2ec4bc066f52998dec3d87fc8\",\"parent\":\"ae8f1bfb6d0989c309c23d5180f368b80131b6eb79e257d826e2eba511b92872\",\"created\":\"2016-09-29T02:56:49.138257769Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -ms /bin/bash docker\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae8f1bfb6d0989c309c23d5180f368b80131b6eb79e257d826e2eba511b92872\",\"parent\":\"5ee49eeb1f03ac3f45bd65deb27e322e7e3437bb0fa50008b61a90d8c1dc9c43\",\"created\":\"2016-09-29T02:56:38.956923614Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-3.7.0-Linux-x86_64.sh -O miniconda.sh -O ~/miniconda.sh \\u0026\\u0026     /bin/bash ~/miniconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/miniconda.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5ee49eeb1f03ac3f45bd65deb27e322e7e3437bb0fa50008b61a90d8c1dc9c43\",\"parent\":\"950945f4d9f923de0eee0b01a250472c35606d2568f16889b71af657f7faf52d\",\"created\":\"2016-09-29T02:56:06.098005297Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git gcc g++ build-essential     libglib2.0-0 libxext6 libsm6 libxrender1     libncurses-dev openmpi-bin openmpi-doc libopenmpi-dev     emacs vim     default-jre default-jdk maven xterm\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"950945f4d9f923de0eee0b01a250472c35606d2568f16889b71af657f7faf52d\",\"parent\":\"dc89262397648968db9bda5cabacaadf72dd0a6fbbc5849a600bef184032f78a\",\"created\":\"2016-09-26T21:26:23.909853931Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dc89262397648968db9bda5cabacaadf72dd0a6fbbc5849a600bef184032f78a\",\"parent\":\"deb1271c58c2ab1b787b44b7f0f9c135e23e29c534643eefb5b5f1d9997c35b1\",\"created\":\"2016-09-26T21:26:23.535369955Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"deb1271c58c2ab1b787b44b7f0f9c135e23e29c534643eefb5b5f1d9997c35b1\",\"parent\":\"becb37d9bcba8a0d1380659b1b75ce1952421cf8cd9a894fdc91a6343e2d61b8\",\"created\":\"2016-09-26T21:26:22.58209293Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"becb37d9bcba8a0d1380659b1b75ce1952421cf8cd9a894fdc91a6343e2d61b8\",\"parent\":\"3655e01645ac2192aae087ce0505d936d955aec0731fa8d5a309f25fb2ce22a7\",\"created\":\"2016-09-26T21:26:21.654314265Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3655e01645ac2192aae087ce0505d936d955aec0731fa8d5a309f25fb2ce22a7\",\"parent\":\"31711d35995a40a4ae65f16286b3a302af9803a61856525634a917ae7c52584e\",\"created\":\"2016-09-26T21:26:20.734562669Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31711d35995a40a4ae65f16286b3a302af9803a61856525634a917ae7c52584e\",\"created\":\"2016-09-26T21:26:19.579628812Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:cd937b840fff16e04e1f59d56f4424d08544b0bb8ac30d9804d25e28fb15ded3 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7807e3f08e6ee62b166bdd8fd17e523ae0e1511d3a3e498f0d6246b3788c623e"
+            },
+            {
+                "blobSum": "sha256:23cc360cc3a0ec73e02e51a9ed6c850a770fdc1d5f20a28b144127b84d054196"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6ae68d32e921351a54e83ef5a618ef255c709f9cbeeec8b3199d936b71c91182"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5e12b3d583d19814e412a5f955f1d1ca508f3b9d705978953b6318f555c83940"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c422a816caf116450114e18e4ea41829a066c4c929a1a5a83cb40b33b54015d8"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7d51ee120770c6fb02976f78962a1b60be2c77d78c1fb02fd16707faa63eef44"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d92983854ec35b55ccc5fccc34ccf43dc753916ccf2bd5fea5ad5b64e2b7b8cb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:76b18c56253e2b08a3ce5d4ced8e0ec25db47710af1cdf667ac5c6da76639ccc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8c000d23ade298220ec160f337f3c8f3629227e2dfecfb2378b55bda0d3d4d93"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7993c8dd08eb32cf30f554603a94f424efc8b4b34f0481857fac5ea51a2b41e1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1c14d5f471b0583705fd795efef6bd44aae24d5fdfdf35359a0ce7f637ce05ab"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:77a6ed68cce6ac0dce6c2bdc69035c5c20aa8f1b9bafb7819a3a98c4293022ea"
+            },
+            {
+                "blobSum": "sha256:00740a4ffbe20dce3225b3b04a4038b482590c293fd5c4a9f619dd069faae696"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fd60ad2822f32f6ad9de13877ac069995c172b74536b3ba0a1ca1829df57cbe9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8571138a380cefcbaca1fdac7624d8dd868be478e54db803fa89cc5b8416bdb5"
+            },
+            {
+                "blobSum": "sha256:22deb05d57b103a8fef470ef42512581e03d0eca0c1fb765d986f6d604e0001e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:53173be4800315cf58883bd1a7d5bf756c05f597630af60db485030a3d5cae51"
+            },
+            {
+                "blobSum": "sha256:9f980ee2673d18b53796cd3282f31b70eb2b4c03c9d6fd7c3b327f8dc385ec0c"
+            },
+            {
+                "blobSum": "sha256:230ee5efdc1cb126f8553771d3354cd6d74e260f990b9588f11e8c41ba073812"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:85db8c70bdc0b73a03dcbdd035377677abcd7bba1eae1e12b6977f66d560b859"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d15e093f8e65d1ff62ecc82c2ec2bc843d230528d8afb73749f3bc477b9bc003"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:970069f124277abdaf1d7d8cd341329079b9b0fe62c6d302bb2b4366f817521b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2627cc2741d08c639bfa2976a688d568fbc9a06d4cd46e5e59008cb7f2319933"
+            },
+            {
+                "blobSum": "sha256:fddd825e92516e6b79f41b09a4b3745b5b59906d0cbbbdff232126813bb3af27"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:458893be026f5db85c8c3a9b330731294a64dc21834acd32606db664ad2d0aa2"
+            },
+            {
+                "blobSum": "sha256:eb2d0889350bd20b02e5af648cf1486760c685552a4910051b389748b923a391"
+            },
+            {
+                "blobSum": "sha256:9efca0bf0f3b213eb6b70d085ec86b72238593f051e3e3ddf7a584869a883ae9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:9f03ce1741bf604c84258a4c4f1dc98cc35aebdd76c14ed4ffeb6bc3584c1f9b"
+            },
+            {
+                "blobSum": "sha256:61e032b8f2cb04e7a2d4efa83eb6837c6b92bd1553cbe46cffa76121091d8301"
+            },
+            {
+                "blobSum": "sha256:50de990d7957c304603ac78d094f3acf634c1261a3a5a89229fa81d18cdb7945"
+            },
+            {
+                "blobSum": "sha256:3a80a22fea63572c387efb1943e6095587f9ea8343af129934d4c81e593374a4"
+            },
+            {
+                "blobSum": "sha256:cad964aed91d2ace084302c587dfc502b5869c5b1d15a1f0e458a45e3cadfaa6"
+            }
+        ],
+        "name": "russelljarvis/pyneuron-toolbox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMxMzkzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDk6MjZaIn0",
+                "signature": "4vpLkcifEj99DLDd3MtWrW_7TvOpJYokmPWkQ8nwPjr_GtBWrmUKE5S5CzvTaQU-jnNDOy9ZAkh3xXEX1CVI9w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "u5XJDdoG1gBUPENWq8sfptGn0lvJGzLPJsfWV7Tbgv0",
+                        "kid": "7II3:EC34:4TM2:LJFY:BNRG:CU4X:FFV4:XIWJ:MCK6:4EHU:OY42:U6CQ",
+                        "x": "r3XkuZi7m_SdxXiUu2wR46N7XeGO1Z85No5uV9zSWCw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

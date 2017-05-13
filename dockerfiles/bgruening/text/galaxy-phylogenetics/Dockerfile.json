@@ -1,0 +1,798 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"config\":{\"Hostname\":\"11687faae091\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"21/tcp\":{},\"80/tcp\":{},\"8800/tcp\":{},\"9002/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"GALAXY_RELEASE=release_16.07\",\"GALAXY_REPO=https://github.com/galaxyproject/galaxy\",\"GALAXY_ROOT=/galaxy-central\",\"GALAXY_CONFIG_DIR=/etc/galaxy\",\"GALAXY_CONFIG_FILE=/etc/galaxy/galaxy.ini\",\"GALAXY_CONFIG_JOB_CONFIG_FILE=/etc/galaxy/job_conf.xml\",\"GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE=/etc/galaxy/job_metrics_conf.xml\",\"GALAXY_CONFIG_TOOL_DEPENDENCY_DIR=/tool_deps\",\"GALAXY_VIRTUAL_ENV=/galaxy_venv\",\"GALAXY_USER=galaxy\",\"GALAXY_UID=1450\",\"GALAXY_GID=1450\",\"GALAXY_POSTGRES_UID=1550\",\"GALAXY_POSTGRES_GID=1550\",\"GALAXY_HOME=/home/galaxy\",\"GALAXY_LOGS_DIR=/home/galaxy/logs\",\"GALAXY_DEFAULT_ADMIN_USER=admin@galaxy.org\",\"GALAXY_DEFAULT_ADMIN_PASSWORD=admin\",\"GALAXY_DEFAULT_ADMIN_KEY=admin\",\"GALAXY_DESTINATIONS_DEFAULT=slurm_cluster\",\"PG_DATA_DIR_DEFAULT=/var/lib/postgresql/9.3/main/\",\"PG_CONF_DIR_DEFAULT=/etc/postgresql/9.3/main/\",\"PG_DATA_DIR_HOST=/export/postgresql/9.3/main/\",\"EXPORT_DIR=/export\",\"UWSGI_PROCESSES=2\",\"UWSGI_THREADS=4\",\"GALAXY_HANDLER_NUMPROCS=2\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"GALAXY_CONFIG_DATABASE_CONNECTION=postgresql://galaxy:galaxy@localhost:5432/galaxy?client_encoding=utf8\",\"GALAXY_CONFIG_ADMIN_USERS=admin@galaxy.org\",\"GALAXY_CONFIG_MASTER_API_KEY=HSNiugRFvgT574F43jZ7N9F3\",\"GALAXY_CONFIG_BRAND=Phylogenetics\",\"GALAXY_CONFIG_STATIC_ENABLED=False\",\"GALAXY_CONFIG_JOB_WORKING_DIRECTORY=/export/galaxy-central/database/job_working_directory\",\"GALAXY_CONFIG_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_NEW_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_TEMPLATE_CACHE_PATH=/export/galaxy-central/database/compiled_templates\",\"GALAXY_CONFIG_CITATION_CACHE_DATA_DIR=/export/galaxy-central/database/citations/data\",\"GALAXY_CONFIG_CLUSTER_FILES_DIRECTORY=/export/galaxy-central/database/pbs\",\"GALAXY_CONFIG_FTP_UPLOAD_DIR=/export/ftp\",\"GALAXY_CONFIG_FTP_UPLOAD_SITE=galaxy.docker.org\",\"GALAXY_CONFIG_USE_PBKDF2=False\",\"GALAXY_CONFIG_NGINX_X_ACCEL_REDIRECT_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_X_ARCHIVE_FILES_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_UPLOAD_STORE=/export/nginx_upload_store\",\"GALAXY_CONFIG_NGINX_UPLOAD_PATH=/_upload\",\"GALAXY_CONFIG_DYNAMIC_PROXY_MANAGE=False\",\"GALAXY_CONFIG_VISUALIZATION_PLUGINS_DIRECTORY=config/plugins/visualizations\",\"GALAXY_CONFIG_TRUST_IPYTHON_NOTEBOOK_CONVERSION=True\",\"GALAXY_CONFIG_TOOLFORM_UPGRADE=True\",\"GALAXY_CONFIG_SANITIZE_ALL_HTML=False\",\"GALAXY_CONFIG_WELCOME_URL=/etc/galaxy/web/welcome.html\",\"GALAXY_CONFIG_OVERRIDE_DEBUG=False\",\"HOME=/home/galaxy\",\"GALAXY_CONDA_PREFIX=/tool_deps/_conda\",\"GALAXY_CONFIG_INTEGRATED_TOOL_PANEL_CONFIG=/export/galaxy-central/integrated_tool_panel.xml\",\"ENABLE_TTS_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INIT=True\"],\"Cmd\":[\"/usr/bin/startup\"],\"ArgsEscaped\":true,\"Image\":\"sha256:89cfba791ff71095964925abb1466cfa14c8d95332fcc4013082d9b9818e8337\",\"Volumes\":{\"/data/\":{},\"/export/\":{},\"/var/lib/docker\":{}},\"WorkingDir\":\"/galaxy-central\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"9f0bffed1085c131c7eec13103078b23965920e054dbbe187bc87e95e8b19e35\",\"container_config\":{\"Hostname\":\"11687faae091\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"21/tcp\":{},\"80/tcp\":{},\"8800/tcp\":{},\"9002/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"GALAXY_RELEASE=release_16.07\",\"GALAXY_REPO=https://github.com/galaxyproject/galaxy\",\"GALAXY_ROOT=/galaxy-central\",\"GALAXY_CONFIG_DIR=/etc/galaxy\",\"GALAXY_CONFIG_FILE=/etc/galaxy/galaxy.ini\",\"GALAXY_CONFIG_JOB_CONFIG_FILE=/etc/galaxy/job_conf.xml\",\"GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE=/etc/galaxy/job_metrics_conf.xml\",\"GALAXY_CONFIG_TOOL_DEPENDENCY_DIR=/tool_deps\",\"GALAXY_VIRTUAL_ENV=/galaxy_venv\",\"GALAXY_USER=galaxy\",\"GALAXY_UID=1450\",\"GALAXY_GID=1450\",\"GALAXY_POSTGRES_UID=1550\",\"GALAXY_POSTGRES_GID=1550\",\"GALAXY_HOME=/home/galaxy\",\"GALAXY_LOGS_DIR=/home/galaxy/logs\",\"GALAXY_DEFAULT_ADMIN_USER=admin@galaxy.org\",\"GALAXY_DEFAULT_ADMIN_PASSWORD=admin\",\"GALAXY_DEFAULT_ADMIN_KEY=admin\",\"GALAXY_DESTINATIONS_DEFAULT=slurm_cluster\",\"PG_DATA_DIR_DEFAULT=/var/lib/postgresql/9.3/main/\",\"PG_CONF_DIR_DEFAULT=/etc/postgresql/9.3/main/\",\"PG_DATA_DIR_HOST=/export/postgresql/9.3/main/\",\"EXPORT_DIR=/export\",\"UWSGI_PROCESSES=2\",\"UWSGI_THREADS=4\",\"GALAXY_HANDLER_NUMPROCS=2\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"GALAXY_CONFIG_DATABASE_CONNECTION=postgresql://galaxy:galaxy@localhost:5432/galaxy?client_encoding=utf8\",\"GALAXY_CONFIG_ADMIN_USERS=admin@galaxy.org\",\"GALAXY_CONFIG_MASTER_API_KEY=HSNiugRFvgT574F43jZ7N9F3\",\"GALAXY_CONFIG_BRAND=Phylogenetics\",\"GALAXY_CONFIG_STATIC_ENABLED=False\",\"GALAXY_CONFIG_JOB_WORKING_DIRECTORY=/export/galaxy-central/database/job_working_directory\",\"GALAXY_CONFIG_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_NEW_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_TEMPLATE_CACHE_PATH=/export/galaxy-central/database/compiled_templates\",\"GALAXY_CONFIG_CITATION_CACHE_DATA_DIR=/export/galaxy-central/database/citations/data\",\"GALAXY_CONFIG_CLUSTER_FILES_DIRECTORY=/export/galaxy-central/database/pbs\",\"GALAXY_CONFIG_FTP_UPLOAD_DIR=/export/ftp\",\"GALAXY_CONFIG_FTP_UPLOAD_SITE=galaxy.docker.org\",\"GALAXY_CONFIG_USE_PBKDF2=False\",\"GALAXY_CONFIG_NGINX_X_ACCEL_REDIRECT_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_X_ARCHIVE_FILES_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_UPLOAD_STORE=/export/nginx_upload_store\",\"GALAXY_CONFIG_NGINX_UPLOAD_PATH=/_upload\",\"GALAXY_CONFIG_DYNAMIC_PROXY_MANAGE=False\",\"GALAXY_CONFIG_VISUALIZATION_PLUGINS_DIRECTORY=config/plugins/visualizations\",\"GALAXY_CONFIG_TRUST_IPYTHON_NOTEBOOK_CONVERSION=True\",\"GALAXY_CONFIG_TOOLFORM_UPGRADE=True\",\"GALAXY_CONFIG_SANITIZE_ALL_HTML=False\",\"GALAXY_CONFIG_WELCOME_URL=/etc/galaxy/web/welcome.html\",\"GALAXY_CONFIG_OVERRIDE_DEBUG=False\",\"HOME=/home/galaxy\",\"GALAXY_CONDA_PREFIX=/tool_deps/_conda\",\"GALAXY_CONFIG_INTEGRATED_TOOL_PANEL_CONFIG=/export/galaxy-central/integrated_tool_panel.xml\",\"ENABLE_TTS_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INIT=True\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"install-tools $GALAXY_ROOT/tools.yaml \\u0026\\u0026     /tool_deps/_conda/bin/conda clean --tarballs\"],\"ArgsEscaped\":true,\"Image\":\"sha256:89cfba791ff71095964925abb1466cfa14c8d95332fcc4013082d9b9818e8337\",\"Volumes\":{\"/data/\":{},\"/export/\":{},\"/var/lib/docker\":{}},\"WorkingDir\":\"/galaxy-central\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-21T22:05:48.010902553Z\",\"docker_version\":\"1.12.0\",\"id\":\"52e5877a59beff188666ef984794ff71f3727e73d09374c9aa84850d4b0c4967\",\"os\":\"linux\",\"parent\":\"2359ccd51a6b2c1a75a0cf08ba0553220f0d61d9d6d9816a83a1fc19cad55e48\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2359ccd51a6b2c1a75a0cf08ba0553220f0d61d9d6d9816a83a1fc19cad55e48\",\"parent\":\"940c48688fc6d39109d7ddafc4633bc63895a740077026ee5ef760d7ce510712\",\"created\":\"2016-09-21T21:54:17.068028965Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:eb078b26f6548faaf38ab70645b3b95f5d4e2ff277d71e17caee4ca9ace1489b in /galaxy-central/tools.yaml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"940c48688fc6d39109d7ddafc4633bc63895a740077026ee5ef760d7ce510712\",\"parent\":\"0a8734814e8c26a371573ebdfb50fa58620c5f807c7f550d9a9d23aea9b6e8c0\",\"created\":\"2016-09-21T21:53:50.807642558Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True GALAXY_CONFIG_CONDA_AUTO_INIT=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0a8734814e8c26a371573ebdfb50fa58620c5f807c7f550d9a9d23aea9b6e8c0\",\"parent\":\"9e6b86957789320a40c39b164f92d3b41710feae4a9c4be0b69de9db2bb02142\",\"created\":\"2016-09-21T21:53:24.941814015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ENABLE_TTS_INSTALL=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e6b86957789320a40c39b164f92d3b41710feae4a9c4be0b69de9db2bb02142\",\"parent\":\"54126e9ae444036be64693fe7d69e27270c4e53b200f9305ed837b423c2b76ba\",\"created\":\"2016-09-21T21:52:58.064401301Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_BRAND=Phylogenetics\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"54126e9ae444036be64693fe7d69e27270c4e53b200f9305ed837b423c2b76ba\",\"parent\":\"026e1f84e22c61a78bb1662e981aad57b4d80f45ab289a2bbc96b7e6ae111146\",\"created\":\"2016-09-21T21:52:31.0233524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"026e1f84e22c61a78bb1662e981aad57b4d80f45ab289a2bbc96b7e6ae111146\",\"parent\":\"b699cd379ed3a55df3f7ed9f1d9235f867c49cd43f52aa7dde79f59cbf1b709e\",\"created\":\"2016-09-19T21:24:36.580748449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install-tools $GALAXY_ROOT/tools.yaml \\u0026\\u0026     /tool_deps/_conda/bin/conda clean --tarballs\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b699cd379ed3a55df3f7ed9f1d9235f867c49cd43f52aa7dde79f59cbf1b709e\",\"parent\":\"8781e475dd82b48e037ff6464e598da72da014ddb57d6058ee48e85f76c8873f\",\"created\":\"2016-09-19T21:12:41.996270062Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:ff0d356332bc4c1eed7ac8878230993a8c0ce522e82a0536870a0323d554aacb in /galaxy-central/tools.yaml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8781e475dd82b48e037ff6464e598da72da014ddb57d6058ee48e85f76c8873f\",\"parent\":\"89807d2d99abb5f62a9183fed046c77eb858a366c15829a4db78af6388f89322\",\"created\":\"2016-09-19T21:12:27.742411496Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True GALAXY_CONFIG_CONDA_AUTO_INIT=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"89807d2d99abb5f62a9183fed046c77eb858a366c15829a4db78af6388f89322\",\"parent\":\"fa997df8b3d059d7b64183b9abcf18baf7cf135cfbf121dcc60bc0255854bc62\",\"created\":\"2016-09-19T21:12:13.448791114Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ENABLE_TTS_INSTALL=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa997df8b3d059d7b64183b9abcf18baf7cf135cfbf121dcc60bc0255854bc62\",\"parent\":\"e707dabfe0702838cd5e21fbfa75144e30f0a97a73c7fba891da29993da36ac4\",\"created\":\"2016-09-19T21:11:59.138598598Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_BRAND=NGS-preprocessing\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e707dabfe0702838cd5e21fbfa75144e30f0a97a73c7fba891da29993da36ac4\",\"parent\":\"31999e71689368d52f9ff20a45c8a36f1da47761b6f9789478f4821478afd566\",\"created\":\"2016-09-19T21:11:44.752977089Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31999e71689368d52f9ff20a45c8a36f1da47761b6f9789478f4821478afd566\",\"parent\":\"3707ccfc6b419de2f61ecffbd8e625a93436f4f0d513478efecd375cb19b4703\",\"created\":\"2016-09-19T20:34:10.724208797Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/usr/bin/startup\\\"]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3707ccfc6b419de2f61ecffbd8e625a93436f4f0d513478efecd375cb19b4703\",\"parent\":\"eb102eea0ebf2fdd8d6175e853c1b4cb0c2c4c7d2349fd69076b0e3b3c2d0c04\",\"created\":\"2016-09-19T20:33:56.311923307Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/export/ /data/ /var/lib/docker]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb102eea0ebf2fdd8d6175e853c1b4cb0c2c4c7d2349fd69076b0e3b3c2d0c04\",\"parent\":\"0fbb8fc5ecee657d4284fa4e75c7cfa9a73ed846a8ea9b43c48af61ce5628517\",\"created\":\"2016-09-19T20:33:41.992908673Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 9002/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fbb8fc5ecee657d4284fa4e75c7cfa9a73ed846a8ea9b43c48af61ce5628517\",\"parent\":\"9b9cbe0939703a7f96347c0bc652838b33db78590701996a0d176f008aed950d\",\"created\":\"2016-09-19T20:33:27.657715643Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8800/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b9cbe0939703a7f96347c0bc652838b33db78590701996a0d176f008aed950d\",\"parent\":\"441412eb1b8ce70322e0bd1fb3720c17084539e9d12377f7940a77c9986d7a4b\",\"created\":\"2016-09-19T20:33:13.32498796Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 21/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"441412eb1b8ce70322e0bd1fb3720c17084539e9d12377f7940a77c9986d7a4b\",\"parent\":\"1465f1a2a59f6ce1729242774f8496773ff27925ca923ec739d943aa6a7ed060\",\"created\":\"2016-09-19T20:32:59.023546722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 80/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1465f1a2a59f6ce1729242774f8496773ff27925ca923ec739d943aa6a7ed060\",\"parent\":\"812e0b4920ab80406ab2b31878c444466914eab5d9c04b9340b4eae1a8311e12\",\"created\":\"2016-09-19T20:32:44.623993631Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_INTEGRATED_TOOL_PANEL_CONFIG=/export/galaxy-central/integrated_tool_panel.xml\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"812e0b4920ab80406ab2b31878c444466914eab5d9c04b9340b4eae1a8311e12\",\"parent\":\"8efb17a2445073d874670f5ca180c27d689646a0a82d16f5e41aa8c3b3f0a8dd\",\"created\":\"2016-09-19T20:32:32.342053529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"DISCARD_SESSION_KEYRING_ON_STARTUP=False\\\" \\u003e /etc/condor/condor_config.local \\u0026\\u0026     echo \\\"TRUST_UID_DOMAIN=true\\\" \\u003e\\u003e /etc/condor/condor_config.local\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8efb17a2445073d874670f5ca180c27d689646a0a82d16f5e41aa8c3b3f0a8dd\",\"parent\":\"a100c11a48fa68fbe579d65a03ff3e54aa5bb91e354dbc892c7c024418a402d7\",\"created\":\"2016-09-19T20:32:19.619788981Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /usr/bin/install-tools /usr/bin/startup /usr/bin/startup_lite /usr/bin/install-biojs /usr/bin/add-tool-shed\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a100c11a48fa68fbe579d65a03ff3e54aa5bb91e354dbc892c7c024418a402d7\",\"parent\":\"f3c4888ff30f0de9d06c8f3c774ac0c3ea7651aae89bd01b7580e3dd501e96fa\",\"created\":\"2016-09-19T20:32:07.302759189Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:5a83d80d55695c2faa80cc3050ab42440a9d0407b0227c56adaaca3e5d23161f in /usr/bin/install-biojs \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3c4888ff30f0de9d06c8f3c774ac0c3ea7651aae89bd01b7580e3dd501e96fa\",\"parent\":\"da21da6d9480d9df519f336a6cd3cfe61da9c5d185aa6c9e66b63510e8488f54\",\"created\":\"2016-09-19T20:31:54.908432594Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:bc330eb6106bbd95673f6f77d4a68231bf4e90e8022fc0ec8ccf3737e5ca1276 in /usr/bin/install-tools \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da21da6d9480d9df519f336a6cd3cfe61da9c5d185aa6c9e66b63510e8488f54\",\"parent\":\"7097d1777583bc7c414b3b5a850bfe2427880a64906980a4a798a996c0fdf3f6\",\"created\":\"2016-09-19T20:31:42.625920644Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:6eddf0cbfb0bff9c50636a76b1762f1aa75e989cdce6ac25dc91171e38ce801f in /usr/bin/startup_lite \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7097d1777583bc7c414b3b5a850bfe2427880a64906980a4a798a996c0fdf3f6\",\"parent\":\"738cdc4bba2e844c0f86ab2d5c75c3c1b27491cd4c59b90d3d1b74d449d00808\",\"created\":\"2016-09-19T20:31:30.632623884Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:fccc2437061923574a3efebb500c597e22f70c2c23a904c791e37a413fc37c7d in /usr/bin/add-tool-shed \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"738cdc4bba2e844c0f86ab2d5c75c3c1b27491cd4c59b90d3d1b74d449d00808\",\"parent\":\"326f77ced4708ca021ce253fa0336f2c4d8572b4157c171e29d9cd5934fc8bff\",\"created\":\"2016-09-19T20:31:18.498530224Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b81baef9d588a7e26019826c5acf0ae7b7ffab6fea243f048d67f68126ee16dc in /home/galaxy/tool_sheds_conf.xml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"326f77ced4708ca021ce253fa0336f2c4d8572b4157c171e29d9cd5934fc8bff\",\"parent\":\"83b76b1b7d6216ecb8ea8aa42e3f2bd1dd77611a4b4a02ad755e5390a992e8f9\",\"created\":\"2016-09-19T20:31:06.639351861Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm $PG_DATA_DIR_DEFAULT -rf \\u0026\\u0026     python /usr/local/bin/setup_postgresql.py --dbuser galaxy --dbpassword galaxy --db-name galaxy --dbpath $PG_DATA_DIR_DEFAULT \\u0026\\u0026     service postgresql start \\u0026\\u0026     . $GALAXY_VIRTUAL_ENV/bin/activate \\u0026\\u0026     sh create_db.sh -c $GALAXY_CONFIG_FILE \\u0026\\u0026     python /usr/local/bin/create_galaxy_user.py --user $GALAXY_DEFAULT_ADMIN_USER --password $GALAXY_DEFAULT_ADMIN_PASSWORD -c $GALAXY_CONFIG_FILE --key $GALAXY_DEFAULT_ADMIN_KEY \\u0026\\u0026     service postgresql stop\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"83b76b1b7d6216ecb8ea8aa42e3f2bd1dd77611a4b4a02ad755e5390a992e8f9\",\"parent\":\"512b82b863bc0d78e8a280c3e2ebc5d74b1181bee62bd60d09a38cfc280b4147\",\"created\":\"2016-09-19T20:25:11.446464061Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:6a8e9adc543c2b69ea2b92c640242be48912e1ecd20d1b126d16a4d5fdf28baf in /usr/local/bin/setup_postgresql.py \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"512b82b863bc0d78e8a280c3e2ebc5d74b1181bee62bd60d09a38cfc280b4147\",\"parent\":\"2ba5e21c1570289091d49ed9de885da6b58adb601351471b22415cbb541b6005\",\"created\":\"2016-09-19T20:24:57.553131296Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ba5e21c1570289091d49ed9de885da6b58adb601351471b22415cbb541b6005\",\"parent\":\"57d7887a8c0fe09761d7dd56b84d15f2f135662eb7ecbc0c46aa2fc53d083524\",\"created\":\"2016-09-19T20:24:45.57455015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:e17fe9b73e3d39dd80346e9bd001a6572649dace61333d763dde7509def47792 in /etc/galaxy/web/welcome.html \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57d7887a8c0fe09761d7dd56b84d15f2f135662eb7ecbc0c46aa2fc53d083524\",\"parent\":\"b86a07641f41e87449c697b0fa54c46817fefa4a582a69fe206fafc7ff6ae612\",\"created\":\"2016-09-19T20:24:33.972488836Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0834b78bde67c7649941f08dbf00af7af5c86f3ba465a015020112d9df78318b in /etc/galaxy/web/welcome_image.png \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b86a07641f41e87449c697b0fa54c46817fefa4a582a69fe206fafc7ff6ae612\",\"parent\":\"db66e371d298633ec0d3f39c1076f0e00bd6d0415572e6b637e0f3f388008334\",\"created\":\"2016-09-19T20:24:20.729702992Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./scripts/common_startup.sh \\u0026\\u0026     cd $GALAXY_ROOT/lib/galaxy/web/proxy/js \\u0026\\u0026     npm install \\u0026\\u0026     wget https://repo.continuum.io/miniconda/Miniconda3-4.0.5-Linux-x86_64.sh \\u0026\\u0026     bash Miniconda3-4.0.5-Linux-x86_64.sh -b -p $GALAXY_CONDA_PREFIX \\u0026\\u0026     rm Miniconda3-4.0.5-Linux-x86_64.sh \\u0026\\u0026     $GALAXY_CONDA_PREFIX/bin/conda install -y conda==3.19.3\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db66e371d298633ec0d3f39c1076f0e00bd6d0415572e6b637e0f3f388008334\",\"parent\":\"cd8fe191e359554cab1d6fa7227ec951d79d3cd7965f0c653a5d1bcce92d80e4\",\"created\":\"2016-09-19T20:22:49.950560571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_DATABASE_CONNECTION=postgresql://galaxy:galaxy@localhost:5432/galaxy?client_encoding=utf8 GALAXY_CONFIG_ADMIN_USERS=admin@galaxy.org GALAXY_CONFIG_MASTER_API_KEY=HSNiugRFvgT574F43jZ7N9F3 GALAXY_CONFIG_BRAND=Galaxy Docker Build GALAXY_CONFIG_STATIC_ENABLED=False GALAXY_CONFIG_JOB_WORKING_DIRECTORY=/export/galaxy-central/database/job_working_directory GALAXY_CONFIG_FILE_PATH=/export/galaxy-central/database/files GALAXY_CONFIG_NEW_FILE_PATH=/export/galaxy-central/database/files GALAXY_CONFIG_TEMPLATE_CACHE_PATH=/export/galaxy-central/database/compiled_templates GALAXY_CONFIG_CITATION_CACHE_DATA_DIR=/export/galaxy-central/database/citations/data GALAXY_CONFIG_CLUSTER_FILES_DIRECTORY=/export/galaxy-central/database/pbs GALAXY_CONFIG_FTP_UPLOAD_DIR=/export/ftp GALAXY_CONFIG_FTP_UPLOAD_SITE=galaxy.docker.org GALAXY_CONFIG_USE_PBKDF2=False GALAXY_CONFIG_NGINX_X_ACCEL_REDIRECT_BASE=/_x_accel_redirect GALAXY_CONFIG_NGINX_X_ARCHIVE_FILES_BASE=/_x_accel_redirect GALAXY_CONFIG_NGINX_UPLOAD_STORE=/export/nginx_upload_store GALAXY_CONFIG_NGINX_UPLOAD_PATH=/_upload GALAXY_CONFIG_DYNAMIC_PROXY_MANAGE=False GALAXY_CONFIG_VISUALIZATION_PLUGINS_DIRECTORY=config/plugins/visualizations GALAXY_CONFIG_TRUST_IPYTHON_NOTEBOOK_CONVERSION=True GALAXY_CONFIG_TOOLFORM_UPGRADE=True GALAXY_CONFIG_SANITIZE_ALL_HTML=False GALAXY_CONFIG_TOOLFORM_UPGRADE=True GALAXY_CONFIG_WELCOME_URL=/etc/galaxy/web/welcome.html GALAXY_CONFIG_OVERRIDE_DEBUG=False HOME=/home/galaxy GALAXY_CONDA_PREFIX=/tool_deps/_conda\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd8fe191e359554cab1d6fa7227ec951d79d3cd7965f0c653a5d1bcce92d80e4\",\"parent\":\"782387f8e5da4bb6e792fafe88638b5751b26008ea076aef5fd72bfe1139145c\",\"created\":\"2016-09-19T20:22:40.027015233Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /galaxy-central\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"782387f8e5da4bb6e792fafe88638b5751b26008ea076aef5fd72bfe1139145c\",\"parent\":\"28d7743683f6c5a12fc7d24dcf62cab3c00a75f624351c2e19b8009180d00d41\",\"created\":\"2016-09-19T20:22:29.041530817Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [galaxy]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"28d7743683f6c5a12fc7d24dcf62cab3c00a75f624351c2e19b8009180d00d41\",\"parent\":\"1f92c167bb7e13d4aabf19b48dc7cefe733d637c15b34e7f6ccba12700104469\",\"created\":\"2016-09-19T20:22:20.508898438Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /shed_tools \\u0026\\u0026 chown $GALAXY_USER:$GALAXY_USER /shed_tools \\u0026\\u0026     mkdir /export/ftp/ \\u0026\\u0026 chown $GALAXY_USER:$GALAXY_USER /export/ftp \\u0026\\u0026     mkdir /tool_deps/ \\u0026\\u0026 chown $GALAXY_USER:$GALAXY_USER /tool_deps # Configure Galaxy to use the Tool Shed\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1f92c167bb7e13d4aabf19b48dc7cefe733d637c15b34e7f6ccba12700104469\",\"parent\":\"9755ab8b00685586fa44dcb88cdd72bdadeb76339838cbbe92178c9c958f1f9b\",\"created\":\"2016-09-19T20:22:11.247529328Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ansible-playbook /tmp/ansible/postgresql_provision.yml \\u0026\\u0026     ansible-playbook /tmp/ansible/provision.yml     --extra-vars galaxy_venv_dir=$GALAXY_VIRTUAL_ENV     --extra-vars galaxy_log_dir=$GALAXY_LOGS_DIR     --extra-vars galaxy_user_name=$GALAXY_USER     --extra-vars galaxy_config_file=$GALAXY_CONFIG_FILE     --extra-vars galaxy_config_dir=$GALAXY_CONFIG_DIR     --extra-vars galaxy_job_conf_path=$GALAXY_CONFIG_JOB_CONFIG_FILE     --extra-vars galaxy_job_metrics_conf_path=$GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE     --extra-vars supervisor_manage_slurm=\\\"\\\"     --extra-vars galaxy_extras_config_condor=True     --extra-vars galaxy_extras_config_condor_docker=True     --extra-vars proftpd_db_connection=galaxy@galaxy     --extra-vars proftpd_files_dir=/export/ftp     --extra-vars proftpd_use_sftp=True     --extra-vars nginx_upload_store_path=/export/nginx_upload_store     --extra-vars supervisor_postgres_config_path=$PG_CONF_DIR_DEFAULT/postgresql.conf     --tags=galaxyextras -c local \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9755ab8b00685586fa44dcb88cdd72bdadeb76339838cbbe92178c9c958f1f9b\",\"parent\":\"d74298ec8aee20baa4aec18700047264a10d13e3c43dc3508bd4d0841d2e4cf7\",\"created\":\"2016-09-19T20:17:59.431197292Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:da66744759675134c3c5285bac05fa113f89a1c36c3d8fa31b3fe0d1f6ce6c00 in /tmp/ansible/postgresql_provision.yml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d74298ec8aee20baa4aec18700047264a10d13e3c43dc3508bd4d0841d2e4cf7\",\"parent\":\"c51c867242982036fc757be0052f7314cdf7b7ab84d77a9a7ff8bdceea0616fe\",\"created\":\"2016-09-19T20:17:52.377348966Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b3e9eba5e900e6044b82e92d7c6e420283fdc5a90c4411aef364ac5dc119cf5f in /tmp/ansible/provision.yml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c51c867242982036fc757be0052f7314cdf7b7ab84d77a9a7ff8bdceea0616fe\",\"parent\":\"eb5fc170b2478141d57ff29bbbd92237853a76c0b8cc644cc0b7fca1dcc27ad9\",\"created\":\"2016-09-19T20:17:45.570567761Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:a8752c6b47800e560c101e9bb79c7095e925aad4c322ae464074ca7b40ca3954 in /tmp/ansible/roles \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb5fc170b2478141d57ff29bbbd92237853a76c0b8cc644cc0b7fca1dcc27ad9\",\"parent\":\"3e6921cf2a411d9458fb4830573e5b925a5bde930535a1dd6809ff2a96888ecd\",\"created\":\"2016-09-19T20:17:38.995074408Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:82b198d91d5fc1c842765c05fcdda257ad8a9abaffdf17c15e3231bd436a6db4 in /home/galaxy/ephemeris/sample_tool_list.yaml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3e6921cf2a411d9458fb4830573e5b925a5bde930535a1dd6809ff2a96888ecd\",\"parent\":\"ec2f823c39bad31953c1c0d88673e59e269869788083080ca8a104f4557575ca\",\"created\":\"2016-09-19T20:17:32.600466383Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:805b68953711a8a0e70d2c1238564e113aacd30b9b4ca4ac58909ca97c008c37 in /etc/galaxy/reports_wsgi.ini \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec2f823c39bad31953c1c0d88673e59e269869788083080ca8a104f4557575ca\",\"parent\":\"97b9464e92c041c42f9c9fe9752909f27b9ae1b242518dc55adc2f3bde6cbac7\",\"created\":\"2016-09-19T20:17:26.229799869Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c su $GALAXY_USER -c \\\"cp $GALAXY_ROOT/config/galaxy.ini.sample $GALAXY_CONFIG_FILE\\\"\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"97b9464e92c041c42f9c9fe9752909f27b9ae1b242518dc55adc2f3bde6cbac7\",\"parent\":\"b4717864ff9b2df44044180f8ac2c79211d9adb797574667c05ff12aaf1d0724\",\"created\":\"2016-09-19T20:17:19.379493366Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir $GALAXY_ROOT \\u0026\\u0026     wget -q -O - $GALAXY_REPO/archive/$GALAXY_RELEASE.tar.gz | tar xzf - --strip-components=1 -C $GALAXY_ROOT \\u0026\\u0026     virtualenv $GALAXY_VIRTUAL_ENV \\u0026\\u0026     chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_VIRTUAL_ENV \\u0026\\u0026     chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_ROOT \\u0026\\u0026     mkdir -p $GALAXY_CONFIG_DIR $GALAXY_CONFIG_DIR/web \\u0026\\u0026     chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_CONFIG_DIR\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4717864ff9b2df44044180f8ac2c79211d9adb797574667c05ff12aaf1d0724\",\"parent\":\"029c09230d4c26a80f94f14c5940d41fae476671b3df8e5b63bccaa5ee6445a1\",\"created\":\"2016-09-19T20:17:03.960194381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:338de7d8a7dfc60cabda2c6055823bf34acf8607d4abd2f399b5ea6e9da00abc in /home/galaxy/.bashrc \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"029c09230d4c26a80f94f14c5940d41fae476671b3df8e5b63bccaa5ee6445a1\",\"parent\":\"97a54e26bb196dd4dfc0e0b6a21ba3518963d1ad58f15abd8791b349ff3c4d5d\",\"created\":\"2016-09-19T20:16:58.376468136Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd -r $GALAXY_USER -g $GALAXY_GID \\u0026\\u0026     useradd -u $GALAXY_UID -r -g $GALAXY_USER -d $GALAXY_HOME -c \\\"Galaxy user\\\" $GALAXY_USER \\u0026\\u0026     mkdir $EXPORT_DIR $GALAXY_HOME $GALAXY_LOGS_DIR \\u0026\\u0026 chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_HOME $EXPORT_DIR $GALAXY_LOGS_DIR \\u0026\\u0026     gpasswd -a $GALAXY_USER docker \\u0026\\u0026     adduser condor docker\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"97a54e26bb196dd4dfc0e0b6a21ba3518963d1ad58f15abd8791b349ff3c4d5d\",\"parent\":\"e414af555c9633c3dcaad3ae05c43a1559d513465bbd1504e9b87a1ad204bb34\",\"created\":\"2016-09-19T20:16:49.675541972Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -qq update \\u0026\\u0026 apt-get install --no-install-recommends -y apt-transport-https software-properties-common wget \\u0026\\u0026     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D \\u0026\\u0026     sh -c \\\"echo deb https://get.docker.io/ubuntu docker main \\u003e /etc/apt/sources.list.d/docker.list\\\" \\u0026\\u0026     sh -c \\\"echo deb http://research.cs.wisc.edu/htcondor/ubuntu/stable/ trusty contrib \\u003e /etc/apt/sources.list.d/htcondor.list\\\" \\u0026\\u0026     sh -c \\\"wget -qO - http://research.cs.wisc.edu/htcondor/ubuntu/HTCondor-Release.gpg.key | sudo apt-key add -\\\" \\u0026\\u0026     apt-add-repository -y ppa:ansible/ansible \\u0026\\u0026     apt-add-repository -y ppa:galaxyproject/nginx \\u0026\\u0026     apt-get update -qq \\u0026\\u0026 apt-get upgrade -y \\u0026\\u0026     apt-get install --no-install-recommends -y mercurial python-psycopg2 postgresql-9.3 sudo samtools python-virtualenv     nginx-extras=1.4.6-1ubuntu3.4ppa1 nginx-common=1.4.6-1ubuntu3.4ppa1 uwsgi uwsgi-plugin-python supervisor lxc-docker-1.9.1 slurm-llnl slurm-llnl-torque libswitch-perl     slurm-drmaa-dev proftpd proftpd-mod-pgsql libyaml-dev nodejs-legacy npm ansible     nano nmap lynx vim curl python-crypto python-pip python-gnuplot python-rpy2 python-psutil condor python-ldap     gridengine-common gridengine-drmaa1.0 \\u0026\\u0026     pip install --upgrade pip \\u0026\\u0026     pip install ephemeris \\u0026\\u0026     apt-get purge -y software-properties-common \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e414af555c9633c3dcaad3ae05c43a1559d513465bbd1504e9b87a1ad204bb34\",\"parent\":\"026632097ef75767bdcc94972d0ab2f87f4dbc44f781d1022435eff4cd9825c4\",\"created\":\"2016-09-19T20:13:27.611193028Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd -r postgres -g $GALAXY_POSTGRES_GID \\u0026\\u0026     adduser --system --quiet --home /var/lib/postgresql --no-create-home --shell /bin/bash --gecos \\\"\\\" --uid $GALAXY_POSTGRES_UID --gid $GALAXY_POSTGRES_GID postgres\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"026632097ef75767bdcc94972d0ab2f87f4dbc44f781d1022435eff4cd9825c4\",\"parent\":\"f537989d2587530d359477ad3211d1225e1b592d265ce3461cdea44a1b9f16d5\",\"created\":\"2016-09-19T20:13:23.862944353Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c locale-gen en_US.UTF-8 \\u0026\\u0026 dpkg-reconfigure locales\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f537989d2587530d359477ad3211d1225e1b592d265ce3461cdea44a1b9f16d5\",\"parent\":\"84c534b0992741cd6761658fc1c2dc193824527446a3f776eeaccf0c29fa0289\",\"created\":\"2016-09-19T20:13:18.018440335Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_FILE=/etc/galaxy/galaxy.ini GALAXY_CONFIG_JOB_CONFIG_FILE=/etc/galaxy/job_conf.xml GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE=/etc/galaxy/job_metrics_conf.xml GALAXY_CONFIG_TOOL_DEPENDENCY_DIR=/tool_deps GALAXY_VIRTUAL_ENV=/galaxy_venv GALAXY_USER=galaxy GALAXY_UID=1450 GALAXY_GID=1450 GALAXY_POSTGRES_UID=1550 GALAXY_POSTGRES_GID=1550 GALAXY_HOME=/home/galaxy GALAXY_LOGS_DIR=/home/galaxy/logs GALAXY_DEFAULT_ADMIN_USER=admin@galaxy.org GALAXY_DEFAULT_ADMIN_PASSWORD=admin GALAXY_DEFAULT_ADMIN_KEY=admin GALAXY_DESTINATIONS_DEFAULT=slurm_cluster PG_DATA_DIR_DEFAULT=/var/lib/postgresql/9.3/main/ PG_CONF_DIR_DEFAULT=/etc/postgresql/9.3/main/ PG_DATA_DIR_HOST=/export/postgresql/9.3/main/ EXPORT_DIR=/export UWSGI_PROCESSES=2 UWSGI_THREADS=4 GALAXY_HANDLER_NUMPROCS=2 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"84c534b0992741cd6761658fc1c2dc193824527446a3f776eeaccf0c29fa0289\",\"parent\":\"f85985dfd8e974c7ddfa246fb62d889c2062955c4ab98f5da5aad07ab5b45ecb\",\"created\":\"2016-09-19T20:13:14.314363788Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_RELEASE=release_16.07 GALAXY_REPO=https://github.com/galaxyproject/galaxy GALAXY_ROOT=/galaxy-central GALAXY_CONFIG_DIR=/etc/galaxy\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f85985dfd8e974c7ddfa246fb62d889c2062955c4ab98f5da5aad07ab5b45ecb\",\"parent\":\"50a75afa53ff223d8e35430df0f89f95c8e421fa41e14ae29235bce17d5b6615\",\"created\":\"2016-09-19T20:13:10.599101478Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"50a75afa53ff223d8e35430df0f89f95c8e421fa41e14ae29235bce17d5b6615\",\"parent\":\"b3af300c9c80a086b5556cea3ba7fa9e0269884d233db4257bb77e69ba5c7010\",\"created\":\"2016-08-26T23:25:30.305835248Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone --branch 1.2 https://github.com/samtools/htslib.git \\u0026\\u0026     git clone --branch 1.2 https://github.com/samtools/bcftools.git \\u0026\\u0026     make -C bcftools \\u0026\\u0026 cp bcftools/bcftools /usr/bin \\u0026\\u0026     rm -rf bcftools htslib\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3af300c9c80a086b5556cea3ba7fa9e0269884d233db4257bb77e69ba5c7010\",\"parent\":\"826d818ff212c68274b96870d93820b3dc7125c2a2767e02f493194afb33fa71\",\"created\":\"2016-08-26T23:23:35.460912467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -qq update \\u0026\\u0026 apt-get install --no-install-recommends -y apt-transport-https software-properties-common \\u0026\\u0026     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9 \\u0026\\u0026     apt-get update -qq \\u0026\\u0026 apt-get upgrade -y \\u0026\\u0026     add-apt-repository ppa:fkrull/deadsnakes \\u0026\\u0026 apt-get -qq update \\u0026\\u0026     apt-get purge -y software-properties-common \\u0026\\u0026     apt-get install --no-install-recommends -y autoconf automake build-essential gfortran cmake     git-core libatlas-base-dev libblas-dev liblapack-dev openssl     openjdk-7-jre-headless python-dev python2.6 python2.6-dev python-setuptools     python-virtualenv zlib1g-dev libyaml-dev subversion python-dev pkg-config \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"826d818ff212c68274b96870d93820b3dc7125c2a2767e02f493194afb33fa71\",\"parent\":\"01fadcdd70164a9f656a40290b0f65e2a274ac872b1fddb5bd624eaf285bf6af\",\"created\":\"2016-08-26T23:20:46.481734936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"01fadcdd70164a9f656a40290b0f65e2a274ac872b1fddb5bd624eaf285bf6af\",\"parent\":\"0d3a52687ca57a7a21a8e800f037973c15421b0c40f8c9f155daaa62246c72be\",\"created\":\"2016-08-26T23:20:44.463088908Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0d3a52687ca57a7a21a8e800f037973c15421b0c40f8c9f155daaa62246c72be\",\"parent\":\"c6fe6b5c116dc8c9f416e177ee4662c1530284f01e2d6af76287cd16aefaab2c\",\"created\":\"2016-08-26T18:49:52.592709376Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6fe6b5c116dc8c9f416e177ee4662c1530284f01e2d6af76287cd16aefaab2c\",\"parent\":\"cdc8a9d219b09b8aad3d334a36b5bdf97d8aa02e55b7f18a128e776cc24f2fa4\",\"created\":\"2016-08-26T18:49:51.703083474Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cdc8a9d219b09b8aad3d334a36b5bdf97d8aa02e55b7f18a128e776cc24f2fa4\",\"parent\":\"285141620f121e5f6bf7328a64910170e2611d36c94066c4c3082f8da4b0d72c\",\"created\":\"2016-08-26T18:49:49.792946649Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"285141620f121e5f6bf7328a64910170e2611d36c94066c4c3082f8da4b0d72c\",\"parent\":\"2415c9cbee29db9e860a41da6d243031b0d83dc309efeea5a19d5e95d8caece5\",\"created\":\"2016-08-26T18:49:47.896587012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2415c9cbee29db9e860a41da6d243031b0d83dc309efeea5a19d5e95d8caece5\",\"parent\":\"96a1ef3ccac01eee1bfe11b8a6209a20bf8870fb7dc2ff7c53ffa82d311ec2d3\",\"created\":\"2016-08-26T18:49:45.927957689Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"96a1ef3ccac01eee1bfe11b8a6209a20bf8870fb7dc2ff7c53ffa82d311ec2d3\",\"created\":\"2016-08-26T18:49:43.54187946Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:ada91758a31d8de3c78ea0065fbc866430a71eb58bf5c4cb403d47052b1cade0 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:3d9e27138636e7dbf1f6b72a1998653ee87a2af5af459250ac3ef7414ccda599"
+            },
+            {
+                "blobSum": "sha256:b15dbb80aa999589c961c2617495ad24dac52e683ee51149ccdc8ce65c1df770"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0e8da3e3a1a0bfa206e3c24843268639ec18239d88ef29f2cf1806f30259f7bb"
+            },
+            {
+                "blobSum": "sha256:5fc1e8224c94ecd8ffdf407ad7b0e8af36b5be5ee6498248634dc6a47842492b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:333d08a6a42ac2968d8a9b04d88b75c7b161700ad61c3219799babf244312f21"
+            },
+            {
+                "blobSum": "sha256:347f6c68ef04033868521510b201990f950f2e43f7f7d53cae155c872afb2e4e"
+            },
+            {
+                "blobSum": "sha256:f40417d6c1ac9367f3e989dc0f14d480bfc9f7872e90cbddd544923dd4243e3a"
+            },
+            {
+                "blobSum": "sha256:eab0ac30cdc8bc5f7cd2e527e3c6e666b1d18c299a413b08096a31e388e2c5e0"
+            },
+            {
+                "blobSum": "sha256:032ee73d46378d29342af37249e0d0a7c0717b83b0cf7d4410569e8d235b79b1"
+            },
+            {
+                "blobSum": "sha256:dfb9c586633427e14ac485c8f2eba09c3e227ab52becd0ddc207fefc9b7073f8"
+            },
+            {
+                "blobSum": "sha256:bc447a891869766302ea28f73f76d78f5e8508587728b7950215cd2a943b037b"
+            },
+            {
+                "blobSum": "sha256:3c10011bb600862c92e30b0e328aa81a8c246adf4ebaf5e3817bdf93f8eb4a73"
+            },
+            {
+                "blobSum": "sha256:11133852164d5f1064041fe4b92d3e63f13deb02007d4954756aededec325e52"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4967dcd9d53f13d1576a13a3c74afcbe23ffe103f91143d6f9bb9788e89c242a"
+            },
+            {
+                "blobSum": "sha256:1e2181c8b7b52044ace3dc0ea94f5b681017693b9421b7b136c7896c80926640"
+            },
+            {
+                "blobSum": "sha256:d4bca3e0934470e569036aeb508b678fecfa36d092b0549b6efeb870351b3e80"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e163fabe986f5a10edee9982b864e2680b0d6097f31d91c406098f4cfa0022b9"
+            },
+            {
+                "blobSum": "sha256:17756b5b86eef7e8811d1a65be5e720ee2d4eee26d1d277c6ac74127d2675eb4"
+            },
+            {
+                "blobSum": "sha256:768a9750fe61db2827174e08438f7b862b4a7f3b14b462fbf89cbe5dd2c03a67"
+            },
+            {
+                "blobSum": "sha256:8d268adf2f3539a2249593478540cff48729a4c4e18fdd14781c5dab21cbd389"
+            },
+            {
+                "blobSum": "sha256:d2c252d8314093390b4f0de649d1777e020bd4fa99b090ea86d9d7bf7614fbb9"
+            },
+            {
+                "blobSum": "sha256:718ca3a566491ed6106cc30024c75a2fb5a8393fd7bf3c591aea2b798d4f2696"
+            },
+            {
+                "blobSum": "sha256:c6551402ab4e853a165ced1b35f98aadce8c39d53a7db33b86e49a5b51ff2446"
+            },
+            {
+                "blobSum": "sha256:be9a80c1cd7de72ba6b6bd8e34089ea27b4c2719226d8829fd0bd4c23a4193aa"
+            },
+            {
+                "blobSum": "sha256:1640322c020cf93a94a807100231e40f65ad18a3ed13434149e26cea5063beb8"
+            },
+            {
+                "blobSum": "sha256:f518f32b405e30f03b4fd3bcedb85c650acbe52cb11747008d2aa4c55a4ab3dd"
+            },
+            {
+                "blobSum": "sha256:d3ff3f35a81ff91b36316a8bb525ce272b744859ba37e3a5d48c69c11bbb06c6"
+            },
+            {
+                "blobSum": "sha256:1f60432a9e77fd7e69c6616e2e6b133fd038cdc2dd930661154d69f6c8ac3257"
+            },
+            {
+                "blobSum": "sha256:f75f915e25ab136a9b83e1045e13f518dc1162521d0d7cb6f14dbf6d19407ef1"
+            },
+            {
+                "blobSum": "sha256:e53d4e7c7761d66f3848f6ce370c6321439028a0025bcc980d596242853687b7"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1bc05dce627e41b472ce0c27dfba0a18b2658717c997c0b00e08b4ccb19d451f"
+            },
+            {
+                "blobSum": "sha256:23c866f10f9d1c66a9acf780b234d9a26f4ac0b105023f23cbe3e2f16ca8c7de"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7a1f7116d1e3a87e389da7767ee68f5731c05dbb1a4d4dbd45166b3a8412f1c6"
+            },
+            {
+                "blobSum": "sha256:0fdbedd3771a99a8df8fe8edd26c62366a0d59496b2685330d9754680f339693"
+            },
+            {
+                "blobSum": "sha256:159ebdd1959b09a7284ceb22bbb7e383049466ece0503f66197e7843aad1da47"
+            },
+            {
+                "blobSum": "sha256:6498e51874bfd453352b79b1a3f669109795134b7adcd1a02d0ce69001f4e05b"
+            },
+            {
+                "blobSum": "sha256:862a3e9af0aeffe79345b790bad31baaa61e9402b6e616bff17babed6b053b54"
+            }
+        ],
+        "name": "bgruening/galaxy-phylogenetics",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjUwNzQ1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDM6MjhaIn0",
+                "signature": "iRQvfoFdTeK9jRRcYqFYB0KjEAJqFh65-2tFdRv4i-Ff8HWtEYNaMg_w9-hcat7L7tDexOgHgpnkCj9ZWFq1MQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "IikXGu4CqzHuHQ-1DFJ5AGxrqOTgiGCF7z8cfwicW40",
+                        "kid": "A5FE:OM5P:MTXA:FXMG:KSP2:V2HH:OII7:XSSA:P5PG:AOD2:EGA4:OIGK",
+                        "x": "4pZJGM5lV6SEQPB7ujPU7fEdmnFNE4t3xrQhIsKxXp0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"config\":{\"Hostname\":\"11687faae091\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"21/tcp\":{},\"80/tcp\":{},\"8800/tcp\":{},\"9002/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"GALAXY_RELEASE=release_16.07\",\"GALAXY_REPO=https://github.com/galaxyproject/galaxy\",\"GALAXY_ROOT=/galaxy-central\",\"GALAXY_CONFIG_DIR=/etc/galaxy\",\"GALAXY_CONFIG_FILE=/etc/galaxy/galaxy.ini\",\"GALAXY_CONFIG_JOB_CONFIG_FILE=/etc/galaxy/job_conf.xml\",\"GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE=/etc/galaxy/job_metrics_conf.xml\",\"GALAXY_CONFIG_TOOL_DEPENDENCY_DIR=/tool_deps\",\"GALAXY_VIRTUAL_ENV=/galaxy_venv\",\"GALAXY_USER=galaxy\",\"GALAXY_UID=1450\",\"GALAXY_GID=1450\",\"GALAXY_POSTGRES_UID=1550\",\"GALAXY_POSTGRES_GID=1550\",\"GALAXY_HOME=/home/galaxy\",\"GALAXY_LOGS_DIR=/home/galaxy/logs\",\"GALAXY_DEFAULT_ADMIN_USER=admin@galaxy.org\",\"GALAXY_DEFAULT_ADMIN_PASSWORD=admin\",\"GALAXY_DEFAULT_ADMIN_KEY=admin\",\"GALAXY_DESTINATIONS_DEFAULT=slurm_cluster\",\"PG_DATA_DIR_DEFAULT=/var/lib/postgresql/9.3/main/\",\"PG_CONF_DIR_DEFAULT=/etc/postgresql/9.3/main/\",\"PG_DATA_DIR_HOST=/export/postgresql/9.3/main/\",\"EXPORT_DIR=/export\",\"UWSGI_PROCESSES=2\",\"UWSGI_THREADS=4\",\"GALAXY_HANDLER_NUMPROCS=2\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"GALAXY_CONFIG_DATABASE_CONNECTION=postgresql://galaxy:galaxy@localhost:5432/galaxy?client_encoding=utf8\",\"GALAXY_CONFIG_ADMIN_USERS=admin@galaxy.org\",\"GALAXY_CONFIG_MASTER_API_KEY=HSNiugRFvgT574F43jZ7N9F3\",\"GALAXY_CONFIG_BRAND=Phylogenetics\",\"GALAXY_CONFIG_STATIC_ENABLED=False\",\"GALAXY_CONFIG_JOB_WORKING_DIRECTORY=/export/galaxy-central/database/job_working_directory\",\"GALAXY_CONFIG_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_NEW_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_TEMPLATE_CACHE_PATH=/export/galaxy-central/database/compiled_templates\",\"GALAXY_CONFIG_CITATION_CACHE_DATA_DIR=/export/galaxy-central/database/citations/data\",\"GALAXY_CONFIG_CLUSTER_FILES_DIRECTORY=/export/galaxy-central/database/pbs\",\"GALAXY_CONFIG_FTP_UPLOAD_DIR=/export/ftp\",\"GALAXY_CONFIG_FTP_UPLOAD_SITE=galaxy.docker.org\",\"GALAXY_CONFIG_USE_PBKDF2=False\",\"GALAXY_CONFIG_NGINX_X_ACCEL_REDIRECT_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_X_ARCHIVE_FILES_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_UPLOAD_STORE=/export/nginx_upload_store\",\"GALAXY_CONFIG_NGINX_UPLOAD_PATH=/_upload\",\"GALAXY_CONFIG_DYNAMIC_PROXY_MANAGE=False\",\"GALAXY_CONFIG_VISUALIZATION_PLUGINS_DIRECTORY=config/plugins/visualizations\",\"GALAXY_CONFIG_TRUST_IPYTHON_NOTEBOOK_CONVERSION=True\",\"GALAXY_CONFIG_TOOLFORM_UPGRADE=True\",\"GALAXY_CONFIG_SANITIZE_ALL_HTML=False\",\"GALAXY_CONFIG_WELCOME_URL=/etc/galaxy/web/welcome.html\",\"GALAXY_CONFIG_OVERRIDE_DEBUG=False\",\"HOME=/home/galaxy\",\"GALAXY_CONDA_PREFIX=/tool_deps/_conda\",\"GALAXY_CONFIG_INTEGRATED_TOOL_PANEL_CONFIG=/export/galaxy-central/integrated_tool_panel.xml\",\"ENABLE_TTS_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INIT=True\"],\"Cmd\":[\"/usr/bin/startup\"],\"ArgsEscaped\":true,\"Image\":\"sha256:89cfba791ff71095964925abb1466cfa14c8d95332fcc4013082d9b9818e8337\",\"Volumes\":{\"/data/\":{},\"/export/\":{},\"/var/lib/docker\":{}},\"WorkingDir\":\"/galaxy-central\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"9f0bffed1085c131c7eec13103078b23965920e054dbbe187bc87e95e8b19e35\",\"container_config\":{\"Hostname\":\"11687faae091\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"21/tcp\":{},\"80/tcp\":{},\"8800/tcp\":{},\"9002/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"GALAXY_RELEASE=release_16.07\",\"GALAXY_REPO=https://github.com/galaxyproject/galaxy\",\"GALAXY_ROOT=/galaxy-central\",\"GALAXY_CONFIG_DIR=/etc/galaxy\",\"GALAXY_CONFIG_FILE=/etc/galaxy/galaxy.ini\",\"GALAXY_CONFIG_JOB_CONFIG_FILE=/etc/galaxy/job_conf.xml\",\"GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE=/etc/galaxy/job_metrics_conf.xml\",\"GALAXY_CONFIG_TOOL_DEPENDENCY_DIR=/tool_deps\",\"GALAXY_VIRTUAL_ENV=/galaxy_venv\",\"GALAXY_USER=galaxy\",\"GALAXY_UID=1450\",\"GALAXY_GID=1450\",\"GALAXY_POSTGRES_UID=1550\",\"GALAXY_POSTGRES_GID=1550\",\"GALAXY_HOME=/home/galaxy\",\"GALAXY_LOGS_DIR=/home/galaxy/logs\",\"GALAXY_DEFAULT_ADMIN_USER=admin@galaxy.org\",\"GALAXY_DEFAULT_ADMIN_PASSWORD=admin\",\"GALAXY_DEFAULT_ADMIN_KEY=admin\",\"GALAXY_DESTINATIONS_DEFAULT=slurm_cluster\",\"PG_DATA_DIR_DEFAULT=/var/lib/postgresql/9.3/main/\",\"PG_CONF_DIR_DEFAULT=/etc/postgresql/9.3/main/\",\"PG_DATA_DIR_HOST=/export/postgresql/9.3/main/\",\"EXPORT_DIR=/export\",\"UWSGI_PROCESSES=2\",\"UWSGI_THREADS=4\",\"GALAXY_HANDLER_NUMPROCS=2\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"GALAXY_CONFIG_DATABASE_CONNECTION=postgresql://galaxy:galaxy@localhost:5432/galaxy?client_encoding=utf8\",\"GALAXY_CONFIG_ADMIN_USERS=admin@galaxy.org\",\"GALAXY_CONFIG_MASTER_API_KEY=HSNiugRFvgT574F43jZ7N9F3\",\"GALAXY_CONFIG_BRAND=Phylogenetics\",\"GALAXY_CONFIG_STATIC_ENABLED=False\",\"GALAXY_CONFIG_JOB_WORKING_DIRECTORY=/export/galaxy-central/database/job_working_directory\",\"GALAXY_CONFIG_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_NEW_FILE_PATH=/export/galaxy-central/database/files\",\"GALAXY_CONFIG_TEMPLATE_CACHE_PATH=/export/galaxy-central/database/compiled_templates\",\"GALAXY_CONFIG_CITATION_CACHE_DATA_DIR=/export/galaxy-central/database/citations/data\",\"GALAXY_CONFIG_CLUSTER_FILES_DIRECTORY=/export/galaxy-central/database/pbs\",\"GALAXY_CONFIG_FTP_UPLOAD_DIR=/export/ftp\",\"GALAXY_CONFIG_FTP_UPLOAD_SITE=galaxy.docker.org\",\"GALAXY_CONFIG_USE_PBKDF2=False\",\"GALAXY_CONFIG_NGINX_X_ACCEL_REDIRECT_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_X_ARCHIVE_FILES_BASE=/_x_accel_redirect\",\"GALAXY_CONFIG_NGINX_UPLOAD_STORE=/export/nginx_upload_store\",\"GALAXY_CONFIG_NGINX_UPLOAD_PATH=/_upload\",\"GALAXY_CONFIG_DYNAMIC_PROXY_MANAGE=False\",\"GALAXY_CONFIG_VISUALIZATION_PLUGINS_DIRECTORY=config/plugins/visualizations\",\"GALAXY_CONFIG_TRUST_IPYTHON_NOTEBOOK_CONVERSION=True\",\"GALAXY_CONFIG_TOOLFORM_UPGRADE=True\",\"GALAXY_CONFIG_SANITIZE_ALL_HTML=False\",\"GALAXY_CONFIG_WELCOME_URL=/etc/galaxy/web/welcome.html\",\"GALAXY_CONFIG_OVERRIDE_DEBUG=False\",\"HOME=/home/galaxy\",\"GALAXY_CONDA_PREFIX=/tool_deps/_conda\",\"GALAXY_CONFIG_INTEGRATED_TOOL_PANEL_CONFIG=/export/galaxy-central/integrated_tool_panel.xml\",\"ENABLE_TTS_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INSTALL=True\",\"GALAXY_CONFIG_CONDA_AUTO_INIT=True\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"install-tools $GALAXY_ROOT/tools.yaml \\u0026\\u0026     /tool_deps/_conda/bin/conda clean --tarballs\"],\"ArgsEscaped\":true,\"Image\":\"sha256:89cfba791ff71095964925abb1466cfa14c8d95332fcc4013082d9b9818e8337\",\"Volumes\":{\"/data/\":{},\"/export/\":{},\"/var/lib/docker\":{}},\"WorkingDir\":\"/galaxy-central\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-21T22:05:48.010902553Z\",\"docker_version\":\"1.12.0\",\"id\":\"52e5877a59beff188666ef984794ff71f3727e73d09374c9aa84850d4b0c4967\",\"os\":\"linux\",\"parent\":\"2359ccd51a6b2c1a75a0cf08ba0553220f0d61d9d6d9816a83a1fc19cad55e48\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2359ccd51a6b2c1a75a0cf08ba0553220f0d61d9d6d9816a83a1fc19cad55e48\",\"parent\":\"940c48688fc6d39109d7ddafc4633bc63895a740077026ee5ef760d7ce510712\",\"created\":\"2016-09-21T21:54:17.068028965Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:eb078b26f6548faaf38ab70645b3b95f5d4e2ff277d71e17caee4ca9ace1489b in /galaxy-central/tools.yaml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"940c48688fc6d39109d7ddafc4633bc63895a740077026ee5ef760d7ce510712\",\"parent\":\"0a8734814e8c26a371573ebdfb50fa58620c5f807c7f550d9a9d23aea9b6e8c0\",\"created\":\"2016-09-21T21:53:50.807642558Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True GALAXY_CONFIG_CONDA_AUTO_INIT=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0a8734814e8c26a371573ebdfb50fa58620c5f807c7f550d9a9d23aea9b6e8c0\",\"parent\":\"9e6b86957789320a40c39b164f92d3b41710feae4a9c4be0b69de9db2bb02142\",\"created\":\"2016-09-21T21:53:24.941814015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ENABLE_TTS_INSTALL=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e6b86957789320a40c39b164f92d3b41710feae4a9c4be0b69de9db2bb02142\",\"parent\":\"54126e9ae444036be64693fe7d69e27270c4e53b200f9305ed837b423c2b76ba\",\"created\":\"2016-09-21T21:52:58.064401301Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_BRAND=Phylogenetics\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"54126e9ae444036be64693fe7d69e27270c4e53b200f9305ed837b423c2b76ba\",\"parent\":\"026e1f84e22c61a78bb1662e981aad57b4d80f45ab289a2bbc96b7e6ae111146\",\"created\":\"2016-09-21T21:52:31.0233524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"026e1f84e22c61a78bb1662e981aad57b4d80f45ab289a2bbc96b7e6ae111146\",\"parent\":\"b699cd379ed3a55df3f7ed9f1d9235f867c49cd43f52aa7dde79f59cbf1b709e\",\"created\":\"2016-09-19T21:24:36.580748449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install-tools $GALAXY_ROOT/tools.yaml \\u0026\\u0026     /tool_deps/_conda/bin/conda clean --tarballs\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b699cd379ed3a55df3f7ed9f1d9235f867c49cd43f52aa7dde79f59cbf1b709e\",\"parent\":\"8781e475dd82b48e037ff6464e598da72da014ddb57d6058ee48e85f76c8873f\",\"created\":\"2016-09-19T21:12:41.996270062Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:ff0d356332bc4c1eed7ac8878230993a8c0ce522e82a0536870a0323d554aacb in /galaxy-central/tools.yaml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8781e475dd82b48e037ff6464e598da72da014ddb57d6058ee48e85f76c8873f\",\"parent\":\"89807d2d99abb5f62a9183fed046c77eb858a366c15829a4db78af6388f89322\",\"created\":\"2016-09-19T21:12:27.742411496Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True GALAXY_CONFIG_CONDA_AUTO_INIT=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"89807d2d99abb5f62a9183fed046c77eb858a366c15829a4db78af6388f89322\",\"parent\":\"fa997df8b3d059d7b64183b9abcf18baf7cf135cfbf121dcc60bc0255854bc62\",\"created\":\"2016-09-19T21:12:13.448791114Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ENABLE_TTS_INSTALL=True\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa997df8b3d059d7b64183b9abcf18baf7cf135cfbf121dcc60bc0255854bc62\",\"parent\":\"e707dabfe0702838cd5e21fbfa75144e30f0a97a73c7fba891da29993da36ac4\",\"created\":\"2016-09-19T21:11:59.138598598Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_BRAND=NGS-preprocessing\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e707dabfe0702838cd5e21fbfa75144e30f0a97a73c7fba891da29993da36ac4\",\"parent\":\"31999e71689368d52f9ff20a45c8a36f1da47761b6f9789478f4821478afd566\",\"created\":\"2016-09-19T21:11:44.752977089Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31999e71689368d52f9ff20a45c8a36f1da47761b6f9789478f4821478afd566\",\"parent\":\"3707ccfc6b419de2f61ecffbd8e625a93436f4f0d513478efecd375cb19b4703\",\"created\":\"2016-09-19T20:34:10.724208797Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/usr/bin/startup\\\"]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3707ccfc6b419de2f61ecffbd8e625a93436f4f0d513478efecd375cb19b4703\",\"parent\":\"eb102eea0ebf2fdd8d6175e853c1b4cb0c2c4c7d2349fd69076b0e3b3c2d0c04\",\"created\":\"2016-09-19T20:33:56.311923307Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/export/ /data/ /var/lib/docker]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb102eea0ebf2fdd8d6175e853c1b4cb0c2c4c7d2349fd69076b0e3b3c2d0c04\",\"parent\":\"0fbb8fc5ecee657d4284fa4e75c7cfa9a73ed846a8ea9b43c48af61ce5628517\",\"created\":\"2016-09-19T20:33:41.992908673Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 9002/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fbb8fc5ecee657d4284fa4e75c7cfa9a73ed846a8ea9b43c48af61ce5628517\",\"parent\":\"9b9cbe0939703a7f96347c0bc652838b33db78590701996a0d176f008aed950d\",\"created\":\"2016-09-19T20:33:27.657715643Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8800/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b9cbe0939703a7f96347c0bc652838b33db78590701996a0d176f008aed950d\",\"parent\":\"441412eb1b8ce70322e0bd1fb3720c17084539e9d12377f7940a77c9986d7a4b\",\"created\":\"2016-09-19T20:33:13.32498796Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 21/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"441412eb1b8ce70322e0bd1fb3720c17084539e9d12377f7940a77c9986d7a4b\",\"parent\":\"1465f1a2a59f6ce1729242774f8496773ff27925ca923ec739d943aa6a7ed060\",\"created\":\"2016-09-19T20:32:59.023546722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 80/tcp\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1465f1a2a59f6ce1729242774f8496773ff27925ca923ec739d943aa6a7ed060\",\"parent\":\"812e0b4920ab80406ab2b31878c444466914eab5d9c04b9340b4eae1a8311e12\",\"created\":\"2016-09-19T20:32:44.623993631Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_INTEGRATED_TOOL_PANEL_CONFIG=/export/galaxy-central/integrated_tool_panel.xml\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"812e0b4920ab80406ab2b31878c444466914eab5d9c04b9340b4eae1a8311e12\",\"parent\":\"8efb17a2445073d874670f5ca180c27d689646a0a82d16f5e41aa8c3b3f0a8dd\",\"created\":\"2016-09-19T20:32:32.342053529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"DISCARD_SESSION_KEYRING_ON_STARTUP=False\\\" \\u003e /etc/condor/condor_config.local \\u0026\\u0026     echo \\\"TRUST_UID_DOMAIN=true\\\" \\u003e\\u003e /etc/condor/condor_config.local\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8efb17a2445073d874670f5ca180c27d689646a0a82d16f5e41aa8c3b3f0a8dd\",\"parent\":\"a100c11a48fa68fbe579d65a03ff3e54aa5bb91e354dbc892c7c024418a402d7\",\"created\":\"2016-09-19T20:32:19.619788981Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /usr/bin/install-tools /usr/bin/startup /usr/bin/startup_lite /usr/bin/install-biojs /usr/bin/add-tool-shed\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a100c11a48fa68fbe579d65a03ff3e54aa5bb91e354dbc892c7c024418a402d7\",\"parent\":\"f3c4888ff30f0de9d06c8f3c774ac0c3ea7651aae89bd01b7580e3dd501e96fa\",\"created\":\"2016-09-19T20:32:07.302759189Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:5a83d80d55695c2faa80cc3050ab42440a9d0407b0227c56adaaca3e5d23161f in /usr/bin/install-biojs \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3c4888ff30f0de9d06c8f3c774ac0c3ea7651aae89bd01b7580e3dd501e96fa\",\"parent\":\"da21da6d9480d9df519f336a6cd3cfe61da9c5d185aa6c9e66b63510e8488f54\",\"created\":\"2016-09-19T20:31:54.908432594Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:bc330eb6106bbd95673f6f77d4a68231bf4e90e8022fc0ec8ccf3737e5ca1276 in /usr/bin/install-tools \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da21da6d9480d9df519f336a6cd3cfe61da9c5d185aa6c9e66b63510e8488f54\",\"parent\":\"7097d1777583bc7c414b3b5a850bfe2427880a64906980a4a798a996c0fdf3f6\",\"created\":\"2016-09-19T20:31:42.625920644Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:6eddf0cbfb0bff9c50636a76b1762f1aa75e989cdce6ac25dc91171e38ce801f in /usr/bin/startup_lite \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7097d1777583bc7c414b3b5a850bfe2427880a64906980a4a798a996c0fdf3f6\",\"parent\":\"738cdc4bba2e844c0f86ab2d5c75c3c1b27491cd4c59b90d3d1b74d449d00808\",\"created\":\"2016-09-19T20:31:30.632623884Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:fccc2437061923574a3efebb500c597e22f70c2c23a904c791e37a413fc37c7d in /usr/bin/add-tool-shed \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"738cdc4bba2e844c0f86ab2d5c75c3c1b27491cd4c59b90d3d1b74d449d00808\",\"parent\":\"326f77ced4708ca021ce253fa0336f2c4d8572b4157c171e29d9cd5934fc8bff\",\"created\":\"2016-09-19T20:31:18.498530224Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b81baef9d588a7e26019826c5acf0ae7b7ffab6fea243f048d67f68126ee16dc in /home/galaxy/tool_sheds_conf.xml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"326f77ced4708ca021ce253fa0336f2c4d8572b4157c171e29d9cd5934fc8bff\",\"parent\":\"83b76b1b7d6216ecb8ea8aa42e3f2bd1dd77611a4b4a02ad755e5390a992e8f9\",\"created\":\"2016-09-19T20:31:06.639351861Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm $PG_DATA_DIR_DEFAULT -rf \\u0026\\u0026     python /usr/local/bin/setup_postgresql.py --dbuser galaxy --dbpassword galaxy --db-name galaxy --dbpath $PG_DATA_DIR_DEFAULT \\u0026\\u0026     service postgresql start \\u0026\\u0026     . $GALAXY_VIRTUAL_ENV/bin/activate \\u0026\\u0026     sh create_db.sh -c $GALAXY_CONFIG_FILE \\u0026\\u0026     python /usr/local/bin/create_galaxy_user.py --user $GALAXY_DEFAULT_ADMIN_USER --password $GALAXY_DEFAULT_ADMIN_PASSWORD -c $GALAXY_CONFIG_FILE --key $GALAXY_DEFAULT_ADMIN_KEY \\u0026\\u0026     service postgresql stop\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"83b76b1b7d6216ecb8ea8aa42e3f2bd1dd77611a4b4a02ad755e5390a992e8f9\",\"parent\":\"512b82b863bc0d78e8a280c3e2ebc5d74b1181bee62bd60d09a38cfc280b4147\",\"created\":\"2016-09-19T20:25:11.446464061Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:6a8e9adc543c2b69ea2b92c640242be48912e1ecd20d1b126d16a4d5fdf28baf in /usr/local/bin/setup_postgresql.py \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"512b82b863bc0d78e8a280c3e2ebc5d74b1181bee62bd60d09a38cfc280b4147\",\"parent\":\"2ba5e21c1570289091d49ed9de885da6b58adb601351471b22415cbb541b6005\",\"created\":\"2016-09-19T20:24:57.553131296Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ba5e21c1570289091d49ed9de885da6b58adb601351471b22415cbb541b6005\",\"parent\":\"57d7887a8c0fe09761d7dd56b84d15f2f135662eb7ecbc0c46aa2fc53d083524\",\"created\":\"2016-09-19T20:24:45.57455015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:e17fe9b73e3d39dd80346e9bd001a6572649dace61333d763dde7509def47792 in /etc/galaxy/web/welcome.html \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57d7887a8c0fe09761d7dd56b84d15f2f135662eb7ecbc0c46aa2fc53d083524\",\"parent\":\"b86a07641f41e87449c697b0fa54c46817fefa4a582a69fe206fafc7ff6ae612\",\"created\":\"2016-09-19T20:24:33.972488836Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0834b78bde67c7649941f08dbf00af7af5c86f3ba465a015020112d9df78318b in /etc/galaxy/web/welcome_image.png \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b86a07641f41e87449c697b0fa54c46817fefa4a582a69fe206fafc7ff6ae612\",\"parent\":\"db66e371d298633ec0d3f39c1076f0e00bd6d0415572e6b637e0f3f388008334\",\"created\":\"2016-09-19T20:24:20.729702992Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./scripts/common_startup.sh \\u0026\\u0026     cd $GALAXY_ROOT/lib/galaxy/web/proxy/js \\u0026\\u0026     npm install \\u0026\\u0026     wget https://repo.continuum.io/miniconda/Miniconda3-4.0.5-Linux-x86_64.sh \\u0026\\u0026     bash Miniconda3-4.0.5-Linux-x86_64.sh -b -p $GALAXY_CONDA_PREFIX \\u0026\\u0026     rm Miniconda3-4.0.5-Linux-x86_64.sh \\u0026\\u0026     $GALAXY_CONDA_PREFIX/bin/conda install -y conda==3.19.3\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db66e371d298633ec0d3f39c1076f0e00bd6d0415572e6b637e0f3f388008334\",\"parent\":\"cd8fe191e359554cab1d6fa7227ec951d79d3cd7965f0c653a5d1bcce92d80e4\",\"created\":\"2016-09-19T20:22:49.950560571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_DATABASE_CONNECTION=postgresql://galaxy:galaxy@localhost:5432/galaxy?client_encoding=utf8 GALAXY_CONFIG_ADMIN_USERS=admin@galaxy.org GALAXY_CONFIG_MASTER_API_KEY=HSNiugRFvgT574F43jZ7N9F3 GALAXY_CONFIG_BRAND=Galaxy Docker Build GALAXY_CONFIG_STATIC_ENABLED=False GALAXY_CONFIG_JOB_WORKING_DIRECTORY=/export/galaxy-central/database/job_working_directory GALAXY_CONFIG_FILE_PATH=/export/galaxy-central/database/files GALAXY_CONFIG_NEW_FILE_PATH=/export/galaxy-central/database/files GALAXY_CONFIG_TEMPLATE_CACHE_PATH=/export/galaxy-central/database/compiled_templates GALAXY_CONFIG_CITATION_CACHE_DATA_DIR=/export/galaxy-central/database/citations/data GALAXY_CONFIG_CLUSTER_FILES_DIRECTORY=/export/galaxy-central/database/pbs GALAXY_CONFIG_FTP_UPLOAD_DIR=/export/ftp GALAXY_CONFIG_FTP_UPLOAD_SITE=galaxy.docker.org GALAXY_CONFIG_USE_PBKDF2=False GALAXY_CONFIG_NGINX_X_ACCEL_REDIRECT_BASE=/_x_accel_redirect GALAXY_CONFIG_NGINX_X_ARCHIVE_FILES_BASE=/_x_accel_redirect GALAXY_CONFIG_NGINX_UPLOAD_STORE=/export/nginx_upload_store GALAXY_CONFIG_NGINX_UPLOAD_PATH=/_upload GALAXY_CONFIG_DYNAMIC_PROXY_MANAGE=False GALAXY_CONFIG_VISUALIZATION_PLUGINS_DIRECTORY=config/plugins/visualizations GALAXY_CONFIG_TRUST_IPYTHON_NOTEBOOK_CONVERSION=True GALAXY_CONFIG_TOOLFORM_UPGRADE=True GALAXY_CONFIG_SANITIZE_ALL_HTML=False GALAXY_CONFIG_TOOLFORM_UPGRADE=True GALAXY_CONFIG_WELCOME_URL=/etc/galaxy/web/welcome.html GALAXY_CONFIG_OVERRIDE_DEBUG=False HOME=/home/galaxy GALAXY_CONDA_PREFIX=/tool_deps/_conda\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd8fe191e359554cab1d6fa7227ec951d79d3cd7965f0c653a5d1bcce92d80e4\",\"parent\":\"782387f8e5da4bb6e792fafe88638b5751b26008ea076aef5fd72bfe1139145c\",\"created\":\"2016-09-19T20:22:40.027015233Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /galaxy-central\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"782387f8e5da4bb6e792fafe88638b5751b26008ea076aef5fd72bfe1139145c\",\"parent\":\"28d7743683f6c5a12fc7d24dcf62cab3c00a75f624351c2e19b8009180d00d41\",\"created\":\"2016-09-19T20:22:29.041530817Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [galaxy]\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"28d7743683f6c5a12fc7d24dcf62cab3c00a75f624351c2e19b8009180d00d41\",\"parent\":\"1f92c167bb7e13d4aabf19b48dc7cefe733d637c15b34e7f6ccba12700104469\",\"created\":\"2016-09-19T20:22:20.508898438Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /shed_tools \\u0026\\u0026 chown $GALAXY_USER:$GALAXY_USER /shed_tools \\u0026\\u0026     mkdir /export/ftp/ \\u0026\\u0026 chown $GALAXY_USER:$GALAXY_USER /export/ftp \\u0026\\u0026     mkdir /tool_deps/ \\u0026\\u0026 chown $GALAXY_USER:$GALAXY_USER /tool_deps # Configure Galaxy to use the Tool Shed\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1f92c167bb7e13d4aabf19b48dc7cefe733d637c15b34e7f6ccba12700104469\",\"parent\":\"9755ab8b00685586fa44dcb88cdd72bdadeb76339838cbbe92178c9c958f1f9b\",\"created\":\"2016-09-19T20:22:11.247529328Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ansible-playbook /tmp/ansible/postgresql_provision.yml \\u0026\\u0026     ansible-playbook /tmp/ansible/provision.yml     --extra-vars galaxy_venv_dir=$GALAXY_VIRTUAL_ENV     --extra-vars galaxy_log_dir=$GALAXY_LOGS_DIR     --extra-vars galaxy_user_name=$GALAXY_USER     --extra-vars galaxy_config_file=$GALAXY_CONFIG_FILE     --extra-vars galaxy_config_dir=$GALAXY_CONFIG_DIR     --extra-vars galaxy_job_conf_path=$GALAXY_CONFIG_JOB_CONFIG_FILE     --extra-vars galaxy_job_metrics_conf_path=$GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE     --extra-vars supervisor_manage_slurm=\\\"\\\"     --extra-vars galaxy_extras_config_condor=True     --extra-vars galaxy_extras_config_condor_docker=True     --extra-vars proftpd_db_connection=galaxy@galaxy     --extra-vars proftpd_files_dir=/export/ftp     --extra-vars proftpd_use_sftp=True     --extra-vars nginx_upload_store_path=/export/nginx_upload_store     --extra-vars supervisor_postgres_config_path=$PG_CONF_DIR_DEFAULT/postgresql.conf     --tags=galaxyextras -c local \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9755ab8b00685586fa44dcb88cdd72bdadeb76339838cbbe92178c9c958f1f9b\",\"parent\":\"d74298ec8aee20baa4aec18700047264a10d13e3c43dc3508bd4d0841d2e4cf7\",\"created\":\"2016-09-19T20:17:59.431197292Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:da66744759675134c3c5285bac05fa113f89a1c36c3d8fa31b3fe0d1f6ce6c00 in /tmp/ansible/postgresql_provision.yml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d74298ec8aee20baa4aec18700047264a10d13e3c43dc3508bd4d0841d2e4cf7\",\"parent\":\"c51c867242982036fc757be0052f7314cdf7b7ab84d77a9a7ff8bdceea0616fe\",\"created\":\"2016-09-19T20:17:52.377348966Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b3e9eba5e900e6044b82e92d7c6e420283fdc5a90c4411aef364ac5dc119cf5f in /tmp/ansible/provision.yml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c51c867242982036fc757be0052f7314cdf7b7ab84d77a9a7ff8bdceea0616fe\",\"parent\":\"eb5fc170b2478141d57ff29bbbd92237853a76c0b8cc644cc0b7fca1dcc27ad9\",\"created\":\"2016-09-19T20:17:45.570567761Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:a8752c6b47800e560c101e9bb79c7095e925aad4c322ae464074ca7b40ca3954 in /tmp/ansible/roles \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb5fc170b2478141d57ff29bbbd92237853a76c0b8cc644cc0b7fca1dcc27ad9\",\"parent\":\"3e6921cf2a411d9458fb4830573e5b925a5bde930535a1dd6809ff2a96888ecd\",\"created\":\"2016-09-19T20:17:38.995074408Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:82b198d91d5fc1c842765c05fcdda257ad8a9abaffdf17c15e3231bd436a6db4 in /home/galaxy/ephemeris/sample_tool_list.yaml \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3e6921cf2a411d9458fb4830573e5b925a5bde930535a1dd6809ff2a96888ecd\",\"parent\":\"ec2f823c39bad31953c1c0d88673e59e269869788083080ca8a104f4557575ca\",\"created\":\"2016-09-19T20:17:32.600466383Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:805b68953711a8a0e70d2c1238564e113aacd30b9b4ca4ac58909ca97c008c37 in /etc/galaxy/reports_wsgi.ini \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec2f823c39bad31953c1c0d88673e59e269869788083080ca8a104f4557575ca\",\"parent\":\"97b9464e92c041c42f9c9fe9752909f27b9ae1b242518dc55adc2f3bde6cbac7\",\"created\":\"2016-09-19T20:17:26.229799869Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c su $GALAXY_USER -c \\\"cp $GALAXY_ROOT/config/galaxy.ini.sample $GALAXY_CONFIG_FILE\\\"\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"97b9464e92c041c42f9c9fe9752909f27b9ae1b242518dc55adc2f3bde6cbac7\",\"parent\":\"b4717864ff9b2df44044180f8ac2c79211d9adb797574667c05ff12aaf1d0724\",\"created\":\"2016-09-19T20:17:19.379493366Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir $GALAXY_ROOT \\u0026\\u0026     wget -q -O - $GALAXY_REPO/archive/$GALAXY_RELEASE.tar.gz | tar xzf - --strip-components=1 -C $GALAXY_ROOT \\u0026\\u0026     virtualenv $GALAXY_VIRTUAL_ENV \\u0026\\u0026     chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_VIRTUAL_ENV \\u0026\\u0026     chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_ROOT \\u0026\\u0026     mkdir -p $GALAXY_CONFIG_DIR $GALAXY_CONFIG_DIR/web \\u0026\\u0026     chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_CONFIG_DIR\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4717864ff9b2df44044180f8ac2c79211d9adb797574667c05ff12aaf1d0724\",\"parent\":\"029c09230d4c26a80f94f14c5940d41fae476671b3df8e5b63bccaa5ee6445a1\",\"created\":\"2016-09-19T20:17:03.960194381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:338de7d8a7dfc60cabda2c6055823bf34acf8607d4abd2f399b5ea6e9da00abc in /home/galaxy/.bashrc \"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"029c09230d4c26a80f94f14c5940d41fae476671b3df8e5b63bccaa5ee6445a1\",\"parent\":\"97a54e26bb196dd4dfc0e0b6a21ba3518963d1ad58f15abd8791b349ff3c4d5d\",\"created\":\"2016-09-19T20:16:58.376468136Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd -r $GALAXY_USER -g $GALAXY_GID \\u0026\\u0026     useradd -u $GALAXY_UID -r -g $GALAXY_USER -d $GALAXY_HOME -c \\\"Galaxy user\\\" $GALAXY_USER \\u0026\\u0026     mkdir $EXPORT_DIR $GALAXY_HOME $GALAXY_LOGS_DIR \\u0026\\u0026 chown -R $GALAXY_USER:$GALAXY_USER $GALAXY_HOME $EXPORT_DIR $GALAXY_LOGS_DIR \\u0026\\u0026     gpasswd -a $GALAXY_USER docker \\u0026\\u0026     adduser condor docker\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"97a54e26bb196dd4dfc0e0b6a21ba3518963d1ad58f15abd8791b349ff3c4d5d\",\"parent\":\"e414af555c9633c3dcaad3ae05c43a1559d513465bbd1504e9b87a1ad204bb34\",\"created\":\"2016-09-19T20:16:49.675541972Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -qq update \\u0026\\u0026 apt-get install --no-install-recommends -y apt-transport-https software-properties-common wget \\u0026\\u0026     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D \\u0026\\u0026     sh -c \\\"echo deb https://get.docker.io/ubuntu docker main \\u003e /etc/apt/sources.list.d/docker.list\\\" \\u0026\\u0026     sh -c \\\"echo deb http://research.cs.wisc.edu/htcondor/ubuntu/stable/ trusty contrib \\u003e /etc/apt/sources.list.d/htcondor.list\\\" \\u0026\\u0026     sh -c \\\"wget -qO - http://research.cs.wisc.edu/htcondor/ubuntu/HTCondor-Release.gpg.key | sudo apt-key add -\\\" \\u0026\\u0026     apt-add-repository -y ppa:ansible/ansible \\u0026\\u0026     apt-add-repository -y ppa:galaxyproject/nginx \\u0026\\u0026     apt-get update -qq \\u0026\\u0026 apt-get upgrade -y \\u0026\\u0026     apt-get install --no-install-recommends -y mercurial python-psycopg2 postgresql-9.3 sudo samtools python-virtualenv     nginx-extras=1.4.6-1ubuntu3.4ppa1 nginx-common=1.4.6-1ubuntu3.4ppa1 uwsgi uwsgi-plugin-python supervisor lxc-docker-1.9.1 slurm-llnl slurm-llnl-torque libswitch-perl     slurm-drmaa-dev proftpd proftpd-mod-pgsql libyaml-dev nodejs-legacy npm ansible     nano nmap lynx vim curl python-crypto python-pip python-gnuplot python-rpy2 python-psutil condor python-ldap     gridengine-common gridengine-drmaa1.0 \\u0026\\u0026     pip install --upgrade pip \\u0026\\u0026     pip install ephemeris \\u0026\\u0026     apt-get purge -y software-properties-common \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e414af555c9633c3dcaad3ae05c43a1559d513465bbd1504e9b87a1ad204bb34\",\"parent\":\"026632097ef75767bdcc94972d0ab2f87f4dbc44f781d1022435eff4cd9825c4\",\"created\":\"2016-09-19T20:13:27.611193028Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd -r postgres -g $GALAXY_POSTGRES_GID \\u0026\\u0026     adduser --system --quiet --home /var/lib/postgresql --no-create-home --shell /bin/bash --gecos \\\"\\\" --uid $GALAXY_POSTGRES_UID --gid $GALAXY_POSTGRES_GID postgres\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"026632097ef75767bdcc94972d0ab2f87f4dbc44f781d1022435eff4cd9825c4\",\"parent\":\"f537989d2587530d359477ad3211d1225e1b592d265ce3461cdea44a1b9f16d5\",\"created\":\"2016-09-19T20:13:23.862944353Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c locale-gen en_US.UTF-8 \\u0026\\u0026 dpkg-reconfigure locales\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f537989d2587530d359477ad3211d1225e1b592d265ce3461cdea44a1b9f16d5\",\"parent\":\"84c534b0992741cd6761658fc1c2dc193824527446a3f776eeaccf0c29fa0289\",\"created\":\"2016-09-19T20:13:18.018440335Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_CONFIG_FILE=/etc/galaxy/galaxy.ini GALAXY_CONFIG_JOB_CONFIG_FILE=/etc/galaxy/job_conf.xml GALAXY_CONFIG_JOB_METRICS_CONFIG_FILE=/etc/galaxy/job_metrics_conf.xml GALAXY_CONFIG_TOOL_DEPENDENCY_DIR=/tool_deps GALAXY_VIRTUAL_ENV=/galaxy_venv GALAXY_USER=galaxy GALAXY_UID=1450 GALAXY_GID=1450 GALAXY_POSTGRES_UID=1550 GALAXY_POSTGRES_GID=1550 GALAXY_HOME=/home/galaxy GALAXY_LOGS_DIR=/home/galaxy/logs GALAXY_DEFAULT_ADMIN_USER=admin@galaxy.org GALAXY_DEFAULT_ADMIN_PASSWORD=admin GALAXY_DEFAULT_ADMIN_KEY=admin GALAXY_DESTINATIONS_DEFAULT=slurm_cluster PG_DATA_DIR_DEFAULT=/var/lib/postgresql/9.3/main/ PG_CONF_DIR_DEFAULT=/etc/postgresql/9.3/main/ PG_DATA_DIR_HOST=/export/postgresql/9.3/main/ EXPORT_DIR=/export UWSGI_PROCESSES=2 UWSGI_THREADS=4 GALAXY_HANDLER_NUMPROCS=2 LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"84c534b0992741cd6761658fc1c2dc193824527446a3f776eeaccf0c29fa0289\",\"parent\":\"f85985dfd8e974c7ddfa246fb62d889c2062955c4ab98f5da5aad07ab5b45ecb\",\"created\":\"2016-09-19T20:13:14.314363788Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GALAXY_RELEASE=release_16.07 GALAXY_REPO=https://github.com/galaxyproject/galaxy GALAXY_ROOT=/galaxy-central GALAXY_CONFIG_DIR=/etc/galaxy\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f85985dfd8e974c7ddfa246fb62d889c2062955c4ab98f5da5aad07ab5b45ecb\",\"parent\":\"50a75afa53ff223d8e35430df0f89f95c8e421fa41e14ae29235bce17d5b6615\",\"created\":\"2016-09-19T20:13:10.599101478Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, bjoern.gruening@gmail.com\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"50a75afa53ff223d8e35430df0f89f95c8e421fa41e14ae29235bce17d5b6615\",\"parent\":\"b3af300c9c80a086b5556cea3ba7fa9e0269884d233db4257bb77e69ba5c7010\",\"created\":\"2016-08-26T23:25:30.305835248Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone --branch 1.2 https://github.com/samtools/htslib.git \\u0026\\u0026     git clone --branch 1.2 https://github.com/samtools/bcftools.git \\u0026\\u0026     make -C bcftools \\u0026\\u0026 cp bcftools/bcftools /usr/bin \\u0026\\u0026     rm -rf bcftools htslib\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3af300c9c80a086b5556cea3ba7fa9e0269884d233db4257bb77e69ba5c7010\",\"parent\":\"826d818ff212c68274b96870d93820b3dc7125c2a2767e02f493194afb33fa71\",\"created\":\"2016-08-26T23:23:35.460912467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -qq update \\u0026\\u0026 apt-get install --no-install-recommends -y apt-transport-https software-properties-common \\u0026\\u0026     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9 \\u0026\\u0026     apt-get update -qq \\u0026\\u0026 apt-get upgrade -y \\u0026\\u0026     add-apt-repository ppa:fkrull/deadsnakes \\u0026\\u0026 apt-get -qq update \\u0026\\u0026     apt-get purge -y software-properties-common \\u0026\\u0026     apt-get install --no-install-recommends -y autoconf automake build-essential gfortran cmake     git-core libatlas-base-dev libblas-dev liblapack-dev openssl     openjdk-7-jre-headless python-dev python2.6 python2.6-dev python-setuptools     python-virtualenv zlib1g-dev libyaml-dev subversion python-dev pkg-config \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"826d818ff212c68274b96870d93820b3dc7125c2a2767e02f493194afb33fa71\",\"parent\":\"01fadcdd70164a9f656a40290b0f65e2a274ac872b1fddb5bd624eaf285bf6af\",\"created\":\"2016-08-26T23:20:46.481734936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"01fadcdd70164a9f656a40290b0f65e2a274ac872b1fddb5bd624eaf285bf6af\",\"parent\":\"0d3a52687ca57a7a21a8e800f037973c15421b0c40f8c9f155daaa62246c72be\",\"created\":\"2016-08-26T23:20:44.463088908Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\"]},\"author\":\"Bj\u00f6rn A. Gr\u00fcning, Dave Bouvier\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0d3a52687ca57a7a21a8e800f037973c15421b0c40f8c9f155daaa62246c72be\",\"parent\":\"c6fe6b5c116dc8c9f416e177ee4662c1530284f01e2d6af76287cd16aefaab2c\",\"created\":\"2016-08-26T18:49:52.592709376Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6fe6b5c116dc8c9f416e177ee4662c1530284f01e2d6af76287cd16aefaab2c\",\"parent\":\"cdc8a9d219b09b8aad3d334a36b5bdf97d8aa02e55b7f18a128e776cc24f2fa4\",\"created\":\"2016-08-26T18:49:51.703083474Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cdc8a9d219b09b8aad3d334a36b5bdf97d8aa02e55b7f18a128e776cc24f2fa4\",\"parent\":\"285141620f121e5f6bf7328a64910170e2611d36c94066c4c3082f8da4b0d72c\",\"created\":\"2016-08-26T18:49:49.792946649Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"285141620f121e5f6bf7328a64910170e2611d36c94066c4c3082f8da4b0d72c\",\"parent\":\"2415c9cbee29db9e860a41da6d243031b0d83dc309efeea5a19d5e95d8caece5\",\"created\":\"2016-08-26T18:49:47.896587012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2415c9cbee29db9e860a41da6d243031b0d83dc309efeea5a19d5e95d8caece5\",\"parent\":\"96a1ef3ccac01eee1bfe11b8a6209a20bf8870fb7dc2ff7c53ffa82d311ec2d3\",\"created\":\"2016-08-26T18:49:45.927957689Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"96a1ef3ccac01eee1bfe11b8a6209a20bf8870fb7dc2ff7c53ffa82d311ec2d3\",\"created\":\"2016-08-26T18:49:43.54187946Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:ada91758a31d8de3c78ea0065fbc866430a71eb58bf5c4cb403d47052b1cade0 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:3d9e27138636e7dbf1f6b72a1998653ee87a2af5af459250ac3ef7414ccda599"
+            },
+            {
+                "blobSum": "sha256:b15dbb80aa999589c961c2617495ad24dac52e683ee51149ccdc8ce65c1df770"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0e8da3e3a1a0bfa206e3c24843268639ec18239d88ef29f2cf1806f30259f7bb"
+            },
+            {
+                "blobSum": "sha256:5fc1e8224c94ecd8ffdf407ad7b0e8af36b5be5ee6498248634dc6a47842492b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:333d08a6a42ac2968d8a9b04d88b75c7b161700ad61c3219799babf244312f21"
+            },
+            {
+                "blobSum": "sha256:347f6c68ef04033868521510b201990f950f2e43f7f7d53cae155c872afb2e4e"
+            },
+            {
+                "blobSum": "sha256:f40417d6c1ac9367f3e989dc0f14d480bfc9f7872e90cbddd544923dd4243e3a"
+            },
+            {
+                "blobSum": "sha256:eab0ac30cdc8bc5f7cd2e527e3c6e666b1d18c299a413b08096a31e388e2c5e0"
+            },
+            {
+                "blobSum": "sha256:032ee73d46378d29342af37249e0d0a7c0717b83b0cf7d4410569e8d235b79b1"
+            },
+            {
+                "blobSum": "sha256:dfb9c586633427e14ac485c8f2eba09c3e227ab52becd0ddc207fefc9b7073f8"
+            },
+            {
+                "blobSum": "sha256:bc447a891869766302ea28f73f76d78f5e8508587728b7950215cd2a943b037b"
+            },
+            {
+                "blobSum": "sha256:3c10011bb600862c92e30b0e328aa81a8c246adf4ebaf5e3817bdf93f8eb4a73"
+            },
+            {
+                "blobSum": "sha256:11133852164d5f1064041fe4b92d3e63f13deb02007d4954756aededec325e52"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4967dcd9d53f13d1576a13a3c74afcbe23ffe103f91143d6f9bb9788e89c242a"
+            },
+            {
+                "blobSum": "sha256:1e2181c8b7b52044ace3dc0ea94f5b681017693b9421b7b136c7896c80926640"
+            },
+            {
+                "blobSum": "sha256:d4bca3e0934470e569036aeb508b678fecfa36d092b0549b6efeb870351b3e80"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e163fabe986f5a10edee9982b864e2680b0d6097f31d91c406098f4cfa0022b9"
+            },
+            {
+                "blobSum": "sha256:17756b5b86eef7e8811d1a65be5e720ee2d4eee26d1d277c6ac74127d2675eb4"
+            },
+            {
+                "blobSum": "sha256:768a9750fe61db2827174e08438f7b862b4a7f3b14b462fbf89cbe5dd2c03a67"
+            },
+            {
+                "blobSum": "sha256:8d268adf2f3539a2249593478540cff48729a4c4e18fdd14781c5dab21cbd389"
+            },
+            {
+                "blobSum": "sha256:d2c252d8314093390b4f0de649d1777e020bd4fa99b090ea86d9d7bf7614fbb9"
+            },
+            {
+                "blobSum": "sha256:718ca3a566491ed6106cc30024c75a2fb5a8393fd7bf3c591aea2b798d4f2696"
+            },
+            {
+                "blobSum": "sha256:c6551402ab4e853a165ced1b35f98aadce8c39d53a7db33b86e49a5b51ff2446"
+            },
+            {
+                "blobSum": "sha256:be9a80c1cd7de72ba6b6bd8e34089ea27b4c2719226d8829fd0bd4c23a4193aa"
+            },
+            {
+                "blobSum": "sha256:1640322c020cf93a94a807100231e40f65ad18a3ed13434149e26cea5063beb8"
+            },
+            {
+                "blobSum": "sha256:f518f32b405e30f03b4fd3bcedb85c650acbe52cb11747008d2aa4c55a4ab3dd"
+            },
+            {
+                "blobSum": "sha256:d3ff3f35a81ff91b36316a8bb525ce272b744859ba37e3a5d48c69c11bbb06c6"
+            },
+            {
+                "blobSum": "sha256:1f60432a9e77fd7e69c6616e2e6b133fd038cdc2dd930661154d69f6c8ac3257"
+            },
+            {
+                "blobSum": "sha256:f75f915e25ab136a9b83e1045e13f518dc1162521d0d7cb6f14dbf6d19407ef1"
+            },
+            {
+                "blobSum": "sha256:e53d4e7c7761d66f3848f6ce370c6321439028a0025bcc980d596242853687b7"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1bc05dce627e41b472ce0c27dfba0a18b2658717c997c0b00e08b4ccb19d451f"
+            },
+            {
+                "blobSum": "sha256:23c866f10f9d1c66a9acf780b234d9a26f4ac0b105023f23cbe3e2f16ca8c7de"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7a1f7116d1e3a87e389da7767ee68f5731c05dbb1a4d4dbd45166b3a8412f1c6"
+            },
+            {
+                "blobSum": "sha256:0fdbedd3771a99a8df8fe8edd26c62366a0d59496b2685330d9754680f339693"
+            },
+            {
+                "blobSum": "sha256:159ebdd1959b09a7284ceb22bbb7e383049466ece0503f66197e7843aad1da47"
+            },
+            {
+                "blobSum": "sha256:6498e51874bfd453352b79b1a3f669109795134b7adcd1a02d0ce69001f4e05b"
+            },
+            {
+                "blobSum": "sha256:862a3e9af0aeffe79345b790bad31baaa61e9402b6e616bff17babed6b053b54"
+            }
+        ],
+        "name": "bgruening/galaxy-phylogenetics",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjUwNzQ1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDM6MjlaIn0",
+                "signature": "S9XU0i4CBThu9vuKWXOyhpkwNVxbZ-KOezXJG1kmLV-FVkL9yWXLMrgn8-d6MkXqALDN1cQy4n3_lA-j90_tFA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "quD509_uBzNqK6dZBZuuWa4S7ronABZ1s6n1Y_XeHfY",
+                        "kid": "VNJX:OJX6:VLWJ:2Z3U:MNIO:RMJY:CWTW:SXPJ:NTW5:Z5PN:DJ52:6XWH",
+                        "x": "nXY0zFLFdRRI0Nljiv1Ju0jJAzp-vQWM0yQAiSYwD5E"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

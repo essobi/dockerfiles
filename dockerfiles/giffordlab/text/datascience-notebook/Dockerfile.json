@@ -1,0 +1,714 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"config\":{\"Hostname\":\"b6b4cb6241ef\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LD_LIBRARY_PATH=/usr/local/cuda/lib64:\",\"CUDA_REPO_PKG=cuda-repo-ubuntu1404_8.0.44-1_amd64.deb\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"THEANO_FLAGS=cuda.root=/usr/local/cuda,device=gpu,floatX=float32,lib.cnmem=0\"],\"Cmd\":[\"start-notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4b9f71a07b642d14e97f135faab6a7606429b53f16fafca53dd6ad09bbe337b7\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"c8b4b79320d7e9342454e78a6be9754568e7cd39284bd91384159ede9622f451\",\"container_config\":{\"Hostname\":\"b6b4cb6241ef\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LD_LIBRARY_PATH=/usr/local/cuda/lib64:\",\"CUDA_REPO_PKG=cuda-repo-ubuntu1404_8.0.44-1_amd64.deb\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"THEANO_FLAGS=cuda.root=/usr/local/cuda,device=gpu,floatX=float32,lib.cnmem=0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER [jovyan]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4b9f71a07b642d14e97f135faab6a7606429b53f16fafca53dd6ad09bbe337b7\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-30T05:47:00.174199916Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"f7d9d4e3ec2a4faac6f9b375d03491a334480fb92cc6552c0667a84d6f415b8e\",\"os\":\"linux\",\"parent\":\"6df119faf2fc3fae0933091ad018c145de3590b769fe7a1dd28832a5364a4420\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6df119faf2fc3fae0933091ad018c145de3590b769fe7a1dd28832a5364a4420\",\"parent\":\"6c76170e64e1eb7b0aca64d6b616143fd093ba6e5f63fe22dd4271b9f2058d1a\",\"created\":\"2017-01-30T05:45:52.35683374Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install bash_kernel \\u0026\\u0026     python -m bash_kernel.install \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/python         $CONDA_DIR/envs/python2/bin/ipython         kernelspec install-self\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c76170e64e1eb7b0aca64d6b616143fd093ba6e5f63fe22dd4271b9f2058d1a\",\"parent\":\"da6bdda685d1a6f127f0c9085e4d1f51a80b38a98dadb348c1d7037ff4a769c8\",\"created\":\"2017-01-30T05:44:30.12511977Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV THEANO_FLAGS=cuda.root=/usr/local/cuda,device=gpu,floatX=float32,lib.cnmem=0\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da6bdda685d1a6f127f0c9085e4d1f51a80b38a98dadb348c1d7037ff4a769c8\",\"parent\":\"58c286aac3c6073c60d3d231c6413c3411372cdf7d68bca31e892e66ffd8219a\",\"created\":\"2017-01-30T05:43:24.498160564Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade --no-deps git+https://github.com/Lasagne/lasagne \\u0026\\u0026     pip install --upgrade --no-deps git+https://github.com/dnouri/nolearn@0.5 \\u0026\\u0026     pip install --upgrade --no-deps git+https://github.com/fchollet/keras@1.2.1 \\u0026\\u0026     pip install --upgrade --no-deps git+https://github.com/maxpumperla/hyperas@0.3\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58c286aac3c6073c60d3d231c6413c3411372cdf7d68bca31e892e66ffd8219a\",\"parent\":\"71da2954fb9d23b1624a058e4b8dec1b93cb115ec55aff45818f5977d66e3dfe\",\"created\":\"2017-01-30T05:41:50.773741786Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/Lasagne/lasagne \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/dnouri/nolearn@0.5 \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/fchollet/keras@1.2.1 \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/maxpumperla/hyperas@0.3\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"71da2954fb9d23b1624a058e4b8dec1b93cb115ec55aff45818f5977d66e3dfe\",\"parent\":\"88b0b6a55eac57e11800a6d451697ba283cad2b360e5b1dd35adcd4306545a62\",\"created\":\"2017-01-30T05:40:13.14941661Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c julia -e 'Pkg.add(\\\"IJulia\\\")' \\u0026\\u0026     julia -e 'Pkg.add(\\\"Gadfly\\\")' \\u0026\\u0026     julia -F -e 'Pkg.add(\\\"HDF5\\\")' \\u0026\\u0026     chmod -R go+rx $CONDA_DIR/share/jupyter\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88b0b6a55eac57e11800a6d451697ba283cad2b360e5b1dd35adcd4306545a62\",\"parent\":\"fa971e5e5abafc7e261ab7b5ec8a7ca5484ecd4b878c1a487f66edfb7f862d49\",\"created\":\"2017-01-30T05:15:22.07181954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'rpy2=2.8*'     'r-base=3.3.2'     'r-irkernel=0.7*'     'r-plyr=1.8*'     'r-devtools=1.12*'     'r-dplyr=0.5*'     'r-ggplot2=2.2*'     'r-tidyr=0.6*'     'r-shiny=0.14*'     'r-rmarkdown=1.2*'     'r-forecast=7.3*'     'r-stringr=1.1*'     'r-rsqlite=1.1*'     'r-reshape2=1.4*'     'r-caret=6.0*'     'r-rcurl=1.95*'     'r-randomforest=4.6*' \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa971e5e5abafc7e261ab7b5ec8a7ca5484ecd4b878c1a487f66edfb7f862d49\",\"parent\":\"14e4e26d886e9ce04ced92575399cf126a0825e7418fb7d76b3044c40d73bd9d\",\"created\":\"2017-01-30T05:12:18.538612449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels r\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"14e4e26d886e9ce04ced92575399cf126a0825e7418fb7d76b3044c40d73bd9d\",\"parent\":\"ea9a826b7722238f4d9231d7fe73736d4d30e89001ac7ec3b89eaede36f30e5e\",\"created\":\"2017-01-30T05:11:42.672927186Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda create -p $CONDA_DIR/envs/python2 python=2.7     'ipython=4.2*'     'ipywidgets=5.2*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=1.5*'     'scipy=0.17*'     'seaborn=0.7*'     'scikit-learn=0.17*'     'pytables=3.2.2*'     'sympy=1.0*'     'cython=0.23*'     'patsy=0.4*'     'statsmodels=0.6*'     'cloudpickle=0.1*'     'dill=0.2*'     'numba=0.30*'     'bokeh=0.11*'     'h5py=2.6*'     'theano=0.8.2'     pyzmq     biopython     pydot     \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea9a826b7722238f4d9231d7fe73736d4d30e89001ac7ec3b89eaede36f30e5e\",\"parent\":\"cefd133dc5bcdc90e5a20ec9ed6efc94c87ce2fe9ef54f6f26310082cb0fdc19\",\"created\":\"2017-01-30T05:05:16.661240023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'ipywidgets=5.2*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=1.5*'     'scipy=0.17*'     'seaborn=0.7*'     'scikit-learn=0.18*'     'pytables=3.2.2*'     'sympy=1.0*'     'cython=0.23*'     'patsy=0.4*'     'statsmodels=0.6*'     'cloudpickle=0.1*'     'dill=0.2*'     'numba=0.30*'     'bokeh=0.11*'     'h5py=2.6*'     'theano=0.8.2'     biopython     \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cefd133dc5bcdc90e5a20ec9ed6efc94c87ce2fe9ef54f6f26310082cb0fdc19\",\"parent\":\"580151fbddb5c9a7e3266b708a673ed4fbdb949924310a86eacde61be3bc3e52\",\"created\":\"2017-01-30T05:00:30.218856338Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -qq \\u0026\\u0026 apt-get install -qqy software-properties-common \\u0026\\u0026     add-apt-repository ppa:marutter/rrutter \\u0026\\u0026     add-apt-repository ppa:staticfloat/juliareleases \\u0026\\u0026     add-apt-repository ppa:staticfloat/julia-deps \\u0026\\u0026     apt-get update \\u0026\\u0026     apt-get install -y --no-install-recommends     emacs24-nox     fonts-dejavu     gcc     gfortran     graphviz     julia     nano     wget     zsh     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"580151fbddb5c9a7e3266b708a673ed4fbdb949924310a86eacde61be3bc3e52\",\"parent\":\"0edea02b5d208487ddd09e2ef71e3bcc3b1d0aa989108f93cb82b5898356f19b\",\"created\":\"2017-01-30T04:57:20.56322026Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"zeng ALL=(ALL) NOPASSWD:ALL\\\" \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0edea02b5d208487ddd09e2ef71e3bcc3b1d0aa989108f93cb82b5898356f19b\",\"parent\":\"8e8551a68e7da49fd3ccc2e4b661e2f88ad9e6d79a08c5865c69a8f61dec3912\",\"created\":\"2017-01-30T04:57:11.167189445Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"thashim ALL=(ALL) NOPASSWD:ALL\\\" \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8e8551a68e7da49fd3ccc2e4b661e2f88ad9e6d79a08c5865c69a8f61dec3912\",\"parent\":\"9c45a574619ccd715233901d18f704dad344cb90e0ab4b2822c76c5c1ca0180a\",\"created\":\"2017-01-30T04:57:01.861012763Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"matted ALL=(ALL) NOPASSWD:ALL\\\" \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9c45a574619ccd715233901d18f704dad344cb90e0ab4b2822c76c5c1ca0180a\",\"parent\":\"6f4898f82a41c3dc36309fcacbc841128010d9c0aeebf07e5933a276e36f1f03\",\"created\":\"2017-01-30T04:56:50.940394479Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f4898f82a41c3dc36309fcacbc841128010d9c0aeebf07e5933a276e36f1f03\",\"parent\":\"ea5eb0629abe58ce0098e7e9c561d7b79b17afd20e673286637c605d6d231616\",\"created\":\"2017-01-30T04:56:40.098400132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Matt Edwards \\u003cmatted@mit.edu\\u003e\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea5eb0629abe58ce0098e7e9c561d7b79b17afd20e673286637c605d6d231616\",\"parent\":\"0949ef5089de3492e3080e85e74c6b8c01927920ba030370459a24f4d8b918a6\",\"created\":\"2017-01-30T04:20:04.509614874Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [jovyan]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0949ef5089de3492e3080e85e74c6b8c01927920ba030370459a24f4d8b918a6\",\"parent\":\"891146d4e966639085010cccfb07a31069f5704789a393ac0d4dc7518428c2dc\",\"created\":\"2017-01-30T04:19:55.765931004Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $NB_USER:users /home/$NB_USER/.jupyter\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"891146d4e966639085010cccfb07a31069f5704789a393ac0d4dc7518428c2dc\",\"parent\":\"c499410117fa26dd7e6e8ef99b2791690785bcba41db6acc30ade676c3c62620\",\"created\":\"2017-01-30T04:19:46.638935488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:eff6947ebd32a28eada02d523664b6f5a29af856ebad70be3a0853ccc32ddbaf in /home/jovyan/.jupyter/ \"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c499410117fa26dd7e6e8ef99b2791690785bcba41db6acc30ade676c3c62620\",\"parent\":\"f646448c24108e8879613e9eb33cc41f8a202b42f2569626311082f29150272d\",\"created\":\"2017-01-30T04:19:37.947953547Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8337c3315c70995f5ead802c93d9012f2630152f65c655de1760e9b7e5e6ab0d in /usr/local/bin/ \"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f646448c24108e8879613e9eb33cc41f8a202b42f2569626311082f29150272d\",\"parent\":\"f5628e29df37c1cac18a109a81f09ee3f838fef3904d46eb94c235062f312666\",\"created\":\"2017-01-30T04:19:27.655994596Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"start-notebook.sh\\\"]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f5628e29df37c1cac18a109a81f09ee3f838fef3904d46eb94c235062f312666\",\"parent\":\"3499a5098d3bc31db1d055d050b9cefc61ce2a276bdff0513281c430eae77987\",\"created\":\"2017-01-30T04:19:17.41383088Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"tini\\\" \\\"--\\\"]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3499a5098d3bc31db1d055d050b9cefc61ce2a276bdff0513281c430eae77987\",\"parent\":\"4b03a42930f8881768044e5e0b0aa18a1d65903b4e56805db8dcbfd1e12747d2\",\"created\":\"2017-01-30T04:19:07.141646422Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/jovyan/work\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4b03a42930f8881768044e5e0b0aa18a1d65903b4e56805db8dcbfd1e12747d2\",\"parent\":\"c436ab424e9146b4cd92324f4a6c57e7f00b42a433fd29e2670ab42e1edc904f\",\"created\":\"2017-01-30T04:18:56.675375393Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c436ab424e9146b4cd92324f4a6c57e7f00b42a433fd29e2670ab42e1edc904f\",\"parent\":\"607da9bbf250221047a4ea1c55f7ee4ae48501523504c7f03fcc76f9c3f63674\",\"created\":\"2017-01-30T04:18:46.459897024Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"607da9bbf250221047a4ea1c55f7ee4ae48501523504c7f03fcc76f9c3f63674\",\"parent\":\"a64e0ece42009871dfbd57410b159b07bcd07c093874ab62c63b26c1d986cc0d\",\"created\":\"2017-01-30T04:18:36.756104687Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'notebook=4.1*'     terminado     \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a64e0ece42009871dfbd57410b159b07bcd07c093874ab62c63b26c1d986cc0d\",\"parent\":\"5c55eb5e17629e193eec92222e6596546891ba8fcef222d693e6112e2deaa21c\",\"created\":\"2017-01-30T04:17:44.819021961Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget --quiet --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-3.9.1-Linux-x86_64.sh \\u0026\\u0026     echo \\\"6c6b44acdd0bc4229377ee10d52c8ac6160c336d9cdd669db7371aa9344e1ac3 *Miniconda3-3.9.1-Linux-x86_64.sh\\\" | sha256sum -c - \\u0026\\u0026     /bin/bash Miniconda3-3.9.1-Linux-x86_64.sh -f -b -p $CONDA_DIR \\u0026\\u0026     rm Miniconda3-3.9.1-Linux-x86_64.sh\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5c55eb5e17629e193eec92222e6596546891ba8fcef222d693e6112e2deaa21c\",\"parent\":\"370c34c15d78a257b57478fb617352677da0de5c21a5e88b7d78a0fd98865538\",\"created\":\"2017-01-30T04:17:17.708806205Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$NB_USER/work \\u0026\\u0026     mkdir /home/$NB_USER/.jupyter \\u0026\\u0026     mkdir /home/$NB_USER/.local\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"370c34c15d78a257b57478fb617352677da0de5c21a5e88b7d78a0fd98865538\",\"parent\":\"b4df467e6d36e7041dd05cdb4fce699a5a218f16b8ef3ef9f63de80ebf09089d\",\"created\":\"2017-01-30T04:17:11.819834426Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [jovyan]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4df467e6d36e7041dd05cdb4fce699a5a218f16b8ef3ef9f63de80ebf09089d\",\"parent\":\"1e9c298784ce5b6f7179e2aa46e632473232d21fbfa308459971070baf638246\",\"created\":\"2017-01-30T04:17:07.043184589Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m -s /bin/bash -N -u $NB_UID $NB_USER \\u0026\\u0026     mkdir -p /opt/conda \\u0026\\u0026     chown jovyan /opt/conda\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1e9c298784ce5b6f7179e2aa46e632473232d21fbfa308459971070baf638246\",\"parent\":\"cb6d8e543ffcf91e4c3e28136f595190c27647ecbeb629a6d2301636a3e38361\",\"created\":\"2017-01-30T04:17:01.108048147Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NB_UID=1000\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb6d8e543ffcf91e4c3e28136f595190c27647ecbeb629a6d2301636a3e38361\",\"parent\":\"effdb7387006eb62f5506cd62b439f30d6a85d096fdcf51a86c4d4d3c448b155\",\"created\":\"2017-01-30T04:16:55.513982041Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NB_USER=jovyan\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"effdb7387006eb62f5506cd62b439f30d6a85d096fdcf51a86c4d4d3c448b155\",\"parent\":\"09b3234e2caf2a498dd4438e4575ace257cf82c4191f153afe1cb891ae8ba84d\",\"created\":\"2017-01-30T04:16:49.713318314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SHELL=/bin/bash\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"09b3234e2caf2a498dd4438e4575ace257cf82c4191f153afe1cb891ae8ba84d\",\"parent\":\"f9d0bda79fca438a8c27920151719c42eadbcd41b561fd134f2753cbd7d13edc\",\"created\":\"2017-01-30T04:16:44.030645203Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f9d0bda79fca438a8c27920151719c42eadbcd41b561fd134f2753cbd7d13edc\",\"parent\":\"57c932a75be5bc1650e5b99f4b5e0532507483e46b9cfb87176fb514920ee380\",\"created\":\"2017-01-30T04:16:38.406861943Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONDA_DIR=/opt/conda\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57c932a75be5bc1650e5b99f4b5e0532507483e46b9cfb87176fb514920ee380\",\"parent\":\"648a10b0379aece127458a900573e533a99151124f7cec89607bc9a93775abc6\",\"created\":\"2017-01-30T04:16:33.632557012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget --quiet https://github.com/krallin/tini/releases/download/v0.6.0/tini \\u0026\\u0026     echo \\\"d5ed732199c36a1189320e6c4859f0169e950692f451c03e7854243b95f4234b *tini\\\" | sha256sum -c - \\u0026\\u0026     mv tini /usr/local/bin/tini \\u0026\\u0026     chmod +x /usr/local/bin/tini\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"648a10b0379aece127458a900573e533a99151124f7cec89607bc9a93775abc6\",\"parent\":\"0fc4844b280f660fc206f094399efe5d09ad8cb016b16ffedb7d9e97764f3474\",\"created\":\"2017-01-30T04:16:28.373571044Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e /etc/locale.gen \\u0026\\u0026     locale-gen\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fc4844b280f660fc206f094399efe5d09ad8cb016b16ffedb7d9e97764f3474\",\"parent\":\"6438586a2e371f130f8e007e5b7f2c4c0f5dcb709b832bd5a84420e1c146bb11\",\"created\":\"2017-01-30T04:16:23.223942068Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -yq --no-install-recommends     git     vim     wget     build-essential     python-dev     ca-certificates     bzip2     unzip     libsm6     pandoc     sudo     locales     libxrender1     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6438586a2e371f130f8e007e5b7f2c4c0f5dcb709b832bd5a84420e1c146bb11\",\"parent\":\"f65a8f1463dbe3d05524b787d31707fa84d15958e36c4b24d6e10cd856ac6c56\",\"created\":\"2017-01-30T04:15:25.705955706Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f65a8f1463dbe3d05524b787d31707fa84d15958e36c4b24d6e10cd856ac6c56\",\"parent\":\"e41ea43b4ffc7dac12d3085463e1adea5fbc861faaee99a63f548420a82dc3d5\",\"created\":\"2017-01-30T04:15:20.723857032Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e41ea43b4ffc7dac12d3085463e1adea5fbc861faaee99a63f548420a82dc3d5\",\"parent\":\"33a1b006a44b4c83bac523f73839712601f47563594f1ca4490cdef4352aed3c\",\"created\":\"2017-01-30T04:15:15.706867653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Matt Edwards \\u003cmatted@mit.edu\\u003e\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"33a1b006a44b4c83bac523f73839712601f47563594f1ca4490cdef4352aed3c\",\"parent\":\"454dac08c1d80efbb08299c2209fb2d5001a8c6aafae6a8a54ca1a8fec95c8df\",\"created\":\"2017-01-30T04:01:16.628029419Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c CUDNN_DOWNLOAD_SUM=c10719b36f2dd6e9ddc63e3189affaa1a94d7d027e63b71c3f64d449ab0645ce \\u0026\\u0026     curl -fsSL http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/cudnn-8.0-linux-x64-v5.1.tgz -O \\u0026\\u0026 \\t    echo \\\"$CUDNN_DOWNLOAD_SUM  cudnn-8.0-linux-x64-v5.1.tgz\\\" | sha256sum -c --strict - \\u0026\\u0026 \\t\\t    tar -xzf cudnn-8.0-linux-x64-v5.1.tgz -C /usr/local \\u0026\\u0026 \\t\\t\\t    rm cudnn-8.0-linux-x64-v5.1.tgz \\u0026\\u0026 \\t\\t\\t\\t    ldconfig\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"454dac08c1d80efbb08299c2209fb2d5001a8c6aafae6a8a54ca1a8fec95c8df\",\"parent\":\"c0b07d96158ba295fedb809f8f6e215362ff013ffc989e16c93ea2a4babe2342\",\"created\":\"2017-01-30T04:00:53.287018565Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/$CUDA_REPO_PKG \\u0026\\u0026   dpkg -i $CUDA_REPO_PKG \\u0026\\u0026   rm $CUDA_REPO_PKG\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c0b07d96158ba295fedb809f8f6e215362ff013ffc989e16c93ea2a4babe2342\",\"parent\":\"c160b2b09a8a606fa8153ea63d3ab711b3af9c0bff0605cdec1954056bf1cf98\",\"created\":\"2017-01-30T04:00:46.729567232Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CUDA_REPO_PKG=cuda-repo-ubuntu1404_8.0.44-1_amd64.deb\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c160b2b09a8a606fa8153ea63d3ab711b3af9c0bff0605cdec1954056bf1cf98\",\"parent\":\"9a3693081d8182e0611406efea8e1f594061fb56314089e3c1abbf4cfb146c49\",\"created\":\"2017-01-30T04:00:40.67172038Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ldconfig /usr/local/cuda/lib64\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9a3693081d8182e0611406efea8e1f594061fb56314089e3c1abbf4cfb146c49\",\"parent\":\"6c212dd2df1d98a22e6a048a81a130fd7dcb9127a3d38dc24359049d667371b6\",\"created\":\"2017-01-30T04:00:34.905945196Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LD_LIBRARY_PATH=/usr/local/cuda/lib64:\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c212dd2df1d98a22e6a048a81a130fd7dcb9127a3d38dc24359049d667371b6\",\"parent\":\"c6db6423374e153176e917d57bc088be74bf37327f8d0a56062cd36d3defc7d5\",\"created\":\"2017-01-30T04:00:29.971834804Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026   wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda_8.0.44_linux-run -o /dev/null \\u0026\\u0026   chmod +x cuda_*_linux-run \\u0026\\u0026 ./cuda_*_linux-run -extract=`pwd` \\u0026\\u0026   ls \\u0026\\u0026   ./NVIDIA-Linux-x86_64-*.run -s --no-kernel-module \\u0026\\u0026   ./cuda-linux64-rel-*.run -noprompt | cat \\u003e /dev/null \\u0026\\u0026   rm -rf *\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6db6423374e153176e917d57bc088be74bf37327f8d0a56062cd36d3defc7d5\",\"parent\":\"8456b8cabe83f54ebce4403105717caae6ddddd8305696f34d5b8edf33bb8f87\",\"created\":\"2017-01-30T03:49:45.941993578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y   build-essential   wget   curl \\u0026\\u0026   apt-get clean \\u0026\\u0026   rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8456b8cabe83f54ebce4403105717caae6ddddd8305696f34d5b8edf33bb8f87\",\"parent\":\"fe8776bd3b14eba143e1a8b937826ed17dc3bb2ba8d8e0c309d93059363da3ba\",\"created\":\"2017-01-30T03:48:53.37604282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fe8776bd3b14eba143e1a8b937826ed17dc3bb2ba8d8e0c309d93059363da3ba\",\"parent\":\"90cc944e2eb63f1835a81cbf1c929062319a2f466c2a5da3fa3f0e4e578aa0e9\",\"created\":\"2017-01-20T21:42:57.719936661Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90cc944e2eb63f1835a81cbf1c929062319a2f466c2a5da3fa3f0e4e578aa0e9\",\"parent\":\"f3e3dde2fc2886a89190d55b63ebfa5a1de4111bb32b67a82ad84ab92a81560a\",\"created\":\"2017-01-20T21:42:57.075943079Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3e3dde2fc2886a89190d55b63ebfa5a1de4111bb32b67a82ad84ab92a81560a\",\"parent\":\"4394200c7c5a48ced021bbdc2e7ac2da7a88dfcf05d12e93c475baa08c0fb7b5\",\"created\":\"2017-01-20T21:42:55.802093462Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4394200c7c5a48ced021bbdc2e7ac2da7a88dfcf05d12e93c475baa08c0fb7b5\",\"parent\":\"1850b0615492203a5b67905ebf4048021cfbd9f0840aa7a35c3339157c89a161\",\"created\":\"2017-01-20T21:42:54.405772069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1850b0615492203a5b67905ebf4048021cfbd9f0840aa7a35c3339157c89a161\",\"parent\":\"7e732de6406427f261c3ec43c6598e7252a88b539e5c5e939dc533dff3626601\",\"created\":\"2017-01-20T21:42:52.848164424Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e732de6406427f261c3ec43c6598e7252a88b539e5c5e939dc533dff3626601\",\"created\":\"2017-01-20T21:42:50.662917247Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:c383f1cde338921411168cc34a10e3a221ae55e569768e1551274f8fddc54415 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0b7f0c731e09084ad7ff063c43b8b3c4b3e88ffd078871bbe1f1e084a839e648"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b720833217c49baeaa5a797ee069f2bae03fcc89900a09328351bf6c3507e13c"
+            },
+            {
+                "blobSum": "sha256:258591a0314a7f1d3ac6915c475cf5da3f7566ab46dd5148e0941972ec7adf34"
+            },
+            {
+                "blobSum": "sha256:05822bd967bf418c3850fb49a7d2e8d43b63dfd55f42e4f299f0a5449f0eb2ba"
+            },
+            {
+                "blobSum": "sha256:e1b2a9baf89b6c25c7495850f307d9dfddbd09d225d2f305e5b111d9c2250f12"
+            },
+            {
+                "blobSum": "sha256:bba7ac7b8ed3c26d48f5fee01e47ad786ea287a3a60bddb2a3a66f45ca986690"
+            },
+            {
+                "blobSum": "sha256:67779553eef87bc4b672dd71c58e38c543bbbe63641b70e3521fd0e9dae3209f"
+            },
+            {
+                "blobSum": "sha256:567a98b6a4310af19afa481a44c29efef32152a25f5d670f53300e2fb3e1b15c"
+            },
+            {
+                "blobSum": "sha256:c0d49e89d58d3f09345266fc1a2f64087976a82cd9c050acdbeb7d12857e207e"
+            },
+            {
+                "blobSum": "sha256:f8f7d5d3a3d38605c44645aaf75612fff09e1997f80d3b12af886d3316d00042"
+            },
+            {
+                "blobSum": "sha256:a2b3f933d719b588b3a62ec09e4262525d8bb832e8f4618844f9677582fd9c87"
+            },
+            {
+                "blobSum": "sha256:4250dc71a3175ee6c6d82d79e7039198df277aa3e508ceb9df65f3386590febb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d5abcc7f2a9abecd8d6862f356bb37cd41bcfa3eaab0969b1317c6d2e2deecf2"
+            },
+            {
+                "blobSum": "sha256:f74505ef41f4876cdca130656d74c1c2897a9f2e6dca404836a9ba4623c7b7fd"
+            },
+            {
+                "blobSum": "sha256:64777cd863a0493bc841f33cf0606cd960edfab1df59866e6b9e2905f1787a65"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d3db521f511b9bfbba5bdb44e3b25d4b2281c4dbfaeed69574a2523b99ab614e"
+            },
+            {
+                "blobSum": "sha256:3e5305c2fa9a48cb12edc984205f6f7bb2c9791588c6048b4551a2b118a991dd"
+            },
+            {
+                "blobSum": "sha256:1c35253b8b59c86fecb9fb9296c95632060cfe5f22f213b7b2a824f67cfce147"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:293438df6d6b1c28e55a156acd2fe0b1541bc215df31a566f2e1af7c15b1ed57"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:61618e7bba0e5b4793b044233a537999e31bbb75c7c5983e0fc051e3a582be6e"
+            },
+            {
+                "blobSum": "sha256:4f6c9672f7e3eba71089827910cd251ff45ef853c525c52e44b58e4f075f8212"
+            },
+            {
+                "blobSum": "sha256:1f6fec1c9d54db47463f9be740f2b33eaaf811d801451e41030575e08b31592d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c2706dc95cc6a1f68365b1447684f78e0e172d620b1870d3becf2c11027d044b"
+            },
+            {
+                "blobSum": "sha256:12a060e21d17d6ffed4fd095fdf4099e2c50b3306c6a804584cac78189668f9c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8fbdb9b534b0b5c9733eea98afc03384ca58c1fa626d33006da61ab06936b837"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:274ff44b0708571b2f04bd7459ec3eb95a42258b7777da8705377330576c85bb"
+            },
+            {
+                "blobSum": "sha256:07f37cc524e251a128f80494ad2b3c3f0e8d9eba550585f2b4a1a3ec869f9d0f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3d9f847978686a04b694253ea6c6873fb60a495dc742a92d097ccc3c2855641"
+            },
+            {
+                "blobSum": "sha256:37c9a911359525fa28aa16715d36954723a8924492b5216cc97d1099251a5023"
+            },
+            {
+                "blobSum": "sha256:969d017f67e62ae323a3e8077e3ac4a5b1bf4a27c349148c1f6c28bd6ca3bbb8"
+            },
+            {
+                "blobSum": "sha256:755da0cdb7d25b74b205ff1eccd26ea4eede693ec7cf2150ae4c1caafe6394b1"
+            },
+            {
+                "blobSum": "sha256:c60055a51d748f34ebd4a7c4872c5d727e0ef96fbf9cd9b248e931b222828c23"
+            }
+        ],
+        "name": "giffordlab/datascience-notebook",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjM3MDE3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDI6MTBaIn0",
+                "signature": "0G_AkUYUkVx6WN71Q05uMKbr35QhUJHlXaq1CXotqAphDqdvrmRh5xcY0PUuhbh07a1i7e8_-G_lAxfg-6o-Xg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "h7GhpKHUUcpO6bbXscMvouwq1SxgNVgjPGxiGc3D4BY",
+                        "kid": "BZRW:6INW:MZE7:OKEX:DJSK:4FB4:HYSG:UYPV:V24H:YTJV:ZQVU:E4EG",
+                        "x": "bXIIPwqV_I-HDLMKxJQviw0_sbEu6v4eWqvdSbp7-N0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"config\":{\"Hostname\":\"b6b4cb6241ef\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LD_LIBRARY_PATH=/usr/local/cuda/lib64:\",\"CUDA_REPO_PKG=cuda-repo-ubuntu1404_8.0.44-1_amd64.deb\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"THEANO_FLAGS=cuda.root=/usr/local/cuda,device=gpu,floatX=float32,lib.cnmem=0\"],\"Cmd\":[\"start-notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4b9f71a07b642d14e97f135faab6a7606429b53f16fafca53dd6ad09bbe337b7\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"c8b4b79320d7e9342454e78a6be9754568e7cd39284bd91384159ede9622f451\",\"container_config\":{\"Hostname\":\"b6b4cb6241ef\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LD_LIBRARY_PATH=/usr/local/cuda/lib64:\",\"CUDA_REPO_PKG=cuda-repo-ubuntu1404_8.0.44-1_amd64.deb\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"THEANO_FLAGS=cuda.root=/usr/local/cuda,device=gpu,floatX=float32,lib.cnmem=0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER [jovyan]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4b9f71a07b642d14e97f135faab6a7606429b53f16fafca53dd6ad09bbe337b7\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-30T05:47:00.174199916Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"f7d9d4e3ec2a4faac6f9b375d03491a334480fb92cc6552c0667a84d6f415b8e\",\"os\":\"linux\",\"parent\":\"6df119faf2fc3fae0933091ad018c145de3590b769fe7a1dd28832a5364a4420\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6df119faf2fc3fae0933091ad018c145de3590b769fe7a1dd28832a5364a4420\",\"parent\":\"6c76170e64e1eb7b0aca64d6b616143fd093ba6e5f63fe22dd4271b9f2058d1a\",\"created\":\"2017-01-30T05:45:52.35683374Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install bash_kernel \\u0026\\u0026     python -m bash_kernel.install \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/python         $CONDA_DIR/envs/python2/bin/ipython         kernelspec install-self\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c76170e64e1eb7b0aca64d6b616143fd093ba6e5f63fe22dd4271b9f2058d1a\",\"parent\":\"da6bdda685d1a6f127f0c9085e4d1f51a80b38a98dadb348c1d7037ff4a769c8\",\"created\":\"2017-01-30T05:44:30.12511977Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV THEANO_FLAGS=cuda.root=/usr/local/cuda,device=gpu,floatX=float32,lib.cnmem=0\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da6bdda685d1a6f127f0c9085e4d1f51a80b38a98dadb348c1d7037ff4a769c8\",\"parent\":\"58c286aac3c6073c60d3d231c6413c3411372cdf7d68bca31e892e66ffd8219a\",\"created\":\"2017-01-30T05:43:24.498160564Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade --no-deps git+https://github.com/Lasagne/lasagne \\u0026\\u0026     pip install --upgrade --no-deps git+https://github.com/dnouri/nolearn@0.5 \\u0026\\u0026     pip install --upgrade --no-deps git+https://github.com/fchollet/keras@1.2.1 \\u0026\\u0026     pip install --upgrade --no-deps git+https://github.com/maxpumperla/hyperas@0.3\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58c286aac3c6073c60d3d231c6413c3411372cdf7d68bca31e892e66ffd8219a\",\"parent\":\"71da2954fb9d23b1624a058e4b8dec1b93cb115ec55aff45818f5977d66e3dfe\",\"created\":\"2017-01-30T05:41:50.773741786Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/Lasagne/lasagne \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/dnouri/nolearn@0.5 \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/fchollet/keras@1.2.1 \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/pip install --upgrade --no-deps git+https://github.com/maxpumperla/hyperas@0.3\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"71da2954fb9d23b1624a058e4b8dec1b93cb115ec55aff45818f5977d66e3dfe\",\"parent\":\"88b0b6a55eac57e11800a6d451697ba283cad2b360e5b1dd35adcd4306545a62\",\"created\":\"2017-01-30T05:40:13.14941661Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c julia -e 'Pkg.add(\\\"IJulia\\\")' \\u0026\\u0026     julia -e 'Pkg.add(\\\"Gadfly\\\")' \\u0026\\u0026     julia -F -e 'Pkg.add(\\\"HDF5\\\")' \\u0026\\u0026     chmod -R go+rx $CONDA_DIR/share/jupyter\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88b0b6a55eac57e11800a6d451697ba283cad2b360e5b1dd35adcd4306545a62\",\"parent\":\"fa971e5e5abafc7e261ab7b5ec8a7ca5484ecd4b878c1a487f66edfb7f862d49\",\"created\":\"2017-01-30T05:15:22.07181954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'rpy2=2.8*'     'r-base=3.3.2'     'r-irkernel=0.7*'     'r-plyr=1.8*'     'r-devtools=1.12*'     'r-dplyr=0.5*'     'r-ggplot2=2.2*'     'r-tidyr=0.6*'     'r-shiny=0.14*'     'r-rmarkdown=1.2*'     'r-forecast=7.3*'     'r-stringr=1.1*'     'r-rsqlite=1.1*'     'r-reshape2=1.4*'     'r-caret=6.0*'     'r-rcurl=1.95*'     'r-randomforest=4.6*' \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa971e5e5abafc7e261ab7b5ec8a7ca5484ecd4b878c1a487f66edfb7f862d49\",\"parent\":\"14e4e26d886e9ce04ced92575399cf126a0825e7418fb7d76b3044c40d73bd9d\",\"created\":\"2017-01-30T05:12:18.538612449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels r\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"14e4e26d886e9ce04ced92575399cf126a0825e7418fb7d76b3044c40d73bd9d\",\"parent\":\"ea9a826b7722238f4d9231d7fe73736d4d30e89001ac7ec3b89eaede36f30e5e\",\"created\":\"2017-01-30T05:11:42.672927186Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda create -p $CONDA_DIR/envs/python2 python=2.7     'ipython=4.2*'     'ipywidgets=5.2*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=1.5*'     'scipy=0.17*'     'seaborn=0.7*'     'scikit-learn=0.17*'     'pytables=3.2.2*'     'sympy=1.0*'     'cython=0.23*'     'patsy=0.4*'     'statsmodels=0.6*'     'cloudpickle=0.1*'     'dill=0.2*'     'numba=0.30*'     'bokeh=0.11*'     'h5py=2.6*'     'theano=0.8.2'     pyzmq     biopython     pydot     \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea9a826b7722238f4d9231d7fe73736d4d30e89001ac7ec3b89eaede36f30e5e\",\"parent\":\"cefd133dc5bcdc90e5a20ec9ed6efc94c87ce2fe9ef54f6f26310082cb0fdc19\",\"created\":\"2017-01-30T05:05:16.661240023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'ipywidgets=5.2*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=1.5*'     'scipy=0.17*'     'seaborn=0.7*'     'scikit-learn=0.18*'     'pytables=3.2.2*'     'sympy=1.0*'     'cython=0.23*'     'patsy=0.4*'     'statsmodels=0.6*'     'cloudpickle=0.1*'     'dill=0.2*'     'numba=0.30*'     'bokeh=0.11*'     'h5py=2.6*'     'theano=0.8.2'     biopython     \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cefd133dc5bcdc90e5a20ec9ed6efc94c87ce2fe9ef54f6f26310082cb0fdc19\",\"parent\":\"580151fbddb5c9a7e3266b708a673ed4fbdb949924310a86eacde61be3bc3e52\",\"created\":\"2017-01-30T05:00:30.218856338Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -qq \\u0026\\u0026 apt-get install -qqy software-properties-common \\u0026\\u0026     add-apt-repository ppa:marutter/rrutter \\u0026\\u0026     add-apt-repository ppa:staticfloat/juliareleases \\u0026\\u0026     add-apt-repository ppa:staticfloat/julia-deps \\u0026\\u0026     apt-get update \\u0026\\u0026     apt-get install -y --no-install-recommends     emacs24-nox     fonts-dejavu     gcc     gfortran     graphviz     julia     nano     wget     zsh     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"580151fbddb5c9a7e3266b708a673ed4fbdb949924310a86eacde61be3bc3e52\",\"parent\":\"0edea02b5d208487ddd09e2ef71e3bcc3b1d0aa989108f93cb82b5898356f19b\",\"created\":\"2017-01-30T04:57:20.56322026Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"zeng ALL=(ALL) NOPASSWD:ALL\\\" \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0edea02b5d208487ddd09e2ef71e3bcc3b1d0aa989108f93cb82b5898356f19b\",\"parent\":\"8e8551a68e7da49fd3ccc2e4b661e2f88ad9e6d79a08c5865c69a8f61dec3912\",\"created\":\"2017-01-30T04:57:11.167189445Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"thashim ALL=(ALL) NOPASSWD:ALL\\\" \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8e8551a68e7da49fd3ccc2e4b661e2f88ad9e6d79a08c5865c69a8f61dec3912\",\"parent\":\"9c45a574619ccd715233901d18f704dad344cb90e0ab4b2822c76c5c1ca0180a\",\"created\":\"2017-01-30T04:57:01.861012763Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"matted ALL=(ALL) NOPASSWD:ALL\\\" \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9c45a574619ccd715233901d18f704dad344cb90e0ab4b2822c76c5c1ca0180a\",\"parent\":\"6f4898f82a41c3dc36309fcacbc841128010d9c0aeebf07e5933a276e36f1f03\",\"created\":\"2017-01-30T04:56:50.940394479Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f4898f82a41c3dc36309fcacbc841128010d9c0aeebf07e5933a276e36f1f03\",\"parent\":\"ea5eb0629abe58ce0098e7e9c561d7b79b17afd20e673286637c605d6d231616\",\"created\":\"2017-01-30T04:56:40.098400132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Matt Edwards \\u003cmatted@mit.edu\\u003e\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea5eb0629abe58ce0098e7e9c561d7b79b17afd20e673286637c605d6d231616\",\"parent\":\"0949ef5089de3492e3080e85e74c6b8c01927920ba030370459a24f4d8b918a6\",\"created\":\"2017-01-30T04:20:04.509614874Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [jovyan]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0949ef5089de3492e3080e85e74c6b8c01927920ba030370459a24f4d8b918a6\",\"parent\":\"891146d4e966639085010cccfb07a31069f5704789a393ac0d4dc7518428c2dc\",\"created\":\"2017-01-30T04:19:55.765931004Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $NB_USER:users /home/$NB_USER/.jupyter\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"891146d4e966639085010cccfb07a31069f5704789a393ac0d4dc7518428c2dc\",\"parent\":\"c499410117fa26dd7e6e8ef99b2791690785bcba41db6acc30ade676c3c62620\",\"created\":\"2017-01-30T04:19:46.638935488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:eff6947ebd32a28eada02d523664b6f5a29af856ebad70be3a0853ccc32ddbaf in /home/jovyan/.jupyter/ \"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c499410117fa26dd7e6e8ef99b2791690785bcba41db6acc30ade676c3c62620\",\"parent\":\"f646448c24108e8879613e9eb33cc41f8a202b42f2569626311082f29150272d\",\"created\":\"2017-01-30T04:19:37.947953547Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8337c3315c70995f5ead802c93d9012f2630152f65c655de1760e9b7e5e6ab0d in /usr/local/bin/ \"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f646448c24108e8879613e9eb33cc41f8a202b42f2569626311082f29150272d\",\"parent\":\"f5628e29df37c1cac18a109a81f09ee3f838fef3904d46eb94c235062f312666\",\"created\":\"2017-01-30T04:19:27.655994596Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"start-notebook.sh\\\"]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f5628e29df37c1cac18a109a81f09ee3f838fef3904d46eb94c235062f312666\",\"parent\":\"3499a5098d3bc31db1d055d050b9cefc61ce2a276bdff0513281c430eae77987\",\"created\":\"2017-01-30T04:19:17.41383088Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"tini\\\" \\\"--\\\"]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3499a5098d3bc31db1d055d050b9cefc61ce2a276bdff0513281c430eae77987\",\"parent\":\"4b03a42930f8881768044e5e0b0aa18a1d65903b4e56805db8dcbfd1e12747d2\",\"created\":\"2017-01-30T04:19:07.141646422Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/jovyan/work\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4b03a42930f8881768044e5e0b0aa18a1d65903b4e56805db8dcbfd1e12747d2\",\"parent\":\"c436ab424e9146b4cd92324f4a6c57e7f00b42a433fd29e2670ab42e1edc904f\",\"created\":\"2017-01-30T04:18:56.675375393Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c436ab424e9146b4cd92324f4a6c57e7f00b42a433fd29e2670ab42e1edc904f\",\"parent\":\"607da9bbf250221047a4ea1c55f7ee4ae48501523504c7f03fcc76f9c3f63674\",\"created\":\"2017-01-30T04:18:46.459897024Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"607da9bbf250221047a4ea1c55f7ee4ae48501523504c7f03fcc76f9c3f63674\",\"parent\":\"a64e0ece42009871dfbd57410b159b07bcd07c093874ab62c63b26c1d986cc0d\",\"created\":\"2017-01-30T04:18:36.756104687Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'notebook=4.1*'     terminado     \\u0026\\u0026 conda clean -yat\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a64e0ece42009871dfbd57410b159b07bcd07c093874ab62c63b26c1d986cc0d\",\"parent\":\"5c55eb5e17629e193eec92222e6596546891ba8fcef222d693e6112e2deaa21c\",\"created\":\"2017-01-30T04:17:44.819021961Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget --quiet --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-3.9.1-Linux-x86_64.sh \\u0026\\u0026     echo \\\"6c6b44acdd0bc4229377ee10d52c8ac6160c336d9cdd669db7371aa9344e1ac3 *Miniconda3-3.9.1-Linux-x86_64.sh\\\" | sha256sum -c - \\u0026\\u0026     /bin/bash Miniconda3-3.9.1-Linux-x86_64.sh -f -b -p $CONDA_DIR \\u0026\\u0026     rm Miniconda3-3.9.1-Linux-x86_64.sh\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5c55eb5e17629e193eec92222e6596546891ba8fcef222d693e6112e2deaa21c\",\"parent\":\"370c34c15d78a257b57478fb617352677da0de5c21a5e88b7d78a0fd98865538\",\"created\":\"2017-01-30T04:17:17.708806205Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$NB_USER/work \\u0026\\u0026     mkdir /home/$NB_USER/.jupyter \\u0026\\u0026     mkdir /home/$NB_USER/.local\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"370c34c15d78a257b57478fb617352677da0de5c21a5e88b7d78a0fd98865538\",\"parent\":\"b4df467e6d36e7041dd05cdb4fce699a5a218f16b8ef3ef9f63de80ebf09089d\",\"created\":\"2017-01-30T04:17:11.819834426Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [jovyan]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4df467e6d36e7041dd05cdb4fce699a5a218f16b8ef3ef9f63de80ebf09089d\",\"parent\":\"1e9c298784ce5b6f7179e2aa46e632473232d21fbfa308459971070baf638246\",\"created\":\"2017-01-30T04:17:07.043184589Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m -s /bin/bash -N -u $NB_UID $NB_USER \\u0026\\u0026     mkdir -p /opt/conda \\u0026\\u0026     chown jovyan /opt/conda\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1e9c298784ce5b6f7179e2aa46e632473232d21fbfa308459971070baf638246\",\"parent\":\"cb6d8e543ffcf91e4c3e28136f595190c27647ecbeb629a6d2301636a3e38361\",\"created\":\"2017-01-30T04:17:01.108048147Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NB_UID=1000\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb6d8e543ffcf91e4c3e28136f595190c27647ecbeb629a6d2301636a3e38361\",\"parent\":\"effdb7387006eb62f5506cd62b439f30d6a85d096fdcf51a86c4d4d3c448b155\",\"created\":\"2017-01-30T04:16:55.513982041Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NB_USER=jovyan\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"effdb7387006eb62f5506cd62b439f30d6a85d096fdcf51a86c4d4d3c448b155\",\"parent\":\"09b3234e2caf2a498dd4438e4575ace257cf82c4191f153afe1cb891ae8ba84d\",\"created\":\"2017-01-30T04:16:49.713318314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SHELL=/bin/bash\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"09b3234e2caf2a498dd4438e4575ace257cf82c4191f153afe1cb891ae8ba84d\",\"parent\":\"f9d0bda79fca438a8c27920151719c42eadbcd41b561fd134f2753cbd7d13edc\",\"created\":\"2017-01-30T04:16:44.030645203Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f9d0bda79fca438a8c27920151719c42eadbcd41b561fd134f2753cbd7d13edc\",\"parent\":\"57c932a75be5bc1650e5b99f4b5e0532507483e46b9cfb87176fb514920ee380\",\"created\":\"2017-01-30T04:16:38.406861943Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONDA_DIR=/opt/conda\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57c932a75be5bc1650e5b99f4b5e0532507483e46b9cfb87176fb514920ee380\",\"parent\":\"648a10b0379aece127458a900573e533a99151124f7cec89607bc9a93775abc6\",\"created\":\"2017-01-30T04:16:33.632557012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget --quiet https://github.com/krallin/tini/releases/download/v0.6.0/tini \\u0026\\u0026     echo \\\"d5ed732199c36a1189320e6c4859f0169e950692f451c03e7854243b95f4234b *tini\\\" | sha256sum -c - \\u0026\\u0026     mv tini /usr/local/bin/tini \\u0026\\u0026     chmod +x /usr/local/bin/tini\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"648a10b0379aece127458a900573e533a99151124f7cec89607bc9a93775abc6\",\"parent\":\"0fc4844b280f660fc206f094399efe5d09ad8cb016b16ffedb7d9e97764f3474\",\"created\":\"2017-01-30T04:16:28.373571044Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e /etc/locale.gen \\u0026\\u0026     locale-gen\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fc4844b280f660fc206f094399efe5d09ad8cb016b16ffedb7d9e97764f3474\",\"parent\":\"6438586a2e371f130f8e007e5b7f2c4c0f5dcb709b832bd5a84420e1c146bb11\",\"created\":\"2017-01-30T04:16:23.223942068Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -yq --no-install-recommends     git     vim     wget     build-essential     python-dev     ca-certificates     bzip2     unzip     libsm6     pandoc     sudo     locales     libxrender1     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6438586a2e371f130f8e007e5b7f2c4c0f5dcb709b832bd5a84420e1c146bb11\",\"parent\":\"f65a8f1463dbe3d05524b787d31707fa84d15958e36c4b24d6e10cd856ac6c56\",\"created\":\"2017-01-30T04:15:25.705955706Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f65a8f1463dbe3d05524b787d31707fa84d15958e36c4b24d6e10cd856ac6c56\",\"parent\":\"e41ea43b4ffc7dac12d3085463e1adea5fbc861faaee99a63f548420a82dc3d5\",\"created\":\"2017-01-30T04:15:20.723857032Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e41ea43b4ffc7dac12d3085463e1adea5fbc861faaee99a63f548420a82dc3d5\",\"parent\":\"33a1b006a44b4c83bac523f73839712601f47563594f1ca4490cdef4352aed3c\",\"created\":\"2017-01-30T04:15:15.706867653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Matt Edwards \\u003cmatted@mit.edu\\u003e\"]},\"author\":\"Matt Edwards \\u003cmatted@mit.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"33a1b006a44b4c83bac523f73839712601f47563594f1ca4490cdef4352aed3c\",\"parent\":\"454dac08c1d80efbb08299c2209fb2d5001a8c6aafae6a8a54ca1a8fec95c8df\",\"created\":\"2017-01-30T04:01:16.628029419Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c CUDNN_DOWNLOAD_SUM=c10719b36f2dd6e9ddc63e3189affaa1a94d7d027e63b71c3f64d449ab0645ce \\u0026\\u0026     curl -fsSL http://developer.download.nvidia.com/compute/redist/cudnn/v5.1/cudnn-8.0-linux-x64-v5.1.tgz -O \\u0026\\u0026 \\t    echo \\\"$CUDNN_DOWNLOAD_SUM  cudnn-8.0-linux-x64-v5.1.tgz\\\" | sha256sum -c --strict - \\u0026\\u0026 \\t\\t    tar -xzf cudnn-8.0-linux-x64-v5.1.tgz -C /usr/local \\u0026\\u0026 \\t\\t\\t    rm cudnn-8.0-linux-x64-v5.1.tgz \\u0026\\u0026 \\t\\t\\t\\t    ldconfig\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"454dac08c1d80efbb08299c2209fb2d5001a8c6aafae6a8a54ca1a8fec95c8df\",\"parent\":\"c0b07d96158ba295fedb809f8f6e215362ff013ffc989e16c93ea2a4babe2342\",\"created\":\"2017-01-30T04:00:53.287018565Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/$CUDA_REPO_PKG \\u0026\\u0026   dpkg -i $CUDA_REPO_PKG \\u0026\\u0026   rm $CUDA_REPO_PKG\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c0b07d96158ba295fedb809f8f6e215362ff013ffc989e16c93ea2a4babe2342\",\"parent\":\"c160b2b09a8a606fa8153ea63d3ab711b3af9c0bff0605cdec1954056bf1cf98\",\"created\":\"2017-01-30T04:00:46.729567232Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CUDA_REPO_PKG=cuda-repo-ubuntu1404_8.0.44-1_amd64.deb\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c160b2b09a8a606fa8153ea63d3ab711b3af9c0bff0605cdec1954056bf1cf98\",\"parent\":\"9a3693081d8182e0611406efea8e1f594061fb56314089e3c1abbf4cfb146c49\",\"created\":\"2017-01-30T04:00:40.67172038Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ldconfig /usr/local/cuda/lib64\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9a3693081d8182e0611406efea8e1f594061fb56314089e3c1abbf4cfb146c49\",\"parent\":\"6c212dd2df1d98a22e6a048a81a130fd7dcb9127a3d38dc24359049d667371b6\",\"created\":\"2017-01-30T04:00:34.905945196Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LD_LIBRARY_PATH=/usr/local/cuda/lib64:\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c212dd2df1d98a22e6a048a81a130fd7dcb9127a3d38dc24359049d667371b6\",\"parent\":\"c6db6423374e153176e917d57bc088be74bf37327f8d0a56062cd36d3defc7d5\",\"created\":\"2017-01-30T04:00:29.971834804Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026   wget https://developer.nvidia.com/compute/cuda/8.0/prod/local_installers/cuda_8.0.44_linux-run -o /dev/null \\u0026\\u0026   chmod +x cuda_*_linux-run \\u0026\\u0026 ./cuda_*_linux-run -extract=`pwd` \\u0026\\u0026   ls \\u0026\\u0026   ./NVIDIA-Linux-x86_64-*.run -s --no-kernel-module \\u0026\\u0026   ./cuda-linux64-rel-*.run -noprompt | cat \\u003e /dev/null \\u0026\\u0026   rm -rf *\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6db6423374e153176e917d57bc088be74bf37327f8d0a56062cd36d3defc7d5\",\"parent\":\"8456b8cabe83f54ebce4403105717caae6ddddd8305696f34d5b8edf33bb8f87\",\"created\":\"2017-01-30T03:49:45.941993578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y   build-essential   wget   curl \\u0026\\u0026   apt-get clean \\u0026\\u0026   rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8456b8cabe83f54ebce4403105717caae6ddddd8305696f34d5b8edf33bb8f87\",\"parent\":\"fe8776bd3b14eba143e1a8b937826ed17dc3bb2ba8d8e0c309d93059363da3ba\",\"created\":\"2017-01-30T03:48:53.37604282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\"]},\"author\":\"Kai Arulkumaran \\u003cdesign@kaixhin.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fe8776bd3b14eba143e1a8b937826ed17dc3bb2ba8d8e0c309d93059363da3ba\",\"parent\":\"90cc944e2eb63f1835a81cbf1c929062319a2f466c2a5da3fa3f0e4e578aa0e9\",\"created\":\"2017-01-20T21:42:57.719936661Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90cc944e2eb63f1835a81cbf1c929062319a2f466c2a5da3fa3f0e4e578aa0e9\",\"parent\":\"f3e3dde2fc2886a89190d55b63ebfa5a1de4111bb32b67a82ad84ab92a81560a\",\"created\":\"2017-01-20T21:42:57.075943079Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3e3dde2fc2886a89190d55b63ebfa5a1de4111bb32b67a82ad84ab92a81560a\",\"parent\":\"4394200c7c5a48ced021bbdc2e7ac2da7a88dfcf05d12e93c475baa08c0fb7b5\",\"created\":\"2017-01-20T21:42:55.802093462Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4394200c7c5a48ced021bbdc2e7ac2da7a88dfcf05d12e93c475baa08c0fb7b5\",\"parent\":\"1850b0615492203a5b67905ebf4048021cfbd9f0840aa7a35c3339157c89a161\",\"created\":\"2017-01-20T21:42:54.405772069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1850b0615492203a5b67905ebf4048021cfbd9f0840aa7a35c3339157c89a161\",\"parent\":\"7e732de6406427f261c3ec43c6598e7252a88b539e5c5e939dc533dff3626601\",\"created\":\"2017-01-20T21:42:52.848164424Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e732de6406427f261c3ec43c6598e7252a88b539e5c5e939dc533dff3626601\",\"created\":\"2017-01-20T21:42:50.662917247Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:c383f1cde338921411168cc34a10e3a221ae55e569768e1551274f8fddc54415 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0b7f0c731e09084ad7ff063c43b8b3c4b3e88ffd078871bbe1f1e084a839e648"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b720833217c49baeaa5a797ee069f2bae03fcc89900a09328351bf6c3507e13c"
+            },
+            {
+                "blobSum": "sha256:258591a0314a7f1d3ac6915c475cf5da3f7566ab46dd5148e0941972ec7adf34"
+            },
+            {
+                "blobSum": "sha256:05822bd967bf418c3850fb49a7d2e8d43b63dfd55f42e4f299f0a5449f0eb2ba"
+            },
+            {
+                "blobSum": "sha256:e1b2a9baf89b6c25c7495850f307d9dfddbd09d225d2f305e5b111d9c2250f12"
+            },
+            {
+                "blobSum": "sha256:bba7ac7b8ed3c26d48f5fee01e47ad786ea287a3a60bddb2a3a66f45ca986690"
+            },
+            {
+                "blobSum": "sha256:67779553eef87bc4b672dd71c58e38c543bbbe63641b70e3521fd0e9dae3209f"
+            },
+            {
+                "blobSum": "sha256:567a98b6a4310af19afa481a44c29efef32152a25f5d670f53300e2fb3e1b15c"
+            },
+            {
+                "blobSum": "sha256:c0d49e89d58d3f09345266fc1a2f64087976a82cd9c050acdbeb7d12857e207e"
+            },
+            {
+                "blobSum": "sha256:f8f7d5d3a3d38605c44645aaf75612fff09e1997f80d3b12af886d3316d00042"
+            },
+            {
+                "blobSum": "sha256:a2b3f933d719b588b3a62ec09e4262525d8bb832e8f4618844f9677582fd9c87"
+            },
+            {
+                "blobSum": "sha256:4250dc71a3175ee6c6d82d79e7039198df277aa3e508ceb9df65f3386590febb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d5abcc7f2a9abecd8d6862f356bb37cd41bcfa3eaab0969b1317c6d2e2deecf2"
+            },
+            {
+                "blobSum": "sha256:f74505ef41f4876cdca130656d74c1c2897a9f2e6dca404836a9ba4623c7b7fd"
+            },
+            {
+                "blobSum": "sha256:64777cd863a0493bc841f33cf0606cd960edfab1df59866e6b9e2905f1787a65"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d3db521f511b9bfbba5bdb44e3b25d4b2281c4dbfaeed69574a2523b99ab614e"
+            },
+            {
+                "blobSum": "sha256:3e5305c2fa9a48cb12edc984205f6f7bb2c9791588c6048b4551a2b118a991dd"
+            },
+            {
+                "blobSum": "sha256:1c35253b8b59c86fecb9fb9296c95632060cfe5f22f213b7b2a824f67cfce147"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:293438df6d6b1c28e55a156acd2fe0b1541bc215df31a566f2e1af7c15b1ed57"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:61618e7bba0e5b4793b044233a537999e31bbb75c7c5983e0fc051e3a582be6e"
+            },
+            {
+                "blobSum": "sha256:4f6c9672f7e3eba71089827910cd251ff45ef853c525c52e44b58e4f075f8212"
+            },
+            {
+                "blobSum": "sha256:1f6fec1c9d54db47463f9be740f2b33eaaf811d801451e41030575e08b31592d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c2706dc95cc6a1f68365b1447684f78e0e172d620b1870d3becf2c11027d044b"
+            },
+            {
+                "blobSum": "sha256:12a060e21d17d6ffed4fd095fdf4099e2c50b3306c6a804584cac78189668f9c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8fbdb9b534b0b5c9733eea98afc03384ca58c1fa626d33006da61ab06936b837"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:274ff44b0708571b2f04bd7459ec3eb95a42258b7777da8705377330576c85bb"
+            },
+            {
+                "blobSum": "sha256:07f37cc524e251a128f80494ad2b3c3f0e8d9eba550585f2b4a1a3ec869f9d0f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3d9f847978686a04b694253ea6c6873fb60a495dc742a92d097ccc3c2855641"
+            },
+            {
+                "blobSum": "sha256:37c9a911359525fa28aa16715d36954723a8924492b5216cc97d1099251a5023"
+            },
+            {
+                "blobSum": "sha256:969d017f67e62ae323a3e8077e3ac4a5b1bf4a27c349148c1f6c28bd6ca3bbb8"
+            },
+            {
+                "blobSum": "sha256:755da0cdb7d25b74b205ff1eccd26ea4eede693ec7cf2150ae4c1caafe6394b1"
+            },
+            {
+                "blobSum": "sha256:c60055a51d748f34ebd4a7c4872c5d727e0ef96fbf9cd9b248e931b222828c23"
+            }
+        ],
+        "name": "giffordlab/datascience-notebook",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjM3MDE3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDI6MTFaIn0",
+                "signature": "Jmbp6xj6RQd39CNEYoN2v58RSAofodtOUlflncRSo_yEZpZrYWS7fEHeOWVVgYwrkGrXIyLLqTGkRu-8wyUNKw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "naPQv9XEAvtdUs71nIMB9nUhA4JEk6CLGn9mhpuNj30",
+                        "kid": "M64Q:NC3Z:IUT3:CTC3:WUFI:RIZV:4WLX:LSZT:ECT7:JETI:HOXX:MVAS",
+                        "x": "VZ-aVJjfVug7_HNbPx3MOgdK-LLJDq0zAInXMRMPc_o"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

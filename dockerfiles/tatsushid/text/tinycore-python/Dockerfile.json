@@ -1,0 +1,222 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"f11d7f96b242\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"python3\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c3c26eec342ba48518c52f28af0026751aa66d8d9d195380ac725f50884a4570\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"230789235fadfb1d440db04e5937d4186df81000e7fb2806188e9508bb61777b\",\"container_config\":{\"Hostname\":\"f11d7f96b242\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"python3\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c3c26eec342ba48518c52f28af0026751aa66d8d9d195380ac725f50884a4570\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-12-24T21:43:14.382041279Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"76f48843252c954d8baaa5c3779438c68c45c08a904bf097c76d563ffc52341b\",\"os\":\"linux\",\"parent\":\"5679c89554ebf75c35a05376347aae9dac2d071f040e9ee3ef62c71fdee9d081\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5679c89554ebf75c35a05376347aae9dac2d071f040e9ee3ef62c71fdee9d081\",\"parent\":\"8ebf4888ccba3f410adaed16edef77b36e7354e922b84ecf39d4c5cd341fac10\",\"created\":\"2016-12-24T21:43:13.660428256Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin     \\u0026\\u0026 ln -s easy_install-3.6 easy_install     \\u0026\\u0026 ln -s idel3 idle     \\u0026\\u0026 ln -s pydoc3 pydoc     \\u0026\\u0026 ln -s python3 python     \\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ebf4888ccba3f410adaed16edef77b36e7354e922b84ecf39d4c5cd341fac10\",\"parent\":\"6947261ceea829c5d38d09ff63c08ca4dddb2a06206f6d6bb90b898fa2e9a3a6\",\"created\":\"2016-12-24T21:43:12.474465321Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6947261ceea829c5d38d09ff63c08ca4dddb2a06206f6d6bb90b898fa2e9a3a6\",\"parent\":\"87669beab435bd7c4c47fe1a04de8e4f8928bd14672990bbc3c0bba2fe573f55\",\"created\":\"2016-12-24T21:43:11.652330965Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c tce-load -wic         bzip2-dev         flex         file         gcc         make         linux-4.2.1_api_headers         glibc_add_lib         glibc_base-dev         openssl-dev         gdbm-dev         ncurses-dev         readline-dev         sqlite3-dev         liblzma-dev         zlib_base-dev         tk-dev         libX11-dev         libXss         xorg-proto     \\u0026\\u0026 cd /tmp     \\u0026\\u0026 curl -SL \\\"https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz\\\" -o python.tar.xz     \\u0026\\u0026 curl -SL \\\"https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc\\\" -o python.tar.xz.asc     \\u0026\\u0026 gpg2 --verify python.tar.xz.asc     \\u0026\\u0026 rm python.tar.xz.asc     \\u0026\\u0026 tar -xJf python.tar.xz     \\u0026\\u0026 rm python.tar.xz     \\u0026\\u0026 cd \\\"/tmp/Python-$PYTHON_VERSION\\\"     \\u0026\\u0026 ./configure --enable-shared     \\u0026\\u0026 make     \\u0026\\u0026 mkdir tmp_install     \\u0026\\u0026 make install DESTDIR=tmp_install     \\u0026\\u0026 for F in `find tmp_install | xargs file | grep \\\"executable\\\" | grep ELF | grep \\\"not stripped\\\" | cut -f 1 -d :`; do             [ -f $F ] \\u0026\\u0026 strip --strip-unneeded $F;         done     \\u0026\\u0026 for F in `find tmp_install | xargs file | grep \\\"shared object\\\" | grep ELF | grep \\\"not stripped\\\" | cut -f 1 -d :`; do             [ -f $F ] \\u0026\\u0026 if [ ! -w $F ]; then chmod u+w $F \\u0026\\u0026 strip -g $F \\u0026\\u0026 chmod u-w $F; else strip -g $F; fi         done     \\u0026\\u0026 for F in `find tmp_install | xargs file | grep \\\"current ar archive\\\" | cut -f 1 -d :`; do             [ -f $F ] \\u0026\\u0026 strip -g $F;         done     \\u0026\\u0026 find tmp_install \\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) -exec rm -rf '{}' +     \\u0026\\u0026 find tmp_install \\\\( -type d -a -name test -o -name tests \\\\) | xargs rm -rf     \\u0026\\u0026 $(cd tmp_install; sudo cp -R . /)     \\u0026\\u0026 rm -rf \\\"/tmp/Python-$PYTHON_VERSION\\\"     \\u0026\\u0026 cd /tmp/tce/optional     \\u0026\\u0026 for PKG in `ls *-dev.tcz`; do             echo \\\"Removing $PKG files\\\";             for F in `unsquashfs -l $PKG | grep squashfs-root | sed -e 's/squashfs-root//'`; do                 [ -f $F -o -L $F ] \\u0026\\u0026 sudo rm -f $F;             done;             INSTALLED=$(echo -n $PKG | sed -e s/.tcz//);             sudo rm -f /usr/local/tce.installed/$INSTALLED;         done     \\u0026\\u0026 for PKG in binutils.tcz                 cloog.tcz                 flex.tcz                 file.tcz                 gcc.tcz                 gcc_libs.tcz                 linux-4.2.1_api_headers.tcz                 make.tcz                 sqlite3-bin.tcz                 xz.tcz                 xorg-proto.tcz; do             echo \\\"Removing $PKG files\\\";             for F in `unsquashfs -l $PKG | grep squashfs-root | sed -e 's/squashfs-root//'`; do                 [ -f $F -o -L $F ] \\u0026\\u0026 sudo rm -f $F;             done;             INSTALLED=$(echo -n $PKG | sed -e s/.tcz//);             sudo rm -f /usr/local/tce.installed/$INSTALLED;         done     \\u0026\\u0026 sudo rm -f /usr/bin/file     \\u0026\\u0026 sudo /sbin/ldconfig     \\u0026\\u0026 rm -rf /tmp/tce/optional/*     \\u0026\\u0026 curl -SL 'https://bootstrap.pypa.io/get-pip.py' | sudo python3     \\u0026\\u0026 sudo pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION     \\u0026\\u0026 sudo find /usr/local \\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) -exec rm -rf '{}' +     \\u0026\\u0026 find /usr/local \\\\( -type d -a -name test -o -name tests \\\\) | sudo xargs rm -rf     \\u0026\\u0026 sudo rm -rf /usr/src/python\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87669beab435bd7c4c47fe1a04de8e4f8928bd14672990bbc3c0bba2fe573f55\",\"parent\":\"5c48b0882407531259fad3c1213c4a794706aff5ce2730e17dc8cc94884b2417\",\"created\":\"2016-12-24T21:33:22.337372248Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5c48b0882407531259fad3c1213c4a794706aff5ce2730e17dc8cc94884b2417\",\"parent\":\"0868b806296c097693060b19f2c6771b2afa4a6826379f3e24a86954998983c5\",\"created\":\"2016-12-24T21:33:22.032162312Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.6.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0868b806296c097693060b19f2c6771b2afa4a6826379f3e24a86954998983c5\",\"parent\":\"a7ec05543b24caa1aaf59d7a7f330a1269d8317dd204be9a10aa2e220a199e8e\",\"created\":\"2016-12-24T21:33:21.740382932Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c gpg2 --keyserver pool.sks-keyservers.net --recv-keys 0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7ec05543b24caa1aaf59d7a7f330a1269d8317dd204be9a10aa2e220a199e8e\",\"parent\":\"401bc5873cafce758b8e37ca75b6f08ea9fcd1d55087263e8555b8871f45d013\",\"created\":\"2016-12-24T21:33:20.682622531Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c tce-load -wic gnupg curl     \\u0026\\u0026 rm -rf /tmp/tce/optional/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"401bc5873cafce758b8e37ca75b6f08ea9fcd1d55087263e8555b8871f45d013\",\"parent\":\"2ce5b48d078bf01fe4b2b1b284272ca6076c87514e9675fb8be0694774a4a752\",\"created\":\"2016-12-24T21:33:04.398525191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ce5b48d078bf01fe4b2b1b284272ca6076c87514e9675fb8be0694774a4a752\",\"parent\":\"1a74f7e03c31de54de7ed4120f8a36c6b0b83df4f4e0acaa5578dc2fcef7808c\",\"created\":\"2016-11-13T22:30:14.065095115Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a74f7e03c31de54de7ed4120f8a36c6b0b83df4f4e0acaa5578dc2fcef7808c\",\"parent\":\"36082757c4601f4f5da39bc1fa6a7e435bfaa7bf40c91d94dce20813b51a2f4a\",\"created\":\"2016-11-13T22:30:13.884689522Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [tc]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"36082757c4601f4f5da39bc1fa6a7e435bfaa7bf40c91d94dce20813b51a2f4a\",\"parent\":\"5a0fc070c290fff4b2bb2c72eb6ecd861df6160d6821adae7960e6e563ef69a7\",\"created\":\"2016-11-13T22:30:13.680117916Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /tmp/tce/optional     \\u0026\\u0026 chown -R root:staff /tmp/tce     \\u0026\\u0026 chmod -R g+w /tmp/tce     \\u0026\\u0026 $(cd etc/sysconfig; ln -s ../../tmp/tce tcedir)     \\u0026\\u0026 echo -n tc \\u003e etc/sysconfig/tcuser     \\u0026\\u0026 . /etc/init.d/tc-functions     \\u0026\\u0026 setupHome\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a0fc070c290fff4b2bb2c72eb6ecd861df6160d6821adae7960e6e563ef69a7\",\"parent\":\"06e88d0182a707a20358185b18f1d3a3658ad59f1d5fd4970ae3879ec829a5c0\",\"created\":\"2016-11-13T22:30:13.069275692Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:072af5df6bd5ae03499fb9b7a04bee2edf7cc8d9123774d8d94abe6468b50936 in / \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06e88d0182a707a20358185b18f1d3a3658ad59f1d5fd4970ae3879ec829a5c0\",\"created\":\"2016-11-13T22:30:12.789846717Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:4f911058a65b0cc167c9108b1b323f66ee360a4e298ce7cdfca03b7a7cc1f937 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a136cc2ad0b0f4df71ea2add7b7dc7eee30aa7ecd9b318029855195452790916"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f92cbed0e9bda88201211ecfa93b19b03edc98bd573afe9190c5996dabd0c7cc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ddfab0ef62f5db0d98a8060cd174e7975f740184f1f1d2a25c0f6a8a09d2f2ce"
+            },
+            {
+                "blobSum": "sha256:3d1c5459e5220c7379a6f39240f65e522f242fa510c40703d38140bb3efdf601"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d7f4963a690542329a23f023da471a02cf7dcd731e5caf9720583e98036414f3"
+            },
+            {
+                "blobSum": "sha256:8d27045199bf949ad5b54115013bc06e1a04601b26be26402e8d3e6a43f8b7ae"
+            },
+            {
+                "blobSum": "sha256:56cf7ff401796f5ee4185d4f54b9f342d6307dc8ee675695705a635498f3421e"
+            }
+        ],
+        "name": "tatsushid/tinycore-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMTQ0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MDJaIn0",
+                "signature": "cMlh7Mpaog5x-hZQpAAuElNIIeOZa4EfWsePOw48WstAuEZ_xFxakxwAZOJKMxzDRbYG_BH8S-LG-ZMuer3Yew",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "ay0SmJatkJs-JdnW80807CcNPWHElsh6MW_JTh7NdbU",
+                        "kid": "G2JA:NPRD:EWRM:EFEJ:4PHQ:TRZR:6W6O:D5LC:UJ36:RHOE:ZN7D:N55I",
+                        "x": "NrETepARqTLeOBcTdBCE8K8jbQJgiTH1p7XJ78zBxjk"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"f11d7f96b242\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"python3\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c3c26eec342ba48518c52f28af0026751aa66d8d9d195380ac725f50884a4570\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"230789235fadfb1d440db04e5937d4186df81000e7fb2806188e9508bb61777b\",\"container_config\":{\"Hostname\":\"f11d7f96b242\",\"Domainname\":\"\",\"User\":\"root\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"python3\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c3c26eec342ba48518c52f28af0026751aa66d8d9d195380ac725f50884a4570\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-12-24T21:43:14.382041279Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"76f48843252c954d8baaa5c3779438c68c45c08a904bf097c76d563ffc52341b\",\"os\":\"linux\",\"parent\":\"5679c89554ebf75c35a05376347aae9dac2d071f040e9ee3ef62c71fdee9d081\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5679c89554ebf75c35a05376347aae9dac2d071f040e9ee3ef62c71fdee9d081\",\"parent\":\"8ebf4888ccba3f410adaed16edef77b36e7354e922b84ecf39d4c5cd341fac10\",\"created\":\"2016-12-24T21:43:13.660428256Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin     \\u0026\\u0026 ln -s easy_install-3.6 easy_install     \\u0026\\u0026 ln -s idel3 idle     \\u0026\\u0026 ln -s pydoc3 pydoc     \\u0026\\u0026 ln -s python3 python     \\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ebf4888ccba3f410adaed16edef77b36e7354e922b84ecf39d4c5cd341fac10\",\"parent\":\"6947261ceea829c5d38d09ff63c08ca4dddb2a06206f6d6bb90b898fa2e9a3a6\",\"created\":\"2016-12-24T21:43:12.474465321Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6947261ceea829c5d38d09ff63c08ca4dddb2a06206f6d6bb90b898fa2e9a3a6\",\"parent\":\"87669beab435bd7c4c47fe1a04de8e4f8928bd14672990bbc3c0bba2fe573f55\",\"created\":\"2016-12-24T21:43:11.652330965Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c tce-load -wic         bzip2-dev         flex         file         gcc         make         linux-4.2.1_api_headers         glibc_add_lib         glibc_base-dev         openssl-dev         gdbm-dev         ncurses-dev         readline-dev         sqlite3-dev         liblzma-dev         zlib_base-dev         tk-dev         libX11-dev         libXss         xorg-proto     \\u0026\\u0026 cd /tmp     \\u0026\\u0026 curl -SL \\\"https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz\\\" -o python.tar.xz     \\u0026\\u0026 curl -SL \\\"https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tar.xz.asc\\\" -o python.tar.xz.asc     \\u0026\\u0026 gpg2 --verify python.tar.xz.asc     \\u0026\\u0026 rm python.tar.xz.asc     \\u0026\\u0026 tar -xJf python.tar.xz     \\u0026\\u0026 rm python.tar.xz     \\u0026\\u0026 cd \\\"/tmp/Python-$PYTHON_VERSION\\\"     \\u0026\\u0026 ./configure --enable-shared     \\u0026\\u0026 make     \\u0026\\u0026 mkdir tmp_install     \\u0026\\u0026 make install DESTDIR=tmp_install     \\u0026\\u0026 for F in `find tmp_install | xargs file | grep \\\"executable\\\" | grep ELF | grep \\\"not stripped\\\" | cut -f 1 -d :`; do             [ -f $F ] \\u0026\\u0026 strip --strip-unneeded $F;         done     \\u0026\\u0026 for F in `find tmp_install | xargs file | grep \\\"shared object\\\" | grep ELF | grep \\\"not stripped\\\" | cut -f 1 -d :`; do             [ -f $F ] \\u0026\\u0026 if [ ! -w $F ]; then chmod u+w $F \\u0026\\u0026 strip -g $F \\u0026\\u0026 chmod u-w $F; else strip -g $F; fi         done     \\u0026\\u0026 for F in `find tmp_install | xargs file | grep \\\"current ar archive\\\" | cut -f 1 -d :`; do             [ -f $F ] \\u0026\\u0026 strip -g $F;         done     \\u0026\\u0026 find tmp_install \\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) -exec rm -rf '{}' +     \\u0026\\u0026 find tmp_install \\\\( -type d -a -name test -o -name tests \\\\) | xargs rm -rf     \\u0026\\u0026 $(cd tmp_install; sudo cp -R . /)     \\u0026\\u0026 rm -rf \\\"/tmp/Python-$PYTHON_VERSION\\\"     \\u0026\\u0026 cd /tmp/tce/optional     \\u0026\\u0026 for PKG in `ls *-dev.tcz`; do             echo \\\"Removing $PKG files\\\";             for F in `unsquashfs -l $PKG | grep squashfs-root | sed -e 's/squashfs-root//'`; do                 [ -f $F -o -L $F ] \\u0026\\u0026 sudo rm -f $F;             done;             INSTALLED=$(echo -n $PKG | sed -e s/.tcz//);             sudo rm -f /usr/local/tce.installed/$INSTALLED;         done     \\u0026\\u0026 for PKG in binutils.tcz                 cloog.tcz                 flex.tcz                 file.tcz                 gcc.tcz                 gcc_libs.tcz                 linux-4.2.1_api_headers.tcz                 make.tcz                 sqlite3-bin.tcz                 xz.tcz                 xorg-proto.tcz; do             echo \\\"Removing $PKG files\\\";             for F in `unsquashfs -l $PKG | grep squashfs-root | sed -e 's/squashfs-root//'`; do                 [ -f $F -o -L $F ] \\u0026\\u0026 sudo rm -f $F;             done;             INSTALLED=$(echo -n $PKG | sed -e s/.tcz//);             sudo rm -f /usr/local/tce.installed/$INSTALLED;         done     \\u0026\\u0026 sudo rm -f /usr/bin/file     \\u0026\\u0026 sudo /sbin/ldconfig     \\u0026\\u0026 rm -rf /tmp/tce/optional/*     \\u0026\\u0026 curl -SL 'https://bootstrap.pypa.io/get-pip.py' | sudo python3     \\u0026\\u0026 sudo pip3 install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION     \\u0026\\u0026 sudo find /usr/local \\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) -exec rm -rf '{}' +     \\u0026\\u0026 find /usr/local \\\\( -type d -a -name test -o -name tests \\\\) | sudo xargs rm -rf     \\u0026\\u0026 sudo rm -rf /usr/src/python\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87669beab435bd7c4c47fe1a04de8e4f8928bd14672990bbc3c0bba2fe573f55\",\"parent\":\"5c48b0882407531259fad3c1213c4a794706aff5ce2730e17dc8cc94884b2417\",\"created\":\"2016-12-24T21:33:22.337372248Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5c48b0882407531259fad3c1213c4a794706aff5ce2730e17dc8cc94884b2417\",\"parent\":\"0868b806296c097693060b19f2c6771b2afa4a6826379f3e24a86954998983c5\",\"created\":\"2016-12-24T21:33:22.032162312Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.6.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0868b806296c097693060b19f2c6771b2afa4a6826379f3e24a86954998983c5\",\"parent\":\"a7ec05543b24caa1aaf59d7a7f330a1269d8317dd204be9a10aa2e220a199e8e\",\"created\":\"2016-12-24T21:33:21.740382932Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c gpg2 --keyserver pool.sks-keyservers.net --recv-keys 0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7ec05543b24caa1aaf59d7a7f330a1269d8317dd204be9a10aa2e220a199e8e\",\"parent\":\"401bc5873cafce758b8e37ca75b6f08ea9fcd1d55087263e8555b8871f45d013\",\"created\":\"2016-12-24T21:33:20.682622531Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c tce-load -wic gnupg curl     \\u0026\\u0026 rm -rf /tmp/tce/optional/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"401bc5873cafce758b8e37ca75b6f08ea9fcd1d55087263e8555b8871f45d013\",\"parent\":\"2ce5b48d078bf01fe4b2b1b284272ca6076c87514e9675fb8be0694774a4a752\",\"created\":\"2016-12-24T21:33:04.398525191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ce5b48d078bf01fe4b2b1b284272ca6076c87514e9675fb8be0694774a4a752\",\"parent\":\"1a74f7e03c31de54de7ed4120f8a36c6b0b83df4f4e0acaa5578dc2fcef7808c\",\"created\":\"2016-11-13T22:30:14.065095115Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a74f7e03c31de54de7ed4120f8a36c6b0b83df4f4e0acaa5578dc2fcef7808c\",\"parent\":\"36082757c4601f4f5da39bc1fa6a7e435bfaa7bf40c91d94dce20813b51a2f4a\",\"created\":\"2016-11-13T22:30:13.884689522Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [tc]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"36082757c4601f4f5da39bc1fa6a7e435bfaa7bf40c91d94dce20813b51a2f4a\",\"parent\":\"5a0fc070c290fff4b2bb2c72eb6ecd861df6160d6821adae7960e6e563ef69a7\",\"created\":\"2016-11-13T22:30:13.680117916Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /tmp/tce/optional     \\u0026\\u0026 chown -R root:staff /tmp/tce     \\u0026\\u0026 chmod -R g+w /tmp/tce     \\u0026\\u0026 $(cd etc/sysconfig; ln -s ../../tmp/tce tcedir)     \\u0026\\u0026 echo -n tc \\u003e etc/sysconfig/tcuser     \\u0026\\u0026 . /etc/init.d/tc-functions     \\u0026\\u0026 setupHome\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a0fc070c290fff4b2bb2c72eb6ecd861df6160d6821adae7960e6e563ef69a7\",\"parent\":\"06e88d0182a707a20358185b18f1d3a3658ad59f1d5fd4970ae3879ec829a5c0\",\"created\":\"2016-11-13T22:30:13.069275692Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:072af5df6bd5ae03499fb9b7a04bee2edf7cc8d9123774d8d94abe6468b50936 in / \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06e88d0182a707a20358185b18f1d3a3658ad59f1d5fd4970ae3879ec829a5c0\",\"created\":\"2016-11-13T22:30:12.789846717Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:4f911058a65b0cc167c9108b1b323f66ee360a4e298ce7cdfca03b7a7cc1f937 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a136cc2ad0b0f4df71ea2add7b7dc7eee30aa7ecd9b318029855195452790916"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f92cbed0e9bda88201211ecfa93b19b03edc98bd573afe9190c5996dabd0c7cc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ddfab0ef62f5db0d98a8060cd174e7975f740184f1f1d2a25c0f6a8a09d2f2ce"
+            },
+            {
+                "blobSum": "sha256:3d1c5459e5220c7379a6f39240f65e522f242fa510c40703d38140bb3efdf601"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d7f4963a690542329a23f023da471a02cf7dcd731e5caf9720583e98036414f3"
+            },
+            {
+                "blobSum": "sha256:8d27045199bf949ad5b54115013bc06e1a04601b26be26402e8d3e6a43f8b7ae"
+            },
+            {
+                "blobSum": "sha256:56cf7ff401796f5ee4185d4f54b9f342d6307dc8ee675695705a635498f3421e"
+            }
+        ],
+        "name": "tatsushid/tinycore-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMTQ0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MDJaIn0",
+                "signature": "JIYHn_NBTfKa9yjBzJHlFh6wEoWGDd_spyKFRf2eLW2fxgutvZlaxF2zcXLdMWFcWtKuRuoVr6xFEWHEoPl2ig",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "u9VVKq6YwJpv-_bgut3q-SpjpqfeIRifXgrW9i5bU80",
+                        "kid": "UUID:FJG3:DAGQ:CMOM:AEND:C3WZ:IMQS:NC62:DCIP:SRGA:PFNB:APXQ",
+                        "x": "WyqsS0SYpVT3eOE6LvfAS3BvQucx7oMbsHv-SQRnyHA"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

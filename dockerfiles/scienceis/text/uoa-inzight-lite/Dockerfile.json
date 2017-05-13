@@ -1,0 +1,222 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"BUILD_DATE=2015-12-03\",\"LAST_BUILD_DATE=Mon 12 05 23:55:00 NZDT 2017\"],\"Cmd\":[\"/opt/shiny-server.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3de3368a296b4cbaa10821e9903906ff5a61b4c4d318d192d3efff0269e48310\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"a7d19ff305a9fc652a3a5d434dd20a605219e390411a9c7ed6b0980cf6c6d97e\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"BUILD_DATE=2015-12-03\",\"LAST_BUILD_DATE=Mon 12 05 23:55:00 NZDT 2017\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/opt/shiny-server.sh\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3de3368a296b4cbaa10821e9903906ff5a61b4c4d318d192d3efff0269e48310\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-12T04:02:11.755189056Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"9a76b8c1ccf92c33f0a7722dd59eccd486d1e5bd5a9dd8bc62a00c8351bc867a\",\"os\":\"linux\",\"parent\":\"bab46c2fb80acb7d4b879ce3d69c26c778fd21564eb6697b3c1c3a1b1b3d1341\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bab46c2fb80acb7d4b879ce3d69c26c778fd21564eb6697b3c1c3a1b1b3d1341\",\"parent\":\"ae3edc74ae178c106475cd879c41967114d0e60ec6d36c8ac320fcd77d883591\",\"created\":\"2017-05-12T04:02:04.872044994Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update   \\u0026\\u0026 apt-get install -y -q                      libxml2-dev   \\u0026\\u0026 R -e \\\"update.packages(oldPkgs = 'shiny', repos = 'https://cran.r-project.org', ask = FALSE); install.packages('hextri', repos = 'https://cran.r-project.org', type = 'source'); install.packages('colorspace', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('RColorBrewer', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('viridis', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('XML', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('https://cran.r-project.org/src/contrib/Archive/gridSVG/gridSVG_1.5-0.tar.gz', repos = NULL, type = 'source', dependencies = TRUE);  install.packages('RgoogleMaps', repos = 'https://cran.r-project.org', dependencies = TRUE); install.packages('countrycode', repos = 'https://cran.r-project.org'); update.packages(repos = 'http://r.docker.stat.auckland.ac.nz/R/', ask = FALSE); install.packages('iNZightMaps', repos = 'http://r.docker.stat.auckland.ac.nz/R/'); install.packages('readxl', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE)\\\"   \\u0026\\u0026 rm -rf /srv/shiny-server/*   \\u0026\\u0026 wget --no-verbose -O Lite.zip https://github.com/iNZightVIT/Lite/archive/master.zip   \\u0026\\u0026 unzip Lite.zip   \\u0026\\u0026 cp -R Lite-master/* /srv/shiny-server   \\u0026\\u0026 echo $LAST_BUILD_DATE \\u003e /srv/shiny-server/build.txt   \\u0026\\u0026 rm -rf Lite.zip Lite-master/   \\u0026\\u0026 rm -rf /tmp/* /var/tmp/*\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae3edc74ae178c106475cd879c41967114d0e60ec6d36c8ac320fcd77d883591\",\"parent\":\"e82b31b0198532fe32a83ade393a6c2db7c160089d1d3d54f5a6b3952b1ea889\",\"created\":\"2017-05-12T03:49:22.869981104Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LAST_BUILD_DATE=Mon 12 05 23:55:00 NZDT 2017\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e82b31b0198532fe32a83ade393a6c2db7c160089d1d3d54f5a6b3952b1ea889\",\"parent\":\"7ca901150c6279204cc0880f95d861c560f8e9680b9afafd98dcea9a51ab1fb2\",\"created\":\"2017-05-12T03:49:16.165554934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7ca901150c6279204cc0880f95d861c560f8e9680b9afafd98dcea9a51ab1fb2\",\"parent\":\"9274785dbade1c2693c3faccb014352803ff0dbc726950f5451c0e2392c198ad\",\"created\":\"2015-12-03T00:37:02.95790484Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c R -e \\\"install.packages(             c('RJSONIO', 'iNZightMR', 'iNZightTS', 'iNZightRegression', 'iNZightPlots', 'GGally', 'gpairs'),              repos = c('http://docker.stat.auckland.ac.nz/R', 'http://cran.stat.auckland.ac.nz')            )\\\"   \\u0026\\u0026 rm -rf /tmp/* /var/tmp/*\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9274785dbade1c2693c3faccb014352803ff0dbc726950f5451c0e2392c198ad\",\"parent\":\"0533731a255102b9378051e6befc928030664d6381a32b9a946e415bf641d5fe\",\"created\":\"2015-12-03T00:30:30.773582144Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV BUILD_DATE=2015-12-03\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0533731a255102b9378051e6befc928030664d6381a32b9a946e415bf641d5fe\",\"parent\":\"95d892c6d02e252207f94fee83b0b7c398cf99629710ce5c693cc19afa1f633b\",\"created\":\"2015-12-03T00:30:27.771868876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"95d892c6d02e252207f94fee83b0b7c398cf99629710ce5c693cc19afa1f633b\",\"parent\":\"88c4ef1accbf5d97c77590b3b40266e7852113a6cf694a286710226e26e43f59\",\"created\":\"2015-12-02T21:22:20.403398766Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 3838/tcp\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88c4ef1accbf5d97c77590b3b40266e7852113a6cf694a286710226e26e43f59\",\"parent\":\"afd745ea8d0fad2215a48fcf9be21f3b909d738c82d5f577dd7ab846d6822b1c\",\"created\":\"2015-12-02T21:22:04.180798756Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 381BA480     \\u0026\\u0026 echo \\\"deb http://cran.stat.auckland.ac.nz/bin/linux/debian jessie-cran3/\\\" | tee -a /etc/apt/sources.list.d/R.list     \\u0026\\u0026 apt-get update     \\u0026\\u0026 apt-get install -y -q         r-base-core         libssl-dev         libssl1.0.0         sudo         wget     \\u0026\\u0026 wget --no-verbose -O libssl.deb http://ftp.us.debian.org/debian/pool/main/o/openssl/libssl0.9.8_0.9.8o-4squeeze14_amd64.deb     \\u0026\\u0026 dpkg -i libssl.deb     \\u0026\\u0026 rm -f libssl.deb     \\u0026\\u0026 R -e \\\"install.packages(c('rmarkdown', 'shiny', 'DT'), repos='http://cran.rstudio.com/', lib='/usr/lib/R/site-library')\\\"     \\u0026\\u0026 wget --no-verbose -O shiny-server.deb https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.0.756-amd64.deb     \\u0026\\u0026 dpkg -i shiny-server.deb     \\u0026\\u0026 chmod +x /opt/shiny-server.sh     \\u0026\\u0026 rm -f shiny-server.deb     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"afd745ea8d0fad2215a48fcf9be21f3b909d738c82d5f577dd7ab846d6822b1c\",\"parent\":\"202c9925ab4761b6dbb5800db15d6b571e9880f2159d3342fb1333de1779009b\",\"created\":\"2015-12-02T21:10:42.81966645Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9a01f899e8ac3dbd089a512eecf84d622082ecc80bf049ef59aa465843a5ddb2 in /opt/\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"202c9925ab4761b6dbb5800db15d6b571e9880f2159d3342fb1333de1779009b\",\"parent\":\"c49f60be1823a81e0d77cc38c57095183872ac1599812a69f2cd280a8a52bada\",\"created\":\"2015-12-02T21:10:41.887046757Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV BUILD_DATE=2015-12-03\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c49f60be1823a81e0d77cc38c57095183872ac1599812a69f2cd280a8a52bada\",\"parent\":\"cbe1d321e957b3320659d8abd717557757e76980006c6956661073cbbb2974af\",\"created\":\"2015-12-02T21:10:41.01640132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cbe1d321e957b3320659d8abd717557757e76980006c6956661073cbbb2974af\",\"parent\":\"5f47446ba8aa3fb04c3c4564276b97ccb4e25070b7c687c308a1d9d6cebf7855\",\"created\":\"2015-11-20T00:21:33.234293776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5f47446ba8aa3fb04c3c4564276b97ccb4e25070b7c687c308a1d9d6cebf7855\",\"created\":\"2015-11-20T00:21:30.796039846Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:5afd8eec1dc1e7666dcacca7842e44147031003b4e85bd7d9e5122d241295da6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a50a54a3309d3760458c12964e278fe9a61c95dce9325433659ec9ec8436a585"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:695230ebaa8f7f551d796930a0ef0274f426d5183f23c1a992847963b88c9c55"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:9e3b9a558e45842578bd3c7b512e6d7c3ed8f9345fbc41c742562e22a0294bc5"
+            },
+            {
+                "blobSum": "sha256:793e8f0ff943f13ec6f7522d2d6bc7d1b361da85ecbebdfe59cc5e01b4e893a5"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:3b8d91fe75724cafe136236e31d5212cb322d68aa3bfc4bfda97a0a53a55e234"
+            }
+        ],
+        "name": "scienceis/uoa-inzight-lite",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjQzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MDZaIn0",
+                "signature": "4bYyRGflly7-zpRpRsPSObSgyLCA3nmJUEEyPbK_Sh1ZvQDFInjcTg9jsSYFVHyW_EVJOlel6brkEqoUCXw92w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "BOM7dvDBYPGfLNefkXSAi6CW_Z59bDrSVh2ZN1_u6CQ",
+                        "kid": "C2PE:U5AB:OIHJ:TAOQ:3ZGP:JNQ7:7MF5:3GTR:ZIXN:3ZPI:CQDX:VSY6",
+                        "x": "D0XjKxEOAcTvOijHv9fuvlpfSunU-jyPfoY-TSkA37c"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"BUILD_DATE=2015-12-03\",\"LAST_BUILD_DATE=Mon 12 05 23:55:00 NZDT 2017\"],\"Cmd\":[\"/opt/shiny-server.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3de3368a296b4cbaa10821e9903906ff5a61b4c4d318d192d3efff0269e48310\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"a7d19ff305a9fc652a3a5d434dd20a605219e390411a9c7ed6b0980cf6c6d97e\",\"container_config\":{\"Hostname\":\"11aafb97cfeb\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"BUILD_DATE=2015-12-03\",\"LAST_BUILD_DATE=Mon 12 05 23:55:00 NZDT 2017\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/opt/shiny-server.sh\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3de3368a296b4cbaa10821e9903906ff5a61b4c4d318d192d3efff0269e48310\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-12T04:02:11.755189056Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"9a76b8c1ccf92c33f0a7722dd59eccd486d1e5bd5a9dd8bc62a00c8351bc867a\",\"os\":\"linux\",\"parent\":\"bab46c2fb80acb7d4b879ce3d69c26c778fd21564eb6697b3c1c3a1b1b3d1341\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bab46c2fb80acb7d4b879ce3d69c26c778fd21564eb6697b3c1c3a1b1b3d1341\",\"parent\":\"ae3edc74ae178c106475cd879c41967114d0e60ec6d36c8ac320fcd77d883591\",\"created\":\"2017-05-12T04:02:04.872044994Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update   \\u0026\\u0026 apt-get install -y -q                      libxml2-dev   \\u0026\\u0026 R -e \\\"update.packages(oldPkgs = 'shiny', repos = 'https://cran.r-project.org', ask = FALSE); install.packages('hextri', repos = 'https://cran.r-project.org', type = 'source'); install.packages('colorspace', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('RColorBrewer', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('viridis', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('XML', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE); install.packages('https://cran.r-project.org/src/contrib/Archive/gridSVG/gridSVG_1.5-0.tar.gz', repos = NULL, type = 'source', dependencies = TRUE);  install.packages('RgoogleMaps', repos = 'https://cran.r-project.org', dependencies = TRUE); install.packages('countrycode', repos = 'https://cran.r-project.org'); update.packages(repos = 'http://r.docker.stat.auckland.ac.nz/R/', ask = FALSE); install.packages('iNZightMaps', repos = 'http://r.docker.stat.auckland.ac.nz/R/'); install.packages('readxl', repos = 'https://cran.r-project.org', type = 'source', dependencies = TRUE)\\\"   \\u0026\\u0026 rm -rf /srv/shiny-server/*   \\u0026\\u0026 wget --no-verbose -O Lite.zip https://github.com/iNZightVIT/Lite/archive/master.zip   \\u0026\\u0026 unzip Lite.zip   \\u0026\\u0026 cp -R Lite-master/* /srv/shiny-server   \\u0026\\u0026 echo $LAST_BUILD_DATE \\u003e /srv/shiny-server/build.txt   \\u0026\\u0026 rm -rf Lite.zip Lite-master/   \\u0026\\u0026 rm -rf /tmp/* /var/tmp/*\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae3edc74ae178c106475cd879c41967114d0e60ec6d36c8ac320fcd77d883591\",\"parent\":\"e82b31b0198532fe32a83ade393a6c2db7c160089d1d3d54f5a6b3952b1ea889\",\"created\":\"2017-05-12T03:49:22.869981104Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LAST_BUILD_DATE=Mon 12 05 23:55:00 NZDT 2017\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e82b31b0198532fe32a83ade393a6c2db7c160089d1d3d54f5a6b3952b1ea889\",\"parent\":\"7ca901150c6279204cc0880f95d861c560f8e9680b9afafd98dcea9a51ab1fb2\",\"created\":\"2017-05-12T03:49:16.165554934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7ca901150c6279204cc0880f95d861c560f8e9680b9afafd98dcea9a51ab1fb2\",\"parent\":\"9274785dbade1c2693c3faccb014352803ff0dbc726950f5451c0e2392c198ad\",\"created\":\"2015-12-03T00:37:02.95790484Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c R -e \\\"install.packages(             c('RJSONIO', 'iNZightMR', 'iNZightTS', 'iNZightRegression', 'iNZightPlots', 'GGally', 'gpairs'),              repos = c('http://docker.stat.auckland.ac.nz/R', 'http://cran.stat.auckland.ac.nz')            )\\\"   \\u0026\\u0026 rm -rf /tmp/* /var/tmp/*\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9274785dbade1c2693c3faccb014352803ff0dbc726950f5451c0e2392c198ad\",\"parent\":\"0533731a255102b9378051e6befc928030664d6381a32b9a946e415bf641d5fe\",\"created\":\"2015-12-03T00:30:30.773582144Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV BUILD_DATE=2015-12-03\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0533731a255102b9378051e6befc928030664d6381a32b9a946e415bf641d5fe\",\"parent\":\"95d892c6d02e252207f94fee83b0b7c398cf99629710ce5c693cc19afa1f633b\",\"created\":\"2015-12-03T00:30:27.771868876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"95d892c6d02e252207f94fee83b0b7c398cf99629710ce5c693cc19afa1f633b\",\"parent\":\"88c4ef1accbf5d97c77590b3b40266e7852113a6cf694a286710226e26e43f59\",\"created\":\"2015-12-02T21:22:20.403398766Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 3838/tcp\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88c4ef1accbf5d97c77590b3b40266e7852113a6cf694a286710226e26e43f59\",\"parent\":\"afd745ea8d0fad2215a48fcf9be21f3b909d738c82d5f577dd7ab846d6822b1c\",\"created\":\"2015-12-02T21:22:04.180798756Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 381BA480     \\u0026\\u0026 echo \\\"deb http://cran.stat.auckland.ac.nz/bin/linux/debian jessie-cran3/\\\" | tee -a /etc/apt/sources.list.d/R.list     \\u0026\\u0026 apt-get update     \\u0026\\u0026 apt-get install -y -q         r-base-core         libssl-dev         libssl1.0.0         sudo         wget     \\u0026\\u0026 wget --no-verbose -O libssl.deb http://ftp.us.debian.org/debian/pool/main/o/openssl/libssl0.9.8_0.9.8o-4squeeze14_amd64.deb     \\u0026\\u0026 dpkg -i libssl.deb     \\u0026\\u0026 rm -f libssl.deb     \\u0026\\u0026 R -e \\\"install.packages(c('rmarkdown', 'shiny', 'DT'), repos='http://cran.rstudio.com/', lib='/usr/lib/R/site-library')\\\"     \\u0026\\u0026 wget --no-verbose -O shiny-server.deb https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.0.756-amd64.deb     \\u0026\\u0026 dpkg -i shiny-server.deb     \\u0026\\u0026 chmod +x /opt/shiny-server.sh     \\u0026\\u0026 rm -f shiny-server.deb     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"afd745ea8d0fad2215a48fcf9be21f3b909d738c82d5f577dd7ab846d6822b1c\",\"parent\":\"202c9925ab4761b6dbb5800db15d6b571e9880f2159d3342fb1333de1779009b\",\"created\":\"2015-12-02T21:10:42.81966645Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9a01f899e8ac3dbd089a512eecf84d622082ecc80bf049ef59aa465843a5ddb2 in /opt/\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"202c9925ab4761b6dbb5800db15d6b571e9880f2159d3342fb1333de1779009b\",\"parent\":\"c49f60be1823a81e0d77cc38c57095183872ac1599812a69f2cd280a8a52bada\",\"created\":\"2015-12-02T21:10:41.887046757Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV BUILD_DATE=2015-12-03\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c49f60be1823a81e0d77cc38c57095183872ac1599812a69f2cd280a8a52bada\",\"parent\":\"cbe1d321e957b3320659d8abd717557757e76980006c6956661073cbbb2974af\",\"created\":\"2015-12-02T21:10:41.01640132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cbe1d321e957b3320659d8abd717557757e76980006c6956661073cbbb2974af\",\"parent\":\"5f47446ba8aa3fb04c3c4564276b97ccb4e25070b7c687c308a1d9d6cebf7855\",\"created\":\"2015-11-20T00:21:33.234293776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5f47446ba8aa3fb04c3c4564276b97ccb4e25070b7c687c308a1d9d6cebf7855\",\"created\":\"2015-11-20T00:21:30.796039846Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:5afd8eec1dc1e7666dcacca7842e44147031003b4e85bd7d9e5122d241295da6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a50a54a3309d3760458c12964e278fe9a61c95dce9325433659ec9ec8436a585"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:695230ebaa8f7f551d796930a0ef0274f426d5183f23c1a992847963b88c9c55"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:9e3b9a558e45842578bd3c7b512e6d7c3ed8f9345fbc41c742562e22a0294bc5"
+            },
+            {
+                "blobSum": "sha256:793e8f0ff943f13ec6f7522d2d6bc7d1b361da85ecbebdfe59cc5e01b4e893a5"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:3b8d91fe75724cafe136236e31d5212cb322d68aa3bfc4bfda97a0a53a55e234"
+            }
+        ],
+        "name": "scienceis/uoa-inzight-lite",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjExNjQzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MDdaIn0",
+                "signature": "-DeWm7UONe8wiHXeX6xlMEOs1m-b3WkrUpkdNdo-2zzPLLxCjmt3QpjXKeV0x4bE-FZbnBL5ztizTmEkKIpv3g",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "8zjaS9BQJ5-ZaD755cf0bEssE5cwyy_TuwWZg4N6fnc",
+                        "kid": "DOW7:OSAH:IQUL:7SZX:AMES:CS5P:KX2T:HP2S:Z43B:FZFN:F5DT:NOLS",
+                        "x": "_z7h1mvfXYNGvslNoUyBWbkPlZKC15F2IorKFUzUBSk"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

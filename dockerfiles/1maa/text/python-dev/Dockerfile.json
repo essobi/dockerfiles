@@ -1,0 +1,24 @@
+{
+    "v1": {
+        "errors": [
+            {
+                "message": "manifest unknown",
+                "code": "MANIFEST_UNKNOWN",
+                "detail": {
+                    "Tag": "latest"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "errors": [
+            {
+                "message": "manifest unknown",
+                "code": "MANIFEST_UNKNOWN",
+                "detail": {
+                    "Tag": "latest"
+                }
+            }
+        ]
+    }
+}

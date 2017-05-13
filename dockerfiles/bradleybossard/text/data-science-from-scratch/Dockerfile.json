@@ -1,0 +1,474 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3934ed318998\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"TERM=xterm\",\"HOME=/root\",\"PYENV_ROOT=/root/.pyenv\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:be409a4eceffe326a4404d0e1cb29cf633e3b5a85a4d6b7fef52834ae2ec7a85\",\"Volumes\":null,\"WorkingDir\":\"/root\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"32272894fdb2217f249dffc0fce2c216d5984c8e56cd3ee1cd78648f66532506\",\"container_config\":{\"Hostname\":\"3934ed318998\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"TERM=xterm\",\"HOME=/root\",\"PYENV_ROOT=/root/.pyenv\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install matplotlib\"],\"ArgsEscaped\":true,\"Image\":\"sha256:be409a4eceffe326a4404d0e1cb29cf633e3b5a85a4d6b7fef52834ae2ec7a85\",\"Volumes\":null,\"WorkingDir\":\"/root\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-09T01:26:47.730379605Z\",\"docker_version\":\"1.12.0\",\"id\":\"b75f10fd216032dd09e37768cefddbe073e8b2fdc0df5a35dcc89cd599ca6b51\",\"os\":\"linux\",\"parent\":\"b97aad99a5ab0e2fb395f76b0ff628686f56885881e616757117bb7092742a07\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b97aad99a5ab0e2fb395f76b0ff628686f56885881e616757117bb7092742a07\",\"parent\":\"87f302f6c4bdb1d134fb98d98e5916e15540f82a20b86b6cab52e10960189e58\",\"created\":\"2016-09-09T01:26:21.141236466Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y pkg-config                        libfreetype6-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87f302f6c4bdb1d134fb98d98e5916e15540f82a20b86b6cab52e10960189e58\",\"parent\":\"11d1cfbc25bd4a7c2bf19cb66a4a33d4668f2631e1ade4129acdacabe187b6d1\",\"created\":\"2016-09-08T23:45:39.110187529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade pip\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"11d1cfbc25bd4a7c2bf19cb66a4a33d4668f2631e1ade4129acdacabe187b6d1\",\"parent\":\"387d24c77e26203a900c331710c012706303d3c986a4ff58d5b73111b965f1f9\",\"created\":\"2016-09-08T23:45:29.195533082Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv global 3.4.3\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"387d24c77e26203a900c331710c012706303d3c986a4ff58d5b73111b965f1f9\",\"parent\":\"1c4c8f52e372962a09e0245359be911c81bfcae94c358b8aa251c3478d14d622\",\"created\":\"2016-09-08T23:45:22.451951762Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv rehash\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c4c8f52e372962a09e0245359be911c81bfcae94c358b8aa251c3478d14d622\",\"parent\":\"bbd91f34856978b02dd6fc32e18191b1f6bbb407d344317dcbdbe70a69ae0f45\",\"created\":\"2016-09-08T23:45:16.39886376Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv install 3.4.3\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbd91f34856978b02dd6fc32e18191b1f6bbb407d344317dcbdbe70a69ae0f45\",\"parent\":\"5bf1c186e1d201a138b6baf4c08905dd99b4bd4202461f6b99b5c22434d40588\",\"created\":\"2016-09-08T23:39:42.576441762Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv install 2.7.10\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5bf1c186e1d201a138b6baf4c08905dd99b4bd4202461f6b99b5c22434d40588\",\"parent\":\"a4518ba9a839c59652c86e97ccb95102eb529c31254beb0d2c3e0f3b282d3369\",\"created\":\"2016-09-08T23:35:13.23327557Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a4518ba9a839c59652c86e97ccb95102eb529c31254beb0d2c3e0f3b282d3369\",\"parent\":\"3264fb638e32a566ffc753a790a14c98d34235f094847a32481985d52a9c483e\",\"created\":\"2016-09-08T23:35:08.384601986Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYENV_ROOT=/root/.pyenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3264fb638e32a566ffc753a790a14c98d34235f094847a32481985d52a9c483e\",\"parent\":\"743f28eb84051195f033235476f72044a4f248ea438d252b80b0c7d7b3a4febb\",\"created\":\"2016-09-08T23:35:03.620325087Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HOME=/root\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"743f28eb84051195f033235476f72044a4f248ea438d252b80b0c7d7b3a4febb\",\"parent\":\"a0b087b591485d74c56bd48380fda64f7021484e0b4aafa45db836ac3b04275c\",\"created\":\"2016-09-08T23:34:59.562721885Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'eval \\\"$(pyenv virtualenv-init -)\\\"' \\u003e\\u003e .bash_profile\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0b087b591485d74c56bd48380fda64f7021484e0b4aafa45db836ac3b04275c\",\"parent\":\"3c2a928bcda88996316266af9c4bb33da0b7b616216aa44054ca28935ef3dd3d\",\"created\":\"2016-09-08T23:34:52.472816776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/yyuu/pyenv-virtualenv.git .pyenv/plugins/pyenv-virtualenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3c2a928bcda88996316266af9c4bb33da0b7b616216aa44054ca28935ef3dd3d\",\"parent\":\"eaf0c411e9581a3167d4bc3549b2414d7d28c913b2d55d7b117af371f44f4f7d\",\"created\":\"2016-09-08T23:34:47.686098042Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'eval \\\"$(pyenv init -)\\\"' \\u003e\\u003e .bashrc\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eaf0c411e9581a3167d4bc3549b2414d7d28c913b2d55d7b117af371f44f4f7d\",\"parent\":\"77108e833b77baa22f204ce410797f185d83141cb37c2ed5bca83eea320caa9a\",\"created\":\"2016-09-08T23:34:43.39903139Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=\\\"$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH\\\"' \\u003e\\u003e .bashrc\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"77108e833b77baa22f204ce410797f185d83141cb37c2ed5bca83eea320caa9a\",\"parent\":\"52a4e4d5dd390eafa9171111f7402f84d3e59fa69d7808114ce578f6d6200db6\",\"created\":\"2016-09-08T23:34:39.159721471Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PYENV_ROOT=\\\"$HOME/.pyenv\\\"' \\u003e\\u003e .bashrc\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"52a4e4d5dd390eafa9171111f7402f84d3e59fa69d7808114ce578f6d6200db6\",\"parent\":\"010b7fdfcba0445eaff09ab1d8a6d3b737143261e2270492f99ee9d49e1c7580\",\"created\":\"2016-09-08T23:34:34.964332567Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/yyuu/pyenv.git .pyenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"010b7fdfcba0445eaff09ab1d8a6d3b737143261e2270492f99ee9d49e1c7580\",\"parent\":\"05d15a1535db4bbea0a08be2b4066990e89f1b341dc6cc0befb80217c01e74f1\",\"created\":\"2016-09-08T23:34:28.860735074Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /root\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"05d15a1535db4bbea0a08be2b4066990e89f1b341dc6cc0befb80217c01e74f1\",\"parent\":\"a90924d5724d187272d755b5cf9073c2bde57d05ef875e1665b825634599bbb2\",\"created\":\"2016-09-08T23:34:24.854854281Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y make   build-essential   libssl-dev   zlib1g-dev   libbz2-dev   libreadline-dev   libsqlite3-dev   python-pip   python-virtualenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a90924d5724d187272d755b5cf9073c2bde57d05ef875e1665b825634599bbb2\",\"parent\":\"35b85d8ec2c0901b931335787dac4abe99b25d35f4374d4d4388262c92c84341\",\"created\":\"2016-09-08T23:33:35.05773787Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y git\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"35b85d8ec2c0901b931335787dac4abe99b25d35f4374d4d4388262c92c84341\",\"parent\":\"f77f55bc9e4a75d51011f8e7dd869f42aeba81e3a7e3c6c656b9c386f1d6c57c\",\"created\":\"2016-09-08T23:33:29.633267307Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f77f55bc9e4a75d51011f8e7dd869f42aeba81e3a7e3c6c656b9c386f1d6c57c\",\"parent\":\"959b93c6eaf491fc801d16e123d7aa25bb6491a788626ad5427ec6d0af18d594\",\"created\":\"2016-09-08T23:33:24.221002331Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"959b93c6eaf491fc801d16e123d7aa25bb6491a788626ad5427ec6d0af18d594\",\"parent\":\"be10682042b82997d3b86b6837393c34e9bd5c83e814aa2651f3728de9284ed2\",\"created\":\"2016-09-08T23:30:31.158644502Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=xterm\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"be10682042b82997d3b86b6837393c34e9bd5c83e814aa2651f3728de9284ed2\",\"parent\":\"4e2d16bc9fc39355fa916d78b97708d186f81508967f568195be831916479abf\",\"created\":\"2016-09-08T23:30:28.557656394Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd dotfiles; sh setup.sh;\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e2d16bc9fc39355fa916d78b97708d186f81508967f568195be831916479abf\",\"parent\":\"353169fdf2ebfa9b6c72214f32dbe19280d2639a3f7148e73d64fdaa1e1f05dc\",\"created\":\"2016-09-08T23:30:09.874274463Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/gmarik/vundle.git ./.vim/bundle/vundle\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"353169fdf2ebfa9b6c72214f32dbe19280d2639a3f7148e73d64fdaa1e1f05dc\",\"parent\":\"9b375b439300adf6e5395c0cc8a255901ae0e8ffe0ad99baa9ef37f80f19ce5d\",\"created\":\"2016-09-08T23:30:03.067454859Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/bradleybossard/dotfiles.git\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b375b439300adf6e5395c0cc8a255901ae0e8ffe0ad99baa9ef37f80f19ce5d\",\"parent\":\"d97e8ec483ee81908aa0b49c091a3e2094d3ab38768f524ec4949835ae03d54b\",\"created\":\"2016-09-08T23:29:59.42930671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /root\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d97e8ec483ee81908aa0b49c091a3e2094d3ab38768f524ec4949835ae03d54b\",\"parent\":\"c08e60077e3aa9fd8ff8a83cb3f3bb0d76aeb3a8d6d76bc63b7333373020d3a4\",\"created\":\"2016-09-08T23:29:56.846019706Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026     apt-get remove ack \\u0026\\u0026     apt-get install -y git                        git-extras                        tig                        curl                        wget                        tmux                        vim                        grc                        tree                        ack-grep\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c08e60077e3aa9fd8ff8a83cb3f3bb0d76aeb3a8d6d76bc63b7333373020d3a4\",\"parent\":\"c9926c758af017c838860c9762c8f6e847e5f6b0977fbb8d860fc955471cd472\",\"created\":\"2016-09-08T23:28:50.457516308Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm /bin/sh \\u0026\\u0026 ln -s /bin/bash /bin/sh\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c9926c758af017c838860c9762c8f6e847e5f6b0977fbb8d860fc955471cd472\",\"parent\":\"f1fb466c672d2a875b722b72cc807c5b5a29e8ed29fd4cc053b1d8b71cfc45f2\",\"created\":\"2016-09-08T23:28:48.869304895Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1fb466c672d2a875b722b72cc807c5b5a29e8ed29fd4cc053b1d8b71cfc45f2\",\"parent\":\"99dc4d8f603d00196cee65a12a67dab905e781bdadb841d5a13fc08e44039041\",\"created\":\"2016-08-26T18:50:27.629952966Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"99dc4d8f603d00196cee65a12a67dab905e781bdadb841d5a13fc08e44039041\",\"parent\":\"35371c8124e2bbaf6bd1a6f158f5137cd637c6d76176cb1c0865730f2b784165\",\"created\":\"2016-08-26T18:50:26.759098381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"35371c8124e2bbaf6bd1a6f158f5137cd637c6d76176cb1c0865730f2b784165\",\"parent\":\"fd74137ff5ae2602000e71bb09c6f2367aac04c8d1956b2bd9956841f5744160\",\"created\":\"2016-08-26T18:50:18.638256752Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fd74137ff5ae2602000e71bb09c6f2367aac04c8d1956b2bd9956841f5744160\",\"parent\":\"008ecf8686ec11c91284008f1753686258d89fffc9981dbe7c79bb1852b3a268\",\"created\":\"2016-08-26T18:50:16.213726133Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"008ecf8686ec11c91284008f1753686258d89fffc9981dbe7c79bb1852b3a268\",\"parent\":\"f1b49dd0c243ba47d2a38cac99fb4e4c4f5cf9b0e6cd4714ea7d6d1dc9f01f39\",\"created\":\"2016-08-26T18:50:14.166878126Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1b49dd0c243ba47d2a38cac99fb4e4c4f5cf9b0e6cd4714ea7d6d1dc9f01f39\",\"created\":\"2016-08-26T18:50:09.823565126Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:902bff94e00fb3d9ebb11dc5000a0f0f2400885c56f4fbfb00de394534e282f7 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:0507cf2b642b80e39add74a4ab52311e3ddf90c6468e76e29532b7c60d3328da"
+            },
+            {
+                "blobSum": "sha256:2509d93034b6f1272e4fa3e17ed4021ef8f1758c2ea9209a6dc203359eee66c9"
+            },
+            {
+                "blobSum": "sha256:5a75c527c17a4b4e03069a91a76fddd4e79024fa9bae77226515cab9ab41fde5"
+            },
+            {
+                "blobSum": "sha256:a2e9f522c4805422081b7cc2072079fd4da12b41e3946212ca4f74a699a02849"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8fcaa4831822aca783f1c036f2ab57a780e60756e2ca2b740f5ff268c55e3d7c"
+            },
+            {
+                "blobSum": "sha256:dd3be8c7e11240382f7738946a90ac910983bad288f48572fdeb4a4179730cb1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:63831c19c1c7c364c17b5d4f1fb5c4840cfb23de74604b72f84c5a8d723dc32d"
+            },
+            {
+                "blobSum": "sha256:8e525cc73b42a35a6984cc360c84c470b70fdeeb6bd86f0831a6beacabb29f56"
+            },
+            {
+                "blobSum": "sha256:53e352d6d9c3f04585c962761ff7180a32179c1c7b268b79b2e301865fc88939"
+            },
+            {
+                "blobSum": "sha256:89fbd7f4795838331aedc236181e5a66125946c83d686ef026b2048cf06c72e3"
+            },
+            {
+                "blobSum": "sha256:e75c1ea8739df04b81737f25c807c3846005fadbae32d7fb8a0fc7a4f331f9e9"
+            },
+            {
+                "blobSum": "sha256:1e04cc8748abf93b8c836515ef03785744d93a078934f4991586968b6393c186"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:86750fd653810e73139c0a44dab0008ed1c8d9965edab430985fcf9032e7f504"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:edc0dd9e553621f01ae914d75cdeecd538be2acd310528de614df7029fbb7170"
+            },
+            {
+                "blobSum": "sha256:b561bd9d8a39ccd15aca498d69b6deecd7ed66c58dc9507a6e1a6fa64f58ded1"
+            },
+            {
+                "blobSum": "sha256:e41bb469ea6bfb90485fd6d8f3e1243b4afc547cb39408dc754f7fd4a72ca53e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8db692dcaf39a2aa5aa227ce52e3f5821d5953894faea5f0a3b9e8c20678d275"
+            },
+            {
+                "blobSum": "sha256:e4fa49676147670fe5cb29960ae02356d7b36284ea274f8d090ee16659fd99d0"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:24e0251a0e2ccc2fedbdf51dd44f851622f504c7ddfad56ce0f1c63e1101cb20"
+            },
+            {
+                "blobSum": "sha256:8296858250fed454169c737c0706958c8a4a130e0bfdca3cf869fa767a19b4f1"
+            },
+            {
+                "blobSum": "sha256:c19118ca682dcd394eeed77409fbac93d9fa94c0bcff633344dc0a71ead74a66"
+            },
+            {
+                "blobSum": "sha256:82659f8f1b7628b94f8919ece229321a16ec0b7139cf289e010b7c064f603516"
+            },
+            {
+                "blobSum": "sha256:952132ac251a8df1f831b354a0b9a4cc7cd460b9c332ed664b4c205db6f22c29"
+            }
+        ],
+        "name": "bradleybossard/data-science-from-scratch",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIxNDA4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6NTBaIn0",
+                "signature": "nEI8OkjvZ3WLpUHDyCjBUvRAJaWPqRfbWDKIh_gok4et4COMdoT1rzbYrtRou0UteiZgOYKcRuA4BT3JO7PpRg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "RBJtkKTCFBrjVjhdE2lQPdtu96DvJGVL6y9WXXmjduw",
+                        "kid": "YALU:NGK3:6FMK:L2BW:UHIF:LCG6:A4XV:GPJN:LN5Q:HJIL:4EK2:5HIZ",
+                        "x": "QAQl2e7lyLK3M_1zpiXZiuFGWQFFfONYFit-oVL5FQU"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3934ed318998\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"TERM=xterm\",\"HOME=/root\",\"PYENV_ROOT=/root/.pyenv\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:be409a4eceffe326a4404d0e1cb29cf633e3b5a85a4d6b7fef52834ae2ec7a85\",\"Volumes\":null,\"WorkingDir\":\"/root\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"32272894fdb2217f249dffc0fce2c216d5984c8e56cd3ee1cd78648f66532506\",\"container_config\":{\"Hostname\":\"3934ed318998\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"TERM=xterm\",\"HOME=/root\",\"PYENV_ROOT=/root/.pyenv\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install matplotlib\"],\"ArgsEscaped\":true,\"Image\":\"sha256:be409a4eceffe326a4404d0e1cb29cf633e3b5a85a4d6b7fef52834ae2ec7a85\",\"Volumes\":null,\"WorkingDir\":\"/root\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-09T01:26:47.730379605Z\",\"docker_version\":\"1.12.0\",\"id\":\"b75f10fd216032dd09e37768cefddbe073e8b2fdc0df5a35dcc89cd599ca6b51\",\"os\":\"linux\",\"parent\":\"b97aad99a5ab0e2fb395f76b0ff628686f56885881e616757117bb7092742a07\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b97aad99a5ab0e2fb395f76b0ff628686f56885881e616757117bb7092742a07\",\"parent\":\"87f302f6c4bdb1d134fb98d98e5916e15540f82a20b86b6cab52e10960189e58\",\"created\":\"2016-09-09T01:26:21.141236466Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y pkg-config                        libfreetype6-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87f302f6c4bdb1d134fb98d98e5916e15540f82a20b86b6cab52e10960189e58\",\"parent\":\"11d1cfbc25bd4a7c2bf19cb66a4a33d4668f2631e1ade4129acdacabe187b6d1\",\"created\":\"2016-09-08T23:45:39.110187529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade pip\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"11d1cfbc25bd4a7c2bf19cb66a4a33d4668f2631e1ade4129acdacabe187b6d1\",\"parent\":\"387d24c77e26203a900c331710c012706303d3c986a4ff58d5b73111b965f1f9\",\"created\":\"2016-09-08T23:45:29.195533082Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv global 3.4.3\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"387d24c77e26203a900c331710c012706303d3c986a4ff58d5b73111b965f1f9\",\"parent\":\"1c4c8f52e372962a09e0245359be911c81bfcae94c358b8aa251c3478d14d622\",\"created\":\"2016-09-08T23:45:22.451951762Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv rehash\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c4c8f52e372962a09e0245359be911c81bfcae94c358b8aa251c3478d14d622\",\"parent\":\"bbd91f34856978b02dd6fc32e18191b1f6bbb407d344317dcbdbe70a69ae0f45\",\"created\":\"2016-09-08T23:45:16.39886376Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv install 3.4.3\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbd91f34856978b02dd6fc32e18191b1f6bbb407d344317dcbdbe70a69ae0f45\",\"parent\":\"5bf1c186e1d201a138b6baf4c08905dd99b4bd4202461f6b99b5c22434d40588\",\"created\":\"2016-09-08T23:39:42.576441762Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pyenv install 2.7.10\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5bf1c186e1d201a138b6baf4c08905dd99b4bd4202461f6b99b5c22434d40588\",\"parent\":\"a4518ba9a839c59652c86e97ccb95102eb529c31254beb0d2c3e0f3b282d3369\",\"created\":\"2016-09-08T23:35:13.23327557Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/root/.pyenv/shims:/root/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a4518ba9a839c59652c86e97ccb95102eb529c31254beb0d2c3e0f3b282d3369\",\"parent\":\"3264fb638e32a566ffc753a790a14c98d34235f094847a32481985d52a9c483e\",\"created\":\"2016-09-08T23:35:08.384601986Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYENV_ROOT=/root/.pyenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3264fb638e32a566ffc753a790a14c98d34235f094847a32481985d52a9c483e\",\"parent\":\"743f28eb84051195f033235476f72044a4f248ea438d252b80b0c7d7b3a4febb\",\"created\":\"2016-09-08T23:35:03.620325087Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HOME=/root\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"743f28eb84051195f033235476f72044a4f248ea438d252b80b0c7d7b3a4febb\",\"parent\":\"a0b087b591485d74c56bd48380fda64f7021484e0b4aafa45db836ac3b04275c\",\"created\":\"2016-09-08T23:34:59.562721885Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'eval \\\"$(pyenv virtualenv-init -)\\\"' \\u003e\\u003e .bash_profile\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0b087b591485d74c56bd48380fda64f7021484e0b4aafa45db836ac3b04275c\",\"parent\":\"3c2a928bcda88996316266af9c4bb33da0b7b616216aa44054ca28935ef3dd3d\",\"created\":\"2016-09-08T23:34:52.472816776Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/yyuu/pyenv-virtualenv.git .pyenv/plugins/pyenv-virtualenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3c2a928bcda88996316266af9c4bb33da0b7b616216aa44054ca28935ef3dd3d\",\"parent\":\"eaf0c411e9581a3167d4bc3549b2414d7d28c913b2d55d7b117af371f44f4f7d\",\"created\":\"2016-09-08T23:34:47.686098042Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'eval \\\"$(pyenv init -)\\\"' \\u003e\\u003e .bashrc\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eaf0c411e9581a3167d4bc3549b2414d7d28c913b2d55d7b117af371f44f4f7d\",\"parent\":\"77108e833b77baa22f204ce410797f185d83141cb37c2ed5bca83eea320caa9a\",\"created\":\"2016-09-08T23:34:43.39903139Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=\\\"$PYENV_ROOT/shims:$PYENV_ROOT/bin:$PATH\\\"' \\u003e\\u003e .bashrc\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"77108e833b77baa22f204ce410797f185d83141cb37c2ed5bca83eea320caa9a\",\"parent\":\"52a4e4d5dd390eafa9171111f7402f84d3e59fa69d7808114ce578f6d6200db6\",\"created\":\"2016-09-08T23:34:39.159721471Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PYENV_ROOT=\\\"$HOME/.pyenv\\\"' \\u003e\\u003e .bashrc\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"52a4e4d5dd390eafa9171111f7402f84d3e59fa69d7808114ce578f6d6200db6\",\"parent\":\"010b7fdfcba0445eaff09ab1d8a6d3b737143261e2270492f99ee9d49e1c7580\",\"created\":\"2016-09-08T23:34:34.964332567Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/yyuu/pyenv.git .pyenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"010b7fdfcba0445eaff09ab1d8a6d3b737143261e2270492f99ee9d49e1c7580\",\"parent\":\"05d15a1535db4bbea0a08be2b4066990e89f1b341dc6cc0befb80217c01e74f1\",\"created\":\"2016-09-08T23:34:28.860735074Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /root\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"05d15a1535db4bbea0a08be2b4066990e89f1b341dc6cc0befb80217c01e74f1\",\"parent\":\"a90924d5724d187272d755b5cf9073c2bde57d05ef875e1665b825634599bbb2\",\"created\":\"2016-09-08T23:34:24.854854281Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y make   build-essential   libssl-dev   zlib1g-dev   libbz2-dev   libreadline-dev   libsqlite3-dev   python-pip   python-virtualenv\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a90924d5724d187272d755b5cf9073c2bde57d05ef875e1665b825634599bbb2\",\"parent\":\"35b85d8ec2c0901b931335787dac4abe99b25d35f4374d4d4388262c92c84341\",\"created\":\"2016-09-08T23:33:35.05773787Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y git\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"35b85d8ec2c0901b931335787dac4abe99b25d35f4374d4d4388262c92c84341\",\"parent\":\"f77f55bc9e4a75d51011f8e7dd869f42aeba81e3a7e3c6c656b9c386f1d6c57c\",\"created\":\"2016-09-08T23:33:29.633267307Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f77f55bc9e4a75d51011f8e7dd869f42aeba81e3a7e3c6c656b9c386f1d6c57c\",\"parent\":\"959b93c6eaf491fc801d16e123d7aa25bb6491a788626ad5427ec6d0af18d594\",\"created\":\"2016-09-08T23:33:24.221002331Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"959b93c6eaf491fc801d16e123d7aa25bb6491a788626ad5427ec6d0af18d594\",\"parent\":\"be10682042b82997d3b86b6837393c34e9bd5c83e814aa2651f3728de9284ed2\",\"created\":\"2016-09-08T23:30:31.158644502Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=xterm\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"be10682042b82997d3b86b6837393c34e9bd5c83e814aa2651f3728de9284ed2\",\"parent\":\"4e2d16bc9fc39355fa916d78b97708d186f81508967f568195be831916479abf\",\"created\":\"2016-09-08T23:30:28.557656394Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd dotfiles; sh setup.sh;\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e2d16bc9fc39355fa916d78b97708d186f81508967f568195be831916479abf\",\"parent\":\"353169fdf2ebfa9b6c72214f32dbe19280d2639a3f7148e73d64fdaa1e1f05dc\",\"created\":\"2016-09-08T23:30:09.874274463Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/gmarik/vundle.git ./.vim/bundle/vundle\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"353169fdf2ebfa9b6c72214f32dbe19280d2639a3f7148e73d64fdaa1e1f05dc\",\"parent\":\"9b375b439300adf6e5395c0cc8a255901ae0e8ffe0ad99baa9ef37f80f19ce5d\",\"created\":\"2016-09-08T23:30:03.067454859Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/bradleybossard/dotfiles.git\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b375b439300adf6e5395c0cc8a255901ae0e8ffe0ad99baa9ef37f80f19ce5d\",\"parent\":\"d97e8ec483ee81908aa0b49c091a3e2094d3ab38768f524ec4949835ae03d54b\",\"created\":\"2016-09-08T23:29:59.42930671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /root\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d97e8ec483ee81908aa0b49c091a3e2094d3ab38768f524ec4949835ae03d54b\",\"parent\":\"c08e60077e3aa9fd8ff8a83cb3f3bb0d76aeb3a8d6d76bc63b7333373020d3a4\",\"created\":\"2016-09-08T23:29:56.846019706Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026     apt-get remove ack \\u0026\\u0026     apt-get install -y git                        git-extras                        tig                        curl                        wget                        tmux                        vim                        grc                        tree                        ack-grep\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c08e60077e3aa9fd8ff8a83cb3f3bb0d76aeb3a8d6d76bc63b7333373020d3a4\",\"parent\":\"c9926c758af017c838860c9762c8f6e847e5f6b0977fbb8d860fc955471cd472\",\"created\":\"2016-09-08T23:28:50.457516308Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm /bin/sh \\u0026\\u0026 ln -s /bin/bash /bin/sh\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c9926c758af017c838860c9762c8f6e847e5f6b0977fbb8d860fc955471cd472\",\"parent\":\"f1fb466c672d2a875b722b72cc807c5b5a29e8ed29fd4cc053b1d8b71cfc45f2\",\"created\":\"2016-09-08T23:28:48.869304895Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\"]},\"author\":\"Bradley Bossard \\u003cbradleybossard@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1fb466c672d2a875b722b72cc807c5b5a29e8ed29fd4cc053b1d8b71cfc45f2\",\"parent\":\"99dc4d8f603d00196cee65a12a67dab905e781bdadb841d5a13fc08e44039041\",\"created\":\"2016-08-26T18:50:27.629952966Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"99dc4d8f603d00196cee65a12a67dab905e781bdadb841d5a13fc08e44039041\",\"parent\":\"35371c8124e2bbaf6bd1a6f158f5137cd637c6d76176cb1c0865730f2b784165\",\"created\":\"2016-08-26T18:50:26.759098381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"35371c8124e2bbaf6bd1a6f158f5137cd637c6d76176cb1c0865730f2b784165\",\"parent\":\"fd74137ff5ae2602000e71bb09c6f2367aac04c8d1956b2bd9956841f5744160\",\"created\":\"2016-08-26T18:50:18.638256752Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fd74137ff5ae2602000e71bb09c6f2367aac04c8d1956b2bd9956841f5744160\",\"parent\":\"008ecf8686ec11c91284008f1753686258d89fffc9981dbe7c79bb1852b3a268\",\"created\":\"2016-08-26T18:50:16.213726133Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"008ecf8686ec11c91284008f1753686258d89fffc9981dbe7c79bb1852b3a268\",\"parent\":\"f1b49dd0c243ba47d2a38cac99fb4e4c4f5cf9b0e6cd4714ea7d6d1dc9f01f39\",\"created\":\"2016-08-26T18:50:14.166878126Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1b49dd0c243ba47d2a38cac99fb4e4c4f5cf9b0e6cd4714ea7d6d1dc9f01f39\",\"created\":\"2016-08-26T18:50:09.823565126Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:902bff94e00fb3d9ebb11dc5000a0f0f2400885c56f4fbfb00de394534e282f7 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:0507cf2b642b80e39add74a4ab52311e3ddf90c6468e76e29532b7c60d3328da"
+            },
+            {
+                "blobSum": "sha256:2509d93034b6f1272e4fa3e17ed4021ef8f1758c2ea9209a6dc203359eee66c9"
+            },
+            {
+                "blobSum": "sha256:5a75c527c17a4b4e03069a91a76fddd4e79024fa9bae77226515cab9ab41fde5"
+            },
+            {
+                "blobSum": "sha256:a2e9f522c4805422081b7cc2072079fd4da12b41e3946212ca4f74a699a02849"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8fcaa4831822aca783f1c036f2ab57a780e60756e2ca2b740f5ff268c55e3d7c"
+            },
+            {
+                "blobSum": "sha256:dd3be8c7e11240382f7738946a90ac910983bad288f48572fdeb4a4179730cb1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:63831c19c1c7c364c17b5d4f1fb5c4840cfb23de74604b72f84c5a8d723dc32d"
+            },
+            {
+                "blobSum": "sha256:8e525cc73b42a35a6984cc360c84c470b70fdeeb6bd86f0831a6beacabb29f56"
+            },
+            {
+                "blobSum": "sha256:53e352d6d9c3f04585c962761ff7180a32179c1c7b268b79b2e301865fc88939"
+            },
+            {
+                "blobSum": "sha256:89fbd7f4795838331aedc236181e5a66125946c83d686ef026b2048cf06c72e3"
+            },
+            {
+                "blobSum": "sha256:e75c1ea8739df04b81737f25c807c3846005fadbae32d7fb8a0fc7a4f331f9e9"
+            },
+            {
+                "blobSum": "sha256:1e04cc8748abf93b8c836515ef03785744d93a078934f4991586968b6393c186"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:86750fd653810e73139c0a44dab0008ed1c8d9965edab430985fcf9032e7f504"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:edc0dd9e553621f01ae914d75cdeecd538be2acd310528de614df7029fbb7170"
+            },
+            {
+                "blobSum": "sha256:b561bd9d8a39ccd15aca498d69b6deecd7ed66c58dc9507a6e1a6fa64f58ded1"
+            },
+            {
+                "blobSum": "sha256:e41bb469ea6bfb90485fd6d8f3e1243b4afc547cb39408dc754f7fd4a72ca53e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8db692dcaf39a2aa5aa227ce52e3f5821d5953894faea5f0a3b9e8c20678d275"
+            },
+            {
+                "blobSum": "sha256:e4fa49676147670fe5cb29960ae02356d7b36284ea274f8d090ee16659fd99d0"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:24e0251a0e2ccc2fedbdf51dd44f851622f504c7ddfad56ce0f1c63e1101cb20"
+            },
+            {
+                "blobSum": "sha256:8296858250fed454169c737c0706958c8a4a130e0bfdca3cf869fa767a19b4f1"
+            },
+            {
+                "blobSum": "sha256:c19118ca682dcd394eeed77409fbac93d9fa94c0bcff633344dc0a71ead74a66"
+            },
+            {
+                "blobSum": "sha256:82659f8f1b7628b94f8919ece229321a16ec0b7139cf289e010b7c064f603516"
+            },
+            {
+                "blobSum": "sha256:952132ac251a8df1f831b354a0b9a4cc7cd460b9c332ed664b4c205db6f22c29"
+            }
+        ],
+        "name": "bradleybossard/data-science-from-scratch",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIxNDA4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6NTFaIn0",
+                "signature": "46o18htoMEgjsfF98enH6GHdAnBcp9_0DWnK7ZAqtUPIx-Bnevhbpfc5k_scCFAh4TQKb4Mqp92hPMz-uTTBlw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Vwsr3t0byNGgidQ4buB9VVkAyuRWG_VBRv2HYKl-4mA",
+                        "kid": "QIWV:6XLS:KYAI:SUTL:2EYN:IL5D:7VJX:FOCY:JUKM:WGXI:LESM:XP3U",
+                        "x": "-yj9Rbw8S1fSGodypf4SDCuleHy8g52pE1H-E_3J8Vs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

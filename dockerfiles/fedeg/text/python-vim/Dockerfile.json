@@ -1,0 +1,294 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\",\"config\":{\"Hostname\":\"397f80c505a4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D\",\"PYTHON_VERSION=3.5.2\",\"PYTHON_PIP_VERSION=8.1.2\"],\"Cmd\":[\"vim\",\"/src\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1ebe752a669751619a5757018581fae6247e479609b43a2d4e6698760db6b78e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"0beeb24324688553eac6f9af8d2b004dc4573d42a7aecf63b24bdff1ca9bd803\",\"container_config\":{\"Hostname\":\"397f80c505a4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D\",\"PYTHON_VERSION=3.5.2\",\"PYTHON_PIP_VERSION=8.1.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"vim\\\" \\\"/src\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1ebe752a669751619a5757018581fae6247e479609b43a2d4e6698760db6b78e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-11-02T20:58:15.685665863Z\",\"docker_version\":\"1.12.3\",\"id\":\"d2db8d0b0753b11365320b73476db398688ec664249166e56d6ecd3141576d34\",\"os\":\"linux\",\"parent\":\"b166c14ced98d3bdbd4c90da809098f70fa359655b1f5f962788afafdb42025a\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b166c14ced98d3bdbd4c90da809098f70fa359655b1f5f962788afafdb42025a\",\"parent\":\"6babc57d8fcd667ba1c3a7fcf8248436bbcd3d4eb6a48f18a2558a943aa5dd3c\",\"created\":\"2016-11-02T20:58:10.660838541Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c timeout 5m vim || true\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6babc57d8fcd667ba1c3a7fcf8248436bbcd3d4eb6a48f18a2558a943aa5dd3c\",\"parent\":\"8bb59c9da221597623af9c45ac4c574f9e4081a252a1941297670854e5aed195\",\"created\":\"2016-11-02T20:53:03.659611726Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:336caa95e0c5d8ecc40e3376a39aeaac4dab74b45ac54b91c327ec2721514a09 in /root/.vimrc \"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8bb59c9da221597623af9c45ac4c574f9e4081a252a1941297670854e5aed195\",\"parent\":\"d3ef3acb28e47cfc0dab62ad77d7b4de7430bcf6ba400da5dfedcf6679029110\",\"created\":\"2016-11-02T20:52:59.383631944Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pep8 flake8 pyflakes isort yapf\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d3ef3acb28e47cfc0dab62ad77d7b4de7430bcf6ba400da5dfedcf6679029110\",\"parent\":\"6a36f10c021117e3be42a000a0aa707725606a44f6b94f513346c2e8e0321754\",\"created\":\"2016-11-02T20:52:50.813893065Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update  \\u0026\\u0026 apt-get --force-yes install -y curl vim exuberant-ctags git ack-grep vim-nox  \\u0026\\u0026 apt-get clean  \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a36f10c021117e3be42a000a0aa707725606a44f6b94f513346c2e8e0321754\",\"parent\":\"5990caa7e0cbc44aecf85ac065b195e10af50a6c232d4b8e96576b102cf5006a\",\"created\":\"2016-11-02T20:52:27.074984747Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Federico Gonzalez (https://github.com/fedeg/)\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5990caa7e0cbc44aecf85ac065b195e10af50a6c232d4b8e96576b102cf5006a\",\"parent\":\"341a4fd76f93dbcbe082df26fccac90aa4b58788a94bb5d7a830658637eb6ff0\",\"created\":\"2016-11-01T00:10:48.303986575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python3\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"341a4fd76f93dbcbe082df26fccac90aa4b58788a94bb5d7a830658637eb6ff0\",\"parent\":\"b0ae9265528654b258ea9dffc15a8f68f68de026d9a7991e526eff02dbaa85e8\",\"created\":\"2016-11-01T00:10:48.060223574Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin \\t\\u0026\\u0026 { [ -e easy_install ] || ln -s easy_install-* easy_install; } \\t\\u0026\\u0026 ln -s idle3 idle \\t\\u0026\\u0026 ln -s pydoc3 pydoc \\t\\u0026\\u0026 ln -s python3 python \\t\\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0ae9265528654b258ea9dffc15a8f68f68de026d9a7991e526eff02dbaa85e8\",\"parent\":\"fe27140b29b78a65baa8b36ad095bcad5941e382b8fbf6d43ee571cd22f121ef\",\"created\":\"2016-11-01T00:10:47.135834291Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\ttcl-dev \\t\\ttk-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure \\t\\t--enable-loadable-sqlite-extensions \\t\\t--enable-shared \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\t\\u0026\\u0026 if [ ! -e /usr/local/bin/pip3 ]; then : \\t\\t\\u0026\\u0026 wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \\t\\t\\u0026\\u0026 python3 /tmp/get-pip.py \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\t\\u0026\\u0026 rm /tmp/get-pip.py \\t; fi \\t\\u0026\\u0026 pip3 install --no-cache-dir --upgrade --force-reinstall \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\u0026\\u0026 [ \\\"$(pip list |tac|tac| awk -F '[ ()]+' '$1 == \\\"pip\\\" { print $2; exit }')\\\" = \\\"$PYTHON_PIP_VERSION\\\" ] \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python ~/.cache\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fe27140b29b78a65baa8b36ad095bcad5941e382b8fbf6d43ee571cd22f121ef\",\"parent\":\"6e7f21bb1f1cdc3924e78e85d5e55e58394460a77e069dce61cbb0e560dc6afa\",\"created\":\"2016-11-01T00:09:15.319911744Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=8.1.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6e7f21bb1f1cdc3924e78e85d5e55e58394460a77e069dce61cbb0e560dc6afa\",\"parent\":\"d650ef989f2bb41913b97a251c78628eb945e46583a363136f96ded8e596e6f5\",\"created\":\"2016-11-01T00:09:15.031966177Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.5.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d650ef989f2bb41913b97a251c78628eb945e46583a363136f96ded8e596e6f5\",\"parent\":\"f373e8c907b5dc681bb7716929b715a3e8dc40b3ea93ca5643de2c3234704d46\",\"created\":\"2016-11-01T00:01:09.576053299Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f373e8c907b5dc681bb7716929b715a3e8dc40b3ea93ca5643de2c3234704d46\",\"parent\":\"078ab1886d26d03899eb889f29bb7dda5e80e1233afeb3752bc8e95d417234c4\",\"created\":\"2016-10-31T23:47:11.363587422Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\ttcl \\t\\ttk \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"078ab1886d26d03899eb889f29bb7dda5e80e1233afeb3752bc8e95d417234c4\",\"parent\":\"acbf9cec3db688b7e9905096ea996d79486cccef8376c0af8b2ac5df00b73525\",\"created\":\"2016-10-31T23:46:58.039904602Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"acbf9cec3db688b7e9905096ea996d79486cccef8376c0af8b2ac5df00b73525\",\"parent\":\"760bd51984cc279eb58a532439b7b5ae5a9e2ae8911b6948218157833649bec1\",\"created\":\"2016-10-31T23:46:57.743335718Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"760bd51984cc279eb58a532439b7b5ae5a9e2ae8911b6948218157833649bec1\",\"parent\":\"037efd6886e03995d8cd814783a4e123fdab5f551943f79a02061dfaac6fb87e\",\"created\":\"2016-10-31T21:26:48.049413652Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"037efd6886e03995d8cd814783a4e123fdab5f551943f79a02061dfaac6fb87e\",\"parent\":\"8f91fad328c55670eb45dfaad9930a42e79b9948e3ce55e2dbfb828876c0158f\",\"created\":\"2016-10-21T16:37:29.606857579Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8f91fad328c55670eb45dfaad9930a42e79b9948e3ce55e2dbfb828876c0158f\",\"parent\":\"8d6cce8d12a6005542389eec56bd3c7e2991cd5b43e7520fc06349e245f0525f\",\"created\":\"2016-10-21T16:36:32.169328912Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8d6cce8d12a6005542389eec56bd3c7e2991cd5b43e7520fc06349e245f0525f\",\"parent\":\"0f48656fed63ef9f8f87cf8305b3bb92d069c9108238d55c9638e2580ec7c2ff\",\"created\":\"2016-10-21T16:22:34.701972413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0f48656fed63ef9f8f87cf8305b3bb92d069c9108238d55c9638e2580ec7c2ff\",\"created\":\"2016-10-21T16:22:34.220684205Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d9e0b8fac8712b5d32e1ccfde08a1ad547ca20e771ad3fe21d16f3b1c217f6e8"
+            },
+            {
+                "blobSum": "sha256:6a82c66d19fdd787a372d01d10a3f50e8410530cfea586617940b054b5c28033"
+            },
+            {
+                "blobSum": "sha256:e47be08575f762ba6104806f7e827a96c35d0899cc145ddec3f62ab3f4cd3606"
+            },
+            {
+                "blobSum": "sha256:71b879aacac55920fb1f56fa6611b7f070e4b0950d8a1f586c992e6e8d70a80a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0a587a7fabdab20075256ed13afc7a39228dba7e9aaf0835c10860fe5abc1bd7"
+            },
+            {
+                "blobSum": "sha256:d96297b6dc069127b12c63f533f253436496380a42c4a48d3702327ab028f275"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1bd9291f3483a3992c1acaff27e767677b57bd191c8863a8e18368a0fbfbc593"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:df720fc8e4f160444441c03d14894b21f295241ab4ff4d9f6e625f203c1fb944"
+            },
+            {
+                "blobSum": "sha256:143e9d501644c63b3e69d854e8b4c238797cdf3fc87fd79a686c1262fe61e9b5"
+            },
+            {
+                "blobSum": "sha256:af36d2c7a1481ae5554241fcb6bc20472bf7a6b7b2be24465c76e168c278a03f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0"
+            }
+        ],
+        "name": "fedeg/python-vim",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE0NjQyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDg6MTdaIn0",
+                "signature": "A_u98FUtU9Wm4uH0KTA48TYDwJhDabZ36oq7Q3eHR838B-Nwepedu0Rt6rzNfeDZR7ZM1bHqMDDAbi-b9S84vg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "h7GhpKHUUcpO6bbXscMvouwq1SxgNVgjPGxiGc3D4BY",
+                        "kid": "BZRW:6INW:MZE7:OKEX:DJSK:4FB4:HYSG:UYPV:V24H:YTJV:ZQVU:E4EG",
+                        "x": "bXIIPwqV_I-HDLMKxJQviw0_sbEu6v4eWqvdSbp7-N0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\",\"config\":{\"Hostname\":\"397f80c505a4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D\",\"PYTHON_VERSION=3.5.2\",\"PYTHON_PIP_VERSION=8.1.2\"],\"Cmd\":[\"vim\",\"/src\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1ebe752a669751619a5757018581fae6247e479609b43a2d4e6698760db6b78e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"0beeb24324688553eac6f9af8d2b004dc4573d42a7aecf63b24bdff1ca9bd803\",\"container_config\":{\"Hostname\":\"397f80c505a4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D\",\"PYTHON_VERSION=3.5.2\",\"PYTHON_PIP_VERSION=8.1.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"vim\\\" \\\"/src\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1ebe752a669751619a5757018581fae6247e479609b43a2d4e6698760db6b78e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-11-02T20:58:15.685665863Z\",\"docker_version\":\"1.12.3\",\"id\":\"d2db8d0b0753b11365320b73476db398688ec664249166e56d6ecd3141576d34\",\"os\":\"linux\",\"parent\":\"b166c14ced98d3bdbd4c90da809098f70fa359655b1f5f962788afafdb42025a\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b166c14ced98d3bdbd4c90da809098f70fa359655b1f5f962788afafdb42025a\",\"parent\":\"6babc57d8fcd667ba1c3a7fcf8248436bbcd3d4eb6a48f18a2558a943aa5dd3c\",\"created\":\"2016-11-02T20:58:10.660838541Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c timeout 5m vim || true\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6babc57d8fcd667ba1c3a7fcf8248436bbcd3d4eb6a48f18a2558a943aa5dd3c\",\"parent\":\"8bb59c9da221597623af9c45ac4c574f9e4081a252a1941297670854e5aed195\",\"created\":\"2016-11-02T20:53:03.659611726Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:336caa95e0c5d8ecc40e3376a39aeaac4dab74b45ac54b91c327ec2721514a09 in /root/.vimrc \"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8bb59c9da221597623af9c45ac4c574f9e4081a252a1941297670854e5aed195\",\"parent\":\"d3ef3acb28e47cfc0dab62ad77d7b4de7430bcf6ba400da5dfedcf6679029110\",\"created\":\"2016-11-02T20:52:59.383631944Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pep8 flake8 pyflakes isort yapf\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d3ef3acb28e47cfc0dab62ad77d7b4de7430bcf6ba400da5dfedcf6679029110\",\"parent\":\"6a36f10c021117e3be42a000a0aa707725606a44f6b94f513346c2e8e0321754\",\"created\":\"2016-11-02T20:52:50.813893065Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update  \\u0026\\u0026 apt-get --force-yes install -y curl vim exuberant-ctags git ack-grep vim-nox  \\u0026\\u0026 apt-get clean  \\u0026\\u0026 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a36f10c021117e3be42a000a0aa707725606a44f6b94f513346c2e8e0321754\",\"parent\":\"5990caa7e0cbc44aecf85ac065b195e10af50a6c232d4b8e96576b102cf5006a\",\"created\":\"2016-11-02T20:52:27.074984747Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Federico Gonzalez (https://github.com/fedeg/)\"]},\"author\":\"Federico Gonzalez (https://github.com/fedeg/)\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5990caa7e0cbc44aecf85ac065b195e10af50a6c232d4b8e96576b102cf5006a\",\"parent\":\"341a4fd76f93dbcbe082df26fccac90aa4b58788a94bb5d7a830658637eb6ff0\",\"created\":\"2016-11-01T00:10:48.303986575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python3\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"341a4fd76f93dbcbe082df26fccac90aa4b58788a94bb5d7a830658637eb6ff0\",\"parent\":\"b0ae9265528654b258ea9dffc15a8f68f68de026d9a7991e526eff02dbaa85e8\",\"created\":\"2016-11-01T00:10:48.060223574Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin \\t\\u0026\\u0026 { [ -e easy_install ] || ln -s easy_install-* easy_install; } \\t\\u0026\\u0026 ln -s idle3 idle \\t\\u0026\\u0026 ln -s pydoc3 pydoc \\t\\u0026\\u0026 ln -s python3 python \\t\\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0ae9265528654b258ea9dffc15a8f68f68de026d9a7991e526eff02dbaa85e8\",\"parent\":\"fe27140b29b78a65baa8b36ad095bcad5941e382b8fbf6d43ee571cd22f121ef\",\"created\":\"2016-11-01T00:10:47.135834291Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\ttcl-dev \\t\\ttk-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure \\t\\t--enable-loadable-sqlite-extensions \\t\\t--enable-shared \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\t\\u0026\\u0026 if [ ! -e /usr/local/bin/pip3 ]; then : \\t\\t\\u0026\\u0026 wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \\t\\t\\u0026\\u0026 python3 /tmp/get-pip.py \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\t\\u0026\\u0026 rm /tmp/get-pip.py \\t; fi \\t\\u0026\\u0026 pip3 install --no-cache-dir --upgrade --force-reinstall \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\u0026\\u0026 [ \\\"$(pip list |tac|tac| awk -F '[ ()]+' '$1 == \\\"pip\\\" { print $2; exit }')\\\" = \\\"$PYTHON_PIP_VERSION\\\" ] \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python ~/.cache\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fe27140b29b78a65baa8b36ad095bcad5941e382b8fbf6d43ee571cd22f121ef\",\"parent\":\"6e7f21bb1f1cdc3924e78e85d5e55e58394460a77e069dce61cbb0e560dc6afa\",\"created\":\"2016-11-01T00:09:15.319911744Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=8.1.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6e7f21bb1f1cdc3924e78e85d5e55e58394460a77e069dce61cbb0e560dc6afa\",\"parent\":\"d650ef989f2bb41913b97a251c78628eb945e46583a363136f96ded8e596e6f5\",\"created\":\"2016-11-01T00:09:15.031966177Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.5.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d650ef989f2bb41913b97a251c78628eb945e46583a363136f96ded8e596e6f5\",\"parent\":\"f373e8c907b5dc681bb7716929b715a3e8dc40b3ea93ca5643de2c3234704d46\",\"created\":\"2016-11-01T00:01:09.576053299Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=97FC712E4C024BBEA48A61ED3A5CA953F73C700D\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f373e8c907b5dc681bb7716929b715a3e8dc40b3ea93ca5643de2c3234704d46\",\"parent\":\"078ab1886d26d03899eb889f29bb7dda5e80e1233afeb3752bc8e95d417234c4\",\"created\":\"2016-10-31T23:47:11.363587422Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\ttcl \\t\\ttk \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"078ab1886d26d03899eb889f29bb7dda5e80e1233afeb3752bc8e95d417234c4\",\"parent\":\"acbf9cec3db688b7e9905096ea996d79486cccef8376c0af8b2ac5df00b73525\",\"created\":\"2016-10-31T23:46:58.039904602Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"acbf9cec3db688b7e9905096ea996d79486cccef8376c0af8b2ac5df00b73525\",\"parent\":\"760bd51984cc279eb58a532439b7b5ae5a9e2ae8911b6948218157833649bec1\",\"created\":\"2016-10-31T23:46:57.743335718Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"760bd51984cc279eb58a532439b7b5ae5a9e2ae8911b6948218157833649bec1\",\"parent\":\"037efd6886e03995d8cd814783a4e123fdab5f551943f79a02061dfaac6fb87e\",\"created\":\"2016-10-31T21:26:48.049413652Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"037efd6886e03995d8cd814783a4e123fdab5f551943f79a02061dfaac6fb87e\",\"parent\":\"8f91fad328c55670eb45dfaad9930a42e79b9948e3ce55e2dbfb828876c0158f\",\"created\":\"2016-10-21T16:37:29.606857579Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8f91fad328c55670eb45dfaad9930a42e79b9948e3ce55e2dbfb828876c0158f\",\"parent\":\"8d6cce8d12a6005542389eec56bd3c7e2991cd5b43e7520fc06349e245f0525f\",\"created\":\"2016-10-21T16:36:32.169328912Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8d6cce8d12a6005542389eec56bd3c7e2991cd5b43e7520fc06349e245f0525f\",\"parent\":\"0f48656fed63ef9f8f87cf8305b3bb92d069c9108238d55c9638e2580ec7c2ff\",\"created\":\"2016-10-21T16:22:34.701972413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0f48656fed63ef9f8f87cf8305b3bb92d069c9108238d55c9638e2580ec7c2ff\",\"created\":\"2016-10-21T16:22:34.220684205Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:23aa4f893e3288698c017b90be657911b72d54edb3b3a7c4d05c308f50f9228f in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d9e0b8fac8712b5d32e1ccfde08a1ad547ca20e771ad3fe21d16f3b1c217f6e8"
+            },
+            {
+                "blobSum": "sha256:6a82c66d19fdd787a372d01d10a3f50e8410530cfea586617940b054b5c28033"
+            },
+            {
+                "blobSum": "sha256:e47be08575f762ba6104806f7e827a96c35d0899cc145ddec3f62ab3f4cd3606"
+            },
+            {
+                "blobSum": "sha256:71b879aacac55920fb1f56fa6611b7f070e4b0950d8a1f586c992e6e8d70a80a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0a587a7fabdab20075256ed13afc7a39228dba7e9aaf0835c10860fe5abc1bd7"
+            },
+            {
+                "blobSum": "sha256:d96297b6dc069127b12c63f533f253436496380a42c4a48d3702327ab028f275"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1bd9291f3483a3992c1acaff27e767677b57bd191c8863a8e18368a0fbfbc593"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:df720fc8e4f160444441c03d14894b21f295241ab4ff4d9f6e625f203c1fb944"
+            },
+            {
+                "blobSum": "sha256:143e9d501644c63b3e69d854e8b4c238797cdf3fc87fd79a686c1262fe61e9b5"
+            },
+            {
+                "blobSum": "sha256:af36d2c7a1481ae5554241fcb6bc20472bf7a6b7b2be24465c76e168c278a03f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:43c265008fae5d1f3cbee0dac9697235320b174d85acbed002a4fe44236adec0"
+            }
+        ],
+        "name": "fedeg/python-vim",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE0NjQyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDg6MTdaIn0",
+                "signature": "pxQHYBFQUJXwIxUaKfvixY7gkaD6xQ3OSogSFvWmwRvXFnG3404OWG2R1EWQ6aLMC6gFMir7BNMcp7BZePdAog",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "u9VVKq6YwJpv-_bgut3q-SpjpqfeIRifXgrW9i5bU80",
+                        "kid": "UUID:FJG3:DAGQ:CMOM:AEND:C3WZ:IMQS:NC62:DCIP:SRGA:PFNB:APXQ",
+                        "x": "WyqsS0SYpVT3eOE6LvfAS3BvQucx7oMbsHv-SQRnyHA"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

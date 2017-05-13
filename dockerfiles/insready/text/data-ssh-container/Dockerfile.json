@@ -1,0 +1,474 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"PHPIZE_DEPS=autoconf \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\tlibc-dev \\t\\tlibpcre3-dev \\t\\tmake \\t\\tpkg-config \\t\\tre2c\",\"PHP_INI_DIR=/usr/local/etc/php\",\"PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie\",\"GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3\",\"PHP_VERSION=5.6.30\",\"PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror\",\"PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror\",\"PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805\",\"PHP_MD5=68753955a8964ae49064c6424f81eb3e\",\"NOTVISIBLE=in users profile\",\"TERM=xterm\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:502b98b3487e038c1ded1f6a1ae2bd61d4f7b7dbded3b8d6913905540e5d69d5\",\"Volumes\":null,\"WorkingDir\":\"/var/www/html\",\"Entrypoint\":[\"/entrypoint.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"f5c12eb62e824b5d2d707d69b030b63f31448513f5ad3423377e751b88acc51e\",\"container_config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"PHPIZE_DEPS=autoconf \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\tlibc-dev \\t\\tlibpcre3-dev \\t\\tmake \\t\\tpkg-config \\t\\tre2c\",\"PHP_INI_DIR=/usr/local/etc/php\",\"PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie\",\"GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3\",\"PHP_VERSION=5.6.30\",\"PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror\",\"PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror\",\"PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805\",\"PHP_MD5=68753955a8964ae49064c6424f81eb3e\",\"NOTVISIBLE=in users profile\",\"TERM=xterm\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"ENTRYPOINT [\\\"/entrypoint.sh\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:502b98b3487e038c1ded1f6a1ae2bd61d4f7b7dbded3b8d6913905540e5d69d5\",\"Volumes\":null,\"WorkingDir\":\"/var/www/html\",\"Entrypoint\":[\"/entrypoint.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-13T02:28:15.220273719Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"70298c17fb6d9b9441582edd76c528fa26b8bcb19f7977b6323406870f6a3ece\",\"os\":\"linux\",\"parent\":\"da66b099ada15a7615295deeb756e81f86cadb2cdadd29c20b37b32d70fafbcb\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da66b099ada15a7615295deeb756e81f86cadb2cdadd29c20b37b32d70fafbcb\",\"parent\":\"2533b506861d4ce665fcfddb67c2833cb53803f34efc6ef6c5a190d7afb48d6d\",\"created\":\"2017-05-13T02:28:12.214936015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 22/tcp\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2533b506861d4ce665fcfddb67c2833cb53803f34efc6ef6c5a190d7afb48d6d\",\"parent\":\"289010196affc7d3a4184c8c91fa5095fe4e9723ac49186684eb59b8d44ec5b0\",\"created\":\"2017-05-13T02:28:09.66350335Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /entrypoint.sh\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"289010196affc7d3a4184c8c91fa5095fe4e9723ac49186684eb59b8d44ec5b0\",\"parent\":\"358e27d5048cdfa7d7ea13ff12c66c829a11050a77ee3bf282b63f3a455a7f6b\",\"created\":\"2017-05-13T02:28:06.642460139Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:cf6c19dcfc9574c4ce18f4820d720e3a388f415ee3b1e70f4d5aa55dfc0093ab in /entrypoint.sh \"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"358e27d5048cdfa7d7ea13ff12c66c829a11050a77ee3bf282b63f3a455a7f6b\",\"parent\":\"b2964b395761ac03bffcb1642f1a986770fccb11e66353c26b38c8e3e14dd9c8\",\"created\":\"2017-05-13T02:28:04.005202364Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /data\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b2964b395761ac03bffcb1642f1a986770fccb11e66353c26b38c8e3e14dd9c8\",\"parent\":\"2c6131429d6291030107c44936509c8a48162689d55771ac969d19e8d09a50c4\",\"created\":\"2017-05-13T02:28:00.883912397Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /var/www/html\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c6131429d6291030107c44936509c8a48162689d55771ac969d19e8d09a50c4\",\"parent\":\"f0acb1fb562ddf429a19973c702c72791db9ae7142e7b946ae7db0e331f1c1a8\",\"created\":\"2017-05-13T02:27:58.218979095Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export VISIBLE=now\\\" \\u003e\\u003e /etc/profile\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0acb1fb562ddf429a19973c702c72791db9ae7142e7b946ae7db0e331f1c1a8\",\"parent\":\"e0cb1c2e47edbf62c7bcc1b94fbac8f7b8dbf54dea3442edaa6f897a669e430c\",\"created\":\"2017-05-13T02:27:54.553562897Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=xterm\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0cb1c2e47edbf62c7bcc1b94fbac8f7b8dbf54dea3442edaa6f897a669e430c\",\"parent\":\"78b0714ff4727a4e8530ae454adf9789d1fc7cf87094dcae8e0e0b5dc91b3c5e\",\"created\":\"2017-05-13T02:27:51.551353241Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NOTVISIBLE=in users profile\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78b0714ff4727a4e8530ae454adf9789d1fc7cf87094dcae8e0e0b5dc91b3c5e\",\"parent\":\"75a3556023e7584f4a22be9362e423dd373cb5044de797d311d634b8b8125d1c\",\"created\":\"2017-05-13T02:27:49.012700616Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed 's@session\\\\s*required\\\\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"75a3556023e7584f4a22be9362e423dd373cb5044de797d311d634b8b8125d1c\",\"parent\":\"4e482c3f20b530f5fe1113f70ed70ecf3288397ef24b93b16d41ad16cd2fc1d5\",\"created\":\"2017-05-13T02:27:46.122465214Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e482c3f20b530f5fe1113f70ed70ecf3288397ef24b93b16d41ad16cd2fc1d5\",\"parent\":\"73ca60c4d2c7f99fb33a3cc1492684b6dce86ef073b52163f7ca5932e9f00614\",\"created\":\"2017-05-13T02:27:43.254642167Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /var/run/sshd\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73ca60c4d2c7f99fb33a3cc1492684b6dce86ef073b52163f7ca5932e9f00614\",\"parent\":\"1b787612aee6291e53e2396ba737e22aeac9ef2ee5663148ac10644cb65ad651\",\"created\":\"2017-05-13T02:27:40.414906414Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mv composer.phar /usr/local/bin/composer\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b787612aee6291e53e2396ba737e22aeac9ef2ee5663148ac10644cb65ad651\",\"parent\":\"9f25ddfbac55a7d70751c5ecbccf509ad92eddee1228588573d78cb391e50009\",\"created\":\"2017-05-13T02:27:37.339906677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sS https://getcomposer.org/installer | php\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9f25ddfbac55a7d70751c5ecbccf509ad92eddee1228588573d78cb391e50009\",\"parent\":\"3fb6d6cd61681c90df0fddfe6c043c87feb2452cdfd8ad36397077ba1a4c4ffd\",\"created\":\"2017-05-13T02:27:31.718799507Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y openssh-server git nano libpng12-dev libjpeg-dev libpq-dev mariadb-client \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\u0026\\u0026 docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \\t\\u0026\\u0026 docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip bcmath\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3fb6d6cd61681c90df0fddfe6c043c87feb2452cdfd8ad36397077ba1a4c4ffd\",\"parent\":\"3336f3416e30f8522174312ef5d2ff5dff286f2cd1fb9ecf4b52d32f0740f72b\",\"created\":\"2017-05-13T02:23:38.517712549Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3336f3416e30f8522174312ef5d2ff5dff286f2cd1fb9ecf4b52d32f0740f72b\",\"parent\":\"a1ef5789673144cbc860486ad0091ad8686cae959ea785f44c2cdd8501458ed8\",\"created\":\"2017-05-13T01:15:12.067473456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"php\\\" \\\"-a\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a1ef5789673144cbc860486ad0091ad8686cae959ea785f44c2cdd8501458ed8\",\"parent\":\"63577f9955b097b7a869e9c4c50c5d792c746998848f44e3451e875c8b87009e\",\"created\":\"2017-05-13T01:15:11.483645622Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"docker-php-entrypoint\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63577f9955b097b7a869e9c4c50c5d792c746998848f44e3451e875c8b87009e\",\"parent\":\"520dd5be6446b150e3982af57ddff68d14ee9417b8ee66a14348114ee33800a5\",\"created\":\"2017-05-13T01:15:10.786040851Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"520dd5be6446b150e3982af57ddff68d14ee9417b8ee66a14348114ee33800a5\",\"parent\":\"8ae6705b6bc7ebf4bd97e531ea85e3a8418b00b8a0b2116e348a7a2fdc678d4e\",\"created\":\"2017-05-13T01:15:08.976485118Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\u0026\\u0026 buildDeps=\\\" \\t\\t$PHP_EXTRA_BUILD_DEPS \\t\\tlibcurl4-openssl-dev \\t\\tlibedit-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibxml2-dev \\t\\\" \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 export CFLAGS=\\\"$PHP_CFLAGS\\\" \\t\\tCPPFLAGS=\\\"$PHP_CPPFLAGS\\\" \\t\\tLDFLAGS=\\\"$PHP_LDFLAGS\\\" \\t\\u0026\\u0026 docker-php-source extract \\t\\u0026\\u0026 cd /usr/src/php \\t\\u0026\\u0026 gnuArch=\\\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\\\" \\t\\u0026\\u0026 ./configure \\t\\t--build=\\\"$gnuArch\\\" \\t\\t--with-config-file-path=\\\"$PHP_INI_DIR\\\" \\t\\t--with-config-file-scan-dir=\\\"$PHP_INI_DIR/conf.d\\\" \\t\\t\\t\\t--disable-cgi \\t\\t\\t\\t--enable-ftp \\t\\t--enable-mbstring \\t\\t--enable-mysqlnd \\t\\t\\t\\t--with-curl \\t\\t--with-libedit \\t\\t--with-openssl \\t\\t--with-zlib \\t\\t\\t\\t--with-pcre-regex=/usr \\t\\t--with-libdir=\\\"lib/$gnuArch\\\" \\t\\t\\t\\t$PHP_EXTRA_CONFIGURE_ARGS \\t\\u0026\\u0026 make -j \\\"$(nproc)\\\" \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } \\t\\u0026\\u0026 make clean \\t\\u0026\\u0026 docker-php-source delete \\t\\t\\u0026\\u0026 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ae6705b6bc7ebf4bd97e531ea85e3a8418b00b8a0b2116e348a7a2fdc678d4e\",\"parent\":\"df1d7f543db11703fecbc678dd5a116713b0fa4abf06605ea327db836db08604\",\"created\":\"2017-05-13T01:12:04.451037185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df1d7f543db11703fecbc678dd5a116713b0fa4abf06605ea327db836db08604\",\"parent\":\"0fe0fe840a08551abdf651696b28fc25006de56f6a6fa2bf60cd2c9c938aa119\",\"created\":\"2017-05-13T01:12:03.489735241Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe; \\t\\tfetchDeps=' \\t\\twget \\t'; \\tapt-get update; \\tapt-get install -y --no-install-recommends $fetchDeps; \\trm -rf /var/lib/apt/lists/*; \\t\\tmkdir -p /usr/src; \\tcd /usr/src; \\t\\twget -O php.tar.xz \\\"$PHP_URL\\\"; \\t\\tif [ -n \\\"$PHP_SHA256\\\" ]; then \\t\\techo \\\"$PHP_SHA256 *php.tar.xz\\\" | sha256sum -c -; \\tfi; \\tif [ -n \\\"$PHP_MD5\\\" ]; then \\t\\techo \\\"$PHP_MD5 *php.tar.xz\\\" | md5sum -c -; \\tfi; \\t\\tif [ -n \\\"$PHP_ASC_URL\\\" ]; then \\t\\twget -O php.tar.xz.asc \\\"$PHP_ASC_URL\\\"; \\t\\texport GNUPGHOME=\\\"$(mktemp -d)\\\"; \\t\\tfor key in $GPG_KEYS; do \\t\\t\\tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\"; \\t\\tdone; \\t\\tgpg --batch --verify php.tar.xz.asc php.tar.xz; \\t\\trm -r \\\"$GNUPGHOME\\\"; \\tfi; \\t\\tapt-get purge -y --auto-remove $fetchDeps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fe0fe840a08551abdf651696b28fc25006de56f6a6fa2bf60cd2c9c938aa119\",\"parent\":\"124e168ce0713a1f8804e1512e297f883f5dc4adbc6311144fb1d10d5b21c435\",\"created\":\"2017-05-13T01:11:50.90382121Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 PHP_MD5=68753955a8964ae49064c6424f81eb3e\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"124e168ce0713a1f8804e1512e297f883f5dc4adbc6311144fb1d10d5b21c435\",\"parent\":\"12ae4899cf648960bb420ed8de0e7709def9e50edc09306f17617d4009079ff4\",\"created\":\"2017-05-13T01:11:50.175558003Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"12ae4899cf648960bb420ed8de0e7709def9e50edc09306f17617d4009079ff4\",\"parent\":\"3585015805ba9011f7d043d321a51303ef92159b84fd0c7cb61c2b04c3ea02fc\",\"created\":\"2017-05-13T01:11:49.608157464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_VERSION=5.6.30\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3585015805ba9011f7d043d321a51303ef92159b84fd0c7cb61c2b04c3ea02fc\",\"parent\":\"fa908a7a78c1e2f5f4d8a58a6566bee89d502bcab0364db76a5a97bc3d6c1b0c\",\"created\":\"2017-05-13T01:11:48.944190668Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa908a7a78c1e2f5f4d8a58a6566bee89d502bcab0364db76a5a97bc3d6c1b0c\",\"parent\":\"89676315008a3092a6f67a89984a246f87195ebc3f1bbdbfdb4d9c6ce1311ea3\",\"created\":\"2017-05-12T23:59:02.908549362Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"89676315008a3092a6f67a89984a246f87195ebc3f1bbdbfdb4d9c6ce1311ea3\",\"parent\":\"afbfdf9e5487fd1933cc8705fe190527402811643bda49723be7362d162bdf49\",\"created\":\"2017-05-12T23:59:02.13800072Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"afbfdf9e5487fd1933cc8705fe190527402811643bda49723be7362d162bdf49\",\"parent\":\"2b0892ef5fcbb38c0d879c39f1eac75f2f7ae28e8bd60d1f0121ef7b0ade4c08\",\"created\":\"2017-05-12T23:59:01.305049017Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2b0892ef5fcbb38c0d879c39f1eac75f2f7ae28e8bd60d1f0121ef7b0ade4c08\",\"parent\":\"e417b0cbba71f69dffc3debc2b775b8cada2e144ec89f36030019d828e74681d\",\"created\":\"2017-05-12T23:59:00.689034616Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p $PHP_INI_DIR/conf.d\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e417b0cbba71f69dffc3debc2b775b8cada2e144ec89f36030019d828e74681d\",\"parent\":\"722d45889c075461b6b20762d8b22df7157a373363647a5b24b6cca65153c6b4\",\"created\":\"2017-05-12T23:58:59.090952773Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_INI_DIR=/usr/local/etc/php\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"722d45889c075461b6b20762d8b22df7157a373363647a5b24b6cca65153c6b4\",\"parent\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"created\":\"2017-05-12T23:58:56.409206532Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y \\t\\t$PHPIZE_DEPS \\t\\tca-certificates \\t\\tcurl \\t\\tlibedit2 \\t\\tlibsqlite3-0 \\t\\tlibxml2 \\t\\txz-utils \\t--no-install-recommends \\u0026\\u0026 rm -r /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"parent\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"created\":\"2017-05-12T23:58:16.948506271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHPIZE_DEPS=autoconf \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\tlibc-dev \\t\\tlibpcre3-dev \\t\\tmake \\t\\tpkg-config \\t\\tre2c\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"parent\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:15.327579341Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:14.437236885Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f4e6551ac34ab446a297849489a5693d67a7e76c9cb9ed9346d82392c9d9a5fe in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:08e6f3a43f768c2ab2dcc784ffed18d16b8b00c30f1b2b54cff26f5b3fd0b095"
+            },
+            {
+                "blobSum": "sha256:3d20bf8e8bdd08fdaff4d084155331492502755571d7cae04b1338668d3d1b2f"
+            },
+            {
+                "blobSum": "sha256:b15d9f0f46dd835505debea407f6b2504d5665aa0fb1ca1c6a91abfa68b00815"
+            },
+            {
+                "blobSum": "sha256:e2a62f5b5a060e42d1d42f84e5728726942870919a939489e6f9437536a253b4"
+            },
+            {
+                "blobSum": "sha256:9c9f627f9727c3ce426cdde17282bb4703c8605935fead9005cb0b428a942cb6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fa5da70e14772d39f06e6e17223f8c31ff728cf591a484911972e5d8da13f019"
+            },
+            {
+                "blobSum": "sha256:7cdf3f12d0002523a26dfeec0ee27caca57416b2a81d1ad99c0e22294205fdb8"
+            },
+            {
+                "blobSum": "sha256:065436af3a0c5f1d36abf44c1793ada1028f032b42229a1c678edeb5ea6c2cd9"
+            },
+            {
+                "blobSum": "sha256:26f63fbf74d36ec91b7e13ba6144b14ccafe25b5e82164496db1e8bddf496ef1"
+            },
+            {
+                "blobSum": "sha256:982010dcad96feb904c633b76526c1198364e5d4d2e7cedb383f1740fb7ea853"
+            },
+            {
+                "blobSum": "sha256:832edb50b730f6723a60222d29e65d24ff8fe0013009cb3ea5b0e273f3149687"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c"
+            },
+            {
+                "blobSum": "sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885"
+            },
+            {
+                "blobSum": "sha256:3ac634f20449aa4b85b523643eb108114105aa5408713238230d20d3b0c0bd80"
+            },
+            {
+                "blobSum": "sha256:2cdcd82f53385aa9c3ea6c8115373c91c296743f69beff8ad5b1447c75d980f9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:455c73a122bc8a30bbb47aacf289778a636517eb5d841408435625ec4394a9c7"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:370377701f89cff89a25897f719848740ad95b97828c7ffdf8444bdafef6436b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:10a267c67f423630f3afe5e04bbbc93d578861ddcc54283526222f3ad5e895b9"
+            }
+        ],
+        "name": "insready/data-ssh-container",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIzNjEyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDk6MzRaIn0",
+                "signature": "LnzJYoNv-s5-sNvrzn521pjsrnzE85zMSPz0VNDWRzwVMvOlk95q5gqyyd7nTv6FZF1fSlVeB1HXOz3oGlYheg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "BOM7dvDBYPGfLNefkXSAi6CW_Z59bDrSVh2ZN1_u6CQ",
+                        "kid": "C2PE:U5AB:OIHJ:TAOQ:3ZGP:JNQ7:7MF5:3GTR:ZIXN:3ZPI:CQDX:VSY6",
+                        "x": "D0XjKxEOAcTvOijHv9fuvlpfSunU-jyPfoY-TSkA37c"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"PHPIZE_DEPS=autoconf \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\tlibc-dev \\t\\tlibpcre3-dev \\t\\tmake \\t\\tpkg-config \\t\\tre2c\",\"PHP_INI_DIR=/usr/local/etc/php\",\"PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie\",\"GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3\",\"PHP_VERSION=5.6.30\",\"PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror\",\"PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror\",\"PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805\",\"PHP_MD5=68753955a8964ae49064c6424f81eb3e\",\"NOTVISIBLE=in users profile\",\"TERM=xterm\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:502b98b3487e038c1ded1f6a1ae2bd61d4f7b7dbded3b8d6913905540e5d69d5\",\"Volumes\":null,\"WorkingDir\":\"/var/www/html\",\"Entrypoint\":[\"/entrypoint.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"f5c12eb62e824b5d2d707d69b030b63f31448513f5ad3423377e751b88acc51e\",\"container_config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"PHPIZE_DEPS=autoconf \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\tlibc-dev \\t\\tlibpcre3-dev \\t\\tmake \\t\\tpkg-config \\t\\tre2c\",\"PHP_INI_DIR=/usr/local/etc/php\",\"PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2\",\"PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie\",\"GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3\",\"PHP_VERSION=5.6.30\",\"PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror\",\"PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror\",\"PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805\",\"PHP_MD5=68753955a8964ae49064c6424f81eb3e\",\"NOTVISIBLE=in users profile\",\"TERM=xterm\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"ENTRYPOINT [\\\"/entrypoint.sh\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:502b98b3487e038c1ded1f6a1ae2bd61d4f7b7dbded3b8d6913905540e5d69d5\",\"Volumes\":null,\"WorkingDir\":\"/var/www/html\",\"Entrypoint\":[\"/entrypoint.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-13T02:28:15.220273719Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"70298c17fb6d9b9441582edd76c528fa26b8bcb19f7977b6323406870f6a3ece\",\"os\":\"linux\",\"parent\":\"da66b099ada15a7615295deeb756e81f86cadb2cdadd29c20b37b32d70fafbcb\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da66b099ada15a7615295deeb756e81f86cadb2cdadd29c20b37b32d70fafbcb\",\"parent\":\"2533b506861d4ce665fcfddb67c2833cb53803f34efc6ef6c5a190d7afb48d6d\",\"created\":\"2017-05-13T02:28:12.214936015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 22/tcp\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2533b506861d4ce665fcfddb67c2833cb53803f34efc6ef6c5a190d7afb48d6d\",\"parent\":\"289010196affc7d3a4184c8c91fa5095fe4e9723ac49186684eb59b8d44ec5b0\",\"created\":\"2017-05-13T02:28:09.66350335Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /entrypoint.sh\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"289010196affc7d3a4184c8c91fa5095fe4e9723ac49186684eb59b8d44ec5b0\",\"parent\":\"358e27d5048cdfa7d7ea13ff12c66c829a11050a77ee3bf282b63f3a455a7f6b\",\"created\":\"2017-05-13T02:28:06.642460139Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:cf6c19dcfc9574c4ce18f4820d720e3a388f415ee3b1e70f4d5aa55dfc0093ab in /entrypoint.sh \"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"358e27d5048cdfa7d7ea13ff12c66c829a11050a77ee3bf282b63f3a455a7f6b\",\"parent\":\"b2964b395761ac03bffcb1642f1a986770fccb11e66353c26b38c8e3e14dd9c8\",\"created\":\"2017-05-13T02:28:04.005202364Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /data\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b2964b395761ac03bffcb1642f1a986770fccb11e66353c26b38c8e3e14dd9c8\",\"parent\":\"2c6131429d6291030107c44936509c8a48162689d55771ac969d19e8d09a50c4\",\"created\":\"2017-05-13T02:28:00.883912397Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /var/www/html\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c6131429d6291030107c44936509c8a48162689d55771ac969d19e8d09a50c4\",\"parent\":\"f0acb1fb562ddf429a19973c702c72791db9ae7142e7b946ae7db0e331f1c1a8\",\"created\":\"2017-05-13T02:27:58.218979095Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export VISIBLE=now\\\" \\u003e\\u003e /etc/profile\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0acb1fb562ddf429a19973c702c72791db9ae7142e7b946ae7db0e331f1c1a8\",\"parent\":\"e0cb1c2e47edbf62c7bcc1b94fbac8f7b8dbf54dea3442edaa6f897a669e430c\",\"created\":\"2017-05-13T02:27:54.553562897Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=xterm\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0cb1c2e47edbf62c7bcc1b94fbac8f7b8dbf54dea3442edaa6f897a669e430c\",\"parent\":\"78b0714ff4727a4e8530ae454adf9789d1fc7cf87094dcae8e0e0b5dc91b3c5e\",\"created\":\"2017-05-13T02:27:51.551353241Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NOTVISIBLE=in users profile\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78b0714ff4727a4e8530ae454adf9789d1fc7cf87094dcae8e0e0b5dc91b3c5e\",\"parent\":\"75a3556023e7584f4a22be9362e423dd373cb5044de797d311d634b8b8125d1c\",\"created\":\"2017-05-13T02:27:49.012700616Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed 's@session\\\\s*required\\\\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"75a3556023e7584f4a22be9362e423dd373cb5044de797d311d634b8b8125d1c\",\"parent\":\"4e482c3f20b530f5fe1113f70ed70ecf3288397ef24b93b16d41ad16cd2fc1d5\",\"created\":\"2017-05-13T02:27:46.122465214Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e482c3f20b530f5fe1113f70ed70ecf3288397ef24b93b16d41ad16cd2fc1d5\",\"parent\":\"73ca60c4d2c7f99fb33a3cc1492684b6dce86ef073b52163f7ca5932e9f00614\",\"created\":\"2017-05-13T02:27:43.254642167Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /var/run/sshd\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73ca60c4d2c7f99fb33a3cc1492684b6dce86ef073b52163f7ca5932e9f00614\",\"parent\":\"1b787612aee6291e53e2396ba737e22aeac9ef2ee5663148ac10644cb65ad651\",\"created\":\"2017-05-13T02:27:40.414906414Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mv composer.phar /usr/local/bin/composer\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b787612aee6291e53e2396ba737e22aeac9ef2ee5663148ac10644cb65ad651\",\"parent\":\"9f25ddfbac55a7d70751c5ecbccf509ad92eddee1228588573d78cb391e50009\",\"created\":\"2017-05-13T02:27:37.339906677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sS https://getcomposer.org/installer | php\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9f25ddfbac55a7d70751c5ecbccf509ad92eddee1228588573d78cb391e50009\",\"parent\":\"3fb6d6cd61681c90df0fddfe6c043c87feb2452cdfd8ad36397077ba1a4c4ffd\",\"created\":\"2017-05-13T02:27:31.718799507Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y openssh-server git nano libpng12-dev libjpeg-dev libpq-dev mariadb-client \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\u0026\\u0026 docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr \\t\\u0026\\u0026 docker-php-ext-install gd mbstring pdo pdo_mysql pdo_pgsql zip bcmath\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3fb6d6cd61681c90df0fddfe6c043c87feb2452cdfd8ad36397077ba1a4c4ffd\",\"parent\":\"3336f3416e30f8522174312ef5d2ff5dff286f2cd1fb9ecf4b52d32f0740f72b\",\"created\":\"2017-05-13T02:23:38.517712549Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\"]},\"author\":\"Jingsheng Wang \\u003cjingsheng.wang@insready.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3336f3416e30f8522174312ef5d2ff5dff286f2cd1fb9ecf4b52d32f0740f72b\",\"parent\":\"a1ef5789673144cbc860486ad0091ad8686cae959ea785f44c2cdd8501458ed8\",\"created\":\"2017-05-13T01:15:12.067473456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"php\\\" \\\"-a\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a1ef5789673144cbc860486ad0091ad8686cae959ea785f44c2cdd8501458ed8\",\"parent\":\"63577f9955b097b7a869e9c4c50c5d792c746998848f44e3451e875c8b87009e\",\"created\":\"2017-05-13T01:15:11.483645622Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"docker-php-entrypoint\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63577f9955b097b7a869e9c4c50c5d792c746998848f44e3451e875c8b87009e\",\"parent\":\"520dd5be6446b150e3982af57ddff68d14ee9417b8ee66a14348114ee33800a5\",\"created\":\"2017-05-13T01:15:10.786040851Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY multi:a2a7a051ede432913cebaf532ceb4314b5a5c79d08a5a33e42d3563097520588 in /usr/local/bin/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"520dd5be6446b150e3982af57ddff68d14ee9417b8ee66a14348114ee33800a5\",\"parent\":\"8ae6705b6bc7ebf4bd97e531ea85e3a8418b00b8a0b2116e348a7a2fdc678d4e\",\"created\":\"2017-05-13T01:15:08.976485118Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\u0026\\u0026 buildDeps=\\\" \\t\\t$PHP_EXTRA_BUILD_DEPS \\t\\tlibcurl4-openssl-dev \\t\\tlibedit-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibxml2-dev \\t\\\" \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 export CFLAGS=\\\"$PHP_CFLAGS\\\" \\t\\tCPPFLAGS=\\\"$PHP_CPPFLAGS\\\" \\t\\tLDFLAGS=\\\"$PHP_LDFLAGS\\\" \\t\\u0026\\u0026 docker-php-source extract \\t\\u0026\\u0026 cd /usr/src/php \\t\\u0026\\u0026 gnuArch=\\\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\\\" \\t\\u0026\\u0026 ./configure \\t\\t--build=\\\"$gnuArch\\\" \\t\\t--with-config-file-path=\\\"$PHP_INI_DIR\\\" \\t\\t--with-config-file-scan-dir=\\\"$PHP_INI_DIR/conf.d\\\" \\t\\t\\t\\t--disable-cgi \\t\\t\\t\\t--enable-ftp \\t\\t--enable-mbstring \\t\\t--enable-mysqlnd \\t\\t\\t\\t--with-curl \\t\\t--with-libedit \\t\\t--with-openssl \\t\\t--with-zlib \\t\\t\\t\\t--with-pcre-regex=/usr \\t\\t--with-libdir=\\\"lib/$gnuArch\\\" \\t\\t\\t\\t$PHP_EXTRA_CONFIGURE_ARGS \\t\\u0026\\u0026 make -j \\\"$(nproc)\\\" \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 { find /usr/local/bin /usr/local/sbin -type f -executable -exec strip --strip-all '{}' + || true; } \\t\\u0026\\u0026 make clean \\t\\u0026\\u0026 docker-php-source delete \\t\\t\\u0026\\u0026 apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $buildDeps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ae6705b6bc7ebf4bd97e531ea85e3a8418b00b8a0b2116e348a7a2fdc678d4e\",\"parent\":\"df1d7f543db11703fecbc678dd5a116713b0fa4abf06605ea327db836db08604\",\"created\":\"2017-05-13T01:12:04.451037185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:207c686e3fed4f71f8a7b245d8dcae9c9048d276a326d82b553c12a90af0c0ca in /usr/local/bin/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df1d7f543db11703fecbc678dd5a116713b0fa4abf06605ea327db836db08604\",\"parent\":\"0fe0fe840a08551abdf651696b28fc25006de56f6a6fa2bf60cd2c9c938aa119\",\"created\":\"2017-05-13T01:12:03.489735241Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe; \\t\\tfetchDeps=' \\t\\twget \\t'; \\tapt-get update; \\tapt-get install -y --no-install-recommends $fetchDeps; \\trm -rf /var/lib/apt/lists/*; \\t\\tmkdir -p /usr/src; \\tcd /usr/src; \\t\\twget -O php.tar.xz \\\"$PHP_URL\\\"; \\t\\tif [ -n \\\"$PHP_SHA256\\\" ]; then \\t\\techo \\\"$PHP_SHA256 *php.tar.xz\\\" | sha256sum -c -; \\tfi; \\tif [ -n \\\"$PHP_MD5\\\" ]; then \\t\\techo \\\"$PHP_MD5 *php.tar.xz\\\" | md5sum -c -; \\tfi; \\t\\tif [ -n \\\"$PHP_ASC_URL\\\" ]; then \\t\\twget -O php.tar.xz.asc \\\"$PHP_ASC_URL\\\"; \\t\\texport GNUPGHOME=\\\"$(mktemp -d)\\\"; \\t\\tfor key in $GPG_KEYS; do \\t\\t\\tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\"; \\t\\tdone; \\t\\tgpg --batch --verify php.tar.xz.asc php.tar.xz; \\t\\trm -r \\\"$GNUPGHOME\\\"; \\tfi; \\t\\tapt-get purge -y --auto-remove $fetchDeps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fe0fe840a08551abdf651696b28fc25006de56f6a6fa2bf60cd2c9c938aa119\",\"parent\":\"124e168ce0713a1f8804e1512e297f883f5dc4adbc6311144fb1d10d5b21c435\",\"created\":\"2017-05-13T01:11:50.90382121Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_SHA256=a363185c786432f75e3c7ff956b49c3369c3f6906a6b10459f8d1ddc22f70805 PHP_MD5=68753955a8964ae49064c6424f81eb3e\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"124e168ce0713a1f8804e1512e297f883f5dc4adbc6311144fb1d10d5b21c435\",\"parent\":\"12ae4899cf648960bb420ed8de0e7709def9e50edc09306f17617d4009079ff4\",\"created\":\"2017-05-13T01:11:50.175558003Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_URL=https://secure.php.net/get/php-5.6.30.tar.xz/from/this/mirror PHP_ASC_URL=https://secure.php.net/get/php-5.6.30.tar.xz.asc/from/this/mirror\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"12ae4899cf648960bb420ed8de0e7709def9e50edc09306f17617d4009079ff4\",\"parent\":\"3585015805ba9011f7d043d321a51303ef92159b84fd0c7cb61c2b04c3ea02fc\",\"created\":\"2017-05-13T01:11:49.608157464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_VERSION=5.6.30\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3585015805ba9011f7d043d321a51303ef92159b84fd0c7cb61c2b04c3ea02fc\",\"parent\":\"fa908a7a78c1e2f5f4d8a58a6566bee89d502bcab0364db76a5a97bc3d6c1b0c\",\"created\":\"2017-05-13T01:11:48.944190668Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEYS=0BD78B5F97500D450838F95DFE857D9A90D90EC1 6E4F6AB321FDC07F2C332E3AC2BF0BC433CFC8B3\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa908a7a78c1e2f5f4d8a58a6566bee89d502bcab0364db76a5a97bc3d6c1b0c\",\"parent\":\"89676315008a3092a6f67a89984a246f87195ebc3f1bbdbfdb4d9c6ce1311ea3\",\"created\":\"2017-05-12T23:59:02.908549362Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_LDFLAGS=-Wl,-O1 -Wl,--hash-style=both -pie\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"89676315008a3092a6f67a89984a246f87195ebc3f1bbdbfdb4d9c6ce1311ea3\",\"parent\":\"afbfdf9e5487fd1933cc8705fe190527402811643bda49723be7362d162bdf49\",\"created\":\"2017-05-12T23:59:02.13800072Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"afbfdf9e5487fd1933cc8705fe190527402811643bda49723be7362d162bdf49\",\"parent\":\"2b0892ef5fcbb38c0d879c39f1eac75f2f7ae28e8bd60d1f0121ef7b0ade4c08\",\"created\":\"2017-05-12T23:59:01.305049017Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2b0892ef5fcbb38c0d879c39f1eac75f2f7ae28e8bd60d1f0121ef7b0ade4c08\",\"parent\":\"e417b0cbba71f69dffc3debc2b775b8cada2e144ec89f36030019d828e74681d\",\"created\":\"2017-05-12T23:59:00.689034616Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p $PHP_INI_DIR/conf.d\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e417b0cbba71f69dffc3debc2b775b8cada2e144ec89f36030019d828e74681d\",\"parent\":\"722d45889c075461b6b20762d8b22df7157a373363647a5b24b6cca65153c6b4\",\"created\":\"2017-05-12T23:58:59.090952773Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHP_INI_DIR=/usr/local/etc/php\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"722d45889c075461b6b20762d8b22df7157a373363647a5b24b6cca65153c6b4\",\"parent\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"created\":\"2017-05-12T23:58:56.409206532Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y \\t\\t$PHPIZE_DEPS \\t\\tca-certificates \\t\\tcurl \\t\\tlibedit2 \\t\\tlibsqlite3-0 \\t\\tlibxml2 \\t\\txz-utils \\t--no-install-recommends \\u0026\\u0026 rm -r /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"parent\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"created\":\"2017-05-12T23:58:16.948506271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PHPIZE_DEPS=autoconf \\t\\tdpkg-dev \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\tlibc-dev \\t\\tlibpcre3-dev \\t\\tmake \\t\\tpkg-config \\t\\tre2c\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"parent\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:15.327579341Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:14.437236885Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f4e6551ac34ab446a297849489a5693d67a7e76c9cb9ed9346d82392c9d9a5fe in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:08e6f3a43f768c2ab2dcc784ffed18d16b8b00c30f1b2b54cff26f5b3fd0b095"
+            },
+            {
+                "blobSum": "sha256:3d20bf8e8bdd08fdaff4d084155331492502755571d7cae04b1338668d3d1b2f"
+            },
+            {
+                "blobSum": "sha256:b15d9f0f46dd835505debea407f6b2504d5665aa0fb1ca1c6a91abfa68b00815"
+            },
+            {
+                "blobSum": "sha256:e2a62f5b5a060e42d1d42f84e5728726942870919a939489e6f9437536a253b4"
+            },
+            {
+                "blobSum": "sha256:9c9f627f9727c3ce426cdde17282bb4703c8605935fead9005cb0b428a942cb6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fa5da70e14772d39f06e6e17223f8c31ff728cf591a484911972e5d8da13f019"
+            },
+            {
+                "blobSum": "sha256:7cdf3f12d0002523a26dfeec0ee27caca57416b2a81d1ad99c0e22294205fdb8"
+            },
+            {
+                "blobSum": "sha256:065436af3a0c5f1d36abf44c1793ada1028f032b42229a1c678edeb5ea6c2cd9"
+            },
+            {
+                "blobSum": "sha256:26f63fbf74d36ec91b7e13ba6144b14ccafe25b5e82164496db1e8bddf496ef1"
+            },
+            {
+                "blobSum": "sha256:982010dcad96feb904c633b76526c1198364e5d4d2e7cedb383f1740fb7ea853"
+            },
+            {
+                "blobSum": "sha256:832edb50b730f6723a60222d29e65d24ff8fe0013009cb3ea5b0e273f3149687"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4ca536f5a464cf6db0d77a70ee921f260441ef3898dbe90fdc91b13e92fa861c"
+            },
+            {
+                "blobSum": "sha256:a19eeb6546ae411087f8dda95dccbd427d06bb52a2b0daf68eafe4b934651885"
+            },
+            {
+                "blobSum": "sha256:3ac634f20449aa4b85b523643eb108114105aa5408713238230d20d3b0c0bd80"
+            },
+            {
+                "blobSum": "sha256:2cdcd82f53385aa9c3ea6c8115373c91c296743f69beff8ad5b1447c75d980f9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:455c73a122bc8a30bbb47aacf289778a636517eb5d841408435625ec4394a9c7"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:370377701f89cff89a25897f719848740ad95b97828c7ffdf8444bdafef6436b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:10a267c67f423630f3afe5e04bbbc93d578861ddcc54283526222f3ad5e895b9"
+            }
+        ],
+        "name": "insready/data-ssh-container",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIzNjEyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDk6MzRaIn0",
+                "signature": "i6mRf-5Xuo8Zw0omHmUS9OZBSnm5Ou8Xx1bZvPC6TA46LIuGkszQBiwLUVhTKWuU1_XRVmc3xoj8AaliRdBsrQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "RBJtkKTCFBrjVjhdE2lQPdtu96DvJGVL6y9WXXmjduw",
+                        "kid": "YALU:NGK3:6FMK:L2BW:UHIF:LCG6:A4XV:GPJN:LN5Q:HJIL:4EK2:5HIZ",
+                        "x": "QAQl2e7lyLK3M_1zpiXZiuFGWQFFfONYFit-oVL5FQU"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

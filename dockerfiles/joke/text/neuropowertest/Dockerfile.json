@@ -1,0 +1,894 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/miniconda/bin:/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"SHELL=/bin/bash\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"ANTSPATH=/opt/ants\",\"C3DPATH=/opt/c3d\",\"OS=Linux\",\"FS_OVERRIDE=0\",\"FIX_VERTEX_AREA=\",\"SUBJECTS_DIR=/opt/freesurfer/subjects\",\"FSF_OUTPUT_FORMAT=nii.gz\",\"MNI_DIR=/opt/freesurfer/mni\",\"LOCAL_DIR=/opt/freesurfer/local\",\"FREESURFER_HOME=/opt/freesurfer\",\"FSFAST_HOME=/opt/freesurfer/fsfast\",\"MINC_BIN_DIR=/opt/freesurfer/mni/bin\",\"MINC_LIB_DIR=/opt/freesurfer/mni/lib\",\"MNI_DATAPATH=/opt/freesurfer/mni/data\",\"FMRI_ANALYSIS_DIR=/opt/freesurfer/fsfast\",\"PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"MNI_PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5db1da9b0c1174dd17e1bd48fccd135d5116e0b338148d0816736c1131cd5a7d\",\"Volumes\":null,\"WorkingDir\":\"/code\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"2c4473fbbf727a30dca97b7965817255c68003f3bf022d7b4c2d3518aea63502\",\"container_config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/miniconda/bin:/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"SHELL=/bin/bash\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"ANTSPATH=/opt/ants\",\"C3DPATH=/opt/c3d\",\"OS=Linux\",\"FS_OVERRIDE=0\",\"FIX_VERTEX_AREA=\",\"SUBJECTS_DIR=/opt/freesurfer/subjects\",\"FSF_OUTPUT_FORMAT=nii.gz\",\"MNI_DIR=/opt/freesurfer/mni\",\"LOCAL_DIR=/opt/freesurfer/local\",\"FREESURFER_HOME=/opt/freesurfer\",\"FSFAST_HOME=/opt/freesurfer/fsfast\",\"MINC_BIN_DIR=/opt/freesurfer/mni/bin\",\"MINC_LIB_DIR=/opt/freesurfer/mni/lib\",\"MNI_DATAPATH=/opt/freesurfer/mni/data\",\"FMRI_ANALYSIS_DIR=/opt/freesurfer/fsfast\",\"PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"MNI_PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5db1da9b0c1174dd17e1bd48fccd135d5116e0b338148d0816736c1131cd5a7d\",\"Volumes\":null,\"WorkingDir\":\"/code\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-12T19:31:01.680801318Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"9a7afad8ee743aa4022e1b96fe17e6550aa213c7a2b7fcfab33298c45a74aa63\",\"os\":\"linux\",\"parent\":\"3236848535a2b71767df002e24796cef0d28afcde571533c8a7124aa28a4d081\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3236848535a2b71767df002e24796cef0d28afcde571533c8a7124aa28a4d081\",\"parent\":\"71c10c4758cbd806245ac22af0d17a0083ca15397fe0ac8322d4e402c0708dcb\",\"created\":\"2017-01-12T19:30:35.515545577Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install wget\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"71c10c4758cbd806245ac22af0d17a0083ca15397fe0ac8322d4e402c0708dcb\",\"parent\":\"63db28217f17e2348b1f4ea22961e02e9c8e186fcc508ab5e6aecfdd1ea785ac\",\"created\":\"2017-01-12T19:30:06.296941675Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install awscli\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63db28217f17e2348b1f4ea22961e02e9c8e186fcc508ab5e6aecfdd1ea785ac\",\"parent\":\"7f14696b76673026576334bf5157bc700305885de848266fac92d66a8e8f1b6c\",\"created\":\"2017-01-12T19:29:26.216323549Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install neurodesign \\u003e 0.0.10\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7f14696b76673026576334bf5157bc700305885de848266fac92d66a8e8f1b6c\",\"parent\":\"95caaceec3f15f3e71483b1059173ffd132d13a7767ffa195bd5082391e39749\",\"created\":\"2017-01-12T19:28:56.748935742Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pdfrw\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"95caaceec3f15f3e71483b1059173ffd132d13a7767ffa195bd5082391e39749\",\"parent\":\"334f8b3461f5543cb48ff89c0e3ba57252f9fb8ca6ddbf1dbffc0723c8029af2\",\"created\":\"2017-01-12T19:28:30.00089936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install seaborn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"334f8b3461f5543cb48ff89c0e3ba57252f9fb8ca6ddbf1dbffc0723c8029af2\",\"parent\":\"bc8f3d732bf281968a2d8636371be7c53bfa74f137b79177d116e8aa3221998c\",\"created\":\"2017-01-12T19:27:59.999385722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install reportlab\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bc8f3d732bf281968a2d8636371be7c53bfa74f137b79177d116e8aa3221998c\",\"parent\":\"50f7d3a9dea00f49dd9fd8c92158466a92df72e79a7d1e42b39b8a572825951a\",\"created\":\"2017-01-12T19:27:09.704260108Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install progressbar\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"50f7d3a9dea00f49dd9fd8c92158466a92df72e79a7d1e42b39b8a572825951a\",\"parent\":\"b4f390f69126992058073c602aad9fccae4b7950c42d90de0821a07c57bb305d\",\"created\":\"2017-01-12T19:26:43.617780331Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install redis \\u0026\\u0026     pip install celery[redis]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4f390f69126992058073c602aad9fccae4b7950c42d90de0821a07c57bb305d\",\"parent\":\"f7989247a3a027ff76d0b7d55f25e840302405fe4e3ae82e47e1440c62e97ab9\",\"created\":\"2017-01-12T19:26:15.418020943Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install kombu\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f7989247a3a027ff76d0b7d55f25e840302405fe4e3ae82e47e1440c62e97ab9\",\"parent\":\"bec21010e36d82feca29a877078337201fcdb49997ec1d4e8129c8781aa59824\",\"created\":\"2017-01-12T19:25:48.586909806Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install sqlalchemy\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bec21010e36d82feca29a877078337201fcdb49997ec1d4e8129c8781aa59824\",\"parent\":\"e862094d2bb2d57651002dcbace02789575bb0e5c049c662af5cfe73c01cada7\",\"created\":\"2017-01-12T19:25:22.085908778Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install nilearn\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e862094d2bb2d57651002dcbace02789575bb0e5c049c662af5cfe73c01cada7\",\"parent\":\"a1d3d8ab49fcf1a845fe7f5b9897a115fc5afcc124412fbe514ef594c1dd2d2c\",\"created\":\"2017-01-12T19:24:55.23216437Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install sklearn\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a1d3d8ab49fcf1a845fe7f5b9897a115fc5afcc124412fbe514ef594c1dd2d2c\",\"parent\":\"419ce5890db45d2b0140349ac29361725c32d401180aae231263e503022fc059\",\"created\":\"2017-01-12T19:24:28.960458126Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install jinja2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"419ce5890db45d2b0140349ac29361725c32d401180aae231263e503022fc059\",\"parent\":\"3c24a32fd6824930c590ccc82d7e9c66e685a6a531c4133e38dc36d272c8a994\",\"created\":\"2017-01-12T19:24:01.996044413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install mpld3\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3c24a32fd6824930c590ccc82d7e9c66e685a6a531c4133e38dc36d272c8a994\",\"parent\":\"18bfb1c3513fbd2397d3020956623d6ca00c871fd84b6033d0ddf82ec3ae6929\",\"created\":\"2017-01-12T19:23:34.616146818Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install palettable\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"18bfb1c3513fbd2397d3020956623d6ca00c871fd84b6033d0ddf82ec3ae6929\",\"parent\":\"50ecd838b352609ddd5babd9ad618b738271a74fb08718fb7932177ec0e6ca82\",\"created\":\"2017-01-12T19:23:07.037408463Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-picklefield\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"50ecd838b352609ddd5babd9ad618b738271a74fb08718fb7932177ec0e6ca82\",\"parent\":\"a33268db768470fb2fe55d9318850d19daa297d08e63535223bf39cd95260f27\",\"created\":\"2017-01-12T19:22:40.621322022Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install psycopg2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a33268db768470fb2fe55d9318850d19daa297d08e63535223bf39cd95260f27\",\"parent\":\"91a026e216c90ca10b2a0bc1af7dfb25f0f5df43ba801d3611223c138798e599\",\"created\":\"2017-01-12T19:22:16.991093374Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install boto\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91a026e216c90ca10b2a0bc1af7dfb25f0f5df43ba801d3611223c138798e599\",\"parent\":\"f860a1ac41a29e1d6ebf42f7220e6beee28ef05ce74958013fad8d5d89471f0f\",\"created\":\"2017-01-12T19:21:51.12850644Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-storages\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f860a1ac41a29e1d6ebf42f7220e6beee28ef05ce74958013fad8d5d89471f0f\",\"parent\":\"0c7fa78e1cae4593cf72c06226dcfde9b88a98274ccec55445b4918d6d2676a6\",\"created\":\"2017-01-12T19:21:24.87358982Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-sslserver\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c7fa78e1cae4593cf72c06226dcfde9b88a98274ccec55445b4918d6d2676a6\",\"parent\":\"91a17b886b6235b91c8c9d2ebdcbb13d94da813ff9c6d5a4d024bf23970d0631\",\"created\":\"2017-01-12T19:20:58.345229021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-secure\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91a17b886b6235b91c8c9d2ebdcbb13d94da813ff9c6d5a4d024bf23970d0631\",\"parent\":\"d2188de62b895d57c7e827f5fbe0a7be379e563b9396430fdfd2016cec609cd8\",\"created\":\"2017-01-12T19:20:32.449654585Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-crispy-forms\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d2188de62b895d57c7e827f5fbe0a7be379e563b9396430fdfd2016cec609cd8\",\"parent\":\"c0f6404b837ce294a2cc1600eeeaa82bda0591dd56e4c3d7df946eb45b9da4bb\",\"created\":\"2017-01-12T19:20:06.759879571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c0f6404b837ce294a2cc1600eeeaa82bda0591dd56e4c3d7df946eb45b9da4bb\",\"parent\":\"135d531c60716647eaea369a68de8a6adab48c2140be77d9a92d8f0c2fffc32e\",\"created\":\"2017-01-12T19:19:40.74442531Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install opbeat\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"135d531c60716647eaea369a68de8a6adab48c2140be77d9a92d8f0c2fffc32e\",\"parent\":\"02d82946c63b817227ae7cde805523a6fc6f36842e098e12ad49645cfa756c0c\",\"created\":\"2017-01-12T19:19:16.979928268Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install django-celery\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"02d82946c63b817227ae7cde805523a6fc6f36842e098e12ad49645cfa756c0c\",\"parent\":\"b02c695ee7e3fc6541aa04d2a1fc93b62746b4dfda84b55d2dbb3a37fa4df2cd\",\"created\":\"2017-01-12T19:18:37.094082349Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install neuropower\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b02c695ee7e3fc6541aa04d2a1fc93b62746b4dfda84b55d2dbb3a37fa4df2cd\",\"parent\":\"c54f345e6e2852a6326cc26595b546c1d83be5b39e613e306f1af9b267ae20d0\",\"created\":\"2017-01-12T19:18:12.989912989Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install SQLAlchemy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c54f345e6e2852a6326cc26595b546c1d83be5b39e613e306f1af9b267ae20d0\",\"parent\":\"506ac5f8debb3bde06daf3820ae9b51b318401430f91a764c5a9d6bed4f03791\",\"created\":\"2017-01-12T19:17:38.307212289Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install celery\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"506ac5f8debb3bde06daf3820ae9b51b318401430f91a764c5a9d6bed4f03791\",\"parent\":\"45f25478d98b08bce3b5162b84f2b083dd245b8644e87d99cd7dd87aa693a1a7\",\"created\":\"2017-01-12T19:16:56.303968615Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install psycopg2 mpld3==0.2 scikit-learn==0.17.1 cycler==0.9.0 \\u0026\\u0026   apt-get update \\u0026\\u0026   apt-get install -y build-essential \\u0026\\u0026   curl https://bootstrap.pypa.io/ez_setup.py -o - | python \\u0026\\u0026   pip install -r requirements.txt \\u0026\\u0026   apt-get install -y libglib2.0-0 \\u0026\\u0026   apt-get install -y libfreetype6-dev libxft-dev \\u0026\\u0026   conda install uwsgi \\u0026\\u0026   conda install Jinja2\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"45f25478d98b08bce3b5162b84f2b083dd245b8644e87d99cd7dd87aa693a1a7\",\"parent\":\"7d34572dfc6e88b839e9df34cafac159ae3211b82160acd80fac86d85a528ef5\",\"created\":\"2017-01-12T19:12:45.411419446Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:e26e0c9a0622f25d412d72e5561358b25afea6d0f34b754df396530d0f5d9fe0 in /code/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d34572dfc6e88b839e9df34cafac159ae3211b82160acd80fac86d85a528ef5\",\"parent\":\"1a0a0038c89c577f90fdd318d446728673dcda9d9c7e5bacf2457db37efeb3e3\",\"created\":\"2017-01-12T19:12:25.414586467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /code\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a0a0038c89c577f90fdd318d446728673dcda9d9c7e5bacf2457db37efeb3e3\",\"parent\":\"b69365d8f0b06399eda1b7b1670e48987fc981f8132b0a3ce95ed23c60275a54\",\"created\":\"2017-01-12T19:12:08.104612459Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /code\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b69365d8f0b06399eda1b7b1670e48987fc981f8132b0a3ce95ed23c60275a54\",\"parent\":\"a3b258dfc1036c58690db4932eeef46c824e3d1cc3bf9bea4fa5895f266a0689\",\"created\":\"2017-01-12T19:11:50.717711222Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install nose \\u0026\\u0026     conda install numpy \\u0026\\u0026     conda install scipy \\u0026\\u0026     conda install pandas \\u0026\\u0026     conda install matplotlib \\u0026\\u0026     conda install xvfbwrapper\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a3b258dfc1036c58690db4932eeef46c824e3d1cc3bf9bea4fa5895f266a0689\",\"parent\":\"b198ee6eb796e19daed99ecd976653b5688a3b3fae7ad8f3e99cb9e6f8bf1609\",\"created\":\"2017-01-12T19:09:12.084555467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b198ee6eb796e19daed99ecd976653b5688a3b3fae7ad8f3e99cb9e6f8bf1609\",\"parent\":\"b25820cb61e2e49a22028ac7149f43bbc3773c79a18efe8d072039cd47567c8c\",\"created\":\"2017-01-12T19:08:55.631963634Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y curl git xvfb bzip2 apt-utils\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b25820cb61e2e49a22028ac7149f43bbc3773c79a18efe8d072039cd47567c8c\",\"parent\":\"b4bca967d66d724d278762ba4a8338be460c4f8c67105f13c68b8e0f3101dd9c\",\"created\":\"2016-12-04T20:49:45.675756995Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4bca967d66d724d278762ba4a8338be460c4f8c67105f13c68b8e0f3101dd9c\",\"parent\":\"9a34785edab62c09d6f1121ae69665aa3db06024b304e740a0e9c560cf27c04f\",\"created\":\"2016-12-04T20:49:30.122017314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade pip \\u0026\\u0026     pip install psutil \\u0026\\u0026     python -c \\\"from matplotlib import font_manager\\\"\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9a34785edab62c09d6f1121ae69665aa3db06024b304e740a0e9c560cf27c04f\",\"parent\":\"e7a6a5bb38d92a7cb56273fe2651f979950ee328e0037de3d348df4b0ca95758\",\"created\":\"2016-12-04T20:49:01.953235438Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels conda-forge \\u0026\\u0026     conda install -y lockfile nipype matplotlib\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7a6a5bb38d92a7cb56273fe2651f979950ee328e0037de3d348df4b0ca95758\",\"parent\":\"15870cc6cacc07116b360f1136b7770a40b5c85cd3da50ba93bf9f249fccb985\",\"created\":\"2016-12-04T20:45:13.106852399Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LC_ALL=C.UTF-8\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"15870cc6cacc07116b360f1136b7770a40b5c85cd3da50ba93bf9f249fccb985\",\"parent\":\"73768b8b66628efeed560ef3364ec0741124dd7411e9023a7e4a7f07b06a29ed\",\"created\":\"2016-12-04T20:45:01.452754692Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73768b8b66628efeed560ef3364ec0741124dd7411e9023a7e4a7f07b06a29ed\",\"parent\":\"1f49bf79837f0f0c6127b366a8e7ad7fa758805558c88bce37308bbfb49a1c00\",\"created\":\"2016-12-04T20:44:49.969598098Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/miniconda/bin:/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1f49bf79837f0f0c6127b366a8e7ad7fa758805558c88bce37308bbfb49a1c00\",\"parent\":\"acb1a32fd3e287601ce1ca3194eaa786f612f1678de6dc39cf60e14edc7310c9\",\"created\":\"2016-12-04T20:44:40.585681737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sSLO https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \\u0026\\u0026     /bin/bash Miniconda2-latest-Linux-x86_64.sh -b -p /usr/local/miniconda \\u0026\\u0026     rm Miniconda2-latest-Linux-x86_64.sh\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"acb1a32fd3e287601ce1ca3194eaa786f612f1678de6dc39cf60e14edc7310c9\",\"parent\":\"8745900cd27348c33f6a7e87e0e30881a100581a68db571070f9e568fe0af96a\",\"created\":\"2016-12-04T20:44:14.183624671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /root\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8745900cd27348c33f6a7e87e0e30881a100581a68db571070f9e568fe0af96a\",\"parent\":\"49f6a9b151610a10199cdfbe606b3ac8fe1f4665fc5a2bb063c05b8f57894c61\",\"created\":\"2016-12-04T20:44:04.585399084Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"49f6a9b151610a10199cdfbe606b3ac8fe1f4665fc5a2bb063c05b8f57894c61\",\"parent\":\"a20e7d292171c3042fb0eefdaed54083c262796ec8c42d640c21e21800161452\",\"created\":\"2016-12-04T20:22:52.962526067Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a20e7d292171c3042fb0eefdaed54083c262796ec8c42d640c21e21800161452\",\"parent\":\"e61bf949445d43e67762b68d1824e79de5431a1e0fc32d8d79ac6baa0aab62ca\",\"created\":\"2016-12-04T20:22:42.237138093Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e61bf949445d43e67762b68d1824e79de5431a1e0fc32d8d79ac6baa0aab62ca\",\"parent\":\"4c1c86839590303964509efa316838ed59c7bbfb902d66be2dad0ed5c50388b0\",\"created\":\"2016-12-04T20:22:31.146986457Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OS=Linux FS_OVERRIDE=0 FIX_VERTEX_AREA= SUBJECTS_DIR=/opt/freesurfer/subjects FSF_OUTPUT_FORMAT=nii.gz MNI_DIR=/opt/freesurfer/mni LOCAL_DIR=/opt/freesurfer/local FREESURFER_HOME=/opt/freesurfer FSFAST_HOME=/opt/freesurfer/fsfast MINC_BIN_DIR=/opt/freesurfer/mni/bin MINC_LIB_DIR=/opt/freesurfer/mni/lib MNI_DATAPATH=/opt/freesurfer/mni/data FMRI_ANALYSIS_DIR=/opt/freesurfer/fsfast PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5 MNI_PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4c1c86839590303964509efa316838ed59c7bbfb902d66be2dad0ed5c50388b0\",\"parent\":\"9ee6cc29663f8b1ce8120aeef921c9a4da305b57d5569d5e796a64dbca21e54a\",\"created\":\"2016-12-04T20:22:22.351349213Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sSL ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/5.3.0-HCP/freesurfer-Linux-centos4_x86_64-stable-pub-v5.3.0-HCP.tar.gz     | tar zx -C /opt     --exclude='freesurfer/trctrain'     --exclude='freesurfer/subjects/fsaverage_sym'     --exclude='freesurfer/subjects/fsaverage3'     --exclude='freesurfer/subjects/fsaverage4'     --exclude='freesurfer/subjects/fsaverage5'     --exclude='freesurfer/subjects/fsaverage6'     --exclude='freesurfer/subjects/cvs_avg35'     --exclude='freesurfer/subjects/cvs_avg35_inMNI152'     --exclude='freesurfer/subjects/bert'     --exclude='freesurfer/subjects/V1_average'     --exclude='freesurfer/average/mult-comp-cor'     --exclude='freesurfer/lib/cuda'     --exclude='freesurfer/lib/qt' \\u0026\\u0026     /bin/bash -c 'touch /opt/freesurfer/.license'\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9ee6cc29663f8b1ce8120aeef921c9a4da305b57d5569d5e796a64dbca21e54a\",\"parent\":\"25c80a5037abe4e48fb14dc8cfb848aae5dace9a4fa3650f39ef99735995ecae\",\"created\":\"2016-12-04T20:16:49.69216563Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25c80a5037abe4e48fb14dc8cfb848aae5dace9a4fa3650f39ef99735995ecae\",\"parent\":\"3675923bb669accaf8d2ad75496a597ae85abe4642c214ea8d8b0ebc0fec6a74\",\"created\":\"2016-10-12T02:51:37.308833631Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3675923bb669accaf8d2ad75496a597ae85abe4642c214ea8d8b0ebc0fec6a74\",\"parent\":\"07609c625beafead97c3b812a8cfb511a4e33a9245780fc582cc0bc332d62e0e\",\"created\":\"2016-10-12T02:51:36.876785621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"07609c625beafead97c3b812a8cfb511a4e33a9245780fc582cc0bc332d62e0e\",\"parent\":\"f8ebf881780f6623a511638b750095f882b61fff745ff1f84bebbb15f2c5fc90\",\"created\":\"2016-10-12T02:51:36.280797801Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV C3DPATH=/opt/c3d\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f8ebf881780f6623a511638b750095f882b61fff745ff1f84bebbb15f2c5fc90\",\"parent\":\"986af2ddf02df5bf240e047d1ed404a9505fd95b3045aa6ca9c600a6eb88df91\",\"created\":\"2016-10-12T02:51:35.833727051Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c mkdir -p /opt/c3d \\u0026\\u0026     curl -sSL \\\"https://files.osf.io/v1/resources/fvuh8/providers/osfstorage/57f341d6594d9001f591bac2\\\"     | tar -xzC /opt/c3d --strip-components 1\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"986af2ddf02df5bf240e047d1ed404a9505fd95b3045aa6ca9c600a6eb88df91\",\"parent\":\"72750a3d68f400dc13e261f36e1d185f14cff3ec9afb43b144b6a2b53c672792\",\"created\":\"2016-10-12T02:51:26.760304866Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c curl -sL https://deb.nodesource.com/setup_4.x | bash - \\u0026\\u0026     apt-get install -y nodejs \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \\u0026\\u0026     npm install -g bids-validator\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72750a3d68f400dc13e261f36e1d185f14cff3ec9afb43b144b6a2b53c672792\",\"parent\":\"0009765d657268cc53ab1e8ccc74d30e4d5f4cc8950c575a0966da005e63256c\",\"created\":\"2016-10-12T02:50:44.292672353Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0009765d657268cc53ab1e8ccc74d30e4d5f4cc8950c575a0966da005e63256c\",\"parent\":\"1234b349c52c96bb5fac76883335c8f2486df7a648752931676a0cfb40c4cbb7\",\"created\":\"2016-10-12T02:50:43.832829587Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ANTSPATH=/opt/ants\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1234b349c52c96bb5fac76883335c8f2486df7a648752931676a0cfb40c4cbb7\",\"parent\":\"329a0cc98b01d9f4b056a2814770855c72c16d601d2fd6ac7b9f7e0f2d567bd1\",\"created\":\"2016-10-12T02:50:43.173783717Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c mkdir -p /opt/ants \\u0026\\u0026     curl -sSL \\\"https://files.osf.io/v1/resources/fvuh8/providers/osfstorage/57f34767594d9001ef91bfb7\\\"     | tar -xjC /opt/ants --strip-components 1\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"329a0cc98b01d9f4b056a2814770855c72c16d601d2fd6ac7b9f7e0f2d567bd1\",\"parent\":\"d8ce666614b8a330cd550c77f81ac91965d1d93d805a766e04a14f8f3a193590\",\"created\":\"2016-08-24T23:07:17.576807559Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLDIR=/usr/share/fsl/5.0 FSLOUTPUTTYPE=NIFTI_GZ FSLMULTIFILEQUIT=TRUE POSSUMDIR=/usr/share/fsl/5.0 FSLTCLSH=/usr/bin/tclsh FSLWISH=/usr/bin/wish PATH=/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d8ce666614b8a330cd550c77f81ac91965d1d93d805a766e04a14f8f3a193590\",\"parent\":\"c129063daccf44710fcb4ba2facbc40a5943832b979d47ddb31409a156cb1bc5\",\"created\":\"2016-08-24T23:07:16.354868921Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c sed -i -e 's,main$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list \\u0026\\u0026     apt-get -y update \\u0026\\u0026     apt-get install -y curl                        git                        xvfb                        bzip2                        apt-utils                        tcsh                        bc                        tar                        libgomp1                        perl-modules                        fsl-core                        afni                        graphviz \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c129063daccf44710fcb4ba2facbc40a5943832b979d47ddb31409a156cb1bc5\",\"parent\":\"10667609a4a8bf47219a31a0c7f3b85f59f740fe20e5005b800eb0a0172d9fc7\",\"created\":\"2016-08-20T00:32:38.800785311Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10667609a4a8bf47219a31a0c7f3b85f59f740fe20e5005b800eb0a0172d9fc7\",\"parent\":\"df842eeeabcfed3f40ca68cee536805dcbb2a265d4d1b1bd768b6a16f1705927\",\"created\":\"2016-08-20T00:32:38.3328152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SHELL=/bin/bash\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df842eeeabcfed3f40ca68cee536805dcbb2a265d4d1b1bd768b6a16f1705927\",\"parent\":\"142768cf7821dd22f3d9dac6b117870e0c0a90d13518f6ff5594ef9720600cb2\",\"created\":\"2016-08-20T00:32:37.856802191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ln -snf /bin/bash /bin/sh\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"142768cf7821dd22f3d9dac6b117870e0c0a90d13518f6ff5594ef9720600cb2\",\"parent\":\"e13db8716da57797a9c285fdacef92f207c8b5831b06aa6544f76b85c0c36e6f\",\"created\":\"2016-08-20T00:32:36.380793106Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e13db8716da57797a9c285fdacef92f207c8b5831b06aa6544f76b85c0c36e6f\",\"parent\":\"ce97139bfca62d5e62d59b858bfbb35aacf6a29176d904538642a59f0a3bd54b\",\"created\":\"2016-08-01T17:32:14.420897553Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce97139bfca62d5e62d59b858bfbb35aacf6a29176d904538642a59f0a3bd54b\",\"parent\":\"7e1ddc42d54f44862a618172e65258e80b11f1010c1170a76673c3b80ed74282\",\"created\":\"2016-08-01T17:31:55.813050826Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '#deb-src http://neuro.debian.net/debian-devel jessie main' \\u003e\\u003e /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e1ddc42d54f44862a618172e65258e80b11f1010c1170a76673c3b80ed74282\",\"parent\":\"d072112249f10b5b2fc0466d5c5722bd230cd158c965fc81a6692880bbf61e34\",\"created\":\"2016-08-01T17:31:54.019666995Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'deb http://neuro.debian.net/debian data main' \\u003e\\u003e /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d072112249f10b5b2fc0466d5c5722bd230cd158c965fc81a6692880bbf61e34\",\"parent\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"created\":\"2016-08-01T17:31:52.245557059Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'deb http://neuro.debian.net/debian jessie main' \\u003e /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"parent\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:55.809686499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:54.990622865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:c5cf2b7d0d5825dfc2a4e3d4170322c80e802ddd36f80acf27eecb305ac7a131"
+            },
+            {
+                "blobSum": "sha256:57ed729f3eb3037a0bd75fb51fbe664d0c983790e3cfff6a8bc2520fa639f72e"
+            },
+            {
+                "blobSum": "sha256:5da449b5eb2edae126658819282eca342cab0068abcb504c5d998faee09941bd"
+            },
+            {
+                "blobSum": "sha256:34b7440014fbb74efdaca774b5ce8de85434081dada1cfd6005061d63795c73a"
+            },
+            {
+                "blobSum": "sha256:b2e4c132d2b040d44d8d412ef4e97ab6abc1d44f6f4bc04dd2396e63a237477a"
+            },
+            {
+                "blobSum": "sha256:606d02a3efeca03d841445e29066723bb060bd4f2fbe8b8d3b25cc8198026ec5"
+            },
+            {
+                "blobSum": "sha256:cedc9d29c50e8f58160589dde85f9e685b2254e252fbfe67b8de66cf5a028b50"
+            },
+            {
+                "blobSum": "sha256:3e13741b88361cccf6a0cebaf77ff50d7b03de3098e08ab17b40c99932820642"
+            },
+            {
+                "blobSum": "sha256:bd2b1572921247bca1ab1c0237b27a12e402825c5fa35fafa995bf77aa91fe15"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:97e1c74107f491712e598a61a58c9dac60f0e1c05352cf33648370dad654cae3"
+            },
+            {
+                "blobSum": "sha256:aad8415d27f93a34855aa2ee285d8f3e497fed74e422746d65225ac678a401e4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:99c2ff1cfe9449ff8c565b0fa0933656264b948d334caf15977b89463cbd7007"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:bc6620a2a6447dd43acadf060f080c9a846caaceacb21a165c0afef00d8b2002"
+            },
+            {
+                "blobSum": "sha256:2b6a2238b0bc4b752033123fc5fa4d26472ca6472b794c823749e8ca63ae56f6"
+            },
+            {
+                "blobSum": "sha256:68083490b042fe4da243d55684146f13a7391daa9639afbe7a25a70d4bf72dfc"
+            },
+            {
+                "blobSum": "sha256:07c25c7619923900a8c421cd283398627a6ccbb22dc19277caf053a1b137b91d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:834cb03905cfc642ab9ff98da4716325aedf4c8a999e7a3c7f4e0a21161c303e"
+            },
+            {
+                "blobSum": "sha256:3c3f8cfbec206b7369959e5f640dd310004aa7c294abc5224d0e079e9aabdb0e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:03e9dcf445aeb1f663fc6a9d7d4d93f1e26b956b9ab141a8956f95416bf212fa"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f2e137bf04dcb143e1b13cff76369d5671fda5dcb22824b0bbe2fb611d3467e7"
+            },
+            {
+                "blobSum": "sha256:3aaa92691a45da547e3cb4a3c63b345a85d86046fb5198479d9cc8afd765b018"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f0c5dbd8de42915e3a9967e282b955cd04d5eb0bf9e414106d21f9c58175237d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:dc20237fcf201878c88c4f8d451b54edc5f2509d8c368e2c845a9f6d1c485d92"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:21ffec20c4fbca9ec0da6443ecb6ee19532cf6bad67e718ba731ac907f994d6b"
+            },
+            {
+                "blobSum": "sha256:397afeac127195ad688c8217771a958b5314d37b9950c23e5bf3ec11fd617383"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:cdb4d5376bdead059bc547128992c4a4e2f601a606acbe1447fb00ebeb725fe4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1b1839d10fc8ed13ebedae248e8dfec1ff9ab0dabe0ef66407daff379781d9bb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ebf965b3a12075202089704d5dbdcbad376142df41a3c9e0e52a2ce3c205cb93"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d16185ca875cfc73da65eb0621e3cb38544a728079f7b6aa3f9c0cc2eaf05ef2"
+            },
+            {
+                "blobSum": "sha256:f7e997984e865e5dc9a44099240240b68e5315cfe2fa33fe0536c4a69bb384a9"
+            },
+            {
+                "blobSum": "sha256:dfc27603e46bd3d4ee9b3e08f58b6a6b577c6cb5a6cb31ddc38937117f8d847f"
+            },
+            {
+                "blobSum": "sha256:fb95ab5480340193a679f58c726e208ce0a14a881cc48f3ec6b68490ca768abe"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab"
+            }
+        ],
+        "name": "joke/neuropowertest",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjQyNjUxLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTI6MThaIn0",
+                "signature": "tVuhHN1mKJs4QQMvp2NP6vVZXpd0qdT-ghcj6Z_5ZYDYDRROiPMGPkoslIb2Kyz1KDAQ8OZATE9HmfbXkyUFEQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "GPidct-zVsMl1rFGkejTmG554XLRLaVCVqL4nV1zUCc",
+                        "kid": "2XCT:4V4N:WRTN:GFZV:FAIV:WPKE:RPEC:7FXL:N2PO:BP7I:C5YB:XWE7",
+                        "x": "fcpoqUUb-BqBsUFoNRteVxWQooO6QUKed7neS--Blyg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/miniconda/bin:/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"SHELL=/bin/bash\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"ANTSPATH=/opt/ants\",\"C3DPATH=/opt/c3d\",\"OS=Linux\",\"FS_OVERRIDE=0\",\"FIX_VERTEX_AREA=\",\"SUBJECTS_DIR=/opt/freesurfer/subjects\",\"FSF_OUTPUT_FORMAT=nii.gz\",\"MNI_DIR=/opt/freesurfer/mni\",\"LOCAL_DIR=/opt/freesurfer/local\",\"FREESURFER_HOME=/opt/freesurfer\",\"FSFAST_HOME=/opt/freesurfer/fsfast\",\"MINC_BIN_DIR=/opt/freesurfer/mni/bin\",\"MINC_LIB_DIR=/opt/freesurfer/mni/lib\",\"MNI_DATAPATH=/opt/freesurfer/mni/data\",\"FMRI_ANALYSIS_DIR=/opt/freesurfer/fsfast\",\"PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"MNI_PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5db1da9b0c1174dd17e1bd48fccd135d5116e0b338148d0816736c1131cd5a7d\",\"Volumes\":null,\"WorkingDir\":\"/code\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"2c4473fbbf727a30dca97b7965817255c68003f3bf022d7b4c2d3518aea63502\",\"container_config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/miniconda/bin:/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"SHELL=/bin/bash\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"ANTSPATH=/opt/ants\",\"C3DPATH=/opt/c3d\",\"OS=Linux\",\"FS_OVERRIDE=0\",\"FIX_VERTEX_AREA=\",\"SUBJECTS_DIR=/opt/freesurfer/subjects\",\"FSF_OUTPUT_FORMAT=nii.gz\",\"MNI_DIR=/opt/freesurfer/mni\",\"LOCAL_DIR=/opt/freesurfer/local\",\"FREESURFER_HOME=/opt/freesurfer\",\"FSFAST_HOME=/opt/freesurfer/fsfast\",\"MINC_BIN_DIR=/opt/freesurfer/mni/bin\",\"MINC_LIB_DIR=/opt/freesurfer/mni/lib\",\"MNI_DATAPATH=/opt/freesurfer/mni/data\",\"FMRI_ANALYSIS_DIR=/opt/freesurfer/fsfast\",\"PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"MNI_PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5db1da9b0c1174dd17e1bd48fccd135d5116e0b338148d0816736c1131cd5a7d\",\"Volumes\":null,\"WorkingDir\":\"/code\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-12T19:31:01.680801318Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"9a7afad8ee743aa4022e1b96fe17e6550aa213c7a2b7fcfab33298c45a74aa63\",\"os\":\"linux\",\"parent\":\"3236848535a2b71767df002e24796cef0d28afcde571533c8a7124aa28a4d081\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3236848535a2b71767df002e24796cef0d28afcde571533c8a7124aa28a4d081\",\"parent\":\"71c10c4758cbd806245ac22af0d17a0083ca15397fe0ac8322d4e402c0708dcb\",\"created\":\"2017-01-12T19:30:35.515545577Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install wget\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"71c10c4758cbd806245ac22af0d17a0083ca15397fe0ac8322d4e402c0708dcb\",\"parent\":\"63db28217f17e2348b1f4ea22961e02e9c8e186fcc508ab5e6aecfdd1ea785ac\",\"created\":\"2017-01-12T19:30:06.296941675Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install awscli\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63db28217f17e2348b1f4ea22961e02e9c8e186fcc508ab5e6aecfdd1ea785ac\",\"parent\":\"7f14696b76673026576334bf5157bc700305885de848266fac92d66a8e8f1b6c\",\"created\":\"2017-01-12T19:29:26.216323549Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install neurodesign \\u003e 0.0.10\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7f14696b76673026576334bf5157bc700305885de848266fac92d66a8e8f1b6c\",\"parent\":\"95caaceec3f15f3e71483b1059173ffd132d13a7767ffa195bd5082391e39749\",\"created\":\"2017-01-12T19:28:56.748935742Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pdfrw\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"95caaceec3f15f3e71483b1059173ffd132d13a7767ffa195bd5082391e39749\",\"parent\":\"334f8b3461f5543cb48ff89c0e3ba57252f9fb8ca6ddbf1dbffc0723c8029af2\",\"created\":\"2017-01-12T19:28:30.00089936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install seaborn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"334f8b3461f5543cb48ff89c0e3ba57252f9fb8ca6ddbf1dbffc0723c8029af2\",\"parent\":\"bc8f3d732bf281968a2d8636371be7c53bfa74f137b79177d116e8aa3221998c\",\"created\":\"2017-01-12T19:27:59.999385722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install reportlab\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bc8f3d732bf281968a2d8636371be7c53bfa74f137b79177d116e8aa3221998c\",\"parent\":\"50f7d3a9dea00f49dd9fd8c92158466a92df72e79a7d1e42b39b8a572825951a\",\"created\":\"2017-01-12T19:27:09.704260108Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install progressbar\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"50f7d3a9dea00f49dd9fd8c92158466a92df72e79a7d1e42b39b8a572825951a\",\"parent\":\"b4f390f69126992058073c602aad9fccae4b7950c42d90de0821a07c57bb305d\",\"created\":\"2017-01-12T19:26:43.617780331Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install redis \\u0026\\u0026     pip install celery[redis]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4f390f69126992058073c602aad9fccae4b7950c42d90de0821a07c57bb305d\",\"parent\":\"f7989247a3a027ff76d0b7d55f25e840302405fe4e3ae82e47e1440c62e97ab9\",\"created\":\"2017-01-12T19:26:15.418020943Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install kombu\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f7989247a3a027ff76d0b7d55f25e840302405fe4e3ae82e47e1440c62e97ab9\",\"parent\":\"bec21010e36d82feca29a877078337201fcdb49997ec1d4e8129c8781aa59824\",\"created\":\"2017-01-12T19:25:48.586909806Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install sqlalchemy\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bec21010e36d82feca29a877078337201fcdb49997ec1d4e8129c8781aa59824\",\"parent\":\"e862094d2bb2d57651002dcbace02789575bb0e5c049c662af5cfe73c01cada7\",\"created\":\"2017-01-12T19:25:22.085908778Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install nilearn\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e862094d2bb2d57651002dcbace02789575bb0e5c049c662af5cfe73c01cada7\",\"parent\":\"a1d3d8ab49fcf1a845fe7f5b9897a115fc5afcc124412fbe514ef594c1dd2d2c\",\"created\":\"2017-01-12T19:24:55.23216437Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install sklearn\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a1d3d8ab49fcf1a845fe7f5b9897a115fc5afcc124412fbe514ef594c1dd2d2c\",\"parent\":\"419ce5890db45d2b0140349ac29361725c32d401180aae231263e503022fc059\",\"created\":\"2017-01-12T19:24:28.960458126Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install jinja2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"419ce5890db45d2b0140349ac29361725c32d401180aae231263e503022fc059\",\"parent\":\"3c24a32fd6824930c590ccc82d7e9c66e685a6a531c4133e38dc36d272c8a994\",\"created\":\"2017-01-12T19:24:01.996044413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install mpld3\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3c24a32fd6824930c590ccc82d7e9c66e685a6a531c4133e38dc36d272c8a994\",\"parent\":\"18bfb1c3513fbd2397d3020956623d6ca00c871fd84b6033d0ddf82ec3ae6929\",\"created\":\"2017-01-12T19:23:34.616146818Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install palettable\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"18bfb1c3513fbd2397d3020956623d6ca00c871fd84b6033d0ddf82ec3ae6929\",\"parent\":\"50ecd838b352609ddd5babd9ad618b738271a74fb08718fb7932177ec0e6ca82\",\"created\":\"2017-01-12T19:23:07.037408463Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-picklefield\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"50ecd838b352609ddd5babd9ad618b738271a74fb08718fb7932177ec0e6ca82\",\"parent\":\"a33268db768470fb2fe55d9318850d19daa297d08e63535223bf39cd95260f27\",\"created\":\"2017-01-12T19:22:40.621322022Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install psycopg2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a33268db768470fb2fe55d9318850d19daa297d08e63535223bf39cd95260f27\",\"parent\":\"91a026e216c90ca10b2a0bc1af7dfb25f0f5df43ba801d3611223c138798e599\",\"created\":\"2017-01-12T19:22:16.991093374Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install boto\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91a026e216c90ca10b2a0bc1af7dfb25f0f5df43ba801d3611223c138798e599\",\"parent\":\"f860a1ac41a29e1d6ebf42f7220e6beee28ef05ce74958013fad8d5d89471f0f\",\"created\":\"2017-01-12T19:21:51.12850644Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-storages\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f860a1ac41a29e1d6ebf42f7220e6beee28ef05ce74958013fad8d5d89471f0f\",\"parent\":\"0c7fa78e1cae4593cf72c06226dcfde9b88a98274ccec55445b4918d6d2676a6\",\"created\":\"2017-01-12T19:21:24.87358982Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-sslserver\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c7fa78e1cae4593cf72c06226dcfde9b88a98274ccec55445b4918d6d2676a6\",\"parent\":\"91a17b886b6235b91c8c9d2ebdcbb13d94da813ff9c6d5a4d024bf23970d0631\",\"created\":\"2017-01-12T19:20:58.345229021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-secure\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91a17b886b6235b91c8c9d2ebdcbb13d94da813ff9c6d5a4d024bf23970d0631\",\"parent\":\"d2188de62b895d57c7e827f5fbe0a7be379e563b9396430fdfd2016cec609cd8\",\"created\":\"2017-01-12T19:20:32.449654585Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django-crispy-forms\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d2188de62b895d57c7e827f5fbe0a7be379e563b9396430fdfd2016cec609cd8\",\"parent\":\"c0f6404b837ce294a2cc1600eeeaa82bda0591dd56e4c3d7df946eb45b9da4bb\",\"created\":\"2017-01-12T19:20:06.759879571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install django\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c0f6404b837ce294a2cc1600eeeaa82bda0591dd56e4c3d7df946eb45b9da4bb\",\"parent\":\"135d531c60716647eaea369a68de8a6adab48c2140be77d9a92d8f0c2fffc32e\",\"created\":\"2017-01-12T19:19:40.74442531Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install opbeat\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"135d531c60716647eaea369a68de8a6adab48c2140be77d9a92d8f0c2fffc32e\",\"parent\":\"02d82946c63b817227ae7cde805523a6fc6f36842e098e12ad49645cfa756c0c\",\"created\":\"2017-01-12T19:19:16.979928268Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install django-celery\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"02d82946c63b817227ae7cde805523a6fc6f36842e098e12ad49645cfa756c0c\",\"parent\":\"b02c695ee7e3fc6541aa04d2a1fc93b62746b4dfda84b55d2dbb3a37fa4df2cd\",\"created\":\"2017-01-12T19:18:37.094082349Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install neuropower\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b02c695ee7e3fc6541aa04d2a1fc93b62746b4dfda84b55d2dbb3a37fa4df2cd\",\"parent\":\"c54f345e6e2852a6326cc26595b546c1d83be5b39e613e306f1af9b267ae20d0\",\"created\":\"2017-01-12T19:18:12.989912989Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install SQLAlchemy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c54f345e6e2852a6326cc26595b546c1d83be5b39e613e306f1af9b267ae20d0\",\"parent\":\"506ac5f8debb3bde06daf3820ae9b51b318401430f91a764c5a9d6bed4f03791\",\"created\":\"2017-01-12T19:17:38.307212289Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install celery\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"506ac5f8debb3bde06daf3820ae9b51b318401430f91a764c5a9d6bed4f03791\",\"parent\":\"45f25478d98b08bce3b5162b84f2b083dd245b8644e87d99cd7dd87aa693a1a7\",\"created\":\"2017-01-12T19:16:56.303968615Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install psycopg2 mpld3==0.2 scikit-learn==0.17.1 cycler==0.9.0 \\u0026\\u0026   apt-get update \\u0026\\u0026   apt-get install -y build-essential \\u0026\\u0026   curl https://bootstrap.pypa.io/ez_setup.py -o - | python \\u0026\\u0026   pip install -r requirements.txt \\u0026\\u0026   apt-get install -y libglib2.0-0 \\u0026\\u0026   apt-get install -y libfreetype6-dev libxft-dev \\u0026\\u0026   conda install uwsgi \\u0026\\u0026   conda install Jinja2\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"45f25478d98b08bce3b5162b84f2b083dd245b8644e87d99cd7dd87aa693a1a7\",\"parent\":\"7d34572dfc6e88b839e9df34cafac159ae3211b82160acd80fac86d85a528ef5\",\"created\":\"2017-01-12T19:12:45.411419446Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:e26e0c9a0622f25d412d72e5561358b25afea6d0f34b754df396530d0f5d9fe0 in /code/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d34572dfc6e88b839e9df34cafac159ae3211b82160acd80fac86d85a528ef5\",\"parent\":\"1a0a0038c89c577f90fdd318d446728673dcda9d9c7e5bacf2457db37efeb3e3\",\"created\":\"2017-01-12T19:12:25.414586467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /code\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a0a0038c89c577f90fdd318d446728673dcda9d9c7e5bacf2457db37efeb3e3\",\"parent\":\"b69365d8f0b06399eda1b7b1670e48987fc981f8132b0a3ce95ed23c60275a54\",\"created\":\"2017-01-12T19:12:08.104612459Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /code\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b69365d8f0b06399eda1b7b1670e48987fc981f8132b0a3ce95ed23c60275a54\",\"parent\":\"a3b258dfc1036c58690db4932eeef46c824e3d1cc3bf9bea4fa5895f266a0689\",\"created\":\"2017-01-12T19:11:50.717711222Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install nose \\u0026\\u0026     conda install numpy \\u0026\\u0026     conda install scipy \\u0026\\u0026     conda install pandas \\u0026\\u0026     conda install matplotlib \\u0026\\u0026     conda install xvfbwrapper\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a3b258dfc1036c58690db4932eeef46c824e3d1cc3bf9bea4fa5895f266a0689\",\"parent\":\"b198ee6eb796e19daed99ecd976653b5688a3b3fae7ad8f3e99cb9e6f8bf1609\",\"created\":\"2017-01-12T19:09:12.084555467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b198ee6eb796e19daed99ecd976653b5688a3b3fae7ad8f3e99cb9e6f8bf1609\",\"parent\":\"b25820cb61e2e49a22028ac7149f43bbc3773c79a18efe8d072039cd47567c8c\",\"created\":\"2017-01-12T19:08:55.631963634Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y curl git xvfb bzip2 apt-utils\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b25820cb61e2e49a22028ac7149f43bbc3773c79a18efe8d072039cd47567c8c\",\"parent\":\"b4bca967d66d724d278762ba4a8338be460c4f8c67105f13c68b8e0f3101dd9c\",\"created\":\"2016-12-04T20:49:45.675756995Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4bca967d66d724d278762ba4a8338be460c4f8c67105f13c68b8e0f3101dd9c\",\"parent\":\"9a34785edab62c09d6f1121ae69665aa3db06024b304e740a0e9c560cf27c04f\",\"created\":\"2016-12-04T20:49:30.122017314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade pip \\u0026\\u0026     pip install psutil \\u0026\\u0026     python -c \\\"from matplotlib import font_manager\\\"\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9a34785edab62c09d6f1121ae69665aa3db06024b304e740a0e9c560cf27c04f\",\"parent\":\"e7a6a5bb38d92a7cb56273fe2651f979950ee328e0037de3d348df4b0ca95758\",\"created\":\"2016-12-04T20:49:01.953235438Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels conda-forge \\u0026\\u0026     conda install -y lockfile nipype matplotlib\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7a6a5bb38d92a7cb56273fe2651f979950ee328e0037de3d348df4b0ca95758\",\"parent\":\"15870cc6cacc07116b360f1136b7770a40b5c85cd3da50ba93bf9f249fccb985\",\"created\":\"2016-12-04T20:45:13.106852399Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LC_ALL=C.UTF-8\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"15870cc6cacc07116b360f1136b7770a40b5c85cd3da50ba93bf9f249fccb985\",\"parent\":\"73768b8b66628efeed560ef3364ec0741124dd7411e9023a7e4a7f07b06a29ed\",\"created\":\"2016-12-04T20:45:01.452754692Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73768b8b66628efeed560ef3364ec0741124dd7411e9023a7e4a7f07b06a29ed\",\"parent\":\"1f49bf79837f0f0c6127b366a8e7ad7fa758805558c88bce37308bbfb49a1c00\",\"created\":\"2016-12-04T20:44:49.969598098Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/miniconda/bin:/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1f49bf79837f0f0c6127b366a8e7ad7fa758805558c88bce37308bbfb49a1c00\",\"parent\":\"acb1a32fd3e287601ce1ca3194eaa786f612f1678de6dc39cf60e14edc7310c9\",\"created\":\"2016-12-04T20:44:40.585681737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sSLO https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \\u0026\\u0026     /bin/bash Miniconda2-latest-Linux-x86_64.sh -b -p /usr/local/miniconda \\u0026\\u0026     rm Miniconda2-latest-Linux-x86_64.sh\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"acb1a32fd3e287601ce1ca3194eaa786f612f1678de6dc39cf60e14edc7310c9\",\"parent\":\"8745900cd27348c33f6a7e87e0e30881a100581a68db571070f9e568fe0af96a\",\"created\":\"2016-12-04T20:44:14.183624671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /root\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8745900cd27348c33f6a7e87e0e30881a100581a68db571070f9e568fe0af96a\",\"parent\":\"49f6a9b151610a10199cdfbe606b3ac8fe1f4665fc5a2bb063c05b8f57894c61\",\"created\":\"2016-12-04T20:44:04.585399084Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"49f6a9b151610a10199cdfbe606b3ac8fe1f4665fc5a2bb063c05b8f57894c61\",\"parent\":\"a20e7d292171c3042fb0eefdaed54083c262796ec8c42d640c21e21800161452\",\"created\":\"2016-12-04T20:22:52.962526067Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a20e7d292171c3042fb0eefdaed54083c262796ec8c42d640c21e21800161452\",\"parent\":\"e61bf949445d43e67762b68d1824e79de5431a1e0fc32d8d79ac6baa0aab62ca\",\"created\":\"2016-12-04T20:22:42.237138093Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/freesurfer/bin:/opt/freesurfer/fsfast/bin:/opt/freesurfer/tktools:/opt/freesurfer/mni/bin:/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e61bf949445d43e67762b68d1824e79de5431a1e0fc32d8d79ac6baa0aab62ca\",\"parent\":\"4c1c86839590303964509efa316838ed59c7bbfb902d66be2dad0ed5c50388b0\",\"created\":\"2016-12-04T20:22:31.146986457Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OS=Linux FS_OVERRIDE=0 FIX_VERTEX_AREA= SUBJECTS_DIR=/opt/freesurfer/subjects FSF_OUTPUT_FORMAT=nii.gz MNI_DIR=/opt/freesurfer/mni LOCAL_DIR=/opt/freesurfer/local FREESURFER_HOME=/opt/freesurfer FSFAST_HOME=/opt/freesurfer/fsfast MINC_BIN_DIR=/opt/freesurfer/mni/bin MINC_LIB_DIR=/opt/freesurfer/mni/lib MNI_DATAPATH=/opt/freesurfer/mni/data FMRI_ANALYSIS_DIR=/opt/freesurfer/fsfast PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5 MNI_PERL5LIB=/opt/freesurfer/mni/lib/perl5/5.8.5\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4c1c86839590303964509efa316838ed59c7bbfb902d66be2dad0ed5c50388b0\",\"parent\":\"9ee6cc29663f8b1ce8120aeef921c9a4da305b57d5569d5e796a64dbca21e54a\",\"created\":\"2016-12-04T20:22:22.351349213Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sSL ftp://surfer.nmr.mgh.harvard.edu/pub/dist/freesurfer/5.3.0-HCP/freesurfer-Linux-centos4_x86_64-stable-pub-v5.3.0-HCP.tar.gz     | tar zx -C /opt     --exclude='freesurfer/trctrain'     --exclude='freesurfer/subjects/fsaverage_sym'     --exclude='freesurfer/subjects/fsaverage3'     --exclude='freesurfer/subjects/fsaverage4'     --exclude='freesurfer/subjects/fsaverage5'     --exclude='freesurfer/subjects/fsaverage6'     --exclude='freesurfer/subjects/cvs_avg35'     --exclude='freesurfer/subjects/cvs_avg35_inMNI152'     --exclude='freesurfer/subjects/bert'     --exclude='freesurfer/subjects/V1_average'     --exclude='freesurfer/average/mult-comp-cor'     --exclude='freesurfer/lib/cuda'     --exclude='freesurfer/lib/qt' \\u0026\\u0026     /bin/bash -c 'touch /opt/freesurfer/.license'\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9ee6cc29663f8b1ce8120aeef921c9a4da305b57d5569d5e796a64dbca21e54a\",\"parent\":\"25c80a5037abe4e48fb14dc8cfb848aae5dace9a4fa3650f39ef99735995ecae\",\"created\":\"2016-12-04T20:16:49.69216563Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25c80a5037abe4e48fb14dc8cfb848aae5dace9a4fa3650f39ef99735995ecae\",\"parent\":\"3675923bb669accaf8d2ad75496a597ae85abe4642c214ea8d8b0ebc0fec6a74\",\"created\":\"2016-10-12T02:51:37.308833631Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3675923bb669accaf8d2ad75496a597ae85abe4642c214ea8d8b0ebc0fec6a74\",\"parent\":\"07609c625beafead97c3b812a8cfb511a4e33a9245780fc582cc0bc332d62e0e\",\"created\":\"2016-10-12T02:51:36.876785621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/c3d:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"07609c625beafead97c3b812a8cfb511a4e33a9245780fc582cc0bc332d62e0e\",\"parent\":\"f8ebf881780f6623a511638b750095f882b61fff745ff1f84bebbb15f2c5fc90\",\"created\":\"2016-10-12T02:51:36.280797801Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV C3DPATH=/opt/c3d\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f8ebf881780f6623a511638b750095f882b61fff745ff1f84bebbb15f2c5fc90\",\"parent\":\"986af2ddf02df5bf240e047d1ed404a9505fd95b3045aa6ca9c600a6eb88df91\",\"created\":\"2016-10-12T02:51:35.833727051Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c mkdir -p /opt/c3d \\u0026\\u0026     curl -sSL \\\"https://files.osf.io/v1/resources/fvuh8/providers/osfstorage/57f341d6594d9001f591bac2\\\"     | tar -xzC /opt/c3d --strip-components 1\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"986af2ddf02df5bf240e047d1ed404a9505fd95b3045aa6ca9c600a6eb88df91\",\"parent\":\"72750a3d68f400dc13e261f36e1d185f14cff3ec9afb43b144b6a2b53c672792\",\"created\":\"2016-10-12T02:51:26.760304866Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c curl -sL https://deb.nodesource.com/setup_4.x | bash - \\u0026\\u0026     apt-get install -y nodejs \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \\u0026\\u0026     npm install -g bids-validator\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72750a3d68f400dc13e261f36e1d185f14cff3ec9afb43b144b6a2b53c672792\",\"parent\":\"0009765d657268cc53ab1e8ccc74d30e4d5f4cc8950c575a0966da005e63256c\",\"created\":\"2016-10-12T02:50:44.292672353Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/ants:/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0009765d657268cc53ab1e8ccc74d30e4d5f4cc8950c575a0966da005e63256c\",\"parent\":\"1234b349c52c96bb5fac76883335c8f2486df7a648752931676a0cfb40c4cbb7\",\"created\":\"2016-10-12T02:50:43.832829587Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ANTSPATH=/opt/ants\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1234b349c52c96bb5fac76883335c8f2486df7a648752931676a0cfb40c4cbb7\",\"parent\":\"329a0cc98b01d9f4b056a2814770855c72c16d601d2fd6ac7b9f7e0f2d567bd1\",\"created\":\"2016-10-12T02:50:43.173783717Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c mkdir -p /opt/ants \\u0026\\u0026     curl -sSL \\\"https://files.osf.io/v1/resources/fvuh8/providers/osfstorage/57f34767594d9001ef91bfb7\\\"     | tar -xjC /opt/ants --strip-components 1\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"329a0cc98b01d9f4b056a2814770855c72c16d601d2fd6ac7b9f7e0f2d567bd1\",\"parent\":\"d8ce666614b8a330cd550c77f81ac91965d1d93d805a766e04a14f8f3a193590\",\"created\":\"2016-08-24T23:07:17.576807559Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLDIR=/usr/share/fsl/5.0 FSLOUTPUTTYPE=NIFTI_GZ FSLMULTIFILEQUIT=TRUE POSSUMDIR=/usr/share/fsl/5.0 FSLTCLSH=/usr/bin/tclsh FSLWISH=/usr/bin/wish PATH=/usr/lib/fsl/5.0:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d8ce666614b8a330cd550c77f81ac91965d1d93d805a766e04a14f8f3a193590\",\"parent\":\"c129063daccf44710fcb4ba2facbc40a5943832b979d47ddb31409a156cb1bc5\",\"created\":\"2016-08-24T23:07:16.354868921Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c sed -i -e 's,main$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list \\u0026\\u0026     apt-get -y update \\u0026\\u0026     apt-get install -y curl                        git                        xvfb                        bzip2                        apt-utils                        tcsh                        bc                        tar                        libgomp1                        perl-modules                        fsl-core                        afni                        graphviz \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c129063daccf44710fcb4ba2facbc40a5943832b979d47ddb31409a156cb1bc5\",\"parent\":\"10667609a4a8bf47219a31a0c7f3b85f59f740fe20e5005b800eb0a0172d9fc7\",\"created\":\"2016-08-20T00:32:38.800785311Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10667609a4a8bf47219a31a0c7f3b85f59f740fe20e5005b800eb0a0172d9fc7\",\"parent\":\"df842eeeabcfed3f40ca68cee536805dcbb2a265d4d1b1bd768b6a16f1705927\",\"created\":\"2016-08-20T00:32:38.3328152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SHELL=/bin/bash\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df842eeeabcfed3f40ca68cee536805dcbb2a265d4d1b1bd768b6a16f1705927\",\"parent\":\"142768cf7821dd22f3d9dac6b117870e0c0a90d13518f6ff5594ef9720600cb2\",\"created\":\"2016-08-20T00:32:37.856802191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ln -snf /bin/bash /bin/sh\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"142768cf7821dd22f3d9dac6b117870e0c0a90d13518f6ff5594ef9720600cb2\",\"parent\":\"e13db8716da57797a9c285fdacef92f207c8b5831b06aa6544f76b85c0c36e6f\",\"created\":\"2016-08-20T00:32:36.380793106Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\"]},\"author\":\"Stanford Center for Reproducible Neuroscience \\u003ccrn.poldracklab@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e13db8716da57797a9c285fdacef92f207c8b5831b06aa6544f76b85c0c36e6f\",\"parent\":\"ce97139bfca62d5e62d59b858bfbb35aacf6a29176d904538642a59f0a3bd54b\",\"created\":\"2016-08-01T17:32:14.420897553Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key adv --recv-keys --keyserver pgp.mit.edu 0xA5D32F012649A5A9\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce97139bfca62d5e62d59b858bfbb35aacf6a29176d904538642a59f0a3bd54b\",\"parent\":\"7e1ddc42d54f44862a618172e65258e80b11f1010c1170a76673c3b80ed74282\",\"created\":\"2016-08-01T17:31:55.813050826Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '#deb-src http://neuro.debian.net/debian-devel jessie main' \\u003e\\u003e /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e1ddc42d54f44862a618172e65258e80b11f1010c1170a76673c3b80ed74282\",\"parent\":\"d072112249f10b5b2fc0466d5c5722bd230cd158c965fc81a6692880bbf61e34\",\"created\":\"2016-08-01T17:31:54.019666995Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'deb http://neuro.debian.net/debian data main' \\u003e\\u003e /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d072112249f10b5b2fc0466d5c5722bd230cd158c965fc81a6692880bbf61e34\",\"parent\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"created\":\"2016-08-01T17:31:52.245557059Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'deb http://neuro.debian.net/debian jessie main' \\u003e /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"parent\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:55.809686499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:54.990622865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:c5cf2b7d0d5825dfc2a4e3d4170322c80e802ddd36f80acf27eecb305ac7a131"
+            },
+            {
+                "blobSum": "sha256:57ed729f3eb3037a0bd75fb51fbe664d0c983790e3cfff6a8bc2520fa639f72e"
+            },
+            {
+                "blobSum": "sha256:5da449b5eb2edae126658819282eca342cab0068abcb504c5d998faee09941bd"
+            },
+            {
+                "blobSum": "sha256:34b7440014fbb74efdaca774b5ce8de85434081dada1cfd6005061d63795c73a"
+            },
+            {
+                "blobSum": "sha256:b2e4c132d2b040d44d8d412ef4e97ab6abc1d44f6f4bc04dd2396e63a237477a"
+            },
+            {
+                "blobSum": "sha256:606d02a3efeca03d841445e29066723bb060bd4f2fbe8b8d3b25cc8198026ec5"
+            },
+            {
+                "blobSum": "sha256:cedc9d29c50e8f58160589dde85f9e685b2254e252fbfe67b8de66cf5a028b50"
+            },
+            {
+                "blobSum": "sha256:3e13741b88361cccf6a0cebaf77ff50d7b03de3098e08ab17b40c99932820642"
+            },
+            {
+                "blobSum": "sha256:bd2b1572921247bca1ab1c0237b27a12e402825c5fa35fafa995bf77aa91fe15"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:97e1c74107f491712e598a61a58c9dac60f0e1c05352cf33648370dad654cae3"
+            },
+            {
+                "blobSum": "sha256:aad8415d27f93a34855aa2ee285d8f3e497fed74e422746d65225ac678a401e4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:99c2ff1cfe9449ff8c565b0fa0933656264b948d334caf15977b89463cbd7007"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:bc6620a2a6447dd43acadf060f080c9a846caaceacb21a165c0afef00d8b2002"
+            },
+            {
+                "blobSum": "sha256:2b6a2238b0bc4b752033123fc5fa4d26472ca6472b794c823749e8ca63ae56f6"
+            },
+            {
+                "blobSum": "sha256:68083490b042fe4da243d55684146f13a7391daa9639afbe7a25a70d4bf72dfc"
+            },
+            {
+                "blobSum": "sha256:07c25c7619923900a8c421cd283398627a6ccbb22dc19277caf053a1b137b91d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:834cb03905cfc642ab9ff98da4716325aedf4c8a999e7a3c7f4e0a21161c303e"
+            },
+            {
+                "blobSum": "sha256:3c3f8cfbec206b7369959e5f640dd310004aa7c294abc5224d0e079e9aabdb0e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:03e9dcf445aeb1f663fc6a9d7d4d93f1e26b956b9ab141a8956f95416bf212fa"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f2e137bf04dcb143e1b13cff76369d5671fda5dcb22824b0bbe2fb611d3467e7"
+            },
+            {
+                "blobSum": "sha256:3aaa92691a45da547e3cb4a3c63b345a85d86046fb5198479d9cc8afd765b018"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f0c5dbd8de42915e3a9967e282b955cd04d5eb0bf9e414106d21f9c58175237d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:dc20237fcf201878c88c4f8d451b54edc5f2509d8c368e2c845a9f6d1c485d92"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:21ffec20c4fbca9ec0da6443ecb6ee19532cf6bad67e718ba731ac907f994d6b"
+            },
+            {
+                "blobSum": "sha256:397afeac127195ad688c8217771a958b5314d37b9950c23e5bf3ec11fd617383"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:cdb4d5376bdead059bc547128992c4a4e2f601a606acbe1447fb00ebeb725fe4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1b1839d10fc8ed13ebedae248e8dfec1ff9ab0dabe0ef66407daff379781d9bb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ebf965b3a12075202089704d5dbdcbad376142df41a3c9e0e52a2ce3c205cb93"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d16185ca875cfc73da65eb0621e3cb38544a728079f7b6aa3f9c0cc2eaf05ef2"
+            },
+            {
+                "blobSum": "sha256:f7e997984e865e5dc9a44099240240b68e5315cfe2fa33fe0536c4a69bb384a9"
+            },
+            {
+                "blobSum": "sha256:dfc27603e46bd3d4ee9b3e08f58b6a6b577c6cb5a6cb31ddc38937117f8d847f"
+            },
+            {
+                "blobSum": "sha256:fb95ab5480340193a679f58c726e208ce0a14a881cc48f3ec6b68490ca768abe"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab"
+            }
+        ],
+        "name": "joke/neuropowertest",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjQyNjUxLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTI6MThaIn0",
+                "signature": "klaCbotnkh_kAuGSIBP3kuhLWWZ7G5aCx3XoRbuRqyDv4mI0RMIIMrrfouUuPF8KwMUrlteSJ4Eg55dTSdZiag",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "YPNa0BA6vgnUzOgx2P9MWJ0jQ77fpXA7RN52pn6DBOA",
+                        "kid": "DL3U:CHTF:ZPWK:6A34:T5F5:ZYBX:2IGR:UHYM:PAYU:XBXZ:BI2S:CKSV",
+                        "x": "qO3uWUY_RxHMF8RzvFhN8yq3jiuVPTcSy-EXEJr_W0M"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3fb664008f84\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/true\"],\"Image\":\"sha256:82f14cf602e72ace19d69e39690a9a31cebe02529c0db57b60580e503659b2f2\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"container\":\"7a49a204252e26796724b6e8167d3043213bfc9668327a1c2b64348ff833c919\",\"container_config\":{\"Hostname\":\"3fb664008f84\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/true\\\"]\"],\"Image\":\"sha256:82f14cf602e72ace19d69e39690a9a31cebe02529c0db57b60580e503659b2f2\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"created\":\"2017-01-08T03:03:33.059383047Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"7ba3e75ce0b1fbc364960edc7d47e6eaac6c26f03d1010033e228ae0eeeb0cf1\",\"os\":\"linux\",\"parent\":\"72f2602b089f39088b0d8d12a43c480734e8802b1c9fd3a549811011cbcea8e8\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72f2602b089f39088b0d8d12a43c480734e8802b1c9fd3a549811011cbcea8e8\",\"created\":\"2017-01-08T03:03:32.987381165Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:83cb1f8bd9b969ff5df8b938b144814efe58b449122680519fab5564e57171cb in /bin/ \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:97b67b46fad811237cf758551dbb18f52c841ec5c00326664050a5e8a749ca8e"
+            }
+        ],
+        "name": "lampe/scratch-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIxMjEsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDoyMFoifQ",
+                "signature": "Q5a-jHB3T-0GRzp5gULuiX7Za4SDLxRV9gjNJw5RKPb9nwkFVB_QHgPkh4aFaZF4GigaMxK2diPPaLrhuEnp8A",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3fb664008f84\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/true\"],\"Image\":\"sha256:82f14cf602e72ace19d69e39690a9a31cebe02529c0db57b60580e503659b2f2\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"container\":\"7a49a204252e26796724b6e8167d3043213bfc9668327a1c2b64348ff833c919\",\"container_config\":{\"Hostname\":\"3fb664008f84\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/true\\\"]\"],\"Image\":\"sha256:82f14cf602e72ace19d69e39690a9a31cebe02529c0db57b60580e503659b2f2\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":null,\"Labels\":{}},\"created\":\"2017-01-08T03:03:33.059383047Z\",\"docker_version\":\"1.12.3-cs3\",\"id\":\"7ba3e75ce0b1fbc364960edc7d47e6eaac6c26f03d1010033e228ae0eeeb0cf1\",\"os\":\"linux\",\"parent\":\"72f2602b089f39088b0d8d12a43c480734e8802b1c9fd3a549811011cbcea8e8\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72f2602b089f39088b0d8d12a43c480734e8802b1c9fd3a549811011cbcea8e8\",\"created\":\"2017-01-08T03:03:32.987381165Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:83cb1f8bd9b969ff5df8b938b144814efe58b449122680519fab5564e57171cb in /bin/ \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:97b67b46fad811237cf758551dbb18f52c841ec5c00326664050a5e8a749ca8e"
+            }
+        ],
+        "name": "lampe/scratch-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIxMjEsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDoyMFoifQ",
+                "signature": "ugLcei3SsaJK5uQXTP-2hc7ZBoiYTyb1tJF8XwUVdZF5BE5FXHq7o9SGb0VNsMmYYtcPI3xw6HIpOOXu27B3gQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "quD509_uBzNqK6dZBZuuWa4S7ronABZ1s6n1Y_XeHfY",
+                        "kid": "VNJX:OJX6:VLWJ:2Z3U:MNIO:RMJY:CWTW:SXPJ:NTW5:Z5PN:DJ52:6XWH",
+                        "x": "nXY0zFLFdRRI0Nljiv1Ju0jJAzp-vQWM0yQAiSYwD5E"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

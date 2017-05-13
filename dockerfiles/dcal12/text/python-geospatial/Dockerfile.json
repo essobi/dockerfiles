@@ -1,0 +1,474 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\"],\"Cmd\":[\"start-notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8fbe41374e8dd19cee75025b49a47136862b27a752cad992dca936f1987f4faa\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"4e10d8020309956dd2c7908d0a5e960591a601668ac66e3db641e9d4fba6d322\",\"container_config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install jupynbimp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8fbe41374e8dd19cee75025b49a47136862b27a752cad992dca936f1987f4faa\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-01T04:06:29.370802334Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"51955728685c1594f7c4d6d5528edddc64ffa56e32b6024232c1c6b1feadfc27\",\"os\":\"linux\",\"parent\":\"849030fb6480709bc1c4b55c15f611198c8d4ef4a06b1e838411b8a652f296eb\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"849030fb6480709bc1c4b55c15f611198c8d4ef4a06b1e838411b8a652f296eb\",\"parent\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"created\":\"2017-05-01T04:06:04.166202152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes --no-pin   geopandas   scikit-learn   statsmodels   seaborn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"parent\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"created\":\"2017-04-06T01:07:25.685356881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"parent\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"created\":\"2017-04-06T01:07:25.493589622Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $NB_USER:users /home/$NB_USER/.jupyter\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"parent\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"created\":\"2017-04-06T01:07:24.400817115Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8784656ba78be4c5c867ba2b44018e0eec125db9994455b933df02b8de7966a5 in /home/jovyan/.jupyter/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"parent\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"created\":\"2017-04-06T01:07:24.148783529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:645466847c934c1add1678b16957d9cf6d7277b655aac6f2d3b88842dda2b4cf in /usr/local/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"parent\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"created\":\"2017-04-06T01:07:23.88321672Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:6d15c30d4b64efca62be7871e8bc761ea231fd18909afac4ca10f1429fe6872d in /usr/local/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"parent\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"created\":\"2017-04-06T01:07:23.643611201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4cfcf9820ba75a602dcbf6e5ba1c6082122846cbf35faaf4f00ce59c98698330 in /usr/local/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"parent\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"created\":\"2017-04-06T01:07:23.325569157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"start-notebook.sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"parent\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"created\":\"2017-04-06T01:07:23.154917808Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"tini\\\" \\\"--\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"parent\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"created\":\"2017-04-06T01:07:22.987364375Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home/jovyan/work\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"parent\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"created\":\"2017-04-06T01:07:22.810045154Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"parent\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"created\":\"2017-04-06T01:07:22.649702677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"parent\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"created\":\"2017-04-06T01:07:20.898665739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --quiet --yes     'notebook=5.0.*'     'jupyterhub=0.7.*'     'jupyterlab=0.18.*'     \\u0026\\u0026 conda clean -tipsy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"parent\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"created\":\"2017-03-04T02:56:52.172991568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     echo \\\"c59b3dd3cad550ac7596e0d599b91e75d88826db132e4146030ef471bb434e9a *Miniconda3-4.2.12-Linux-x86_64.sh\\\" | sha256sum -c - \\u0026\\u0026     /bin/bash Miniconda3-4.2.12-Linux-x86_64.sh -f -b -p $CONDA_DIR \\u0026\\u0026     rm Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --add channels conda-forge \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --set auto_update_conda false \\u0026\\u0026     conda clean -tipsy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"parent\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"created\":\"2017-03-04T02:56:34.043061519Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$NB_USER/work \\u0026\\u0026     mkdir /home/$NB_USER/.jupyter \\u0026\\u0026     echo \\\"cacert=/etc/ssl/certs/ca-certificates.crt\\\" \\u003e /home/$NB_USER/.curlrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"parent\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"created\":\"2017-03-04T02:56:33.462903102Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"parent\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"created\":\"2017-03-04T02:56:33.210518443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m -s /bin/bash -N -u $NB_UID $NB_USER \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     chown $NB_USER $CONDA_DIR\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"parent\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"created\":\"2017-03-04T02:56:32.579465034Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANGUAGE=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"parent\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"created\":\"2017-03-04T02:56:32.382697342Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"parent\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"created\":\"2017-03-04T02:56:32.184630798Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"parent\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"created\":\"2017-03-04T02:56:31.977452387Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV HOME=/home/jovyan\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"parent\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"created\":\"2017-03-04T02:56:31.790332936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_UID=1000\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"parent\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"created\":\"2017-03-04T02:56:31.597469191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_USER=jovyan\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"parent\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"created\":\"2017-03-04T02:56:31.363692324Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV SHELL=/bin/bash\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"parent\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"created\":\"2017-03-04T02:56:31.168627191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"parent\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"created\":\"2017-03-04T02:56:30.960826497Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONDA_DIR=/opt/conda\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"parent\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"created\":\"2017-03-04T02:56:30.774470356Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget --quiet https://github.com/krallin/tini/releases/download/v0.10.0/tini \\u0026\\u0026     echo \\\"1361527f39190a7338a0b434bd8c88ff7233ce7b9a4876f3315c22fce7eca1b0 *tini\\\" | sha256sum -c - \\u0026\\u0026     mv tini /usr/local/bin/tini \\u0026\\u0026     chmod +x /usr/local/bin/tini\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"parent\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"created\":\"2017-03-04T02:56:30.030262662Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e /etc/locale.gen \\u0026\\u0026     locale-gen\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"parent\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"created\":\"2017-03-04T02:56:27.544930953Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c REPO=http://cdn-fastly.deb.debian.org  \\u0026\\u0026 echo \\\"deb $REPO/debian jessie main\\\\ndeb $REPO/debian-security jessie/updates main\\\" \\u003e /etc/apt/sources.list  \\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get -yq dist-upgrade  \\u0026\\u0026 apt-get install -yq --no-install-recommends     wget     bzip2     ca-certificates     sudo     locales  \\u0026\\u0026 apt-get clean  \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"parent\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"created\":\"2017-03-04T02:55:43.432393234Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"parent\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"created\":\"2017-03-04T02:55:43.233318012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"parent\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"created\":\"2017-03-04T02:55:43.049348603Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"parent\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:37.813657023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:36.966911578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:64df659db1029ef834c033ffc7c029dc50827e8720352d993133e44c9fac9e2e"
+            },
+            {
+                "blobSum": "sha256:72f6dfda77648791588b66e6594d162efc2b817d8379b036f2bfe8cb6dd12b12"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d61dbef85c7dfcaa0de7e2e221a5b88549f5be6e819609c436e80694cf89699b"
+            },
+            {
+                "blobSum": "sha256:d336770b8a83a8c3b76fb3d8449ba0e7a82b5080cff817f1e721afba4820be69"
+            },
+            {
+                "blobSum": "sha256:055904fbc069100f2cc1071176cbb732a79e8976ddfb8d5def11594b53bbadbf"
+            },
+            {
+                "blobSum": "sha256:e63bd87d75ddf5bea921b03aad03f39d4c3e5557a759fde329bce4b96e44685b"
+            },
+            {
+                "blobSum": "sha256:0057b9e76c8a523a63a6418fdfc9580811083be2a505468a24eaf06348151f9b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:eeda14d1c42137239ad40b8081df1e48df93ce70cc6777edb388e40582cd104d"
+            },
+            {
+                "blobSum": "sha256:c352772bbcfd800bdfb76ce627eb1a18b2cf5e70411ba0f74ea7672ba3d68047"
+            },
+            {
+                "blobSum": "sha256:121dc465f5c667aae08854250881e709b95511d9767551675da33f2801a77501"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b4690d4047c60224d5230518591790ef488f7b77775ce8e4dfe202bf08bca030"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e539f5722cd5086ddd1b5bf2324fe74e9e4f398cc9298b9f9d6f31ac5a7ab8bc"
+            },
+            {
+                "blobSum": "sha256:9cb32b776a4064ce43ac5e6cc5abd317a5dba0fd5a0d842c21e73587b468d804"
+            },
+            {
+                "blobSum": "sha256:a3782c2efb4188af8b56f4001efae6f76b337d21f3c1b58c73d484b1cf1f4b72"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184"
+            }
+        ],
+        "name": "dcal12/python-geospatial",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE5ODY0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDk6NTZaIn0",
+                "signature": "xN-WUgwb2EpiKvajZQ2KyiVcj1SQvQG9gWF6a5goXH-2NeR1NLE33xiXxfRkUCywlQr-sFIlCXSw-muDXeQ7Fg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Ivv3m6V17wyB306mgkx747JubU31KRkIgD-PJT5hSc0",
+                        "kid": "7UVY:A3TJ:AENA:X54I:Q6HX:H6M2:HQSI:GOTY:NLKN:QNXC:ZXQ5:RJ3Z",
+                        "x": "qk_NfMShksj1fW1Nc8Sw7lMkuiX_RqJnKTumb6qVens"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\"],\"Cmd\":[\"start-notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8fbe41374e8dd19cee75025b49a47136862b27a752cad992dca936f1987f4faa\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"4e10d8020309956dd2c7908d0a5e960591a601668ac66e3db641e9d4fba6d322\",\"container_config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install jupynbimp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8fbe41374e8dd19cee75025b49a47136862b27a752cad992dca936f1987f4faa\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-01T04:06:29.370802334Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"51955728685c1594f7c4d6d5528edddc64ffa56e32b6024232c1c6b1feadfc27\",\"os\":\"linux\",\"parent\":\"849030fb6480709bc1c4b55c15f611198c8d4ef4a06b1e838411b8a652f296eb\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"849030fb6480709bc1c4b55c15f611198c8d4ef4a06b1e838411b8a652f296eb\",\"parent\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"created\":\"2017-05-01T04:06:04.166202152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes --no-pin   geopandas   scikit-learn   statsmodels   seaborn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"parent\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"created\":\"2017-04-06T01:07:25.685356881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"parent\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"created\":\"2017-04-06T01:07:25.493589622Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $NB_USER:users /home/$NB_USER/.jupyter\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"parent\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"created\":\"2017-04-06T01:07:24.400817115Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8784656ba78be4c5c867ba2b44018e0eec125db9994455b933df02b8de7966a5 in /home/jovyan/.jupyter/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"parent\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"created\":\"2017-04-06T01:07:24.148783529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:645466847c934c1add1678b16957d9cf6d7277b655aac6f2d3b88842dda2b4cf in /usr/local/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"parent\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"created\":\"2017-04-06T01:07:23.88321672Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:6d15c30d4b64efca62be7871e8bc761ea231fd18909afac4ca10f1429fe6872d in /usr/local/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"parent\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"created\":\"2017-04-06T01:07:23.643611201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4cfcf9820ba75a602dcbf6e5ba1c6082122846cbf35faaf4f00ce59c98698330 in /usr/local/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"parent\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"created\":\"2017-04-06T01:07:23.325569157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"start-notebook.sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"parent\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"created\":\"2017-04-06T01:07:23.154917808Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"tini\\\" \\\"--\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"parent\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"created\":\"2017-04-06T01:07:22.987364375Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home/jovyan/work\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"parent\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"created\":\"2017-04-06T01:07:22.810045154Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"parent\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"created\":\"2017-04-06T01:07:22.649702677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"parent\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"created\":\"2017-04-06T01:07:20.898665739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --quiet --yes     'notebook=5.0.*'     'jupyterhub=0.7.*'     'jupyterlab=0.18.*'     \\u0026\\u0026 conda clean -tipsy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"parent\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"created\":\"2017-03-04T02:56:52.172991568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     echo \\\"c59b3dd3cad550ac7596e0d599b91e75d88826db132e4146030ef471bb434e9a *Miniconda3-4.2.12-Linux-x86_64.sh\\\" | sha256sum -c - \\u0026\\u0026     /bin/bash Miniconda3-4.2.12-Linux-x86_64.sh -f -b -p $CONDA_DIR \\u0026\\u0026     rm Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --add channels conda-forge \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --set auto_update_conda false \\u0026\\u0026     conda clean -tipsy\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"parent\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"created\":\"2017-03-04T02:56:34.043061519Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$NB_USER/work \\u0026\\u0026     mkdir /home/$NB_USER/.jupyter \\u0026\\u0026     echo \\\"cacert=/etc/ssl/certs/ca-certificates.crt\\\" \\u003e /home/$NB_USER/.curlrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"parent\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"created\":\"2017-03-04T02:56:33.462903102Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"parent\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"created\":\"2017-03-04T02:56:33.210518443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m -s /bin/bash -N -u $NB_UID $NB_USER \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     chown $NB_USER $CONDA_DIR\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"parent\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"created\":\"2017-03-04T02:56:32.579465034Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANGUAGE=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"parent\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"created\":\"2017-03-04T02:56:32.382697342Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"parent\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"created\":\"2017-03-04T02:56:32.184630798Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"parent\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"created\":\"2017-03-04T02:56:31.977452387Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV HOME=/home/jovyan\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"parent\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"created\":\"2017-03-04T02:56:31.790332936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_UID=1000\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"parent\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"created\":\"2017-03-04T02:56:31.597469191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_USER=jovyan\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"parent\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"created\":\"2017-03-04T02:56:31.363692324Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV SHELL=/bin/bash\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"parent\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"created\":\"2017-03-04T02:56:31.168627191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"parent\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"created\":\"2017-03-04T02:56:30.960826497Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONDA_DIR=/opt/conda\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"parent\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"created\":\"2017-03-04T02:56:30.774470356Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget --quiet https://github.com/krallin/tini/releases/download/v0.10.0/tini \\u0026\\u0026     echo \\\"1361527f39190a7338a0b434bd8c88ff7233ce7b9a4876f3315c22fce7eca1b0 *tini\\\" | sha256sum -c - \\u0026\\u0026     mv tini /usr/local/bin/tini \\u0026\\u0026     chmod +x /usr/local/bin/tini\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"parent\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"created\":\"2017-03-04T02:56:30.030262662Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e /etc/locale.gen \\u0026\\u0026     locale-gen\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"parent\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"created\":\"2017-03-04T02:56:27.544930953Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c REPO=http://cdn-fastly.deb.debian.org  \\u0026\\u0026 echo \\\"deb $REPO/debian jessie main\\\\ndeb $REPO/debian-security jessie/updates main\\\" \\u003e /etc/apt/sources.list  \\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get -yq dist-upgrade  \\u0026\\u0026 apt-get install -yq --no-install-recommends     wget     bzip2     ca-certificates     sudo     locales  \\u0026\\u0026 apt-get clean  \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"parent\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"created\":\"2017-03-04T02:55:43.432393234Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"parent\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"created\":\"2017-03-04T02:55:43.233318012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"parent\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"created\":\"2017-03-04T02:55:43.049348603Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"parent\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:37.813657023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:36.966911578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:64df659db1029ef834c033ffc7c029dc50827e8720352d993133e44c9fac9e2e"
+            },
+            {
+                "blobSum": "sha256:72f6dfda77648791588b66e6594d162efc2b817d8379b036f2bfe8cb6dd12b12"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d61dbef85c7dfcaa0de7e2e221a5b88549f5be6e819609c436e80694cf89699b"
+            },
+            {
+                "blobSum": "sha256:d336770b8a83a8c3b76fb3d8449ba0e7a82b5080cff817f1e721afba4820be69"
+            },
+            {
+                "blobSum": "sha256:055904fbc069100f2cc1071176cbb732a79e8976ddfb8d5def11594b53bbadbf"
+            },
+            {
+                "blobSum": "sha256:e63bd87d75ddf5bea921b03aad03f39d4c3e5557a759fde329bce4b96e44685b"
+            },
+            {
+                "blobSum": "sha256:0057b9e76c8a523a63a6418fdfc9580811083be2a505468a24eaf06348151f9b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:eeda14d1c42137239ad40b8081df1e48df93ce70cc6777edb388e40582cd104d"
+            },
+            {
+                "blobSum": "sha256:c352772bbcfd800bdfb76ce627eb1a18b2cf5e70411ba0f74ea7672ba3d68047"
+            },
+            {
+                "blobSum": "sha256:121dc465f5c667aae08854250881e709b95511d9767551675da33f2801a77501"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b4690d4047c60224d5230518591790ef488f7b77775ce8e4dfe202bf08bca030"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e539f5722cd5086ddd1b5bf2324fe74e9e4f398cc9298b9f9d6f31ac5a7ab8bc"
+            },
+            {
+                "blobSum": "sha256:9cb32b776a4064ce43ac5e6cc5abd317a5dba0fd5a0d842c21e73587b468d804"
+            },
+            {
+                "blobSum": "sha256:a3782c2efb4188af8b56f4001efae6f76b337d21f3c1b58c73d484b1cf1f4b72"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184"
+            }
+        ],
+        "name": "dcal12/python-geospatial",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE5ODY0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDk6NTdaIn0",
+                "signature": "YnBBeS5Bv3sPtNn1tuGBpsKNRB5A6_gfo-t7pp-092v8MFBZbFy8Wo_gkJYF0YTlGrFPj3RTvQtFl0x9JIfjGg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Utb3sahOfqJu7aBnY5xcTocRBVYHtbgoRn-J4k8f4vc",
+                        "kid": "7LSF:N5QK:SS2F:Z4ZS:O3AM:4TQT:RZXF:BY53:BD6Y:4STT:3IZZ:MFPN",
+                        "x": "spr2E2wra1w0t_Yc5zh1fC90fRKNoo2PQMscv4boni0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

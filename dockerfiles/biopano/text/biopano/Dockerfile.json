@@ -1,0 +1,162 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"4c573a7cf4a3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ASSETS_DIR=/opt/biopano/docker\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:768982eca15259acdd6d7ffb2aa1535e862ba3643840f830a845e6288fe33bd9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/smartentry.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"2066cfbefb9d872f06ebd1d7a48d1f13405d85675940cd7d649757ce344fbb31\",\"container_config\":{\"Hostname\":\"4c573a7cf4a3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ASSETS_DIR=/opt/biopano/docker\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"smartentry.sh build\"],\"ArgsEscaped\":true,\"Image\":\"sha256:768982eca15259acdd6d7ffb2aa1535e862ba3643840f830a845e6288fe33bd9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/smartentry.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-08-25T18:38:24.040373759Z\",\"docker_version\":\"1.12.0\",\"id\":\"ae53e88026d6b7a867f580166a99f9e5adb0c1a8b959982d41f33fbec6c3ad67\",\"os\":\"linux\",\"parent\":\"ea12154f04a1f1bf594418a944927700341c86dc4a78178128fe8637e52202bf\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea12154f04a1f1bf594418a944927700341c86dc4a78178128fe8637e52202bf\",\"parent\":\"0f4b2466b424d23ef5dd27c00bd16f23be81228cab9035f7b3d7ca26bbee28ee\",\"created\":\"2016-08-25T18:37:27.924254496Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ASSETS_DIR=/opt/biopano/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0f4b2466b424d23ef5dd27c00bd16f23be81228cab9035f7b3d7ca26bbee28ee\",\"parent\":\"b7146b36226db7c54b985f8152d3461c85ebd86919b5dccc5475ca6f221eb5ca\",\"created\":\"2016-08-25T18:37:27.427634611Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:399ab6bb60f4aae5a8f0f7ac0578bc864738170e7757869bd6459008fc611d0b in /opt/biopano \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b7146b36226db7c54b985f8152d3461c85ebd86919b5dccc5475ca6f221eb5ca\",\"parent\":\"c5f13481eb00907b04943148f70e91cc24241eae92fe0d3c4ae5cffa17a2edc3\",\"created\":\"2016-08-25T18:18:22.43963352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/sbin/smartentry.sh\\\"]\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c5f13481eb00907b04943148f70e91cc24241eae92fe0d3c4ae5cffa17a2edc3\",\"parent\":\"6c20ad60492bf73ec76331e79d69467d42d5f5d88e37e4a2fb06243c3815ee04\",\"created\":\"2016-08-25T18:18:21.943775254Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8862591cf1692c380d3e65c622e473012ec9db75ef33de2bd89b7af5b53e252f in /sbin/smartentry.sh \"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c20ad60492bf73ec76331e79d69467d42d5f5d88e37e4a2fb06243c3815ee04\",\"parent\":\"cbd9326b4af3871c644eef309e83effec112d3702d0919f23d8e574fe1e9fa9b\",\"created\":\"2016-08-25T18:18:21.325509434Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache bash tar\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cbd9326b4af3871c644eef309e83effec112d3702d0919f23d8e574fe1e9fa9b\",\"parent\":\"06984fada6291928690cbe71b01d2606aba12ab2ceee3ee93d9e9e92d233a529\",\"created\":\"2016-08-25T18:18:18.404979085Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ASSETS_DIR=/opt/smartentry/HEAD\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06984fada6291928690cbe71b01d2606aba12ab2ceee3ee93d9e9e92d233a529\",\"parent\":\"9b7301678506516b9a3ccda253d50765a6182c6f0f3098ec1db9265dbf1e1f69\",\"created\":\"2016-08-25T18:18:18.21247488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Yifan Gao \\u003cdocker@yfgao.com\\u003e\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b7301678506516b9a3ccda253d50765a6182c6f0f3098ec1db9265dbf1e1f69\",\"created\":\"2016-06-23T19:55:18.048565927Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:2d1cd9deab739c00fbf1bfba33307ff501b1811f3fab97ab472fc47e1f23258c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2fe2196535c4538f90e8374f695bb2722e4100b2c24b74ecca3dc26cf44175da"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8596f28dbc17eed0acecf640f8928359d1efb8179dbeb284798cd49171ae8854"
+            },
+            {
+                "blobSum": "sha256:58ccdae8b1b63b7e65b609fd3332e553ec08b5a72262ebb8e769538c8f5500ba"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58"
+            }
+        ],
+        "name": "biopano/biopano",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjU4NzEsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDowMVoifQ",
+                "signature": "d1hAFFu-qUR2s58IOVJXaLhJ9NDexrf5kbNaW7Yz10pPhV6CKEXmnUa0PbvjBC4-CxNEIr7ol995D8jvxMYH6g",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "-NNlPrHpudJ8K6ukaQMfwPbkgnxcwJTVd1xNbNHLBXs",
+                        "kid": "JVS5:FLHE:WVYV:CCSG:KI7Y:JKMC:ZS7Z:JBI7:RX7D:T5UV:UIWN:6FNT",
+                        "x": "lBvzgDNIkULNiuDkt8JwYZgCWyRigo35yujUi-XlhpI"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"4c573a7cf4a3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ASSETS_DIR=/opt/biopano/docker\"],\"Cmd\":null,\"ArgsEscaped\":true,\"Image\":\"sha256:768982eca15259acdd6d7ffb2aa1535e862ba3643840f830a845e6288fe33bd9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/smartentry.sh\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"2066cfbefb9d872f06ebd1d7a48d1f13405d85675940cd7d649757ce344fbb31\",\"container_config\":{\"Hostname\":\"4c573a7cf4a3\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ASSETS_DIR=/opt/biopano/docker\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"smartentry.sh build\"],\"ArgsEscaped\":true,\"Image\":\"sha256:768982eca15259acdd6d7ffb2aa1535e862ba3643840f830a845e6288fe33bd9\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/sbin/smartentry.sh\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-08-25T18:38:24.040373759Z\",\"docker_version\":\"1.12.0\",\"id\":\"ae53e88026d6b7a867f580166a99f9e5adb0c1a8b959982d41f33fbec6c3ad67\",\"os\":\"linux\",\"parent\":\"ea12154f04a1f1bf594418a944927700341c86dc4a78178128fe8637e52202bf\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea12154f04a1f1bf594418a944927700341c86dc4a78178128fe8637e52202bf\",\"parent\":\"0f4b2466b424d23ef5dd27c00bd16f23be81228cab9035f7b3d7ca26bbee28ee\",\"created\":\"2016-08-25T18:37:27.924254496Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ASSETS_DIR=/opt/biopano/docker\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0f4b2466b424d23ef5dd27c00bd16f23be81228cab9035f7b3d7ca26bbee28ee\",\"parent\":\"b7146b36226db7c54b985f8152d3461c85ebd86919b5dccc5475ca6f221eb5ca\",\"created\":\"2016-08-25T18:37:27.427634611Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:399ab6bb60f4aae5a8f0f7ac0578bc864738170e7757869bd6459008fc611d0b in /opt/biopano \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b7146b36226db7c54b985f8152d3461c85ebd86919b5dccc5475ca6f221eb5ca\",\"parent\":\"c5f13481eb00907b04943148f70e91cc24241eae92fe0d3c4ae5cffa17a2edc3\",\"created\":\"2016-08-25T18:18:22.43963352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/sbin/smartentry.sh\\\"]\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c5f13481eb00907b04943148f70e91cc24241eae92fe0d3c4ae5cffa17a2edc3\",\"parent\":\"6c20ad60492bf73ec76331e79d69467d42d5f5d88e37e4a2fb06243c3815ee04\",\"created\":\"2016-08-25T18:18:21.943775254Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8862591cf1692c380d3e65c622e473012ec9db75ef33de2bd89b7af5b53e252f in /sbin/smartentry.sh \"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c20ad60492bf73ec76331e79d69467d42d5f5d88e37e4a2fb06243c3815ee04\",\"parent\":\"cbd9326b4af3871c644eef309e83effec112d3702d0919f23d8e574fe1e9fa9b\",\"created\":\"2016-08-25T18:18:21.325509434Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache bash tar\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cbd9326b4af3871c644eef309e83effec112d3702d0919f23d8e574fe1e9fa9b\",\"parent\":\"06984fada6291928690cbe71b01d2606aba12ab2ceee3ee93d9e9e92d233a529\",\"created\":\"2016-08-25T18:18:18.404979085Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ASSETS_DIR=/opt/smartentry/HEAD\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06984fada6291928690cbe71b01d2606aba12ab2ceee3ee93d9e9e92d233a529\",\"parent\":\"9b7301678506516b9a3ccda253d50765a6182c6f0f3098ec1db9265dbf1e1f69\",\"created\":\"2016-08-25T18:18:18.21247488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Yifan Gao \\u003cdocker@yfgao.com\\u003e\"]},\"author\":\"Yifan Gao \\u003cdocker@yfgao.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b7301678506516b9a3ccda253d50765a6182c6f0f3098ec1db9265dbf1e1f69\",\"created\":\"2016-06-23T19:55:18.048565927Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:852e9d0cb9d906535af512a89339fc70b2873a0f94defbcbe41cd44942dd6ac8 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:2d1cd9deab739c00fbf1bfba33307ff501b1811f3fab97ab472fc47e1f23258c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2fe2196535c4538f90e8374f695bb2722e4100b2c24b74ecca3dc26cf44175da"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8596f28dbc17eed0acecf640f8928359d1efb8179dbeb284798cd49171ae8854"
+            },
+            {
+                "blobSum": "sha256:58ccdae8b1b63b7e65b609fd3332e553ec08b5a72262ebb8e769538c8f5500ba"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e110a4a1794126ef308a49f2d65785af2f25538f06700721aad8283b81fdfa58"
+            }
+        ],
+        "name": "biopano/biopano",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjU4NzEsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDowMloifQ",
+                "signature": "tbO6YqnWcQSgS_8SqFSmpDu6QHFg9th_QVnFXTx_B0E1ffouMAzB5F9CEa27a4Tao8bDMjyAxhnOGbOwbkZWsg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

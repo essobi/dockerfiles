@@ -1,0 +1,450 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"config\":{\"Hostname\":\"33842653d6db\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.13\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"python2\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8604d24bd8558344c1c25f495e29723079c8295bb44664318412c8883759d828\",\"Volumes\":null,\"WorkingDir\":\"/\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"189b39f1d6614411b563d917c67bb965fd938315467fcc79f56fe229ce4ec006\",\"container_config\":{\"Hostname\":\"33842653d6db\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.13\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"chmod 777 -R /.cache/bioservices\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8604d24bd8558344c1c25f495e29723079c8295bb44664318412c8883759d828\",\"Volumes\":null,\"WorkingDir\":\"/\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-27T20:32:05.018075073Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"a3dbc431f922da753cb6e75ca1e49f2953c945f62e464dcbcdd001d9ecdf9d0f\",\"os\":\"linux\",\"parent\":\"0d1c971c1a4978e57434dad64e1e1e1d4dfe9ea0c197eb3339f71db7caa1de5c\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0d1c971c1a4978e57434dad64e1e1e1d4dfe9ea0c197eb3339f71db7caa1de5c\",\"parent\":\"946b1d249debf17c2ac7c5d462dc38316e8aef791da576f52f8c6fdc2617d410\",\"created\":\"2017-01-27T20:31:59.562582375Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod 777 -R /.config/bioservices\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"946b1d249debf17c2ac7c5d462dc38316e8aef791da576f52f8c6fdc2617d410\",\"parent\":\"78686981d19810b0b8417451db36494202fc4c11eab1e0316f55f64056ab8c6e\",\"created\":\"2017-01-27T20:31:53.2459954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78686981d19810b0b8417451db36494202fc4c11eab1e0316f55f64056ab8c6e\",\"parent\":\"088cba6eccbcd835a28099717dcdda6938ca78e39a247199217d69a4e65fb8c8\",\"created\":\"2017-01-27T20:31:48.104118029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir bioservices\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"088cba6eccbcd835a28099717dcdda6938ca78e39a247199217d69a4e65fb8c8\",\"parent\":\"df342ddd763b4ebec8936c22286977100d73cc74fadbe0f5c9233565f89ff5af\",\"created\":\"2017-01-27T20:31:41.616464208Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /.cache\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df342ddd763b4ebec8936c22286977100d73cc74fadbe0f5c9233565f89ff5af\",\"parent\":\"9cadeb2b7add67585773dbd4152372631a5c02bbcacff189be389d97236bc8ac\",\"created\":\"2017-01-27T20:31:36.263616286Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir bioservices\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9cadeb2b7add67585773dbd4152372631a5c02bbcacff189be389d97236bc8ac\",\"parent\":\"dadca2e214cc1197a2956f873840d4ab87a97c4d737116c96a2361a655c431f3\",\"created\":\"2017-01-27T20:31:29.819395143Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /.config\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dadca2e214cc1197a2956f873840d4ab87a97c4d737116c96a2361a655c431f3\",\"parent\":\"2f57dd781a0b317b9ac4c2d9e1a524f2c23b520aa7385c7709e5b8dcec8818a1\",\"created\":\"2017-01-27T20:31:24.521516161Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir .cache\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2f57dd781a0b317b9ac4c2d9e1a524f2c23b520aa7385c7709e5b8dcec8818a1\",\"parent\":\"025d3a890cc45da207e2f30811fe5339b89bcceac0c0652c0256de6355526194\",\"created\":\"2017-01-27T20:31:18.981531017Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir .config\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"025d3a890cc45da207e2f30811fe5339b89bcceac0c0652c0256de6355526194\",\"parent\":\"8765bfb592ce3c27d2b9bf1ec9bf4df9b52c87fac0627b940883e92dcd767d7c\",\"created\":\"2017-01-27T20:31:12.545142087Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8765bfb592ce3c27d2b9bf1ec9bf4df9b52c87fac0627b940883e92dcd767d7c\",\"parent\":\"27d9cbeba7485f168571d358aea0518ac768d6892d591e2f6ed6f1a7b3507a75\",\"created\":\"2017-01-27T20:31:07.398793912Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install bioservices==1.4.15\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27d9cbeba7485f168571d358aea0518ac768d6892d591e2f6ed6f1a7b3507a75\",\"parent\":\"7d49c11d6c47ce1b9d597f1122d20f9011be93141104bbcdce07e11566d192b3\",\"created\":\"2017-01-27T20:30:39.377642385Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pandas\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d49c11d6c47ce1b9d597f1122d20f9011be93141104bbcdce07e11566d192b3\",\"parent\":\"64bf8fd1f703bbd364e3819e5cf74b2ab6f9539fb791fe992181ef62937ab155\",\"created\":\"2017-01-27T20:30:09.452176771Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install line_profiler\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64bf8fd1f703bbd364e3819e5cf74b2ab6f9539fb791fe992181ef62937ab155\",\"parent\":\"71948d3427a8b58197a8b2960f30f1fe12d54b5d4c1739a4c3b1cadac8cc86aa\",\"created\":\"2017-01-27T20:29:47.430815413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install httplib2\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"71948d3427a8b58197a8b2960f30f1fe12d54b5d4c1739a4c3b1cadac8cc86aa\",\"parent\":\"14eb83084d95be203d51755ac65d549f6000ce0adab318bf530880e4af57c1b9\",\"created\":\"2017-01-27T20:29:40.120120026Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade pip\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"14eb83084d95be203d51755ac65d549f6000ce0adab318bf530880e4af57c1b9\",\"parent\":\"6ba7c5ece29614dc28791c5b45e8092c05a966dba3411000e2721aca56e93afe\",\"created\":\"2017-01-27T20:29:34.561314839Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes  python-pip\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6ba7c5ece29614dc28791c5b45e8092c05a966dba3411000e2721aca56e93afe\",\"parent\":\"74d3b88409975915a0a9d08e95a9dd5a85b9692475e92527689c7dc95c842a6a\",\"created\":\"2017-01-27T20:29:15.813801767Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes  build-essential  gcc-multilib  apt-utils\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"74d3b88409975915a0a9d08e95a9dd5a85b9692475e92527689c7dc95c842a6a\",\"parent\":\"7bb91d89b08d5c595ab956dae29c7943fc3ee8a234763f17476ff18aa74bacc6\",\"created\":\"2017-01-27T20:28:53.919931306Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7bb91d89b08d5c595ab956dae29c7943fc3ee8a234763f17476ff18aa74bacc6\",\"parent\":\"a0b8db617ba7be8087f0f90ab42067f54c1af481732a1a204d34ee681916abd3\",\"created\":\"2017-01-27T20:28:40.445137729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0b8db617ba7be8087f0f90ab42067f54c1af481732a1a204d34ee681916abd3\",\"parent\":\"25c882e5e93a27940aab79afd67b40cdebe6808aff3f2eb49142f46de4d7c32c\",\"created\":\"2017-01-18T02:36:29.907806597Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python2\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25c882e5e93a27940aab79afd67b40cdebe6808aff3f2eb49142f46de4d7c32c\",\"parent\":\"f546adee32c933387df3e0f18edfe07abbda6c1749d1a080a13bcf9136c3528d\",\"created\":\"2017-01-18T02:36:29.385569218Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --no-cache-dir virtualenv\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f546adee32c933387df3e0f18edfe07abbda6c1749d1a080a13bcf9136c3528d\",\"parent\":\"b9deb90c466503d1912051c098c3e51cac7b15052ba7d8e8ff0e7b7a8d2f7708\",\"created\":\"2017-01-18T02:36:26.30950321Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\ttcl-dev \\t\\ttk-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure \\t\\t--enable-shared \\t\\t--enable-unicode=ucs4 \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\t\\t\\u0026\\u0026 wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \\t\\t\\u0026\\u0026 python2 /tmp/get-pip.py \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\t\\u0026\\u0026 rm /tmp/get-pip.py \\t\\u0026\\u0026 pip install --no-cache-dir --upgrade --force-reinstall \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\u0026\\u0026 [ \\\"$(pip list |tac|tac| awk -F '[ ()]+' '$1 == \\\"pip\\\" { print $2; exit }')\\\" = \\\"$PYTHON_PIP_VERSION\\\" ] \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python ~/.cache\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b9deb90c466503d1912051c098c3e51cac7b15052ba7d8e8ff0e7b7a8d2f7708\",\"parent\":\"b7ca0bedace0c6652d991a98850b3b27a22596407f431bdd1550ef2b0e5b9789\",\"created\":\"2017-01-18T02:33:57.036698576Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b7ca0bedace0c6652d991a98850b3b27a22596407f431bdd1550ef2b0e5b9789\",\"parent\":\"c38c65a6e6854ebce2790a93be36608e01d687e8b9e28021582b990a745920ac\",\"created\":\"2017-01-18T02:33:56.571682783Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=2.7.13\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c38c65a6e6854ebce2790a93be36608e01d687e8b9e28021582b990a745920ac\",\"parent\":\"91415c4160c439f91841a7a465978e6fb596d6acea93eafef2fb29edeebe4540\",\"created\":\"2017-01-18T02:33:56.127741465Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91415c4160c439f91841a7a465978e6fb596d6acea93eafef2fb29edeebe4540\",\"parent\":\"b586c3941a45ae52ff6c974ac38708e290ce7fd90d26287843cdfbed448bc5ed\",\"created\":\"2017-01-18T02:33:55.641958411Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\ttcl \\t\\ttk \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b586c3941a45ae52ff6c974ac38708e290ce7fd90d26287843cdfbed448bc5ed\",\"parent\":\"f288149c6dcf7825ae195b31a00e8c9011da23f050c2f00515c40a6262e3cee1\",\"created\":\"2017-01-18T02:33:43.495788457Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f288149c6dcf7825ae195b31a00e8c9011da23f050c2f00515c40a6262e3cee1\",\"parent\":\"468bc8069de79c6f25ebc6ca333f8d35a1ddf482d9658b9fd8d39ed1b89380fa\",\"created\":\"2017-01-18T02:33:43.047783601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"468bc8069de79c6f25ebc6ca333f8d35a1ddf482d9658b9fd8d39ed1b89380fa\",\"parent\":\"ea75de9256e423beea20d38d3ffe1d4afb25f03055720f514fbfc15ba7241b68\",\"created\":\"2017-01-17T00:04:35.458857637Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea75de9256e423beea20d38d3ffe1d4afb25f03055720f514fbfc15ba7241b68\",\"parent\":\"b171076e9dd9df5470c916caa7131618b46be099475db3dd591206fef547347b\",\"created\":\"2017-01-17T00:01:07.867997465Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b171076e9dd9df5470c916caa7131618b46be099475db3dd591206fef547347b\",\"parent\":\"5b1f17435ed5d6c71adef4016677f402be82723a3390707c92ace162883fe783\",\"created\":\"2017-01-17T00:00:45.363077258Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5b1f17435ed5d6c71adef4016677f402be82723a3390707c92ace162883fe783\",\"parent\":\"a29f2b1e7978a354c3dc2207d0b39bc60146caef1bd2cd3f48f7ced2eef956d2\",\"created\":\"2017-01-16T20:35:16.587175871Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a29f2b1e7978a354c3dc2207d0b39bc60146caef1bd2cd3f48f7ced2eef956d2\",\"created\":\"2017-01-16T20:35:09.371844927Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:e191751ed9200e2c5d75bf8d6c5e03b881aefa4ef600b64fd798ad181e8ba3d6"
+            },
+            {
+                "blobSum": "sha256:9f81157aa437e28cd80da93a139847b15b79c856dee758d01d04333249743939"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b3ac6b02bbff623c1e32bfc8362972aae8a5a170a284143acd2904dd6cbaaafc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5a6aa293f68ca51d0cebf577a21bc327bc04c2f96da9ad758115519527949e99"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:aae17e6a9364e27c151627ef65762892bac99feb6987d77b2675163c49c9d6b6"
+            },
+            {
+                "blobSum": "sha256:0f52c20474d76a65d03502ec6c625cc50b83486515124a57afb2bf30dfaf7aac"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c94a4556b4978b329a5ab321293ac36a80a040f97d746ff281e3632099403b13"
+            },
+            {
+                "blobSum": "sha256:9b65060a6360a2041e68d7aa61b0a950abfb6de33eb9ed5392ec6926717d0329"
+            },
+            {
+                "blobSum": "sha256:518cc949d4b4e510e5c3765c364ca6969672f464e27dcc0f65aa06e4cbe76701"
+            },
+            {
+                "blobSum": "sha256:65cccab1868e024184c713cab4bc56b7f55bf3cefde829f3285700a36fca66f8"
+            },
+            {
+                "blobSum": "sha256:3267f66bf7de7408a8f5b66d4d40013872568904f06052900d27a373ec0cbe25"
+            },
+            {
+                "blobSum": "sha256:2d829d5a3efdac038621c7ab6e91e046b89823331ed3e4df03fea2aea968515a"
+            },
+            {
+                "blobSum": "sha256:e82cc20b14def9f22ebdc46c518ab0f3c392e61a1640902d3c7fda715e03fc5f"
+            },
+            {
+                "blobSum": "sha256:a8f0cbd28197381dca5ab771a075b3d495a0cf96a6dd49e0f54a966cefb4b168"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:60be9e3982907262f0dacafdc0502d0c01c5f86d0e36284a0998c5e46e75116d"
+            },
+            {
+                "blobSum": "sha256:68e2fc935c9fdd852b153c297aa68fbd4caf27ba84e6ad32142ec9f71822ce99"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:45b2a7e03e44b5ea7fad081537134c9cc725bddf94f9093b00e1fa8d8ebbcda1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:52f3db4b5710849a53bc2eea0b6f0895c494d751c38c597404d805da82b3f37c"
+            },
+            {
+                "blobSum": "sha256:76610ec20bf5892e24cebd4153c7668284aa1d1151b7c3b0c7d50c579aa5ce75"
+            },
+            {
+                "blobSum": "sha256:fce5728aad85a763fe3c419db16885eb6f7a670a42824ea618414b8fb309ccde"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d"
+            }
+        ],
+        "name": "genomicpariscentre/bioservices",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIwNzQ5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDg6MzVaIn0",
+                "signature": "ybxbbGdhdJD5BwruMPp43m5-QuqWC_hgdLF-AkEeRsivkBNR1WsL3DMyMbbmotnBkrh_VH-y_fjDpRC2yQJUnA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"config\":{\"Hostname\":\"33842653d6db\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.13\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"python2\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8604d24bd8558344c1c25f495e29723079c8295bb44664318412c8883759d828\",\"Volumes\":null,\"WorkingDir\":\"/\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"189b39f1d6614411b563d917c67bb965fd938315467fcc79f56fe229ce4ec006\",\"container_config\":{\"Hostname\":\"33842653d6db\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.13\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"chmod 777 -R /.cache/bioservices\"],\"ArgsEscaped\":true,\"Image\":\"sha256:8604d24bd8558344c1c25f495e29723079c8295bb44664318412c8883759d828\",\"Volumes\":null,\"WorkingDir\":\"/\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-01-27T20:32:05.018075073Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"a3dbc431f922da753cb6e75ca1e49f2953c945f62e464dcbcdd001d9ecdf9d0f\",\"os\":\"linux\",\"parent\":\"0d1c971c1a4978e57434dad64e1e1e1d4dfe9ea0c197eb3339f71db7caa1de5c\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0d1c971c1a4978e57434dad64e1e1e1d4dfe9ea0c197eb3339f71db7caa1de5c\",\"parent\":\"946b1d249debf17c2ac7c5d462dc38316e8aef791da576f52f8c6fdc2617d410\",\"created\":\"2017-01-27T20:31:59.562582375Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod 777 -R /.config/bioservices\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"946b1d249debf17c2ac7c5d462dc38316e8aef791da576f52f8c6fdc2617d410\",\"parent\":\"78686981d19810b0b8417451db36494202fc4c11eab1e0316f55f64056ab8c6e\",\"created\":\"2017-01-27T20:31:53.2459954Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78686981d19810b0b8417451db36494202fc4c11eab1e0316f55f64056ab8c6e\",\"parent\":\"088cba6eccbcd835a28099717dcdda6938ca78e39a247199217d69a4e65fb8c8\",\"created\":\"2017-01-27T20:31:48.104118029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir bioservices\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"088cba6eccbcd835a28099717dcdda6938ca78e39a247199217d69a4e65fb8c8\",\"parent\":\"df342ddd763b4ebec8936c22286977100d73cc74fadbe0f5c9233565f89ff5af\",\"created\":\"2017-01-27T20:31:41.616464208Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /.cache\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df342ddd763b4ebec8936c22286977100d73cc74fadbe0f5c9233565f89ff5af\",\"parent\":\"9cadeb2b7add67585773dbd4152372631a5c02bbcacff189be389d97236bc8ac\",\"created\":\"2017-01-27T20:31:36.263616286Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir bioservices\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9cadeb2b7add67585773dbd4152372631a5c02bbcacff189be389d97236bc8ac\",\"parent\":\"dadca2e214cc1197a2956f873840d4ab87a97c4d737116c96a2361a655c431f3\",\"created\":\"2017-01-27T20:31:29.819395143Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /.config\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dadca2e214cc1197a2956f873840d4ab87a97c4d737116c96a2361a655c431f3\",\"parent\":\"2f57dd781a0b317b9ac4c2d9e1a524f2c23b520aa7385c7709e5b8dcec8818a1\",\"created\":\"2017-01-27T20:31:24.521516161Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir .cache\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2f57dd781a0b317b9ac4c2d9e1a524f2c23b520aa7385c7709e5b8dcec8818a1\",\"parent\":\"025d3a890cc45da207e2f30811fe5339b89bcceac0c0652c0256de6355526194\",\"created\":\"2017-01-27T20:31:18.981531017Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir .config\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"025d3a890cc45da207e2f30811fe5339b89bcceac0c0652c0256de6355526194\",\"parent\":\"8765bfb592ce3c27d2b9bf1ec9bf4df9b52c87fac0627b940883e92dcd767d7c\",\"created\":\"2017-01-27T20:31:12.545142087Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8765bfb592ce3c27d2b9bf1ec9bf4df9b52c87fac0627b940883e92dcd767d7c\",\"parent\":\"27d9cbeba7485f168571d358aea0518ac768d6892d591e2f6ed6f1a7b3507a75\",\"created\":\"2017-01-27T20:31:07.398793912Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install bioservices==1.4.15\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27d9cbeba7485f168571d358aea0518ac768d6892d591e2f6ed6f1a7b3507a75\",\"parent\":\"7d49c11d6c47ce1b9d597f1122d20f9011be93141104bbcdce07e11566d192b3\",\"created\":\"2017-01-27T20:30:39.377642385Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pandas\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d49c11d6c47ce1b9d597f1122d20f9011be93141104bbcdce07e11566d192b3\",\"parent\":\"64bf8fd1f703bbd364e3819e5cf74b2ab6f9539fb791fe992181ef62937ab155\",\"created\":\"2017-01-27T20:30:09.452176771Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install line_profiler\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64bf8fd1f703bbd364e3819e5cf74b2ab6f9539fb791fe992181ef62937ab155\",\"parent\":\"71948d3427a8b58197a8b2960f30f1fe12d54b5d4c1739a4c3b1cadac8cc86aa\",\"created\":\"2017-01-27T20:29:47.430815413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install httplib2\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"71948d3427a8b58197a8b2960f30f1fe12d54b5d4c1739a4c3b1cadac8cc86aa\",\"parent\":\"14eb83084d95be203d51755ac65d549f6000ce0adab318bf530880e4af57c1b9\",\"created\":\"2017-01-27T20:29:40.120120026Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade pip\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"14eb83084d95be203d51755ac65d549f6000ce0adab318bf530880e4af57c1b9\",\"parent\":\"6ba7c5ece29614dc28791c5b45e8092c05a966dba3411000e2721aca56e93afe\",\"created\":\"2017-01-27T20:29:34.561314839Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes  python-pip\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6ba7c5ece29614dc28791c5b45e8092c05a966dba3411000e2721aca56e93afe\",\"parent\":\"74d3b88409975915a0a9d08e95a9dd5a85b9692475e92527689c7dc95c842a6a\",\"created\":\"2017-01-27T20:29:15.813801767Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes  build-essential  gcc-multilib  apt-utils\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"74d3b88409975915a0a9d08e95a9dd5a85b9692475e92527689c7dc95c842a6a\",\"parent\":\"7bb91d89b08d5c595ab956dae29c7943fc3ee8a234763f17476ff18aa74bacc6\",\"created\":\"2017-01-27T20:28:53.919931306Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7bb91d89b08d5c595ab956dae29c7943fc3ee8a234763f17476ff18aa74bacc6\",\"parent\":\"a0b8db617ba7be8087f0f90ab42067f54c1af481732a1a204d34ee681916abd3\",\"created\":\"2017-01-27T20:28:40.445137729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\"]},\"author\":\"Sophie Lemoine \\u003cslemoine@biologie.ens.fr\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0b8db617ba7be8087f0f90ab42067f54c1af481732a1a204d34ee681916abd3\",\"parent\":\"25c882e5e93a27940aab79afd67b40cdebe6808aff3f2eb49142f46de4d7c32c\",\"created\":\"2017-01-18T02:36:29.907806597Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python2\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25c882e5e93a27940aab79afd67b40cdebe6808aff3f2eb49142f46de4d7c32c\",\"parent\":\"f546adee32c933387df3e0f18edfe07abbda6c1749d1a080a13bcf9136c3528d\",\"created\":\"2017-01-18T02:36:29.385569218Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --no-cache-dir virtualenv\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f546adee32c933387df3e0f18edfe07abbda6c1749d1a080a13bcf9136c3528d\",\"parent\":\"b9deb90c466503d1912051c098c3e51cac7b15052ba7d8e8ff0e7b7a8d2f7708\",\"created\":\"2017-01-18T02:36:26.30950321Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\ttcl-dev \\t\\ttk-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure \\t\\t--enable-shared \\t\\t--enable-unicode=ucs4 \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\t\\t\\u0026\\u0026 wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \\t\\t\\u0026\\u0026 python2 /tmp/get-pip.py \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\t\\u0026\\u0026 rm /tmp/get-pip.py \\t\\u0026\\u0026 pip install --no-cache-dir --upgrade --force-reinstall \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\u0026\\u0026 [ \\\"$(pip list |tac|tac| awk -F '[ ()]+' '$1 == \\\"pip\\\" { print $2; exit }')\\\" = \\\"$PYTHON_PIP_VERSION\\\" ] \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python ~/.cache\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b9deb90c466503d1912051c098c3e51cac7b15052ba7d8e8ff0e7b7a8d2f7708\",\"parent\":\"b7ca0bedace0c6652d991a98850b3b27a22596407f431bdd1550ef2b0e5b9789\",\"created\":\"2017-01-18T02:33:57.036698576Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b7ca0bedace0c6652d991a98850b3b27a22596407f431bdd1550ef2b0e5b9789\",\"parent\":\"c38c65a6e6854ebce2790a93be36608e01d687e8b9e28021582b990a745920ac\",\"created\":\"2017-01-18T02:33:56.571682783Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=2.7.13\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c38c65a6e6854ebce2790a93be36608e01d687e8b9e28021582b990a745920ac\",\"parent\":\"91415c4160c439f91841a7a465978e6fb596d6acea93eafef2fb29edeebe4540\",\"created\":\"2017-01-18T02:33:56.127741465Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91415c4160c439f91841a7a465978e6fb596d6acea93eafef2fb29edeebe4540\",\"parent\":\"b586c3941a45ae52ff6c974ac38708e290ce7fd90d26287843cdfbed448bc5ed\",\"created\":\"2017-01-18T02:33:55.641958411Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\ttcl \\t\\ttk \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b586c3941a45ae52ff6c974ac38708e290ce7fd90d26287843cdfbed448bc5ed\",\"parent\":\"f288149c6dcf7825ae195b31a00e8c9011da23f050c2f00515c40a6262e3cee1\",\"created\":\"2017-01-18T02:33:43.495788457Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f288149c6dcf7825ae195b31a00e8c9011da23f050c2f00515c40a6262e3cee1\",\"parent\":\"468bc8069de79c6f25ebc6ca333f8d35a1ddf482d9658b9fd8d39ed1b89380fa\",\"created\":\"2017-01-18T02:33:43.047783601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"468bc8069de79c6f25ebc6ca333f8d35a1ddf482d9658b9fd8d39ed1b89380fa\",\"parent\":\"ea75de9256e423beea20d38d3ffe1d4afb25f03055720f514fbfc15ba7241b68\",\"created\":\"2017-01-17T00:04:35.458857637Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibmysqlclient-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea75de9256e423beea20d38d3ffe1d4afb25f03055720f514fbfc15ba7241b68\",\"parent\":\"b171076e9dd9df5470c916caa7131618b46be099475db3dd591206fef547347b\",\"created\":\"2017-01-17T00:01:07.867997465Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b171076e9dd9df5470c916caa7131618b46be099475db3dd591206fef547347b\",\"parent\":\"5b1f17435ed5d6c71adef4016677f402be82723a3390707c92ace162883fe783\",\"created\":\"2017-01-17T00:00:45.363077258Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5b1f17435ed5d6c71adef4016677f402be82723a3390707c92ace162883fe783\",\"parent\":\"a29f2b1e7978a354c3dc2207d0b39bc60146caef1bd2cd3f48f7ced2eef956d2\",\"created\":\"2017-01-16T20:35:16.587175871Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a29f2b1e7978a354c3dc2207d0b39bc60146caef1bd2cd3f48f7ced2eef956d2\",\"created\":\"2017-01-16T20:35:09.371844927Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:89ecb642d662ee7edbb868340551106d51336c7e589fdaca4111725ec64da957 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:e191751ed9200e2c5d75bf8d6c5e03b881aefa4ef600b64fd798ad181e8ba3d6"
+            },
+            {
+                "blobSum": "sha256:9f81157aa437e28cd80da93a139847b15b79c856dee758d01d04333249743939"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b3ac6b02bbff623c1e32bfc8362972aae8a5a170a284143acd2904dd6cbaaafc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5a6aa293f68ca51d0cebf577a21bc327bc04c2f96da9ad758115519527949e99"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:aae17e6a9364e27c151627ef65762892bac99feb6987d77b2675163c49c9d6b6"
+            },
+            {
+                "blobSum": "sha256:0f52c20474d76a65d03502ec6c625cc50b83486515124a57afb2bf30dfaf7aac"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c94a4556b4978b329a5ab321293ac36a80a040f97d746ff281e3632099403b13"
+            },
+            {
+                "blobSum": "sha256:9b65060a6360a2041e68d7aa61b0a950abfb6de33eb9ed5392ec6926717d0329"
+            },
+            {
+                "blobSum": "sha256:518cc949d4b4e510e5c3765c364ca6969672f464e27dcc0f65aa06e4cbe76701"
+            },
+            {
+                "blobSum": "sha256:65cccab1868e024184c713cab4bc56b7f55bf3cefde829f3285700a36fca66f8"
+            },
+            {
+                "blobSum": "sha256:3267f66bf7de7408a8f5b66d4d40013872568904f06052900d27a373ec0cbe25"
+            },
+            {
+                "blobSum": "sha256:2d829d5a3efdac038621c7ab6e91e046b89823331ed3e4df03fea2aea968515a"
+            },
+            {
+                "blobSum": "sha256:e82cc20b14def9f22ebdc46c518ab0f3c392e61a1640902d3c7fda715e03fc5f"
+            },
+            {
+                "blobSum": "sha256:a8f0cbd28197381dca5ab771a075b3d495a0cf96a6dd49e0f54a966cefb4b168"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:60be9e3982907262f0dacafdc0502d0c01c5f86d0e36284a0998c5e46e75116d"
+            },
+            {
+                "blobSum": "sha256:68e2fc935c9fdd852b153c297aa68fbd4caf27ba84e6ad32142ec9f71822ce99"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:45b2a7e03e44b5ea7fad081537134c9cc725bddf94f9093b00e1fa8d8ebbcda1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:52f3db4b5710849a53bc2eea0b6f0895c494d751c38c597404d805da82b3f37c"
+            },
+            {
+                "blobSum": "sha256:76610ec20bf5892e24cebd4153c7668284aa1d1151b7c3b0c7d50c579aa5ce75"
+            },
+            {
+                "blobSum": "sha256:fce5728aad85a763fe3c419db16885eb6f7a670a42824ea618414b8fb309ccde"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5040bd2983909aa8896b9932438c3f1479d25ae837a5f6220242a264d0221f2d"
+            }
+        ],
+        "name": "genomicpariscentre/bioservices",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIwNzQ5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDg6MzVaIn0",
+                "signature": "57BEpb4V4stUqQmm7VcBymnSlSGnH3yFc-bF0MB6y39yigdD5_eWSOFk41yg71Z6NxbSofsY-SWqC8uTVfRceQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "IikXGu4CqzHuHQ-1DFJ5AGxrqOTgiGCF7z8cfwicW40",
+                        "kid": "A5FE:OM5P:MTXA:FXMG:KSP2:V2HH:OII7:XSSA:P5PG:AOD2:EGA4:OIGK",
+                        "x": "4pZJGM5lV6SEQPB7ujPU7fEdmnFNE4t3xrQhIsKxXp0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,330 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"service apache2 start; while true; do sleep 60; done\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b27154350f9f0c4af508efa6514ea61241c153ca75a6e7a4728565ea98538d1d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"7e715d53c5291c621604ab85aa75f347d52cce9a1aae0f3a5fe93e9960e5183b\",\"container_config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"service apache2 start; while true; do sleep 60; done\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b27154350f9f0c4af508efa6514ea61241c153ca75a6e7a4728565ea98538d1d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-29T11:22:17.105403244Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"0248199dab69bf5739d4e94276aff87303d09bd9fd7a3996d32a5c4e6f8e0ee4\",\"os\":\"linux\",\"parent\":\"c81e26ce21107c0445d2a7b2ad32fad11dc669cea6e9f3f3e1bf460c257d799b\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c81e26ce21107c0445d2a7b2ad32fad11dc669cea6e9f3f3e1bf460c257d799b\",\"parent\":\"0e41102a70d5282c6d83be3afc617853f90cbe8a208b8197d9a1d93340edc12b\",\"created\":\"2017-03-29T11:22:08.085184712Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:78518f9585f56cf24c7cdb8373a26b51dd19c37e34467c367d864fa5cd700ceb in /etc/php/7.0/apache2/php.ini \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e41102a70d5282c6d83be3afc617853f90cbe8a208b8197d9a1d93340edc12b\",\"parent\":\"4845533ac69555a9a430657b107312a3777a8faac0c6b3371d29d41f8aaf775d\",\"created\":\"2017-03-29T11:21:59.058671638Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /var/www/html \\u0026\\u0026 bower install --allow-root\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4845533ac69555a9a430657b107312a3777a8faac0c6b3371d29d41f8aaf775d\",\"parent\":\"22b90ddaecac14d6bc6052ad2d0735bec334ce590ce15b4a7913075f94e3711a\",\"created\":\"2017-03-29T11:21:41.817129697Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /var/www/html \\u0026\\u0026 composer install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"22b90ddaecac14d6bc6052ad2d0735bec334ce590ce15b4a7913075f94e3711a\",\"parent\":\"30b923a4e2c2b4a7f7d4f61299a9a06ac636deb0ef777f9e9c831887be4b8454\",\"created\":\"2017-03-29T11:21:17.23488918Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /var/www/html \\u0026\\u0026 conda install --yes --file explicit-conda-spec.txt\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"30b923a4e2c2b4a7f7d4f61299a9a06ac636deb0ef777f9e9c831887be4b8454\",\"parent\":\"dc990fb80c7d7c65deecf669257931577f8f84a5ffc347adabe81a6a36322f0b\",\"created\":\"2017-03-29T11:19:00.095613518Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/molbiodiv/biom-conversion-server.git /var/www/html\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dc990fb80c7d7c65deecf669257931577f8f84a5ffc347adabe81a6a36322f0b\",\"parent\":\"5b451a07fdf860e726b50835876d04ae74d388233dec8c12e5c3ed426b3e490f\",\"created\":\"2017-03-29T11:18:52.895310755Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export LANG=C.UTF-8\\\" \\u003e\\u003e/etc/apache2/envvars\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5b451a07fdf860e726b50835876d04ae74d388233dec8c12e5c3ed426b3e490f\",\"parent\":\"1c73c6217a1b0c302ecff194ed6b75c34e1b07e52a9aafa136c7f275c8648c0c\",\"created\":\"2017-03-29T11:18:45.933325344Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export LC_ALL=C.UTF-8\\\" \\u003e\\u003e/etc/apache2/envvars\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c73c6217a1b0c302ecff194ed6b75c34e1b07e52a9aafa136c7f275c8648c0c\",\"parent\":\"ac17c398d0844c4d09ba98bf476f758a6da3c7ea33a14c3d77646e2df387ba28\",\"created\":\"2017-03-29T11:18:38.761945072Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./miniconda.sh -b -f -p /usr/local\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ac17c398d0844c4d09ba98bf476f758a6da3c7ea33a14c3d77646e2df387ba28\",\"parent\":\"410a9fbe6ec07b133e4c46504a262f9300ff2a26298469b7f100706f9ad1f67e\",\"created\":\"2017-03-29T11:18:14.435520842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x miniconda.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"410a9fbe6ec07b133e4c46504a262f9300ff2a26298469b7f100706f9ad1f67e\",\"parent\":\"0e847d075415c4f94f6f7c4a29112650f404ef870272913c0fd2b1e5819e23ff\",\"created\":\"2017-03-29T11:18:07.655007281Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sS https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \\u003eminiconda.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e847d075415c4f94f6f7c4a29112650f404ef870272913c0fd2b1e5819e23ff\",\"parent\":\"39f8d1a5c447aecfc2b363a8dee73b9dc3bceeb44b9cf75c3f985fefd471527c\",\"created\":\"2017-03-29T11:18:00.12514492Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export TERM=xterm\\\" \\u003e\\u003e/root/.bashrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39f8d1a5c447aecfc2b363a8dee73b9dc3bceeb44b9cf75c3f985fefd471527c\",\"parent\":\"d6563f960c1ba1896b7e438615f21847627c54e1953d485b6ab41987647e5a3c\",\"created\":\"2017-03-29T11:17:54.446595984Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/www/html\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d6563f960c1ba1896b7e438615f21847627c54e1953d485b6ab41987647e5a3c\",\"parent\":\"9b74003f844668eff8d8d31ccc4ca9d4221e0d27e7eee693ace87fa589bb406b\",\"created\":\"2017-03-29T11:17:48.688236469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c npm install -g bower\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b74003f844668eff8d8d31ccc4ca9d4221e0d27e7eee693ace87fa589bb406b\",\"parent\":\"8ab4d71a88970908e1f0b74e1430590e750d326216e00b36a7211eb906dc5313\",\"created\":\"2017-03-29T11:17:26.241061653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ln -s /usr/bin/nodejs /usr/bin/node\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ab4d71a88970908e1f0b74e1430590e750d326216e00b36a7211eb906dc5313\",\"parent\":\"779e341df23d2566fac2876e684e0634b4bc4f3d2e20c1015c0df26f25606bf1\",\"created\":\"2017-03-29T11:17:21.635793536Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"779e341df23d2566fac2876e684e0634b4bc4f3d2e20c1015c0df26f25606bf1\",\"parent\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"created\":\"2017-03-29T11:17:13.457353144Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get --assume-yes install     apache2     git     php     curl     php-dev     php-curl     libapache2-mod-php     zip     nodejs     npm\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"parent\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"created\":\"2017-02-27T19:42:10.522384312Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"parent\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"created\":\"2017-02-27T19:41:56.729994037Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"parent\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"created\":\"2017-02-27T19:41:55.567190314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"parent\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"created\":\"2017-02-27T19:41:54.422121618Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"parent\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:53.273203152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:42.322618191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:efb254bc677d66d6af39893698d55c79bf13f4daee5053601c5c17df91657e6e in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d0bd15d63970d1f366f9c95de0bf43e73d3ca509276978667e13ff092f4d05f9"
+            },
+            {
+                "blobSum": "sha256:52fcd22cb6bc2410d2495cb096097372559d51723e22ce20824fd33895115684"
+            },
+            {
+                "blobSum": "sha256:938fb34e6d456e85961fe85c268b25c107b6fa3f7f2f7b37e947c3aad5296536"
+            },
+            {
+                "blobSum": "sha256:67597434b2fa8f2261f212ffe890bba4f7cf041dbb3f486953f0af0c98b00c9d"
+            },
+            {
+                "blobSum": "sha256:28d4dfd4c278382dea01fc118cb570a3b46611580fec5afad1f3d34258194296"
+            },
+            {
+                "blobSum": "sha256:436d4bca2cf2f33384f72da690f286280fc6170d4b27086188d24abb2dd845f4"
+            },
+            {
+                "blobSum": "sha256:37bdcfb028e26fd4ca34f141761f203cf13a68984e01f3779c4077d4366fb99a"
+            },
+            {
+                "blobSum": "sha256:ffbca1fbc0ae86acc07d144549686b2756b0bbd3e2d5353b72b6868c3830cf4f"
+            },
+            {
+                "blobSum": "sha256:54759aa0e7054860cfdc1d004ec7c61ba70bfd82281e3759a06a955d72b40b6f"
+            },
+            {
+                "blobSum": "sha256:571d8d8a576b29cecb47fca4f6c73a15b54cdb0fcb57cbe246246eaf3f17d8db"
+            },
+            {
+                "blobSum": "sha256:7f177fa5d66392b166969a760daf06b3d08924d9864d2f5d34aba39ee6175ca6"
+            },
+            {
+                "blobSum": "sha256:a4c48986d397fafe1762f63b315ce0c04f5ec4819f1e2ffed57072328cbd4d6a"
+            },
+            {
+                "blobSum": "sha256:eaebe839ee3bc2c6e1261c92ce1777d743a819c918e60c8d4998feb22a5768d6"
+            },
+            {
+                "blobSum": "sha256:d0ac7f5928a5c4b997916d7865e79449e448a4e053b698e772b5e70662e1d3db"
+            },
+            {
+                "blobSum": "sha256:672157ad0bf8d6e811ad50fe4904b19d6581affd8062174f2070cc18b599aed1"
+            },
+            {
+                "blobSum": "sha256:331fd589bd555bc2fdf00ea6f22120fe376ab21592246ff7fc5051932a358601"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6d9ef359eaaa311860550b478790123c4b22a2eaede8f8f46691b0b4433c08cf"
+            },
+            {
+                "blobSum": "sha256:9654c40e9079e3d5b271ec71f6d83f8ce80cfa6f09d9737fc6bfd4d2456fed3f"
+            },
+            {
+                "blobSum": "sha256:e8db7bf7c39fab6fec91b1b61e3914f21e60233c9823dd57c60bc360191aaf0d"
+            },
+            {
+                "blobSum": "sha256:f8b845f45a87dc7c095b15f3d9661e640ebc86f42cd8e8ab36674846472027f7"
+            },
+            {
+                "blobSum": "sha256:d54efb8db41d4ac23d29469940ec92da94c9a6c2d9e26ec060bebad1d1b0e48d"
+            }
+        ],
+        "name": "iimog/biom-conversion-server",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEzNjgzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDQ6MDlaIn0",
+                "signature": "I9WSS5hlymJCXytEzIyRZT-QSurgvrXbfZZNLjgGREdCHPZB8qCl_iOTGQ9GOf8il0LS19LVd_HFL2mhC6j5GA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "u5XJDdoG1gBUPENWq8sfptGn0lvJGzLPJsfWV7Tbgv0",
+                        "kid": "7II3:EC34:4TM2:LJFY:BNRG:CU4X:FFV4:XIWJ:MCK6:4EHU:OY42:U6CQ",
+                        "x": "r3XkuZi7m_SdxXiUu2wR46N7XeGO1Z85No5uV9zSWCw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"service apache2 start; while true; do sleep 60; done\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b27154350f9f0c4af508efa6514ea61241c153ca75a6e7a4728565ea98538d1d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"7e715d53c5291c621604ab85aa75f347d52cce9a1aae0f3a5fe93e9960e5183b\",\"container_config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"service apache2 start; while true; do sleep 60; done\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b27154350f9f0c4af508efa6514ea61241c153ca75a6e7a4728565ea98538d1d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-29T11:22:17.105403244Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"0248199dab69bf5739d4e94276aff87303d09bd9fd7a3996d32a5c4e6f8e0ee4\",\"os\":\"linux\",\"parent\":\"c81e26ce21107c0445d2a7b2ad32fad11dc669cea6e9f3f3e1bf460c257d799b\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c81e26ce21107c0445d2a7b2ad32fad11dc669cea6e9f3f3e1bf460c257d799b\",\"parent\":\"0e41102a70d5282c6d83be3afc617853f90cbe8a208b8197d9a1d93340edc12b\",\"created\":\"2017-03-29T11:22:08.085184712Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:78518f9585f56cf24c7cdb8373a26b51dd19c37e34467c367d864fa5cd700ceb in /etc/php/7.0/apache2/php.ini \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e41102a70d5282c6d83be3afc617853f90cbe8a208b8197d9a1d93340edc12b\",\"parent\":\"4845533ac69555a9a430657b107312a3777a8faac0c6b3371d29d41f8aaf775d\",\"created\":\"2017-03-29T11:21:59.058671638Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /var/www/html \\u0026\\u0026 bower install --allow-root\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4845533ac69555a9a430657b107312a3777a8faac0c6b3371d29d41f8aaf775d\",\"parent\":\"22b90ddaecac14d6bc6052ad2d0735bec334ce590ce15b4a7913075f94e3711a\",\"created\":\"2017-03-29T11:21:41.817129697Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /var/www/html \\u0026\\u0026 composer install\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"22b90ddaecac14d6bc6052ad2d0735bec334ce590ce15b4a7913075f94e3711a\",\"parent\":\"30b923a4e2c2b4a7f7d4f61299a9a06ac636deb0ef777f9e9c831887be4b8454\",\"created\":\"2017-03-29T11:21:17.23488918Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /var/www/html \\u0026\\u0026 conda install --yes --file explicit-conda-spec.txt\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"30b923a4e2c2b4a7f7d4f61299a9a06ac636deb0ef777f9e9c831887be4b8454\",\"parent\":\"dc990fb80c7d7c65deecf669257931577f8f84a5ffc347adabe81a6a36322f0b\",\"created\":\"2017-03-29T11:19:00.095613518Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/molbiodiv/biom-conversion-server.git /var/www/html\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dc990fb80c7d7c65deecf669257931577f8f84a5ffc347adabe81a6a36322f0b\",\"parent\":\"5b451a07fdf860e726b50835876d04ae74d388233dec8c12e5c3ed426b3e490f\",\"created\":\"2017-03-29T11:18:52.895310755Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export LANG=C.UTF-8\\\" \\u003e\\u003e/etc/apache2/envvars\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5b451a07fdf860e726b50835876d04ae74d388233dec8c12e5c3ed426b3e490f\",\"parent\":\"1c73c6217a1b0c302ecff194ed6b75c34e1b07e52a9aafa136c7f275c8648c0c\",\"created\":\"2017-03-29T11:18:45.933325344Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export LC_ALL=C.UTF-8\\\" \\u003e\\u003e/etc/apache2/envvars\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c73c6217a1b0c302ecff194ed6b75c34e1b07e52a9aafa136c7f275c8648c0c\",\"parent\":\"ac17c398d0844c4d09ba98bf476f758a6da3c7ea33a14c3d77646e2df387ba28\",\"created\":\"2017-03-29T11:18:38.761945072Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./miniconda.sh -b -f -p /usr/local\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ac17c398d0844c4d09ba98bf476f758a6da3c7ea33a14c3d77646e2df387ba28\",\"parent\":\"410a9fbe6ec07b133e4c46504a262f9300ff2a26298469b7f100706f9ad1f67e\",\"created\":\"2017-03-29T11:18:14.435520842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x miniconda.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"410a9fbe6ec07b133e4c46504a262f9300ff2a26298469b7f100706f9ad1f67e\",\"parent\":\"0e847d075415c4f94f6f7c4a29112650f404ef870272913c0fd2b1e5819e23ff\",\"created\":\"2017-03-29T11:18:07.655007281Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sS https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \\u003eminiconda.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e847d075415c4f94f6f7c4a29112650f404ef870272913c0fd2b1e5819e23ff\",\"parent\":\"39f8d1a5c447aecfc2b363a8dee73b9dc3bceeb44b9cf75c3f985fefd471527c\",\"created\":\"2017-03-29T11:18:00.12514492Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export TERM=xterm\\\" \\u003e\\u003e/root/.bashrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39f8d1a5c447aecfc2b363a8dee73b9dc3bceeb44b9cf75c3f985fefd471527c\",\"parent\":\"d6563f960c1ba1896b7e438615f21847627c54e1953d485b6ab41987647e5a3c\",\"created\":\"2017-03-29T11:17:54.446595984Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/www/html\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d6563f960c1ba1896b7e438615f21847627c54e1953d485b6ab41987647e5a3c\",\"parent\":\"9b74003f844668eff8d8d31ccc4ca9d4221e0d27e7eee693ace87fa589bb406b\",\"created\":\"2017-03-29T11:17:48.688236469Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c npm install -g bower\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b74003f844668eff8d8d31ccc4ca9d4221e0d27e7eee693ace87fa589bb406b\",\"parent\":\"8ab4d71a88970908e1f0b74e1430590e750d326216e00b36a7211eb906dc5313\",\"created\":\"2017-03-29T11:17:26.241061653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ln -s /usr/bin/nodejs /usr/bin/node\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ab4d71a88970908e1f0b74e1430590e750d326216e00b36a7211eb906dc5313\",\"parent\":\"779e341df23d2566fac2876e684e0634b4bc4f3d2e20c1015c0df26f25606bf1\",\"created\":\"2017-03-29T11:17:21.635793536Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"779e341df23d2566fac2876e684e0634b4bc4f3d2e20c1015c0df26f25606bf1\",\"parent\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"created\":\"2017-03-29T11:17:13.457353144Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get --assume-yes install     apache2     git     php     curl     php-dev     php-curl     libapache2-mod-php     zip     nodejs     npm\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"parent\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"created\":\"2017-02-27T19:42:10.522384312Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"parent\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"created\":\"2017-02-27T19:41:56.729994037Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"parent\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"created\":\"2017-02-27T19:41:55.567190314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"parent\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"created\":\"2017-02-27T19:41:54.422121618Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"parent\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:53.273203152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:42.322618191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:efb254bc677d66d6af39893698d55c79bf13f4daee5053601c5c17df91657e6e in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d0bd15d63970d1f366f9c95de0bf43e73d3ca509276978667e13ff092f4d05f9"
+            },
+            {
+                "blobSum": "sha256:52fcd22cb6bc2410d2495cb096097372559d51723e22ce20824fd33895115684"
+            },
+            {
+                "blobSum": "sha256:938fb34e6d456e85961fe85c268b25c107b6fa3f7f2f7b37e947c3aad5296536"
+            },
+            {
+                "blobSum": "sha256:67597434b2fa8f2261f212ffe890bba4f7cf041dbb3f486953f0af0c98b00c9d"
+            },
+            {
+                "blobSum": "sha256:28d4dfd4c278382dea01fc118cb570a3b46611580fec5afad1f3d34258194296"
+            },
+            {
+                "blobSum": "sha256:436d4bca2cf2f33384f72da690f286280fc6170d4b27086188d24abb2dd845f4"
+            },
+            {
+                "blobSum": "sha256:37bdcfb028e26fd4ca34f141761f203cf13a68984e01f3779c4077d4366fb99a"
+            },
+            {
+                "blobSum": "sha256:ffbca1fbc0ae86acc07d144549686b2756b0bbd3e2d5353b72b6868c3830cf4f"
+            },
+            {
+                "blobSum": "sha256:54759aa0e7054860cfdc1d004ec7c61ba70bfd82281e3759a06a955d72b40b6f"
+            },
+            {
+                "blobSum": "sha256:571d8d8a576b29cecb47fca4f6c73a15b54cdb0fcb57cbe246246eaf3f17d8db"
+            },
+            {
+                "blobSum": "sha256:7f177fa5d66392b166969a760daf06b3d08924d9864d2f5d34aba39ee6175ca6"
+            },
+            {
+                "blobSum": "sha256:a4c48986d397fafe1762f63b315ce0c04f5ec4819f1e2ffed57072328cbd4d6a"
+            },
+            {
+                "blobSum": "sha256:eaebe839ee3bc2c6e1261c92ce1777d743a819c918e60c8d4998feb22a5768d6"
+            },
+            {
+                "blobSum": "sha256:d0ac7f5928a5c4b997916d7865e79449e448a4e053b698e772b5e70662e1d3db"
+            },
+            {
+                "blobSum": "sha256:672157ad0bf8d6e811ad50fe4904b19d6581affd8062174f2070cc18b599aed1"
+            },
+            {
+                "blobSum": "sha256:331fd589bd555bc2fdf00ea6f22120fe376ab21592246ff7fc5051932a358601"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6d9ef359eaaa311860550b478790123c4b22a2eaede8f8f46691b0b4433c08cf"
+            },
+            {
+                "blobSum": "sha256:9654c40e9079e3d5b271ec71f6d83f8ce80cfa6f09d9737fc6bfd4d2456fed3f"
+            },
+            {
+                "blobSum": "sha256:e8db7bf7c39fab6fec91b1b61e3914f21e60233c9823dd57c60bc360191aaf0d"
+            },
+            {
+                "blobSum": "sha256:f8b845f45a87dc7c095b15f3d9661e640ebc86f42cd8e8ab36674846472027f7"
+            },
+            {
+                "blobSum": "sha256:d54efb8db41d4ac23d29469940ec92da94c9a6c2d9e26ec060bebad1d1b0e48d"
+            }
+        ],
+        "name": "iimog/biom-conversion-server",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEzNjgzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDQ6MTBaIn0",
+                "signature": "sOMNiygQUOGgouI1lg1QKiRe4C6JlMmOahQueXWuQf8wcTDQIvWcpaLS8SG4xjHFiZb1NOVp6jJDwYxPCVaqCw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "gexshvamq0EnykqEGFOSeD99-7AGkqE6incFkTCesso",
+                        "kid": "O6TH:VVX4:ASKB:FAFK:BRF4:T5GB:CM6A:23ZY:UGPS:NFER:3KXN:TGUA",
+                        "x": "CmI5L7VcBv3lrKKZ8dNJjkam-X8l7gCuwfUeptrBR1I"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

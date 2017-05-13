@@ -1,0 +1,702 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Donald Braman\",\"config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\",\"XDG_CACHE_HOME=/home/jovyan/.cache/\"],\"Cmd\":[\"start-notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ae16ba3c396c468352a328b1a24529c1ac66ecb2c1961a0a52bc0ad91e007580\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"cd70ba3e737b5825bf28934298410608b50a1e4cd2213e1c0efd05258a31885c\",\"container_config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\",\"XDG_CACHE_HOME=/home/jovyan/.cache/\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:fcc55e05cddac9719518eeea46575ceb58a24a1abedb7d539bdd1d79643648da in /home/jovyan/work \"],\"ArgsEscaped\":true,\"Image\":\"sha256:ae16ba3c396c468352a328b1a24529c1ac66ecb2c1961a0a52bc0ad91e007580\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-01T04:49:01.434374319Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"80e8782622ccbcb3fe87bb6bff5d66aa4e5475df1c637da51268c6be94a9a4c2\",\"os\":\"linux\",\"parent\":\"0f5af7a604161821b0a20cbb8414dfd5dffbdf479e70316dc092624ba470c480\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0f5af7a604161821b0a20cbb8414dfd5dffbdf479e70316dc092624ba470c480\",\"parent\":\"cb7206a0066b2f7de8a1edfc7c60c2738516d282609273fca2e37e02f7de437a\",\"created\":\"2017-05-01T04:47:15.881868957Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Donald Braman\"]},\"author\":\"Donald Braman\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb7206a0066b2f7de8a1edfc7c60c2738516d282609273fca2e37e02f7de437a\",\"parent\":\"110e38ed2d2cfc941881c327c7c9520822f926898a1b54b0f2d63157f18baa2a\",\"created\":\"2017-05-01T03:34:22.349924818Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"110e38ed2d2cfc941881c327c7c9520822f926898a1b54b0f2d63157f18baa2a\",\"parent\":\"ed48b414fc908b59bcc727640622ca68f245b03c53d789bfe6d47c15ea9c680c\",\"created\":\"2017-05-01T03:34:22.074349089Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install kernda --no-cache \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/python -m ipykernel install \\u0026\\u0026     kernda -o -y /usr/local/share/jupyter/kernels/python2/kernel.json \\u0026\\u0026     pip uninstall kernda -y\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed48b414fc908b59bcc727640622ca68f245b03c53d789bfe6d47c15ea9c680c\",\"parent\":\"351b0c9ed0cbe5a94c7a69cbcedcdbdac1c0022233e3dacd91383070c27a6940\",\"created\":\"2017-05-01T03:34:05.89912226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"351b0c9ed0cbe5a94c7a69cbcedcdbdac1c0022233e3dacd91383070c27a6940\",\"parent\":\"de236f367cacef1a09070e342cb7df1f7b7b15ec9a03e6c2cd87fc2028e0c9e0\",\"created\":\"2017-05-01T03:34:05.699039194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:bbf1ad3956deb5efe4fa878e37f69f566a304d43167449906c3de5dad0b83cdf in /home/jovyan/.ipython/profile_default/startup/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de236f367cacef1a09070e342cb7df1f7b7b15ec9a03e6c2cd87fc2028e0c9e0\",\"parent\":\"cfadf2d0e7ef742f3d6b2f75a4d2ea2b317f8ca5c79d730790ff70f55e108e76\",\"created\":\"2017-05-01T03:34:05.233432575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p $HOME/.ipython/profile_default/startup\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfadf2d0e7ef742f3d6b2f75a4d2ea2b317f8ca5c79d730790ff70f55e108e76\",\"parent\":\"7aa9ef43ced3530e1007a4016b04cfbd13835ed7ffb7921f10a4f616afaf46b0\",\"created\":\"2017-05-01T03:34:04.574630589Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c MPLBACKEND=Agg $CONDA_DIR/envs/python2/bin/python -c \\\"import matplotlib.pyplot\\\"\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7aa9ef43ced3530e1007a4016b04cfbd13835ed7ffb7921f10a4f616afaf46b0\",\"parent\":\"002b1c8c72d4df21c9d3ef92ed47090c2e415197a69b209babcc6170e091e7a4\",\"created\":\"2017-05-01T03:33:40.047205864Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV XDG_CACHE_HOME=/home/jovyan/.cache/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"002b1c8c72d4df21c9d3ef92ed47090c2e415197a69b209babcc6170e091e7a4\",\"parent\":\"d55fb676c3ccb604d122e09c427cef2b771b4749d871bb734a3decbe2a9311d1\",\"created\":\"2017-05-01T03:33:39.82581575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ln -s $CONDA_DIR/envs/python2/bin/pip $CONDA_DIR/bin/pip2 \\u0026\\u0026     ln -s $CONDA_DIR/bin/pip $CONDA_DIR/bin/pip3\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d55fb676c3ccb604d122e09c427cef2b771b4749d871bb734a3decbe2a9311d1\",\"parent\":\"86bcceb17f0584725b0a931dd31c8b8b4044fc0bb50839162d06b016a78cfc73\",\"created\":\"2017-05-01T03:33:34.3059418Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7     'nomkl'     'ipython=5.3*'     'ipywidgets=6.0*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=2.0*'     'scipy=0.19*'     'seaborn=0.7*'     'scikit-learn=0.18*'     'scikit-image=0.12*'     'sympy=1.0*'     'cython=0.25*'     'patsy=0.4*'     'statsmodels=0.8*'     'cloudpickle=0.2*'     'dill=0.2*'     'numba=0.31*'     'bokeh=0.12*'     'hdf5=1.8.17'     'h5py=2.6*'     'sqlalchemy=1.1*'     'pyzmq'     'vincent=0.4.*'     'beautifulsoup4=4.5.*'     'xlrd' \\u0026\\u0026     conda remove -n python2 --quiet --yes --force qt pyqt \\u0026\\u0026     conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"86bcceb17f0584725b0a931dd31c8b8b4044fc0bb50839162d06b016a78cfc73\",\"parent\":\"c98fcbd6e717df0060f37f42c5e5fe8f4947e6ffc217fbfe38078b65426a2564\",\"created\":\"2017-05-01T03:24:07.332055842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c jupyter nbextension enable --py widgetsnbextension --sys-prefix\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c98fcbd6e717df0060f37f42c5e5fe8f4947e6ffc217fbfe38078b65426a2564\",\"parent\":\"62f8a33a982e7f897822e0f19a682a2c4ef6cfee2ef66ba50d535ff7a94d3ee6\",\"created\":\"2017-05-01T03:24:01.237128069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --quiet --yes     'nomkl'     'ipywidgets=6.0*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=2.0*'     'scipy=0.19*'     'seaborn=0.7*'     'scikit-learn=0.18*'     'scikit-image=0.12*'     'sympy=1.0*'     'cython=0.25*'     'patsy=0.4*'     'statsmodels=0.8*'     'cloudpickle=0.2*'     'dill=0.2*'     'numba=0.31*'     'bokeh=0.12*'     'sqlalchemy=1.1*'     'hdf5=1.8.17'     'h5py=2.6*'     'vincent=0.4.*'     'beautifulsoup4=4.5.*'     'xlrd'  \\u0026\\u0026     conda remove --quiet --yes --force qt pyqt \\u0026\\u0026     conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"62f8a33a982e7f897822e0f19a682a2c4ef6cfee2ef66ba50d535ff7a94d3ee6\",\"parent\":\"234822d386f35df26d7e98cc7e3d35ddadd9d8985f7362d68d3085253ed2c7c1\",\"created\":\"2017-05-01T03:18:16.704361184Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"234822d386f35df26d7e98cc7e3d35ddadd9d8985f7362d68d3085253ed2c7c1\",\"parent\":\"ed81dc8491823171df1c1c6dd7e86c43b06b806b718a23dc5c6b0ae817ad895c\",\"created\":\"2017-05-01T03:18:16.042532797Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y --no-install-recommends libav-tools \\u0026\\u0026     apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed81dc8491823171df1c1c6dd7e86c43b06b806b718a23dc5c6b0ae817ad895c\",\"parent\":\"85e2951f4d22c8e5f35e534500c95d81ff33cf4a6b10b125c28ba38e44c248cf\",\"created\":\"2017-05-01T03:15:18.667957583Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"85e2951f4d22c8e5f35e534500c95d81ff33cf4a6b10b125c28ba38e44c248cf\",\"parent\":\"7682b460e6fa0b60def86de533029de6f77adfece9d70a3615eae855c17ada4b\",\"created\":\"2017-05-01T03:15:18.483907038Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7682b460e6fa0b60def86de533029de6f77adfece9d70a3615eae855c17ada4b\",\"parent\":\"e6661d3263477e8fd7b93578051bd38d3ea58eaba8d1cfb059cd5792217c8ce7\",\"created\":\"2017-05-01T03:15:00.636900426Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e6661d3263477e8fd7b93578051bd38d3ea58eaba8d1cfb059cd5792217c8ce7\",\"parent\":\"0c1dc3b6adc2b1d5f7a103893aea583385d37c000d6f573dc491b72a420c544d\",\"created\":\"2017-05-01T03:14:57.065288039Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -yq --no-install-recommends     git     vim     jed     emacs     build-essential     python-dev     unzip     libsm6     pandoc     texlive-latex-base     texlive-latex-extra     texlive-fonts-extra     texlive-fonts-recommended     texlive-generic-recommended     texlive-xetex     lmodern     libxrender1     inkscape     \\u0026\\u0026 apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c1dc3b6adc2b1d5f7a103893aea583385d37c000d6f573dc491b72a420c544d\",\"parent\":\"f4e46b97b1298c8938d29933fda98d14f1fe15f89225fc17b8cd7f3e5a2bbe6c\",\"created\":\"2017-04-06T01:07:29.100933352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f4e46b97b1298c8938d29933fda98d14f1fe15f89225fc17b8cd7f3e5a2bbe6c\",\"parent\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"created\":\"2017-04-06T01:07:28.916322572Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"parent\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"created\":\"2017-04-06T01:07:25.685356881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"parent\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"created\":\"2017-04-06T01:07:25.493589622Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $NB_USER:users /home/$NB_USER/.jupyter\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"parent\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"created\":\"2017-04-06T01:07:24.400817115Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8784656ba78be4c5c867ba2b44018e0eec125db9994455b933df02b8de7966a5 in /home/jovyan/.jupyter/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"parent\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"created\":\"2017-04-06T01:07:24.148783529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:645466847c934c1add1678b16957d9cf6d7277b655aac6f2d3b88842dda2b4cf in /usr/local/bin/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"parent\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"created\":\"2017-04-06T01:07:23.88321672Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:6d15c30d4b64efca62be7871e8bc761ea231fd18909afac4ca10f1429fe6872d in /usr/local/bin/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"parent\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"created\":\"2017-04-06T01:07:23.643611201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4cfcf9820ba75a602dcbf6e5ba1c6082122846cbf35faaf4f00ce59c98698330 in /usr/local/bin/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"parent\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"created\":\"2017-04-06T01:07:23.325569157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"start-notebook.sh\\\"]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"parent\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"created\":\"2017-04-06T01:07:23.154917808Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"tini\\\" \\\"--\\\"]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"parent\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"created\":\"2017-04-06T01:07:22.987364375Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home/jovyan/work\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"parent\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"created\":\"2017-04-06T01:07:22.810045154Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"parent\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"created\":\"2017-04-06T01:07:22.649702677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"parent\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"created\":\"2017-04-06T01:07:20.898665739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --quiet --yes     'notebook=5.0.*'     'jupyterhub=0.7.*'     'jupyterlab=0.18.*'     \\u0026\\u0026 conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"parent\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"created\":\"2017-03-04T02:56:52.172991568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     echo \\\"c59b3dd3cad550ac7596e0d599b91e75d88826db132e4146030ef471bb434e9a *Miniconda3-4.2.12-Linux-x86_64.sh\\\" | sha256sum -c - \\u0026\\u0026     /bin/bash Miniconda3-4.2.12-Linux-x86_64.sh -f -b -p $CONDA_DIR \\u0026\\u0026     rm Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --add channels conda-forge \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --set auto_update_conda false \\u0026\\u0026     conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"parent\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"created\":\"2017-03-04T02:56:34.043061519Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$NB_USER/work \\u0026\\u0026     mkdir /home/$NB_USER/.jupyter \\u0026\\u0026     echo \\\"cacert=/etc/ssl/certs/ca-certificates.crt\\\" \\u003e /home/$NB_USER/.curlrc\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"parent\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"created\":\"2017-03-04T02:56:33.462903102Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"parent\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"created\":\"2017-03-04T02:56:33.210518443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m -s /bin/bash -N -u $NB_UID $NB_USER \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     chown $NB_USER $CONDA_DIR\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"parent\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"created\":\"2017-03-04T02:56:32.579465034Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANGUAGE=en_US.UTF-8\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"parent\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"created\":\"2017-03-04T02:56:32.382697342Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"parent\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"created\":\"2017-03-04T02:56:32.184630798Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"parent\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"created\":\"2017-03-04T02:56:31.977452387Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV HOME=/home/jovyan\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"parent\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"created\":\"2017-03-04T02:56:31.790332936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_UID=1000\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"parent\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"created\":\"2017-03-04T02:56:31.597469191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_USER=jovyan\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"parent\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"created\":\"2017-03-04T02:56:31.363692324Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV SHELL=/bin/bash\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"parent\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"created\":\"2017-03-04T02:56:31.168627191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"parent\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"created\":\"2017-03-04T02:56:30.960826497Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONDA_DIR=/opt/conda\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"parent\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"created\":\"2017-03-04T02:56:30.774470356Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget --quiet https://github.com/krallin/tini/releases/download/v0.10.0/tini \\u0026\\u0026     echo \\\"1361527f39190a7338a0b434bd8c88ff7233ce7b9a4876f3315c22fce7eca1b0 *tini\\\" | sha256sum -c - \\u0026\\u0026     mv tini /usr/local/bin/tini \\u0026\\u0026     chmod +x /usr/local/bin/tini\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"parent\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"created\":\"2017-03-04T02:56:30.030262662Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e /etc/locale.gen \\u0026\\u0026     locale-gen\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"parent\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"created\":\"2017-03-04T02:56:27.544930953Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c REPO=http://cdn-fastly.deb.debian.org  \\u0026\\u0026 echo \\\"deb $REPO/debian jessie main\\\\ndeb $REPO/debian-security jessie/updates main\\\" \\u003e /etc/apt/sources.list  \\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get -yq dist-upgrade  \\u0026\\u0026 apt-get install -yq --no-install-recommends     wget     bzip2     ca-certificates     sudo     locales  \\u0026\\u0026 apt-get clean  \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"parent\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"created\":\"2017-03-04T02:55:43.432393234Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"parent\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"created\":\"2017-03-04T02:55:43.233318012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"parent\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"created\":\"2017-03-04T02:55:43.049348603Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"parent\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:37.813657023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:36.966911578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:6e0260a988096c49ab50c7dc9533e752ce7090c238b58400474da063fde3fd44"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4e17fd01128d22e7d4409523a46d971ca56233088e69671693a57f8183aa6d00"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4d60ed225ef8033e8744b4611d2520b07327c253cda2f18e94b7405eff875fdc"
+            },
+            {
+                "blobSum": "sha256:de094493e8216f9a0ec1fd3d1a5f621e697d5841d1501d408a84938eb897fe95"
+            },
+            {
+                "blobSum": "sha256:17c31ceff0f04c0fcf641760de640261b5defad771e53c37748ad8fd36fc9e5f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0d61bb7891a3899c881d9686f252947d281c0756c5a5bd2bf7b54c99bda792e0"
+            },
+            {
+                "blobSum": "sha256:335ed19f8aebd24ab98419a08229f39b97b3f1ae106dc0c75b6d22b3c7ac32b8"
+            },
+            {
+                "blobSum": "sha256:b52514c7f277ac6bb298b485319f09b3fa5a709d58c424de9aec7259ce800a8e"
+            },
+            {
+                "blobSum": "sha256:bedf924ebae8c281bfe7fe9020cd146dd6a72a4e98abe45209a01f80731d5198"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e5968c6a2a7fdfe86f37e74ae82d4c55266d7b5c659ce70d12721b9758332753"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6c4990ff8475139c15d9e7f6aa4930d27b22f0011e1b1046b9248194c3657328"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d61dbef85c7dfcaa0de7e2e221a5b88549f5be6e819609c436e80694cf89699b"
+            },
+            {
+                "blobSum": "sha256:d336770b8a83a8c3b76fb3d8449ba0e7a82b5080cff817f1e721afba4820be69"
+            },
+            {
+                "blobSum": "sha256:055904fbc069100f2cc1071176cbb732a79e8976ddfb8d5def11594b53bbadbf"
+            },
+            {
+                "blobSum": "sha256:e63bd87d75ddf5bea921b03aad03f39d4c3e5557a759fde329bce4b96e44685b"
+            },
+            {
+                "blobSum": "sha256:0057b9e76c8a523a63a6418fdfc9580811083be2a505468a24eaf06348151f9b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:eeda14d1c42137239ad40b8081df1e48df93ce70cc6777edb388e40582cd104d"
+            },
+            {
+                "blobSum": "sha256:c352772bbcfd800bdfb76ce627eb1a18b2cf5e70411ba0f74ea7672ba3d68047"
+            },
+            {
+                "blobSum": "sha256:121dc465f5c667aae08854250881e709b95511d9767551675da33f2801a77501"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b4690d4047c60224d5230518591790ef488f7b77775ce8e4dfe202bf08bca030"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e539f5722cd5086ddd1b5bf2324fe74e9e4f398cc9298b9f9d6f31ac5a7ab8bc"
+            },
+            {
+                "blobSum": "sha256:9cb32b776a4064ce43ac5e6cc5abd317a5dba0fd5a0d842c21e73587b468d804"
+            },
+            {
+                "blobSum": "sha256:a3782c2efb4188af8b56f4001efae6f76b337d21f3c1b58c73d484b1cf1f4b72"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184"
+            }
+        ],
+        "name": "donaldbraman/fbi-reta-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjM0MzA0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTQ6MTJaIn0",
+                "signature": "LJeJyPmK-Ub1Q7Az6qVro8RhWzzAZtWRIz3PX78AmiQCqhj5PzlGdsBXWrEtbpTd6br-C8-t6iToQqud2SyC2g",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "8zjaS9BQJ5-ZaD755cf0bEssE5cwyy_TuwWZg4N6fnc",
+                        "kid": "DOW7:OSAH:IQUL:7SZX:AMES:CS5P:KX2T:HP2S:Z43B:FZFN:F5DT:NOLS",
+                        "x": "_z7h1mvfXYNGvslNoUyBWbkPlZKC15F2IorKFUzUBSk"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Donald Braman\",\"config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\",\"XDG_CACHE_HOME=/home/jovyan/.cache/\"],\"Cmd\":[\"start-notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ae16ba3c396c468352a328b1a24529c1ac66ecb2c1961a0a52bc0ad91e007580\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"cd70ba3e737b5825bf28934298410608b50a1e4cd2213e1c0efd05258a31885c\",\"container_config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"jovyan\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"CONDA_DIR=/opt/conda\",\"SHELL=/bin/bash\",\"NB_USER=jovyan\",\"NB_UID=1000\",\"HOME=/home/jovyan\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LANGUAGE=en_US.UTF-8\",\"XDG_CACHE_HOME=/home/jovyan/.cache/\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) ADD dir:fcc55e05cddac9719518eeea46575ceb58a24a1abedb7d539bdd1d79643648da in /home/jovyan/work \"],\"ArgsEscaped\":true,\"Image\":\"sha256:ae16ba3c396c468352a328b1a24529c1ac66ecb2c1961a0a52bc0ad91e007580\",\"Volumes\":null,\"WorkingDir\":\"/home/jovyan/work\",\"Entrypoint\":[\"tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-01T04:49:01.434374319Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"80e8782622ccbcb3fe87bb6bff5d66aa4e5475df1c637da51268c6be94a9a4c2\",\"os\":\"linux\",\"parent\":\"0f5af7a604161821b0a20cbb8414dfd5dffbdf479e70316dc092624ba470c480\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0f5af7a604161821b0a20cbb8414dfd5dffbdf479e70316dc092624ba470c480\",\"parent\":\"cb7206a0066b2f7de8a1edfc7c60c2738516d282609273fca2e37e02f7de437a\",\"created\":\"2017-05-01T04:47:15.881868957Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Donald Braman\"]},\"author\":\"Donald Braman\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb7206a0066b2f7de8a1edfc7c60c2738516d282609273fca2e37e02f7de437a\",\"parent\":\"110e38ed2d2cfc941881c327c7c9520822f926898a1b54b0f2d63157f18baa2a\",\"created\":\"2017-05-01T03:34:22.349924818Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"110e38ed2d2cfc941881c327c7c9520822f926898a1b54b0f2d63157f18baa2a\",\"parent\":\"ed48b414fc908b59bcc727640622ca68f245b03c53d789bfe6d47c15ea9c680c\",\"created\":\"2017-05-01T03:34:22.074349089Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install kernda --no-cache \\u0026\\u0026     $CONDA_DIR/envs/python2/bin/python -m ipykernel install \\u0026\\u0026     kernda -o -y /usr/local/share/jupyter/kernels/python2/kernel.json \\u0026\\u0026     pip uninstall kernda -y\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed48b414fc908b59bcc727640622ca68f245b03c53d789bfe6d47c15ea9c680c\",\"parent\":\"351b0c9ed0cbe5a94c7a69cbcedcdbdac1c0022233e3dacd91383070c27a6940\",\"created\":\"2017-05-01T03:34:05.89912226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"351b0c9ed0cbe5a94c7a69cbcedcdbdac1c0022233e3dacd91383070c27a6940\",\"parent\":\"de236f367cacef1a09070e342cb7df1f7b7b15ec9a03e6c2cd87fc2028e0c9e0\",\"created\":\"2017-05-01T03:34:05.699039194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:bbf1ad3956deb5efe4fa878e37f69f566a304d43167449906c3de5dad0b83cdf in /home/jovyan/.ipython/profile_default/startup/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de236f367cacef1a09070e342cb7df1f7b7b15ec9a03e6c2cd87fc2028e0c9e0\",\"parent\":\"cfadf2d0e7ef742f3d6b2f75a4d2ea2b317f8ca5c79d730790ff70f55e108e76\",\"created\":\"2017-05-01T03:34:05.233432575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p $HOME/.ipython/profile_default/startup\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfadf2d0e7ef742f3d6b2f75a4d2ea2b317f8ca5c79d730790ff70f55e108e76\",\"parent\":\"7aa9ef43ced3530e1007a4016b04cfbd13835ed7ffb7921f10a4f616afaf46b0\",\"created\":\"2017-05-01T03:34:04.574630589Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c MPLBACKEND=Agg $CONDA_DIR/envs/python2/bin/python -c \\\"import matplotlib.pyplot\\\"\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7aa9ef43ced3530e1007a4016b04cfbd13835ed7ffb7921f10a4f616afaf46b0\",\"parent\":\"002b1c8c72d4df21c9d3ef92ed47090c2e415197a69b209babcc6170e091e7a4\",\"created\":\"2017-05-01T03:33:40.047205864Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV XDG_CACHE_HOME=/home/jovyan/.cache/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"002b1c8c72d4df21c9d3ef92ed47090c2e415197a69b209babcc6170e091e7a4\",\"parent\":\"d55fb676c3ccb604d122e09c427cef2b771b4749d871bb734a3decbe2a9311d1\",\"created\":\"2017-05-01T03:33:39.82581575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ln -s $CONDA_DIR/envs/python2/bin/pip $CONDA_DIR/bin/pip2 \\u0026\\u0026     ln -s $CONDA_DIR/bin/pip $CONDA_DIR/bin/pip3\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d55fb676c3ccb604d122e09c427cef2b771b4749d871bb734a3decbe2a9311d1\",\"parent\":\"86bcceb17f0584725b0a931dd31c8b8b4044fc0bb50839162d06b016a78cfc73\",\"created\":\"2017-05-01T03:33:34.3059418Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda create --quiet --yes -p $CONDA_DIR/envs/python2 python=2.7     'nomkl'     'ipython=5.3*'     'ipywidgets=6.0*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=2.0*'     'scipy=0.19*'     'seaborn=0.7*'     'scikit-learn=0.18*'     'scikit-image=0.12*'     'sympy=1.0*'     'cython=0.25*'     'patsy=0.4*'     'statsmodels=0.8*'     'cloudpickle=0.2*'     'dill=0.2*'     'numba=0.31*'     'bokeh=0.12*'     'hdf5=1.8.17'     'h5py=2.6*'     'sqlalchemy=1.1*'     'pyzmq'     'vincent=0.4.*'     'beautifulsoup4=4.5.*'     'xlrd' \\u0026\\u0026     conda remove -n python2 --quiet --yes --force qt pyqt \\u0026\\u0026     conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"86bcceb17f0584725b0a931dd31c8b8b4044fc0bb50839162d06b016a78cfc73\",\"parent\":\"c98fcbd6e717df0060f37f42c5e5fe8f4947e6ffc217fbfe38078b65426a2564\",\"created\":\"2017-05-01T03:24:07.332055842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c jupyter nbextension enable --py widgetsnbextension --sys-prefix\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c98fcbd6e717df0060f37f42c5e5fe8f4947e6ffc217fbfe38078b65426a2564\",\"parent\":\"62f8a33a982e7f897822e0f19a682a2c4ef6cfee2ef66ba50d535ff7a94d3ee6\",\"created\":\"2017-05-01T03:24:01.237128069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --quiet --yes     'nomkl'     'ipywidgets=6.0*'     'pandas=0.19*'     'numexpr=2.6*'     'matplotlib=2.0*'     'scipy=0.19*'     'seaborn=0.7*'     'scikit-learn=0.18*'     'scikit-image=0.12*'     'sympy=1.0*'     'cython=0.25*'     'patsy=0.4*'     'statsmodels=0.8*'     'cloudpickle=0.2*'     'dill=0.2*'     'numba=0.31*'     'bokeh=0.12*'     'sqlalchemy=1.1*'     'hdf5=1.8.17'     'h5py=2.6*'     'vincent=0.4.*'     'beautifulsoup4=4.5.*'     'xlrd'  \\u0026\\u0026     conda remove --quiet --yes --force qt pyqt \\u0026\\u0026     conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"62f8a33a982e7f897822e0f19a682a2c4ef6cfee2ef66ba50d535ff7a94d3ee6\",\"parent\":\"234822d386f35df26d7e98cc7e3d35ddadd9d8985f7362d68d3085253ed2c7c1\",\"created\":\"2017-05-01T03:18:16.704361184Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"234822d386f35df26d7e98cc7e3d35ddadd9d8985f7362d68d3085253ed2c7c1\",\"parent\":\"ed81dc8491823171df1c1c6dd7e86c43b06b806b718a23dc5c6b0ae817ad895c\",\"created\":\"2017-05-01T03:18:16.042532797Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y --no-install-recommends libav-tools \\u0026\\u0026     apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed81dc8491823171df1c1c6dd7e86c43b06b806b718a23dc5c6b0ae817ad895c\",\"parent\":\"85e2951f4d22c8e5f35e534500c95d81ff33cf4a6b10b125c28ba38e44c248cf\",\"created\":\"2017-05-01T03:15:18.667957583Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"85e2951f4d22c8e5f35e534500c95d81ff33cf4a6b10b125c28ba38e44c248cf\",\"parent\":\"7682b460e6fa0b60def86de533029de6f77adfece9d70a3615eae855c17ada4b\",\"created\":\"2017-05-01T03:15:18.483907038Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7682b460e6fa0b60def86de533029de6f77adfece9d70a3615eae855c17ada4b\",\"parent\":\"e6661d3263477e8fd7b93578051bd38d3ea58eaba8d1cfb059cd5792217c8ce7\",\"created\":\"2017-05-01T03:15:00.636900426Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e6661d3263477e8fd7b93578051bd38d3ea58eaba8d1cfb059cd5792217c8ce7\",\"parent\":\"0c1dc3b6adc2b1d5f7a103893aea583385d37c000d6f573dc491b72a420c544d\",\"created\":\"2017-05-01T03:14:57.065288039Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -yq --no-install-recommends     git     vim     jed     emacs     build-essential     python-dev     unzip     libsm6     pandoc     texlive-latex-base     texlive-latex-extra     texlive-fonts-extra     texlive-fonts-recommended     texlive-generic-recommended     texlive-xetex     lmodern     libxrender1     inkscape     \\u0026\\u0026 apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c1dc3b6adc2b1d5f7a103893aea583385d37c000d6f573dc491b72a420c544d\",\"parent\":\"f4e46b97b1298c8938d29933fda98d14f1fe15f89225fc17b8cd7f3e5a2bbe6c\",\"created\":\"2017-04-06T01:07:29.100933352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f4e46b97b1298c8938d29933fda98d14f1fe15f89225fc17b8cd7f3e5a2bbe6c\",\"parent\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"created\":\"2017-04-06T01:07:28.916322572Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8ce562ca3947d17288fec37fc19533cb5f3bf822c211f2c1946bb43cfeb48747\",\"parent\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"created\":\"2017-04-06T01:07:25.685356881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b8234954f55d7edc52606d40d2747bf54eb888b632c1e49acf36d4102cb0442e\",\"parent\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"created\":\"2017-04-06T01:07:25.493589622Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $NB_USER:users /home/$NB_USER/.jupyter\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6fc5047b0101404d543adf2127fc5ee5adec8ddafff0d2e305dc23f7c4050c41\",\"parent\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"created\":\"2017-04-06T01:07:24.400817115Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:8784656ba78be4c5c867ba2b44018e0eec125db9994455b933df02b8de7966a5 in /home/jovyan/.jupyter/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a8343cf4b454e6fa31a04dd5c67ef692a2984dac859dd4698354c893978a08cb\",\"parent\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"created\":\"2017-04-06T01:07:24.148783529Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:645466847c934c1add1678b16957d9cf6d7277b655aac6f2d3b88842dda2b4cf in /usr/local/bin/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c7eb68f98a7751536cc4e7dda4cdfee8adea44c1e296cb8e98b98a6ea014dc5\",\"parent\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"created\":\"2017-04-06T01:07:23.88321672Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:6d15c30d4b64efca62be7871e8bc761ea231fd18909afac4ca10f1429fe6872d in /usr/local/bin/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7078bfaf00dba343ad18284e78a2afeaeb65c6d63357b3078c796690e735c6ab\",\"parent\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"created\":\"2017-04-06T01:07:23.643611201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4cfcf9820ba75a602dcbf6e5ba1c6082122846cbf35faaf4f00ce59c98698330 in /usr/local/bin/\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f165007f3a070076e4426b45abaffba05fe093dba4fb2362b3aa063e563d19ee\",\"parent\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"created\":\"2017-04-06T01:07:23.325569157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"start-notebook.sh\\\"]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"130b21d9846cd66a2ad5d321d9ecc202f78be8cfd0f12c14130535beb01e7231\",\"parent\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"created\":\"2017-04-06T01:07:23.154917808Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"tini\\\" \\\"--\\\"]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ebda80280f14505f74ded255079ac96b89ccf61dec9b2afa03834ae66671d88d\",\"parent\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"created\":\"2017-04-06T01:07:22.987364375Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home/jovyan/work\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c578be81880efd9dbedbd367293cd58765370242cef5a889d90292816704c75\",\"parent\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"created\":\"2017-04-06T01:07:22.810045154Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"106c08231ab05e21b1bd452c070cc7cdc7ea7cfbcf3d4e7db393200a1b075344\",\"parent\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"created\":\"2017-04-06T01:07:22.649702677Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6d4fcbb4fbc80d6cd9df2ae271d3b058e893b6fc7903e8f6e187ac171ab870a9\",\"parent\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"created\":\"2017-04-06T01:07:20.898665739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --quiet --yes     'notebook=5.0.*'     'jupyterhub=0.7.*'     'jupyterlab=0.18.*'     \\u0026\\u0026 conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd12b1da4953f7e32685e88f964142b41fba12697699acfd4d195a4167306c4b\",\"parent\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"created\":\"2017-03-04T02:56:52.172991568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     echo \\\"c59b3dd3cad550ac7596e0d599b91e75d88826db132e4146030ef471bb434e9a *Miniconda3-4.2.12-Linux-x86_64.sh\\\" | sha256sum -c - \\u0026\\u0026     /bin/bash Miniconda3-4.2.12-Linux-x86_64.sh -f -b -p $CONDA_DIR \\u0026\\u0026     rm Miniconda3-4.2.12-Linux-x86_64.sh \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --add channels conda-forge \\u0026\\u0026     $CONDA_DIR/bin/conda config --system --set auto_update_conda false \\u0026\\u0026     conda clean -tipsy\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1ae1930d128e06709c7c4221823a60957e3b183dd7f6ed01d6ccaa09e9dfe6a\",\"parent\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"created\":\"2017-03-04T02:56:34.043061519Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$NB_USER/work \\u0026\\u0026     mkdir /home/$NB_USER/.jupyter \\u0026\\u0026     echo \\\"cacert=/etc/ssl/certs/ca-certificates.crt\\\" \\u003e /home/$NB_USER/.curlrc\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"86dcc92bb8439999cdfdaaff4bef8c46cf122d31feb4146417dc3b820f432676\",\"parent\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"created\":\"2017-03-04T02:56:33.462903102Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jovyan]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8efbceb9c3ed3280cd599b0076dedff3f3d9f4ce18140121af87a3bc9a9d7d18\",\"parent\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"created\":\"2017-03-04T02:56:33.210518443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m -s /bin/bash -N -u $NB_UID $NB_USER \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     chown $NB_USER $CONDA_DIR\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a042934c5e40aa6473a84af5e25fee4e32acaa477a45c3069b4232341cfd9b24\",\"parent\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"created\":\"2017-03-04T02:56:32.579465034Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANGUAGE=en_US.UTF-8\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b4e485ce449842bf35241585759d08f04f938189f2d8476712ec7263a04ce6b7\",\"parent\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"created\":\"2017-03-04T02:56:32.382697342Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7f86dfbd4425baa55904a8d289f617b967580a16d92da0856dd009e9fa9b9995\",\"parent\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"created\":\"2017-03-04T02:56:32.184630798Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"76e27ef3d2c9aa0965e7753149fe6e839604ad5b1a082686b88744e5c1bb5c14\",\"parent\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"created\":\"2017-03-04T02:56:31.977452387Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV HOME=/home/jovyan\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5d5c8e93dd6fbcf355689d0d61c1e314448f13dbf3af9e682172010bff5faa5c\",\"parent\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"created\":\"2017-03-04T02:56:31.790332936Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_UID=1000\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27fec240107d0b931a9015a80d45fd783cbad434813a2dde29d1e890695858bc\",\"parent\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"created\":\"2017-03-04T02:56:31.597469191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV NB_USER=jovyan\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dfafba9ef155dcaac1a6a5c6b1c0756004b6a045cc271a7c69a27c90609a45a3\",\"parent\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"created\":\"2017-03-04T02:56:31.363692324Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV SHELL=/bin/bash\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a7186c306a8798fc76adcf00d539c8ee094edc105daeb20cd7836cc02b695f16\",\"parent\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"created\":\"2017-03-04T02:56:31.168627191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"29faa2edd845f0c56faea4904a94f89c6dbd8fea584033055cbfd08adead25cf\",\"parent\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"created\":\"2017-03-04T02:56:30.960826497Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV CONDA_DIR=/opt/conda\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b2ab5c7e544ff78231a2bc2d6736b063607d3b25923764f81e96202c1ca560b7\",\"parent\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"created\":\"2017-03-04T02:56:30.774470356Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget --quiet https://github.com/krallin/tini/releases/download/v0.10.0/tini \\u0026\\u0026     echo \\\"1361527f39190a7338a0b434bd8c88ff7233ce7b9a4876f3315c22fce7eca1b0 *tini\\\" | sha256sum -c - \\u0026\\u0026     mv tini /usr/local/bin/tini \\u0026\\u0026     chmod +x /usr/local/bin/tini\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"374bf334304cab500eaeb7dcb7d258b9e7987d6893ae2196e8c818861a43998b\",\"parent\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"created\":\"2017-03-04T02:56:30.030262662Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e /etc/locale.gen \\u0026\\u0026     locale-gen\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57722acf3a7bad55d812392fac7ba61ffb909aa0b3074eef36daddaf75bdc670\",\"parent\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"created\":\"2017-03-04T02:56:27.544930953Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c REPO=http://cdn-fastly.deb.debian.org  \\u0026\\u0026 echo \\\"deb $REPO/debian jessie main\\\\ndeb $REPO/debian-security jessie/updates main\\\" \\u003e /etc/apt/sources.list  \\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get -yq dist-upgrade  \\u0026\\u0026 apt-get install -yq --no-install-recommends     wget     bzip2     ca-certificates     sudo     locales  \\u0026\\u0026 apt-get clean  \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d61e39c80b3b6f4ca0f9c65fc4532ba1006e5eb70ebd447523904768b5c2c097\",\"parent\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"created\":\"2017-03-04T02:55:43.432393234Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"425e28bb756f57de4877c664afc945b8f0a0458c33f74a6d14860baaf97c02fd\",\"parent\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"created\":\"2017-03-04T02:55:43.233318012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [root]\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d4b5520c444639e9c347fc62037ff0efe7a14d9af9ce39f4b71d4e6f2b55a4f\",\"parent\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"created\":\"2017-03-04T02:55:43.049348603Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\"]},\"author\":\"Jupyter Project \\u003cjupyter@googlegroups.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"parent\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:37.813657023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:36.966911578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:6e0260a988096c49ab50c7dc9533e752ce7090c238b58400474da063fde3fd44"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4e17fd01128d22e7d4409523a46d971ca56233088e69671693a57f8183aa6d00"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4d60ed225ef8033e8744b4611d2520b07327c253cda2f18e94b7405eff875fdc"
+            },
+            {
+                "blobSum": "sha256:de094493e8216f9a0ec1fd3d1a5f621e697d5841d1501d408a84938eb897fe95"
+            },
+            {
+                "blobSum": "sha256:17c31ceff0f04c0fcf641760de640261b5defad771e53c37748ad8fd36fc9e5f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0d61bb7891a3899c881d9686f252947d281c0756c5a5bd2bf7b54c99bda792e0"
+            },
+            {
+                "blobSum": "sha256:335ed19f8aebd24ab98419a08229f39b97b3f1ae106dc0c75b6d22b3c7ac32b8"
+            },
+            {
+                "blobSum": "sha256:b52514c7f277ac6bb298b485319f09b3fa5a709d58c424de9aec7259ce800a8e"
+            },
+            {
+                "blobSum": "sha256:bedf924ebae8c281bfe7fe9020cd146dd6a72a4e98abe45209a01f80731d5198"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e5968c6a2a7fdfe86f37e74ae82d4c55266d7b5c659ce70d12721b9758332753"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6c4990ff8475139c15d9e7f6aa4930d27b22f0011e1b1046b9248194c3657328"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d61dbef85c7dfcaa0de7e2e221a5b88549f5be6e819609c436e80694cf89699b"
+            },
+            {
+                "blobSum": "sha256:d336770b8a83a8c3b76fb3d8449ba0e7a82b5080cff817f1e721afba4820be69"
+            },
+            {
+                "blobSum": "sha256:055904fbc069100f2cc1071176cbb732a79e8976ddfb8d5def11594b53bbadbf"
+            },
+            {
+                "blobSum": "sha256:e63bd87d75ddf5bea921b03aad03f39d4c3e5557a759fde329bce4b96e44685b"
+            },
+            {
+                "blobSum": "sha256:0057b9e76c8a523a63a6418fdfc9580811083be2a505468a24eaf06348151f9b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:eeda14d1c42137239ad40b8081df1e48df93ce70cc6777edb388e40582cd104d"
+            },
+            {
+                "blobSum": "sha256:c352772bbcfd800bdfb76ce627eb1a18b2cf5e70411ba0f74ea7672ba3d68047"
+            },
+            {
+                "blobSum": "sha256:121dc465f5c667aae08854250881e709b95511d9767551675da33f2801a77501"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b4690d4047c60224d5230518591790ef488f7b77775ce8e4dfe202bf08bca030"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e539f5722cd5086ddd1b5bf2324fe74e9e4f398cc9298b9f9d6f31ac5a7ab8bc"
+            },
+            {
+                "blobSum": "sha256:9cb32b776a4064ce43ac5e6cc5abd317a5dba0fd5a0d842c21e73587b468d804"
+            },
+            {
+                "blobSum": "sha256:a3782c2efb4188af8b56f4001efae6f76b337d21f3c1b58c73d484b1cf1f4b72"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184"
+            }
+        ],
+        "name": "donaldbraman/fbi-reta-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjM0MzA0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTQ6MTNaIn0",
+                "signature": "7Pr3eCiAAizP5K0SXk8WTWtxqkjCUZ_fptaIkPe0f7oRkxdu6Q2I9rS78H0J2-VImC9PaRPia-YM86H6cTUicg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "-McVxIx7QB_Rnwi-XZgbzwO8MKFGNsPdD4Q7gh3dbZw",
+                        "kid": "6D37:ALRV:7EGE:Q73O:OOBQ:PAM3:HLZX:2E4Q:SAYB:5SCK:SOCC:N4AQ",
+                        "x": "LD9TIQwCKlp4MBwn0r76xNUvY4mZUdIRae0jMpUZJfA"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

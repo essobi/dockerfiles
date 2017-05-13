@@ -1,0 +1,234 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Julian Mazzitelli \\u003cmazzitelli.julian@gmail.com\\u003e\",\"config\":{\"Hostname\":\"7e9ec6cde4d1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NPM_CONFIG_LOGLEVEL=info\",\"NODE_VERSION=4.8.2\",\"YARN_VERSION=0.23.2\"],\"Cmd\":[\"node\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3e06c1ece5e4806c182a5ac78378a854b51618f39feb243359b5d4b7b4b5a0ff\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"1c5852e5b3d6371c3c1d1a3a21c8002931cab545700c3f1fdb6b7cd2fc43e35d\",\"container_config\":{\"Hostname\":\"7e9ec6cde4d1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NPM_CONFIG_LOGLEVEL=info\",\"NODE_VERSION=4.8.2\",\"YARN_VERSION=0.23.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"npm install -g bionode-ncbi\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3e06c1ece5e4806c182a5ac78378a854b51618f39feb243359b5d4b7b4b5a0ff\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-25T11:28:18.345274583Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"c54be8eb92797fbafd629050520a36ded38a08403e15d2531d0d56069ece61e9\",\"os\":\"linux\",\"parent\":\"f32728eb657c6f09d4c4e1e7907ee259d8da2e779f104bc4cb36446892b17191\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f32728eb657c6f09d4c4e1e7907ee259d8da2e779f104bc4cb36446892b17191\",\"parent\":\"91cec46d3fe231b54210672418c31d6787d715a82b5eb90cd9c9e14fa59aebd9\",\"created\":\"2017-04-25T11:26:55.212656844Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Julian Mazzitelli \\u003cmazzitelli.julian@gmail.com\\u003e\"]},\"author\":\"Julian Mazzitelli \\u003cmazzitelli.julian@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91cec46d3fe231b54210672418c31d6787d715a82b5eb90cd9c9e14fa59aebd9\",\"parent\":\"26da32779c88376722082cebe3adc2da208d4b2cd4087067b57fe04105c91cc1\",\"created\":\"2017-04-20T14:41:12.748045922Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"node\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"26da32779c88376722082cebe3adc2da208d4b2cd4087067b57fe04105c91cc1\",\"parent\":\"83ee5f422a0f380fc70f5a7f713d4d608a829e0cb6a398b757ee81c8280fa90d\",\"created\":\"2017-04-20T14:41:12.158160617Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\" ||     gpg --keyserver pgp.mit.edu --recv-keys \\\"$key\\\" ||     gpg --keyserver keyserver.pgp.com --recv-keys \\\"$key\\\" ;   done   \\u0026\\u0026 curl -fSL -o yarn.js \\\"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js\\\"   \\u0026\\u0026 curl -fSL -o yarn.js.asc \\\"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js.asc\\\"   \\u0026\\u0026 gpg --batch --verify yarn.js.asc yarn.js   \\u0026\\u0026 rm yarn.js.asc   \\u0026\\u0026 mv yarn.js /usr/local/bin/yarn   \\u0026\\u0026 chmod +x /usr/local/bin/yarn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"83ee5f422a0f380fc70f5a7f713d4d608a829e0cb6a398b757ee81c8280fa90d\",\"parent\":\"eee544de5d2c5b907f4ea0a9f2a731880e423c43e5c29e737960be420af86121\",\"created\":\"2017-04-20T14:41:07.641573285Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV YARN_VERSION=0.23.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eee544de5d2c5b907f4ea0a9f2a731880e423c43e5c29e737960be420af86121\",\"parent\":\"5bc5df1cffb7a8c332410dc5790edc190de6dd8e9997fcb9720985052a8b5867\",\"created\":\"2017-04-07T17:35:24.177499687Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz\\\"   \\u0026\\u0026 curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\\\"   \\u0026\\u0026 gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   \\u0026\\u0026 grep \\\" node-v$NODE_VERSION-linux-x64.tar.xz\\\\$\\\" SHASUMS256.txt | sha256sum -c -   \\u0026\\u0026 tar -xJf \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" -C /usr/local --strip-components=1   \\u0026\\u0026 rm \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" SHASUMS256.txt.asc SHASUMS256.txt   \\u0026\\u0026 ln -s /usr/local/bin/node /usr/local/bin/nodejs\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5bc5df1cffb7a8c332410dc5790edc190de6dd8e9997fcb9720985052a8b5867\",\"parent\":\"cfc212ab65611c0045e3f48c4bb60578814b64228b413ad904fe4fdbdf562adc\",\"created\":\"2017-04-07T17:35:19.543984675Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NODE_VERSION=4.8.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfc212ab65611c0045e3f48c4bb60578814b64228b413ad904fe4fdbdf562adc\",\"parent\":\"a2f8ed9a1104b15b6364280ceefae5fd8ccf8f7ce3a99ae8e12196cef25c8bdd\",\"created\":\"2017-04-07T17:07:08.120215566Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NPM_CONFIG_LOGLEVEL=info\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a2f8ed9a1104b15b6364280ceefae5fd8ccf8f7ce3a99ae8e12196cef25c8bdd\",\"parent\":\"eb106ac6f9debac6b9e4523e4f0882cc56af71f529a3cb725b650d2dd1b6edc4\",\"created\":\"2017-04-07T17:07:07.490457999Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     56730D5401028683275BD23C23EFEFE93C4CFFFE   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\" ||     gpg --keyserver pgp.mit.edu --recv-keys \\\"$key\\\" ||     gpg --keyserver keyserver.pgp.com --recv-keys \\\"$key\\\" ;   done\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb106ac6f9debac6b9e4523e4f0882cc56af71f529a3cb725b650d2dd1b6edc4\",\"parent\":\"98dee2be05041d8fbb6b35e37fe28a7f09462d9f2135b845576c84437d2a5ac1\",\"created\":\"2017-03-22T21:17:40.289723084Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd --gid 1000 node   \\u0026\\u0026 useradd --uid 1000 --gid node --shell /bin/bash --create-home node\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"98dee2be05041d8fbb6b35e37fe28a7f09462d9f2135b845576c84437d2a5ac1\",\"parent\":\"a9e327818c32a7f6536de1f992b7d591417cbf020506481b77294a1b55672405\",\"created\":\"2017-03-21T19:12:14.539823958Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a9e327818c32a7f6536de1f992b7d591417cbf020506481b77294a1b55672405\",\"parent\":\"8a4d83846633c84efbceade7d4c88e50c33d0bb7af89c2f0b1ad52fa72809234\",\"created\":\"2017-03-21T19:11:16.485058186Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a4d83846633c84efbceade7d4c88e50c33d0bb7af89c2f0b1ad52fa72809234\",\"parent\":\"c35ece8820ad1a5c6828908fa194dcc007bd59d622b19e282ef7f4e857710b15\",\"created\":\"2017-03-21T19:10:58.395779413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c35ece8820ad1a5c6828908fa194dcc007bd59d622b19e282ef7f4e857710b15\",\"parent\":\"c1f98057d627496e1843020c45c444f7572b581ef440e7c177f3a4834d483609\",\"created\":\"2017-03-21T18:29:05.091744235Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c1f98057d627496e1843020c45c444f7572b581ef440e7c177f3a4834d483609\",\"created\":\"2017-03-21T18:28:51.055495122Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:afbd703cce423a4ac2d9eca6cdbcfc4b448a1524fa28f25857138822c8d74e3e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:532e7dbfa4f04185d62ed89dbf5d03568172444a3b3df8fbe667f4c54582d619"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:84dc3a1db9064695bfc6a29b240d4a1cc02d050365093b50f9ac76fccbb169b3"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:beb26c2bc803f2dce2b74ff4a0825bfba4aac156f2dd192f0aed2295f905cb51"
+            },
+            {
+                "blobSum": "sha256:e8c647cd1137d0c98da1d4b091581ddb974387f76d439c675ca19790343b5ae7"
+            },
+            {
+                "blobSum": "sha256:44ae682c18a31909b5b2e1c0e95d4a05cdf032e983a0e8dc36cc329fc32b53cd"
+            },
+            {
+                "blobSum": "sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c"
+            },
+            {
+                "blobSum": "sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70"
+            }
+        ],
+        "name": "bionode/bionode-ncbi",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjExNTUyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6MThaIn0",
+                "signature": "2tenQOUbLDKSPX4HCghsiRR4_GPmQeZv3LnTgSGNUq-lVVnPjMA93pClvt3MhDAvE6r_fYfDYc90vJPi2ymMzg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "gexshvamq0EnykqEGFOSeD99-7AGkqE6incFkTCesso",
+                        "kid": "O6TH:VVX4:ASKB:FAFK:BRF4:T5GB:CM6A:23ZY:UGPS:NFER:3KXN:TGUA",
+                        "x": "CmI5L7VcBv3lrKKZ8dNJjkam-X8l7gCuwfUeptrBR1I"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Julian Mazzitelli \\u003cmazzitelli.julian@gmail.com\\u003e\",\"config\":{\"Hostname\":\"7e9ec6cde4d1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NPM_CONFIG_LOGLEVEL=info\",\"NODE_VERSION=4.8.2\",\"YARN_VERSION=0.23.2\"],\"Cmd\":[\"node\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3e06c1ece5e4806c182a5ac78378a854b51618f39feb243359b5d4b7b4b5a0ff\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"1c5852e5b3d6371c3c1d1a3a21c8002931cab545700c3f1fdb6b7cd2fc43e35d\",\"container_config\":{\"Hostname\":\"7e9ec6cde4d1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"NPM_CONFIG_LOGLEVEL=info\",\"NODE_VERSION=4.8.2\",\"YARN_VERSION=0.23.2\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"npm install -g bionode-ncbi\"],\"ArgsEscaped\":true,\"Image\":\"sha256:3e06c1ece5e4806c182a5ac78378a854b51618f39feb243359b5d4b7b4b5a0ff\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-25T11:28:18.345274583Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"c54be8eb92797fbafd629050520a36ded38a08403e15d2531d0d56069ece61e9\",\"os\":\"linux\",\"parent\":\"f32728eb657c6f09d4c4e1e7907ee259d8da2e779f104bc4cb36446892b17191\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f32728eb657c6f09d4c4e1e7907ee259d8da2e779f104bc4cb36446892b17191\",\"parent\":\"91cec46d3fe231b54210672418c31d6787d715a82b5eb90cd9c9e14fa59aebd9\",\"created\":\"2017-04-25T11:26:55.212656844Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Julian Mazzitelli \\u003cmazzitelli.julian@gmail.com\\u003e\"]},\"author\":\"Julian Mazzitelli \\u003cmazzitelli.julian@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91cec46d3fe231b54210672418c31d6787d715a82b5eb90cd9c9e14fa59aebd9\",\"parent\":\"26da32779c88376722082cebe3adc2da208d4b2cd4087067b57fe04105c91cc1\",\"created\":\"2017-04-20T14:41:12.748045922Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"node\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"26da32779c88376722082cebe3adc2da208d4b2cd4087067b57fe04105c91cc1\",\"parent\":\"83ee5f422a0f380fc70f5a7f713d4d608a829e0cb6a398b757ee81c8280fa90d\",\"created\":\"2017-04-20T14:41:12.158160617Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\" ||     gpg --keyserver pgp.mit.edu --recv-keys \\\"$key\\\" ||     gpg --keyserver keyserver.pgp.com --recv-keys \\\"$key\\\" ;   done   \\u0026\\u0026 curl -fSL -o yarn.js \\\"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js\\\"   \\u0026\\u0026 curl -fSL -o yarn.js.asc \\\"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-legacy-$YARN_VERSION.js.asc\\\"   \\u0026\\u0026 gpg --batch --verify yarn.js.asc yarn.js   \\u0026\\u0026 rm yarn.js.asc   \\u0026\\u0026 mv yarn.js /usr/local/bin/yarn   \\u0026\\u0026 chmod +x /usr/local/bin/yarn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"83ee5f422a0f380fc70f5a7f713d4d608a829e0cb6a398b757ee81c8280fa90d\",\"parent\":\"eee544de5d2c5b907f4ea0a9f2a731880e423c43e5c29e737960be420af86121\",\"created\":\"2017-04-20T14:41:07.641573285Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV YARN_VERSION=0.23.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eee544de5d2c5b907f4ea0a9f2a731880e423c43e5c29e737960be420af86121\",\"parent\":\"5bc5df1cffb7a8c332410dc5790edc190de6dd8e9997fcb9720985052a8b5867\",\"created\":\"2017-04-07T17:35:24.177499687Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz\\\"   \\u0026\\u0026 curl -SLO \\\"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\\\"   \\u0026\\u0026 gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   \\u0026\\u0026 grep \\\" node-v$NODE_VERSION-linux-x64.tar.xz\\\\$\\\" SHASUMS256.txt | sha256sum -c -   \\u0026\\u0026 tar -xJf \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" -C /usr/local --strip-components=1   \\u0026\\u0026 rm \\\"node-v$NODE_VERSION-linux-x64.tar.xz\\\" SHASUMS256.txt.asc SHASUMS256.txt   \\u0026\\u0026 ln -s /usr/local/bin/node /usr/local/bin/nodejs\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5bc5df1cffb7a8c332410dc5790edc190de6dd8e9997fcb9720985052a8b5867\",\"parent\":\"cfc212ab65611c0045e3f48c4bb60578814b64228b413ad904fe4fdbdf562adc\",\"created\":\"2017-04-07T17:35:19.543984675Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NODE_VERSION=4.8.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfc212ab65611c0045e3f48c4bb60578814b64228b413ad904fe4fdbdf562adc\",\"parent\":\"a2f8ed9a1104b15b6364280ceefae5fd8ccf8f7ce3a99ae8e12196cef25c8bdd\",\"created\":\"2017-04-07T17:07:08.120215566Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NPM_CONFIG_LOGLEVEL=info\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a2f8ed9a1104b15b6364280ceefae5fd8ccf8f7ce3a99ae8e12196cef25c8bdd\",\"parent\":\"eb106ac6f9debac6b9e4523e4f0882cc56af71f529a3cb725b650d2dd1b6edc4\",\"created\":\"2017-04-07T17:07:07.490457999Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex   \\u0026\\u0026 for key in     9554F04D7259F04124DE6B476D5A82AC7E37093B     94AE36675C464D64BAFA68DD7434390BDBE9B9C5     FD3A5288F042B6850C66B31F09FE44734EB7990E     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1     DD8F2338BAE7501E3DD5AC78C273792F7D83545D     B9AE9905FFD7803F25714661B63B535A4C206CA9     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8     56730D5401028683275BD23C23EFEFE93C4CFFFE   ; do     gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\" ||     gpg --keyserver pgp.mit.edu --recv-keys \\\"$key\\\" ||     gpg --keyserver keyserver.pgp.com --recv-keys \\\"$key\\\" ;   done\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb106ac6f9debac6b9e4523e4f0882cc56af71f529a3cb725b650d2dd1b6edc4\",\"parent\":\"98dee2be05041d8fbb6b35e37fe28a7f09462d9f2135b845576c84437d2a5ac1\",\"created\":\"2017-03-22T21:17:40.289723084Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd --gid 1000 node   \\u0026\\u0026 useradd --uid 1000 --gid node --shell /bin/bash --create-home node\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"98dee2be05041d8fbb6b35e37fe28a7f09462d9f2135b845576c84437d2a5ac1\",\"parent\":\"a9e327818c32a7f6536de1f992b7d591417cbf020506481b77294a1b55672405\",\"created\":\"2017-03-21T19:12:14.539823958Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a9e327818c32a7f6536de1f992b7d591417cbf020506481b77294a1b55672405\",\"parent\":\"8a4d83846633c84efbceade7d4c88e50c33d0bb7af89c2f0b1ad52fa72809234\",\"created\":\"2017-03-21T19:11:16.485058186Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a4d83846633c84efbceade7d4c88e50c33d0bb7af89c2f0b1ad52fa72809234\",\"parent\":\"c35ece8820ad1a5c6828908fa194dcc007bd59d622b19e282ef7f4e857710b15\",\"created\":\"2017-03-21T19:10:58.395779413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c35ece8820ad1a5c6828908fa194dcc007bd59d622b19e282ef7f4e857710b15\",\"parent\":\"c1f98057d627496e1843020c45c444f7572b581ef440e7c177f3a4834d483609\",\"created\":\"2017-03-21T18:29:05.091744235Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c1f98057d627496e1843020c45c444f7572b581ef440e7c177f3a4834d483609\",\"created\":\"2017-03-21T18:28:51.055495122Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:4eedf861fb567fffb2694b65ebdd58d5e371a2c28c3863f363f333cb34e5eb7b in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:afbd703cce423a4ac2d9eca6cdbcfc4b448a1524fa28f25857138822c8d74e3e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:532e7dbfa4f04185d62ed89dbf5d03568172444a3b3df8fbe667f4c54582d619"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:84dc3a1db9064695bfc6a29b240d4a1cc02d050365093b50f9ac76fccbb169b3"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:beb26c2bc803f2dce2b74ff4a0825bfba4aac156f2dd192f0aed2295f905cb51"
+            },
+            {
+                "blobSum": "sha256:e8c647cd1137d0c98da1d4b091581ddb974387f76d439c675ca19790343b5ae7"
+            },
+            {
+                "blobSum": "sha256:44ae682c18a31909b5b2e1c0e95d4a05cdf032e983a0e8dc36cc329fc32b53cd"
+            },
+            {
+                "blobSum": "sha256:7d27bd3d7fecb89d4028f4afa3ee866d2262c5105fc37f57aa82af918dc2f84c"
+            },
+            {
+                "blobSum": "sha256:2726297beaf19be957416750338c095ae15b94adc0e8c1306cebbf113f8b9a5c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6d827a3ef358f4fa21ef8251f95492e667da826653fd43641cef5a877dc03a70"
+            }
+        ],
+        "name": "bionode/bionode-ncbi",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjExNTUyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6MTlaIn0",
+                "signature": "md9bp-8-2WzNzAvr69QNK7Tka5Tg05aYtQj3p4Zvd3m0HuvZ0E1STK4pZMizLpEWlzzrXjtHlwqrRg6U7vcdjw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "IikXGu4CqzHuHQ-1DFJ5AGxrqOTgiGCF7z8cfwicW40",
+                        "kid": "A5FE:OM5P:MTXA:FXMG:KSP2:V2HH:OII7:XSSA:P5PG:AOD2:EGA4:OIGK",
+                        "x": "4pZJGM5lV6SEQPB7ujPU7fEdmnFNE4t3xrQhIsKxXp0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,654 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\",\"config\":{\"Hostname\":\"dd360632d03c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"LANGUAGE=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[\"/notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6b56db46250f7d43f8e80c16b2eed521b799618d4dcb589d39bfb85a39ecc6f8\",\"Volumes\":{\"/notebooks\":{}},\"WorkingDir\":\"/notebooks\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"5e573cff3f870a57541b43d18a4c3553d27820862662f4650e990d44552fa16c\",\"container_config\":{\"Hostname\":\"dd360632d03c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"LANGUAGE=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) WORKDIR /notebooks\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6b56db46250f7d43f8e80c16b2eed521b799618d4dcb589d39bfb85a39ecc6f8\",\"Volumes\":{\"/notebooks\":{}},\"WorkingDir\":\"/notebooks\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-06-21T22:12:16.351542644Z\",\"docker_version\":\"1.11.1\",\"id\":\"b80a16a04d9308646a3d301686f35a4f300fe86d9e12a21983a121306e12adb2\",\"os\":\"linux\",\"parent\":\"cddd82de2f6ed3687f743289f2c1a053d6cf15876ba1a0d1c272502d9ef584c9\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cddd82de2f6ed3687f743289f2c1a053d6cf15876ba1a0d1c272502d9ef584c9\",\"parent\":\"1beceb435cdf1623ffdc4e085a3746cc4d4ea396f8f055c5049bfaedf97f7e8c\",\"created\":\"2016-06-21T22:12:00.714666122Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip3 install -r /install_files/requirements.txt\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1beceb435cdf1623ffdc4e085a3746cc4d4ea396f8f055c5049bfaedf97f7e8c\",\"parent\":\"830baa89c51b49dc70208f8305c56e8f435e2bc0e46624f539bed12ca8d6b318\",\"created\":\"2016-06-21T22:11:04.830373579Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip2 install -r /install_files/requirements.txt\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"830baa89c51b49dc70208f8305c56e8f435e2bc0e46624f539bed12ca8d6b318\",\"parent\":\"480a37b261d5b55bee5586054941e8d128fadfa5e9b8a994247f1c152ee26b9b\",\"created\":\"2016-06-21T22:10:21.843685313Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:dc466bc3a08e10232cf24383fba56166ab231bd772ae48e0daabc2c4443db866 in /install_files/requirements.txt\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"480a37b261d5b55bee5586054941e8d128fadfa5e9b8a994247f1c152ee26b9b\",\"parent\":\"7046968b64fe6a63d7916c4f5b08a80530e20fc7b8aa7306ae15e2ae4352f53b\",\"created\":\"2016-06-21T22:10:06.75300846Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install libpq-dev python-dev\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7046968b64fe6a63d7916c4f5b08a80530e20fc7b8aa7306ae15e2ae4352f53b\",\"parent\":\"9506647cd64d73e386c9023c381e9e753899ea46645522b585daab086046b8c8\",\"created\":\"2016-06-21T22:09:32.329523215Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9506647cd64d73e386c9023c381e9e753899ea46645522b585daab086046b8c8\",\"parent\":\"2e79a18509120947b820d16172ac7b19326c987e56cc28e04c57e0de5931c70c\",\"created\":\"2016-06-21T22:09:04.541335939Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /install_files\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2e79a18509120947b820d16172ac7b19326c987e56cc28e04c57e0de5931c70c\",\"parent\":\"81fa363d25a0b1838b9f650f6cdf9bd5e86aede6335787ab8c7c1e05c1902e0d\",\"created\":\"2016-06-21T22:08:47.160167631Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"81fa363d25a0b1838b9f650f6cdf9bd5e86aede6335787ab8c7c1e05c1902e0d\",\"parent\":\"55676c0622b2bfe6853550fe0b8adf34236025002cdab0414155346beb1445b9\",\"created\":\"2016-06-21T21:59:26.873635838Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/notebook.sh\\\"]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55676c0622b2bfe6853550fe0b8adf34236025002cdab0414155346beb1445b9\",\"parent\":\"2acaf6e4e9f30b44684335cec9382c0d02789e1807658ebda36e4df6063cdc94\",\"created\":\"2016-06-21T21:59:11.717870309Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:a265f4a36e900bd524521a4b412ed5e16afbade66ad51f024ba83008fb04e88b in /\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2acaf6e4e9f30b44684335cec9382c0d02789e1807658ebda36e4df6063cdc94\",\"parent\":\"93752cca687f3c55140821b71e1d9823a2e34856c2043ed1c6fa12ee5fb2d180\",\"created\":\"2016-06-21T21:58:54.242429261Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93752cca687f3c55140821b71e1d9823a2e34856c2043ed1c6fa12ee5fb2d180\",\"parent\":\"cc594a7b742dd778c51b964217052e457d581470827f2e357cf5c6a9aab15358\",\"created\":\"2016-06-21T21:58:39.145803079Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /notebooks\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cc594a7b742dd778c51b964217052e457d581470827f2e357cf5c6a9aab15358\",\"parent\":\"93c352f6b5cc6cddd9a59571233908b3fe6d7b32a9bac7458865e49f3095a36c\",\"created\":\"2016-06-21T21:58:22.022551145Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/notebooks]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93c352f6b5cc6cddd9a59571233908b3fe6d7b32a9bac7458865e49f3095a36c\",\"parent\":\"4fcba5286a56c5dfcba5d6f35264748399fbe3cc9703477b3cf0393dd0bac687\",\"created\":\"2016-06-21T21:58:04.938112196Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER IPython Project \\u003cipython-dev@scipy.org\\u003e\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4fcba5286a56c5dfcba5d6f35264748399fbe3cc9703477b3cf0393dd0bac687\",\"parent\":\"1cba2d2a15b0593b7a79d5e62d50001dfa9a59a242672845f7db052ea09ada5e\",\"created\":\"2015-07-23T18:50:06.90075166Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -f /tmp/build_scipy_stack.sh /tmp/numpy-site.cfg /tmp/scipy-site.cfg\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1cba2d2a15b0593b7a79d5e62d50001dfa9a59a242672845f7db052ea09ada5e\",\"parent\":\"c806014fba9d7f1cb9e3b14620878529e53cef22cee5301ba40d684fb5a9a6c6\",\"created\":\"2015-07-23T18:49:55.76865651Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python3 -c \\\"import matplotlib, scipy, numpy, pandas, sklearn, seaborn, yt, patsy, sympy, IPython\\\"\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c806014fba9d7f1cb9e3b14620878529e53cef22cee5301ba40d684fb5a9a6c6\",\"parent\":\"d840a1927fc26468d7446432614140d4fa228f3b168dab7651747c2502f7ba6d\",\"created\":\"2015-07-23T18:49:40.629918027Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python2 -c \\\"import matplotlib, scipy, numpy, pandas, sklearn, seaborn, yt, patsy, sympy, IPython, statsmodels\\\"\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d840a1927fc26468d7446432614140d4fa228f3b168dab7651747c2502f7ba6d\",\"parent\":\"6a08f327321bdf873142d3ba21788e9c5030343fb801849758645930207100ac\",\"created\":\"2015-07-23T18:49:03.359807517Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c bash /tmp/build_scipy_stack.sh\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a08f327321bdf873142d3ba21788e9c5030343fb801849758645930207100ac\",\"parent\":\"aed7a645212919bced3767a98c21e8b6e2ed61aa042ed4c66687e973cc463598\",\"created\":\"2015-07-23T17:20:42.536646175Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:670fe1f06c2e65207eaad2f4be1dd5ed4eee5e31937e43079cf14f9f5ee49e49 in /tmp/build_scipy_stack.sh\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"aed7a645212919bced3767a98c21e8b6e2ed61aa042ed4c66687e973cc463598\",\"parent\":\"d276b8ddf3a73113f75d363474c1a34799ad95468573edce110a94019e7f0c7d\",\"created\":\"2015-07-23T17:20:37.752023508Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:7e008c6b7b7c6590bf6ede9072cdcc42ed59e3b88015f3cc7e2e8df72a57b356 in /tmp/scipy-site.cfg\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d276b8ddf3a73113f75d363474c1a34799ad95468573edce110a94019e7f0c7d\",\"parent\":\"37bde74e2f51a8625284df06d5a203a10ca0644ea36e1e947bf73fddb7723a69\",\"created\":\"2015-07-23T17:20:32.973716406Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:14310f721bf921c12cacf918f62a16db70848b1d4a62e84a122113b1e3e43d7a in /tmp/numpy-site.cfg\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37bde74e2f51a8625284df06d5a203a10ca0644ea36e1e947bf73fddb7723a69\",\"parent\":\"df880704021133239d348d1f4180d165ead557c8a1cbc5a155634f86ca39ea0b\",\"created\":\"2015-07-23T17:20:28.131710873Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:25fa57b22c90eb51a468a73afc5b97f9289054d913c2fab42eb96a2a5539d868 in /etc/ld.so.conf.d/openblas.conf\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df880704021133239d348d1f4180d165ead557c8a1cbc5a155634f86ca39ea0b\",\"parent\":\"bc44e608a981c23ba9368268f34df7646ac6d62fb5bfa423abc44d1d298d6251\",\"created\":\"2015-07-23T17:20:23.303132306Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER IPython Project \\u003cipython-dev@scipy.org\\u003e\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bc44e608a981c23ba9368268f34df7646ac6d62fb5bfa423abc44d1d298d6251\",\"parent\":\"f03a3e492575dadaac4dabc6dbf6180ab1373856403f657a23522f8f71915d53\",\"created\":\"2015-07-12T16:06:43.807495275Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c iptest3\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f03a3e492575dadaac4dabc6dbf6180ab1373856403f657a23522f8f71915d53\",\"parent\":\"2a41ef88bc65b3d3c7c2805056ac5cc872085f2fe25f34bbe708030d412e87ac\",\"created\":\"2015-07-12T16:04:01.281838643Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c iptest2\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a41ef88bc65b3d3c7c2805056ac5cc872085f2fe25f34bbe708030d412e87ac\",\"parent\":\"0e9139b74ca5f21970e0f5ca8495e18466f980ead9d270b192ab00eb57b96288\",\"created\":\"2015-07-12T16:00:09.952547316Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /tmp/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e9139b74ca5f21970e0f5ca8495e18466f980ead9d270b192ab00eb57b96288\",\"parent\":\"7d06494994c0eccc5acc6ff4804ac6d1b29393a1bb5b44135d5d1f27c9972e05\",\"created\":\"2015-07-12T16:00:04.952466283Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python3 -m IPython kernelspec install-self\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d06494994c0eccc5acc6ff4804ac6d1b29393a1bb5b44135d5d1f27c9972e05\",\"parent\":\"21fc35ee5dcd56844126478d9ebfe36e51ef50b89ea6ef437bc0d21d6990d36c\",\"created\":\"2015-07-12T15:59:58.385650372Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python2 -m IPython kernelspec install-self\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"21fc35ee5dcd56844126478d9ebfe36e51ef50b89ea6ef437bc0d21d6990d36c\",\"parent\":\"ed51a6d5b642a5ed566af837da7e0d0756fd9fdc416241b3743d19bf3afe19fc\",\"created\":\"2015-07-12T15:59:52.335412671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip3 install file:///srv/ipython#egg=ipython[all]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed51a6d5b642a5ed566af837da7e0d0756fd9fdc416241b3743d19bf3afe19fc\",\"parent\":\"edaabf3e8c4a6ddbff4e517b4819f2fce649201ae5134916c2cbeed623adfca5\",\"created\":\"2015-07-12T15:59:18.545853332Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip2 install file:///srv/ipython#egg=ipython[all]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"edaabf3e8c4a6ddbff4e517b4819f2fce649201ae5134916c2cbeed623adfca5\",\"parent\":\"41116af844543c784b6131782becb8b38614740a9c431ccf29ee1fb0df17ab03\",\"created\":\"2015-07-12T15:58:49.196474823Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod -R +rX /srv/ipython\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"41116af844543c784b6131782becb8b38614740a9c431ccf29ee1fb0df17ab03\",\"parent\":\"809ac7b326b676a71ec88643047d124125a22d5e3fddec798104e85a8a63cd0e\",\"created\":\"2015-07-12T15:58:45.057321608Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /srv/ipython/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"809ac7b326b676a71ec88643047d124125a22d5e3fddec798104e85a8a63cd0e\",\"parent\":\"06cbeb7bab320ef8d9f8a13416dc8d669b65ae6fa3cf707a4177775efa7e480c\",\"created\":\"2015-07-12T15:58:40.702960396Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:5f89022491155facaf3497478dab295bfaea98fc61088fa720726b5100530c8c in /srv/ipython\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06cbeb7bab320ef8d9f8a13416dc8d669b65ae6fa3cf707a4177775efa7e480c\",\"parent\":\"c71bb1c9db207db2755739f1e99f1c97bdc7e3416f8ff76c8022135e68ebba5e\",\"created\":\"2015-07-12T15:58:36.361703689Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /srv/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c71bb1c9db207db2755739f1e99f1c97bdc7e3416f8ff76c8022135e68ebba5e\",\"parent\":\"e19edc65aef4d955346ab5cfbcb1236f63e0a3f0e5b317acf5021dc65cb9e525\",\"created\":\"2015-07-12T15:58:32.583379712Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /srv/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e19edc65aef4d955346ab5cfbcb1236f63e0a3f0e5b317acf5021dc65cb9e525\",\"parent\":\"428393a89ce3c64932380ab2070b269508c21cce9cecb54ddd0a183029de1cc2\",\"created\":\"2015-07-12T15:58:28.684714433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install invoke\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"428393a89ce3c64932380ab2070b269508c21cce9cecb54ddd0a183029de1cc2\",\"parent\":\"b530f60ee12016ffc4683f6d3ee318aae2fab8d43e20db1c39939a727c6fb0e0\",\"created\":\"2015-07-12T15:58:23.094302423Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c npm install -g 'less@\\u003c3.0'\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b530f60ee12016ffc4683f6d3ee318aae2fab8d43e20db1c39939a727c6fb0e0\",\"parent\":\"6f62c03018d8e93ff6e86854cc6348aee9697065e8009a9d7a3a22938a0d3346\",\"created\":\"2015-07-12T15:58:02.391251311Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y -q     build-essential     make     gcc     zlib1g-dev     git     python     python-dev     python-pip     python3-dev     python3-pip     python-sphinx     python3-sphinx     libzmq3-dev     sqlite3     libsqlite3-dev     pandoc     libcurl4-openssl-dev     nodejs     nodejs-legacy     npm\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f62c03018d8e93ff6e86854cc6348aee9697065e8009a9d7a3a22938a0d3346\",\"parent\":\"7a112a82b98c2b15afb9c8a16371802488efa7a9f54e5ccf66564902b680a2fc\",\"created\":\"2015-07-12T15:45:23.693657467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c dpkg-reconfigure locales\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7a112a82b98c2b15afb9c8a16371802488efa7a9f54e5ccf66564902b680a2fc\",\"parent\":\"503169191ef053f26b821a507a1822199b9731f8d7d6342c42e18ed7a202a73d\",\"created\":\"2015-07-12T15:45:05.56746493Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c locale-gen en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"503169191ef053f26b821a507a1822199b9731f8d7d6342c42e18ed7a202a73d\",\"parent\":\"0eb3efdfd49a3df696677809c1f9b87dcb13e9c167f7a3078311c3cec9a3f0fe\",\"created\":\"2015-07-12T15:45:03.641501864Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0eb3efdfd49a3df696677809c1f9b87dcb13e9c167f7a3078311c3cec9a3f0fe\",\"parent\":\"03cf607e2546e7cb99e02c9573293a962fb1b8f16ce2d180979962dfbca9bddd\",\"created\":\"2015-07-12T15:45:01.995122476Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"03cf607e2546e7cb99e02c9573293a962fb1b8f16ce2d180979962dfbca9bddd\",\"parent\":\"716eee127d43f8b5722c160ff1073410b54ccbace89802e89dee31f1b8987bdc\",\"created\":\"2015-07-12T15:45:00.385473685Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANGUAGE=en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"716eee127d43f8b5722c160ff1073410b54ccbace89802e89dee31f1b8987bdc\",\"parent\":\"bbbeb7075cd75601bc6f412b38b9009ad53a4545109c5b7f079d4d96ee860b95\",\"created\":\"2015-07-12T15:44:58.787430922Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y language-pack-en\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbbeb7075cd75601bc6f412b38b9009ad53a4545109c5b7f079d4d96ee860b95\",\"parent\":\"6b75a3b74964e41f897252ac82afa1ef87c8cc20170c9a57cd1b63dbdf439988\",\"created\":\"2015-07-12T15:43:38.17318765Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6b75a3b74964e41f897252ac82afa1ef87c8cc20170c9a57cd1b63dbdf439988\",\"parent\":\"7410eabbf432056685694b96f4af008d2abf9fcbcf4d5d92ded91e58b7da78a3\",\"created\":\"2015-07-12T15:43:36.785621114Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER IPython Project \\u003cipython-dev@scipy.org\\u003e\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7410eabbf432056685694b96f4af008d2abf9fcbcf4d5d92ded91e58b7da78a3\",\"parent\":\"e6a4e3ad2d5fd54864b44aca239465a8235e0f1944e4b5958fb41ddfcc128bd4\",\"created\":\"2015-07-09T19:28:34.439309646Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e6a4e3ad2d5fd54864b44aca239465a8235e0f1944e4b5958fb41ddfcc128bd4\",\"parent\":\"0c5b9fa9141433d8b8653118d7a726eab15b7b3944e1663c75906550e1008ad1\",\"created\":\"2015-07-09T19:28:34.149086152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c5b9fa9141433d8b8653118d7a726eab15b7b3944e1663c75906550e1008ad1\",\"parent\":\"929b1576337bbdd3e649f8f973aeb9d1ed2db292dd1e4a791a60dd029d9a841c\",\"created\":\"2015-07-09T19:28:33.486922819Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"929b1576337bbdd3e649f8f973aeb9d1ed2db292dd1e4a791a60dd029d9a841c\",\"created\":\"2015-07-09T19:28:30.661152352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:c8f078961a543cdefaeb73d06e55440d018c1ee410681d262a98620bb38978f6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ea942ba2b827e5f6f7cbb9bb17fdffb83f5874bc9105e9d9f74b8058bc25eef6"
+            },
+            {
+                "blobSum": "sha256:591336e7125d4a4e01c5bb84f458eec729722eb94f862179201645db49b83646"
+            },
+            {
+                "blobSum": "sha256:fe31e16f87386787f0aac4dfd036d78939ee20e5015e559158c91cfcf4e360dc"
+            },
+            {
+                "blobSum": "sha256:b3d3926b53931755035b0c268d288ba41da2cf7a7ce6da1c1e44f05dca221bc2"
+            },
+            {
+                "blobSum": "sha256:2d85e260fba811bcbf77d8eac489653f476e5ff7db78a60cbf61269a7ce52450"
+            },
+            {
+                "blobSum": "sha256:62b0cd188d5a791a942d60112f55e5c155e0adbfe1460abb838a8f76f6ccaeae"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6df60aa0d807fd559104fbb6612d52ebb7a395ad9b08705f44f9c9da0a9dc1b5"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4715540dcc3e3420d4ce1acccde7c6743d7a18284ca74c82d88c57a011daa839"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:784f8c47a84100b264ecaddf44f9758a0ae6a166ed8aa9ec0d5da5d77b078382"
+            },
+            {
+                "blobSum": "sha256:a328af94b1be5f7965d334ddff82ce27304635f6cb614fd18e798c25349bfae6"
+            },
+            {
+                "blobSum": "sha256:e1e4fa4ac93bd52915e1e2e6b8196c71780bfcdaafe11642f3858fdd68fe5df8"
+            },
+            {
+                "blobSum": "sha256:28d9c605ca54d2497e692960b666cb5c6b2076bc17059ffeb4fef6d4b7f9e12b"
+            },
+            {
+                "blobSum": "sha256:37094d3041a7fb2c19b2a5dcf569bbb35b8e47b51c9a378543677b16a1202c12"
+            },
+            {
+                "blobSum": "sha256:518391d58ccbc275bc85fbb2437de1920cd3e7b2f37a3e40785f4ed79bbb83d1"
+            },
+            {
+                "blobSum": "sha256:d80bdf0c4ba30a38524081207a916466e49fcb71aab6449e260b2c6c3ebb4e8f"
+            },
+            {
+                "blobSum": "sha256:6edba53b0917da109f0c1963f070afe4aef5f99dd05b05c369be88ae601e3483"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:435ffbaccb72bf95017be9ebffcfa21f1b0fab30f62bf97339c54b4b5ed60c9c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d072e4aeec803dac3f691658a9738db803261576707b025e746a755423e67f23"
+            },
+            {
+                "blobSum": "sha256:6761a2f1b8e39dbbdc807f6e057dc228619231272bf71f3a0d17923f3ba21155"
+            },
+            {
+                "blobSum": "sha256:e993c1b2ceb94bb90a207a2e299ac0240f89fbdda29f67393a5e14318152093d"
+            },
+            {
+                "blobSum": "sha256:d1e2fad56c42e2e8883e631af1c66d2db8200538a567a6862dcb3ab14cc85afe"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:3d83d4daf1dac32d472db49fd6fa43b27ef1caa65a4756f09ab457193dae5e1d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:afcd9e871bd55baf2f05147dadbdf63b69b8c3c7769dc00f6423d7ec3870ca78"
+            },
+            {
+                "blobSum": "sha256:74d72f3c584193b1107416d8f63114ceb5ab67c706d72c37ad4418af0a5f1b2c"
+            },
+            {
+                "blobSum": "sha256:3da5825e6fa0963758a089bcfca32d8e634095c7b3129bca54aa8800b0be8e4d"
+            },
+            {
+                "blobSum": "sha256:98e22a80e833d719c001a35976051c0b4443f308af4df392a23424fc7be3693e"
+            },
+            {
+                "blobSum": "sha256:9de197a0c677ca9c0cca8faa44cf75e4ebd32d6813b25206f18b53d1de22019d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7fc6364abefe9b3a2cd7c0518f7a53f3bfdcc56e93b92e231d377b432a471752"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0b3e3644d782261c5d480f15ba927ed8ddf47831e5013dd5e34c3cf2d297e053"
+            },
+            {
+                "blobSum": "sha256:c29de585b2252471b5e4ed4a8be32be1292ee506c28c2961e890c777a2347d64"
+            },
+            {
+                "blobSum": "sha256:e9c5e611068deac3cdd6ddc72a7df7329ac06dcdb8b864ca8f54cd8ddd4ab435"
+            }
+        ],
+        "name": "calvingiles/data-science-environment",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjI5MzE4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDI6NDZaIn0",
+                "signature": "rtl-1nHDgcUHsm5tE9ENxMenQCcEje_RcTVin7VPdgxFjMZjL9mhC3h06We2_gr4LxwWrYINNKce1HpqxO5oDg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "naPQv9XEAvtdUs71nIMB9nUhA4JEk6CLGn9mhpuNj30",
+                        "kid": "M64Q:NC3Z:IUT3:CTC3:WUFI:RIZV:4WLX:LSZT:ECT7:JETI:HOXX:MVAS",
+                        "x": "VZ-aVJjfVug7_HNbPx3MOgdK-LLJDq0zAInXMRMPc_o"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\",\"config\":{\"Hostname\":\"dd360632d03c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"LANGUAGE=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[\"/notebook.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6b56db46250f7d43f8e80c16b2eed521b799618d4dcb589d39bfb85a39ecc6f8\",\"Volumes\":{\"/notebooks\":{}},\"WorkingDir\":\"/notebooks\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"5e573cff3f870a57541b43d18a4c3553d27820862662f4650e990d44552fa16c\",\"container_config\":{\"Hostname\":\"dd360632d03c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\",\"LANGUAGE=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) WORKDIR /notebooks\"],\"ArgsEscaped\":true,\"Image\":\"sha256:6b56db46250f7d43f8e80c16b2eed521b799618d4dcb589d39bfb85a39ecc6f8\",\"Volumes\":{\"/notebooks\":{}},\"WorkingDir\":\"/notebooks\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-06-21T22:12:16.351542644Z\",\"docker_version\":\"1.11.1\",\"id\":\"b80a16a04d9308646a3d301686f35a4f300fe86d9e12a21983a121306e12adb2\",\"os\":\"linux\",\"parent\":\"cddd82de2f6ed3687f743289f2c1a053d6cf15876ba1a0d1c272502d9ef584c9\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cddd82de2f6ed3687f743289f2c1a053d6cf15876ba1a0d1c272502d9ef584c9\",\"parent\":\"1beceb435cdf1623ffdc4e085a3746cc4d4ea396f8f055c5049bfaedf97f7e8c\",\"created\":\"2016-06-21T22:12:00.714666122Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip3 install -r /install_files/requirements.txt\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1beceb435cdf1623ffdc4e085a3746cc4d4ea396f8f055c5049bfaedf97f7e8c\",\"parent\":\"830baa89c51b49dc70208f8305c56e8f435e2bc0e46624f539bed12ca8d6b318\",\"created\":\"2016-06-21T22:11:04.830373579Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip2 install -r /install_files/requirements.txt\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"830baa89c51b49dc70208f8305c56e8f435e2bc0e46624f539bed12ca8d6b318\",\"parent\":\"480a37b261d5b55bee5586054941e8d128fadfa5e9b8a994247f1c152ee26b9b\",\"created\":\"2016-06-21T22:10:21.843685313Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:dc466bc3a08e10232cf24383fba56166ab231bd772ae48e0daabc2c4443db866 in /install_files/requirements.txt\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"480a37b261d5b55bee5586054941e8d128fadfa5e9b8a994247f1c152ee26b9b\",\"parent\":\"7046968b64fe6a63d7916c4f5b08a80530e20fc7b8aa7306ae15e2ae4352f53b\",\"created\":\"2016-06-21T22:10:06.75300846Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install libpq-dev python-dev\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7046968b64fe6a63d7916c4f5b08a80530e20fc7b8aa7306ae15e2ae4352f53b\",\"parent\":\"9506647cd64d73e386c9023c381e9e753899ea46645522b585daab086046b8c8\",\"created\":\"2016-06-21T22:09:32.329523215Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9506647cd64d73e386c9023c381e9e753899ea46645522b585daab086046b8c8\",\"parent\":\"2e79a18509120947b820d16172ac7b19326c987e56cc28e04c57e0de5931c70c\",\"created\":\"2016-06-21T22:09:04.541335939Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /install_files\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2e79a18509120947b820d16172ac7b19326c987e56cc28e04c57e0de5931c70c\",\"parent\":\"81fa363d25a0b1838b9f650f6cdf9bd5e86aede6335787ab8c7c1e05c1902e0d\",\"created\":\"2016-06-21T22:08:47.160167631Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\"]},\"author\":\"Calvin Giles \\u003ccalvin.giles@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"81fa363d25a0b1838b9f650f6cdf9bd5e86aede6335787ab8c7c1e05c1902e0d\",\"parent\":\"55676c0622b2bfe6853550fe0b8adf34236025002cdab0414155346beb1445b9\",\"created\":\"2016-06-21T21:59:26.873635838Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/notebook.sh\\\"]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55676c0622b2bfe6853550fe0b8adf34236025002cdab0414155346beb1445b9\",\"parent\":\"2acaf6e4e9f30b44684335cec9382c0d02789e1807658ebda36e4df6063cdc94\",\"created\":\"2016-06-21T21:59:11.717870309Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:a265f4a36e900bd524521a4b412ed5e16afbade66ad51f024ba83008fb04e88b in /\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2acaf6e4e9f30b44684335cec9382c0d02789e1807658ebda36e4df6063cdc94\",\"parent\":\"93752cca687f3c55140821b71e1d9823a2e34856c2043ed1c6fa12ee5fb2d180\",\"created\":\"2016-06-21T21:58:54.242429261Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93752cca687f3c55140821b71e1d9823a2e34856c2043ed1c6fa12ee5fb2d180\",\"parent\":\"cc594a7b742dd778c51b964217052e457d581470827f2e357cf5c6a9aab15358\",\"created\":\"2016-06-21T21:58:39.145803079Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /notebooks\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cc594a7b742dd778c51b964217052e457d581470827f2e357cf5c6a9aab15358\",\"parent\":\"93c352f6b5cc6cddd9a59571233908b3fe6d7b32a9bac7458865e49f3095a36c\",\"created\":\"2016-06-21T21:58:22.022551145Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/notebooks]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93c352f6b5cc6cddd9a59571233908b3fe6d7b32a9bac7458865e49f3095a36c\",\"parent\":\"4fcba5286a56c5dfcba5d6f35264748399fbe3cc9703477b3cf0393dd0bac687\",\"created\":\"2016-06-21T21:58:04.938112196Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER IPython Project \\u003cipython-dev@scipy.org\\u003e\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4fcba5286a56c5dfcba5d6f35264748399fbe3cc9703477b3cf0393dd0bac687\",\"parent\":\"1cba2d2a15b0593b7a79d5e62d50001dfa9a59a242672845f7db052ea09ada5e\",\"created\":\"2015-07-23T18:50:06.90075166Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -f /tmp/build_scipy_stack.sh /tmp/numpy-site.cfg /tmp/scipy-site.cfg\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1cba2d2a15b0593b7a79d5e62d50001dfa9a59a242672845f7db052ea09ada5e\",\"parent\":\"c806014fba9d7f1cb9e3b14620878529e53cef22cee5301ba40d684fb5a9a6c6\",\"created\":\"2015-07-23T18:49:55.76865651Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python3 -c \\\"import matplotlib, scipy, numpy, pandas, sklearn, seaborn, yt, patsy, sympy, IPython\\\"\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c806014fba9d7f1cb9e3b14620878529e53cef22cee5301ba40d684fb5a9a6c6\",\"parent\":\"d840a1927fc26468d7446432614140d4fa228f3b168dab7651747c2502f7ba6d\",\"created\":\"2015-07-23T18:49:40.629918027Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python2 -c \\\"import matplotlib, scipy, numpy, pandas, sklearn, seaborn, yt, patsy, sympy, IPython, statsmodels\\\"\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d840a1927fc26468d7446432614140d4fa228f3b168dab7651747c2502f7ba6d\",\"parent\":\"6a08f327321bdf873142d3ba21788e9c5030343fb801849758645930207100ac\",\"created\":\"2015-07-23T18:49:03.359807517Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c bash /tmp/build_scipy_stack.sh\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a08f327321bdf873142d3ba21788e9c5030343fb801849758645930207100ac\",\"parent\":\"aed7a645212919bced3767a98c21e8b6e2ed61aa042ed4c66687e973cc463598\",\"created\":\"2015-07-23T17:20:42.536646175Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:670fe1f06c2e65207eaad2f4be1dd5ed4eee5e31937e43079cf14f9f5ee49e49 in /tmp/build_scipy_stack.sh\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"aed7a645212919bced3767a98c21e8b6e2ed61aa042ed4c66687e973cc463598\",\"parent\":\"d276b8ddf3a73113f75d363474c1a34799ad95468573edce110a94019e7f0c7d\",\"created\":\"2015-07-23T17:20:37.752023508Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:7e008c6b7b7c6590bf6ede9072cdcc42ed59e3b88015f3cc7e2e8df72a57b356 in /tmp/scipy-site.cfg\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d276b8ddf3a73113f75d363474c1a34799ad95468573edce110a94019e7f0c7d\",\"parent\":\"37bde74e2f51a8625284df06d5a203a10ca0644ea36e1e947bf73fddb7723a69\",\"created\":\"2015-07-23T17:20:32.973716406Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:14310f721bf921c12cacf918f62a16db70848b1d4a62e84a122113b1e3e43d7a in /tmp/numpy-site.cfg\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37bde74e2f51a8625284df06d5a203a10ca0644ea36e1e947bf73fddb7723a69\",\"parent\":\"df880704021133239d348d1f4180d165ead557c8a1cbc5a155634f86ca39ea0b\",\"created\":\"2015-07-23T17:20:28.131710873Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:25fa57b22c90eb51a468a73afc5b97f9289054d913c2fab42eb96a2a5539d868 in /etc/ld.so.conf.d/openblas.conf\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df880704021133239d348d1f4180d165ead557c8a1cbc5a155634f86ca39ea0b\",\"parent\":\"bc44e608a981c23ba9368268f34df7646ac6d62fb5bfa423abc44d1d298d6251\",\"created\":\"2015-07-23T17:20:23.303132306Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER IPython Project \\u003cipython-dev@scipy.org\\u003e\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bc44e608a981c23ba9368268f34df7646ac6d62fb5bfa423abc44d1d298d6251\",\"parent\":\"f03a3e492575dadaac4dabc6dbf6180ab1373856403f657a23522f8f71915d53\",\"created\":\"2015-07-12T16:06:43.807495275Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c iptest3\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f03a3e492575dadaac4dabc6dbf6180ab1373856403f657a23522f8f71915d53\",\"parent\":\"2a41ef88bc65b3d3c7c2805056ac5cc872085f2fe25f34bbe708030d412e87ac\",\"created\":\"2015-07-12T16:04:01.281838643Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c iptest2\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a41ef88bc65b3d3c7c2805056ac5cc872085f2fe25f34bbe708030d412e87ac\",\"parent\":\"0e9139b74ca5f21970e0f5ca8495e18466f980ead9d270b192ab00eb57b96288\",\"created\":\"2015-07-12T16:00:09.952547316Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /tmp/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e9139b74ca5f21970e0f5ca8495e18466f980ead9d270b192ab00eb57b96288\",\"parent\":\"7d06494994c0eccc5acc6ff4804ac6d1b29393a1bb5b44135d5d1f27c9972e05\",\"created\":\"2015-07-12T16:00:04.952466283Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python3 -m IPython kernelspec install-self\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d06494994c0eccc5acc6ff4804ac6d1b29393a1bb5b44135d5d1f27c9972e05\",\"parent\":\"21fc35ee5dcd56844126478d9ebfe36e51ef50b89ea6ef437bc0d21d6990d36c\",\"created\":\"2015-07-12T15:59:58.385650372Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c python2 -m IPython kernelspec install-self\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"21fc35ee5dcd56844126478d9ebfe36e51ef50b89ea6ef437bc0d21d6990d36c\",\"parent\":\"ed51a6d5b642a5ed566af837da7e0d0756fd9fdc416241b3743d19bf3afe19fc\",\"created\":\"2015-07-12T15:59:52.335412671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip3 install file:///srv/ipython#egg=ipython[all]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed51a6d5b642a5ed566af837da7e0d0756fd9fdc416241b3743d19bf3afe19fc\",\"parent\":\"edaabf3e8c4a6ddbff4e517b4819f2fce649201ae5134916c2cbeed623adfca5\",\"created\":\"2015-07-12T15:59:18.545853332Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip2 install file:///srv/ipython#egg=ipython[all]\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"edaabf3e8c4a6ddbff4e517b4819f2fce649201ae5134916c2cbeed623adfca5\",\"parent\":\"41116af844543c784b6131782becb8b38614740a9c431ccf29ee1fb0df17ab03\",\"created\":\"2015-07-12T15:58:49.196474823Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod -R +rX /srv/ipython\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"41116af844543c784b6131782becb8b38614740a9c431ccf29ee1fb0df17ab03\",\"parent\":\"809ac7b326b676a71ec88643047d124125a22d5e3fddec798104e85a8a63cd0e\",\"created\":\"2015-07-12T15:58:45.057321608Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /srv/ipython/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"809ac7b326b676a71ec88643047d124125a22d5e3fddec798104e85a8a63cd0e\",\"parent\":\"06cbeb7bab320ef8d9f8a13416dc8d669b65ae6fa3cf707a4177775efa7e480c\",\"created\":\"2015-07-12T15:58:40.702960396Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:5f89022491155facaf3497478dab295bfaea98fc61088fa720726b5100530c8c in /srv/ipython\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06cbeb7bab320ef8d9f8a13416dc8d669b65ae6fa3cf707a4177775efa7e480c\",\"parent\":\"c71bb1c9db207db2755739f1e99f1c97bdc7e3416f8ff76c8022135e68ebba5e\",\"created\":\"2015-07-12T15:58:36.361703689Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /srv/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c71bb1c9db207db2755739f1e99f1c97bdc7e3416f8ff76c8022135e68ebba5e\",\"parent\":\"e19edc65aef4d955346ab5cfbcb1236f63e0a3f0e5b317acf5021dc65cb9e525\",\"created\":\"2015-07-12T15:58:32.583379712Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /srv/\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e19edc65aef4d955346ab5cfbcb1236f63e0a3f0e5b317acf5021dc65cb9e525\",\"parent\":\"428393a89ce3c64932380ab2070b269508c21cce9cecb54ddd0a183029de1cc2\",\"created\":\"2015-07-12T15:58:28.684714433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install invoke\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"428393a89ce3c64932380ab2070b269508c21cce9cecb54ddd0a183029de1cc2\",\"parent\":\"b530f60ee12016ffc4683f6d3ee318aae2fab8d43e20db1c39939a727c6fb0e0\",\"created\":\"2015-07-12T15:58:23.094302423Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c npm install -g 'less@\\u003c3.0'\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b530f60ee12016ffc4683f6d3ee318aae2fab8d43e20db1c39939a727c6fb0e0\",\"parent\":\"6f62c03018d8e93ff6e86854cc6348aee9697065e8009a9d7a3a22938a0d3346\",\"created\":\"2015-07-12T15:58:02.391251311Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y -q     build-essential     make     gcc     zlib1g-dev     git     python     python-dev     python-pip     python3-dev     python3-pip     python-sphinx     python3-sphinx     libzmq3-dev     sqlite3     libsqlite3-dev     pandoc     libcurl4-openssl-dev     nodejs     nodejs-legacy     npm\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f62c03018d8e93ff6e86854cc6348aee9697065e8009a9d7a3a22938a0d3346\",\"parent\":\"7a112a82b98c2b15afb9c8a16371802488efa7a9f54e5ccf66564902b680a2fc\",\"created\":\"2015-07-12T15:45:23.693657467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c dpkg-reconfigure locales\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7a112a82b98c2b15afb9c8a16371802488efa7a9f54e5ccf66564902b680a2fc\",\"parent\":\"503169191ef053f26b821a507a1822199b9731f8d7d6342c42e18ed7a202a73d\",\"created\":\"2015-07-12T15:45:05.56746493Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c locale-gen en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"503169191ef053f26b821a507a1822199b9731f8d7d6342c42e18ed7a202a73d\",\"parent\":\"0eb3efdfd49a3df696677809c1f9b87dcb13e9c167f7a3078311c3cec9a3f0fe\",\"created\":\"2015-07-12T15:45:03.641501864Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0eb3efdfd49a3df696677809c1f9b87dcb13e9c167f7a3078311c3cec9a3f0fe\",\"parent\":\"03cf607e2546e7cb99e02c9573293a962fb1b8f16ce2d180979962dfbca9bddd\",\"created\":\"2015-07-12T15:45:01.995122476Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"03cf607e2546e7cb99e02c9573293a962fb1b8f16ce2d180979962dfbca9bddd\",\"parent\":\"716eee127d43f8b5722c160ff1073410b54ccbace89802e89dee31f1b8987bdc\",\"created\":\"2015-07-12T15:45:00.385473685Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANGUAGE=en_US.UTF-8\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"716eee127d43f8b5722c160ff1073410b54ccbace89802e89dee31f1b8987bdc\",\"parent\":\"bbbeb7075cd75601bc6f412b38b9009ad53a4545109c5b7f079d4d96ee860b95\",\"created\":\"2015-07-12T15:44:58.787430922Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y language-pack-en\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbbeb7075cd75601bc6f412b38b9009ad53a4545109c5b7f079d4d96ee860b95\",\"parent\":\"6b75a3b74964e41f897252ac82afa1ef87c8cc20170c9a57cd1b63dbdf439988\",\"created\":\"2015-07-12T15:43:38.17318765Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6b75a3b74964e41f897252ac82afa1ef87c8cc20170c9a57cd1b63dbdf439988\",\"parent\":\"7410eabbf432056685694b96f4af008d2abf9fcbcf4d5d92ded91e58b7da78a3\",\"created\":\"2015-07-12T15:43:36.785621114Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER IPython Project \\u003cipython-dev@scipy.org\\u003e\"]},\"author\":\"IPython Project \\u003cipython-dev@scipy.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7410eabbf432056685694b96f4af008d2abf9fcbcf4d5d92ded91e58b7da78a3\",\"parent\":\"e6a4e3ad2d5fd54864b44aca239465a8235e0f1944e4b5958fb41ddfcc128bd4\",\"created\":\"2015-07-09T19:28:34.439309646Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e6a4e3ad2d5fd54864b44aca239465a8235e0f1944e4b5958fb41ddfcc128bd4\",\"parent\":\"0c5b9fa9141433d8b8653118d7a726eab15b7b3944e1663c75906550e1008ad1\",\"created\":\"2015-07-09T19:28:34.149086152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c5b9fa9141433d8b8653118d7a726eab15b7b3944e1663c75906550e1008ad1\",\"parent\":\"929b1576337bbdd3e649f8f973aeb9d1ed2db292dd1e4a791a60dd029d9a841c\",\"created\":\"2015-07-09T19:28:33.486922819Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"929b1576337bbdd3e649f8f973aeb9d1ed2db292dd1e4a791a60dd029d9a841c\",\"created\":\"2015-07-09T19:28:30.661152352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:c8f078961a543cdefaeb73d06e55440d018c1ee410681d262a98620bb38978f6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ea942ba2b827e5f6f7cbb9bb17fdffb83f5874bc9105e9d9f74b8058bc25eef6"
+            },
+            {
+                "blobSum": "sha256:591336e7125d4a4e01c5bb84f458eec729722eb94f862179201645db49b83646"
+            },
+            {
+                "blobSum": "sha256:fe31e16f87386787f0aac4dfd036d78939ee20e5015e559158c91cfcf4e360dc"
+            },
+            {
+                "blobSum": "sha256:b3d3926b53931755035b0c268d288ba41da2cf7a7ce6da1c1e44f05dca221bc2"
+            },
+            {
+                "blobSum": "sha256:2d85e260fba811bcbf77d8eac489653f476e5ff7db78a60cbf61269a7ce52450"
+            },
+            {
+                "blobSum": "sha256:62b0cd188d5a791a942d60112f55e5c155e0adbfe1460abb838a8f76f6ccaeae"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6df60aa0d807fd559104fbb6612d52ebb7a395ad9b08705f44f9c9da0a9dc1b5"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4715540dcc3e3420d4ce1acccde7c6743d7a18284ca74c82d88c57a011daa839"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:784f8c47a84100b264ecaddf44f9758a0ae6a166ed8aa9ec0d5da5d77b078382"
+            },
+            {
+                "blobSum": "sha256:a328af94b1be5f7965d334ddff82ce27304635f6cb614fd18e798c25349bfae6"
+            },
+            {
+                "blobSum": "sha256:e1e4fa4ac93bd52915e1e2e6b8196c71780bfcdaafe11642f3858fdd68fe5df8"
+            },
+            {
+                "blobSum": "sha256:28d9c605ca54d2497e692960b666cb5c6b2076bc17059ffeb4fef6d4b7f9e12b"
+            },
+            {
+                "blobSum": "sha256:37094d3041a7fb2c19b2a5dcf569bbb35b8e47b51c9a378543677b16a1202c12"
+            },
+            {
+                "blobSum": "sha256:518391d58ccbc275bc85fbb2437de1920cd3e7b2f37a3e40785f4ed79bbb83d1"
+            },
+            {
+                "blobSum": "sha256:d80bdf0c4ba30a38524081207a916466e49fcb71aab6449e260b2c6c3ebb4e8f"
+            },
+            {
+                "blobSum": "sha256:6edba53b0917da109f0c1963f070afe4aef5f99dd05b05c369be88ae601e3483"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:435ffbaccb72bf95017be9ebffcfa21f1b0fab30f62bf97339c54b4b5ed60c9c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d072e4aeec803dac3f691658a9738db803261576707b025e746a755423e67f23"
+            },
+            {
+                "blobSum": "sha256:6761a2f1b8e39dbbdc807f6e057dc228619231272bf71f3a0d17923f3ba21155"
+            },
+            {
+                "blobSum": "sha256:e993c1b2ceb94bb90a207a2e299ac0240f89fbdda29f67393a5e14318152093d"
+            },
+            {
+                "blobSum": "sha256:d1e2fad56c42e2e8883e631af1c66d2db8200538a567a6862dcb3ab14cc85afe"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:3d83d4daf1dac32d472db49fd6fa43b27ef1caa65a4756f09ab457193dae5e1d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:afcd9e871bd55baf2f05147dadbdf63b69b8c3c7769dc00f6423d7ec3870ca78"
+            },
+            {
+                "blobSum": "sha256:74d72f3c584193b1107416d8f63114ceb5ab67c706d72c37ad4418af0a5f1b2c"
+            },
+            {
+                "blobSum": "sha256:3da5825e6fa0963758a089bcfca32d8e634095c7b3129bca54aa8800b0be8e4d"
+            },
+            {
+                "blobSum": "sha256:98e22a80e833d719c001a35976051c0b4443f308af4df392a23424fc7be3693e"
+            },
+            {
+                "blobSum": "sha256:9de197a0c677ca9c0cca8faa44cf75e4ebd32d6813b25206f18b53d1de22019d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7fc6364abefe9b3a2cd7c0518f7a53f3bfdcc56e93b92e231d377b432a471752"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0b3e3644d782261c5d480f15ba927ed8ddf47831e5013dd5e34c3cf2d297e053"
+            },
+            {
+                "blobSum": "sha256:c29de585b2252471b5e4ed4a8be32be1292ee506c28c2961e890c777a2347d64"
+            },
+            {
+                "blobSum": "sha256:e9c5e611068deac3cdd6ddc72a7df7329ac06dcdb8b864ca8f54cd8ddd4ab435"
+            }
+        ],
+        "name": "calvingiles/data-science-environment",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjI5MzE4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDI6NDdaIn0",
+                "signature": "A_Gn3HYMxmHycogB-iZj5oGe9jwiw4EV4egjq7wYIF0wlSSkdDgHf7fl_XHiq_799fGlYyr_LGMp8X4LgZ0aPQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "BOM7dvDBYPGfLNefkXSAi6CW_Z59bDrSVh2ZN1_u6CQ",
+                        "kid": "C2PE:U5AB:OIHJ:TAOQ:3ZGP:JNQ7:7MF5:3GTR:ZIXN:3ZPI:CQDX:VSY6",
+                        "x": "D0XjKxEOAcTvOijHv9fuvlpfSunU-jyPfoY-TSkA37c"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

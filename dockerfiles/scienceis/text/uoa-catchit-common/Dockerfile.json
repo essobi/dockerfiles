@@ -1,0 +1,126 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:caa21e76b92023469e1bc5eff8896104db52428cdb9d5b90777559bb34e37f55\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"698afb9e56198e655cb868c87a99b77d346045e852f06c20649a59d8c8e9f90a\",\"container_config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 3838/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:caa21e76b92023469e1bc5eff8896104db52428cdb9d5b90777559bb34e37f55\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-03-30T09:32:09.00024989Z\",\"docker_version\":\"1.10.2\",\"id\":\"0b57383eea80b383fa4a0330c29f0697d60606b899c79f136bd93f44805b156c\",\"os\":\"linux\",\"parent\":\"39c388b201970bd96888b613871cfee3f7b96eb60892b135b12457b103ccc69c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39c388b201970bd96888b613871cfee3f7b96eb60892b135b12457b103ccc69c\",\"parent\":\"58e4b12e5de3a5657ca1128a2e88e19eae8c693cf71cd1e1054e4d5029463d5c\",\"created\":\"2016-03-30T09:32:07.198689027Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key add /tmp/key.txt     \\u0026\\u0026 echo \\\"deb http://cran.stat.auckland.ac.nz/bin/linux/debian jessie-cran3/\\\" | tee -a /etc/apt/sources.list.d/R.list     \\u0026\\u0026 apt-get update     \\u0026\\u0026 apt-get install -y -q         r-base-core         libcurl4-openssl-dev         libxml2-dev         libssl-dev         libssl1.0.0         sudo         wget     \\u0026\\u0026 wget --no-verbose -O libssl.deb http://security.ubuntu.com/ubuntu/pool/universe/o/openssl098/libssl0.9.8_0.9.8o-7ubuntu3.2_amd64.deb     \\u0026\\u0026 dpkg -i libssl.deb     \\u0026\\u0026 rm -f libssl.deb     \\u0026\\u0026 R -e \\\"install.packages(c('rmarkdown', 'devtools', 'shiny', 'RColorBrewer', 'prettyR', 'gplots'), repos='http://cran.rstudio.com/', lib='/usr/lib/R/site-library', dependencies=T)\\\"     \\u0026\\u0026 R -e \\\"devtools::install_github('AnalytixWare/ShinySky')\\\"     \\u0026\\u0026 wget --no-verbose -O shiny-server.deb https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.0.756-amd64.deb     \\u0026\\u0026 dpkg -i shiny-server.deb     \\u0026\\u0026 rm -f shiny-server.deb     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /srv/shiny-server/* /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58e4b12e5de3a5657ca1128a2e88e19eae8c693cf71cd1e1054e4d5029463d5c\",\"parent\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"created\":\"2016-03-30T09:06:54.632036172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:dcdf2c48af5b3ed68c6e4e760cc0f182bf30532930c39a36f9b61be88e327670 in /tmp/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"parent\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"created\":\"2016-03-30T09:06:54.410760189Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"parent\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:14.143360029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:11.375621601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e47f84e4863355d18ae247837df992a356804d3087181d9733c3888deecde60f"
+            },
+            {
+                "blobSum": "sha256:7d0186aef6a21549bb97cf22109f6eabe36ed9c44562c55ffffc410d0d8b3b99"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42"
+            }
+        ],
+        "name": "scienceis/uoa-catchit-common",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjUzNTUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzoxMTozNVoifQ",
+                "signature": "7HA02E9jWrDoQ7Hfl7NR3uNoEkwXDsz7RBgc5QF9pSofemkSGZUZklm_bmtKmoMG82Fh4K4uAJFqN-Ea3MQ8qQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "BOM7dvDBYPGfLNefkXSAi6CW_Z59bDrSVh2ZN1_u6CQ",
+                        "kid": "C2PE:U5AB:OIHJ:TAOQ:3ZGP:JNQ7:7MF5:3GTR:ZIXN:3ZPI:CQDX:VSY6",
+                        "x": "D0XjKxEOAcTvOijHv9fuvlpfSunU-jyPfoY-TSkA37c"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"\\\"Science IS Team\\\" ws@sit.auckland.ac.nz\",\"config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:caa21e76b92023469e1bc5eff8896104db52428cdb9d5b90777559bb34e37f55\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"698afb9e56198e655cb868c87a99b77d346045e852f06c20649a59d8c8e9f90a\",\"container_config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 3838/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:caa21e76b92023469e1bc5eff8896104db52428cdb9d5b90777559bb34e37f55\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-03-30T09:32:09.00024989Z\",\"docker_version\":\"1.10.2\",\"id\":\"0b57383eea80b383fa4a0330c29f0697d60606b899c79f136bd93f44805b156c\",\"os\":\"linux\",\"parent\":\"39c388b201970bd96888b613871cfee3f7b96eb60892b135b12457b103ccc69c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39c388b201970bd96888b613871cfee3f7b96eb60892b135b12457b103ccc69c\",\"parent\":\"58e4b12e5de3a5657ca1128a2e88e19eae8c693cf71cd1e1054e4d5029463d5c\",\"created\":\"2016-03-30T09:32:07.198689027Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key add /tmp/key.txt     \\u0026\\u0026 echo \\\"deb http://cran.stat.auckland.ac.nz/bin/linux/debian jessie-cran3/\\\" | tee -a /etc/apt/sources.list.d/R.list     \\u0026\\u0026 apt-get update     \\u0026\\u0026 apt-get install -y -q         r-base-core         libcurl4-openssl-dev         libxml2-dev         libssl-dev         libssl1.0.0         sudo         wget     \\u0026\\u0026 wget --no-verbose -O libssl.deb http://security.ubuntu.com/ubuntu/pool/universe/o/openssl098/libssl0.9.8_0.9.8o-7ubuntu3.2_amd64.deb     \\u0026\\u0026 dpkg -i libssl.deb     \\u0026\\u0026 rm -f libssl.deb     \\u0026\\u0026 R -e \\\"install.packages(c('rmarkdown', 'devtools', 'shiny', 'RColorBrewer', 'prettyR', 'gplots'), repos='http://cran.rstudio.com/', lib='/usr/lib/R/site-library', dependencies=T)\\\"     \\u0026\\u0026 R -e \\\"devtools::install_github('AnalytixWare/ShinySky')\\\"     \\u0026\\u0026 wget --no-verbose -O shiny-server.deb https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.4.0.756-amd64.deb     \\u0026\\u0026 dpkg -i shiny-server.deb     \\u0026\\u0026 rm -f shiny-server.deb     \\u0026\\u0026 apt-get clean     \\u0026\\u0026 rm -rf /srv/shiny-server/* /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58e4b12e5de3a5657ca1128a2e88e19eae8c693cf71cd1e1054e4d5029463d5c\",\"parent\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"created\":\"2016-03-30T09:06:54.632036172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:dcdf2c48af5b3ed68c6e4e760cc0f182bf30532930c39a36f9b61be88e327670 in /tmp/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"parent\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"created\":\"2016-03-30T09:06:54.410760189Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER \\\"Science IS Team\\\" ws@sit.auckland.ac.nz\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"parent\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:14.143360029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:11.375621601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:e47f84e4863355d18ae247837df992a356804d3087181d9733c3888deecde60f"
+            },
+            {
+                "blobSum": "sha256:7d0186aef6a21549bb97cf22109f6eabe36ed9c44562c55ffffc410d0d8b3b99"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42"
+            }
+        ],
+        "name": "scienceis/uoa-catchit-common",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjUzNTUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzoxMTozNVoifQ",
+                "signature": "XIYcRc1ay3ZjlyKCaQzKqx9XYcRxyYd0C2hy5zfqccjX8Ne9noloftvBx_F6OEOrC9M9iAOeL5jOHLjv5TN9Fg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "-McVxIx7QB_Rnwi-XZgbzwO8MKFGNsPdD4Q7gh3dbZw",
+                        "kid": "6D37:ALRV:7EGE:Q73O:OOBQ:PAM3:HLZX:2E4Q:SAYB:5SCK:SOCC:N4AQ",
+                        "x": "LD9TIQwCKlp4MBwn0r76xNUvY4mZUdIRae0jMpUZJfA"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

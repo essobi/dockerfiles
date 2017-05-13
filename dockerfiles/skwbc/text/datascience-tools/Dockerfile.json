@@ -1,0 +1,318 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"MXNET_HOME=/mxnet\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:f5e9b3f7bb3c5a464528c06908b7310f994f689782da2cbea105f58049106786\",\"Volumes\":{\"/mnt\":{},\"/workspace\":{}},\"WorkingDir\":\"/workspace\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"8ec8569e7adc1920275abededa769f6c6840db8526471105fa0263225cdd016f\",\"container_config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"MXNET_HOME=/mxnet\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) WORKDIR /workspace\"],\"ArgsEscaped\":true,\"Image\":\"sha256:f5e9b3f7bb3c5a464528c06908b7310f994f689782da2cbea105f58049106786\",\"Volumes\":{\"/mnt\":{},\"/workspace\":{}},\"WorkingDir\":\"/workspace\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-20T18:35:14.333221335Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"9ea8af801d50fac76be8e94078cb1accbe8bdbd15f0ded8ee9ea1c03e76fd7fd\",\"os\":\"linux\",\"parent\":\"ef68202143c00beff1d7dd6e99c25cc876bc666cadb3261290cc8c6203b4d0cc\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ef68202143c00beff1d7dd6e99c25cc876bc666cadb3261290cc8c6203b4d0cc\",\"parent\":\"39dde5b5bf646833015965b2568b50e47b1406609d011a55b98df80aee109f79\",\"created\":\"2017-04-20T18:34:51.940231294Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/mnt]\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39dde5b5bf646833015965b2568b50e47b1406609d011a55b98df80aee109f79\",\"parent\":\"61cbe97ae803f57f47e8687eb296847c24b2e3a3812bf4c3e387bd2271899192\",\"created\":\"2017-04-20T18:34:29.613654487Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/workspace]\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"61cbe97ae803f57f47e8687eb296847c24b2e3a3812bf4c3e387bd2271899192\",\"parent\":\"3e635c320d946844c0d3249d2cbcd53776457b62a84d5b66098295d30821af54\",\"created\":\"2017-04-20T18:34:10.772631285Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c mkdir /workspace\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3e635c320d946844c0d3249d2cbcd53776457b62a84d5b66098295d30821af54\",\"parent\":\"fa2e4f8cc584263a17a857692c1d19420e5c1cdec7fcc3c41ea5b561c2cc7027\",\"created\":\"2017-04-20T18:33:48.244049952Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa2e4f8cc584263a17a857692c1d19420e5c1cdec7fcc3c41ea5b561c2cc7027\",\"parent\":\"c397d4837234666400ce178f55a08575efcaadddf7adc2b0831456f51dcc460d\",\"created\":\"2017-04-20T18:33:26.237053159Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 6006/tcp\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c397d4837234666400ce178f55a08575efcaadddf7adc2b0831456f51dcc460d\",\"parent\":\"c83ac33ab3cbd79d3273d6e7608153bc3cd3889d05c52011201dc764f8cb6fad\",\"created\":\"2017-04-20T18:33:06.352255491Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4f035e9bf25fd3150d3d131dfe6839412a6d9847c257976cb9c2ac2124c08ecb in /root/.config/matplotlib/ \"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c83ac33ab3cbd79d3273d6e7608153bc3cd3889d05c52011201dc764f8cb6fad\",\"parent\":\"2d7ce411e37e076e43f39000c9bf732552944599760ee3ae6ee13b9ba2dbe8a6\",\"created\":\"2017-04-20T18:32:47.19874715Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:bbeb92ec366bdd2aedff485dc8a75dc615003fa56155d445bca2fa8070e485cd in /root/.jupyter/ \"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2d7ce411e37e076e43f39000c9bf732552944599760ee3ae6ee13b9ba2dbe8a6\",\"parent\":\"6fec02eda078b5a342c0da408c05b7a01be58b9aa345eb547c2f9e018a9815b7\",\"created\":\"2017-04-20T18:32:28.604071556Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c set -x \\u0026\\u0026   git clone https://github.com/dmlc/mxnet.git --recursive \\u0026\\u0026   cd /mxnet; make -j4 \\u0026\\u0026   cd python; python setup.py install\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6fec02eda078b5a342c0da408c05b7a01be58b9aa345eb547c2f9e018a9815b7\",\"parent\":\"7617b82ff6e973f0c6f05a81710adc6793d7b2430630d75bc4371f94d217def6\",\"created\":\"2017-04-20T17:56:23.82917253Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV MXNET_HOME=/mxnet\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7617b82ff6e973f0c6f05a81710adc6793d7b2430630d75bc4371f94d217def6\",\"parent\":\"55787dc85f0083cb07378804bfb329d54fff9c1e0199bf95d6065983b45ea11b\",\"created\":\"2017-04-20T17:56:05.449306313Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c set -x \\u0026\\u0026   git clone --recursive https://github.com/dmlc/xgboost \\u0026\\u0026   cd xgboost; make -j4 \\u0026\\u0026   cd python-package; python setup.py install\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55787dc85f0083cb07378804bfb329d54fff9c1e0199bf95d6065983b45ea11b\",\"parent\":\"da0b0e513870d89f1014f2b2a91eaf6c77b6ff16a0704ab16ab37c7b6fe15e19\",\"created\":\"2017-04-20T17:50:32.610922438Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c set -x \\u0026\\u0026   conda install -c menpo opencv3 -y \\u0026\\u0026   conda install graphviz jupyter seaborn -y \\u0026\\u0026   conda install -c conda-forge pymc3 -y \\u0026\\u0026   conda install -c conda-forge librosa -y \\u0026\\u0026   pip install     fastFM     graphviz     line_profiler     memory_profiler \\u0026\\u0026   pip install \\\"https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.0-cp35-cp35m-linux_x86_64.whl\\\"\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da0b0e513870d89f1014f2b2a91eaf6c77b6ff16a0704ab16ab37c7b6fe15e19\",\"parent\":\"02120d21cbb02022b8bf5db5143dfc8ef88cc5cebf7f91e5e36ed4de849389bb\",\"created\":\"2017-04-20T17:45:32.831457482Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG tensorflow_version=1.0.0-cp35-cp35m\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"02120d21cbb02022b8bf5db5143dfc8ef88cc5cebf7f91e5e36ed4de849389bb\",\"parent\":\"acaa21195338374387d01c9a965652b45bfe7124d1e48637ed764a4a2768194b\",\"created\":\"2017-04-20T17:45:14.915437738Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/root/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"acaa21195338374387d01c9a965652b45bfe7124d1e48637ed764a4a2768194b\",\"parent\":\"1e1f3b432314bef3a9ae4bb0907f073aac1c16e23655ba2d7ce3b88690d64061\",\"created\":\"2017-04-20T17:44:51.413256135Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -x \\u0026\\u0026   apt-get update \\u0026\\u0026   apt-get install -y     build-essential     libatlas-base-dev     libopencv-dev     wget     git     vim     libgtk2.0 \\u0026\\u0026   apt-get clean \\u0026\\u0026   wget https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh \\u0026\\u0026   bash Anaconda3-4.1.1-Linux-x86_64.sh -b \\u0026\\u0026   rm Anaconda3-4.1.1-Linux-x86_64.sh\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1e1f3b432314bef3a9ae4bb0907f073aac1c16e23655ba2d7ce3b88690d64061\",\"parent\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"created\":\"2017-04-20T17:34:38.4460642Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"parent\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"created\":\"2017-04-12T21:06:42.400456816Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"parent\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"created\":\"2017-04-12T21:06:40.989728134Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"parent\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"created\":\"2017-04-12T21:06:38.850141436Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"parent\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"created\":\"2017-04-12T21:06:37.566865121Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"parent\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:36.368687679Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:34.139960926Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b8a2c16d65e533a2bcb5820d2bae70f5a80bd2d8c982c93d9a6cdbf22f8f8ee8 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:936163f775591caf6e6f5ed9e1e81e72c5cd7015bf7805b76422ab0c8a410477"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:633969af5ff667e1e8928743f5bf9cf595312d2abd3093eed2dc71c5c6e6d93a"
+            },
+            {
+                "blobSum": "sha256:b32e707eaf530c8305b703a5768a0f8437a6dde475a2accbcdf77fa5a7b52a2e"
+            },
+            {
+                "blobSum": "sha256:4d32390ecd6d282c4be0949c169028eba4864090c7db3cc5649fd0fdf86ef4f6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b3bc8db110245840a80a3e9b3e7668e995007466145339c6b79c69ec5fbcbe65"
+            },
+            {
+                "blobSum": "sha256:f5c4ce59df35fdaeaba1524503c3f0fc61633ecb968e61c060792d630dc2c085"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f0a9b8b8f2dcb006df7ade721da7264b80d42751390ae70906a14df44ff1a4b4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6b33fd031facf4d7dd97afeea8a93260c2f15c3e795eeccd8969198a3d52678d"
+            },
+            {
+                "blobSum": "sha256:0062f774e9942f61d13928855ab8111adc27def6f41bd6f7902c329ec836882b"
+            },
+            {
+                "blobSum": "sha256:5c9125a401ae0cf5a5b4128633e7a4e84230d3eb4c541c661618a70e5d29aeff"
+            },
+            {
+                "blobSum": "sha256:d4fceeeb758e5103c39daf44c73404bf476ef6fd6b7a9a11e2260fcc1797c806"
+            },
+            {
+                "blobSum": "sha256:c62795f78da9ad31d9669cb4feb4e8fba995a299a0b2bd0f05b10fdc05b1f35e"
+            }
+        ],
+        "name": "skwbc/datascience-tools",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE1NTkwLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDc6MjhaIn0",
+                "signature": "Sl_GXBtwdtmjqDkry0Xt0Y_zD8zypDh2MFu6OqTJ_fvhLTJJdEeDX-mlR2Ftgx2U_wjwX7HlPkByotkKGait5Q",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "MEG--KbbbJK_RkPIP9e5fQVuGlo3uimah2uJUFRzuKw",
+                        "kid": "AS5P:WMNA:RSR2:GJR7:SC2U:YXPA:7WEF:WKEX:EAVM:PUHS:YY7E:SNWG",
+                        "x": "OaqjMSsPzUo3jbPCGZ4WryQhjpyFpJS911jrYM9zYL8"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"MXNET_HOME=/mxnet\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:f5e9b3f7bb3c5a464528c06908b7310f994f689782da2cbea105f58049106786\",\"Volumes\":{\"/mnt\":{},\"/workspace\":{}},\"WorkingDir\":\"/workspace\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"8ec8569e7adc1920275abededa769f6c6840db8526471105fa0263225cdd016f\",\"container_config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"MXNET_HOME=/mxnet\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) WORKDIR /workspace\"],\"ArgsEscaped\":true,\"Image\":\"sha256:f5e9b3f7bb3c5a464528c06908b7310f994f689782da2cbea105f58049106786\",\"Volumes\":{\"/mnt\":{},\"/workspace\":{}},\"WorkingDir\":\"/workspace\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-20T18:35:14.333221335Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"9ea8af801d50fac76be8e94078cb1accbe8bdbd15f0ded8ee9ea1c03e76fd7fd\",\"os\":\"linux\",\"parent\":\"ef68202143c00beff1d7dd6e99c25cc876bc666cadb3261290cc8c6203b4d0cc\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ef68202143c00beff1d7dd6e99c25cc876bc666cadb3261290cc8c6203b4d0cc\",\"parent\":\"39dde5b5bf646833015965b2568b50e47b1406609d011a55b98df80aee109f79\",\"created\":\"2017-04-20T18:34:51.940231294Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/mnt]\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39dde5b5bf646833015965b2568b50e47b1406609d011a55b98df80aee109f79\",\"parent\":\"61cbe97ae803f57f47e8687eb296847c24b2e3a3812bf4c3e387bd2271899192\",\"created\":\"2017-04-20T18:34:29.613654487Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/workspace]\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"61cbe97ae803f57f47e8687eb296847c24b2e3a3812bf4c3e387bd2271899192\",\"parent\":\"3e635c320d946844c0d3249d2cbcd53776457b62a84d5b66098295d30821af54\",\"created\":\"2017-04-20T18:34:10.772631285Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c mkdir /workspace\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3e635c320d946844c0d3249d2cbcd53776457b62a84d5b66098295d30821af54\",\"parent\":\"fa2e4f8cc584263a17a857692c1d19420e5c1cdec7fcc3c41ea5b561c2cc7027\",\"created\":\"2017-04-20T18:33:48.244049952Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa2e4f8cc584263a17a857692c1d19420e5c1cdec7fcc3c41ea5b561c2cc7027\",\"parent\":\"c397d4837234666400ce178f55a08575efcaadddf7adc2b0831456f51dcc460d\",\"created\":\"2017-04-20T18:33:26.237053159Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 6006/tcp\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c397d4837234666400ce178f55a08575efcaadddf7adc2b0831456f51dcc460d\",\"parent\":\"c83ac33ab3cbd79d3273d6e7608153bc3cd3889d05c52011201dc764f8cb6fad\",\"created\":\"2017-04-20T18:33:06.352255491Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4f035e9bf25fd3150d3d131dfe6839412a6d9847c257976cb9c2ac2124c08ecb in /root/.config/matplotlib/ \"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c83ac33ab3cbd79d3273d6e7608153bc3cd3889d05c52011201dc764f8cb6fad\",\"parent\":\"2d7ce411e37e076e43f39000c9bf732552944599760ee3ae6ee13b9ba2dbe8a6\",\"created\":\"2017-04-20T18:32:47.19874715Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:bbeb92ec366bdd2aedff485dc8a75dc615003fa56155d445bca2fa8070e485cd in /root/.jupyter/ \"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2d7ce411e37e076e43f39000c9bf732552944599760ee3ae6ee13b9ba2dbe8a6\",\"parent\":\"6fec02eda078b5a342c0da408c05b7a01be58b9aa345eb547c2f9e018a9815b7\",\"created\":\"2017-04-20T18:32:28.604071556Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c set -x \\u0026\\u0026   git clone https://github.com/dmlc/mxnet.git --recursive \\u0026\\u0026   cd /mxnet; make -j4 \\u0026\\u0026   cd python; python setup.py install\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6fec02eda078b5a342c0da408c05b7a01be58b9aa345eb547c2f9e018a9815b7\",\"parent\":\"7617b82ff6e973f0c6f05a81710adc6793d7b2430630d75bc4371f94d217def6\",\"created\":\"2017-04-20T17:56:23.82917253Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV MXNET_HOME=/mxnet\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7617b82ff6e973f0c6f05a81710adc6793d7b2430630d75bc4371f94d217def6\",\"parent\":\"55787dc85f0083cb07378804bfb329d54fff9c1e0199bf95d6065983b45ea11b\",\"created\":\"2017-04-20T17:56:05.449306313Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c set -x \\u0026\\u0026   git clone --recursive https://github.com/dmlc/xgboost \\u0026\\u0026   cd xgboost; make -j4 \\u0026\\u0026   cd python-package; python setup.py install\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55787dc85f0083cb07378804bfb329d54fff9c1e0199bf95d6065983b45ea11b\",\"parent\":\"da0b0e513870d89f1014f2b2a91eaf6c77b6ff16a0704ab16ab37c7b6fe15e19\",\"created\":\"2017-04-20T17:50:32.610922438Z\",\"container_config\":{\"Cmd\":[\"|1 tensorflow_version=1.0.0-cp35-cp35m /bin/sh -c set -x \\u0026\\u0026   conda install -c menpo opencv3 -y \\u0026\\u0026   conda install graphviz jupyter seaborn -y \\u0026\\u0026   conda install -c conda-forge pymc3 -y \\u0026\\u0026   conda install -c conda-forge librosa -y \\u0026\\u0026   pip install     fastFM     graphviz     line_profiler     memory_profiler \\u0026\\u0026   pip install \\\"https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.0-cp35-cp35m-linux_x86_64.whl\\\"\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da0b0e513870d89f1014f2b2a91eaf6c77b6ff16a0704ab16ab37c7b6fe15e19\",\"parent\":\"02120d21cbb02022b8bf5db5143dfc8ef88cc5cebf7f91e5e36ed4de849389bb\",\"created\":\"2017-04-20T17:45:32.831457482Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG tensorflow_version=1.0.0-cp35-cp35m\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"02120d21cbb02022b8bf5db5143dfc8ef88cc5cebf7f91e5e36ed4de849389bb\",\"parent\":\"acaa21195338374387d01c9a965652b45bfe7124d1e48637ed764a4a2768194b\",\"created\":\"2017-04-20T17:45:14.915437738Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/root/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"acaa21195338374387d01c9a965652b45bfe7124d1e48637ed764a4a2768194b\",\"parent\":\"1e1f3b432314bef3a9ae4bb0907f073aac1c16e23655ba2d7ce3b88690d64061\",\"created\":\"2017-04-20T17:44:51.413256135Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -x \\u0026\\u0026   apt-get update \\u0026\\u0026   apt-get install -y     build-essential     libatlas-base-dev     libopencv-dev     wget     git     vim     libgtk2.0 \\u0026\\u0026   apt-get clean \\u0026\\u0026   wget https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh \\u0026\\u0026   bash Anaconda3-4.1.1-Linux-x86_64.sh -b \\u0026\\u0026   rm Anaconda3-4.1.1-Linux-x86_64.sh\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1e1f3b432314bef3a9ae4bb0907f073aac1c16e23655ba2d7ce3b88690d64061\",\"parent\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"created\":\"2017-04-20T17:34:38.4460642Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\"]},\"author\":\"Shota Kawabuchi \\u003cshota.kawabuchi+git@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"parent\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"created\":\"2017-04-12T21:06:42.400456816Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"parent\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"created\":\"2017-04-12T21:06:40.989728134Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"parent\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"created\":\"2017-04-12T21:06:38.850141436Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"parent\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"created\":\"2017-04-12T21:06:37.566865121Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"parent\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:36.368687679Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:34.139960926Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b8a2c16d65e533a2bcb5820d2bae70f5a80bd2d8c982c93d9a6cdbf22f8f8ee8 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:936163f775591caf6e6f5ed9e1e81e72c5cd7015bf7805b76422ab0c8a410477"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:633969af5ff667e1e8928743f5bf9cf595312d2abd3093eed2dc71c5c6e6d93a"
+            },
+            {
+                "blobSum": "sha256:b32e707eaf530c8305b703a5768a0f8437a6dde475a2accbcdf77fa5a7b52a2e"
+            },
+            {
+                "blobSum": "sha256:4d32390ecd6d282c4be0949c169028eba4864090c7db3cc5649fd0fdf86ef4f6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b3bc8db110245840a80a3e9b3e7668e995007466145339c6b79c69ec5fbcbe65"
+            },
+            {
+                "blobSum": "sha256:f5c4ce59df35fdaeaba1524503c3f0fc61633ecb968e61c060792d630dc2c085"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f0a9b8b8f2dcb006df7ade721da7264b80d42751390ae70906a14df44ff1a4b4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6b33fd031facf4d7dd97afeea8a93260c2f15c3e795eeccd8969198a3d52678d"
+            },
+            {
+                "blobSum": "sha256:0062f774e9942f61d13928855ab8111adc27def6f41bd6f7902c329ec836882b"
+            },
+            {
+                "blobSum": "sha256:5c9125a401ae0cf5a5b4128633e7a4e84230d3eb4c541c661618a70e5d29aeff"
+            },
+            {
+                "blobSum": "sha256:d4fceeeb758e5103c39daf44c73404bf476ef6fd6b7a9a11e2260fcc1797c806"
+            },
+            {
+                "blobSum": "sha256:c62795f78da9ad31d9669cb4feb4e8fba995a299a0b2bd0f05b10fdc05b1f35e"
+            }
+        ],
+        "name": "skwbc/datascience-tools",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE1NTkwLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDc6MjlaIn0",
+                "signature": "OgSPk3M1LXsT-RE9jfs7THWRgBVu6ijye7-7iA18JksMlMS_8zXubZoHmGZD5BYuzXkXvCfJtMc89msEbbvIVw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "2hp7ae1koj6lH0JHtp_UeSvcc-n3cBeVReL5gzgjc1s",
+                        "kid": "DPI6:UKJO:IIK3:WLLD:46GX:6ADW:XQPP:CLKL:WNMW:7QEW:HX3K:NFZ4",
+                        "x": "H6JXbcxZDXsP7K8nvsu0NFIb69uEDJvAtX76ewYhM5k"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

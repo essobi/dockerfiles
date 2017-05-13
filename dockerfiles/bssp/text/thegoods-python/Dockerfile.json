@@ -1,0 +1,258 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\",\"TERM=screen-256color\"],\"Cmd\":[\"python3\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4c76c57fb84ec6de0606ac700dc69c98ae4973efa6abdea899b894cad07b5751\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"5bd76b56ba75e52e2df021224a2dde2d34784f170cd6ef2c2ab7949b3af5b135\",\"container_config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\",\"TERM=screen-256color\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install -U pip \\u0026\\u0026 pip install -U pip cython \\u0026\\u0026 pip install -U numpy  \\t\\u0026\\u0026 pip install -U oauth2 awscli bokeh bottleneck bs4 cachetools cairocffi folium geopy h5py \\t\\u0026\\u0026 pip install -U hdfs ipdb ipython jellyfish line_profiler lxml matplotlib memory_profiler mpld3 mpmath \\t\\u0026\\u0026 pip install -U mysqlclient nltk numexpr numexpr pandas pandas_datareader paramiko patsy pillow plotly \\t\\u0026\\u0026 pip install -U pycountry pydrill pymc3 python-dateutil pytz qgrid requests schedule scikit-learn scipy \\t\\u0026\\u0026 pip install -U seaborn six sqlalchemy statsmodels sympy tables tabulate us wordcloud xlrd zipcode\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4c76c57fb84ec6de0606ac700dc69c98ae4973efa6abdea899b894cad07b5751\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-11T23:10:29.102499134Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"f247821af36a9b6536edd3c96373061a8535a1a2d4e9dcef991dfaac4ea52f21\",\"os\":\"linux\",\"parent\":\"ae19a362d401afed3910e9f3de1a4fb1427502a10f662cdbc2963b8a7e412e35\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae19a362d401afed3910e9f3de1a4fb1427502a10f662cdbc2963b8a7e412e35\",\"parent\":\"e787564738cbce449d9278f5abc75fa9835e0a7aff3211bb9b62dac3e1ae0cad\",\"created\":\"2017-05-11T23:03:27.966748862Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get upgrade -y \\t\\u0026\\u0026 apt-get install build-essential gcc g++ gfortran liblapack-dev python3-dev python3-opengl -y \\t\\u0026\\u0026 apt-get install less vim rsync libhdf5-dev libsuitesparse-dev libfreetype6-dev pkg-config -y \\t\\u0026\\u0026 apt-get install libmariadb2 mariadb-client-10.0 -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e787564738cbce449d9278f5abc75fa9835e0a7aff3211bb9b62dac3e1ae0cad\",\"parent\":\"7e4b7c017b057f1b2660a8c385f987cdf64962efcef50e544351ddb267c353e7\",\"created\":\"2017-05-11T22:59:55.500436659Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=screen-256color\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e4b7c017b057f1b2660a8c385f987cdf64962efcef50e544351ddb267c353e7\",\"parent\":\"7357558adce1702fce4bcf8d17356ebea5a170b6c995fdb87035196900400b8a\",\"created\":\"2017-02-28T22:21:31.58723484Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python3\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7357558adce1702fce4bcf8d17356ebea5a170b6c995fdb87035196900400b8a\",\"parent\":\"8bd3f518f9a8add123cfd5f9bee8d9607924c1d9d0eb0e7c262b20c8273ff010\",\"created\":\"2017-02-28T22:21:31.223707397Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin \\t\\u0026\\u0026 { [ -e easy_install ] || ln -s easy_install-* easy_install; } \\t\\u0026\\u0026 ln -s idle3 idle \\t\\u0026\\u0026 ln -s pydoc3 pydoc \\t\\u0026\\u0026 ln -s python3 python \\t\\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8bd3f518f9a8add123cfd5f9bee8d9607924c1d9d0eb0e7c262b20c8273ff010\",\"parent\":\"8a8aeadae1f6c4f8be9dc5a1bbbd967b0e4e412c2844cd57530236248a241289\",\"created\":\"2017-02-28T22:21:30.023655125Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\ttcl-dev \\t\\ttk-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure \\t\\t--enable-loadable-sqlite-extensions \\t\\t--enable-shared \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\t\\u0026\\u0026 if [ ! -e /usr/local/bin/pip3 ]; then : \\t\\t\\u0026\\u0026 wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \\t\\t\\u0026\\u0026 python3 /tmp/get-pip.py \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\t\\u0026\\u0026 rm /tmp/get-pip.py \\t; fi \\t\\u0026\\u0026 pip3 install --no-cache-dir --upgrade --force-reinstall \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\u0026\\u0026 [ \\\"$(pip list |tac|tac| awk -F '[ ()]+' '$1 == \\\"pip\\\" { print $2; exit }')\\\" = \\\"$PYTHON_PIP_VERSION\\\" ] \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python ~/.cache\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a8aeadae1f6c4f8be9dc5a1bbbd967b0e4e412c2844cd57530236248a241289\",\"parent\":\"ce9fd9fb7a1e8f89f5f92a0dab23df421d75e40cf1e6273ff45d746b34fc2dfb\",\"created\":\"2017-02-28T22:19:54.375824729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce9fd9fb7a1e8f89f5f92a0dab23df421d75e40cf1e6273ff45d746b34fc2dfb\",\"parent\":\"ec1ca7f6fae7183177f93c4eda20acb45163535e9934d3a02cc0651aacd4a810\",\"created\":\"2017-02-28T22:19:53.767727119Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.6.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec1ca7f6fae7183177f93c4eda20acb45163535e9934d3a02cc0651aacd4a810\",\"parent\":\"1d80f5be6486346639eb32b1b988a922cd37375d6d8319c9888ac47f4fe57c4a\",\"created\":\"2017-02-28T22:19:53.175936799Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1d80f5be6486346639eb32b1b988a922cd37375d6d8319c9888ac47f4fe57c4a\",\"parent\":\"6db3352fdb21475af24aab8d4240e9014f3e39fffb83e9ca40699d58062b1bf2\",\"created\":\"2017-02-28T20:39:48.725614505Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\ttcl \\t\\ttk \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6db3352fdb21475af24aab8d4240e9014f3e39fffb83e9ca40699d58062b1bf2\",\"parent\":\"f5c9bd3aa27560db2496aaebc223f3b6c54d2ca1853d8d274f8f3148d43d5292\",\"created\":\"2017-02-28T20:39:37.119721246Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f5c9bd3aa27560db2496aaebc223f3b6c54d2ca1853d8d274f8f3148d43d5292\",\"parent\":\"709cdb51f8b2af483952b12809dfe3e580adb94abc122d8bc1c323e694157a9d\",\"created\":\"2017-02-28T20:39:36.823803499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"709cdb51f8b2af483952b12809dfe3e580adb94abc122d8bc1c323e694157a9d\",\"parent\":\"f08fa75b719aefb123facc276cf1438054599e807a4dd84c993190f26e0c11a7\",\"created\":\"2017-02-27T21:15:04.580134447Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f08fa75b719aefb123facc276cf1438054599e807a4dd84c993190f26e0c11a7\",\"parent\":\"02bb743035c9af65e244c2d5e2fd4c0360e584a378cb4d1e0462c8b783001b92\",\"created\":\"2017-02-27T21:14:17.327518443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"02bb743035c9af65e244c2d5e2fd4c0360e584a378cb4d1e0462c8b783001b92\",\"parent\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"created\":\"2017-02-27T21:14:01.137634753Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"parent\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:37.813657023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:36.966911578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:2ea8bf43a1e83120803aeecce10c117f52f403fb775f75823055396aef736c3c"
+            },
+            {
+                "blobSum": "sha256:039f256709686587c2ce98e5aa234ae765023cb597d0a837b0aef46cd61139b5"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:122df0be0c08af309bfca7ede4ce42eb271df126125a6c3a942fcc542b92af9f"
+            },
+            {
+                "blobSum": "sha256:5197ddcecc354265ccf45ce18758808fd765ea4e5614a2ed42cb36cb28275a90"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:25b1aaa33436bc8ec5cd081e2105a6c2ff96b8f2d901048ef5a945d35b662744"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:54a5f7da9a4f2853a0078d1926f7dbd4d12d09b01b13da4aa808d015024419c8"
+            },
+            {
+                "blobSum": "sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41"
+            },
+            {
+                "blobSum": "sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184"
+            }
+        ],
+        "name": "bssp/thegoods-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEzODYyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6NDhaIn0",
+                "signature": "o26rUMS8pdKpv3pHOBfDlMaywwiTlsMLqx6cxx0XITaG2dqnCeMVRKXL6qo0LjZ_TLDIAkM0-q-Zjvshn8F44Q",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "MEG--KbbbJK_RkPIP9e5fQVuGlo3uimah2uJUFRzuKw",
+                        "kid": "AS5P:WMNA:RSR2:GJR7:SC2U:YXPA:7WEF:WKEX:EAVM:PUHS:YY7E:SNWG",
+                        "x": "OaqjMSsPzUo3jbPCGZ4WryQhjpyFpJS911jrYM9zYL8"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\",\"TERM=screen-256color\"],\"Cmd\":[\"python3\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4c76c57fb84ec6de0606ac700dc69c98ae4973efa6abdea899b894cad07b5751\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"5bd76b56ba75e52e2df021224a2dde2d34784f170cd6ef2c2ab7949b3af5b135\",\"container_config\":{\"Hostname\":\"ed11f485244a\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.0\",\"PYTHON_PIP_VERSION=9.0.1\",\"TERM=screen-256color\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install -U pip \\u0026\\u0026 pip install -U pip cython \\u0026\\u0026 pip install -U numpy  \\t\\u0026\\u0026 pip install -U oauth2 awscli bokeh bottleneck bs4 cachetools cairocffi folium geopy h5py \\t\\u0026\\u0026 pip install -U hdfs ipdb ipython jellyfish line_profiler lxml matplotlib memory_profiler mpld3 mpmath \\t\\u0026\\u0026 pip install -U mysqlclient nltk numexpr numexpr pandas pandas_datareader paramiko patsy pillow plotly \\t\\u0026\\u0026 pip install -U pycountry pydrill pymc3 python-dateutil pytz qgrid requests schedule scikit-learn scipy \\t\\u0026\\u0026 pip install -U seaborn six sqlalchemy statsmodels sympy tables tabulate us wordcloud xlrd zipcode\"],\"ArgsEscaped\":true,\"Image\":\"sha256:4c76c57fb84ec6de0606ac700dc69c98ae4973efa6abdea899b894cad07b5751\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-11T23:10:29.102499134Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"f247821af36a9b6536edd3c96373061a8535a1a2d4e9dcef991dfaac4ea52f21\",\"os\":\"linux\",\"parent\":\"ae19a362d401afed3910e9f3de1a4fb1427502a10f662cdbc2963b8a7e412e35\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae19a362d401afed3910e9f3de1a4fb1427502a10f662cdbc2963b8a7e412e35\",\"parent\":\"e787564738cbce449d9278f5abc75fa9835e0a7aff3211bb9b62dac3e1ae0cad\",\"created\":\"2017-05-11T23:03:27.966748862Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get upgrade -y \\t\\u0026\\u0026 apt-get install build-essential gcc g++ gfortran liblapack-dev python3-dev python3-opengl -y \\t\\u0026\\u0026 apt-get install less vim rsync libhdf5-dev libsuitesparse-dev libfreetype6-dev pkg-config -y \\t\\u0026\\u0026 apt-get install libmariadb2 mariadb-client-10.0 -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e787564738cbce449d9278f5abc75fa9835e0a7aff3211bb9b62dac3e1ae0cad\",\"parent\":\"7e4b7c017b057f1b2660a8c385f987cdf64962efcef50e544351ddb267c353e7\",\"created\":\"2017-05-11T22:59:55.500436659Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=screen-256color\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e4b7c017b057f1b2660a8c385f987cdf64962efcef50e544351ddb267c353e7\",\"parent\":\"7357558adce1702fce4bcf8d17356ebea5a170b6c995fdb87035196900400b8a\",\"created\":\"2017-02-28T22:21:31.58723484Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python3\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7357558adce1702fce4bcf8d17356ebea5a170b6c995fdb87035196900400b8a\",\"parent\":\"8bd3f518f9a8add123cfd5f9bee8d9607924c1d9d0eb0e7c262b20c8273ff010\",\"created\":\"2017-02-28T22:21:31.223707397Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin \\t\\u0026\\u0026 { [ -e easy_install ] || ln -s easy_install-* easy_install; } \\t\\u0026\\u0026 ln -s idle3 idle \\t\\u0026\\u0026 ln -s pydoc3 pydoc \\t\\u0026\\u0026 ln -s python3 python \\t\\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8bd3f518f9a8add123cfd5f9bee8d9607924c1d9d0eb0e7c262b20c8273ff010\",\"parent\":\"8a8aeadae1f6c4f8be9dc5a1bbbd967b0e4e412c2844cd57530236248a241289\",\"created\":\"2017-02-28T22:21:30.023655125Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\ttcl-dev \\t\\ttk-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure \\t\\t--enable-loadable-sqlite-extensions \\t\\t--enable-shared \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\t\\u0026\\u0026 if [ ! -e /usr/local/bin/pip3 ]; then : \\t\\t\\u0026\\u0026 wget -O /tmp/get-pip.py 'https://bootstrap.pypa.io/get-pip.py' \\t\\t\\u0026\\u0026 python3 /tmp/get-pip.py \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\t\\u0026\\u0026 rm /tmp/get-pip.py \\t; fi \\t\\u0026\\u0026 pip3 install --no-cache-dir --upgrade --force-reinstall \\\"pip==$PYTHON_PIP_VERSION\\\" \\t\\u0026\\u0026 [ \\\"$(pip list |tac|tac| awk -F '[ ()]+' '$1 == \\\"pip\\\" { print $2; exit }')\\\" = \\\"$PYTHON_PIP_VERSION\\\" ] \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python ~/.cache\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a8aeadae1f6c4f8be9dc5a1bbbd967b0e4e412c2844cd57530236248a241289\",\"parent\":\"ce9fd9fb7a1e8f89f5f92a0dab23df421d75e40cf1e6273ff45d746b34fc2dfb\",\"created\":\"2017-02-28T22:19:54.375824729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce9fd9fb7a1e8f89f5f92a0dab23df421d75e40cf1e6273ff45d746b34fc2dfb\",\"parent\":\"ec1ca7f6fae7183177f93c4eda20acb45163535e9934d3a02cc0651aacd4a810\",\"created\":\"2017-02-28T22:19:53.767727119Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.6.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ec1ca7f6fae7183177f93c4eda20acb45163535e9934d3a02cc0651aacd4a810\",\"parent\":\"1d80f5be6486346639eb32b1b988a922cd37375d6d8319c9888ac47f4fe57c4a\",\"created\":\"2017-02-28T22:19:53.175936799Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1d80f5be6486346639eb32b1b988a922cd37375d6d8319c9888ac47f4fe57c4a\",\"parent\":\"6db3352fdb21475af24aab8d4240e9014f3e39fffb83e9ca40699d58062b1bf2\",\"created\":\"2017-02-28T20:39:48.725614505Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\ttcl \\t\\ttk \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6db3352fdb21475af24aab8d4240e9014f3e39fffb83e9ca40699d58062b1bf2\",\"parent\":\"f5c9bd3aa27560db2496aaebc223f3b6c54d2ca1853d8d274f8f3148d43d5292\",\"created\":\"2017-02-28T20:39:37.119721246Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f5c9bd3aa27560db2496aaebc223f3b6c54d2ca1853d8d274f8f3148d43d5292\",\"parent\":\"709cdb51f8b2af483952b12809dfe3e580adb94abc122d8bc1c323e694157a9d\",\"created\":\"2017-02-28T20:39:36.823803499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"709cdb51f8b2af483952b12809dfe3e580adb94abc122d8bc1c323e694157a9d\",\"parent\":\"f08fa75b719aefb123facc276cf1438054599e807a4dd84c993190f26e0c11a7\",\"created\":\"2017-02-27T21:15:04.580134447Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f08fa75b719aefb123facc276cf1438054599e807a4dd84c993190f26e0c11a7\",\"parent\":\"02bb743035c9af65e244c2d5e2fd4c0360e584a378cb4d1e0462c8b783001b92\",\"created\":\"2017-02-27T21:14:17.327518443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"02bb743035c9af65e244c2d5e2fd4c0360e584a378cb4d1e0462c8b783001b92\",\"parent\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"created\":\"2017-02-27T21:14:01.137634753Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfae62ad9233cb1aad3cf290e75d493dd57ab56d29c0f228600a77ad825ee0a1\",\"parent\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:37.813657023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4d43e3e8873c566e79ea6789c568f0c74ee0b4150117f337157f40624b9f51a0\",\"created\":\"2017-02-27T20:34:36.966911578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:41ac8d85ee35954bf6c8353d9681a045ba260aa9a96dbbded7bcd6e37ee49bea in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:2ea8bf43a1e83120803aeecce10c117f52f403fb775f75823055396aef736c3c"
+            },
+            {
+                "blobSum": "sha256:039f256709686587c2ce98e5aa234ae765023cb597d0a837b0aef46cd61139b5"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:122df0be0c08af309bfca7ede4ce42eb271df126125a6c3a942fcc542b92af9f"
+            },
+            {
+                "blobSum": "sha256:5197ddcecc354265ccf45ce18758808fd765ea4e5614a2ed42cb36cb28275a90"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:25b1aaa33436bc8ec5cd081e2105a6c2ff96b8f2d901048ef5a945d35b662744"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:54a5f7da9a4f2853a0078d1926f7dbd4d12d09b01b13da4aa808d015024419c8"
+            },
+            {
+                "blobSum": "sha256:5d2dc01312f3714eed4630a1317629f9131f307b3fc6d83506444d3eeebc0e41"
+            },
+            {
+                "blobSum": "sha256:081cd4bfd5210ff69949cc356db9693d11d103cd2380117cff7d4be6966eafdf"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:693502eb7dfbc6b94964ae66ebc72d3e32facd981c72995b09794f1e87bac184"
+            }
+        ],
+        "name": "bssp/thegoods-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEzODYyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6NDhaIn0",
+                "signature": "XpUMN6AbCfwCfNSVlVOAtiPfcrKWAV7Gu3awK5oPYMah8vJB1Kla0xj5Pj1fEaE4gzlhNwfvK8ZoeLETZHMAyw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Ivv3m6V17wyB306mgkx747JubU31KRkIgD-PJT5hSc0",
+                        "kid": "7UVY:A3TJ:AENA:X54I:Q6HX:H6M2:HQSI:GOTY:NLKN:QNXC:ZXQ5:RJ3Z",
+                        "x": "qk_NfMShksj1fW1Nc8Sw7lMkuiX_RqJnKTumb6qVens"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

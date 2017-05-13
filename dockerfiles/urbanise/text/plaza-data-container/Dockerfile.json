@@ -1,0 +1,102 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"true\"],\"ArgsEscaped\":true,\"Image\":\"sha256:44d760c30e94792113d726cfc821d59923d71162d2c59b475739b7be0e573a56\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"29eceb7885b950591be6b3cb37ef0f06d9b30dad17bb2945be3533b6ec3f3770\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"true\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:44d760c30e94792113d726cfc821d59923d71162d2c59b475739b7be0e573a56\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-09T05:04:12.326878215Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"8453841694e367c1f66b22708afd9204230b4eb3298d7796d8871bed6aa972cb\",\"os\":\"linux\",\"parent\":\"f743bb466d9aeb2cb647dd912ce981a213f52dcd43b38d510e9e3bdb717407a3\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f743bb466d9aeb2cb647dd912ce981a213f52dcd43b38d510e9e3bdb717407a3\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-03-09T05:04:12.00877474Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /data/mysql \\u0026\\u0026 touch /data/mysql/.ignore \\u0026\\u0026  mkdir -p /data/s3proxy \\u0026\\u0026 touch /data/s3proxy/.ignore \\u0026\\u0026 mkdir -p /data/elasticsearch \\u0026\\u0026 touch /data/elasticsearch/.ignore\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-09T05:04:11.075876105Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/data]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d091a2455b39f5394834d25713355dab7e29cdf8f601d159b8b1e00dbcb0bacb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "urbanise/plaza-data-container",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMyNzYsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDo0M1oifQ",
+                "signature": "0PylKcUYPjE2gqrQ9KV8iSY2x3dHuTI9tm7dLhlR2oHpHHyLkIblAL75XGjJxsdRLlObjN5othxR9WNUFgH0tA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "RBJtkKTCFBrjVjhdE2lQPdtu96DvJGVL6y9WXXmjduw",
+                        "kid": "YALU:NGK3:6FMK:L2BW:UHIF:LCG6:A4XV:GPJN:LN5Q:HJIL:4EK2:5HIZ",
+                        "x": "QAQl2e7lyLK3M_1zpiXZiuFGWQFFfONYFit-oVL5FQU"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"true\"],\"ArgsEscaped\":true,\"Image\":\"sha256:44d760c30e94792113d726cfc821d59923d71162d2c59b475739b7be0e573a56\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"29eceb7885b950591be6b3cb37ef0f06d9b30dad17bb2945be3533b6ec3f3770\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"true\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:44d760c30e94792113d726cfc821d59923d71162d2c59b475739b7be0e573a56\",\"Volumes\":{\"/data\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-09T05:04:12.326878215Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"8453841694e367c1f66b22708afd9204230b4eb3298d7796d8871bed6aa972cb\",\"os\":\"linux\",\"parent\":\"f743bb466d9aeb2cb647dd912ce981a213f52dcd43b38d510e9e3bdb717407a3\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f743bb466d9aeb2cb647dd912ce981a213f52dcd43b38d510e9e3bdb717407a3\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-03-09T05:04:12.00877474Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /data/mysql \\u0026\\u0026 touch /data/mysql/.ignore \\u0026\\u0026  mkdir -p /data/s3proxy \\u0026\\u0026 touch /data/s3proxy/.ignore \\u0026\\u0026 mkdir -p /data/elasticsearch \\u0026\\u0026 touch /data/elasticsearch/.ignore\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-09T05:04:11.075876105Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/data]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d091a2455b39f5394834d25713355dab7e29cdf8f601d159b8b1e00dbcb0bacb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "urbanise/plaza-data-container",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMyNzYsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNDo0M1oifQ",
+                "signature": "s_xIkmCkcXVGOL-C5a2w41D_uoka3d_f69gdz_4lZ-Y_HoCWwBFCXMiUqMLUY7ocYJc0OyJJ0eVORY50adZX7w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "lubdNDGw9l-YlN4Djm3z1QVE1w0GOY7O0fVGNdUKefc",
+                        "kid": "KSY6:S27Y:WBRG:OQAO:JRHW:22EO:GYWO:UMK2:6QKY:ODIB:AO3B:MJ62",
+                        "x": "8gM-43YJDWdk7v0Zci6g9fmuOWdig5kI9GRc0FSftlY"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

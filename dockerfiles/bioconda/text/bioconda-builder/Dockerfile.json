@@ -1,0 +1,342 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3d0a3397c069\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/rh/devtoolset-2/root/usr/bin:/opt/rh/autotools-latest/root/usr/bin:/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:ace31648b075f5542a941b7570b9b6e9d2170b82add031d0a442213f3bf53d07\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/bioconda-recipes/scripts/build-packages.py\"],\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"bb92c9849bdcc24f0bfe24607782d61e58631c5a7160567aaae86abc70536714\",\"container_config\":{\"Hostname\":\"3d0a3397c069\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/rh/devtoolset-2/root/usr/bin:/opt/rh/autotools-latest/root/usr/bin:/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD []\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ace31648b075f5542a941b7570b9b6e9d2170b82add031d0a442213f3bf53d07\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/bioconda-recipes/scripts/build-packages.py\"],\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-06-09T10:34:19.11475109Z\",\"docker_version\":\"1.11.1\",\"id\":\"edfb8c788415f23a4cebd120d127a3746605e13a80577df010ea914f55eeba38\",\"os\":\"linux\",\"parent\":\"4431566a0dd47add5a4e33d0ab4b684ab62d37b966b6933a2d76c981c2e21100\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4431566a0dd47add5a4e33d0ab4b684ab62d37b966b6933a2d76c981c2e21100\",\"parent\":\"8c8411dae76bdec545825995abf0a2bd3d0558861dc3ba01cf09d963c0d8df1c\",\"created\":\"2016-06-09T10:34:10.905057896Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"/bioconda-recipes/scripts/build-packages.py\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c8411dae76bdec545825995abf0a2bd3d0558861dc3ba01cf09d963c0d8df1c\",\"parent\":\"f650e6132cd8df20f78aa805f518b3d325f19aef5cb824ae6129beb1557279bc\",\"created\":\"2016-06-09T10:34:04.211455399Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y toposort\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f650e6132cd8df20f78aa805f518b3d325f19aef5cb824ae6129beb1557279bc\",\"parent\":\"dd924928090862417de07a4fc3556f3ae6664170092268c2c33fbef1035f260c\",\"created\":\"2016-06-09T10:33:51.849353352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels file://anaconda/conda-bld\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dd924928090862417de07a4fc3556f3ae6664170092268c2c33fbef1035f260c\",\"parent\":\"2945f4414d2ad9f0c49076205414448c6aa92de5aad3900817a678ea02f7c88a\",\"created\":\"2016-06-09T10:33:44.454529656Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels r\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2945f4414d2ad9f0c49076205414448c6aa92de5aad3900817a678ea02f7c88a\",\"parent\":\"e24c7aed97a4c1ce8d9e7a1a627f9f3d9649eee5aaf04c82ab852cb678887121\",\"created\":\"2016-06-09T10:33:37.034654571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels bioconda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e24c7aed97a4c1ce8d9e7a1a627f9f3d9649eee5aaf04c82ab852cb678887121\",\"parent\":\"eb395cabe14cf03e14d544169fe06d2c5932a9527f77ed50dd59ad3b06666daa\",\"created\":\"2016-06-09T10:33:29.580983584Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda index /anaconda/conda-bld/linux-64 /anaconda/conda-bld/osx-64\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb395cabe14cf03e14d544169fe06d2c5932a9527f77ed50dd59ad3b06666daa\",\"parent\":\"2b7484ce56c1f460bf7260ce8a11ee2bff44444d345b64a3b1d1fe4b30b3eff7\",\"created\":\"2016-06-09T10:33:22.054316207Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda update conda-build\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2b7484ce56c1f460bf7260ce8a11ee2bff44444d345b64a3b1d1fe4b30b3eff7\",\"parent\":\"ba6e011aba25325fb7c969cfc12b60bb3f81c83c6589b770d146558fed2c069a\",\"created\":\"2016-06-09T10:33:06.51658538Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y --file requirements.txt\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ba6e011aba25325fb7c969cfc12b60bb3f81c83c6589b770d146558fed2c069a\",\"parent\":\"2c3cc79df2603c4fca170ebb44f1a2b64ccb68e012dc54dc8cd446442b13d332\",\"created\":\"2016-06-09T10:32:51.837471832Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda update conda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c3cc79df2603c4fca170ebb44f1a2b64ccb68e012dc54dc8cd446442b13d332\",\"parent\":\"ca589ff6ad19512db28f425d121c085f9800a8bf04ca55170f88368fa489a3db\",\"created\":\"2016-06-09T10:32:42.211862329Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:843c98038b6f3e91a6f676bad07846cc428fda88f2d0a4ab0e43aaace60dbf00 in requirements.txt\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ca589ff6ad19512db28f425d121c085f9800a8bf04ca55170f88368fa489a3db\",\"parent\":\"63fa9ed2aac9252d96d04d7188a8ff2571cacefb68c855dd982b835795ca9727\",\"created\":\"2016-06-09T10:32:36.060804572Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /anaconda/conda-bld/linux-64 /anaconda/conda-bld/osx-64 # workaround for bug in current conda (conda issue #466)\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63fa9ed2aac9252d96d04d7188a8ff2571cacefb68c855dd982b835795ca9727\",\"parent\":\"e364f780a425155aa8bc2d9d3b7884ae10eef9e53a948fb07645d0b575cc9a0c\",\"created\":\"2016-06-09T10:32:28.881909845Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e364f780a425155aa8bc2d9d3b7884ae10eef9e53a948fb07645d0b575cc9a0c\",\"parent\":\"68b93dfabe98dc5705e7029c7b469e742dfffc6bbfc76ac208378b65256920e9\",\"created\":\"2016-06-09T10:32:21.927383562Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"68b93dfabe98dc5705e7029c7b469e742dfffc6bbfc76ac208378b65256920e9\",\"parent\":\"3a11a3cf5f6a6116be34722e3cafbed6deb65ab9d71791d8e9a8778743b9ec71\",\"created\":\"2016-06-09T10:32:15.106003575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/rh/devtoolset-2/root/usr/bin:/opt/rh/autotools-latest/root/usr/bin:/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3a11a3cf5f6a6116be34722e3cafbed6deb65ab9d71791d8e9a8778743b9ec71\",\"parent\":\"dac1781c4c810456d075e2cf19fc370315b6ecffb7f6b586450ce919e76db264\",\"created\":\"2016-06-09T10:32:08.917783962Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /tmp/conda-build \\u0026\\u0026 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \\u0026\\u0026 bash Miniconda3-latest-Linux-x86_64.sh -b -p /anaconda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dac1781c4c810456d075e2cf19fc370315b6ecffb7f6b586450ce919e76db264\",\"parent\":\"607eabb8e6e59a5ca86676cc38f6d79a6d0070cb71416a62ddcc3f20c1514dff\",\"created\":\"2016-06-09T10:31:39.557762327Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y     bzip2     git     gcc     gcc-c++     patch     make     gcc44     gcc44-c++     cmake     unzip     byacc     devtoolset-2-gcc     devtoolset-2-binutils     devtoolset-2-gcc-c++     devtoolset-2-gcc-gfortran     autotools-latest     pkgconfig     which     file     gpg     db4-devel     xorg-x11-apps     mesa-libGLU-devel     \\u0026\\u0026 yum clean all\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"607eabb8e6e59a5ca86676cc38f6d79a6d0070cb71416a62ddcc3f20c1514dff\",\"parent\":\"de4a772690fb45e2fc5d6dea1848119ce5a345b1082e223e7818121a50e003df\",\"created\":\"2016-06-09T10:29:52.989891934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de4a772690fb45e2fc5d6dea1848119ce5a345b1082e223e7818121a50e003df\",\"parent\":\"d310b9c1bf6794accc3a86885d1102a9941f86d940df56c785861d1a341c19eb\",\"created\":\"2016-06-09T10:29:49.61078722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y wget \\u0026\\u0026     yum clean all\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d310b9c1bf6794accc3a86885d1102a9941f86d940df56c785861d1a341c19eb\",\"parent\":\"31c644d26f9fcebe1ecc2310ae3d6ba6a1c2c9d880ec498dd266778f548c1bed\",\"created\":\"2016-06-09T10:29:36.365839099Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31c644d26f9fcebe1ecc2310ae3d6ba6a1c2c9d880ec498dd266778f548c1bed\",\"parent\":\"cfdc0c0cd3a327f41873592b993a2b56ad42d91475da163bcd981711b19437d2\",\"created\":\"2016-04-01T21:29:34.491172288Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfdc0c0cd3a327f41873592b993a2b56ad42d91475da163bcd981711b19437d2\",\"parent\":\"5e587145bc2302c59b9e157532e325ae5070e054220e6062999886a3d056c320\",\"created\":\"2016-04-01T21:29:32.127006923Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e587145bc2302c59b9e157532e325ae5070e054220e6062999886a3d056c320\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-04-01T21:29:24.168298449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f59d84691d1caec0e6bcb48c23967ff52d2687e2e7cb6257c0c01af7a0e46d4c in /\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f239f2856f8b46b8f98257b8722cebd1ffb31b04d84cc76beedb18ad8b50a54b"
+            },
+            {
+                "blobSum": "sha256:124e509a74d010aee1160eea900af99d1b743a0a789f0ba4e74927dac3650da7"
+            },
+            {
+                "blobSum": "sha256:9fd849ad431cb9a8fae66a589ec9f6c35a401422102a6e9a7d99a18bd5fc0d28"
+            },
+            {
+                "blobSum": "sha256:53c98b74d8190490e22a1d3bf53435db19b6305362706b7815a378a83c3e0106"
+            },
+            {
+                "blobSum": "sha256:efa354af11bdfbeb046f942731cd1c826044600edbf2c66de949390b1b3242fc"
+            },
+            {
+                "blobSum": "sha256:2134fa7861dc8f8f3002de5dba3e5fbb9f360b2eefbf4ef45dc072d28761f774"
+            },
+            {
+                "blobSum": "sha256:b87a9ea8762056959cf72ed766463e35fa54d09c019539989e33c2e9c168ab70"
+            },
+            {
+                "blobSum": "sha256:c716ff05e2431bb0f1fa78f2e80a2010bcbb42d01abf79093258824b35e6d4dd"
+            },
+            {
+                "blobSum": "sha256:7766aa91bbd6400a3a1d082471e7a1393ca19b2c967bf99e8aa8033504cd96dd"
+            },
+            {
+                "blobSum": "sha256:a2308aaf5a921cb3d7fb6d90e98d34fbb01f02ee61c56853c975a6e6f42de20a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:242dee29e662701b8ddcaf0c2d50d9eef3477e2f88239d1c48b6ce7fa682d2d5"
+            },
+            {
+                "blobSum": "sha256:bf9eea9bc96b019a9b85cea3f46631fae9ace014a2a72d5a9671ff3716f9f0cd"
+            },
+            {
+                "blobSum": "sha256:8c030109773d2d1cf1a1ce8812ef228fe156519f1b27884ba5dd50264a036288"
+            },
+            {
+                "blobSum": "sha256:0d4a60f627575716a8f314329c83168f9bf70be434fa769fc188fb321bb16cc8"
+            },
+            {
+                "blobSum": "sha256:ed77f00f1a1718d04e8fab11145df9f989af990d4b8b8c1d8fafd5375c7eca3e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f3ac5154871461d96ece9c2a72bbc01aad7aca0f25d18c6b131ca96e2a6cca7f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            }
+        ],
+        "name": "bioconda/bioconda-builder",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEzNjY1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTE6NTlaIn0",
+                "signature": "P_yc8Q34HeVXRIoOD_QXtqtjAMbEPHO0Nk8dR_LqOSDO_t8KqmC48PrBLdWpPR6de9QZCTCg9XFJ6PrK4AJEHw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "naPQv9XEAvtdUs71nIMB9nUhA4JEk6CLGn9mhpuNj30",
+                        "kid": "M64Q:NC3Z:IUT3:CTC3:WUFI:RIZV:4WLX:LSZT:ECT7:JETI:HOXX:MVAS",
+                        "x": "VZ-aVJjfVug7_HNbPx3MOgdK-LLJDq0zAInXMRMPc_o"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3d0a3397c069\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/rh/devtoolset-2/root/usr/bin:/opt/rh/autotools-latest/root/usr/bin:/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[],\"ArgsEscaped\":true,\"Image\":\"sha256:ace31648b075f5542a941b7570b9b6e9d2170b82add031d0a442213f3bf53d07\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/bioconda-recipes/scripts/build-packages.py\"],\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"container\":\"bb92c9849bdcc24f0bfe24607782d61e58631c5a7160567aaae86abc70536714\",\"container_config\":{\"Hostname\":\"3d0a3397c069\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/rh/devtoolset-2/root/usr/bin:/opt/rh/autotools-latest/root/usr/bin:/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=en_US.UTF-8\",\"LC_ALL=en_US.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD []\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ace31648b075f5542a941b7570b9b6e9d2170b82add031d0a442213f3bf53d07\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/bioconda-recipes/scripts/build-packages.py\"],\"OnBuild\":[],\"Labels\":{\"build-date\":\"2016-03-31\",\"license\":\"GPLv2\",\"name\":\"CentOS Base Image\",\"vendor\":\"CentOS\"}},\"created\":\"2016-06-09T10:34:19.11475109Z\",\"docker_version\":\"1.11.1\",\"id\":\"edfb8c788415f23a4cebd120d127a3746605e13a80577df010ea914f55eeba38\",\"os\":\"linux\",\"parent\":\"4431566a0dd47add5a4e33d0ab4b684ab62d37b966b6933a2d76c981c2e21100\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4431566a0dd47add5a4e33d0ab4b684ab62d37b966b6933a2d76c981c2e21100\",\"parent\":\"8c8411dae76bdec545825995abf0a2bd3d0558861dc3ba01cf09d963c0d8df1c\",\"created\":\"2016-06-09T10:34:10.905057896Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"/bioconda-recipes/scripts/build-packages.py\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c8411dae76bdec545825995abf0a2bd3d0558861dc3ba01cf09d963c0d8df1c\",\"parent\":\"f650e6132cd8df20f78aa805f518b3d325f19aef5cb824ae6129beb1557279bc\",\"created\":\"2016-06-09T10:34:04.211455399Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y toposort\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f650e6132cd8df20f78aa805f518b3d325f19aef5cb824ae6129beb1557279bc\",\"parent\":\"dd924928090862417de07a4fc3556f3ae6664170092268c2c33fbef1035f260c\",\"created\":\"2016-06-09T10:33:51.849353352Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels file://anaconda/conda-bld\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dd924928090862417de07a4fc3556f3ae6664170092268c2c33fbef1035f260c\",\"parent\":\"2945f4414d2ad9f0c49076205414448c6aa92de5aad3900817a678ea02f7c88a\",\"created\":\"2016-06-09T10:33:44.454529656Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels r\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2945f4414d2ad9f0c49076205414448c6aa92de5aad3900817a678ea02f7c88a\",\"parent\":\"e24c7aed97a4c1ce8d9e7a1a627f9f3d9649eee5aaf04c82ab852cb678887121\",\"created\":\"2016-06-09T10:33:37.034654571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels bioconda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e24c7aed97a4c1ce8d9e7a1a627f9f3d9649eee5aaf04c82ab852cb678887121\",\"parent\":\"eb395cabe14cf03e14d544169fe06d2c5932a9527f77ed50dd59ad3b06666daa\",\"created\":\"2016-06-09T10:33:29.580983584Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda index /anaconda/conda-bld/linux-64 /anaconda/conda-bld/osx-64\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eb395cabe14cf03e14d544169fe06d2c5932a9527f77ed50dd59ad3b06666daa\",\"parent\":\"2b7484ce56c1f460bf7260ce8a11ee2bff44444d345b64a3b1d1fe4b30b3eff7\",\"created\":\"2016-06-09T10:33:22.054316207Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda update conda-build\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2b7484ce56c1f460bf7260ce8a11ee2bff44444d345b64a3b1d1fe4b30b3eff7\",\"parent\":\"ba6e011aba25325fb7c969cfc12b60bb3f81c83c6589b770d146558fed2c069a\",\"created\":\"2016-06-09T10:33:06.51658538Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y --file requirements.txt\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ba6e011aba25325fb7c969cfc12b60bb3f81c83c6589b770d146558fed2c069a\",\"parent\":\"2c3cc79df2603c4fca170ebb44f1a2b64ccb68e012dc54dc8cd446442b13d332\",\"created\":\"2016-06-09T10:32:51.837471832Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda update conda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2c3cc79df2603c4fca170ebb44f1a2b64ccb68e012dc54dc8cd446442b13d332\",\"parent\":\"ca589ff6ad19512db28f425d121c085f9800a8bf04ca55170f88368fa489a3db\",\"created\":\"2016-06-09T10:32:42.211862329Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:843c98038b6f3e91a6f676bad07846cc428fda88f2d0a4ab0e43aaace60dbf00 in requirements.txt\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ca589ff6ad19512db28f425d121c085f9800a8bf04ca55170f88368fa489a3db\",\"parent\":\"63fa9ed2aac9252d96d04d7188a8ff2571cacefb68c855dd982b835795ca9727\",\"created\":\"2016-06-09T10:32:36.060804572Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /anaconda/conda-bld/linux-64 /anaconda/conda-bld/osx-64 # workaround for bug in current conda (conda issue #466)\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63fa9ed2aac9252d96d04d7188a8ff2571cacefb68c855dd982b835795ca9727\",\"parent\":\"e364f780a425155aa8bc2d9d3b7884ae10eef9e53a948fb07645d0b575cc9a0c\",\"created\":\"2016-06-09T10:32:28.881909845Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e364f780a425155aa8bc2d9d3b7884ae10eef9e53a948fb07645d0b575cc9a0c\",\"parent\":\"68b93dfabe98dc5705e7029c7b469e742dfffc6bbfc76ac208378b65256920e9\",\"created\":\"2016-06-09T10:32:21.927383562Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"68b93dfabe98dc5705e7029c7b469e742dfffc6bbfc76ac208378b65256920e9\",\"parent\":\"3a11a3cf5f6a6116be34722e3cafbed6deb65ab9d71791d8e9a8778743b9ec71\",\"created\":\"2016-06-09T10:32:15.106003575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/rh/devtoolset-2/root/usr/bin:/opt/rh/autotools-latest/root/usr/bin:/anaconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3a11a3cf5f6a6116be34722e3cafbed6deb65ab9d71791d8e9a8778743b9ec71\",\"parent\":\"dac1781c4c810456d075e2cf19fc370315b6ecffb7f6b586450ce919e76db264\",\"created\":\"2016-06-09T10:32:08.917783962Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /tmp/conda-build \\u0026\\u0026 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh \\u0026\\u0026 bash Miniconda3-latest-Linux-x86_64.sh -b -p /anaconda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dac1781c4c810456d075e2cf19fc370315b6ecffb7f6b586450ce919e76db264\",\"parent\":\"607eabb8e6e59a5ca86676cc38f6d79a6d0070cb71416a62ddcc3f20c1514dff\",\"created\":\"2016-06-09T10:31:39.557762327Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y     bzip2     git     gcc     gcc-c++     patch     make     gcc44     gcc44-c++     cmake     unzip     byacc     devtoolset-2-gcc     devtoolset-2-binutils     devtoolset-2-gcc-c++     devtoolset-2-gcc-gfortran     autotools-latest     pkgconfig     which     file     gpg     db4-devel     xorg-x11-apps     mesa-libGLU-devel     \\u0026\\u0026 yum clean all\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"607eabb8e6e59a5ca86676cc38f6d79a6d0070cb71416a62ddcc3f20c1514dff\",\"parent\":\"de4a772690fb45e2fc5d6dea1848119ce5a345b1082e223e7818121a50e003df\",\"created\":\"2016-06-09T10:29:52.989891934Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget http://people.centos.org/tru/devtools-2/devtools-2.repo -O /etc/yum.repos.d/devtools-2.repo\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de4a772690fb45e2fc5d6dea1848119ce5a345b1082e223e7818121a50e003df\",\"parent\":\"d310b9c1bf6794accc3a86885d1102a9941f86d940df56c785861d1a341c19eb\",\"created\":\"2016-06-09T10:29:49.61078722Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y wget \\u0026\\u0026     yum clean all\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d310b9c1bf6794accc3a86885d1102a9941f86d940df56c785861d1a341c19eb\",\"parent\":\"31c644d26f9fcebe1ecc2310ae3d6ba6a1c2c9d880ec498dd266778f548c1bed\",\"created\":\"2016-06-09T10:29:36.365839099Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31c644d26f9fcebe1ecc2310ae3d6ba6a1c2c9d880ec498dd266778f548c1bed\",\"parent\":\"cfdc0c0cd3a327f41873592b993a2b56ad42d91475da163bcd981711b19437d2\",\"created\":\"2016-04-01T21:29:34.491172288Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfdc0c0cd3a327f41873592b993a2b56ad42d91475da163bcd981711b19437d2\",\"parent\":\"5e587145bc2302c59b9e157532e325ae5070e054220e6062999886a3d056c320\",\"created\":\"2016-04-01T21:29:32.127006923Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) LABEL name=CentOS Base Image vendor=CentOS license=GPLv2 build-date=2016-03-31\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e587145bc2302c59b9e157532e325ae5070e054220e6062999886a3d056c320\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-04-01T21:29:24.168298449Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f59d84691d1caec0e6bcb48c23967ff52d2687e2e7cb6257c0c01af7a0e46d4c in /\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2015-09-07T19:05:48.678585881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER The CentOS Project \\u003ccloud-ops@centos.org\\u003e\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f239f2856f8b46b8f98257b8722cebd1ffb31b04d84cc76beedb18ad8b50a54b"
+            },
+            {
+                "blobSum": "sha256:124e509a74d010aee1160eea900af99d1b743a0a789f0ba4e74927dac3650da7"
+            },
+            {
+                "blobSum": "sha256:9fd849ad431cb9a8fae66a589ec9f6c35a401422102a6e9a7d99a18bd5fc0d28"
+            },
+            {
+                "blobSum": "sha256:53c98b74d8190490e22a1d3bf53435db19b6305362706b7815a378a83c3e0106"
+            },
+            {
+                "blobSum": "sha256:efa354af11bdfbeb046f942731cd1c826044600edbf2c66de949390b1b3242fc"
+            },
+            {
+                "blobSum": "sha256:2134fa7861dc8f8f3002de5dba3e5fbb9f360b2eefbf4ef45dc072d28761f774"
+            },
+            {
+                "blobSum": "sha256:b87a9ea8762056959cf72ed766463e35fa54d09c019539989e33c2e9c168ab70"
+            },
+            {
+                "blobSum": "sha256:c716ff05e2431bb0f1fa78f2e80a2010bcbb42d01abf79093258824b35e6d4dd"
+            },
+            {
+                "blobSum": "sha256:7766aa91bbd6400a3a1d082471e7a1393ca19b2c967bf99e8aa8033504cd96dd"
+            },
+            {
+                "blobSum": "sha256:a2308aaf5a921cb3d7fb6d90e98d34fbb01f02ee61c56853c975a6e6f42de20a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:242dee29e662701b8ddcaf0c2d50d9eef3477e2f88239d1c48b6ce7fa682d2d5"
+            },
+            {
+                "blobSum": "sha256:bf9eea9bc96b019a9b85cea3f46631fae9ace014a2a72d5a9671ff3716f9f0cd"
+            },
+            {
+                "blobSum": "sha256:8c030109773d2d1cf1a1ce8812ef228fe156519f1b27884ba5dd50264a036288"
+            },
+            {
+                "blobSum": "sha256:0d4a60f627575716a8f314329c83168f9bf70be434fa769fc188fb321bb16cc8"
+            },
+            {
+                "blobSum": "sha256:ed77f00f1a1718d04e8fab11145df9f989af990d4b8b8c1d8fafd5375c7eca3e"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f3ac5154871461d96ece9c2a72bbc01aad7aca0f25d18c6b131ca96e2a6cca7f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            }
+        ],
+        "name": "bioconda/bioconda-builder",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEzNjY1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTI6MDBaIn0",
+                "signature": "gQkwXMp3Rf09CJJkFY6KHaiIOO86NETzth_AcRUlXpmyYDeBodEkgHlnFZKBNLUQeqRs9qA-z9AtqbuR_nj2jg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "-NNlPrHpudJ8K6ukaQMfwPbkgnxcwJTVd1xNbNHLBXs",
+                        "kid": "JVS5:FLHE:WVYV:CCSG:KI7Y:JKMC:ZS7Z:JBI7:RX7D:T5UV:UIWN:6FNT",
+                        "x": "lBvzgDNIkULNiuDkt8JwYZgCWyRigo35yujUi-XlhpI"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

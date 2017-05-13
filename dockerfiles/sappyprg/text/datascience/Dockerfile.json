@@ -1,0 +1,294 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\",\"config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1e5942e65eb7710ab772b5ce4e2c41573103e2c4ce0e4c8e8de9b307f62e1c08\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"5121e3e5560acf13167d6c49fe95432e1c0b2f780b82d32d91724aa808c45f16\",\"container_config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install keras\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1e5942e65eb7710ab772b5ce4e2c41573103e2c4ce0e4c8e8de9b307f62e1c08\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-24T13:40:40.141186423Z\",\"docker_version\":\"1.12.0\",\"id\":\"364363c45bb58aaf04246d8bb151ee8a16fa139d450e7fae22d6eb30f4f92837\",\"os\":\"linux\",\"parent\":\"cd6c8af13d1751533ac99664ca0bccc6034af75101e2b5b05c59f65a50e65903\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd6c8af13d1751533ac99664ca0bccc6034af75101e2b5b05c59f65a50e65903\",\"parent\":\"273318111f976e97f1f3d11163a0b712680db13bdb893fd74b0c8e17ce9e1c6b\",\"created\":\"2016-09-24T13:40:15.528045388Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -c conda-forge tensorflow\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"273318111f976e97f1f3d11163a0b712680db13bdb893fd74b0c8e17ce9e1c6b\",\"parent\":\"17af4556c2b2da5265d09efb330fcf129bf35445e335424389622426b45751a2\",\"created\":\"2016-09-24T13:39:13.930350046Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install Theano\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"17af4556c2b2da5265d09efb330fcf129bf35445e335424389622426b45751a2\",\"parent\":\"46ec0c7da1deb7f8f98616881d13e49dadfcfaca392edb8b63fdd700e5a737f2\",\"created\":\"2016-09-24T13:38:42.311089291Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd xgboost/python-package; python setup.py install\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"46ec0c7da1deb7f8f98616881d13e49dadfcfaca392edb8b63fdd700e5a737f2\",\"parent\":\"9db7c816c4b0ab4265dc8fd2323b30bbb959f9f65e5c8aca643f5cb9ed9afc89\",\"created\":\"2016-09-24T13:38:23.003655723Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd xgboost; make -j4\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9db7c816c4b0ab4265dc8fd2323b30bbb959f9f65e5c8aca643f5cb9ed9afc89\",\"parent\":\"8d15db4da627c37109fb97522eacde8946b79d0b77c89fe8ee3d67b28f471484\",\"created\":\"2016-09-24T13:32:58.831153462Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone --recursive https://github.com/dmlc/xgboost\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8d15db4da627c37109fb97522eacde8946b79d0b77c89fe8ee3d67b28f471484\",\"parent\":\"48a017a5e8cc1f222a9e44d94f85e430d9d34b8352bbf8a767f070101b6b434f\",\"created\":\"2016-09-24T13:32:38.907120792Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /notebooks\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"48a017a5e8cc1f222a9e44d94f85e430d9d34b8352bbf8a767f070101b6b434f\",\"parent\":\"88174361514776c3bb7db90d647e5df3b00fadb65ec2e2b64d156983e109fafa\",\"created\":\"2016-09-24T13:32:22.624353947Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /opt/conda/bin/conda install jupyter -y\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88174361514776c3bb7db90d647e5df3b00fadb65ec2e2b64d156983e109fafa\",\"parent\":\"317df01e2d250cfebb20a095f5eb9a8a4ae4febf06ffe9e59548879f3ef1fa90\",\"created\":\"2016-09-24T13:31:56.608320119Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y build-essential\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"317df01e2d250cfebb20a095f5eb9a8a4ae4febf06ffe9e59548879f3ef1fa90\",\"parent\":\"ae8301de0b24b1f739a02145f3c9e105e74895cad50f5f03533357396f8f25c4\",\"created\":\"2016-09-24T13:31:04.387288086Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Dan Lim \\u003cimdanboy@gmail.com\\u003e\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae8301de0b24b1f739a02145f3c9e105e74895cad50f5f03533357396f8f25c4\",\"parent\":\"5db9db9510c4725efa782ac8e6342e2906ec1e1274bcc942f8b797a823023322\",\"created\":\"2016-08-02T06:49:00.700445314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5db9db9510c4725efa782ac8e6342e2906ec1e1274bcc942f8b797a823023322\",\"parent\":\"13875a7314f66ceee8a339fafd72812365bf64a5286b0538fe99f59cb4876b39\",\"created\":\"2016-08-02T06:48:42.987738057Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"13875a7314f66ceee8a339fafd72812365bf64a5286b0538fe99f59cb4876b39\",\"parent\":\"45b90ab1a76a746e8d63a8ecbfca01a3ab977c3401c07f8f20726d745dcbd73c\",\"created\":\"2016-08-02T06:48:25.410262281Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"45b90ab1a76a746e8d63a8ecbfca01a3ab977c3401c07f8f20726d745dcbd73c\",\"parent\":\"eec8ef91ed0c4e909b24b225d531fd6a198da77382536422e3cefcdbb3a1b2ec\",\"created\":\"2016-08-02T06:48:09.979966464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y curl grep sed dpkg \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eec8ef91ed0c4e909b24b225d531fd6a198da77382536422e3cefcdbb3a1b2ec\",\"parent\":\"90844e3bb78b77e52b5c8149cdf9605ab06e8f45cdf0d0b01daa2af543f3d586\",\"created\":\"2016-08-02T06:47:42.633446925Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh -O ~/anaconda.sh \\u0026\\u0026     /bin/bash ~/anaconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/anaconda.sh\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90844e3bb78b77e52b5c8149cdf9605ab06e8f45cdf0d0b01daa2af543f3d586\",\"parent\":\"38c60869fd3554cedf60eff0f9551b5094f87635d6024afa24497ea6f3a73d8a\",\"created\":\"2016-08-02T06:43:19.471751962Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"38c60869fd3554cedf60eff0f9551b5094f87635d6024afa24497ea6f3a73d8a\",\"parent\":\"d77a18b4b4126f94aef91f4882969fb441376f98497c13b1bf0382af2ddc53f0\",\"created\":\"2016-08-02T06:42:01.289823921Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=C.UTF-8 LC_ALL=C.UTF-8\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d77a18b4b4126f94aef91f4882969fb441376f98497c13b1bf0382af2ddc53f0\",\"parent\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"created\":\"2016-08-02T06:41:59.985423119Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"parent\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:55.809686499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:54.990622865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:86889091d2dc5e44d898a83c1376473fc03c187150d5ddc8aac90da14b3e9aa0"
+            },
+            {
+                "blobSum": "sha256:ac02517debb81f530af3aac5b48e59f656c13810430cf34f5741db15105bb6d3"
+            },
+            {
+                "blobSum": "sha256:1905090a924396870d9c1e11c4c75b8106b394b572f17198d3c73049b2546c5c"
+            },
+            {
+                "blobSum": "sha256:c1de766c001763c7f0d71a386bd8b0263c9efcf1b51873a031b973441afb43af"
+            },
+            {
+                "blobSum": "sha256:de927bbbfc2dbd3ae22d593a2d056fa1ed4acc494aef309ef9f72d3895041d43"
+            },
+            {
+                "blobSum": "sha256:6980b3bb12df70da7fe10e5952e5ae8bf48698a59014c9c27294b952492221d0"
+            },
+            {
+                "blobSum": "sha256:59a00b0e29f569682a62b9a85a693fa95a07152905529c9801d54cae3a38dd92"
+            },
+            {
+                "blobSum": "sha256:92ff8f18f89010e57d961b11c2d6437ba347b69b96f3ac8093eb93d951cae283"
+            },
+            {
+                "blobSum": "sha256:d0ca8fd42c7e8bee044f6275807f2d9afb747657acb96b155cde039aa2d815da"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a8b6da98211d8dd67df2f3e449af92440d177bdd1c49665e916c926a9ab5273f"
+            },
+            {
+                "blobSum": "sha256:e767cf6ca1941db4d6e0a3bc91fee3d1c14a5db630cb74a581c8268ffa29e61a"
+            },
+            {
+                "blobSum": "sha256:028fa4f488024a6554b9f7fccd8d9ab6b40e0c034ae69a865a5418bebf9b5a7a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab"
+            }
+        ],
+        "name": "sappyprg/datascience",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyNDQ0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6NDVaIn0",
+                "signature": "yFnM2Qd34gvaLLDh00-1xw8hUu_GL7y0kunrl0EmHIgOF5ex7a0iyPyPSViQGjQqDFnproaz4bxdjux-gK3INA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "bZukBmNRUCi_x1Dn0J4fGDvzqpx3NhCg1Xi94FlQrvI",
+                        "kid": "DOJT:3VGK:HR3R:6D2H:F7ZE:NMOW:PRVL:7KIA:KCMG:KYED:TYTB:DHMP",
+                        "x": "lV0_oym6nkoTS4flyw4Y1Td85BdIuvHoxFcqD5jikgw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\",\"config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1e5942e65eb7710ab772b5ce4e2c41573103e2c4ce0e4c8e8de9b307f62e1c08\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"5121e3e5560acf13167d6c49fe95432e1c0b2f780b82d32d91724aa808c45f16\",\"container_config\":{\"Hostname\":\"2da0903ff372\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"pip install keras\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1e5942e65eb7710ab772b5ce4e2c41573103e2c4ce0e4c8e8de9b307f62e1c08\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-09-24T13:40:40.141186423Z\",\"docker_version\":\"1.12.0\",\"id\":\"364363c45bb58aaf04246d8bb151ee8a16fa139d450e7fae22d6eb30f4f92837\",\"os\":\"linux\",\"parent\":\"cd6c8af13d1751533ac99664ca0bccc6034af75101e2b5b05c59f65a50e65903\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cd6c8af13d1751533ac99664ca0bccc6034af75101e2b5b05c59f65a50e65903\",\"parent\":\"273318111f976e97f1f3d11163a0b712680db13bdb893fd74b0c8e17ce9e1c6b\",\"created\":\"2016-09-24T13:40:15.528045388Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -c conda-forge tensorflow\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"273318111f976e97f1f3d11163a0b712680db13bdb893fd74b0c8e17ce9e1c6b\",\"parent\":\"17af4556c2b2da5265d09efb330fcf129bf35445e335424389622426b45751a2\",\"created\":\"2016-09-24T13:39:13.930350046Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install Theano\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"17af4556c2b2da5265d09efb330fcf129bf35445e335424389622426b45751a2\",\"parent\":\"46ec0c7da1deb7f8f98616881d13e49dadfcfaca392edb8b63fdd700e5a737f2\",\"created\":\"2016-09-24T13:38:42.311089291Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd xgboost/python-package; python setup.py install\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"46ec0c7da1deb7f8f98616881d13e49dadfcfaca392edb8b63fdd700e5a737f2\",\"parent\":\"9db7c816c4b0ab4265dc8fd2323b30bbb959f9f65e5c8aca643f5cb9ed9afc89\",\"created\":\"2016-09-24T13:38:23.003655723Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd xgboost; make -j4\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9db7c816c4b0ab4265dc8fd2323b30bbb959f9f65e5c8aca643f5cb9ed9afc89\",\"parent\":\"8d15db4da627c37109fb97522eacde8946b79d0b77c89fe8ee3d67b28f471484\",\"created\":\"2016-09-24T13:32:58.831153462Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone --recursive https://github.com/dmlc/xgboost\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8d15db4da627c37109fb97522eacde8946b79d0b77c89fe8ee3d67b28f471484\",\"parent\":\"48a017a5e8cc1f222a9e44d94f85e430d9d34b8352bbf8a767f070101b6b434f\",\"created\":\"2016-09-24T13:32:38.907120792Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /notebooks\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"48a017a5e8cc1f222a9e44d94f85e430d9d34b8352bbf8a767f070101b6b434f\",\"parent\":\"88174361514776c3bb7db90d647e5df3b00fadb65ec2e2b64d156983e109fafa\",\"created\":\"2016-09-24T13:32:22.624353947Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /opt/conda/bin/conda install jupyter -y\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88174361514776c3bb7db90d647e5df3b00fadb65ec2e2b64d156983e109fafa\",\"parent\":\"317df01e2d250cfebb20a095f5eb9a8a4ae4febf06ffe9e59548879f3ef1fa90\",\"created\":\"2016-09-24T13:31:56.608320119Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y build-essential\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"317df01e2d250cfebb20a095f5eb9a8a4ae4febf06ffe9e59548879f3ef1fa90\",\"parent\":\"ae8301de0b24b1f739a02145f3c9e105e74895cad50f5f03533357396f8f25c4\",\"created\":\"2016-09-24T13:31:04.387288086Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Dan Lim \\u003cimdanboy@gmail.com\\u003e\"]},\"author\":\"Dan Lim \\u003cimdanboy@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ae8301de0b24b1f739a02145f3c9e105e74895cad50f5f03533357396f8f25c4\",\"parent\":\"5db9db9510c4725efa782ac8e6342e2906ec1e1274bcc942f8b797a823023322\",\"created\":\"2016-08-02T06:49:00.700445314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5db9db9510c4725efa782ac8e6342e2906ec1e1274bcc942f8b797a823023322\",\"parent\":\"13875a7314f66ceee8a339fafd72812365bf64a5286b0538fe99f59cb4876b39\",\"created\":\"2016-08-02T06:48:42.987738057Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"13875a7314f66ceee8a339fafd72812365bf64a5286b0538fe99f59cb4876b39\",\"parent\":\"45b90ab1a76a746e8d63a8ecbfca01a3ab977c3401c07f8f20726d745dcbd73c\",\"created\":\"2016-08-02T06:48:25.410262281Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"45b90ab1a76a746e8d63a8ecbfca01a3ab977c3401c07f8f20726d745dcbd73c\",\"parent\":\"eec8ef91ed0c4e909b24b225d531fd6a198da77382536422e3cefcdbb3a1b2ec\",\"created\":\"2016-08-02T06:48:09.979966464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y curl grep sed dpkg \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eec8ef91ed0c4e909b24b225d531fd6a198da77382536422e3cefcdbb3a1b2ec\",\"parent\":\"90844e3bb78b77e52b5c8149cdf9605ab06e8f45cdf0d0b01daa2af543f3d586\",\"created\":\"2016-08-02T06:47:42.633446925Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/archive/Anaconda3-4.1.1-Linux-x86_64.sh -O ~/anaconda.sh \\u0026\\u0026     /bin/bash ~/anaconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/anaconda.sh\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90844e3bb78b77e52b5c8149cdf9605ab06e8f45cdf0d0b01daa2af543f3d586\",\"parent\":\"38c60869fd3554cedf60eff0f9551b5094f87635d6024afa24497ea6f3a73d8a\",\"created\":\"2016-08-02T06:43:19.471751962Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"38c60869fd3554cedf60eff0f9551b5094f87635d6024afa24497ea6f3a73d8a\",\"parent\":\"d77a18b4b4126f94aef91f4882969fb441376f98497c13b1bf0382af2ddc53f0\",\"created\":\"2016-08-02T06:42:01.289823921Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=C.UTF-8 LC_ALL=C.UTF-8\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d77a18b4b4126f94aef91f4882969fb441376f98497c13b1bf0382af2ddc53f0\",\"parent\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"created\":\"2016-08-02T06:41:59.985423119Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1156dc4bc2c31876858598f69707a7584e3444f0e0c967001120e70a72ce237b\",\"parent\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:55.809686499Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"73896ccf428efb53674efdab341fecd7546c3757bd8b8d293ea5ff2483998756\",\"created\":\"2016-07-28T17:47:54.990622865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:0e0565652aa852f62033d99f84892216020d30f64521ded5e72d4940bc4c9697 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:86889091d2dc5e44d898a83c1376473fc03c187150d5ddc8aac90da14b3e9aa0"
+            },
+            {
+                "blobSum": "sha256:ac02517debb81f530af3aac5b48e59f656c13810430cf34f5741db15105bb6d3"
+            },
+            {
+                "blobSum": "sha256:1905090a924396870d9c1e11c4c75b8106b394b572f17198d3c73049b2546c5c"
+            },
+            {
+                "blobSum": "sha256:c1de766c001763c7f0d71a386bd8b0263c9efcf1b51873a031b973441afb43af"
+            },
+            {
+                "blobSum": "sha256:de927bbbfc2dbd3ae22d593a2d056fa1ed4acc494aef309ef9f72d3895041d43"
+            },
+            {
+                "blobSum": "sha256:6980b3bb12df70da7fe10e5952e5ae8bf48698a59014c9c27294b952492221d0"
+            },
+            {
+                "blobSum": "sha256:59a00b0e29f569682a62b9a85a693fa95a07152905529c9801d54cae3a38dd92"
+            },
+            {
+                "blobSum": "sha256:92ff8f18f89010e57d961b11c2d6437ba347b69b96f3ac8093eb93d951cae283"
+            },
+            {
+                "blobSum": "sha256:d0ca8fd42c7e8bee044f6275807f2d9afb747657acb96b155cde039aa2d815da"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a8b6da98211d8dd67df2f3e449af92440d177bdd1c49665e916c926a9ab5273f"
+            },
+            {
+                "blobSum": "sha256:e767cf6ca1941db4d6e0a3bc91fee3d1c14a5db630cb74a581c8268ffa29e61a"
+            },
+            {
+                "blobSum": "sha256:028fa4f488024a6554b9f7fccd8d9ab6b40e0c034ae69a865a5418bebf9b5a7a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:357ea8c3d80bc25792e010facfc98aee5972ebc47e290eb0d5aea3671a901cab"
+            }
+        ],
+        "name": "sappyprg/datascience",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyNDQ0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6NDZaIn0",
+                "signature": "tbTuSzXH-5N9qHQiIJFTsuimStH9Ji6NlZSHq-tjpAxysj66-N7eouP1zO2QIayolGJZ5RLnsKAs58FlFOwWJA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "v7VdS5IZCJ6_DG9lgOvw7XNRcvo8b4cLTuTsLEp-Lbc",
+                        "kid": "V2H3:QNJ6:FSQI:PEAG:NASY:XVTH:H5TG:XXKO:T2MI:NDDB:7DMX:6X4Y",
+                        "x": "M5dxmy1L45N-DAj-tKlvrGVLN_rXaHg4q1ga8dv0f44"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

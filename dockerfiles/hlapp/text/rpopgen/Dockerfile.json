@@ -1,0 +1,438 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{},\"8787/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"R_VERSION=3.4.0\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"TERM=xterm\",\"PANDOC_TEMPLATES_VERSION=1.18\"],\"Cmd\":[\"/init\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b56447efeb379b389f08fa88a363fe9b79a04f5347188ad22981f890493a7186\",\"Volumes\":{\"/home/rstudio/kitematic\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"1bec85b555149d111a18891fce37156eb7d513211d422e39796ccef58af232a6\",\"container_config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{},\"8787/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"R_VERSION=3.4.0\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"TERM=xterm\",\"PANDOC_TEMPLATES_VERSION=1.18\"],\"Cmd\":[\"|1\",\"DEBIAN_FRONTEND=noninteractive\",\"/bin/sh\",\"-c\",\"install2.r --error     knitcitations     phangorn     phylobase     phytools \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b56447efeb379b389f08fa88a363fe9b79a04f5347188ad22981f890493a7186\",\"Volumes\":{\"/home/rstudio/kitematic\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-12T07:26:34.289523216Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"f690db6e1eefd1c91aae7252e5d37a5521703497658901a1092dff29e87f2fe0\",\"os\":\"linux\",\"parent\":\"bea311be49f5edd9ee19427fa8f347b0308215ebb6eef2f1ecdc56484fa9261d\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bea311be49f5edd9ee19427fa8f347b0308215ebb6eef2f1ecdc56484fa9261d\",\"parent\":\"7bf87f85b857e816247c3818cd24b94a5be1a550c3e60851a3012083632cf424\",\"created\":\"2017-05-12T07:16:54.428291164Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c installGithub.r     whitlock/OutFLANK \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7bf87f85b857e816247c3818cd24b94a5be1a550c3e60851a3012083632cf424\",\"parent\":\"76edaa6048d5eaa6971c7cba872f2aa827ba8cc14700f6c708f220b8705502e5\",\"created\":\"2017-05-12T07:16:42.719594096Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c Rscript -e 'source(\\\"http://bioconductor.org/biocLite.R\\\"); biocLite(\\\"qvalue\\\");'\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"76edaa6048d5eaa6971c7cba872f2aa827ba8cc14700f6c708f220b8705502e5\",\"parent\":\"6f2bc79b3b076194cd7f3852c74a3419b42eb2910d67ee45c4d1bcd0a36f380d\",\"created\":\"2017-05-12T07:16:28.164447151Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c rm -rf /tmp/*.rds \\u0026\\u0026  install2.r --error     apex     ape     adegenet     adespatial     pegas     coalescentMCMC     mmod     poppr     strataG     rmetasim     genetics     hierfstat     pcadapt     lme4     MuMIn     multcomp     raster     viridis \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f2bc79b3b076194cd7f3852c74a3419b42eb2910d67ee45c4d1bcd0a36f380d\",\"parent\":\"a9238ccf4577577fb516497ebce4dd2f057e8cd9903ff257abc6607929c5a5a8\",\"created\":\"2017-05-12T06:51:57.52529931Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c Rscript -e 'source(\\\"http://bioconductor.org/biocLite.R\\\"); biocLite(\\\"Biostrings\\\");'\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a9238ccf4577577fb516497ebce4dd2f057e8cd9903ff257abc6607929c5a5a8\",\"parent\":\"51b61be0088f9c7bf5a4242ca1dcd70d15ca944a888a5392f031b37da2aab3ba\",\"created\":\"2017-05-12T06:49:46.285086601Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c install2.r --error     nloptr \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51b61be0088f9c7bf5a4242ca1dcd70d15ca944a888a5392f031b37da2aab3ba\",\"parent\":\"19a1a96facb792f3abf285a04b434118d4757d44b2e497571f0971526108cdd9\",\"created\":\"2017-05-12T06:47:14.888088392Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y libgsl0-dev\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"19a1a96facb792f3abf285a04b434118d4757d44b2e497571f0971526108cdd9\",\"parent\":\"c6349d640033a03ee52da3970c90f0d65f9ce0adbc7161f947c1334a9a91cba8\",\"created\":\"2017-05-12T06:46:14.413422164Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6349d640033a03ee52da3970c90f0d65f9ce0adbc7161f947c1334a9a91cba8\",\"parent\":\"a70ef1321e38551d713100b73f9c2d598ef05b2afb983fce1048c27e59ed94de\",\"created\":\"2017-05-12T06:46:03.64920224Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG TERM=linux\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a70ef1321e38551d713100b73f9c2d598ef05b2afb983fce1048c27e59ed94de\",\"parent\":\"b25f09bacc269f8d95cf02a17172e2c1cac7191495172f171b7853391cca610e\",\"created\":\"2017-05-12T06:45:53.928477914Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Hilmar Lapp hilmar.lapp@duke.edu\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b25f09bacc269f8d95cf02a17172e2c1cac7191495172f171b7853391cca610e\",\"parent\":\"150a2bb36cdfc61f9668fa72fa626c3e9dcd1a066f4e15a71ceca5b60a053b9b\",\"created\":\"2017-05-04T00:53:38.642068985Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -qq \\u0026\\u0026 apt-get -y --no-install-recommends install   libxml2-dev   libcairo2-dev   libsqlite-dev   libmariadbd-dev   libmariadb-client-lgpl-dev   libpq-dev   \\u0026\\u0026 R -e \\\"source('https://bioconductor.org/biocLite.R')\\\"   \\u0026\\u0026 install2.r --error     --deps TRUE     tidyverse     dplyr     ggplot2     devtools     formatR     remotes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"150a2bb36cdfc61f9668fa72fa626c3e9dcd1a066f4e15a71ceca5b60a053b9b\",\"parent\":\"b03b003316a1ab5cd61f6ebb9c90d8e9e04cb7e7428a4108560107764948014a\",\"created\":\"2017-05-03T20:57:31.211527855Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/init\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b03b003316a1ab5cd61f6ebb9c90d8e9e04cb7e7428a4108560107764948014a\",\"parent\":\"f86f7c9570c99ccf2f37b95ba6283dd7fa270627c39e0fb7ffe69b923c6fde21\",\"created\":\"2017-05-03T20:57:26.332809514Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/home/rstudio/kitematic]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f86f7c9570c99ccf2f37b95ba6283dd7fa270627c39e0fb7ffe69b923c6fde21\",\"parent\":\"ffbaa2d7f46230bf3b16f0df526a31b871b3bdf0405d850c6f4f3c9fb98ccaf3\",\"created\":\"2017-05-03T20:57:22.014156802Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 3838/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ffbaa2d7f46230bf3b16f0df526a31b871b3bdf0405d850c6f4f3c9fb98ccaf3\",\"parent\":\"cb521850b7b1aaca9c819e670a75cf2704936c02a133cdb0955448e56d4a4b25\",\"created\":\"2017-05-03T20:57:17.523838707Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8787/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb521850b7b1aaca9c819e670a75cf2704936c02a133cdb0955448e56d4a4b25\",\"parent\":\"e8d8758fa2613924b543ae80ae330672d3ccc12eab08cd3bc8048be576e4e9be\",\"created\":\"2017-05-03T20:57:13.810197376Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:b221a73265993ca4d4a6b62a0cecdbbe403261243bb672340dfb65cf2f5ac5b6 in /etc/cont-init.d/add \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e8d8758fa2613924b543ae80ae330672d3ccc12eab08cd3bc8048be576e4e9be\",\"parent\":\"c32738c9bb843607c90157aea06bdc0fce3f9adb5c38de9a689e68a7a15a3f74\",\"created\":\"2017-05-03T20:57:10.470378698Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:3012c80f63f80024463ca0bf8c6fbe79a2ce410862ae778f13dbf66cd00a4c7d in /etc/cont-init.d/userconf \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c32738c9bb843607c90157aea06bdc0fce3f9adb5c38de9a689e68a7a15a3f74\",\"parent\":\"df79341bb7e89639e6a7740040a9e8ae4be2d51215dcdbd46e3b75e0e4113deb\",\"created\":\"2017-05-03T20:57:06.141800812Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update   \\u0026\\u0026 apt-get install -y --no-install-recommends     file     git     libapparmor1     libcurl4-openssl-dev     libedit2     libssl-dev     lsb-release     psmisc     python-setuptools     sudo     wget   \\u0026\\u0026 RSTUDIO_LATEST=$(wget --no-check-certificate -qO- https://s3.amazonaws.com/rstudio-server/current.ver)   \\u0026\\u0026 [ -z \\\"$RSTUDIO_VERSION\\\" ] \\u0026\\u0026 RSTUDIO_VERSION=$RSTUDIO_LATEST || true   \\u0026\\u0026 wget -q http://download2.rstudio.org/rstudio-server-${RSTUDIO_VERSION}-amd64.deb   \\u0026\\u0026 dpkg -i rstudio-server-${RSTUDIO_VERSION}-amd64.deb   \\u0026\\u0026 rm rstudio-server-*-amd64.deb   \\u0026\\u0026 ln -s /usr/lib/rstudio-server/bin/pandoc/pandoc /usr/local/bin   \\u0026\\u0026 ln -s /usr/lib/rstudio-server/bin/pandoc/pandoc-citeproc /usr/local/bin   \\u0026\\u0026 wget https://github.com/jgm/pandoc-templates/archive/${PANDOC_TEMPLATES_VERSION}.tar.gz   \\u0026\\u0026 mkdir -p /opt/pandoc/templates \\u0026\\u0026 tar zxf ${PANDOC_TEMPLATES_VERSION}.tar.gz   \\u0026\\u0026 cp -r pandoc-templates*/* /opt/pandoc/templates \\u0026\\u0026 rm -rf pandoc-templates*   \\u0026\\u0026 mkdir /root/.pandoc \\u0026\\u0026 ln -s /opt/pandoc/templates /root/.pandoc/templates   \\u0026\\u0026 rm ${PANDOC_TEMPLATES_VERSION}.tar.gz   \\u0026\\u0026 apt-get clean   \\u0026\\u0026 rm -rf /var/lib/apt/lists/   \\u0026\\u0026 mkdir -p /etc/R   \\u0026\\u0026 echo '\\\\n    \\\\n# Configure httr to perform out-of-band authentication if HTTR_LOCALHOST     \\\\n# is not set since a redirect to localhost may not work depending upon     \\\\n# where this Docker container is running.     \\\\nif(is.na(Sys.getenv(\\\"HTTR_LOCALHOST\\\", unset=NA))) {     \\\\n  options(httr_oob_default = TRUE)     \\\\n}' \\u003e\\u003e /usr/local/lib/R/etc/Rprofile.site   \\u0026\\u0026 echo \\\"PATH=\\\\\\\"${PATH}\\\\\\\"\\\" \\u003e\\u003e /usr/local/lib/R/etc/Renviron   \\u0026\\u0026 useradd rstudio   \\u0026\\u0026 echo \\\"rstudio:rstudio\\\" | chpasswd \\t\\u0026\\u0026 mkdir /home/rstudio \\t\\u0026\\u0026 chown rstudio:rstudio /home/rstudio \\t\\u0026\\u0026 addgroup rstudio staff   \\u0026\\u0026 git config --system credential.helper 'cache --timeout=3600'   \\u0026\\u0026 git config --system push.default simple   \\u0026\\u0026 wget -P /tmp/ https://github.com/just-containers/s6-overlay/releases/download/v1.11.0.1/s6-overlay-amd64.tar.gz   \\u0026\\u0026 tar xzf /tmp/s6-overlay-amd64.tar.gz -C /   \\u0026\\u0026 mkdir -p /etc/services.d/rstudio   \\u0026\\u0026 echo '#!/bin/bash            \\\\n exec /usr/lib/rstudio-server/bin/rserver --server-daemonize 0'            \\u003e /etc/services.d/rstudio/run    \\u0026\\u0026 echo '#!/bin/bash            \\\\n rstudio-server stop'            \\u003e /etc/services.d/rstudio/finish\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df79341bb7e89639e6a7740040a9e8ae4be2d51215dcdbd46e3b75e0e4113deb\",\"parent\":\"429a8bd97b8c033ee9b518cfc2966cce046e051c93fcc4a83118a5a52688fedc\",\"created\":\"2017-05-03T20:54:48.074650402Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"429a8bd97b8c033ee9b518cfc2966cce046e051c93fcc4a83118a5a52688fedc\",\"parent\":\"5e825dbda060a2ce9bd57e245ef4bb397b1c732c7a9ef4bf9c4ec79685e66ba5\",\"created\":\"2017-05-03T20:54:41.231392736Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PANDOC_TEMPLATES_VERSION=1.18\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e825dbda060a2ce9bd57e245ef4bb397b1c732c7a9ef4bf9c4ec79685e66ba5\",\"parent\":\"87afb31102ffa88cd12348eda7f6716adfa57142530d90c23c200d99c3d1b69b\",\"created\":\"2017-05-03T20:54:35.924704852Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG PANDOC_TEMPLATES_VERSION\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87afb31102ffa88cd12348eda7f6716adfa57142530d90c23c200d99c3d1b69b\",\"parent\":\"5a8b697e8de7710a68b049365ed5027ce6305ddcfaeefa49bfa00733dac63637\",\"created\":\"2017-05-03T20:54:29.802669422Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG RSTUDIO_VERSION\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a8b697e8de7710a68b049365ed5027ce6305ddcfaeefa49bfa00733dac63637\",\"parent\":\"57370df66fd6a2be88f5110e16d88e8a0ff4bca32cb1228094f2ddcdd006ca25\",\"created\":\"2017-04-27T04:25:33.298158274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"R\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57370df66fd6a2be88f5110e16d88e8a0ff4bca32cb1228094f2ddcdd006ca25\",\"parent\":\"2fdd8125571fbc570f540249871d6db46a909035f0a78a07cfffaf851d19327d\",\"created\":\"2017-04-27T04:25:30.83625665Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update   \\u0026\\u0026 apt-get install -y --no-install-recommends     bash-completion     ca-certificates     file     fonts-texgyre     g++     gfortran     gsfonts     libbz2-1.0     libcurl3     libicu52     libjpeg62-turbo     libopenblas-dev     libpangocairo-1.0-0     libpcre3     libpng12-0     libtiff5     liblzma5     locales     make     unzip     zip     zlib1g   \\u0026\\u0026 echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e\\u003e /etc/locale.gen   \\u0026\\u0026 locale-gen en_US.utf8   \\u0026\\u0026 /usr/sbin/update-locale LANG=en_US.UTF-8   \\u0026\\u0026 BUILDDEPS=\\\"curl     default-jdk     libbz2-dev     libcairo2-dev     libcurl4-openssl-dev     libpango1.0-dev     libjpeg-dev     libicu-dev     libpcre3-dev     libpng-dev     libreadline-dev     libtiff5-dev     liblzma-dev     libx11-dev     libxt-dev     perl     tcl8.5-dev     tk8.5-dev     texinfo     texlive-extra-utils     texlive-fonts-recommended     texlive-fonts-extra     texlive-latex-recommended     x11proto-core-dev     xauth     xfonts-base     xvfb     zlib1g-dev\\\"   \\u0026\\u0026 apt-get install -y --no-install-recommends $BUILDDEPS   \\u0026\\u0026 cd tmp/   \\u0026\\u0026 curl -O https://cran.r-project.org/src/base/R-3/R-${R_VERSION}.tar.gz   \\u0026\\u0026 tar -xf R-${R_VERSION}.tar.gz   \\u0026\\u0026 cd R-${R_VERSION}   \\u0026\\u0026 R_PAPERSIZE=letter     R_BATCHSAVE=\\\"--no-save --no-restore\\\"     R_BROWSER=xdg-open     PAGER=/usr/bin/pager     PERL=/usr/bin/perl     R_UNZIPCMD=/usr/bin/unzip     R_ZIPCMD=/usr/bin/zip     R_PRINTCMD=/usr/bin/lpr     LIBnn=lib     AWK=/usr/bin/awk     CFLAGS=\\\"-g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g\\\"     CXXFLAGS=\\\"-g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g\\\"   ./configure --enable-R-shlib                --enable-memory-profiling                --with-readline                --with-blas=\\\"-lopenblas\\\"                --disable-nls                --without-recommended-packages   \\u0026\\u0026 make   \\u0026\\u0026 make install   \\u0026\\u0026 echo \\\"options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')\\\" \\u003e\\u003e /usr/local/lib/R/etc/Rprofile.site   \\u0026\\u0026 mkdir -p /usr/local/lib/R/site-library   \\u0026\\u0026 chown root:staff /usr/local/lib/R/site-library   \\u0026\\u0026 chmod g+wx /usr/local/lib/R/site-library   \\u0026\\u0026 echo \\\"R_LIBS_USER='/usr/local/lib/R/site-library'\\\" \\u003e\\u003e /usr/local/lib/R/etc/Renviron   \\u0026\\u0026 echo \\\"R_LIBS=\\\\${R_LIBS-'/usr/local/lib/R/site-library:/usr/local/lib/R/library:/usr/lib/R/library'}\\\" \\u003e\\u003e /usr/local/lib/R/etc/Renviron   \\u0026\\u0026 [ -z \\\"$BUILD_DATE\\\" ] \\u0026\\u0026 BUILD_DATE=$(TZ=\\\"America/Los_Angeles\\\" date -I) || true   \\u0026\\u0026 MRAN=https://mran.microsoft.com/snapshot/${BUILD_DATE}   \\u0026\\u0026 echo MRAN=$MRAN \\u003e\\u003e /etc/environment   \\u0026\\u0026 export MRAN=$MRAN   \\u0026\\u0026 Rscript -e \\\"install.packages(c('littler', 'docopt'), repo = '$MRAN')\\\"   \\u0026\\u0026 ln -s /usr/local/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r   \\u0026\\u0026 ln -s /usr/local/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r   \\u0026\\u0026 ln -s /usr/local/lib/R/site-library/littler/bin/r /usr/local/bin/r   \\u0026\\u0026 cd /   \\u0026\\u0026 rm -rf /tmp/*   \\u0026\\u0026 apt-get remove --purge -y $BUILDDEPS   \\u0026\\u0026 apt-get autoremove -y   \\u0026\\u0026 apt-get autoclean -y   \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2fdd8125571fbc570f540249871d6db46a909035f0a78a07cfffaf851d19327d\",\"parent\":\"a0d3e1625631aedc00420e895ddf38aa1eaa72711d9eaf944d03bddaecc6fefb\",\"created\":\"2017-04-27T04:01:56.491359736Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=xterm\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0d3e1625631aedc00420e895ddf38aa1eaa72711d9eaf944d03bddaecc6fefb\",\"parent\":\"57f2c68ea76dbdcc64eabe0b9440a2709a187f7b70bd4047f1b8858c29363e88\",\"created\":\"2017-04-27T04:01:52.905573431Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57f2c68ea76dbdcc64eabe0b9440a2709a187f7b70bd4047f1b8858c29363e88\",\"parent\":\"b00b0f6fa41a55ef4904800266bd46d904366dde138fb6072bb5cb3485733940\",\"created\":\"2017-04-27T04:01:50.467572964Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b00b0f6fa41a55ef4904800266bd46d904366dde138fb6072bb5cb3485733940\",\"parent\":\"9b569a0f033085ce7fd4a93a1ddfd3e1e0072aacf79dd1da3305794ccd5de825\",\"created\":\"2017-04-27T04:01:47.812152366Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV R_VERSION=3.4.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b569a0f033085ce7fd4a93a1ddfd3e1e0072aacf79dd1da3305794ccd5de825\",\"parent\":\"5a7db2201353a4788e22646cab5b4697e9fcb37ceed937f2f7e0a7a84432cfc2\",\"created\":\"2017-04-27T04:01:45.503885187Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG BUILD_DATE\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a7db2201353a4788e22646cab5b4697e9fcb37ceed937f2f7e0a7a84432cfc2\",\"parent\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"created\":\"2017-04-27T04:01:42.890477653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG R_VERSION\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"parent\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:42.022627269Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:41.290148217Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:25dd1e3de543bfb7b8340ba43551e3723408f55dad04e9ed6e216a26a95fc53a"
+            },
+            {
+                "blobSum": "sha256:8a0299208e936b93d3a36bf322214856b74b3f8e01aceb895b9199cf48364113"
+            },
+            {
+                "blobSum": "sha256:258e9046bb0c5fa1832e322276469ba9e1fcc56e4421afc6476d31d891303026"
+            },
+            {
+                "blobSum": "sha256:35f0e6afe8bd65a9aa92875b52d2ead34025c659c5105b0dfa1214b386fae7a5"
+            },
+            {
+                "blobSum": "sha256:6c7a1e472d68ba06d3af5d72c9450f8b2b220d1ff579968367328df6381f9e09"
+            },
+            {
+                "blobSum": "sha256:2fa72778eda9573abba68be41a6637d7c20d0c888cbd4abb5658caf95995d069"
+            },
+            {
+                "blobSum": "sha256:b6bff436c9dc7cd5d5d9f21070c1dbea535aff6e51946f3bfd8a74f0e2dd165a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:bd02128ac52035db3478ca4f5019d327c38c86021356da93c38854269674e0cd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4fcd7f32b96983728151c365858ec0ca65e4b3e86c86646c7c593cb34843e072"
+            },
+            {
+                "blobSum": "sha256:fe3850196e831a40adc4a4944663b139ec39546b617848592af70878eb8cb80f"
+            },
+            {
+                "blobSum": "sha256:bb49cca16c6ed019b0cf57a0cc3587e2cfe19802dbfa66764cc1bd4e52d6e24b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:422b4c190bb8e08d98bf24a6ff69e32829ebf2347359cc5390a9a77dc78be283"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c"
+            }
+        ],
+        "name": "hlapp/rpopgen",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjI0NjA4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTY6NDFaIn0",
+                "signature": "lY6lZ6S7Db-Lc7YhgCVEZwwKZo7DcPbsEf_TNecTmc2H1r_lpEnY8OLMNbvY96x5tRQKA3BsW6sXqkT_xZVHOg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "v7VdS5IZCJ6_DG9lgOvw7XNRcvo8b4cLTuTsLEp-Lbc",
+                        "kid": "V2H3:QNJ6:FSQI:PEAG:NASY:XVTH:H5TG:XXKO:T2MI:NDDB:7DMX:6X4Y",
+                        "x": "M5dxmy1L45N-DAj-tKlvrGVLN_rXaHg4q1ga8dv0f44"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{},\"8787/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"R_VERSION=3.4.0\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"TERM=xterm\",\"PANDOC_TEMPLATES_VERSION=1.18\"],\"Cmd\":[\"/init\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b56447efeb379b389f08fa88a363fe9b79a04f5347188ad22981f890493a7186\",\"Volumes\":{\"/home/rstudio/kitematic\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"1bec85b555149d111a18891fce37156eb7d513211d422e39796ccef58af232a6\",\"container_config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3838/tcp\":{},\"8787/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"R_VERSION=3.4.0\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"TERM=xterm\",\"PANDOC_TEMPLATES_VERSION=1.18\"],\"Cmd\":[\"|1\",\"DEBIAN_FRONTEND=noninteractive\",\"/bin/sh\",\"-c\",\"install2.r --error     knitcitations     phangorn     phylobase     phytools \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b56447efeb379b389f08fa88a363fe9b79a04f5347188ad22981f890493a7186\",\"Volumes\":{\"/home/rstudio/kitematic\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-12T07:26:34.289523216Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"f690db6e1eefd1c91aae7252e5d37a5521703497658901a1092dff29e87f2fe0\",\"os\":\"linux\",\"parent\":\"bea311be49f5edd9ee19427fa8f347b0308215ebb6eef2f1ecdc56484fa9261d\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bea311be49f5edd9ee19427fa8f347b0308215ebb6eef2f1ecdc56484fa9261d\",\"parent\":\"7bf87f85b857e816247c3818cd24b94a5be1a550c3e60851a3012083632cf424\",\"created\":\"2017-05-12T07:16:54.428291164Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c installGithub.r     whitlock/OutFLANK \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7bf87f85b857e816247c3818cd24b94a5be1a550c3e60851a3012083632cf424\",\"parent\":\"76edaa6048d5eaa6971c7cba872f2aa827ba8cc14700f6c708f220b8705502e5\",\"created\":\"2017-05-12T07:16:42.719594096Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c Rscript -e 'source(\\\"http://bioconductor.org/biocLite.R\\\"); biocLite(\\\"qvalue\\\");'\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"76edaa6048d5eaa6971c7cba872f2aa827ba8cc14700f6c708f220b8705502e5\",\"parent\":\"6f2bc79b3b076194cd7f3852c74a3419b42eb2910d67ee45c4d1bcd0a36f380d\",\"created\":\"2017-05-12T07:16:28.164447151Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c rm -rf /tmp/*.rds \\u0026\\u0026  install2.r --error     apex     ape     adegenet     adespatial     pegas     coalescentMCMC     mmod     poppr     strataG     rmetasim     genetics     hierfstat     pcadapt     lme4     MuMIn     multcomp     raster     viridis \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f2bc79b3b076194cd7f3852c74a3419b42eb2910d67ee45c4d1bcd0a36f380d\",\"parent\":\"a9238ccf4577577fb516497ebce4dd2f057e8cd9903ff257abc6607929c5a5a8\",\"created\":\"2017-05-12T06:51:57.52529931Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c Rscript -e 'source(\\\"http://bioconductor.org/biocLite.R\\\"); biocLite(\\\"Biostrings\\\");'\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a9238ccf4577577fb516497ebce4dd2f057e8cd9903ff257abc6607929c5a5a8\",\"parent\":\"51b61be0088f9c7bf5a4242ca1dcd70d15ca944a888a5392f031b37da2aab3ba\",\"created\":\"2017-05-12T06:49:46.285086601Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c install2.r --error     nloptr \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51b61be0088f9c7bf5a4242ca1dcd70d15ca944a888a5392f031b37da2aab3ba\",\"parent\":\"19a1a96facb792f3abf285a04b434118d4757d44b2e497571f0971526108cdd9\",\"created\":\"2017-05-12T06:47:14.888088392Z\",\"container_config\":{\"Cmd\":[\"|1 DEBIAN_FRONTEND=noninteractive /bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y libgsl0-dev\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"19a1a96facb792f3abf285a04b434118d4757d44b2e497571f0971526108cdd9\",\"parent\":\"c6349d640033a03ee52da3970c90f0d65f9ce0adbc7161f947c1334a9a91cba8\",\"created\":\"2017-05-12T06:46:14.413422164Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6349d640033a03ee52da3970c90f0d65f9ce0adbc7161f947c1334a9a91cba8\",\"parent\":\"a70ef1321e38551d713100b73f9c2d598ef05b2afb983fce1048c27e59ed94de\",\"created\":\"2017-05-12T06:46:03.64920224Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG TERM=linux\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a70ef1321e38551d713100b73f9c2d598ef05b2afb983fce1048c27e59ed94de\",\"parent\":\"b25f09bacc269f8d95cf02a17172e2c1cac7191495172f171b7853391cca610e\",\"created\":\"2017-05-12T06:45:53.928477914Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Hilmar Lapp hilmar.lapp@duke.edu\"]},\"author\":\"Hilmar Lapp hilmar.lapp@duke.edu\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b25f09bacc269f8d95cf02a17172e2c1cac7191495172f171b7853391cca610e\",\"parent\":\"150a2bb36cdfc61f9668fa72fa626c3e9dcd1a066f4e15a71ceca5b60a053b9b\",\"created\":\"2017-05-04T00:53:38.642068985Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -qq \\u0026\\u0026 apt-get -y --no-install-recommends install   libxml2-dev   libcairo2-dev   libsqlite-dev   libmariadbd-dev   libmariadb-client-lgpl-dev   libpq-dev   \\u0026\\u0026 R -e \\\"source('https://bioconductor.org/biocLite.R')\\\"   \\u0026\\u0026 install2.r --error     --deps TRUE     tidyverse     dplyr     ggplot2     devtools     formatR     remotes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"150a2bb36cdfc61f9668fa72fa626c3e9dcd1a066f4e15a71ceca5b60a053b9b\",\"parent\":\"b03b003316a1ab5cd61f6ebb9c90d8e9e04cb7e7428a4108560107764948014a\",\"created\":\"2017-05-03T20:57:31.211527855Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/init\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b03b003316a1ab5cd61f6ebb9c90d8e9e04cb7e7428a4108560107764948014a\",\"parent\":\"f86f7c9570c99ccf2f37b95ba6283dd7fa270627c39e0fb7ffe69b923c6fde21\",\"created\":\"2017-05-03T20:57:26.332809514Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/home/rstudio/kitematic]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f86f7c9570c99ccf2f37b95ba6283dd7fa270627c39e0fb7ffe69b923c6fde21\",\"parent\":\"ffbaa2d7f46230bf3b16f0df526a31b871b3bdf0405d850c6f4f3c9fb98ccaf3\",\"created\":\"2017-05-03T20:57:22.014156802Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 3838/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ffbaa2d7f46230bf3b16f0df526a31b871b3bdf0405d850c6f4f3c9fb98ccaf3\",\"parent\":\"cb521850b7b1aaca9c819e670a75cf2704936c02a133cdb0955448e56d4a4b25\",\"created\":\"2017-05-03T20:57:17.523838707Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8787/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cb521850b7b1aaca9c819e670a75cf2704936c02a133cdb0955448e56d4a4b25\",\"parent\":\"e8d8758fa2613924b543ae80ae330672d3ccc12eab08cd3bc8048be576e4e9be\",\"created\":\"2017-05-03T20:57:13.810197376Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:b221a73265993ca4d4a6b62a0cecdbbe403261243bb672340dfb65cf2f5ac5b6 in /etc/cont-init.d/add \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e8d8758fa2613924b543ae80ae330672d3ccc12eab08cd3bc8048be576e4e9be\",\"parent\":\"c32738c9bb843607c90157aea06bdc0fce3f9adb5c38de9a689e68a7a15a3f74\",\"created\":\"2017-05-03T20:57:10.470378698Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:3012c80f63f80024463ca0bf8c6fbe79a2ce410862ae778f13dbf66cd00a4c7d in /etc/cont-init.d/userconf \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c32738c9bb843607c90157aea06bdc0fce3f9adb5c38de9a689e68a7a15a3f74\",\"parent\":\"df79341bb7e89639e6a7740040a9e8ae4be2d51215dcdbd46e3b75e0e4113deb\",\"created\":\"2017-05-03T20:57:06.141800812Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update   \\u0026\\u0026 apt-get install -y --no-install-recommends     file     git     libapparmor1     libcurl4-openssl-dev     libedit2     libssl-dev     lsb-release     psmisc     python-setuptools     sudo     wget   \\u0026\\u0026 RSTUDIO_LATEST=$(wget --no-check-certificate -qO- https://s3.amazonaws.com/rstudio-server/current.ver)   \\u0026\\u0026 [ -z \\\"$RSTUDIO_VERSION\\\" ] \\u0026\\u0026 RSTUDIO_VERSION=$RSTUDIO_LATEST || true   \\u0026\\u0026 wget -q http://download2.rstudio.org/rstudio-server-${RSTUDIO_VERSION}-amd64.deb   \\u0026\\u0026 dpkg -i rstudio-server-${RSTUDIO_VERSION}-amd64.deb   \\u0026\\u0026 rm rstudio-server-*-amd64.deb   \\u0026\\u0026 ln -s /usr/lib/rstudio-server/bin/pandoc/pandoc /usr/local/bin   \\u0026\\u0026 ln -s /usr/lib/rstudio-server/bin/pandoc/pandoc-citeproc /usr/local/bin   \\u0026\\u0026 wget https://github.com/jgm/pandoc-templates/archive/${PANDOC_TEMPLATES_VERSION}.tar.gz   \\u0026\\u0026 mkdir -p /opt/pandoc/templates \\u0026\\u0026 tar zxf ${PANDOC_TEMPLATES_VERSION}.tar.gz   \\u0026\\u0026 cp -r pandoc-templates*/* /opt/pandoc/templates \\u0026\\u0026 rm -rf pandoc-templates*   \\u0026\\u0026 mkdir /root/.pandoc \\u0026\\u0026 ln -s /opt/pandoc/templates /root/.pandoc/templates   \\u0026\\u0026 rm ${PANDOC_TEMPLATES_VERSION}.tar.gz   \\u0026\\u0026 apt-get clean   \\u0026\\u0026 rm -rf /var/lib/apt/lists/   \\u0026\\u0026 mkdir -p /etc/R   \\u0026\\u0026 echo '\\\\n    \\\\n# Configure httr to perform out-of-band authentication if HTTR_LOCALHOST     \\\\n# is not set since a redirect to localhost may not work depending upon     \\\\n# where this Docker container is running.     \\\\nif(is.na(Sys.getenv(\\\"HTTR_LOCALHOST\\\", unset=NA))) {     \\\\n  options(httr_oob_default = TRUE)     \\\\n}' \\u003e\\u003e /usr/local/lib/R/etc/Rprofile.site   \\u0026\\u0026 echo \\\"PATH=\\\\\\\"${PATH}\\\\\\\"\\\" \\u003e\\u003e /usr/local/lib/R/etc/Renviron   \\u0026\\u0026 useradd rstudio   \\u0026\\u0026 echo \\\"rstudio:rstudio\\\" | chpasswd \\t\\u0026\\u0026 mkdir /home/rstudio \\t\\u0026\\u0026 chown rstudio:rstudio /home/rstudio \\t\\u0026\\u0026 addgroup rstudio staff   \\u0026\\u0026 git config --system credential.helper 'cache --timeout=3600'   \\u0026\\u0026 git config --system push.default simple   \\u0026\\u0026 wget -P /tmp/ https://github.com/just-containers/s6-overlay/releases/download/v1.11.0.1/s6-overlay-amd64.tar.gz   \\u0026\\u0026 tar xzf /tmp/s6-overlay-amd64.tar.gz -C /   \\u0026\\u0026 mkdir -p /etc/services.d/rstudio   \\u0026\\u0026 echo '#!/bin/bash            \\\\n exec /usr/lib/rstudio-server/bin/rserver --server-daemonize 0'            \\u003e /etc/services.d/rstudio/run    \\u0026\\u0026 echo '#!/bin/bash            \\\\n rstudio-server stop'            \\u003e /etc/services.d/rstudio/finish\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df79341bb7e89639e6a7740040a9e8ae4be2d51215dcdbd46e3b75e0e4113deb\",\"parent\":\"429a8bd97b8c033ee9b518cfc2966cce046e051c93fcc4a83118a5a52688fedc\",\"created\":\"2017-05-03T20:54:48.074650402Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/lib/rstudio-server/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"429a8bd97b8c033ee9b518cfc2966cce046e051c93fcc4a83118a5a52688fedc\",\"parent\":\"5e825dbda060a2ce9bd57e245ef4bb397b1c732c7a9ef4bf9c4ec79685e66ba5\",\"created\":\"2017-05-03T20:54:41.231392736Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PANDOC_TEMPLATES_VERSION=1.18\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e825dbda060a2ce9bd57e245ef4bb397b1c732c7a9ef4bf9c4ec79685e66ba5\",\"parent\":\"87afb31102ffa88cd12348eda7f6716adfa57142530d90c23c200d99c3d1b69b\",\"created\":\"2017-05-03T20:54:35.924704852Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG PANDOC_TEMPLATES_VERSION\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87afb31102ffa88cd12348eda7f6716adfa57142530d90c23c200d99c3d1b69b\",\"parent\":\"5a8b697e8de7710a68b049365ed5027ce6305ddcfaeefa49bfa00733dac63637\",\"created\":\"2017-05-03T20:54:29.802669422Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG RSTUDIO_VERSION\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a8b697e8de7710a68b049365ed5027ce6305ddcfaeefa49bfa00733dac63637\",\"parent\":\"57370df66fd6a2be88f5110e16d88e8a0ff4bca32cb1228094f2ddcdd006ca25\",\"created\":\"2017-04-27T04:25:33.298158274Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"R\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57370df66fd6a2be88f5110e16d88e8a0ff4bca32cb1228094f2ddcdd006ca25\",\"parent\":\"2fdd8125571fbc570f540249871d6db46a909035f0a78a07cfffaf851d19327d\",\"created\":\"2017-04-27T04:25:30.83625665Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update   \\u0026\\u0026 apt-get install -y --no-install-recommends     bash-completion     ca-certificates     file     fonts-texgyre     g++     gfortran     gsfonts     libbz2-1.0     libcurl3     libicu52     libjpeg62-turbo     libopenblas-dev     libpangocairo-1.0-0     libpcre3     libpng12-0     libtiff5     liblzma5     locales     make     unzip     zip     zlib1g   \\u0026\\u0026 echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e\\u003e /etc/locale.gen   \\u0026\\u0026 locale-gen en_US.utf8   \\u0026\\u0026 /usr/sbin/update-locale LANG=en_US.UTF-8   \\u0026\\u0026 BUILDDEPS=\\\"curl     default-jdk     libbz2-dev     libcairo2-dev     libcurl4-openssl-dev     libpango1.0-dev     libjpeg-dev     libicu-dev     libpcre3-dev     libpng-dev     libreadline-dev     libtiff5-dev     liblzma-dev     libx11-dev     libxt-dev     perl     tcl8.5-dev     tk8.5-dev     texinfo     texlive-extra-utils     texlive-fonts-recommended     texlive-fonts-extra     texlive-latex-recommended     x11proto-core-dev     xauth     xfonts-base     xvfb     zlib1g-dev\\\"   \\u0026\\u0026 apt-get install -y --no-install-recommends $BUILDDEPS   \\u0026\\u0026 cd tmp/   \\u0026\\u0026 curl -O https://cran.r-project.org/src/base/R-3/R-${R_VERSION}.tar.gz   \\u0026\\u0026 tar -xf R-${R_VERSION}.tar.gz   \\u0026\\u0026 cd R-${R_VERSION}   \\u0026\\u0026 R_PAPERSIZE=letter     R_BATCHSAVE=\\\"--no-save --no-restore\\\"     R_BROWSER=xdg-open     PAGER=/usr/bin/pager     PERL=/usr/bin/perl     R_UNZIPCMD=/usr/bin/unzip     R_ZIPCMD=/usr/bin/zip     R_PRINTCMD=/usr/bin/lpr     LIBnn=lib     AWK=/usr/bin/awk     CFLAGS=\\\"-g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g\\\"     CXXFLAGS=\\\"-g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g\\\"   ./configure --enable-R-shlib                --enable-memory-profiling                --with-readline                --with-blas=\\\"-lopenblas\\\"                --disable-nls                --without-recommended-packages   \\u0026\\u0026 make   \\u0026\\u0026 make install   \\u0026\\u0026 echo \\\"options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')\\\" \\u003e\\u003e /usr/local/lib/R/etc/Rprofile.site   \\u0026\\u0026 mkdir -p /usr/local/lib/R/site-library   \\u0026\\u0026 chown root:staff /usr/local/lib/R/site-library   \\u0026\\u0026 chmod g+wx /usr/local/lib/R/site-library   \\u0026\\u0026 echo \\\"R_LIBS_USER='/usr/local/lib/R/site-library'\\\" \\u003e\\u003e /usr/local/lib/R/etc/Renviron   \\u0026\\u0026 echo \\\"R_LIBS=\\\\${R_LIBS-'/usr/local/lib/R/site-library:/usr/local/lib/R/library:/usr/lib/R/library'}\\\" \\u003e\\u003e /usr/local/lib/R/etc/Renviron   \\u0026\\u0026 [ -z \\\"$BUILD_DATE\\\" ] \\u0026\\u0026 BUILD_DATE=$(TZ=\\\"America/Los_Angeles\\\" date -I) || true   \\u0026\\u0026 MRAN=https://mran.microsoft.com/snapshot/${BUILD_DATE}   \\u0026\\u0026 echo MRAN=$MRAN \\u003e\\u003e /etc/environment   \\u0026\\u0026 export MRAN=$MRAN   \\u0026\\u0026 Rscript -e \\\"install.packages(c('littler', 'docopt'), repo = '$MRAN')\\\"   \\u0026\\u0026 ln -s /usr/local/lib/R/site-library/littler/examples/install2.r /usr/local/bin/install2.r   \\u0026\\u0026 ln -s /usr/local/lib/R/site-library/littler/examples/installGithub.r /usr/local/bin/installGithub.r   \\u0026\\u0026 ln -s /usr/local/lib/R/site-library/littler/bin/r /usr/local/bin/r   \\u0026\\u0026 cd /   \\u0026\\u0026 rm -rf /tmp/*   \\u0026\\u0026 apt-get remove --purge -y $BUILDDEPS   \\u0026\\u0026 apt-get autoremove -y   \\u0026\\u0026 apt-get autoclean -y   \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2fdd8125571fbc570f540249871d6db46a909035f0a78a07cfffaf851d19327d\",\"parent\":\"a0d3e1625631aedc00420e895ddf38aa1eaa72711d9eaf944d03bddaecc6fefb\",\"created\":\"2017-04-27T04:01:56.491359736Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TERM=xterm\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0d3e1625631aedc00420e895ddf38aa1eaa72711d9eaf944d03bddaecc6fefb\",\"parent\":\"57f2c68ea76dbdcc64eabe0b9440a2709a187f7b70bd4047f1b8858c29363e88\",\"created\":\"2017-04-27T04:01:52.905573431Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"57f2c68ea76dbdcc64eabe0b9440a2709a187f7b70bd4047f1b8858c29363e88\",\"parent\":\"b00b0f6fa41a55ef4904800266bd46d904366dde138fb6072bb5cb3485733940\",\"created\":\"2017-04-27T04:01:50.467572964Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b00b0f6fa41a55ef4904800266bd46d904366dde138fb6072bb5cb3485733940\",\"parent\":\"9b569a0f033085ce7fd4a93a1ddfd3e1e0072aacf79dd1da3305794ccd5de825\",\"created\":\"2017-04-27T04:01:47.812152366Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV R_VERSION=3.4.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b569a0f033085ce7fd4a93a1ddfd3e1e0072aacf79dd1da3305794ccd5de825\",\"parent\":\"5a7db2201353a4788e22646cab5b4697e9fcb37ceed937f2f7e0a7a84432cfc2\",\"created\":\"2017-04-27T04:01:45.503885187Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG BUILD_DATE\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a7db2201353a4788e22646cab5b4697e9fcb37ceed937f2f7e0a7a84432cfc2\",\"parent\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"created\":\"2017-04-27T04:01:42.890477653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ARG R_VERSION\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"parent\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:42.022627269Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:41.290148217Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:25dd1e3de543bfb7b8340ba43551e3723408f55dad04e9ed6e216a26a95fc53a"
+            },
+            {
+                "blobSum": "sha256:8a0299208e936b93d3a36bf322214856b74b3f8e01aceb895b9199cf48364113"
+            },
+            {
+                "blobSum": "sha256:258e9046bb0c5fa1832e322276469ba9e1fcc56e4421afc6476d31d891303026"
+            },
+            {
+                "blobSum": "sha256:35f0e6afe8bd65a9aa92875b52d2ead34025c659c5105b0dfa1214b386fae7a5"
+            },
+            {
+                "blobSum": "sha256:6c7a1e472d68ba06d3af5d72c9450f8b2b220d1ff579968367328df6381f9e09"
+            },
+            {
+                "blobSum": "sha256:2fa72778eda9573abba68be41a6637d7c20d0c888cbd4abb5658caf95995d069"
+            },
+            {
+                "blobSum": "sha256:b6bff436c9dc7cd5d5d9f21070c1dbea535aff6e51946f3bfd8a74f0e2dd165a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:bd02128ac52035db3478ca4f5019d327c38c86021356da93c38854269674e0cd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4fcd7f32b96983728151c365858ec0ca65e4b3e86c86646c7c593cb34843e072"
+            },
+            {
+                "blobSum": "sha256:fe3850196e831a40adc4a4944663b139ec39546b617848592af70878eb8cb80f"
+            },
+            {
+                "blobSum": "sha256:bb49cca16c6ed019b0cf57a0cc3587e2cfe19802dbfa66764cc1bd4e52d6e24b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:422b4c190bb8e08d98bf24a6ff69e32829ebf2347359cc5390a9a77dc78be283"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c"
+            }
+        ],
+        "name": "hlapp/rpopgen",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjI0NjA4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTY6NDJaIn0",
+                "signature": "e9uEHIlv9CgmTStvJ2NlfHchKGF-BZYFwB3a-wUXV7dZq0kbLIctYXa7QrE8oBF5QKU_g42fwtV0WtM_EmFJ5Q",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "YPNa0BA6vgnUzOgx2P9MWJ0jQ77fpXA7RN52pn6DBOA",
+                        "kid": "DL3U:CHTF:ZPWK:6A34:T5F5:ZYBX:2IGR:UHYM:PAYU:XBXZ:BI2S:CKSV",
+                        "x": "qO3uWUY_RxHMF8RzvFhN8yq3jiuVPTcSy-EXEJr_W0M"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

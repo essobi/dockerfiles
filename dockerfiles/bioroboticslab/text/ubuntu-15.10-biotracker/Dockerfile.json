@@ -1,0 +1,222 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\",\"config\":{\"Hostname\":\"d2d404286fc4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/usr/sbin/sshd\",\"-D\"],\"ArgsEscaped\":true,\"Image\":\"sha256:2f844a9cb0196ed6e16b3fb86e2138fb41a0deb23f9cf60224033f982c49b6e7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"4f9b7b094a2896332ccafca3d932521dd80cc079411d0925db81cb66bbb0c43f\",\"container_config\":{\"Hostname\":\"d2d404286fc4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"chmod +x /home/jenkins/scripts/build-biotracker.sh; chown -R jenkins:jenkins /home/jenkins/scripts\"],\"ArgsEscaped\":true,\"Image\":\"sha256:2f844a9cb0196ed6e16b3fb86e2138fb41a0deb23f9cf60224033f982c49b6e7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-03T16:38:32.373579156Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"69845fd8abf892a595446aaaacc4ab90447afbbe46730ec294e4ee2e33bc3bba\",\"os\":\"linux\",\"parent\":\"083c756d661f6c84cd56759e4fea7f0bd95854e6f8d0c87a7baf9f2cbf8f26ae\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"083c756d661f6c84cd56759e4fea7f0bd95854e6f8d0c87a7baf9f2cbf8f26ae\",\"parent\":\"9e7316d62993486ec619306224dffab60e7fde5adf22e191514a5c7da1dbfc88\",\"created\":\"2017-05-03T16:38:23.446474973Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9bb04d8b035eb759af999ed5f38e54c1dd207e9b06211c15cdb8af57803b6d18 in /home/jenkins/scripts/build-biotracker.sh \"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e7316d62993486ec619306224dffab60e7fde5adf22e191514a5c7da1dbfc88\",\"parent\":\"a0352298084ffa8afad067753b66710dea14740693e346793b5fb66d03abe0d6\",\"created\":\"2017-05-03T16:38:11.872214194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./dependencies.sh  \\u0026\\u0026 mkdir -p /home/jenkins/scripts\"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0352298084ffa8afad067753b66710dea14740693e346793b5fb66d03abe0d6\",\"parent\":\"93cc3bd2ad9dd3880f7aa94076aa2359355e0d6a2e17c763e1d0331a2610781a\",\"created\":\"2017-05-03T16:16:45.608053203Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:a222a202584cca5d2699858cbd10d1917055d7fad19fd284917b33c27f6a8337 in dependencies.sh \"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93cc3bd2ad9dd3880f7aa94076aa2359355e0d6a2e17c763e1d0331a2610781a\",\"parent\":\"8bf3ee5108532a2733c67114ed8514003236bef3c12c1e888037b914caf51b01\",\"created\":\"2017-05-03T16:16:41.772574403Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8bf3ee5108532a2733c67114ed8514003236bef3c12c1e888037b914caf51b01\",\"parent\":\"c1acdbdf0d12c5f34a2792fbf93b75c5a829b406653baea09e37d007a21946d0\",\"created\":\"2016-02-22T15:35:58.89618087Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/usr/sbin/sshd\\\" \\\"-D\\\"]\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c1acdbdf0d12c5f34a2792fbf93b75c5a829b406653baea09e37d007a21946d0\",\"parent\":\"39a881807ea1dd2abd1ee44bf8ba5a338c18249f6853c38c4b2b036a1f909bab\",\"created\":\"2016-02-22T15:35:58.826555226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 22/tcp\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39a881807ea1dd2abd1ee44bf8ba5a338c18249f6853c38c4b2b036a1f909bab\",\"parent\":\"5b3a66ade1afcd71d7dfcf2448bad98d1ccbb2e50d071f3955170feb892fdb50\",\"created\":\"2016-02-22T15:35:45.025968842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -y update  \\u0026\\u0026 apt-get -y upgrade  \\u0026\\u0026 apt-get install -y openssh-server  \\u0026\\u0026 sed -i 's|session    required     pam_loginuid.so|session    optional     pam_loginuid.so|g' /etc/pam.d/sshd  \\u0026\\u0026 mkdir -p /var/run/sshd  \\u0026\\u0026 apt-get install -y openjdk-7-jdk  \\u0026\\u0026 useradd -m jenkins  \\u0026\\u0026 echo \\\"root:$(\\u003c /dev/urandom tr -dc A-Za-z0-9 | head -c 32)\\\" | chpasswd  \\u0026\\u0026 echo \\\"jenkins:$(\\u003c /dev/urandom tr -dc A-Za-z0-9 | head -c 32)\\\" | chpasswd  \\u0026\\u0026 mkdir -p /home/jenkins/.ssh  \\u0026\\u0026 echo \\\"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/4M6G+wnzZFaxio8EVRhKXz/RMa1e0hh2eZeE5Da4S9pQnR7zcZNa90bpqHA9GOUfrYMoLOYXoQp5iKq/WzTzhQmVe6mxxuJMUWCQC1Ne2BMB3OkYjGeOeM4bRzFbM1SVxYAumoncdRB/77FN6D1EYgBWTr0ySRQOy3AbH5wMSb2ZKnhrd4W5JMqAxqyrSCoFUlXzD9gMeHzFhOoUItMh62U6CYPAErRDLPaFqjVOR9thzpfYl5xQ3xrS0ldmY8wL3u7mtMHG5wPt2xV4mfyHUqGlONpBKINPH4qKtJ3qsxdyaR0tvxCy8cbEEJLnfJFQcOg88E9X6M2NWVdNks/v jenkins@flip\\\" \\u003e\\u003e /home/jenkins/.ssh/authorized_keys\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5b3a66ade1afcd71d7dfcf2448bad98d1ccbb2e50d071f3955170feb892fdb50\",\"parent\":\"52a1a3bf2d63b7521e09cb5fdc1e154fe0a18398459943972cc049b5b34769b2\",\"created\":\"2016-02-22T15:33:48.976360117Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"52a1a3bf2d63b7521e09cb5fdc1e154fe0a18398459943972cc049b5b34769b2\",\"parent\":\"2a793c7a03c651d11342230f7e7b4d36bec486923867bbc64a680948c37fc15e\",\"created\":\"2016-02-22T15:33:48.914575261Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a793c7a03c651d11342230f7e7b4d36bec486923867bbc64a680948c37fc15e\",\"parent\":\"e55a3b74c8999d0e77727ff3268a9429134bb3f346a44eea534636517ad9fe44\",\"created\":\"2016-01-26T17:48:34.465253028Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e55a3b74c8999d0e77727ff3268a9429134bb3f346a44eea534636517ad9fe44\",\"parent\":\"55703677ccf7b18fe1ecb60dc596b34ab28cc5c5e82c2ad32b5372958a81b017\",\"created\":\"2016-01-26T17:48:33.59869621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55703677ccf7b18fe1ecb60dc596b34ab28cc5c5e82c2ad32b5372958a81b017\",\"parent\":\"5f7845f56a94cd048712f3da5af180bb1bdffb652e634429b98a825f378d9a79\",\"created\":\"2016-01-26T17:48:31.377192721Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5f7845f56a94cd048712f3da5af180bb1bdffb652e634429b98a825f378d9a79\",\"created\":\"2016-01-26T17:48:17.324409116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:3f4708cf445dc1b537b8e9f400cb02bef84660811ecdb7c98930f68fee876ec4 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:6e4201dfaae68d7a7c56667c3f6ffea1342ce9b62b3bfc97e09aa9c1b408ce66"
+            },
+            {
+                "blobSum": "sha256:93b2f0c3cc724d979d53babe7856d8046635d0eff713c393733a555f825224ef"
+            },
+            {
+                "blobSum": "sha256:1cb8b4e98fc867bff1724c995a0e6382e8d15221e620dc98632b9c35cdfafaf6"
+            },
+            {
+                "blobSum": "sha256:11cde8fcfb953db5592e7af619e49df1cdf580e6d847d836c05ef43aa13d5b02"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d0dff5b916393085208a7e6c55af794da425a783d27da8625d0fee9f1a7be6f4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2f937cc07b5fa0c9dc466c1421227981c80e48fdd944f8e9c215544bbd34bbc0"
+            },
+            {
+                "blobSum": "sha256:4332ffb06e4b2a63e6feb5db60fd03c073624e1df32a5dc128bede49f71b3a5e"
+            },
+            {
+                "blobSum": "sha256:9502adfba7f1250b1d7fc248ff95dc34e90cad1b554a3151819f8a33ada37dfb"
+            }
+        ],
+        "name": "bioroboticslab/ubuntu-15.10-biotracker",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEwOTc5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDU6NDBaIn0",
+                "signature": "q_2go_KiVM5NjQhjPOPt5fNarAEBZBijT25ghuz6S9PhDfwqcKgR3DW2fzsGgy934UfnwA_ztuMYvJyjxggyxA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "YPNa0BA6vgnUzOgx2P9MWJ0jQ77fpXA7RN52pn6DBOA",
+                        "kid": "DL3U:CHTF:ZPWK:6A34:T5F5:ZYBX:2IGR:UHYM:PAYU:XBXZ:BI2S:CKSV",
+                        "x": "qO3uWUY_RxHMF8RzvFhN8yq3jiuVPTcSy-EXEJr_W0M"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\",\"config\":{\"Hostname\":\"d2d404286fc4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/usr/sbin/sshd\",\"-D\"],\"ArgsEscaped\":true,\"Image\":\"sha256:2f844a9cb0196ed6e16b3fb86e2138fb41a0deb23f9cf60224033f982c49b6e7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"4f9b7b094a2896332ccafca3d932521dd80cc079411d0925db81cb66bbb0c43f\",\"container_config\":{\"Hostname\":\"d2d404286fc4\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"22/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"chmod +x /home/jenkins/scripts/build-biotracker.sh; chown -R jenkins:jenkins /home/jenkins/scripts\"],\"ArgsEscaped\":true,\"Image\":\"sha256:2f844a9cb0196ed6e16b3fb86e2138fb41a0deb23f9cf60224033f982c49b6e7\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-03T16:38:32.373579156Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"69845fd8abf892a595446aaaacc4ab90447afbbe46730ec294e4ee2e33bc3bba\",\"os\":\"linux\",\"parent\":\"083c756d661f6c84cd56759e4fea7f0bd95854e6f8d0c87a7baf9f2cbf8f26ae\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"083c756d661f6c84cd56759e4fea7f0bd95854e6f8d0c87a7baf9f2cbf8f26ae\",\"parent\":\"9e7316d62993486ec619306224dffab60e7fde5adf22e191514a5c7da1dbfc88\",\"created\":\"2017-05-03T16:38:23.446474973Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9bb04d8b035eb759af999ed5f38e54c1dd207e9b06211c15cdb8af57803b6d18 in /home/jenkins/scripts/build-biotracker.sh \"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e7316d62993486ec619306224dffab60e7fde5adf22e191514a5c7da1dbfc88\",\"parent\":\"a0352298084ffa8afad067753b66710dea14740693e346793b5fb66d03abe0d6\",\"created\":\"2017-05-03T16:38:11.872214194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./dependencies.sh  \\u0026\\u0026 mkdir -p /home/jenkins/scripts\"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a0352298084ffa8afad067753b66710dea14740693e346793b5fb66d03abe0d6\",\"parent\":\"93cc3bd2ad9dd3880f7aa94076aa2359355e0d6a2e17c763e1d0331a2610781a\",\"created\":\"2017-05-03T16:16:45.608053203Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:a222a202584cca5d2699858cbd10d1917055d7fad19fd284917b33c27f6a8337 in dependencies.sh \"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93cc3bd2ad9dd3880f7aa94076aa2359355e0d6a2e17c763e1d0331a2610781a\",\"parent\":\"8bf3ee5108532a2733c67114ed8514003236bef3c12c1e888037b914caf51b01\",\"created\":\"2017-05-03T16:16:41.772574403Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Michael Wittig \\u003cwitmic1@gmail.com\\u003e\"]},\"author\":\"Michael Wittig \\u003cwitmic1@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8bf3ee5108532a2733c67114ed8514003236bef3c12c1e888037b914caf51b01\",\"parent\":\"c1acdbdf0d12c5f34a2792fbf93b75c5a829b406653baea09e37d007a21946d0\",\"created\":\"2016-02-22T15:35:58.89618087Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/usr/sbin/sshd\\\" \\\"-D\\\"]\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c1acdbdf0d12c5f34a2792fbf93b75c5a829b406653baea09e37d007a21946d0\",\"parent\":\"39a881807ea1dd2abd1ee44bf8ba5a338c18249f6853c38c4b2b036a1f909bab\",\"created\":\"2016-02-22T15:35:58.826555226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 22/tcp\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39a881807ea1dd2abd1ee44bf8ba5a338c18249f6853c38c4b2b036a1f909bab\",\"parent\":\"5b3a66ade1afcd71d7dfcf2448bad98d1ccbb2e50d071f3955170feb892fdb50\",\"created\":\"2016-02-22T15:35:45.025968842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get -y update  \\u0026\\u0026 apt-get -y upgrade  \\u0026\\u0026 apt-get install -y openssh-server  \\u0026\\u0026 sed -i 's|session    required     pam_loginuid.so|session    optional     pam_loginuid.so|g' /etc/pam.d/sshd  \\u0026\\u0026 mkdir -p /var/run/sshd  \\u0026\\u0026 apt-get install -y openjdk-7-jdk  \\u0026\\u0026 useradd -m jenkins  \\u0026\\u0026 echo \\\"root:$(\\u003c /dev/urandom tr -dc A-Za-z0-9 | head -c 32)\\\" | chpasswd  \\u0026\\u0026 echo \\\"jenkins:$(\\u003c /dev/urandom tr -dc A-Za-z0-9 | head -c 32)\\\" | chpasswd  \\u0026\\u0026 mkdir -p /home/jenkins/.ssh  \\u0026\\u0026 echo \\\"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/4M6G+wnzZFaxio8EVRhKXz/RMa1e0hh2eZeE5Da4S9pQnR7zcZNa90bpqHA9GOUfrYMoLOYXoQp5iKq/WzTzhQmVe6mxxuJMUWCQC1Ne2BMB3OkYjGeOeM4bRzFbM1SVxYAumoncdRB/77FN6D1EYgBWTr0ySRQOy3AbH5wMSb2ZKnhrd4W5JMqAxqyrSCoFUlXzD9gMeHzFhOoUItMh62U6CYPAErRDLPaFqjVOR9thzpfYl5xQ3xrS0ldmY8wL3u7mtMHG5wPt2xV4mfyHUqGlONpBKINPH4qKtJ3qsxdyaR0tvxCy8cbEEJLnfJFQcOg88E9X6M2NWVdNks/v jenkins@flip\\\" \\u003e\\u003e /home/jenkins/.ssh/authorized_keys\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5b3a66ade1afcd71d7dfcf2448bad98d1ccbb2e50d071f3955170feb892fdb50\",\"parent\":\"52a1a3bf2d63b7521e09cb5fdc1e154fe0a18398459943972cc049b5b34769b2\",\"created\":\"2016-02-22T15:33:48.976360117Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"52a1a3bf2d63b7521e09cb5fdc1e154fe0a18398459943972cc049b5b34769b2\",\"parent\":\"2a793c7a03c651d11342230f7e7b4d36bec486923867bbc64a680948c37fc15e\",\"created\":\"2016-02-22T15:33:48.914575261Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"]},\"author\":\"Michael Wittig \\u003cmichael.wittig@fu-berlin.de\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a793c7a03c651d11342230f7e7b4d36bec486923867bbc64a680948c37fc15e\",\"parent\":\"e55a3b74c8999d0e77727ff3268a9429134bb3f346a44eea534636517ad9fe44\",\"created\":\"2016-01-26T17:48:34.465253028Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e55a3b74c8999d0e77727ff3268a9429134bb3f346a44eea534636517ad9fe44\",\"parent\":\"55703677ccf7b18fe1ecb60dc596b34ab28cc5c5e82c2ad32b5372958a81b017\",\"created\":\"2016-01-26T17:48:33.59869621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55703677ccf7b18fe1ecb60dc596b34ab28cc5c5e82c2ad32b5372958a81b017\",\"parent\":\"5f7845f56a94cd048712f3da5af180bb1bdffb652e634429b98a825f378d9a79\",\"created\":\"2016-01-26T17:48:31.377192721Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5f7845f56a94cd048712f3da5af180bb1bdffb652e634429b98a825f378d9a79\",\"created\":\"2016-01-26T17:48:17.324409116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:3f4708cf445dc1b537b8e9f400cb02bef84660811ecdb7c98930f68fee876ec4 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:6e4201dfaae68d7a7c56667c3f6ffea1342ce9b62b3bfc97e09aa9c1b408ce66"
+            },
+            {
+                "blobSum": "sha256:93b2f0c3cc724d979d53babe7856d8046635d0eff713c393733a555f825224ef"
+            },
+            {
+                "blobSum": "sha256:1cb8b4e98fc867bff1724c995a0e6382e8d15221e620dc98632b9c35cdfafaf6"
+            },
+            {
+                "blobSum": "sha256:11cde8fcfb953db5592e7af619e49df1cdf580e6d847d836c05ef43aa13d5b02"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d0dff5b916393085208a7e6c55af794da425a783d27da8625d0fee9f1a7be6f4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2f937cc07b5fa0c9dc466c1421227981c80e48fdd944f8e9c215544bbd34bbc0"
+            },
+            {
+                "blobSum": "sha256:4332ffb06e4b2a63e6feb5db60fd03c073624e1df32a5dc128bede49f71b3a5e"
+            },
+            {
+                "blobSum": "sha256:9502adfba7f1250b1d7fc248ff95dc34e90cad1b554a3151819f8a33ada37dfb"
+            }
+        ],
+        "name": "bioroboticslab/ubuntu-15.10-biotracker",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEwOTc5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDU6NDFaIn0",
+                "signature": "bjBc90ZGAh97hn4AdVdHKcImG9FILyUa-LoCPOXUph1VSZAi1mCfLukbogXnHOaEnKxIGv347PQfzvjYSrBhxw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "r8hqG9BU83c1rtNf3kacyJ_w0brRAw6HseamB7nxpEY",
+                        "kid": "HSLJ:6TGA:ZANK:EYFX:G6KX:VOEA:UBR2:AGR2:5RVX:OTTO:4FBP:2ZM6",
+                        "x": "syXzZ-Bs5DgnuKbHN_9MdWWhXsOxkbVCkvCSMsnJpFs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

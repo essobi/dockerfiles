@@ -1,0 +1,342 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"dtenenba@fredhutch.org\",\"config\":{\"Hostname\":\"a9678380ab81\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.rbenv/bin:/root/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONFIGURE_OPTS=--disable-install-doc\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"rake \\u0026\\u0026 adsf -r output \\u0026\\u0026 sleep infinity\"],\"ArgsEscaped\":true,\"Image\":\"sha256:37cb346750e4f3a5b71cbb506ba7580f8d8c8e79de599ae99aa7c874e2eda4f9\",\"Volumes\":{\"/bioconductor.org\":{}},\"WorkingDir\":\"/bioconductor.org\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"d9720b88822c50239e86327d2b19b47b39e9148438565770fb2319c7432f4a4a\",\"container_config\":{\"Hostname\":\"a9678380ab81\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.rbenv/bin:/root/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONFIGURE_OPTS=--disable-install-doc\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"rake \\u0026\\u0026 adsf -r output \\u0026\\u0026 sleep infinity\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:37cb346750e4f3a5b71cbb506ba7580f8d8c8e79de599ae99aa7c874e2eda4f9\",\"Volumes\":{\"/bioconductor.org\":{}},\"WorkingDir\":\"/bioconductor.org\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-12T04:22:44.262872681Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"c7323436cf0c0f874a6c1719640bf0be9b4042f5e6efa2135f91c32dfc0c6d8e\",\"os\":\"linux\",\"parent\":\"80ac6bb27c6a5c908810fbae910d559cca5041e1f57b17a7e1f91c412e1522e1\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"80ac6bb27c6a5c908810fbae910d559cca5041e1f57b17a7e1f91c412e1522e1\",\"parent\":\"8463c5675d8fb6d1dc7420e853b6ee9394d38d92e2ae7776b5586cb40dd1c4bb\",\"created\":\"2017-05-12T04:22:39.173466033Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /bioconductor.org\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8463c5675d8fb6d1dc7420e853b6ee9394d38d92e2ae7776b5586cb40dd1c4bb\",\"parent\":\"ea6c0cd172a133b676111de1c5af7467a13bbc1dc819cdb9e0dc6d18be582bc6\",\"created\":\"2017-05-12T04:22:32.921777012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/bioconductor.org]\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea6c0cd172a133b676111de1c5af7467a13bbc1dc819cdb9e0dc6d18be582bc6\",\"parent\":\"1d76368588335f416c81c7a97e9d271979813626bfd23f2b073e253df32eb6b8\",\"created\":\"2017-05-12T04:22:27.88921889Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rbenv rehash\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1d76368588335f416c81c7a97e9d271979813626bfd23f2b073e253df32eb6b8\",\"parent\":\"af471da79c0f4a26cb06f8e5428e699609bb07e37b40f80123fd5b626a521b3d\",\"created\":\"2017-05-12T04:22:21.978654578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     curl -O https://raw.githubusercontent.com/Bioconductor/bioconductor.org/master/Gemfile \\u0026\\u0026     curl -O https://raw.githubusercontent.com/Bioconductor/bioconductor.org/master/Gemfile.lock \\u0026\\u0026     echo \\\"gem: --no-document\\\" \\u003e /etc/gemrc \\u0026\\u0026     gem install bundler \\u0026\\u0026     bundle config build.pg --with-pg-lib=/usr/lib/postgresql/ --with-pg-include=/usr/include/postgresql/ \\u0026\\u0026     bundle install\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"af471da79c0f4a26cb06f8e5428e699609bb07e37b40f80123fd5b626a521b3d\",\"parent\":\"a3c8b60405f5c1e99b369ecf75b3366643af3b1470b1c465fdae4b7f3914d6b3\",\"created\":\"2017-05-12T04:18:28.776951809Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install python-dateutil\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a3c8b60405f5c1e99b369ecf75b3366643af3b1470b1c465fdae4b7f3914d6b3\",\"parent\":\"0adf0281899d8b3ea0672bfd8661f2eec245bcb89ae9b8c0b2ec1f0dfe6ad164\",\"created\":\"2017-05-12T04:18:23.523120521Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl https://bootstrap.pypa.io/get-pip.py | python \\u0026\\u0026     pip install --upgrade google-api-python-client\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0adf0281899d8b3ea0672bfd8661f2eec245bcb89ae9b8c0b2ec1f0dfe6ad164\",\"parent\":\"32a7829c22e941e8b196e4d4d05062499386d56c799b147c984cf52239e4e94f\",\"created\":\"2017-05-12T04:18:06.645775339Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rbenv global 2.2.1\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"32a7829c22e941e8b196e4d4d05062499386d56c799b147c984cf52239e4e94f\",\"parent\":\"1b360b0ccfb6dca26328b44d766fec03f112c5294d1aafe5dd9789ca391d7576\",\"created\":\"2017-05-12T04:18:02.85098605Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rbenv install -v 2.2.1\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b360b0ccfb6dca26328b44d766fec03f112c5294d1aafe5dd9789ca391d7576\",\"parent\":\"42edfa396456efe05ec71c2583c6809edaba94d7cb149fccf8855c7f5179f7c4\",\"created\":\"2017-05-12T04:07:16.730374979Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONFIGURE_OPTS=--disable-install-doc\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"42edfa396456efe05ec71c2583c6809edaba94d7cb149fccf8855c7f5179f7c4\",\"parent\":\"88aa71ec56e32ccfac46ba253f70fc5b7043519a20d9f7ec2143432ea8b1fbe5\",\"created\":\"2017-05-12T04:07:11.472871496Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/root/.rbenv/bin:/root/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88aa71ec56e32ccfac46ba253f70fc5b7043519a20d9f7ec2143432ea8b1fbe5\",\"parent\":\"114215e801a0f9e36af6656f37724bfc822a0f5035d36a08c62f68d6923848b9\",\"created\":\"2017-05-12T04:07:06.698146667Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./root/.rbenv/plugins/ruby-build/install.sh\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"114215e801a0f9e36af6656f37724bfc822a0f5035d36a08c62f68d6923848b9\",\"parent\":\"bed03a7217fa0d32254735e0f65762567c4025dbabb32c222348ac2d73ea5748\",\"created\":\"2017-05-12T04:07:02.298040023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bed03a7217fa0d32254735e0f65762567c4025dbabb32c222348ac2d73ea5748\",\"parent\":\"78c823e47532d2e473fd7561766c72f41123aa6271639fc25500988f1a84ef59\",\"created\":\"2017-05-12T04:06:56.247000025Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'eval \\\"$(rbenv init -)\\\"' \\u003e\\u003e ~/.bash_profile\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78c823e47532d2e473fd7561766c72f41123aa6271639fc25500988f1a84ef59\",\"parent\":\"48cff01cc517026ca855dafce3a65a9881b637b8f77cfcb2562f7c125e164126\",\"created\":\"2017-05-12T04:06:51.327881767Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/sstephenson/rbenv.git ~/.rbenv\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"48cff01cc517026ca855dafce3a65a9881b637b8f77cfcb2562f7c125e164126\",\"parent\":\"2a08415bc35879dbc27dde327362fc2dcf03cfc685b13ad713c72a04e4da4366\",\"created\":\"2017-05-12T04:06:44.195626925Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c DEBIAN_FRONTEND=noninteractive     apt-get update \\u0026\\u0026 apt-get dist-upgrade -y \\u0026\\u0026 apt-get install -y     curl g++ git libsqlite3-dev make patch python rsync subversion build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev libffi-dev postgresql-server-dev-all\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a08415bc35879dbc27dde327362fc2dcf03cfc685b13ad713c72a04e4da4366\",\"parent\":\"78b19a8b79bd8c7e497524892607d54cbed984e29eb97c66a4760f8f60b85179\",\"created\":\"2017-05-12T04:03:21.266633282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 3000/tcp\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78b19a8b79bd8c7e497524892607d54cbed984e29eb97c66a4760f8f60b85179\",\"parent\":\"87a44e3dcab54483834d4b77b33128bed9176ad7240cdadf58c3f89514769fa5\",\"created\":\"2017-05-12T04:03:17.258931595Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER dtenenba@fredhutch.org\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87a44e3dcab54483834d4b77b33128bed9176ad7240cdadf58c3f89514769fa5\",\"parent\":\"ed8771857b7ae0e272a481eb52fac1f363eda60726d8c701bfffe5f6359a70d5\",\"created\":\"2017-04-12T21:06:08.65724242Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed8771857b7ae0e272a481eb52fac1f363eda60726d8c701bfffe5f6359a70d5\",\"parent\":\"52d7c883db28e96c93404015ecd2768ced13fe7cc116a910f0bda8061dfa26d7\",\"created\":\"2017-04-12T21:06:07.020436318Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"52d7c883db28e96c93404015ecd2768ced13fe7cc116a910f0bda8061dfa26d7\",\"parent\":\"72c43701c801d1cec5bb43e367cea14b4344614725e8320899497715325bf31c\",\"created\":\"2017-04-12T21:06:03.933059794Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72c43701c801d1cec5bb43e367cea14b4344614725e8320899497715325bf31c\",\"parent\":\"56fe5e036cc865f186dfdf7eabd69f5265788c5675a2cf5a114ecc77c89c1c7c\",\"created\":\"2017-04-12T21:06:02.757392208Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"56fe5e036cc865f186dfdf7eabd69f5265788c5675a2cf5a114ecc77c89c1c7c\",\"parent\":\"0b3a96d359b8c7a78005f2169f84dd4f23df7a2702655dca72b1ee751b0b8638\",\"created\":\"2017-04-12T21:06:00.604734116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0b3a96d359b8c7a78005f2169f84dd4f23df7a2702655dca72b1ee751b0b8638\",\"created\":\"2017-04-12T21:05:58.294493035Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:cd830d3aacc66aa750a588e56d835663908f7fbb855cb96d00aa01feb9567948 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0a07cf661ffc32632b1fd79e25fc05b0aed02b7ca53c41637013f3d897844236"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:28ad51b1065c9b9796003f4cc681842b2722cbb00eff70a84ed9231d41e82ccc"
+            },
+            {
+                "blobSum": "sha256:8954e92f255f95e24c271ef71483a1716f8f61d8fbebbeefe2221084655c1922"
+            },
+            {
+                "blobSum": "sha256:6cfb35da812dc751c160b9202c06d1f06f4cd40999cf70c5f11fc8651e0737b1"
+            },
+            {
+                "blobSum": "sha256:fd9e70462b5edbc070ee045f7101767e49bf85486bb66803a9540d9f871b6929"
+            },
+            {
+                "blobSum": "sha256:bbc4c5242211591a6b0d38c668fe7f0d81b3922d37b204065e8c20568b7151d1"
+            },
+            {
+                "blobSum": "sha256:7bc211c1c852f536d32cd1a5a80f5342aa37701b8ad16bf07262ffa2c05b04ca"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1a441f0d4f8abb702abdec364563caacbe87fc53d229a2945310cd5d6a354c76"
+            },
+            {
+                "blobSum": "sha256:c2cc7268c36f055ffef30cd30b05b9cebf847cf873b7a21909af46c221810b46"
+            },
+            {
+                "blobSum": "sha256:8973ee27e2806a9350df14a56d1f4528621fd34f465591a61455f5bf6b355940"
+            },
+            {
+                "blobSum": "sha256:532f3245f8fd27777c04eb76639b7d38962dcd7cc81a5dcc300d98e3b128fc8e"
+            },
+            {
+                "blobSum": "sha256:a893cd75bf44348f99c29491b9e1a066bcc74f9a9c0a67a5691eb9ede06118eb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d5165bfce78f4e197b6aedf3bcae095bd466ed7f7de688cd0710fa6875a699ab"
+            },
+            {
+                "blobSum": "sha256:8744e322b832a60fc910434a6cb371a45e176fc08c93604878357302b709945c"
+            },
+            {
+                "blobSum": "sha256:f75a345868568d65d520f0ca596863dc6906460eb1ce68209fc9f85bb1ccf04d"
+            },
+            {
+                "blobSum": "sha256:8e1fb71e8df6645b62584c22e511df7717c8fcc1c111b5dea1df60eda9b22c42"
+            },
+            {
+                "blobSum": "sha256:8f229c550c2e1d5736aa23d1b3b5e10a70f9db72e4246867fd73271c11284b45"
+            }
+        ],
+        "name": "dtenenba/bioconductor.org",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE1NjY2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDQ6NTJaIn0",
+                "signature": "u5gVM8FkWH5OVhoxyS052h0EviIOZyLn1yYOZkOZY2WrcsLXKxvOlGJ7029_HiK61aA-kLnKgkK_U57BZnlKHA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "8zjaS9BQJ5-ZaD755cf0bEssE5cwyy_TuwWZg4N6fnc",
+                        "kid": "DOW7:OSAH:IQUL:7SZX:AMES:CS5P:KX2T:HP2S:Z43B:FZFN:F5DT:NOLS",
+                        "x": "_z7h1mvfXYNGvslNoUyBWbkPlZKC15F2IorKFUzUBSk"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"dtenenba@fredhutch.org\",\"config\":{\"Hostname\":\"a9678380ab81\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.rbenv/bin:/root/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONFIGURE_OPTS=--disable-install-doc\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"rake \\u0026\\u0026 adsf -r output \\u0026\\u0026 sleep infinity\"],\"ArgsEscaped\":true,\"Image\":\"sha256:37cb346750e4f3a5b71cbb506ba7580f8d8c8e79de599ae99aa7c874e2eda4f9\",\"Volumes\":{\"/bioconductor.org\":{}},\"WorkingDir\":\"/bioconductor.org\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"d9720b88822c50239e86327d2b19b47b39e9148438565770fb2319c7432f4a4a\",\"container_config\":{\"Hostname\":\"a9678380ab81\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"3000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/root/.rbenv/bin:/root/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONFIGURE_OPTS=--disable-install-doc\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"rake \\u0026\\u0026 adsf -r output \\u0026\\u0026 sleep infinity\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:37cb346750e4f3a5b71cbb506ba7580f8d8c8e79de599ae99aa7c874e2eda4f9\",\"Volumes\":{\"/bioconductor.org\":{}},\"WorkingDir\":\"/bioconductor.org\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-12T04:22:44.262872681Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"c7323436cf0c0f874a6c1719640bf0be9b4042f5e6efa2135f91c32dfc0c6d8e\",\"os\":\"linux\",\"parent\":\"80ac6bb27c6a5c908810fbae910d559cca5041e1f57b17a7e1f91c412e1522e1\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"80ac6bb27c6a5c908810fbae910d559cca5041e1f57b17a7e1f91c412e1522e1\",\"parent\":\"8463c5675d8fb6d1dc7420e853b6ee9394d38d92e2ae7776b5586cb40dd1c4bb\",\"created\":\"2017-05-12T04:22:39.173466033Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /bioconductor.org\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8463c5675d8fb6d1dc7420e853b6ee9394d38d92e2ae7776b5586cb40dd1c4bb\",\"parent\":\"ea6c0cd172a133b676111de1c5af7467a13bbc1dc819cdb9e0dc6d18be582bc6\",\"created\":\"2017-05-12T04:22:32.921777012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/bioconductor.org]\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea6c0cd172a133b676111de1c5af7467a13bbc1dc819cdb9e0dc6d18be582bc6\",\"parent\":\"1d76368588335f416c81c7a97e9d271979813626bfd23f2b073e253df32eb6b8\",\"created\":\"2017-05-12T04:22:27.88921889Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rbenv rehash\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1d76368588335f416c81c7a97e9d271979813626bfd23f2b073e253df32eb6b8\",\"parent\":\"af471da79c0f4a26cb06f8e5428e699609bb07e37b40f80123fd5b626a521b3d\",\"created\":\"2017-05-12T04:22:21.978654578Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     curl -O https://raw.githubusercontent.com/Bioconductor/bioconductor.org/master/Gemfile \\u0026\\u0026     curl -O https://raw.githubusercontent.com/Bioconductor/bioconductor.org/master/Gemfile.lock \\u0026\\u0026     echo \\\"gem: --no-document\\\" \\u003e /etc/gemrc \\u0026\\u0026     gem install bundler \\u0026\\u0026     bundle config build.pg --with-pg-lib=/usr/lib/postgresql/ --with-pg-include=/usr/include/postgresql/ \\u0026\\u0026     bundle install\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"af471da79c0f4a26cb06f8e5428e699609bb07e37b40f80123fd5b626a521b3d\",\"parent\":\"a3c8b60405f5c1e99b369ecf75b3366643af3b1470b1c465fdae4b7f3914d6b3\",\"created\":\"2017-05-12T04:18:28.776951809Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install python-dateutil\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a3c8b60405f5c1e99b369ecf75b3366643af3b1470b1c465fdae4b7f3914d6b3\",\"parent\":\"0adf0281899d8b3ea0672bfd8661f2eec245bcb89ae9b8c0b2ec1f0dfe6ad164\",\"created\":\"2017-05-12T04:18:23.523120521Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl https://bootstrap.pypa.io/get-pip.py | python \\u0026\\u0026     pip install --upgrade google-api-python-client\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0adf0281899d8b3ea0672bfd8661f2eec245bcb89ae9b8c0b2ec1f0dfe6ad164\",\"parent\":\"32a7829c22e941e8b196e4d4d05062499386d56c799b147c984cf52239e4e94f\",\"created\":\"2017-05-12T04:18:06.645775339Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rbenv global 2.2.1\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"32a7829c22e941e8b196e4d4d05062499386d56c799b147c984cf52239e4e94f\",\"parent\":\"1b360b0ccfb6dca26328b44d766fec03f112c5294d1aafe5dd9789ca391d7576\",\"created\":\"2017-05-12T04:18:02.85098605Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rbenv install -v 2.2.1\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b360b0ccfb6dca26328b44d766fec03f112c5294d1aafe5dd9789ca391d7576\",\"parent\":\"42edfa396456efe05ec71c2583c6809edaba94d7cb149fccf8855c7f5179f7c4\",\"created\":\"2017-05-12T04:07:16.730374979Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONFIGURE_OPTS=--disable-install-doc\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"42edfa396456efe05ec71c2583c6809edaba94d7cb149fccf8855c7f5179f7c4\",\"parent\":\"88aa71ec56e32ccfac46ba253f70fc5b7043519a20d9f7ec2143432ea8b1fbe5\",\"created\":\"2017-05-12T04:07:11.472871496Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/root/.rbenv/bin:/root/.rbenv/shims:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"88aa71ec56e32ccfac46ba253f70fc5b7043519a20d9f7ec2143432ea8b1fbe5\",\"parent\":\"114215e801a0f9e36af6656f37724bfc822a0f5035d36a08c62f68d6923848b9\",\"created\":\"2017-05-12T04:07:06.698146667Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./root/.rbenv/plugins/ruby-build/install.sh\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"114215e801a0f9e36af6656f37724bfc822a0f5035d36a08c62f68d6923848b9\",\"parent\":\"bed03a7217fa0d32254735e0f65762567c4025dbabb32c222348ac2d73ea5748\",\"created\":\"2017-05-12T04:07:02.298040023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bed03a7217fa0d32254735e0f65762567c4025dbabb32c222348ac2d73ea5748\",\"parent\":\"78c823e47532d2e473fd7561766c72f41123aa6271639fc25500988f1a84ef59\",\"created\":\"2017-05-12T04:06:56.247000025Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'eval \\\"$(rbenv init -)\\\"' \\u003e\\u003e ~/.bash_profile\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78c823e47532d2e473fd7561766c72f41123aa6271639fc25500988f1a84ef59\",\"parent\":\"48cff01cc517026ca855dafce3a65a9881b637b8f77cfcb2562f7c125e164126\",\"created\":\"2017-05-12T04:06:51.327881767Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/sstephenson/rbenv.git ~/.rbenv\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"48cff01cc517026ca855dafce3a65a9881b637b8f77cfcb2562f7c125e164126\",\"parent\":\"2a08415bc35879dbc27dde327362fc2dcf03cfc685b13ad713c72a04e4da4366\",\"created\":\"2017-05-12T04:06:44.195626925Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c DEBIAN_FRONTEND=noninteractive     apt-get update \\u0026\\u0026 apt-get dist-upgrade -y \\u0026\\u0026 apt-get install -y     curl g++ git libsqlite3-dev make patch python rsync subversion build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev libffi-dev postgresql-server-dev-all\"]},\"author\":\"dtenenba@fredhutch.org\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a08415bc35879dbc27dde327362fc2dcf03cfc685b13ad713c72a04e4da4366\",\"parent\":\"78b19a8b79bd8c7e497524892607d54cbed984e29eb97c66a4760f8f60b85179\",\"created\":\"2017-05-12T04:03:21.266633282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 3000/tcp\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78b19a8b79bd8c7e497524892607d54cbed984e29eb97c66a4760f8f60b85179\",\"parent\":\"87a44e3dcab54483834d4b77b33128bed9176ad7240cdadf58c3f89514769fa5\",\"created\":\"2017-05-12T04:03:17.258931595Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER dtenenba@fredhutch.org\"]},\"author\":\"dtenenba@fredhutch.org\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87a44e3dcab54483834d4b77b33128bed9176ad7240cdadf58c3f89514769fa5\",\"parent\":\"ed8771857b7ae0e272a481eb52fac1f363eda60726d8c701bfffe5f6359a70d5\",\"created\":\"2017-04-12T21:06:08.65724242Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed8771857b7ae0e272a481eb52fac1f363eda60726d8c701bfffe5f6359a70d5\",\"parent\":\"52d7c883db28e96c93404015ecd2768ced13fe7cc116a910f0bda8061dfa26d7\",\"created\":\"2017-04-12T21:06:07.020436318Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"52d7c883db28e96c93404015ecd2768ced13fe7cc116a910f0bda8061dfa26d7\",\"parent\":\"72c43701c801d1cec5bb43e367cea14b4344614725e8320899497715325bf31c\",\"created\":\"2017-04-12T21:06:03.933059794Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72c43701c801d1cec5bb43e367cea14b4344614725e8320899497715325bf31c\",\"parent\":\"56fe5e036cc865f186dfdf7eabd69f5265788c5675a2cf5a114ecc77c89c1c7c\",\"created\":\"2017-04-12T21:06:02.757392208Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"56fe5e036cc865f186dfdf7eabd69f5265788c5675a2cf5a114ecc77c89c1c7c\",\"parent\":\"0b3a96d359b8c7a78005f2169f84dd4f23df7a2702655dca72b1ee751b0b8638\",\"created\":\"2017-04-12T21:06:00.604734116Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0b3a96d359b8c7a78005f2169f84dd4f23df7a2702655dca72b1ee751b0b8638\",\"created\":\"2017-04-12T21:05:58.294493035Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:cd830d3aacc66aa750a588e56d835663908f7fbb855cb96d00aa01feb9567948 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0a07cf661ffc32632b1fd79e25fc05b0aed02b7ca53c41637013f3d897844236"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:28ad51b1065c9b9796003f4cc681842b2722cbb00eff70a84ed9231d41e82ccc"
+            },
+            {
+                "blobSum": "sha256:8954e92f255f95e24c271ef71483a1716f8f61d8fbebbeefe2221084655c1922"
+            },
+            {
+                "blobSum": "sha256:6cfb35da812dc751c160b9202c06d1f06f4cd40999cf70c5f11fc8651e0737b1"
+            },
+            {
+                "blobSum": "sha256:fd9e70462b5edbc070ee045f7101767e49bf85486bb66803a9540d9f871b6929"
+            },
+            {
+                "blobSum": "sha256:bbc4c5242211591a6b0d38c668fe7f0d81b3922d37b204065e8c20568b7151d1"
+            },
+            {
+                "blobSum": "sha256:7bc211c1c852f536d32cd1a5a80f5342aa37701b8ad16bf07262ffa2c05b04ca"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1a441f0d4f8abb702abdec364563caacbe87fc53d229a2945310cd5d6a354c76"
+            },
+            {
+                "blobSum": "sha256:c2cc7268c36f055ffef30cd30b05b9cebf847cf873b7a21909af46c221810b46"
+            },
+            {
+                "blobSum": "sha256:8973ee27e2806a9350df14a56d1f4528621fd34f465591a61455f5bf6b355940"
+            },
+            {
+                "blobSum": "sha256:532f3245f8fd27777c04eb76639b7d38962dcd7cc81a5dcc300d98e3b128fc8e"
+            },
+            {
+                "blobSum": "sha256:a893cd75bf44348f99c29491b9e1a066bcc74f9a9c0a67a5691eb9ede06118eb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d5165bfce78f4e197b6aedf3bcae095bd466ed7f7de688cd0710fa6875a699ab"
+            },
+            {
+                "blobSum": "sha256:8744e322b832a60fc910434a6cb371a45e176fc08c93604878357302b709945c"
+            },
+            {
+                "blobSum": "sha256:f75a345868568d65d520f0ca596863dc6906460eb1ce68209fc9f85bb1ccf04d"
+            },
+            {
+                "blobSum": "sha256:8e1fb71e8df6645b62584c22e511df7717c8fcc1c111b5dea1df60eda9b22c42"
+            },
+            {
+                "blobSum": "sha256:8f229c550c2e1d5736aa23d1b3b5e10a70f9db72e4246867fd73271c11284b45"
+            }
+        ],
+        "name": "dtenenba/bioconductor.org",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE1NjY2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDQ6NTNaIn0",
+                "signature": "7zk_QNJsuOf-LFzRk4oA38dbcwmu51b9KvC41igViMZeZRBmdQGpKykijXFoenKC9gMcABXM1gMjbJxMr3gYGw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "naPQv9XEAvtdUs71nIMB9nUhA4JEk6CLGn9mhpuNj30",
+                        "kid": "M64Q:NC3Z:IUT3:CTC3:WUFI:RIZV:4WLX:LSZT:ECT7:JETI:HOXX:MVAS",
+                        "x": "VZ-aVJjfVug7_HNbPx3MOgdK-LLJDq0zAInXMRMPc_o"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,474 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"config\":{\"Hostname\":\"ce05d567f527\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/fsl/5.0:/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ANTSPATH=/opt/ants\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"PYTHONPATH=/usr/local/lib/python2.7/site-packages\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7a1141b28274ec97921d586ce8ffd6b81c1117422a109b2450e223708d050aa4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"c113aea1cdcd9d7be33363013bf8e01ce549b09abf18df03e7f50f598f6ce330\",\"container_config\":{\"Hostname\":\"ce05d567f527\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/fsl/5.0:/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ANTSPATH=/opt/ants\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"PYTHONPATH=/usr/local/lib/python2.7/site-packages\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/bash\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7a1141b28274ec97921d586ce8ffd6b81c1117422a109b2450e223708d050aa4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-04T04:02:32.39550406Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"76fec69a4780d3a69c07278815da98159d156c898aa42f3d3c5ecb6aee5c98f2\",\"os\":\"linux\",\"parent\":\"b3ceb33dc5c8b2ae2a4cc584b6e33e05b5d44b197228fa2ae20a8d8cdb37f2e3\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3ceb33dc5c8b2ae2a4cc584b6e33e05b5d44b197228fa2ae20a8d8cdb37f2e3\",\"parent\":\"efb0c5f349e670516c12e8524013e49fcacecf9a79e35ae8196228e63ef528de\",\"created\":\"2017-04-04T04:02:05.99905701Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"efb0c5f349e670516c12e8524013e49fcacecf9a79e35ae8196228e63ef528de\",\"parent\":\"deef3200980239ae9ca636cbf614599bfda4f0b8fbcda33e3e47fc883081a675\",\"created\":\"2017-04-04T04:01:39.567141323Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"deef3200980239ae9ca636cbf614599bfda4f0b8fbcda33e3e47fc883081a675\",\"parent\":\"4afda46aeb103ae0037e3abdb3bc6022393ea31073b32f39edd5b3725a624b77\",\"created\":\"2017-04-04T04:01:16.022501282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install git+https://github.com/cosanlab/cosanlab_preproc\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4afda46aeb103ae0037e3abdb3bc6022393ea31073b32f39edd5b3725a624b77\",\"parent\":\"1352faee895324d9bd1c4ec9fd4c143f71510de9d64590629a54f3bea8868ae4\",\"created\":\"2017-04-04T04:00:20.594770763Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install git+https://github.com/ljchang/nltools\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1352faee895324d9bd1c4ec9fd4c143f71510de9d64590629a54f3bea8868ae4\",\"parent\":\"16c7c074c606b358ed9f7a6ba764d5eec9cada335c17a40226259df72c75940a\",\"created\":\"2017-04-04T03:59:36.137561329Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install git+https://github.com/nipy/nipype\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"16c7c074c606b358ed9f7a6ba764d5eec9cada335c17a40226259df72c75940a\",\"parent\":\"0bba27b7ccc4f0bb95f6c1d68befd9204bc45a3b76726ad08f68d42c811a09ff\",\"created\":\"2017-04-04T03:58:08.698695671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install seaborn nibabel nilearn\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0bba27b7ccc4f0bb95f6c1d68befd9204bc45a3b76726ad08f68d42c811a09ff\",\"parent\":\"3376007f4ceba1339923ba1cef692fb248a560f1aee03306ed4a714d12dc8d81\",\"created\":\"2017-04-04T03:57:23.808763533Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHONPATH=/usr/local/lib/python2.7/site-packages\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3376007f4ceba1339923ba1cef692fb248a560f1aee03306ed4a714d12dc8d81\",\"parent\":\"4e446e4d56e25284fc9356d07771a78fc9b45aaa5d11295322824255d00617df\",\"created\":\"2017-04-04T03:56:59.024521304Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLOUTPUTTYPE=NIFTI_GZ\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e446e4d56e25284fc9356d07771a78fc9b45aaa5d11295322824255d00617df\",\"parent\":\"c9105f56cd70965b32aeff1b4917b517860c1c938dec8b3c5e29997d32235db4\",\"created\":\"2017-04-04T03:56:34.791486472Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLWISH=/usr/bin/wish\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c9105f56cd70965b32aeff1b4917b517860c1c938dec8b3c5e29997d32235db4\",\"parent\":\"1ecb0ebfd488391f145827a9b72ed5dd3bab5e77e8bf66284da9b855106e2c7e\",\"created\":\"2017-04-04T03:56:10.26567749Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLTCLSH=/usr/bin/tclsh\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1ecb0ebfd488391f145827a9b72ed5dd3bab5e77e8bf66284da9b855106e2c7e\",\"parent\":\"9d8bad79068df918a8e0440e973f0c8e98de3b15667401e1d92bef844bfce008\",\"created\":\"2017-04-04T03:55:45.715151835Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9d8bad79068df918a8e0440e973f0c8e98de3b15667401e1d92bef844bfce008\",\"parent\":\"b55de59e2eb03af51d17eb3b618e6c95b7563a498c3554492cdd3c4e10822bc3\",\"created\":\"2017-04-04T03:55:21.261731694Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV POSSUMDIR=/usr/share/fsl/5.0\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b55de59e2eb03af51d17eb3b618e6c95b7563a498c3554492cdd3c4e10822bc3\",\"parent\":\"1b4f2c640e54291b0b69b1ac723272b20dd19037f4a19aa2a0e2d14cbee89648\",\"created\":\"2017-04-04T03:54:56.708312641Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLMULTIFILEQUIT=TRUE\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b4f2c640e54291b0b69b1ac723272b20dd19037f4a19aa2a0e2d14cbee89648\",\"parent\":\"4b1da8bdfe456ae0b31fe406c07adb83eb880c47a6fcda8a1065588c7d8dbf12\",\"created\":\"2017-04-04T03:54:31.874539445Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/lib/fsl/5.0:/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4b1da8bdfe456ae0b31fe406c07adb83eb880c47a6fcda8a1065588c7d8dbf12\",\"parent\":\"58b8197d5ad6043fe98a986d082ff997fb4ac6d3682b22d0a575ef93aa8c82ae\",\"created\":\"2017-04-04T03:54:07.103335502Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLOUTPUTTYPE=NIFTI_GZ\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58b8197d5ad6043fe98a986d082ff997fb4ac6d3682b22d0a575ef93aa8c82ae\",\"parent\":\"b12660986e54dc1c3ecb91dd38347edfa0d5fe3e2379ffd0f4969f671663c7fe\",\"created\":\"2017-04-04T03:53:42.116219604Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLDIR=/usr/share/fsl/5.0\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b12660986e54dc1c3ecb91dd38347edfa0d5fe3e2379ffd0f4969f671663c7fe\",\"parent\":\"585566c8b893c6541eb8c860cb4e016d0952f52aa6c3837eb799ae0b70287857\",\"created\":\"2017-04-04T03:53:21.323732413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sSL http://neuro.debian.net/lists/trusty.us-nh.full \\u003e\\u003e /etc/apt/sources.list.d/neurodebian.sources.list \\u0026\\u0026     apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 0xA5D32F012649A5A9 \\u0026\\u0026     apt-get update \\u0026\\u0026     apt-get install -y fsl-core \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"585566c8b893c6541eb8c860cb4e016d0952f52aa6c3837eb799ae0b70287857\",\"parent\":\"df5ee6194af52f17790fced29d96eee40ff5b431995cfb4987d7999c5730a3f2\",\"created\":\"2017-04-04T03:51:31.348452335Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python-dev \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df5ee6194af52f17790fced29d96eee40ff5b431995cfb4987d7999c5730a3f2\",\"parent\":\"f8976b5388b5e7a39c06fd142a11c5ddab3552108942f8dbdbdcdccc00c8830a\",\"created\":\"2017-04-04T03:50:35.132824103Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f8976b5388b5e7a39c06fd142a11c5ddab3552108942f8dbdbdcdccc00c8830a\",\"parent\":\"f288f005c6c0a0137f351f53e3069875c52ecebdbfff7d4cc050dde87396be39\",\"created\":\"2017-04-04T03:50:07.889321881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh -O ~/anaconda.sh \\u0026\\u0026     /bin/bash ~/anaconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/anaconda.sh\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f288f005c6c0a0137f351f53e3069875c52ecebdbfff7d4cc050dde87396be39\",\"parent\":\"5e4e21be9c12654d8e06f71e553f63ef69e4f2691b95d174948667fdfdb083f4\",\"created\":\"2017-04-04T03:44:37.730424289Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion curl grep sed dpkg graphviz\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e4e21be9c12654d8e06f71e553f63ef69e4f2691b95d174948667fdfdb083f4\",\"parent\":\"ca5c449ea55626e7ed68cf8ce7c407cb832f2d7c5ca4a7c56bc3b7b97bd1e028\",\"created\":\"2017-04-04T03:43:28.811579257Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C.UTF-8\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ca5c449ea55626e7ed68cf8ce7c407cb832f2d7c5ca4a7c56bc3b7b97bd1e028\",\"parent\":\"6a8a09be813f53263b0c4d3e28b6455192267620b51475420e48e2a04eebfb40\",\"created\":\"2017-04-04T03:43:23.799653395Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a8a09be813f53263b0c4d3e28b6455192267620b51475420e48e2a04eebfb40\",\"parent\":\"a040c52109bf6926af40f68d2849d0e4f3d8fa1465b74deb2f6faa7741f0b651\",\"created\":\"2016-10-07T17:44:16.071296299Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a040c52109bf6926af40f68d2849d0e4f3d8fa1465b74deb2f6faa7741f0b651\",\"parent\":\"951c446b117304e06cc08db03a0a4a2a7d5a508ebd3cc3c1bdbaa507344689a6\",\"created\":\"2016-10-07T17:44:08.323558065Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ANTSPATH=/opt/ants\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"951c446b117304e06cc08db03a0a4a2a7d5a508ebd3cc3c1bdbaa507344689a6\",\"parent\":\"fe8e1dd2054d1864bde276d858e4f5eb33f3b1cea0032c8277a88c3b1fa554e0\",\"created\":\"2016-10-07T17:44:03.98123693Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y curl \\u0026\\u0026 \\t\\tmkdir -p /opt/ants \\u0026\\u0026     curl -sSL \\\"https://github.com/stnava/ANTs/releases/download/v2.1.0/Linux_Ubuntu14.04.tar.bz2\\\"     | tar -xjC /opt/ants --strip-components 1 \\u0026\\u0026 \\t\\tapt-get remove -y curl \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fe8e1dd2054d1864bde276d858e4f5eb33f3b1cea0032c8277a88c3b1fa554e0\",\"parent\":\"896ae086d7cb99eea6b5cf0997cdc36ab7a680212f6127b526755b44549545b5\",\"created\":\"2016-10-07T17:32:05.439511623Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c npm install -g bids-validator@0.18.17\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"896ae086d7cb99eea6b5cf0997cdc36ab7a680212f6127b526755b44549545b5\",\"parent\":\"d61c7e9067e9b990f7e29f85e15ef21e01540251ec2789df3d8ece25b13189c8\",\"created\":\"2016-10-07T17:31:33.970695568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y curl \\u0026\\u0026     curl -sL https://deb.nodesource.com/setup_4.x | bash - \\u0026\\u0026     apt-get remove -y curl \\u0026\\u0026     apt-get install -y nodejs \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d61c7e9067e9b990f7e29f85e15ef21e01540251ec2789df3d8ece25b13189c8\",\"parent\":\"348ae5f2350a21181bc642fb1a2d466f6632e33e6e4f920513189f782fe1797b\",\"created\":\"2016-09-26T21:26:09.229860896Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"348ae5f2350a21181bc642fb1a2d466f6632e33e6e4f920513189f782fe1797b\",\"parent\":\"39a955bdc1e13b3a027e373943b7c021a1014a03993122d4b0e8b9d5448a1f9f\",\"created\":\"2016-09-26T21:26:08.906290635Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39a955bdc1e13b3a027e373943b7c021a1014a03993122d4b0e8b9d5448a1f9f\",\"parent\":\"f6662ef795aca898ec640c7ebb7cb541df0b01f68e94d0f039138f413612dd7c\",\"created\":\"2016-09-26T21:26:08.078213009Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f6662ef795aca898ec640c7ebb7cb541df0b01f68e94d0f039138f413612dd7c\",\"parent\":\"0812a82a4eba3e5d9d51797083675dc37e7581840ad0c5aec9a6bcb0fc05d138\",\"created\":\"2016-09-26T21:26:07.126652848Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0812a82a4eba3e5d9d51797083675dc37e7581840ad0c5aec9a6bcb0fc05d138\",\"parent\":\"bb04ed60c038f07a7f5f9cc1556e76f0bf04a4743d51d24acc59229e344dc242\",\"created\":\"2016-09-26T21:26:06.131407313Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bb04ed60c038f07a7f5f9cc1556e76f0bf04a4743d51d24acc59229e344dc242\",\"created\":\"2016-09-26T21:26:04.831629834Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:561625b38aa88058c3af9d99be9d8b8d07f24e9d1737869e422540deeebb4443 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:42b57c6a6bd0bad104714324ac3402e2072968a496cbe8c624954440221c30cf"
+            },
+            {
+                "blobSum": "sha256:4a34e224f5fc7f729372f7288e0c9cf3ef0516c42aed32c963b6e6c2fc91577e"
+            },
+            {
+                "blobSum": "sha256:b59cef5196332cc03eaf4ef13ec46051da0cb05cbdd6ad96dfb85a779d4b4cf4"
+            },
+            {
+                "blobSum": "sha256:37fedb546aba538004f05374a6b5c444f4f8cc6bf09604678bece72d729bdbef"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a65bd19a5ccf789fdc10aacb37c72589dd6bd14018a215e18a2e2a59add113d6"
+            },
+            {
+                "blobSum": "sha256:a8e4022e651a3f734aa259778072e89ead968bc335c626c2fe7c7c5dc80c4637"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:67dd835c1a7c1fc2849787e03c0d46b02660d9df9b75d87435b09e315403bb96"
+            },
+            {
+                "blobSum": "sha256:156fdc0d637b70916ec0ec739b90396ed306b22867ea3ec608bfdcf8c3397d97"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fb43e16072c49377714f3e642cbb43baeb8a8482be4329f174d951e8167e153c"
+            },
+            {
+                "blobSum": "sha256:b7629dcaa0b7d2de7717c9084b0bbc965e2704e8bebdf2486b81c5335cf40814"
+            },
+            {
+                "blobSum": "sha256:bbe66581707abba8fad415fd0a3af70ac17c189c99df0f4d087c56fc32c04311"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:09b3dd842bf5577e855c84e1273582a799616748c6b13ac9ecb2a49ee2477cbc"
+            },
+            {
+                "blobSum": "sha256:b48b86b78e975768669fb7f9e20166f994ab4949a878b642927c28f3f169390d"
+            },
+            {
+                "blobSum": "sha256:bac77aae22d4292624c1db7efe5c2face4a104d8967c9f63e22230aebfeceda8"
+            },
+            {
+                "blobSum": "sha256:d394d3da86fe44806b96c68b5c51bd6e38d287b2dde4ef89c011243ffc6542b9"
+            },
+            {
+                "blobSum": "sha256:04c996abc2442fb0534f018543f0352647de3a65a3b321628b8cd1ceecedc3f6"
+            }
+        ],
+        "name": "ejolly/cosantoolsdocker",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIzMzQ1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDM6MDVaIn0",
+                "signature": "_L-NbK0TVqGV_fjLfvd8ySFYWI3K6kwkrW85g_4_1n3C9xDWvzjJ2b9h96TVJCUG3Ag6E8glwX-wIed_RDm11A",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "u5XJDdoG1gBUPENWq8sfptGn0lvJGzLPJsfWV7Tbgv0",
+                        "kid": "7II3:EC34:4TM2:LJFY:BNRG:CU4X:FFV4:XIWJ:MCK6:4EHU:OY42:U6CQ",
+                        "x": "r3XkuZi7m_SdxXiUu2wR46N7XeGO1Z85No5uV9zSWCw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"config\":{\"Hostname\":\"ce05d567f527\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/fsl/5.0:/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ANTSPATH=/opt/ants\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"PYTHONPATH=/usr/local/lib/python2.7/site-packages\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7a1141b28274ec97921d586ce8ffd6b81c1117422a109b2450e223708d050aa4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"c113aea1cdcd9d7be33363013bf8e01ce549b09abf18df03e7f50f598f6ce330\",\"container_config\":{\"Hostname\":\"ce05d567f527\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/lib/fsl/5.0:/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"ANTSPATH=/opt/ants\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"FSLDIR=/usr/share/fsl/5.0\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"FSLMULTIFILEQUIT=TRUE\",\"POSSUMDIR=/usr/share/fsl/5.0\",\"LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\",\"FSLTCLSH=/usr/bin/tclsh\",\"FSLWISH=/usr/bin/wish\",\"PYTHONPATH=/usr/local/lib/python2.7/site-packages\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/bash\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7a1141b28274ec97921d586ce8ffd6b81c1117422a109b2450e223708d050aa4\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-04T04:02:32.39550406Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"76fec69a4780d3a69c07278815da98159d156c898aa42f3d3c5ecb6aee5c98f2\",\"os\":\"linux\",\"parent\":\"b3ceb33dc5c8b2ae2a4cc584b6e33e05b5d44b197228fa2ae20a8d8cdb37f2e3\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b3ceb33dc5c8b2ae2a4cc584b6e33e05b5d44b197228fa2ae20a8d8cdb37f2e3\",\"parent\":\"efb0c5f349e670516c12e8524013e49fcacecf9a79e35ae8196228e63ef528de\",\"created\":\"2017-04-04T04:02:05.99905701Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"efb0c5f349e670516c12e8524013e49fcacecf9a79e35ae8196228e63ef528de\",\"parent\":\"deef3200980239ae9ca636cbf614599bfda4f0b8fbcda33e3e47fc883081a675\",\"created\":\"2017-04-04T04:01:39.567141323Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"deef3200980239ae9ca636cbf614599bfda4f0b8fbcda33e3e47fc883081a675\",\"parent\":\"4afda46aeb103ae0037e3abdb3bc6022393ea31073b32f39edd5b3725a624b77\",\"created\":\"2017-04-04T04:01:16.022501282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install git+https://github.com/cosanlab/cosanlab_preproc\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4afda46aeb103ae0037e3abdb3bc6022393ea31073b32f39edd5b3725a624b77\",\"parent\":\"1352faee895324d9bd1c4ec9fd4c143f71510de9d64590629a54f3bea8868ae4\",\"created\":\"2017-04-04T04:00:20.594770763Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install git+https://github.com/ljchang/nltools\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1352faee895324d9bd1c4ec9fd4c143f71510de9d64590629a54f3bea8868ae4\",\"parent\":\"16c7c074c606b358ed9f7a6ba764d5eec9cada335c17a40226259df72c75940a\",\"created\":\"2017-04-04T03:59:36.137561329Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install git+https://github.com/nipy/nipype\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"16c7c074c606b358ed9f7a6ba764d5eec9cada335c17a40226259df72c75940a\",\"parent\":\"0bba27b7ccc4f0bb95f6c1d68befd9204bc45a3b76726ad08f68d42c811a09ff\",\"created\":\"2017-04-04T03:58:08.698695671Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install seaborn nibabel nilearn\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0bba27b7ccc4f0bb95f6c1d68befd9204bc45a3b76726ad08f68d42c811a09ff\",\"parent\":\"3376007f4ceba1339923ba1cef692fb248a560f1aee03306ed4a714d12dc8d81\",\"created\":\"2017-04-04T03:57:23.808763533Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHONPATH=/usr/local/lib/python2.7/site-packages\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3376007f4ceba1339923ba1cef692fb248a560f1aee03306ed4a714d12dc8d81\",\"parent\":\"4e446e4d56e25284fc9356d07771a78fc9b45aaa5d11295322824255d00617df\",\"created\":\"2017-04-04T03:56:59.024521304Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLOUTPUTTYPE=NIFTI_GZ\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e446e4d56e25284fc9356d07771a78fc9b45aaa5d11295322824255d00617df\",\"parent\":\"c9105f56cd70965b32aeff1b4917b517860c1c938dec8b3c5e29997d32235db4\",\"created\":\"2017-04-04T03:56:34.791486472Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLWISH=/usr/bin/wish\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c9105f56cd70965b32aeff1b4917b517860c1c938dec8b3c5e29997d32235db4\",\"parent\":\"1ecb0ebfd488391f145827a9b72ed5dd3bab5e77e8bf66284da9b855106e2c7e\",\"created\":\"2017-04-04T03:56:10.26567749Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLTCLSH=/usr/bin/tclsh\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1ecb0ebfd488391f145827a9b72ed5dd3bab5e77e8bf66284da9b855106e2c7e\",\"parent\":\"9d8bad79068df918a8e0440e973f0c8e98de3b15667401e1d92bef844bfce008\",\"created\":\"2017-04-04T03:55:45.715151835Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/lib/fsl/5.0:\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9d8bad79068df918a8e0440e973f0c8e98de3b15667401e1d92bef844bfce008\",\"parent\":\"b55de59e2eb03af51d17eb3b618e6c95b7563a498c3554492cdd3c4e10822bc3\",\"created\":\"2017-04-04T03:55:21.261731694Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV POSSUMDIR=/usr/share/fsl/5.0\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b55de59e2eb03af51d17eb3b618e6c95b7563a498c3554492cdd3c4e10822bc3\",\"parent\":\"1b4f2c640e54291b0b69b1ac723272b20dd19037f4a19aa2a0e2d14cbee89648\",\"created\":\"2017-04-04T03:54:56.708312641Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLMULTIFILEQUIT=TRUE\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b4f2c640e54291b0b69b1ac723272b20dd19037f4a19aa2a0e2d14cbee89648\",\"parent\":\"4b1da8bdfe456ae0b31fe406c07adb83eb880c47a6fcda8a1065588c7d8dbf12\",\"created\":\"2017-04-04T03:54:31.874539445Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/lib/fsl/5.0:/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4b1da8bdfe456ae0b31fe406c07adb83eb880c47a6fcda8a1065588c7d8dbf12\",\"parent\":\"58b8197d5ad6043fe98a986d082ff997fb4ac6d3682b22d0a575ef93aa8c82ae\",\"created\":\"2017-04-04T03:54:07.103335502Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLOUTPUTTYPE=NIFTI_GZ\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58b8197d5ad6043fe98a986d082ff997fb4ac6d3682b22d0a575ef93aa8c82ae\",\"parent\":\"b12660986e54dc1c3ecb91dd38347edfa0d5fe3e2379ffd0f4969f671663c7fe\",\"created\":\"2017-04-04T03:53:42.116219604Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLDIR=/usr/share/fsl/5.0\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b12660986e54dc1c3ecb91dd38347edfa0d5fe3e2379ffd0f4969f671663c7fe\",\"parent\":\"585566c8b893c6541eb8c860cb4e016d0952f52aa6c3837eb799ae0b70287857\",\"created\":\"2017-04-04T03:53:21.323732413Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c curl -sSL http://neuro.debian.net/lists/trusty.us-nh.full \\u003e\\u003e /etc/apt/sources.list.d/neurodebian.sources.list \\u0026\\u0026     apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 0xA5D32F012649A5A9 \\u0026\\u0026     apt-get update \\u0026\\u0026     apt-get install -y fsl-core \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"585566c8b893c6541eb8c860cb4e016d0952f52aa6c3837eb799ae0b70287857\",\"parent\":\"df5ee6194af52f17790fced29d96eee40ff5b431995cfb4987d7999c5730a3f2\",\"created\":\"2017-04-04T03:51:31.348452335Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python-dev \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df5ee6194af52f17790fced29d96eee40ff5b431995cfb4987d7999c5730a3f2\",\"parent\":\"f8976b5388b5e7a39c06fd142a11c5ddab3552108942f8dbdbdcdccc00c8830a\",\"created\":\"2017-04-04T03:50:35.132824103Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f8976b5388b5e7a39c06fd142a11c5ddab3552108942f8dbdbdcdccc00c8830a\",\"parent\":\"f288f005c6c0a0137f351f53e3069875c52ecebdbfff7d4cc050dde87396be39\",\"created\":\"2017-04-04T03:50:07.889321881Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/archive/Anaconda2-4.2.0-Linux-x86_64.sh -O ~/anaconda.sh \\u0026\\u0026     /bin/bash ~/anaconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/anaconda.sh\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f288f005c6c0a0137f351f53e3069875c52ecebdbfff7d4cc050dde87396be39\",\"parent\":\"5e4e21be9c12654d8e06f71e553f63ef69e4f2691b95d174948667fdfdb083f4\",\"created\":\"2017-04-04T03:44:37.730424289Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion curl grep sed dpkg graphviz\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e4e21be9c12654d8e06f71e553f63ef69e4f2691b95d174948667fdfdb083f4\",\"parent\":\"ca5c449ea55626e7ed68cf8ce7c407cb832f2d7c5ca4a7c56bc3b7b97bd1e028\",\"created\":\"2017-04-04T03:43:28.811579257Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C.UTF-8\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ca5c449ea55626e7ed68cf8ce7c407cb832f2d7c5ca4a7c56bc3b7b97bd1e028\",\"parent\":\"6a8a09be813f53263b0c4d3e28b6455192267620b51475420e48e2a04eebfb40\",\"created\":\"2017-04-04T03:43:23.799653395Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\"]},\"author\":\"Eshin Jolly \\u003ceshin.jolly.gr@dartmouth.edu\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a8a09be813f53263b0c4d3e28b6455192267620b51475420e48e2a04eebfb40\",\"parent\":\"a040c52109bf6926af40f68d2849d0e4f3d8fa1465b74deb2f6faa7741f0b651\",\"created\":\"2016-10-07T17:44:16.071296299Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/ants:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a040c52109bf6926af40f68d2849d0e4f3d8fa1465b74deb2f6faa7741f0b651\",\"parent\":\"951c446b117304e06cc08db03a0a4a2a7d5a508ebd3cc3c1bdbaa507344689a6\",\"created\":\"2016-10-07T17:44:08.323558065Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ANTSPATH=/opt/ants\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"951c446b117304e06cc08db03a0a4a2a7d5a508ebd3cc3c1bdbaa507344689a6\",\"parent\":\"fe8e1dd2054d1864bde276d858e4f5eb33f3b1cea0032c8277a88c3b1fa554e0\",\"created\":\"2016-10-07T17:44:03.98123693Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y curl \\u0026\\u0026 \\t\\tmkdir -p /opt/ants \\u0026\\u0026     curl -sSL \\\"https://github.com/stnava/ANTs/releases/download/v2.1.0/Linux_Ubuntu14.04.tar.bz2\\\"     | tar -xjC /opt/ants --strip-components 1 \\u0026\\u0026 \\t\\tapt-get remove -y curl \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fe8e1dd2054d1864bde276d858e4f5eb33f3b1cea0032c8277a88c3b1fa554e0\",\"parent\":\"896ae086d7cb99eea6b5cf0997cdc36ab7a680212f6127b526755b44549545b5\",\"created\":\"2016-10-07T17:32:05.439511623Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c npm install -g bids-validator@0.18.17\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"896ae086d7cb99eea6b5cf0997cdc36ab7a680212f6127b526755b44549545b5\",\"parent\":\"d61c7e9067e9b990f7e29f85e15ef21e01540251ec2789df3d8ece25b13189c8\",\"created\":\"2016-10-07T17:31:33.970695568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y curl \\u0026\\u0026     curl -sL https://deb.nodesource.com/setup_4.x | bash - \\u0026\\u0026     apt-get remove -y curl \\u0026\\u0026     apt-get install -y nodejs \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d61c7e9067e9b990f7e29f85e15ef21e01540251ec2789df3d8ece25b13189c8\",\"parent\":\"348ae5f2350a21181bc642fb1a2d466f6632e33e6e4f920513189f782fe1797b\",\"created\":\"2016-09-26T21:26:09.229860896Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"348ae5f2350a21181bc642fb1a2d466f6632e33e6e4f920513189f782fe1797b\",\"parent\":\"39a955bdc1e13b3a027e373943b7c021a1014a03993122d4b0e8b9d5448a1f9f\",\"created\":\"2016-09-26T21:26:08.906290635Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39a955bdc1e13b3a027e373943b7c021a1014a03993122d4b0e8b9d5448a1f9f\",\"parent\":\"f6662ef795aca898ec640c7ebb7cb541df0b01f68e94d0f039138f413612dd7c\",\"created\":\"2016-09-26T21:26:08.078213009Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f6662ef795aca898ec640c7ebb7cb541df0b01f68e94d0f039138f413612dd7c\",\"parent\":\"0812a82a4eba3e5d9d51797083675dc37e7581840ad0c5aec9a6bcb0fc05d138\",\"created\":\"2016-09-26T21:26:07.126652848Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0812a82a4eba3e5d9d51797083675dc37e7581840ad0c5aec9a6bcb0fc05d138\",\"parent\":\"bb04ed60c038f07a7f5f9cc1556e76f0bf04a4743d51d24acc59229e344dc242\",\"created\":\"2016-09-26T21:26:06.131407313Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bb04ed60c038f07a7f5f9cc1556e76f0bf04a4743d51d24acc59229e344dc242\",\"created\":\"2016-09-26T21:26:04.831629834Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:561625b38aa88058c3af9d99be9d8b8d07f24e9d1737869e422540deeebb4443 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:42b57c6a6bd0bad104714324ac3402e2072968a496cbe8c624954440221c30cf"
+            },
+            {
+                "blobSum": "sha256:4a34e224f5fc7f729372f7288e0c9cf3ef0516c42aed32c963b6e6c2fc91577e"
+            },
+            {
+                "blobSum": "sha256:b59cef5196332cc03eaf4ef13ec46051da0cb05cbdd6ad96dfb85a779d4b4cf4"
+            },
+            {
+                "blobSum": "sha256:37fedb546aba538004f05374a6b5c444f4f8cc6bf09604678bece72d729bdbef"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a65bd19a5ccf789fdc10aacb37c72589dd6bd14018a215e18a2e2a59add113d6"
+            },
+            {
+                "blobSum": "sha256:a8e4022e651a3f734aa259778072e89ead968bc335c626c2fe7c7c5dc80c4637"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:67dd835c1a7c1fc2849787e03c0d46b02660d9df9b75d87435b09e315403bb96"
+            },
+            {
+                "blobSum": "sha256:156fdc0d637b70916ec0ec739b90396ed306b22867ea3ec608bfdcf8c3397d97"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fb43e16072c49377714f3e642cbb43baeb8a8482be4329f174d951e8167e153c"
+            },
+            {
+                "blobSum": "sha256:b7629dcaa0b7d2de7717c9084b0bbc965e2704e8bebdf2486b81c5335cf40814"
+            },
+            {
+                "blobSum": "sha256:bbe66581707abba8fad415fd0a3af70ac17c189c99df0f4d087c56fc32c04311"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:09b3dd842bf5577e855c84e1273582a799616748c6b13ac9ecb2a49ee2477cbc"
+            },
+            {
+                "blobSum": "sha256:b48b86b78e975768669fb7f9e20166f994ab4949a878b642927c28f3f169390d"
+            },
+            {
+                "blobSum": "sha256:bac77aae22d4292624c1db7efe5c2face4a104d8967c9f63e22230aebfeceda8"
+            },
+            {
+                "blobSum": "sha256:d394d3da86fe44806b96c68b5c51bd6e38d287b2dde4ef89c011243ffc6542b9"
+            },
+            {
+                "blobSum": "sha256:04c996abc2442fb0534f018543f0352647de3a65a3b321628b8cd1ceecedc3f6"
+            }
+        ],
+        "name": "ejolly/cosantoolsdocker",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIzMzQ1LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDM6MDZaIn0",
+                "signature": "dygy0_Y8-J6FWtzWl5I5BijiCFl5NDYzI2J49EXKdfqxQB9ddzyC7lXZbduIErgpQW1O-vRXRYrQqhNMEcLqPw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "bZukBmNRUCi_x1Dn0J4fGDvzqpx3NhCg1Xi94FlQrvI",
+                        "kid": "DOJT:3VGK:HR3R:6D2H:F7ZE:NMOW:PRVL:7KIA:KCMG:KYED:TYTB:DHMP",
+                        "x": "lV0_oym6nkoTS4flyw4Y1Td85BdIuvHoxFcqD5jikgw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

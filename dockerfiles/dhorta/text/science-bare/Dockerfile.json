@@ -1,0 +1,294 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"f0726407848b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/gocode/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GOPATH=/home/gocode\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:dd036dc74c5b057b543fa010ffcf5c791574c2d82ec4ecbad89cc93f84698dd5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"87aa3b38c838c93153a48beeaeb6cc535b23d6735e894b5ca168116d33878e49\",\"container_config\":{\"Hostname\":\"f0726407848b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/gocode/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GOPATH=/home/gocode\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get install -y -q swig\"],\"ArgsEscaped\":true,\"Image\":\"sha256:dd036dc74c5b057b543fa010ffcf5c791574c2d82ec4ecbad89cc93f84698dd5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T13:52:32.200834147Z\",\"docker_version\":\"1.10.2\",\"id\":\"7b96ad74e60c7f89f20ea0a2e6e58513b88279aa4c39b4442a97b1de37ec5970\",\"os\":\"linux\",\"parent\":\"0aba6e764db9de26667f8838111a0d858895126e881eb5e69fec1a4dfad2c648\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0aba6e764db9de26667f8838111a0d858895126e881eb5e69fec1a4dfad2c648\",\"parent\":\"f68e25173a1f7f3f7c049529b6fd8baf7996c77bbd9d08096a1135c44023ef3a\",\"created\":\"2016-04-11T13:52:24.612025201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install urllib3[secure]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f68e25173a1f7f3f7c049529b6fd8baf7996c77bbd9d08096a1135c44023ef3a\",\"parent\":\"d3cb06e76e7e227e19cab03993fdcacb0bd9dfa6ad8480c46e98a1d186863da1\",\"created\":\"2016-04-11T13:52:23.434762653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install cryptography\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d3cb06e76e7e227e19cab03993fdcacb0bd9dfa6ad8480c46e98a1d186863da1\",\"parent\":\"1a29ced69c677f95e1b5de6d62839469b760df2489c078106bfbcacef996ccb8\",\"created\":\"2016-04-11T13:52:22.144936229Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pyopenssl ndg-httpsclient pyasn1\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a29ced69c677f95e1b5de6d62839469b760df2489c078106bfbcacef996ccb8\",\"parent\":\"e3d17b4b12c96a7f16146b4af8be9f756ab61d46cf165771e6dea807d2736562\",\"created\":\"2016-04-11T13:51:27.76006791Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install libffi-dev libssl-dev -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e3d17b4b12c96a7f16146b4af8be9f756ab61d46cf165771e6dea807d2736562\",\"parent\":\"72834e508059a8ae099f55e4965e7514eb4c2c21a23f9258e0ddbfc59c617067\",\"created\":\"2016-04-11T13:51:19.086091613Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c go get github.com/aktau/github-release\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72834e508059a8ae099f55e4965e7514eb4c2c21a23f9258e0ddbfc59c617067\",\"parent\":\"abddff8674960d6228a4b237cf8491401d43a4fea3fa208329ed95e3ff89b3cf\",\"created\":\"2016-04-11T13:51:14.446031048Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install twine -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"abddff8674960d6228a4b237cf8491401d43a4fea3fa208329ed95e3ff89b3cf\",\"parent\":\"09e483ab3e1f120574527ef45e785e6f39955935e226e6fd54b214535c4f1a99\",\"created\":\"2016-04-11T13:51:11.427378309Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pandas -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"09e483ab3e1f120574527ef45e785e6f39955935e226e6fd54b214535c4f1a99\",\"parent\":\"603f64617c17dc1968efc4d63a23f0f1ff826ba85756c1196dbf33aa392c9ee6\",\"created\":\"2016-04-11T13:37:34.954320285Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/home/gocode/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"603f64617c17dc1968efc4d63a23f0f1ff826ba85756c1196dbf33aa392c9ee6\",\"parent\":\"40d64fb00ca371c5daf286b21c8911012291ade4d166ce739406ce914e1d8987\",\"created\":\"2016-04-11T13:37:34.844437759Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV GOPATH=/home/gocode\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"40d64fb00ca371c5daf286b21c8911012291ade4d166ce739406ce914e1d8987\",\"parent\":\"9444b1ee46f07ba2a5dc39e8ae55d76b583e814157f010d232733b4f9d73525e\",\"created\":\"2016-04-11T13:37:31.20695226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install golang -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9444b1ee46f07ba2a5dc39e8ae55d76b583e814157f010d232733b4f9d73525e\",\"parent\":\"09103fb42129f777eaab60b11bdf1e572bff5ade1d29426de29d3c0b6f9e1494\",\"created\":\"2016-04-11T13:36:56.866091806Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install git -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"09103fb42129f777eaab60b11bdf1e572bff5ade1d29426de29d3c0b6f9e1494\",\"parent\":\"b5af2ffc61664131861af5895306f7cbad4a8a6993e7489bcc07af452898b11c\",\"created\":\"2016-04-11T13:36:45.744905387Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install h5py -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b5af2ffc61664131861af5895306f7cbad4a8a6993e7489bcc07af452898b11c\",\"parent\":\"774151a7a29e00b9b729c958b4321e2b9f1cdae286add74d401db13ab0ef923a\",\"created\":\"2016-04-11T13:35:15.952293969Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install python-pip -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"774151a7a29e00b9b729c958b4321e2b9f1cdae286add74d401db13ab0ef923a\",\"parent\":\"772e71f8860f2ebb8b917e5a6e7ba379412b676ec2826042f308e59958b851e5\",\"created\":\"2016-04-11T13:34:55.556950291Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y -q build-essential libc6 gfortran g++     python python-setuptools cython python-numpy python-scipy     python-matplotlib pkg-config libfreetype6-dev libpng12-dev     libhdf5-dev liblapack-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"772e71f8860f2ebb8b917e5a6e7ba379412b676ec2826042f308e59958b851e5\",\"parent\":\"06b50a41723d98780408d35a8ef0d8d8def9a3c8053b4215aa5581b2de0a8c7f\",\"created\":\"2016-04-11T13:31:44.416026388Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06b50a41723d98780408d35a8ef0d8d8def9a3c8053b4215aa5581b2de0a8c7f\",\"parent\":\"e4082297a963213b6d17a20614e3bf6a1e64889ef0b5f3398e05e9e566c69204\",\"created\":\"2016-04-06T17:41:19.962923385Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e4082297a963213b6d17a20614e3bf6a1e64889ef0b5f3398e05e9e566c69204\",\"parent\":\"23f6bd545c17b3eb0fe231428911c4b60120a13d24fa7c591c2e9fb3895e1ece\",\"created\":\"2016-04-06T17:41:18.801591444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"23f6bd545c17b3eb0fe231428911c4b60120a13d24fa7c591c2e9fb3895e1ece\",\"parent\":\"426a0cc6d7b020d5e908102c81d9b76a4ca6ae41842ba0a80afe6e2fe40652a4\",\"created\":\"2016-04-06T17:41:15.530573251Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"426a0cc6d7b020d5e908102c81d9b76a4ca6ae41842ba0a80afe6e2fe40652a4\",\"created\":\"2016-04-06T17:40:45.853575935Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:d4d28c3e762167a2c942e70c0ae77c9e52f78917bc37c350508c8d422fcffadb in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:5979de476e60b72aafc4abcf8b4f45be321df1802ce461e9391f58af2a97a94d"
+            },
+            {
+                "blobSum": "sha256:b4a8b9b483c0f673998bed8f727de9e03dd9daef56f0ece10b46e377a60ee5e3"
+            },
+            {
+                "blobSum": "sha256:674db2913f1f026d877d3509f4de0b284d4a2c384b1c95ec1b51e686a3047940"
+            },
+            {
+                "blobSum": "sha256:da2ab9493e6f5ad17399daf2bd54bffdd9c7bf4e80b57d7e3e74fdfc6e3ca75a"
+            },
+            {
+                "blobSum": "sha256:4b49e5d83bf11667bd25a9aec4463d24acca5aaacb4df10e8c5d8b10a8a77b66"
+            },
+            {
+                "blobSum": "sha256:da93c7a0c6cf56f5cfbc935c758771c19accf6b8bd213483c0cfbc5b5523109e"
+            },
+            {
+                "blobSum": "sha256:f03e8aa1c6e8f90cb252283648cd67b1ae0a9b4f5f71e8499234dc7ac16e3942"
+            },
+            {
+                "blobSum": "sha256:749135513255b203efe8f54eb74e2df05156ae2d67c02ffc9b518c4571c22f14"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1bc9d1b5e702f092598aea22038bbba7a0665563e1083401fab36b1ce36fc1bb"
+            },
+            {
+                "blobSum": "sha256:b0dff077bad6db21c9c8676ca6e92d191acc74a48c821f82c938d21e68791229"
+            },
+            {
+                "blobSum": "sha256:f58b90ef7901e83b3632315d186f204be5bd875844d4d1c3556804e038364670"
+            },
+            {
+                "blobSum": "sha256:26e3cee15bfe2117941de65e7c191b93a2e2a5f701f4b9f86f5ca4089b524f9d"
+            },
+            {
+                "blobSum": "sha256:07cfdc2949f7840a4a7dd41e9e222a8a35406a1bb59c7060356553a9b2dfa6bd"
+            },
+            {
+                "blobSum": "sha256:379136684cd8eee8e1480fa8109bbe022edb0192c3e6cc51943793fe5388828c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7e15ce58ccb2181a8fced7709e9893206f0937cc9543bc0c8178ea1cf4d7e7b5"
+            },
+            {
+                "blobSum": "sha256:28e09fddaacbfc8a13f82871d9d66141a6ed9ca526cb9ed295ef545ab4559b81"
+            },
+            {
+                "blobSum": "sha256:87192bdbe00f8f2a62527f36bb4c7c7f4eaf9307e4b87e8334fb6abec1765bcb"
+            }
+        ],
+        "name": "dhorta/science-bare",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjExNzM2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTQ6NTRaIn0",
+                "signature": "UFvMxBqt4-_g7q6K9S0rTkOgVVTLBu51OhSV2_7RHFfuVga7N6TaurfMZ2G28laE4h6rcC-rNA2b4lzTcZ-IwA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "BOM7dvDBYPGfLNefkXSAi6CW_Z59bDrSVh2ZN1_u6CQ",
+                        "kid": "C2PE:U5AB:OIHJ:TAOQ:3ZGP:JNQ7:7MF5:3GTR:ZIXN:3ZPI:CQDX:VSY6",
+                        "x": "D0XjKxEOAcTvOijHv9fuvlpfSunU-jyPfoY-TSkA37c"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"f0726407848b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/gocode/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GOPATH=/home/gocode\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:dd036dc74c5b057b543fa010ffcf5c791574c2d82ec4ecbad89cc93f84698dd5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"87aa3b38c838c93153a48beeaeb6cc535b23d6735e894b5ca168116d33878e49\",\"container_config\":{\"Hostname\":\"f0726407848b\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/home/gocode/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GOPATH=/home/gocode\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get install -y -q swig\"],\"ArgsEscaped\":true,\"Image\":\"sha256:dd036dc74c5b057b543fa010ffcf5c791574c2d82ec4ecbad89cc93f84698dd5\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T13:52:32.200834147Z\",\"docker_version\":\"1.10.2\",\"id\":\"7b96ad74e60c7f89f20ea0a2e6e58513b88279aa4c39b4442a97b1de37ec5970\",\"os\":\"linux\",\"parent\":\"0aba6e764db9de26667f8838111a0d858895126e881eb5e69fec1a4dfad2c648\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0aba6e764db9de26667f8838111a0d858895126e881eb5e69fec1a4dfad2c648\",\"parent\":\"f68e25173a1f7f3f7c049529b6fd8baf7996c77bbd9d08096a1135c44023ef3a\",\"created\":\"2016-04-11T13:52:24.612025201Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install urllib3[secure]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f68e25173a1f7f3f7c049529b6fd8baf7996c77bbd9d08096a1135c44023ef3a\",\"parent\":\"d3cb06e76e7e227e19cab03993fdcacb0bd9dfa6ad8480c46e98a1d186863da1\",\"created\":\"2016-04-11T13:52:23.434762653Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install cryptography\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d3cb06e76e7e227e19cab03993fdcacb0bd9dfa6ad8480c46e98a1d186863da1\",\"parent\":\"1a29ced69c677f95e1b5de6d62839469b760df2489c078106bfbcacef996ccb8\",\"created\":\"2016-04-11T13:52:22.144936229Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pyopenssl ndg-httpsclient pyasn1\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a29ced69c677f95e1b5de6d62839469b760df2489c078106bfbcacef996ccb8\",\"parent\":\"e3d17b4b12c96a7f16146b4af8be9f756ab61d46cf165771e6dea807d2736562\",\"created\":\"2016-04-11T13:51:27.76006791Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install libffi-dev libssl-dev -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e3d17b4b12c96a7f16146b4af8be9f756ab61d46cf165771e6dea807d2736562\",\"parent\":\"72834e508059a8ae099f55e4965e7514eb4c2c21a23f9258e0ddbfc59c617067\",\"created\":\"2016-04-11T13:51:19.086091613Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c go get github.com/aktau/github-release\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72834e508059a8ae099f55e4965e7514eb4c2c21a23f9258e0ddbfc59c617067\",\"parent\":\"abddff8674960d6228a4b237cf8491401d43a4fea3fa208329ed95e3ff89b3cf\",\"created\":\"2016-04-11T13:51:14.446031048Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install twine -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"abddff8674960d6228a4b237cf8491401d43a4fea3fa208329ed95e3ff89b3cf\",\"parent\":\"09e483ab3e1f120574527ef45e785e6f39955935e226e6fd54b214535c4f1a99\",\"created\":\"2016-04-11T13:51:11.427378309Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pandas -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"09e483ab3e1f120574527ef45e785e6f39955935e226e6fd54b214535c4f1a99\",\"parent\":\"603f64617c17dc1968efc4d63a23f0f1ff826ba85756c1196dbf33aa392c9ee6\",\"created\":\"2016-04-11T13:37:34.954320285Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/home/gocode/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"603f64617c17dc1968efc4d63a23f0f1ff826ba85756c1196dbf33aa392c9ee6\",\"parent\":\"40d64fb00ca371c5daf286b21c8911012291ade4d166ce739406ce914e1d8987\",\"created\":\"2016-04-11T13:37:34.844437759Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV GOPATH=/home/gocode\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"40d64fb00ca371c5daf286b21c8911012291ade4d166ce739406ce914e1d8987\",\"parent\":\"9444b1ee46f07ba2a5dc39e8ae55d76b583e814157f010d232733b4f9d73525e\",\"created\":\"2016-04-11T13:37:31.20695226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install golang -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9444b1ee46f07ba2a5dc39e8ae55d76b583e814157f010d232733b4f9d73525e\",\"parent\":\"09103fb42129f777eaab60b11bdf1e572bff5ade1d29426de29d3c0b6f9e1494\",\"created\":\"2016-04-11T13:36:56.866091806Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install git -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"09103fb42129f777eaab60b11bdf1e572bff5ade1d29426de29d3c0b6f9e1494\",\"parent\":\"b5af2ffc61664131861af5895306f7cbad4a8a6993e7489bcc07af452898b11c\",\"created\":\"2016-04-11T13:36:45.744905387Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install h5py -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b5af2ffc61664131861af5895306f7cbad4a8a6993e7489bcc07af452898b11c\",\"parent\":\"774151a7a29e00b9b729c958b4321e2b9f1cdae286add74d401db13ab0ef923a\",\"created\":\"2016-04-11T13:35:15.952293969Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install python-pip -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"774151a7a29e00b9b729c958b4321e2b9f1cdae286add74d401db13ab0ef923a\",\"parent\":\"772e71f8860f2ebb8b917e5a6e7ba379412b676ec2826042f308e59958b851e5\",\"created\":\"2016-04-11T13:34:55.556950291Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y -q build-essential libc6 gfortran g++     python python-setuptools cython python-numpy python-scipy     python-matplotlib pkg-config libfreetype6-dev libpng12-dev     libhdf5-dev liblapack-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"772e71f8860f2ebb8b917e5a6e7ba379412b676ec2826042f308e59958b851e5\",\"parent\":\"06b50a41723d98780408d35a8ef0d8d8def9a3c8053b4215aa5581b2de0a8c7f\",\"created\":\"2016-04-11T13:31:44.416026388Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -q\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"06b50a41723d98780408d35a8ef0d8d8def9a3c8053b4215aa5581b2de0a8c7f\",\"parent\":\"e4082297a963213b6d17a20614e3bf6a1e64889ef0b5f3398e05e9e566c69204\",\"created\":\"2016-04-06T17:41:19.962923385Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e4082297a963213b6d17a20614e3bf6a1e64889ef0b5f3398e05e9e566c69204\",\"parent\":\"23f6bd545c17b3eb0fe231428911c4b60120a13d24fa7c591c2e9fb3895e1ece\",\"created\":\"2016-04-06T17:41:18.801591444Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"23f6bd545c17b3eb0fe231428911c4b60120a13d24fa7c591c2e9fb3895e1ece\",\"parent\":\"426a0cc6d7b020d5e908102c81d9b76a4ca6ae41842ba0a80afe6e2fe40652a4\",\"created\":\"2016-04-06T17:41:15.530573251Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"426a0cc6d7b020d5e908102c81d9b76a4ca6ae41842ba0a80afe6e2fe40652a4\",\"created\":\"2016-04-06T17:40:45.853575935Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:d4d28c3e762167a2c942e70c0ae77c9e52f78917bc37c350508c8d422fcffadb in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:5979de476e60b72aafc4abcf8b4f45be321df1802ce461e9391f58af2a97a94d"
+            },
+            {
+                "blobSum": "sha256:b4a8b9b483c0f673998bed8f727de9e03dd9daef56f0ece10b46e377a60ee5e3"
+            },
+            {
+                "blobSum": "sha256:674db2913f1f026d877d3509f4de0b284d4a2c384b1c95ec1b51e686a3047940"
+            },
+            {
+                "blobSum": "sha256:da2ab9493e6f5ad17399daf2bd54bffdd9c7bf4e80b57d7e3e74fdfc6e3ca75a"
+            },
+            {
+                "blobSum": "sha256:4b49e5d83bf11667bd25a9aec4463d24acca5aaacb4df10e8c5d8b10a8a77b66"
+            },
+            {
+                "blobSum": "sha256:da93c7a0c6cf56f5cfbc935c758771c19accf6b8bd213483c0cfbc5b5523109e"
+            },
+            {
+                "blobSum": "sha256:f03e8aa1c6e8f90cb252283648cd67b1ae0a9b4f5f71e8499234dc7ac16e3942"
+            },
+            {
+                "blobSum": "sha256:749135513255b203efe8f54eb74e2df05156ae2d67c02ffc9b518c4571c22f14"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:1bc9d1b5e702f092598aea22038bbba7a0665563e1083401fab36b1ce36fc1bb"
+            },
+            {
+                "blobSum": "sha256:b0dff077bad6db21c9c8676ca6e92d191acc74a48c821f82c938d21e68791229"
+            },
+            {
+                "blobSum": "sha256:f58b90ef7901e83b3632315d186f204be5bd875844d4d1c3556804e038364670"
+            },
+            {
+                "blobSum": "sha256:26e3cee15bfe2117941de65e7c191b93a2e2a5f701f4b9f86f5ca4089b524f9d"
+            },
+            {
+                "blobSum": "sha256:07cfdc2949f7840a4a7dd41e9e222a8a35406a1bb59c7060356553a9b2dfa6bd"
+            },
+            {
+                "blobSum": "sha256:379136684cd8eee8e1480fa8109bbe022edb0192c3e6cc51943793fe5388828c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7e15ce58ccb2181a8fced7709e9893206f0937cc9543bc0c8178ea1cf4d7e7b5"
+            },
+            {
+                "blobSum": "sha256:28e09fddaacbfc8a13f82871d9d66141a6ed9ca526cb9ed295ef545ab4559b81"
+            },
+            {
+                "blobSum": "sha256:87192bdbe00f8f2a62527f36bb4c7c7f4eaf9307e4b87e8334fb6abec1765bcb"
+            }
+        ],
+        "name": "dhorta/science-bare",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjExNzM2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTQ6NTVaIn0",
+                "signature": "QDQKg3r5pefDfWwxSAkjxBI7AuQE061kPu7IfOyNdu_Yx_crzkBWallK6A8fq_Z4FL1GTwOG036CqQiGlgmUNg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "u5XJDdoG1gBUPENWq8sfptGn0lvJGzLPJsfWV7Tbgv0",
+                        "kid": "7II3:EC34:4TM2:LJFY:BNRG:CU4X:FFV4:XIWJ:MCK6:4EHU:OY42:U6CQ",
+                        "x": "r3XkuZi7m_SdxXiUu2wR46N7XeGO1Z85No5uV9zSWCw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

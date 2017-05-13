@@ -1,0 +1,342 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"c5ff346549e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"TINI_VERSION=v0.6.0\"],\"Cmd\":[\"jupyter\",\"notebook\"],\"ArgsEscaped\":true,\"Image\":\"sha256:72df89f2a4ec37bf09ee93fc0d97d4d377a994819cdbcfa4d197ea0d2ac593d4\",\"Volumes\":null,\"WorkingDir\":\"/tmp/working\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"1578df47dd0c5d78687ccd6c9f4c68120d6de8d13ac59f16b016d51f9b9fcf6b\",\"container_config\":{\"Hostname\":\"c5ff346549e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"TINI_VERSION=v0.6.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"jupyter\\\" \\\"notebook\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:72df89f2a4ec37bf09ee93fc0d97d4d377a994819cdbcfa4d197ea0d2ac593d4\",\"Volumes\":null,\"WorkingDir\":\"/tmp/working\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-08T04:40:24.945793941Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"09ca02866e8637301d00f9f683514199aa3a87a122a40e37757eafa65e257421\",\"os\":\"linux\",\"parent\":\"25be04ed12b68dd4fbac4628ef129602903bbf823a6516007c8fa41e2d7424e9\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25be04ed12b68dd4fbac4628ef129602903bbf823a6516007c8fa41e2d7424e9\",\"parent\":\"031a6f4a5937b58bc5962da9599317021ca6c593b409e0c7071a74ca34a79706\",\"created\":\"2017-05-08T04:39:47.89071273Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"031a6f4a5937b58bc5962da9599317021ca6c593b409e0c7071a74ca34a79706\",\"parent\":\"87df96d98e3cc3adc7c52d29668bdc8eed4464c6da97405f55cb496584e4caaa\",\"created\":\"2017-05-08T04:39:09.677163058Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 6006/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87df96d98e3cc3adc7c52d29668bdc8eed4464c6da97405f55cb496584e4caaa\",\"parent\":\"637afc3473c65c026ee6595ff841901331e8149b7ecf8359d957fc65435219c2\",\"created\":\"2017-05-08T04:38:36.430813893Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /tmp/working\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"637afc3473c65c026ee6595ff841901331e8149b7ecf8359d957fc65435219c2\",\"parent\":\"ba90eda53d3611a29202dd0d04f09bb1dabf50c9488599b3354e88eb387713cd\",\"created\":\"2017-05-08T04:38:03.052834754Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:19744792ebe95868498762afe48247a414a6b47efc96c5669e1c194f06002d49 in /root/.jupyter/jupyter_notebook_config.py \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ba90eda53d3611a29202dd0d04f09bb1dabf50c9488599b3354e88eb387713cd\",\"parent\":\"e41a02e35a52c2c910791aa54ccd0ff28acd2fdf5afff8704145a75f7c2c7c82\",\"created\":\"2017-05-08T04:37:22.172276097Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e41a02e35a52c2c910791aa54ccd0ff28acd2fdf5afff8704145a75f7c2c7c82\",\"parent\":\"043eb0302df658a9472417148020d7871248df5e46d8cc6091e9902027e48950\",\"created\":\"2017-05-08T04:36:46.632458475Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /usr/bin/tini\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"043eb0302df658a9472417148020d7871248df5e46d8cc6091e9902027e48950\",\"parent\":\"90bbb7378cc5251bc20690d4b4cf38185cc9a93df1f0e2e729fc88b0dba50856\",\"created\":\"2017-05-08T04:36:09.347215271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD tarsum.v1+sha256:2df2819392b034d6a57f05b735739dded700345edbc5abb4a734d2cdeeb3adab in /usr/bin/tini \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90bbb7378cc5251bc20690d4b4cf38185cc9a93df1f0e2e729fc88b0dba50856\",\"parent\":\"60c36eebea6314d2fa593cd1e2e3865386df8e509441ba92713da635610275dc\",\"created\":\"2017-05-08T04:35:28.203879997Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TINI_VERSION=v0.6.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"60c36eebea6314d2fa593cd1e2e3865386df8e509441ba92713da635610275dc\",\"parent\":\"61687d0b9e3b117ec890f12284e76a46fa6ba55189111046288523f19b3ee11d\",\"created\":\"2017-05-08T04:06:11.778933193Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade mpld3 \\u0026\\u0026     pip install mplleaflet \\u0026\\u0026     pip install gpxpy \\u0026\\u0026     pip install arrow \\u0026\\u0026     pip install sexmachine  \\u0026\\u0026     pip install Geohash \\u0026\\u0026     pip install deap \\u0026\\u0026     pip install tpot \\u0026\\u0026     pip install haversine \\u0026\\u0026     pip install toolz cytoolz \\u0026\\u0026     pip install sacred \\u0026\\u0026     pip install plotly \\u0026\\u0026     pip install git+https://github.com/nicta/dora.git \\u0026\\u0026     pip install git+https://github.com/hyperopt/hyperopt.git \\u0026\\u0026     pip install git+https://github.com/tflearn/tflearn.git \\u0026\\u0026     pip install fitter \\u0026\\u0026     pip install langid \\u0026\\u0026     pip install delorean \\u0026\\u0026     pip install trueskill \\u0026\\u0026     pip install heamy \\u0026\\u0026     pip install vida \\u0026\\u0026     pip install missingno \\u0026\\u0026     pip install pandas-profiling \\u0026\\u0026     pip install s2sphere \\u0026\\u0026     pip install git+https://github.com/fmfn/BayesianOptimization.git \\u0026\\u0026     pip install matplotlib-venn \\u0026\\u0026     pip install pyldavis \\u0026\\u0026     pip install git+git://github.com/rasbt/mlxtend.git#egg=mlxtend \\u0026\\u0026     pip install altair \\u0026\\u0026     pip install pystan \\u0026\\u0026     pip install ImageHash \\u0026\\u0026     pip install git+https://github.com/hammerlab/fancyimpute.git \\u0026\\u0026     pip install git+https://github.com/pymc-devs/pymc3 \\u0026\\u0026     pip install tifffile \\u0026\\u0026     pip install spectral \\u0026\\u0026     pip install descartes \\u0026\\u0026     pip install geojson \\u0026\\u0026     pip install pysal \\u0026\\u0026     pip install pyflux \\u0026\\u0026     pip install terminalplot \\u0026\\u0026     pip install raccoon \\u0026\\u0026     pip install pydicom \\u0026\\u0026     pip install wavio \\u0026\\u0026     pip install SimpleITK \\u0026\\u0026     pip install hmmlearn \\u0026\\u0026     pip install bayespy \\u0026\\u0026     pip install gplearn \\u0026\\u0026     pip install PyAstronomy \\u0026\\u0026     conda install pytorch torchvision -c soumith \\u0026\\u0026     pip install squarify \\u0026\\u0026     pip install fuzzywuzzy \\u0026\\u0026     pip install python-louvain \\u0026\\u0026     pip install pyexcel-ods \\u0026\\u0026     pip install sklearn-pandas \\u0026\\u0026     pip install stemming \\u0026\\u0026     pip install fbprophet \\u0026\\u0026     conda install -y -c conda-forge -c ioam holoviews \\u0026\\u0026     pip install git+https://github.com/ioam/geoviews.git \\u0026\\u0026     pip install hypertools \\u0026\\u0026     pip install nxviz \\u0026\\u0026     pip install py_stringsimjoin \\u0026\\u0026     pip install speedml \\u0026\\u0026     pip install nibabel \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     jupyter nbextension install --user --py vega\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"61687d0b9e3b117ec890f12284e76a46fa6ba55189111046288523f19b3ee11d\",\"parent\":\"1baf779034f23fc969eedb32cb44c8a3de916bb5f0439e2cb558d37844c340e2\",\"created\":\"2017-05-08T03:52:31.263387721Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     rm /opt/conda/lib/libstdc++* \\u0026\\u0026 rm /opt/conda/lib/libgomp.* \\u0026\\u0026     ln -s /usr/lib/x86_64-linux-gnu/libgomp.so.1 /opt/conda/lib/libgomp.so.1 \\u0026\\u0026     ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /opt/conda/lib/libstdc++.so.6 \\u0026\\u0026     apt-get -y install libgeos-dev \\u0026\\u0026     pip install pyshp pyproj \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/matplotlib/basemap.git \\u0026\\u0026     export GEOS_DIR=/usr/local \\u0026\\u0026     cd basemap \\u0026\\u0026 python setup.py install \\u0026\\u0026     apt-get -y install zlib1g-dev liblcms2-dev libwebp-dev \\u0026\\u0026     pip install Pillow \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/vitruvianscience/opendeep.git \\u0026\\u0026     cd opendeep \\u0026\\u0026 python setup.py develop  \\u0026\\u0026     apt-get -y install libsasl2-dev \\u0026\\u0026     apt-get install -y libpq-dev \\u0026\\u0026     pip install ibis-framework \\u0026\\u0026     yes | conda install proj4 \\u0026\\u0026     pip install packaging \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/Toblerity/Shapely.git \\u0026\\u0026     cd Shapely \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/SciTools/cartopy.git \\u0026\\u0026     cd cartopy \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --recursive https://github.com/dmlc/mxnet \\u0026\\u0026     cd /usr/local/src/mxnet \\u0026\\u0026 cp make/config.mk . \\u0026\\u0026     sed -i 's/ADD_LDFLAGS =/ADD_LDFLAGS = -lstdc++/' config.mk \\u0026\\u0026     make \\u0026\\u0026 cd python \\u0026\\u0026 python setup.py install \\u0026\\u0026     matplotlibrc_path=$(python -c \\\"import site, os, fileinput; packages_dir = site.getsitepackages()[0]; print(os.path.join(packages_dir, 'matplotlib', 'mpl-data', 'matplotlibrc'))\\\") \\u0026\\u0026     sed -i 's/^backend      : Qt5Agg/backend      : Agg/' $matplotlibrc_path  \\u0026\\u0026     mkdir -p /root/.jupyter \\u0026\\u0026 touch /root/.jupyter/jupyter_nbconvert_config.py \\u0026\\u0026 touch /root/.jupyter/migrated \\u0026\\u0026     mkdir -p /.jupyter \\u0026\\u0026 touch /.jupyter/jupyter_nbconvert_config.py \\u0026\\u0026 touch /.jupyter/migrated \\u0026\\u0026     sed -i \\\"s/^.*Matplotlib is building the font cache using fc-list.*$/# Warning removed by Kaggle/g\\\" /opt/conda/lib/python3.6/site-packages/matplotlib/font_manager.py \\u0026\\u0026     mkdir -p /etc/ipython/ \\u0026\\u0026 echo \\\"c = get_config(); c.IPKernelApp.matplotlib = 'inline'\\\" \\u003e /etc/ipython/ipython_config.py \\u0026\\u0026     apt-get install -y python-software-properties zip \\u0026\\u0026     echo \\\"deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main\\\" | tee -a /etc/apt/sources.list \\u0026\\u0026     echo \\\"deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main\\\" | tee -a /etc/apt/sources.list \\u0026\\u0026     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886 C857C906 2B90D010 \\u0026\\u0026     apt-get update \\u0026\\u0026     echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \\u0026\\u0026     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections \\u0026\\u0026     apt-get install -y oracle-java8-installer \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir h2o \\u0026\\u0026 cd h2o \\u0026\\u0026     wget http://h2o-release.s3.amazonaws.com/h2o/latest_stable -O latest \\u0026\\u0026     wget --no-check-certificate -i latest -O h2o.zip \\u0026\\u0026 rm latest \\u0026\\u0026     unzip h2o.zip \\u0026\\u0026 rm h2o.zip \\u0026\\u0026 cp h2o-*/h2o.jar . \\u0026\\u0026     pip install `find . -name \\\"*whl\\\"` \\u0026\\u0026     python -c \\\"from keras.models import Sequential\\\"  \\u0026\\u0026     sed -i 's/theano/tensorflow/' /root/.keras/keras.json  \\u0026\\u0026     python -c \\\"from keras.models import Sequential; from keras import backend; print(backend._BACKEND)\\\" \\u0026\\u0026     mkdir -p /tmp/.keras \\u0026\\u0026 cp /root/.keras/keras.json /tmp/.keras \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/scikit-learn/scikit-learn.git \\u0026\\u0026     cd scikit-learn \\u0026\\u0026 python setup.py build \\u0026\\u0026 python setup.py install \\u0026\\u0026     conda install h5py \\u0026\\u0026     pip install biopython \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 wget https://github.com/fukatani/rgf_python/releases/download/0.2.0/rgf1.2.zip \\u0026\\u0026     unzip rgf1.2.zip \\u0026\\u0026 cd rgf1.2 \\u0026\\u0026 make \\u0026\\u0026 mv bin/rgf /usr/local/bin \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/fukatani/rgf_python.git \\u0026\\u0026     cd rgf_python \\u0026\\u0026 sed -i 's/\\\\/opt\\\\/rgf1.2\\\\/bin\\\\/rgf/\\\\/usr\\\\/local\\\\/bin\\\\/rgf/' rgf/rgf.py \\u0026\\u0026     python setup.py install \\u0026\\u0026     pip install pudb \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/scikit-learn-contrib/imbalanced-learn.git \\u0026\\u0026     cd imbalanced-learn \\u0026\\u0026 python setup.py install \\u0026\\u0026     pip install line_profiler \\u0026\\u0026     pip install orderedmultidict \\u0026\\u0026     pip install smhasher \\u0026\\u0026     conda install -y -c bokeh datashader \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/danielhomola/boruta_py.git \\u0026\\u0026     cd boruta_py \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --recursive --depth 1 https://github.com/Microsoft/LightGBM \\u0026\\u0026     cd LightGBM \\u0026\\u0026 mkdir build \\u0026\\u0026 cd build \\u0026\\u0026 cmake .. \\u0026\\u0026 make -j $(nproc) \\u0026\\u0026     cd /usr/local/src/LightGBM/python-package \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone git://github.com/nicolashennetier/pyeconometrics.git \\u0026\\u0026     cd pyeconometrics \\u0026\\u0026 python setup.py install \\u0026\\u0026     apt-get install -y graphviz \\u0026\\u0026 pip install graphviz \\u0026\\u0026     apt-get install -y libgdal1-dev \\u0026\\u0026 GDAL_CONFIG=/usr/bin/gdal-config pip install fiona \\u0026\\u0026 pip install geopandas \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone git://github.com/scikit-learn-contrib/py-earth.git \\u0026\\u0026     cd py-earth \\u0026\\u0026 python setup.py install \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026     conda clean -i -l -t -y \\u0026\\u0026     rm -rf /usr/local/src/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1baf779034f23fc969eedb32cb44c8a3de916bb5f0439e2cb558d37844c340e2\",\"parent\":\"01fa6867490669f50f8a3395abea099d942526bc416e81cb1752e8a7471ee442\",\"created\":\"2017-05-08T03:19:26.953558871Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y libfreetype6-dev \\u0026\\u0026     apt-get install -y libglib2.0-0 libxext6 libsm6 libxrender1 libfontconfig1 --fix-missing \\u0026\\u0026     pip install textblob \\u0026\\u0026     pip install git+git://github.com/amueller/word_cloud.git \\u0026\\u0026     pip install python-igraph \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir xgboost \\u0026\\u0026 cd xgboost \\u0026\\u0026     git clone --depth 1 --recursive https://github.com/dmlc/xgboost.git \\u0026\\u0026 cd xgboost \\u0026\\u0026     make \\u0026\\u0026 cd python-package \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir Lasagne \\u0026\\u0026 cd Lasagne \\u0026\\u0026     git clone --depth 1 https://github.com/Lasagne/Lasagne.git \\u0026\\u0026 cd Lasagne \\u0026\\u0026     pip install -r requirements.txt \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir keras \\u0026\\u0026 cd keras \\u0026\\u0026     git clone --depth 1 https://github.com/fchollet/keras.git \\u0026\\u0026     cd keras \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir keras-rl \\u0026\\u0026 cd keras-rl \\u0026\\u0026     git clone --depth 1 https://github.com/matthiasplappert/keras-rl.git \\u0026\\u0026     cd keras-rl \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026     git clone --depth 1 https://github.com/NervanaSystems/neon.git \\u0026\\u0026     cd neon \\u0026\\u0026 pip install -e . \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir nolearn \\u0026\\u0026 cd nolearn \\u0026\\u0026     git clone --depth 1 https://github.com/dnouri/nolearn.git \\u0026\\u0026 cd nolearn \\u0026\\u0026     echo \\\"x\\\" \\u003e README.rst \\u0026\\u0026 echo \\\"x\\\" \\u003e CHANGES.rst \\u0026\\u0026     python setup.py install \\u0026\\u0026     pip install git+git://github.com/Theano/Theano.git --upgrade --no-deps \\u0026\\u0026     printf \\\"[global]\\\\nbase_compiledir = /tmp/.theano\\\\n\\\" \\u003e /.theanorc \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026  git clone --depth 1 https://github.com/pybrain/pybrain \\u0026\\u0026     cd pybrain \\u0026\\u0026 python setup.py install \\u0026\\u0026     apt-get install -y libatlas-base-dev \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/danielfrg/tsne.git \\u0026\\u0026     cd tsne \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/ztane/python-Levenshtein \\u0026\\u0026     cd python-Levenshtein \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/arogozhnikov/hep_ml.git \\u0026\\u0026     cd hep_ml \\u0026\\u0026 pip install .  \\u0026\\u0026     pip install chainer \\u0026\\u0026     mkdir -p /usr/share/nltk_data \\u0026\\u0026     python -m nltk.downloader -d /usr/share/nltk_data abc alpino averaged_perceptron_tagger     basque_grammars biocreative_ppi bllip_wsj_no_aux book_grammars brown brown_tei cess_cat cess_esp chat80 city_database cmudict comtrans conll2000 conll2002 conll2007 crubadan dependency_treebank europarl_raw floresta gazetteers genesis gutenberg hmm_treebank_pos_tagger ieer inaugural indian jeita kimmo knbc large_grammars lin_thesaurus mac_morpho machado masc_tagged maxent_ne_chunker maxent_treebank_pos_tagger moses_sample movie_reviews mte_teip5 names nps_chat omw opinion_lexicon paradigms pil pl196x porter_test ppattach problem_reports product_reviews_1 product_reviews_2 propbank pros_cons ptb punkt qc reuters rslp rte sample_grammars semcor senseval sentence_polarity sentiwordnet shakespeare sinica_treebank smultron snowball_data spanish_grammars state_union stopwords subjectivity swadesh switchboard tagsets timit toolbox treebank twitter_samples udhr2 udhr unicode_samples universal_tagset universal_treebanks_v20 vader_lexicon verbnet webtext word2vec_sample wordnet wordnet_ic words ycoe \\u0026\\u0026     pip install stop-words \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 python cache_keras_weights.py \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026     rm -rf /usr/local/src/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"01fa6867490669f50f8a3395abea099d942526bc416e81cb1752e8a7471ee442\",\"parent\":\"5a54346be9d1c96d0df76596fe621f0b3af79fc2f39d1c03abb2efadc29a7d83\",\"created\":\"2017-05-08T03:10:13.204858097Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i \\\"s/httpredir.debian.org/debian.uchicago.edu/\\\" /etc/apt/sources.list \\u0026\\u0026     apt-get update \\u0026\\u0026 apt-get install -y build-essential \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026     pip install tensorflow \\u0026\\u0026     apt-get install -y libboost-program-options-dev zlib1g-dev libboost-python-dev \\u0026\\u0026     cd /usr/lib/x86_64-linux-gnu/ \\u0026\\u0026 rm -f libboost_python.a \\u0026\\u0026 rm -f libboost_python.so \\u0026\\u0026     ln -sf libboost_python-py34.so libboost_python.so \\u0026\\u0026 ln -sf libboost_python-py34.a libboost_python.a \\u0026\\u0026     pip install vowpalwabbit \\u0026\\u0026     pip install seaborn python-dateutil dask pytagcloud pyyaml ggplot joblib     husl geopy ml_metrics mne pyshp gensim \\u0026\\u0026     apt-get -y install dbus fontconfig fontconfig-config fonts-dejavu-core fonts-droid ghostscript gsfonts hicolor-icon-theme   libavahi-client3 libavahi-common-data libavahi-common3 libcairo2 libcap-ng0 libcroco3   libcups2 libcupsfilters1 libcupsimage2 libdatrie1 libdbus-1-3 libdjvulibre-text libdjvulibre21 libfftw3-double3 libfontconfig1   libfreetype6 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgomp1 libgraphite2-3 libgs9 libgs9-common libharfbuzz0b libijs-0.35   libilmbase6 libjasper1 libjbig0 libjbig2dec0 libjpeg62-turbo liblcms2-2 liblqr-1-0 libltdl7 libmagickcore-6.q16-2   libmagickcore-6.q16-2-extra libmagickwand-6.q16-2 libnetpbm10 libopenexr6 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0   libpaper-utils libpaper1 libpixman-1-0 libpng12-0 librsvg2-2 librsvg2-common libthai-data libthai0 libtiff5 libwmf0.2-7   libxcb-render0 libxcb-shm0 netpbm poppler-data p7zip-full \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026     wget http://www.imagemagick.org/download/ImageMagick.tar.gz \\u0026\\u0026     tar xzf ImageMagick.tar.gz \\u0026\\u0026 cd `ls -d ImageMagick-*` \\u0026\\u0026 pwd \\u0026\\u0026 ls -al \\u0026\\u0026 ./configure \\u0026\\u0026     make -j $(nproc) \\u0026\\u0026 make install \\u0026\\u0026     cd ../ \\u0026\\u0026 rm -rf ImageMagick* \\u0026\\u0026     apt-get -y install libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev \\u0026\\u0026     apt-get -y install libtbb2 libtbb-dev libjpeg-dev libtiff-dev libjasper-dev \\u0026\\u0026     apt-get -y install cmake \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/Itseez/opencv.git \\u0026\\u0026     cd opencv \\u0026\\u0026     mkdir build \\u0026\\u0026 cd build \\u0026\\u0026     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_FFMPEG=OFF -D WITH_V4L=ON -D WITH_QT=OFF -D WITH_OPENGL=ON -D PYTHON3_LIBRARY=/opt/conda/lib/libpython3.6m.so -D PYTHON3_INCLUDE_DIR=/opt/conda/include/python3.6m/ -D PYTHON_LIBRARY=/opt/conda/lib/libpython3.6m.so -D PYTHON_INCLUDE_DIR=/opt/conda/include/python3.6m/ -D BUILD_PNG=TRUE .. \\u0026\\u0026     make -j $(nproc) \\u0026\\u0026 make install \\u0026\\u0026     echo \\\"/usr/local/lib/python3.6/site-packages\\\" \\u003e /etc/ld.so.conf.d/opencv.conf \\u0026\\u0026 ldconfig \\u0026\\u0026     cp /usr/local/lib/python3.6/site-packages/cv2.cpython-36m-x86_64-linux-gnu.so /opt/conda/lib/python3.6/site-packages/ \\u0026\\u0026     rm -rf /usr/local/src/opencv \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a54346be9d1c96d0df76596fe621f0b3af79fc2f39d1c03abb2efadc29a7d83\",\"parent\":\"5a5d3688cc32e5fe649570aafbe18e9a7651de8ec7fe376f249bb037ab53ec63\",\"created\":\"2017-05-08T02:44:07.251655358Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:98a4dc80e700e39c19ad8116202a47cace8fd74d675482496678a66d376b38c1 in /usr/local/src/cache_keras_weights.py \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a5d3688cc32e5fe649570aafbe18e9a7651de8ec7fe376f249bb037ab53ec63\",\"parent\":\"651adbd6727cbfb8efd723a980c94ce52ebe50590d8a4d7ee7008b0ec7cc5e73\",\"created\":\"2017-03-13T18:37:47.210647393Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"651adbd6727cbfb8efd723a980c94ce52ebe50590d8a4d7ee7008b0ec7cc5e73\",\"parent\":\"9096c857ea3f018760170eff15469e1c81353d2e4846b7c2e1098b8868252822\",\"created\":\"2017-03-13T18:37:24.814784762Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9096c857ea3f018760170eff15469e1c81353d2e4846b7c2e1098b8868252822\",\"parent\":\"f261c8326d98c3cbfe5a4415285328572870635b187b180695f39296e3f2af1c\",\"created\":\"2017-03-13T18:37:01.111839025Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f261c8326d98c3cbfe5a4415285328572870635b187b180695f39296e3f2af1c\",\"parent\":\"39828a9579d6b2a275dc3d22a9a06a91472091b2fad85d82c902e30730732dd5\",\"created\":\"2017-03-13T18:36:40.873000279Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y curl grep sed dpkg \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39828a9579d6b2a275dc3d22a9a06a91472091b2fad85d82c902e30730732dd5\",\"parent\":\"7d2d07d1d8a8e4ba3670bb1c2fd38552ab745ae3b000918e9b515d9879d8cc47\",\"created\":\"2017-03-13T18:36:09.318819976Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh -O ~/anaconda.sh \\u0026\\u0026     /bin/bash ~/anaconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/anaconda.sh\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d2d07d1d8a8e4ba3670bb1c2fd38552ab745ae3b000918e9b515d9879d8cc47\",\"parent\":\"1b7d075bc4bb2f9ff4e25c08c1f0c3c49f6a818022ab7d9aa60305c253c71d25\",\"created\":\"2017-03-13T18:28:33.177894271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b7d075bc4bb2f9ff4e25c08c1f0c3c49f6a818022ab7d9aa60305c253c71d25\",\"parent\":\"c88a5495ae411b77be49053271810a0900462867963b7188bec4ab7fd9dd73d7\",\"created\":\"2017-03-13T18:26:12.727523314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C.UTF-8\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c88a5495ae411b77be49053271810a0900462867963b7188bec4ab7fd9dd73d7\",\"parent\":\"307524089b335f318b3c2ab298b39cf0328644271f2ee4456f806f219b658841\",\"created\":\"2017-03-13T18:26:09.959502729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"307524089b335f318b3c2ab298b39cf0328644271f2ee4456f806f219b658841\",\"parent\":\"c289280e4ecc29506dea24a1f11222d427b187a49a0da7046ea788b01ad39440\",\"created\":\"2016-08-30T21:00:52.158026785Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c289280e4ecc29506dea24a1f11222d427b187a49a0da7046ea788b01ad39440\",\"created\":\"2016-08-30T21:00:51.727890412Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5fc5f98b99ada380a10a0acb2709b2bac77cf00cb9f5063d06508c8ab74b7f19"
+            },
+            {
+                "blobSum": "sha256:1624e9ab25e9b617c97a1d1a00bbb84582736c8da429d997ecee39b9ebe4b9eb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6a7ee8d9a6c42ecef388451ee45a8179d942fc8972e75934fd9c0257ae746b46"
+            },
+            {
+                "blobSum": "sha256:14b12f11f14d7d848d9bbc64eeaa130f616827479b994f8c5e158e8b7377b3bd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f30743ed3c1099394db7be5d77886135786da4fb80c99471a62ce05abfdd544a"
+            },
+            {
+                "blobSum": "sha256:b9eca1028eca6ff3ed803fb8b6f4442e61339283a3faaface389f0934f0abfec"
+            },
+            {
+                "blobSum": "sha256:d1ca8d21012d7a9be80c6058355e374ce4537cc883c61ace91fb9a1ed54d879f"
+            },
+            {
+                "blobSum": "sha256:ce6605d827c225fe1732d894743b5e64cd0d761f93d43fb26e9c043ff27e848d"
+            },
+            {
+                "blobSum": "sha256:ed846358cf371dbf77dafa38f97277852809249338d4922e9cd96a3e45975a94"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0947a413f98bf8a5e4188a073a57b5da0a35041ce700bd85ab56393674454d06"
+            },
+            {
+                "blobSum": "sha256:26a23cde1ff78566afdd102ec0063b3901d502552288c7f684ff4f5fa2c0485d"
+            },
+            {
+                "blobSum": "sha256:26e5bbd29116286f5e4eeee19019f539ede14182212708247ab6dadac77e61ab"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f"
+            }
+        ],
+        "name": "sharif1093/python-datascience-docker",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMxNjkzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTE6NTVaIn0",
+                "signature": "MzJXm8-F02DG_LiGwNd02jeBpWOJFFwir9xlOKX5lnhYGJKtY2Ja8x8om0CeqOgA3vAalQ0j8yDYk3_Plo5C6g",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "GPidct-zVsMl1rFGkejTmG554XLRLaVCVqL4nV1zUCc",
+                        "kid": "2XCT:4V4N:WRTN:GFZV:FAIV:WPKE:RPEC:7FXL:N2PO:BP7I:C5YB:XWE7",
+                        "x": "fcpoqUUb-BqBsUFoNRteVxWQooO6QUKed7neS--Blyg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"c5ff346549e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"TINI_VERSION=v0.6.0\"],\"Cmd\":[\"jupyter\",\"notebook\"],\"ArgsEscaped\":true,\"Image\":\"sha256:72df89f2a4ec37bf09ee93fc0d97d4d377a994819cdbcfa4d197ea0d2ac593d4\",\"Volumes\":null,\"WorkingDir\":\"/tmp/working\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"1578df47dd0c5d78687ccd6c9f4c68120d6de8d13ac59f16b016d51f9b9fcf6b\",\"container_config\":{\"Hostname\":\"c5ff346549e7\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"6006/tcp\":{},\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"LC_ALL=C.UTF-8\",\"TINI_VERSION=v0.6.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"jupyter\\\" \\\"notebook\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:72df89f2a4ec37bf09ee93fc0d97d4d377a994819cdbcfa4d197ea0d2ac593d4\",\"Volumes\":null,\"WorkingDir\":\"/tmp/working\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-08T04:40:24.945793941Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"09ca02866e8637301d00f9f683514199aa3a87a122a40e37757eafa65e257421\",\"os\":\"linux\",\"parent\":\"25be04ed12b68dd4fbac4628ef129602903bbf823a6516007c8fa41e2d7424e9\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25be04ed12b68dd4fbac4628ef129602903bbf823a6516007c8fa41e2d7424e9\",\"parent\":\"031a6f4a5937b58bc5962da9599317021ca6c593b409e0c7071a74ca34a79706\",\"created\":\"2017-05-08T04:39:47.89071273Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"031a6f4a5937b58bc5962da9599317021ca6c593b409e0c7071a74ca34a79706\",\"parent\":\"87df96d98e3cc3adc7c52d29668bdc8eed4464c6da97405f55cb496584e4caaa\",\"created\":\"2017-05-08T04:39:09.677163058Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 6006/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"87df96d98e3cc3adc7c52d29668bdc8eed4464c6da97405f55cb496584e4caaa\",\"parent\":\"637afc3473c65c026ee6595ff841901331e8149b7ecf8359d957fc65435219c2\",\"created\":\"2017-05-08T04:38:36.430813893Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /tmp/working\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"637afc3473c65c026ee6595ff841901331e8149b7ecf8359d957fc65435219c2\",\"parent\":\"ba90eda53d3611a29202dd0d04f09bb1dabf50c9488599b3354e88eb387713cd\",\"created\":\"2017-05-08T04:38:03.052834754Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:19744792ebe95868498762afe48247a414a6b47efc96c5669e1c194f06002d49 in /root/.jupyter/jupyter_notebook_config.py \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ba90eda53d3611a29202dd0d04f09bb1dabf50c9488599b3354e88eb387713cd\",\"parent\":\"e41a02e35a52c2c910791aa54ccd0ff28acd2fdf5afff8704145a75f7c2c7c82\",\"created\":\"2017-05-08T04:37:22.172276097Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e41a02e35a52c2c910791aa54ccd0ff28acd2fdf5afff8704145a75f7c2c7c82\",\"parent\":\"043eb0302df658a9472417148020d7871248df5e46d8cc6091e9902027e48950\",\"created\":\"2017-05-08T04:36:46.632458475Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /usr/bin/tini\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"043eb0302df658a9472417148020d7871248df5e46d8cc6091e9902027e48950\",\"parent\":\"90bbb7378cc5251bc20690d4b4cf38185cc9a93df1f0e2e729fc88b0dba50856\",\"created\":\"2017-05-08T04:36:09.347215271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD tarsum.v1+sha256:2df2819392b034d6a57f05b735739dded700345edbc5abb4a734d2cdeeb3adab in /usr/bin/tini \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"90bbb7378cc5251bc20690d4b4cf38185cc9a93df1f0e2e729fc88b0dba50856\",\"parent\":\"60c36eebea6314d2fa593cd1e2e3865386df8e509441ba92713da635610275dc\",\"created\":\"2017-05-08T04:35:28.203879997Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TINI_VERSION=v0.6.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"60c36eebea6314d2fa593cd1e2e3865386df8e509441ba92713da635610275dc\",\"parent\":\"61687d0b9e3b117ec890f12284e76a46fa6ba55189111046288523f19b3ee11d\",\"created\":\"2017-05-08T04:06:11.778933193Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install --upgrade mpld3 \\u0026\\u0026     pip install mplleaflet \\u0026\\u0026     pip install gpxpy \\u0026\\u0026     pip install arrow \\u0026\\u0026     pip install sexmachine  \\u0026\\u0026     pip install Geohash \\u0026\\u0026     pip install deap \\u0026\\u0026     pip install tpot \\u0026\\u0026     pip install haversine \\u0026\\u0026     pip install toolz cytoolz \\u0026\\u0026     pip install sacred \\u0026\\u0026     pip install plotly \\u0026\\u0026     pip install git+https://github.com/nicta/dora.git \\u0026\\u0026     pip install git+https://github.com/hyperopt/hyperopt.git \\u0026\\u0026     pip install git+https://github.com/tflearn/tflearn.git \\u0026\\u0026     pip install fitter \\u0026\\u0026     pip install langid \\u0026\\u0026     pip install delorean \\u0026\\u0026     pip install trueskill \\u0026\\u0026     pip install heamy \\u0026\\u0026     pip install vida \\u0026\\u0026     pip install missingno \\u0026\\u0026     pip install pandas-profiling \\u0026\\u0026     pip install s2sphere \\u0026\\u0026     pip install git+https://github.com/fmfn/BayesianOptimization.git \\u0026\\u0026     pip install matplotlib-venn \\u0026\\u0026     pip install pyldavis \\u0026\\u0026     pip install git+git://github.com/rasbt/mlxtend.git#egg=mlxtend \\u0026\\u0026     pip install altair \\u0026\\u0026     pip install pystan \\u0026\\u0026     pip install ImageHash \\u0026\\u0026     pip install git+https://github.com/hammerlab/fancyimpute.git \\u0026\\u0026     pip install git+https://github.com/pymc-devs/pymc3 \\u0026\\u0026     pip install tifffile \\u0026\\u0026     pip install spectral \\u0026\\u0026     pip install descartes \\u0026\\u0026     pip install geojson \\u0026\\u0026     pip install pysal \\u0026\\u0026     pip install pyflux \\u0026\\u0026     pip install terminalplot \\u0026\\u0026     pip install raccoon \\u0026\\u0026     pip install pydicom \\u0026\\u0026     pip install wavio \\u0026\\u0026     pip install SimpleITK \\u0026\\u0026     pip install hmmlearn \\u0026\\u0026     pip install bayespy \\u0026\\u0026     pip install gplearn \\u0026\\u0026     pip install PyAstronomy \\u0026\\u0026     conda install pytorch torchvision -c soumith \\u0026\\u0026     pip install squarify \\u0026\\u0026     pip install fuzzywuzzy \\u0026\\u0026     pip install python-louvain \\u0026\\u0026     pip install pyexcel-ods \\u0026\\u0026     pip install sklearn-pandas \\u0026\\u0026     pip install stemming \\u0026\\u0026     pip install fbprophet \\u0026\\u0026     conda install -y -c conda-forge -c ioam holoviews \\u0026\\u0026     pip install git+https://github.com/ioam/geoviews.git \\u0026\\u0026     pip install hypertools \\u0026\\u0026     pip install nxviz \\u0026\\u0026     pip install py_stringsimjoin \\u0026\\u0026     pip install speedml \\u0026\\u0026     pip install nibabel \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     jupyter nbextension install --user --py vega\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"61687d0b9e3b117ec890f12284e76a46fa6ba55189111046288523f19b3ee11d\",\"parent\":\"1baf779034f23fc969eedb32cb44c8a3de916bb5f0439e2cb558d37844c340e2\",\"created\":\"2017-05-08T03:52:31.263387721Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     rm /opt/conda/lib/libstdc++* \\u0026\\u0026 rm /opt/conda/lib/libgomp.* \\u0026\\u0026     ln -s /usr/lib/x86_64-linux-gnu/libgomp.so.1 /opt/conda/lib/libgomp.so.1 \\u0026\\u0026     ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /opt/conda/lib/libstdc++.so.6 \\u0026\\u0026     apt-get -y install libgeos-dev \\u0026\\u0026     pip install pyshp pyproj \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/matplotlib/basemap.git \\u0026\\u0026     export GEOS_DIR=/usr/local \\u0026\\u0026     cd basemap \\u0026\\u0026 python setup.py install \\u0026\\u0026     apt-get -y install zlib1g-dev liblcms2-dev libwebp-dev \\u0026\\u0026     pip install Pillow \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/vitruvianscience/opendeep.git \\u0026\\u0026     cd opendeep \\u0026\\u0026 python setup.py develop  \\u0026\\u0026     apt-get -y install libsasl2-dev \\u0026\\u0026     apt-get install -y libpq-dev \\u0026\\u0026     pip install ibis-framework \\u0026\\u0026     yes | conda install proj4 \\u0026\\u0026     pip install packaging \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/Toblerity/Shapely.git \\u0026\\u0026     cd Shapely \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/SciTools/cartopy.git \\u0026\\u0026     cd cartopy \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --recursive https://github.com/dmlc/mxnet \\u0026\\u0026     cd /usr/local/src/mxnet \\u0026\\u0026 cp make/config.mk . \\u0026\\u0026     sed -i 's/ADD_LDFLAGS =/ADD_LDFLAGS = -lstdc++/' config.mk \\u0026\\u0026     make \\u0026\\u0026 cd python \\u0026\\u0026 python setup.py install \\u0026\\u0026     matplotlibrc_path=$(python -c \\\"import site, os, fileinput; packages_dir = site.getsitepackages()[0]; print(os.path.join(packages_dir, 'matplotlib', 'mpl-data', 'matplotlibrc'))\\\") \\u0026\\u0026     sed -i 's/^backend      : Qt5Agg/backend      : Agg/' $matplotlibrc_path  \\u0026\\u0026     mkdir -p /root/.jupyter \\u0026\\u0026 touch /root/.jupyter/jupyter_nbconvert_config.py \\u0026\\u0026 touch /root/.jupyter/migrated \\u0026\\u0026     mkdir -p /.jupyter \\u0026\\u0026 touch /.jupyter/jupyter_nbconvert_config.py \\u0026\\u0026 touch /.jupyter/migrated \\u0026\\u0026     sed -i \\\"s/^.*Matplotlib is building the font cache using fc-list.*$/# Warning removed by Kaggle/g\\\" /opt/conda/lib/python3.6/site-packages/matplotlib/font_manager.py \\u0026\\u0026     mkdir -p /etc/ipython/ \\u0026\\u0026 echo \\\"c = get_config(); c.IPKernelApp.matplotlib = 'inline'\\\" \\u003e /etc/ipython/ipython_config.py \\u0026\\u0026     apt-get install -y python-software-properties zip \\u0026\\u0026     echo \\\"deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main\\\" | tee -a /etc/apt/sources.list \\u0026\\u0026     echo \\\"deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main\\\" | tee -a /etc/apt/sources.list \\u0026\\u0026     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886 C857C906 2B90D010 \\u0026\\u0026     apt-get update \\u0026\\u0026     echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \\u0026\\u0026     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections \\u0026\\u0026     apt-get install -y oracle-java8-installer \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir h2o \\u0026\\u0026 cd h2o \\u0026\\u0026     wget http://h2o-release.s3.amazonaws.com/h2o/latest_stable -O latest \\u0026\\u0026     wget --no-check-certificate -i latest -O h2o.zip \\u0026\\u0026 rm latest \\u0026\\u0026     unzip h2o.zip \\u0026\\u0026 rm h2o.zip \\u0026\\u0026 cp h2o-*/h2o.jar . \\u0026\\u0026     pip install `find . -name \\\"*whl\\\"` \\u0026\\u0026     python -c \\\"from keras.models import Sequential\\\"  \\u0026\\u0026     sed -i 's/theano/tensorflow/' /root/.keras/keras.json  \\u0026\\u0026     python -c \\\"from keras.models import Sequential; from keras import backend; print(backend._BACKEND)\\\" \\u0026\\u0026     mkdir -p /tmp/.keras \\u0026\\u0026 cp /root/.keras/keras.json /tmp/.keras \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/scikit-learn/scikit-learn.git \\u0026\\u0026     cd scikit-learn \\u0026\\u0026 python setup.py build \\u0026\\u0026 python setup.py install \\u0026\\u0026     conda install h5py \\u0026\\u0026     pip install biopython \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 wget https://github.com/fukatani/rgf_python/releases/download/0.2.0/rgf1.2.zip \\u0026\\u0026     unzip rgf1.2.zip \\u0026\\u0026 cd rgf1.2 \\u0026\\u0026 make \\u0026\\u0026 mv bin/rgf /usr/local/bin \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/fukatani/rgf_python.git \\u0026\\u0026     cd rgf_python \\u0026\\u0026 sed -i 's/\\\\/opt\\\\/rgf1.2\\\\/bin\\\\/rgf/\\\\/usr\\\\/local\\\\/bin\\\\/rgf/' rgf/rgf.py \\u0026\\u0026     python setup.py install \\u0026\\u0026     pip install pudb \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/scikit-learn-contrib/imbalanced-learn.git \\u0026\\u0026     cd imbalanced-learn \\u0026\\u0026 python setup.py install \\u0026\\u0026     pip install line_profiler \\u0026\\u0026     pip install orderedmultidict \\u0026\\u0026     pip install smhasher \\u0026\\u0026     conda install -y -c bokeh datashader \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone https://github.com/danielhomola/boruta_py.git \\u0026\\u0026     cd boruta_py \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --recursive --depth 1 https://github.com/Microsoft/LightGBM \\u0026\\u0026     cd LightGBM \\u0026\\u0026 mkdir build \\u0026\\u0026 cd build \\u0026\\u0026 cmake .. \\u0026\\u0026 make -j $(nproc) \\u0026\\u0026     cd /usr/local/src/LightGBM/python-package \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone git://github.com/nicolashennetier/pyeconometrics.git \\u0026\\u0026     cd pyeconometrics \\u0026\\u0026 python setup.py install \\u0026\\u0026     apt-get install -y graphviz \\u0026\\u0026 pip install graphviz \\u0026\\u0026     apt-get install -y libgdal1-dev \\u0026\\u0026 GDAL_CONFIG=/usr/bin/gdal-config pip install fiona \\u0026\\u0026 pip install geopandas \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone git://github.com/scikit-learn-contrib/py-earth.git \\u0026\\u0026     cd py-earth \\u0026\\u0026 python setup.py install \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026     conda clean -i -l -t -y \\u0026\\u0026     rm -rf /usr/local/src/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1baf779034f23fc969eedb32cb44c8a3de916bb5f0439e2cb558d37844c340e2\",\"parent\":\"01fa6867490669f50f8a3395abea099d942526bc416e81cb1752e8a7471ee442\",\"created\":\"2017-05-08T03:19:26.953558871Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y libfreetype6-dev \\u0026\\u0026     apt-get install -y libglib2.0-0 libxext6 libsm6 libxrender1 libfontconfig1 --fix-missing \\u0026\\u0026     pip install textblob \\u0026\\u0026     pip install git+git://github.com/amueller/word_cloud.git \\u0026\\u0026     pip install python-igraph \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir xgboost \\u0026\\u0026 cd xgboost \\u0026\\u0026     git clone --depth 1 --recursive https://github.com/dmlc/xgboost.git \\u0026\\u0026 cd xgboost \\u0026\\u0026     make \\u0026\\u0026 cd python-package \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir Lasagne \\u0026\\u0026 cd Lasagne \\u0026\\u0026     git clone --depth 1 https://github.com/Lasagne/Lasagne.git \\u0026\\u0026 cd Lasagne \\u0026\\u0026     pip install -r requirements.txt \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir keras \\u0026\\u0026 cd keras \\u0026\\u0026     git clone --depth 1 https://github.com/fchollet/keras.git \\u0026\\u0026     cd keras \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir keras-rl \\u0026\\u0026 cd keras-rl \\u0026\\u0026     git clone --depth 1 https://github.com/matthiasplappert/keras-rl.git \\u0026\\u0026     cd keras-rl \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026     git clone --depth 1 https://github.com/NervanaSystems/neon.git \\u0026\\u0026     cd neon \\u0026\\u0026 pip install -e . \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 mkdir nolearn \\u0026\\u0026 cd nolearn \\u0026\\u0026     git clone --depth 1 https://github.com/dnouri/nolearn.git \\u0026\\u0026 cd nolearn \\u0026\\u0026     echo \\\"x\\\" \\u003e README.rst \\u0026\\u0026 echo \\\"x\\\" \\u003e CHANGES.rst \\u0026\\u0026     python setup.py install \\u0026\\u0026     pip install git+git://github.com/Theano/Theano.git --upgrade --no-deps \\u0026\\u0026     printf \\\"[global]\\\\nbase_compiledir = /tmp/.theano\\\\n\\\" \\u003e /.theanorc \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026  git clone --depth 1 https://github.com/pybrain/pybrain \\u0026\\u0026     cd pybrain \\u0026\\u0026 python setup.py install \\u0026\\u0026     apt-get install -y libatlas-base-dev \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/danielfrg/tsne.git \\u0026\\u0026     cd tsne \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/ztane/python-Levenshtein \\u0026\\u0026     cd python-Levenshtein \\u0026\\u0026 python setup.py install \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/arogozhnikov/hep_ml.git \\u0026\\u0026     cd hep_ml \\u0026\\u0026 pip install .  \\u0026\\u0026     pip install chainer \\u0026\\u0026     mkdir -p /usr/share/nltk_data \\u0026\\u0026     python -m nltk.downloader -d /usr/share/nltk_data abc alpino averaged_perceptron_tagger     basque_grammars biocreative_ppi bllip_wsj_no_aux book_grammars brown brown_tei cess_cat cess_esp chat80 city_database cmudict comtrans conll2000 conll2002 conll2007 crubadan dependency_treebank europarl_raw floresta gazetteers genesis gutenberg hmm_treebank_pos_tagger ieer inaugural indian jeita kimmo knbc large_grammars lin_thesaurus mac_morpho machado masc_tagged maxent_ne_chunker maxent_treebank_pos_tagger moses_sample movie_reviews mte_teip5 names nps_chat omw opinion_lexicon paradigms pil pl196x porter_test ppattach problem_reports product_reviews_1 product_reviews_2 propbank pros_cons ptb punkt qc reuters rslp rte sample_grammars semcor senseval sentence_polarity sentiwordnet shakespeare sinica_treebank smultron snowball_data spanish_grammars state_union stopwords subjectivity swadesh switchboard tagsets timit toolbox treebank twitter_samples udhr2 udhr unicode_samples universal_tagset universal_treebanks_v20 vader_lexicon verbnet webtext word2vec_sample wordnet wordnet_ic words ycoe \\u0026\\u0026     pip install stop-words \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 python cache_keras_weights.py \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean \\u0026\\u0026     rm -rf /usr/local/src/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"01fa6867490669f50f8a3395abea099d942526bc416e81cb1752e8a7471ee442\",\"parent\":\"5a54346be9d1c96d0df76596fe621f0b3af79fc2f39d1c03abb2efadc29a7d83\",\"created\":\"2017-05-08T03:10:13.204858097Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i \\\"s/httpredir.debian.org/debian.uchicago.edu/\\\" /etc/apt/sources.list \\u0026\\u0026     apt-get update \\u0026\\u0026 apt-get install -y build-essential \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026     pip install tensorflow \\u0026\\u0026     apt-get install -y libboost-program-options-dev zlib1g-dev libboost-python-dev \\u0026\\u0026     cd /usr/lib/x86_64-linux-gnu/ \\u0026\\u0026 rm -f libboost_python.a \\u0026\\u0026 rm -f libboost_python.so \\u0026\\u0026     ln -sf libboost_python-py34.so libboost_python.so \\u0026\\u0026 ln -sf libboost_python-py34.a libboost_python.a \\u0026\\u0026     pip install vowpalwabbit \\u0026\\u0026     pip install seaborn python-dateutil dask pytagcloud pyyaml ggplot joblib     husl geopy ml_metrics mne pyshp gensim \\u0026\\u0026     apt-get -y install dbus fontconfig fontconfig-config fonts-dejavu-core fonts-droid ghostscript gsfonts hicolor-icon-theme   libavahi-client3 libavahi-common-data libavahi-common3 libcairo2 libcap-ng0 libcroco3   libcups2 libcupsfilters1 libcupsimage2 libdatrie1 libdbus-1-3 libdjvulibre-text libdjvulibre21 libfftw3-double3 libfontconfig1   libfreetype6 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common libgomp1 libgraphite2-3 libgs9 libgs9-common libharfbuzz0b libijs-0.35   libilmbase6 libjasper1 libjbig0 libjbig2dec0 libjpeg62-turbo liblcms2-2 liblqr-1-0 libltdl7 libmagickcore-6.q16-2   libmagickcore-6.q16-2-extra libmagickwand-6.q16-2 libnetpbm10 libopenexr6 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0   libpaper-utils libpaper1 libpixman-1-0 libpng12-0 librsvg2-2 librsvg2-common libthai-data libthai0 libtiff5 libwmf0.2-7   libxcb-render0 libxcb-shm0 netpbm poppler-data p7zip-full \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026     wget http://www.imagemagick.org/download/ImageMagick.tar.gz \\u0026\\u0026     tar xzf ImageMagick.tar.gz \\u0026\\u0026 cd `ls -d ImageMagick-*` \\u0026\\u0026 pwd \\u0026\\u0026 ls -al \\u0026\\u0026 ./configure \\u0026\\u0026     make -j $(nproc) \\u0026\\u0026 make install \\u0026\\u0026     cd ../ \\u0026\\u0026 rm -rf ImageMagick* \\u0026\\u0026     apt-get -y install libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev \\u0026\\u0026     apt-get -y install libtbb2 libtbb-dev libjpeg-dev libtiff-dev libjasper-dev \\u0026\\u0026     apt-get -y install cmake \\u0026\\u0026     cd /usr/local/src \\u0026\\u0026 git clone --depth 1 https://github.com/Itseez/opencv.git \\u0026\\u0026     cd opencv \\u0026\\u0026     mkdir build \\u0026\\u0026 cd build \\u0026\\u0026     cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D WITH_FFMPEG=OFF -D WITH_V4L=ON -D WITH_QT=OFF -D WITH_OPENGL=ON -D PYTHON3_LIBRARY=/opt/conda/lib/libpython3.6m.so -D PYTHON3_INCLUDE_DIR=/opt/conda/include/python3.6m/ -D PYTHON_LIBRARY=/opt/conda/lib/libpython3.6m.so -D PYTHON_INCLUDE_DIR=/opt/conda/include/python3.6m/ -D BUILD_PNG=TRUE .. \\u0026\\u0026     make -j $(nproc) \\u0026\\u0026 make install \\u0026\\u0026     echo \\\"/usr/local/lib/python3.6/site-packages\\\" \\u003e /etc/ld.so.conf.d/opencv.conf \\u0026\\u0026 ldconfig \\u0026\\u0026     cp /usr/local/lib/python3.6/site-packages/cv2.cpython-36m-x86_64-linux-gnu.so /opt/conda/lib/python3.6/site-packages/ \\u0026\\u0026     rm -rf /usr/local/src/opencv \\u0026\\u0026     rm -rf /root/.cache/pip/* \\u0026\\u0026     apt-get autoremove -y \\u0026\\u0026 apt-get clean\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a54346be9d1c96d0df76596fe621f0b3af79fc2f39d1c03abb2efadc29a7d83\",\"parent\":\"5a5d3688cc32e5fe649570aafbe18e9a7651de8ec7fe376f249bb037ab53ec63\",\"created\":\"2017-05-08T02:44:07.251655358Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:98a4dc80e700e39c19ad8116202a47cace8fd74d675482496678a66d376b38c1 in /usr/local/src/cache_keras_weights.py \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a5d3688cc32e5fe649570aafbe18e9a7651de8ec7fe376f249bb037ab53ec63\",\"parent\":\"651adbd6727cbfb8efd723a980c94ce52ebe50590d8a4d7ee7008b0ec7cc5e73\",\"created\":\"2017-03-13T18:37:47.210647393Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"651adbd6727cbfb8efd723a980c94ce52ebe50590d8a4d7ee7008b0ec7cc5e73\",\"parent\":\"9096c857ea3f018760170eff15469e1c81353d2e4846b7c2e1098b8868252822\",\"created\":\"2017-03-13T18:37:24.814784762Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/tini\\\" \\\"--\\\"]\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9096c857ea3f018760170eff15469e1c81353d2e4846b7c2e1098b8868252822\",\"parent\":\"f261c8326d98c3cbfe5a4415285328572870635b187b180695f39296e3f2af1c\",\"created\":\"2017-03-13T18:37:01.111839025Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f261c8326d98c3cbfe5a4415285328572870635b187b180695f39296e3f2af1c\",\"parent\":\"39828a9579d6b2a275dc3d22a9a06a91472091b2fad85d82c902e30730732dd5\",\"created\":\"2017-03-13T18:36:40.873000279Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y curl grep sed dpkg \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"39828a9579d6b2a275dc3d22a9a06a91472091b2fad85d82c902e30730732dd5\",\"parent\":\"7d2d07d1d8a8e4ba3670bb1c2fd38552ab745ae3b000918e9b515d9879d8cc47\",\"created\":\"2017-03-13T18:36:09.318819976Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh -O ~/anaconda.sh \\u0026\\u0026     /bin/bash ~/anaconda.sh -b -p /opt/conda \\u0026\\u0026     rm ~/anaconda.sh\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7d2d07d1d8a8e4ba3670bb1c2fd38552ab745ae3b000918e9b515d9879d8cc47\",\"parent\":\"1b7d075bc4bb2f9ff4e25c08c1f0c3c49f6a818022ab7d9aa60305c253c71d25\",\"created\":\"2017-03-13T18:28:33.177894271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1b7d075bc4bb2f9ff4e25c08c1f0c3c49f6a818022ab7d9aa60305c253c71d25\",\"parent\":\"c88a5495ae411b77be49053271810a0900462867963b7188bec4ab7fd9dd73d7\",\"created\":\"2017-03-13T18:26:12.727523314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8 LC_ALL=C.UTF-8\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c88a5495ae411b77be49053271810a0900462867963b7188bec4ab7fd9dd73d7\",\"parent\":\"307524089b335f318b3c2ab298b39cf0328644271f2ee4456f806f219b658841\",\"created\":\"2017-03-13T18:26:09.959502729Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"]},\"author\":\"Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"307524089b335f318b3c2ab298b39cf0328644271f2ee4456f806f219b658841\",\"parent\":\"c289280e4ecc29506dea24a1f11222d427b187a49a0da7046ea788b01ad39440\",\"created\":\"2016-08-30T21:00:52.158026785Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c289280e4ecc29506dea24a1f11222d427b187a49a0da7046ea788b01ad39440\",\"created\":\"2016-08-30T21:00:51.727890412Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f2453b914e7e026efd39c6321c7b14509b6d09dd3cf5567a8f6bd38466e06954 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5fc5f98b99ada380a10a0acb2709b2bac77cf00cb9f5063d06508c8ab74b7f19"
+            },
+            {
+                "blobSum": "sha256:1624e9ab25e9b617c97a1d1a00bbb84582736c8da429d997ecee39b9ebe4b9eb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6a7ee8d9a6c42ecef388451ee45a8179d942fc8972e75934fd9c0257ae746b46"
+            },
+            {
+                "blobSum": "sha256:14b12f11f14d7d848d9bbc64eeaa130f616827479b994f8c5e158e8b7377b3bd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f30743ed3c1099394db7be5d77886135786da4fb80c99471a62ce05abfdd544a"
+            },
+            {
+                "blobSum": "sha256:b9eca1028eca6ff3ed803fb8b6f4442e61339283a3faaface389f0934f0abfec"
+            },
+            {
+                "blobSum": "sha256:d1ca8d21012d7a9be80c6058355e374ce4537cc883c61ace91fb9a1ed54d879f"
+            },
+            {
+                "blobSum": "sha256:ce6605d827c225fe1732d894743b5e64cd0d761f93d43fb26e9c043ff27e848d"
+            },
+            {
+                "blobSum": "sha256:ed846358cf371dbf77dafa38f97277852809249338d4922e9cd96a3e45975a94"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0947a413f98bf8a5e4188a073a57b5da0a35041ce700bd85ab56393674454d06"
+            },
+            {
+                "blobSum": "sha256:26a23cde1ff78566afdd102ec0063b3901d502552288c7f684ff4f5fa2c0485d"
+            },
+            {
+                "blobSum": "sha256:26e5bbd29116286f5e4eeee19019f539ede14182212708247ab6dadac77e61ab"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:8ad8b3f87b378cfae583fef34e47a3c9203847d779961b7351cbf786af0bc09f"
+            }
+        ],
+        "name": "sharif1093/python-datascience-docker",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMxNjkzLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTE6NTdaIn0",
+                "signature": "wK_8AszR25yOHF05_tPKgR4GeAD0auH4LEbmuQw-szrx5eMVkbbn7jptKDylcPmVj12Rm7lxEH6Jk3phH3hdJg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "pNNCRvC2AjRAdZuIaArtMxEyiDGTyUiuPxfoHmzso0U",
+                        "kid": "REPN:HL6K:4QXN:AGOX:OFOL:EXN5:ZICU:TSB4:D6VB:WIBY:7GT5:NVSK",
+                        "x": "X4ly1uDiAUQNkFZnFUHMT8znFZu1fTYRokTc5f69mGg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

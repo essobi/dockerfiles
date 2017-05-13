@@ -1,0 +1,534 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Publicis Worldwide\",\"config\":{\"Hostname\":\"2fdc98cb8013\",\"Domainname\":\"\",\"User\":\"lion\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONTAINER_USER=lion\",\"CONTAINER_UID=1000\",\"CONDA_DIR=/opt/conda\",\"INSTALLER=Miniconda2-latest-Linux-x86_64.sh\",\"TINI_VERSION=v0.9.0\"],\"Cmd\":[\"/usr/local/bin/start-jupyter.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:e3af574083e475f68449bef4c247fc7580deb010ee2509ebf4641a90bbf0cd47\",\"Volumes\":null,\"WorkingDir\":\"/home/lion/work\",\"Entrypoint\":[\"/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"2b4b7499091e727a29176bfb6322ee34efd33f6f773f1740a082726cb149c235\",\"container_config\":{\"Hostname\":\"2fdc98cb8013\",\"Domainname\":\"\",\"User\":\"lion\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONTAINER_USER=lion\",\"CONTAINER_UID=1000\",\"CONDA_DIR=/opt/conda\",\"INSTALLER=Miniconda2-latest-Linux-x86_64.sh\",\"TINI_VERSION=v0.9.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER [lion]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:e3af574083e475f68449bef4c247fc7580deb010ee2509ebf4641a90bbf0cd47\",\"Volumes\":null,\"WorkingDir\":\"/home/lion/work\",\"Entrypoint\":[\"/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-07T20:38:21.690536639Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"95389e3f1bfb82dd94aada0e89f9fe548dee5a99711f61772323e86c4303a60b\",\"os\":\"linux\",\"parent\":\"bdbdee4d4c8225e834e6a2144d4c68c6c80cf70873a0fb00e5d235d8e0e419c9\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bdbdee4d4c8225e834e6a2144d4c68c6c80cf70873a0fb00e5d235d8e0e419c9\",\"parent\":\"e0c746a92c7ffecaf38a046228fb5b10f353d7249df5e30daafe3618e5fbb323\",\"created\":\"2017-03-07T20:38:14.128072052Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $CONTAINER_USER:users /home/$CONTAINER_USER/.jupyter\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0c746a92c7ffecaf38a046228fb5b10f353d7249df5e30daafe3618e5fbb323\",\"parent\":\"f0ce9d4c8761b72a6f89ca526fbc3689a77c2a4ddc941e82447c56af13838736\",\"created\":\"2017-03-07T20:38:06.294256216Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:08a891a9be0e5c78f81412cd891b22578c6e1583d0ec42b0761b1320ec56f5cd in /home/lion/.jupyter/ \"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0ce9d4c8761b72a6f89ca526fbc3689a77c2a4ddc941e82447c56af13838736\",\"parent\":\"a6fb36d2e48a39f232cd622fb2c794bc3163aa28befe32f507b30c5b5a7003a1\",\"created\":\"2017-03-07T20:37:58.674150817Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4eecda5c893e36da867e0bc40c88371be782adcb93b132e781db0d2e5dce5b95 in /usr/local/bin/ \"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a6fb36d2e48a39f232cd622fb2c794bc3163aa28befe32f507b30c5b5a7003a1\",\"parent\":\"ccc0ce1cd312f46a05b926bc42f9c2e7b6017d028194b1f2ae7057d440d4d6de\",\"created\":\"2017-03-07T20:37:49.864107682Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/usr/local/bin/start-jupyter.sh\\\"]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ccc0ce1cd312f46a05b926bc42f9c2e7b6017d028194b1f2ae7057d440d4d6de\",\"parent\":\"f563e4815892aac2c21e3a7cf96a3be83e5c5b782bbfcb2ff52fb597d64f9b93\",\"created\":\"2017-03-07T20:37:41.158418921Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/tini\\\" \\\"--\\\"]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f563e4815892aac2c21e3a7cf96a3be83e5c5b782bbfcb2ff52fb597d64f9b93\",\"parent\":\"62a7b624a4cf06c61085225f65bb8d585736cd90ff8509ac6ec2422daffd8a85\",\"created\":\"2017-03-07T20:37:33.658219829Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /tini\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"62a7b624a4cf06c61085225f65bb8d585736cd90ff8509ac6ec2422daffd8a85\",\"parent\":\"35c944ff227fc513cc7bb2b5c2e3ad35f3c8e300786bb40a1ab9638016f81b15\",\"created\":\"2017-03-07T20:37:25.794014474Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD tarsum.v1+sha256:40de433a1676b230fcecbfc6e3e15bd625dbd9ce54ba1bbd51aaa08254d79fd3 in /tini \"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"35c944ff227fc513cc7bb2b5c2e3ad35f3c8e300786bb40a1ab9638016f81b15\",\"parent\":\"0e2983d0adec4351168552f2a37cf26c01b4ad891757aac92db83efd6ea256cd\",\"created\":\"2017-03-07T20:37:16.817287694Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TINI_VERSION=v0.9.0\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e2983d0adec4351168552f2a37cf26c01b4ad891757aac92db83efd6ea256cd\",\"parent\":\"0fa54c22db579070274b0280f3bc76db932c86ea33c4f8a935c8ff9949160c47\",\"created\":\"2017-03-07T20:37:07.920190319Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/lion/work\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fa54c22db579070274b0280f3bc76db932c86ea33c4f8a935c8ff9949160c47\",\"parent\":\"e7ac7999551dc3026fba39417e16b5e25d4c30636864df0a3473070e5fd66f24\",\"created\":\"2017-03-07T20:36:58.666625402Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7ac7999551dc3026fba39417e16b5e25d4c30636864df0a3473070e5fd66f24\",\"parent\":\"55357d1931bc9686d6f700d767b29ceb848780fbe28f0236912dc722594f96ba\",\"created\":\"2017-03-07T20:36:49.958093232Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55357d1931bc9686d6f700d767b29ceb848780fbe28f0236912dc722594f96ba\",\"parent\":\"80ee0e0678c8594d2e249e396c6bf6711ab5b804de22633da1ef1da67470ecb2\",\"created\":\"2017-03-07T20:36:41.352773114Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'ipython=4.0*'     'ipywidgets=4.0*'     'pandas=0.17*'     'matplotlib=1.4*'     'scipy=0.16*'     'seaborn=0.6*'     'scikit-learn=0.16*'     'notebook=4.1*'     terminado     pyzmq     \\u0026\\u0026 conda clean -yt\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"80ee0e0678c8594d2e249e396c6bf6711ab5b804de22633da1ef1da67470ecb2\",\"parent\":\"ce0ffc600334668544a439539c5b9bde917ea29efc81e4f541153efb768ddfb2\",\"created\":\"2017-03-07T20:33:33.449658178Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$CONTAINER_USER/work \\u0026\\u0026     mkdir /home/$CONTAINER_USER/.jupyter \\u0026\\u0026     mkdir /home/$CONTAINER_USER/.local\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce0ffc600334668544a439539c5b9bde917ea29efc81e4f541153efb768ddfb2\",\"parent\":\"fa11290a1b99713cad01d9ad2db2660e63830c6e8ec2e38862bff35d1a26da2a\",\"created\":\"2017-03-07T20:33:29.954806825Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [lion]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa11290a1b99713cad01d9ad2db2660e63830c6e8ec2e38862bff35d1a26da2a\",\"parent\":\"cab248684239a6fbcaa5334d6b67af5fca5b44dadfa6e55de7c191df467c4601\",\"created\":\"2017-03-07T20:33:27.263155069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y     sudo \\u0026\\u0026     yum clean all\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cab248684239a6fbcaa5334d6b67af5fca5b44dadfa6e55de7c191df467c4601\",\"parent\":\"8fb605d94bd913e8be3a63075b7a35a7104b20fd95d8dbe2a3f967c4b3eb318a\",\"created\":\"2017-03-07T20:32:39.093636032Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8fb605d94bd913e8be3a63075b7a35a7104b20fd95d8dbe2a3f967c4b3eb318a\",\"parent\":\"a179bb85b7cbb950e291ee780e362f4b2907b0bde5be6060ca3910dbca38e07b\",\"created\":\"2017-03-07T20:32:35.891541433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Publicis Worldwide\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a179bb85b7cbb950e291ee780e362f4b2907b0bde5be6060ca3910dbca38e07b\",\"parent\":\"0619d970179b7a23f95fe4b90fde901684a255d8920ee781d29df41ab1b0e72e\",\"created\":\"2017-03-07T20:30:53.253295475Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \\u0026\\u0026     echo $(wget --quiet -O - https://repo.continuum.io/miniconda/        | grep -A3 $INSTALLER        | tail -n1        | cut -d\\\\\\u003e -f2        | cut -d\\\\\\u003c -f1 ) $INSTALLER | md5sum -c - \\u0026\\u0026     /bin/bash $INSTALLER -f -b -p $CONDA_DIR \\u0026\\u0026     rm $INSTALLER\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0619d970179b7a23f95fe4b90fde901684a255d8920ee781d29df41ab1b0e72e\",\"parent\":\"a4fc40f014f42b5856c4dc7eed5286c1072a57a568774e198ecc262ee5a48a89\",\"created\":\"2017-03-07T20:30:33.753159601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [lion]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a4fc40f014f42b5856c4dc7eed5286c1072a57a568774e198ecc262ee5a48a89\",\"parent\":\"21e51c7809ea389c95b34f69eb50dd814ee2535696efdf0c4fd57f81ce8395fb\",\"created\":\"2017-03-07T20:30:32.086360745Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /opt/conda \\u0026\\u0026     chown lion /opt/conda\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"21e51c7809ea389c95b34f69eb50dd814ee2535696efdf0c4fd57f81ce8395fb\",\"parent\":\"6be5c1c5363a86c9022be1945972987b1621cb41a26814d215bada1bbefaf457\",\"created\":\"2017-03-07T20:30:29.887392007Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV INSTALLER=Miniconda2-latest-Linux-x86_64.sh\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6be5c1c5363a86c9022be1945972987b1621cb41a26814d215bada1bbefaf457\",\"parent\":\"8c0a9bd8997c9bcb3155a0e0d89f9786ffad0f69f84088d7e5f7f9628837cee1\",\"created\":\"2017-03-07T20:30:27.935222524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_UID=1000\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c0a9bd8997c9bcb3155a0e0d89f9786ffad0f69f84088d7e5f7f9628837cee1\",\"parent\":\"d60bb5c6e2f7305784fbaae4b12636ff73eeadab30a5ce26df0ceecda125e6d1\",\"created\":\"2017-03-07T20:30:26.082838661Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_USER=lion\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d60bb5c6e2f7305784fbaae4b12636ff73eeadab30a5ce26df0ceecda125e6d1\",\"parent\":\"474bc8001ab5171d4f80b72fcd64fa2b64a5b34993c5cf997a47487c88a82e3f\",\"created\":\"2017-03-07T20:30:24.15595737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"474bc8001ab5171d4f80b72fcd64fa2b64a5b34993c5cf997a47487c88a82e3f\",\"parent\":\"d9c538054bf2c4054c85385ae2452e5c96ad7d715239f1426b78349583c6b46a\",\"created\":\"2017-03-07T20:30:22.271414952Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONDA_DIR=/opt/conda\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d9c538054bf2c4054c85385ae2452e5c96ad7d715239f1426b78349583c6b46a\",\"parent\":\"522f3db3c4476c008289d834936d35fa41ef32183a93ebf40aa6845b3ac91ac4\",\"created\":\"2017-03-07T20:30:20.411175104Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"522f3db3c4476c008289d834936d35fa41ef32183a93ebf40aa6845b3ac91ac4\",\"parent\":\"1d7b86f922049812bf4bd643df5bb73379de5f569359aaf11458d0e5175a26b0\",\"created\":\"2017-03-07T20:30:18.493735993Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Publicis Worldwide\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1d7b86f922049812bf4bd643df5bb73379de5f569359aaf11458d0e5175a26b0\",\"parent\":\"9cd893673a7f671021b84c91298311a39dfb1ede3f59452a3d15b9e9e818d11b\",\"created\":\"2017-03-07T20:08:17.988510624Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [1000]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9cd893673a7f671021b84c91298311a39dfb1ede3f59452a3d15b9e9e818d11b\",\"parent\":\"f789b4f281f197157ccccde9467b38919f96c674d9208268e028b86aad10bd81\",\"created\":\"2017-03-07T20:08:16.219211739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo $CONTAINER_USER' ALL=(ALL) NOPASSWD:ALL' \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f789b4f281f197157ccccde9467b38919f96c674d9208268e028b86aad10bd81\",\"parent\":\"355b17904aa7f24bcaa9efbe3e395e90cda2ec301962f61c37238cab36a6ac65\",\"created\":\"2017-03-07T20:08:14.046693423Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /bin/yum install -y     wget     bzip2     unzip     tar     sudo \\u0026\\u0026     yum clean all\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"355b17904aa7f24bcaa9efbe3e395e90cda2ec301962f61c37238cab36a6ac65\",\"parent\":\"f2e55b5ce2d196d16c34b85bdca6532c751761d74941128b604702007ecec65c\",\"created\":\"2017-03-07T20:07:20.330624031Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ( /bin/yum install -y yum-plugin-ovl || /bin/yum install -y yum-plugin-ovl ) \\u0026\\u0026     /bin/yum clean all\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f2e55b5ce2d196d16c34b85bdca6532c751761d74941128b604702007ecec65c\",\"parent\":\"dfeb3730c1232c02e0ed4cf7440b48e99b20422be7e9adc4fd26e21e3a356ff3\",\"created\":\"2017-03-07T20:06:29.450492235Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /sbin/useradd -m -s /bin/bash -N -u $CONTAINER_UID $CONTAINER_USER\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dfeb3730c1232c02e0ed4cf7440b48e99b20422be7e9adc4fd26e21e3a356ff3\",\"parent\":\"14a76cc52325a4eec801e41a645106232e8a4d48b7f08be0a98819936aeb72ef\",\"created\":\"2017-03-07T20:06:27.112153963Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_UID=1000\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"14a76cc52325a4eec801e41a645106232e8a4d48b7f08be0a98819936aeb72ef\",\"parent\":\"c59682976d9ed513fb443c173591e93d6f2a3142a341cb3fe29b062585332ec2\",\"created\":\"2017-03-07T20:06:25.152547479Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_USER=lion\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c59682976d9ed513fb443c173591e93d6f2a3142a341cb3fe29b062585332ec2\",\"parent\":\"b0b0c7498e5c4a7eafafd2ce6acb92e032ab25c7205ed9a2ecbc6c4713741077\",\"created\":\"2017-03-07T20:06:23.164527896Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0b0c7498e5c4a7eafafd2ce6acb92e032ab25c7205ed9a2ecbc6c4713741077\",\"parent\":\"b1e8a0071c9c8a16526a1cd74a6fb0fce9dd935b65f162ec14a989af8b674f17\",\"created\":\"2017-03-07T20:06:21.24118125Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Publicis Worldwide\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1e8a0071c9c8a16526a1cd74a6fb0fce9dd935b65f162ec14a989af8b674f17\",\"parent\":\"28351d0b37d9ddc775ea033d72ba8725724524411d40e3b2b58b668137f2ddb3\",\"created\":\"2017-02-21T23:57:54.86373548Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"28351d0b37d9ddc775ea033d72ba8725724524411d40e3b2b58b668137f2ddb3\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2017-02-21T23:57:54.135101552Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f0d2a35c7f99fe72b8abf47f09fea6487f5c1bd983e74f24ed63e69c3257dadc in / \"]},\"author\":\"Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-08-30T16:31:30.941767066Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\"]},\"author\":\"Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\",\"throwaway\":true}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:61d3e884723da393f6ce327124ce12ef941194567becde7198d41307da766d6f"
+            },
+            {
+                "blobSum": "sha256:e91029d5f8a979da36eea894d279d0786c011e0dabecb368b1790c8208d852ea"
+            },
+            {
+                "blobSum": "sha256:7e2af1e6713c55e9cb5f0bab3047a734f852f5407066ecb20fe751b21e1c121b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c499cb33ad8913a3fc85554243ce630832e9db5f66052689cfbb7b481f3c725f"
+            },
+            {
+                "blobSum": "sha256:ef95faf967fdbeab00156f66ea338ee316464f5ec40bf94adbfdbca890eb4ec4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7116860d3ed4e5ea545d83354f6f8c571f670c9d212f999f75348e2096bd712e"
+            },
+            {
+                "blobSum": "sha256:c0438f7b4bb0d1b7813078a6c30cc20a74f2584674cecc8d1795253c6a5d7921"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d90590cf5aeb6a2651055016bd6d24ecc8d392631a729b43cb96e34a1eaed102"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b41e6f22e4e6d18494a95ab9d83ff1ac304c02cd2cc7465c395476e2fc7af786"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:caadd1c25af2cadc8c764b215b2a2909f6d7129f1823ce81c0f7800d39f10e2f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c5855829c819860f7fbb48d1a439df7bc75ac041cc3c94b5e4eb48e944708b38"
+            },
+            {
+                "blobSum": "sha256:43ab5179b6d988ae39f603a1eaefda81bffabc4a9b0bd7c3cd9c619f4f753298"
+            },
+            {
+                "blobSum": "sha256:5dc531651b919d3fa1f6609d2d987564d599e2242267e810bfefbc0c17bda41f"
+            },
+            {
+                "blobSum": "sha256:a8a201d237e822f6ed547e107a0afbe9c5ce5203ba4c165d7f480d587bf8369b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6157560b580551edd7d75baf2b19211fae169130737cb98e7379fdffbefee05d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            }
+        ],
+        "name": "publicisworldwide/data-science-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNzc2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDQ6MTdaIn0",
+                "signature": "pckogDFboSBUa61cCYZ0coLZHX-0h9nKaPH5KpDjrT1lBJ5KT2Ueho8HwLJv92-gUb7qjMnlQqC3IrjaSYCq7Q",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "pNNCRvC2AjRAdZuIaArtMxEyiDGTyUiuPxfoHmzso0U",
+                        "kid": "REPN:HL6K:4QXN:AGOX:OFOL:EXN5:ZICU:TSB4:D6VB:WIBY:7GT5:NVSK",
+                        "x": "X4ly1uDiAUQNkFZnFUHMT8znFZu1fTYRokTc5f69mGg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Publicis Worldwide\",\"config\":{\"Hostname\":\"2fdc98cb8013\",\"Domainname\":\"\",\"User\":\"lion\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONTAINER_USER=lion\",\"CONTAINER_UID=1000\",\"CONDA_DIR=/opt/conda\",\"INSTALLER=Miniconda2-latest-Linux-x86_64.sh\",\"TINI_VERSION=v0.9.0\"],\"Cmd\":[\"/usr/local/bin/start-jupyter.sh\"],\"ArgsEscaped\":true,\"Image\":\"sha256:e3af574083e475f68449bef4c247fc7580deb010ee2509ebf4641a90bbf0cd47\",\"Volumes\":null,\"WorkingDir\":\"/home/lion/work\",\"Entrypoint\":[\"/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"2b4b7499091e727a29176bfb6322ee34efd33f6f773f1740a082726cb149c235\",\"container_config\":{\"Hostname\":\"2fdc98cb8013\",\"Domainname\":\"\",\"User\":\"lion\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"CONTAINER_USER=lion\",\"CONTAINER_UID=1000\",\"CONDA_DIR=/opt/conda\",\"INSTALLER=Miniconda2-latest-Linux-x86_64.sh\",\"TINI_VERSION=v0.9.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"USER [lion]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:e3af574083e475f68449bef4c247fc7580deb010ee2509ebf4641a90bbf0cd47\",\"Volumes\":null,\"WorkingDir\":\"/home/lion/work\",\"Entrypoint\":[\"/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-03-07T20:38:21.690536639Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"95389e3f1bfb82dd94aada0e89f9fe548dee5a99711f61772323e86c4303a60b\",\"os\":\"linux\",\"parent\":\"bdbdee4d4c8225e834e6a2144d4c68c6c80cf70873a0fb00e5d235d8e0e419c9\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bdbdee4d4c8225e834e6a2144d4c68c6c80cf70873a0fb00e5d235d8e0e419c9\",\"parent\":\"e0c746a92c7ffecaf38a046228fb5b10f353d7249df5e30daafe3618e5fbb323\",\"created\":\"2017-03-07T20:38:14.128072052Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chown -R $CONTAINER_USER:users /home/$CONTAINER_USER/.jupyter\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0c746a92c7ffecaf38a046228fb5b10f353d7249df5e30daafe3618e5fbb323\",\"parent\":\"f0ce9d4c8761b72a6f89ca526fbc3689a77c2a4ddc941e82447c56af13838736\",\"created\":\"2017-03-07T20:38:06.294256216Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:08a891a9be0e5c78f81412cd891b22578c6e1583d0ec42b0761b1320ec56f5cd in /home/lion/.jupyter/ \"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0ce9d4c8761b72a6f89ca526fbc3689a77c2a4ddc941e82447c56af13838736\",\"parent\":\"a6fb36d2e48a39f232cd622fb2c794bc3163aa28befe32f507b30c5b5a7003a1\",\"created\":\"2017-03-07T20:37:58.674150817Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:4eecda5c893e36da867e0bc40c88371be782adcb93b132e781db0d2e5dce5b95 in /usr/local/bin/ \"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a6fb36d2e48a39f232cd622fb2c794bc3163aa28befe32f507b30c5b5a7003a1\",\"parent\":\"ccc0ce1cd312f46a05b926bc42f9c2e7b6017d028194b1f2ae7057d440d4d6de\",\"created\":\"2017-03-07T20:37:49.864107682Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/usr/local/bin/start-jupyter.sh\\\"]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ccc0ce1cd312f46a05b926bc42f9c2e7b6017d028194b1f2ae7057d440d4d6de\",\"parent\":\"f563e4815892aac2c21e3a7cf96a3be83e5c5b782bbfcb2ff52fb597d64f9b93\",\"created\":\"2017-03-07T20:37:41.158418921Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/tini\\\" \\\"--\\\"]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f563e4815892aac2c21e3a7cf96a3be83e5c5b782bbfcb2ff52fb597d64f9b93\",\"parent\":\"62a7b624a4cf06c61085225f65bb8d585736cd90ff8509ac6ec2422daffd8a85\",\"created\":\"2017-03-07T20:37:33.658219829Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /tini\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"62a7b624a4cf06c61085225f65bb8d585736cd90ff8509ac6ec2422daffd8a85\",\"parent\":\"35c944ff227fc513cc7bb2b5c2e3ad35f3c8e300786bb40a1ab9638016f81b15\",\"created\":\"2017-03-07T20:37:25.794014474Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD tarsum.v1+sha256:40de433a1676b230fcecbfc6e3e15bd625dbd9ce54ba1bbd51aaa08254d79fd3 in /tini \"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"35c944ff227fc513cc7bb2b5c2e3ad35f3c8e300786bb40a1ab9638016f81b15\",\"parent\":\"0e2983d0adec4351168552f2a37cf26c01b4ad891757aac92db83efd6ea256cd\",\"created\":\"2017-03-07T20:37:16.817287694Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV TINI_VERSION=v0.9.0\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0e2983d0adec4351168552f2a37cf26c01b4ad891757aac92db83efd6ea256cd\",\"parent\":\"0fa54c22db579070274b0280f3bc76db932c86ea33c4f8a935c8ff9949160c47\",\"created\":\"2017-03-07T20:37:07.920190319Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  WORKDIR /home/lion/work\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0fa54c22db579070274b0280f3bc76db932c86ea33c4f8a935c8ff9949160c47\",\"parent\":\"e7ac7999551dc3026fba39417e16b5e25d4c30636864df0a3473070e5fd66f24\",\"created\":\"2017-03-07T20:36:58.666625402Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7ac7999551dc3026fba39417e16b5e25d4c30636864df0a3473070e5fd66f24\",\"parent\":\"55357d1931bc9686d6f700d767b29ceb848780fbe28f0236912dc722594f96ba\",\"created\":\"2017-03-07T20:36:49.958093232Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55357d1931bc9686d6f700d767b29ceb848780fbe28f0236912dc722594f96ba\",\"parent\":\"80ee0e0678c8594d2e249e396c6bf6711ab5b804de22633da1ef1da67470ecb2\",\"created\":\"2017-03-07T20:36:41.352773114Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install --yes     'ipython=4.0*'     'ipywidgets=4.0*'     'pandas=0.17*'     'matplotlib=1.4*'     'scipy=0.16*'     'seaborn=0.6*'     'scikit-learn=0.16*'     'notebook=4.1*'     terminado     pyzmq     \\u0026\\u0026 conda clean -yt\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"80ee0e0678c8594d2e249e396c6bf6711ab5b804de22633da1ef1da67470ecb2\",\"parent\":\"ce0ffc600334668544a439539c5b9bde917ea29efc81e4f541153efb768ddfb2\",\"created\":\"2017-03-07T20:33:33.449658178Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir /home/$CONTAINER_USER/work \\u0026\\u0026     mkdir /home/$CONTAINER_USER/.jupyter \\u0026\\u0026     mkdir /home/$CONTAINER_USER/.local\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce0ffc600334668544a439539c5b9bde917ea29efc81e4f541153efb768ddfb2\",\"parent\":\"fa11290a1b99713cad01d9ad2db2660e63830c6e8ec2e38862bff35d1a26da2a\",\"created\":\"2017-03-07T20:33:29.954806825Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [lion]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa11290a1b99713cad01d9ad2db2660e63830c6e8ec2e38862bff35d1a26da2a\",\"parent\":\"cab248684239a6fbcaa5334d6b67af5fca5b44dadfa6e55de7c191df467c4601\",\"created\":\"2017-03-07T20:33:27.263155069Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c yum install -y     sudo \\u0026\\u0026     yum clean all\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cab248684239a6fbcaa5334d6b67af5fca5b44dadfa6e55de7c191df467c4601\",\"parent\":\"8fb605d94bd913e8be3a63075b7a35a7104b20fd95d8dbe2a3f967c4b3eb318a\",\"created\":\"2017-03-07T20:32:39.093636032Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8fb605d94bd913e8be3a63075b7a35a7104b20fd95d8dbe2a3f967c4b3eb318a\",\"parent\":\"a179bb85b7cbb950e291ee780e362f4b2907b0bde5be6060ca3910dbca38e07b\",\"created\":\"2017-03-07T20:32:35.891541433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Publicis Worldwide\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a179bb85b7cbb950e291ee780e362f4b2907b0bde5be6060ca3910dbca38e07b\",\"parent\":\"0619d970179b7a23f95fe4b90fde901684a255d8920ee781d29df41ab1b0e72e\",\"created\":\"2017-03-07T20:30:53.253295475Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /tmp \\u0026\\u0026     mkdir -p $CONDA_DIR \\u0026\\u0026     wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \\u0026\\u0026     echo $(wget --quiet -O - https://repo.continuum.io/miniconda/        | grep -A3 $INSTALLER        | tail -n1        | cut -d\\\\\\u003e -f2        | cut -d\\\\\\u003c -f1 ) $INSTALLER | md5sum -c - \\u0026\\u0026     /bin/bash $INSTALLER -f -b -p $CONDA_DIR \\u0026\\u0026     rm $INSTALLER\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0619d970179b7a23f95fe4b90fde901684a255d8920ee781d29df41ab1b0e72e\",\"parent\":\"a4fc40f014f42b5856c4dc7eed5286c1072a57a568774e198ecc262ee5a48a89\",\"created\":\"2017-03-07T20:30:33.753159601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [lion]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a4fc40f014f42b5856c4dc7eed5286c1072a57a568774e198ecc262ee5a48a89\",\"parent\":\"21e51c7809ea389c95b34f69eb50dd814ee2535696efdf0c4fd57f81ce8395fb\",\"created\":\"2017-03-07T20:30:32.086360745Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /opt/conda \\u0026\\u0026     chown lion /opt/conda\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"21e51c7809ea389c95b34f69eb50dd814ee2535696efdf0c4fd57f81ce8395fb\",\"parent\":\"6be5c1c5363a86c9022be1945972987b1621cb41a26814d215bada1bbefaf457\",\"created\":\"2017-03-07T20:30:29.887392007Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV INSTALLER=Miniconda2-latest-Linux-x86_64.sh\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6be5c1c5363a86c9022be1945972987b1621cb41a26814d215bada1bbefaf457\",\"parent\":\"8c0a9bd8997c9bcb3155a0e0d89f9786ffad0f69f84088d7e5f7f9628837cee1\",\"created\":\"2017-03-07T20:30:27.935222524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_UID=1000\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c0a9bd8997c9bcb3155a0e0d89f9786ffad0f69f84088d7e5f7f9628837cee1\",\"parent\":\"d60bb5c6e2f7305784fbaae4b12636ff73eeadab30a5ce26df0ceecda125e6d1\",\"created\":\"2017-03-07T20:30:26.082838661Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_USER=lion\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d60bb5c6e2f7305784fbaae4b12636ff73eeadab30a5ce26df0ceecda125e6d1\",\"parent\":\"474bc8001ab5171d4f80b72fcd64fa2b64a5b34993c5cf997a47487c88a82e3f\",\"created\":\"2017-03-07T20:30:24.15595737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"474bc8001ab5171d4f80b72fcd64fa2b64a5b34993c5cf997a47487c88a82e3f\",\"parent\":\"d9c538054bf2c4054c85385ae2452e5c96ad7d715239f1426b78349583c6b46a\",\"created\":\"2017-03-07T20:30:22.271414952Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONDA_DIR=/opt/conda\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d9c538054bf2c4054c85385ae2452e5c96ad7d715239f1426b78349583c6b46a\",\"parent\":\"522f3db3c4476c008289d834936d35fa41ef32183a93ebf40aa6845b3ac91ac4\",\"created\":\"2017-03-07T20:30:20.411175104Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"522f3db3c4476c008289d834936d35fa41ef32183a93ebf40aa6845b3ac91ac4\",\"parent\":\"1d7b86f922049812bf4bd643df5bb73379de5f569359aaf11458d0e5175a26b0\",\"created\":\"2017-03-07T20:30:18.493735993Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Publicis Worldwide\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1d7b86f922049812bf4bd643df5bb73379de5f569359aaf11458d0e5175a26b0\",\"parent\":\"9cd893673a7f671021b84c91298311a39dfb1ede3f59452a3d15b9e9e818d11b\",\"created\":\"2017-03-07T20:08:17.988510624Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [1000]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9cd893673a7f671021b84c91298311a39dfb1ede3f59452a3d15b9e9e818d11b\",\"parent\":\"f789b4f281f197157ccccde9467b38919f96c674d9208268e028b86aad10bd81\",\"created\":\"2017-03-07T20:08:16.219211739Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo $CONTAINER_USER' ALL=(ALL) NOPASSWD:ALL' \\u003e\\u003e /etc/sudoers\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f789b4f281f197157ccccde9467b38919f96c674d9208268e028b86aad10bd81\",\"parent\":\"355b17904aa7f24bcaa9efbe3e395e90cda2ec301962f61c37238cab36a6ac65\",\"created\":\"2017-03-07T20:08:14.046693423Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /bin/yum install -y     wget     bzip2     unzip     tar     sudo \\u0026\\u0026     yum clean all\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"355b17904aa7f24bcaa9efbe3e395e90cda2ec301962f61c37238cab36a6ac65\",\"parent\":\"f2e55b5ce2d196d16c34b85bdca6532c751761d74941128b604702007ecec65c\",\"created\":\"2017-03-07T20:07:20.330624031Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ( /bin/yum install -y yum-plugin-ovl || /bin/yum install -y yum-plugin-ovl ) \\u0026\\u0026     /bin/yum clean all\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f2e55b5ce2d196d16c34b85bdca6532c751761d74941128b604702007ecec65c\",\"parent\":\"dfeb3730c1232c02e0ed4cf7440b48e99b20422be7e9adc4fd26e21e3a356ff3\",\"created\":\"2017-03-07T20:06:29.450492235Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /sbin/useradd -m -s /bin/bash -N -u $CONTAINER_UID $CONTAINER_USER\"]},\"author\":\"Publicis Worldwide\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dfeb3730c1232c02e0ed4cf7440b48e99b20422be7e9adc4fd26e21e3a356ff3\",\"parent\":\"14a76cc52325a4eec801e41a645106232e8a4d48b7f08be0a98819936aeb72ef\",\"created\":\"2017-03-07T20:06:27.112153963Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_UID=1000\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"14a76cc52325a4eec801e41a645106232e8a4d48b7f08be0a98819936aeb72ef\",\"parent\":\"c59682976d9ed513fb443c173591e93d6f2a3142a341cb3fe29b062585332ec2\",\"created\":\"2017-03-07T20:06:25.152547479Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV CONTAINER_USER=lion\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c59682976d9ed513fb443c173591e93d6f2a3142a341cb3fe29b062585332ec2\",\"parent\":\"b0b0c7498e5c4a7eafafd2ce6acb92e032ab25c7205ed9a2ecbc6c4713741077\",\"created\":\"2017-03-07T20:06:23.164527896Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [root]\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0b0c7498e5c4a7eafafd2ce6acb92e032ab25c7205ed9a2ecbc6c4713741077\",\"parent\":\"b1e8a0071c9c8a16526a1cd74a6fb0fce9dd935b65f162ec14a989af8b674f17\",\"created\":\"2017-03-07T20:06:21.24118125Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Publicis Worldwide\"]},\"author\":\"Publicis Worldwide\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b1e8a0071c9c8a16526a1cd74a6fb0fce9dd935b65f162ec14a989af8b674f17\",\"parent\":\"28351d0b37d9ddc775ea033d72ba8725724524411d40e3b2b58b668137f2ddb3\",\"created\":\"2017-02-21T23:57:54.86373548Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"author\":\"Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"28351d0b37d9ddc775ea033d72ba8725724524411d40e3b2b58b668137f2ddb3\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2017-02-21T23:57:54.135101552Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f0d2a35c7f99fe72b8abf47f09fea6487f5c1bd983e74f24ed63e69c3257dadc in / \"]},\"author\":\"Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2016-08-30T16:31:30.941767066Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\"]},\"author\":\"Oracle Linux Product Team \\u003col-ovm-info_ww@oracle.com\\u003e\",\"throwaway\":true}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:61d3e884723da393f6ce327124ce12ef941194567becde7198d41307da766d6f"
+            },
+            {
+                "blobSum": "sha256:e91029d5f8a979da36eea894d279d0786c011e0dabecb368b1790c8208d852ea"
+            },
+            {
+                "blobSum": "sha256:7e2af1e6713c55e9cb5f0bab3047a734f852f5407066ecb20fe751b21e1c121b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c499cb33ad8913a3fc85554243ce630832e9db5f66052689cfbb7b481f3c725f"
+            },
+            {
+                "blobSum": "sha256:ef95faf967fdbeab00156f66ea338ee316464f5ec40bf94adbfdbca890eb4ec4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:7116860d3ed4e5ea545d83354f6f8c571f670c9d212f999f75348e2096bd712e"
+            },
+            {
+                "blobSum": "sha256:c0438f7b4bb0d1b7813078a6c30cc20a74f2584674cecc8d1795253c6a5d7921"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d90590cf5aeb6a2651055016bd6d24ecc8d392631a729b43cb96e34a1eaed102"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b41e6f22e4e6d18494a95ab9d83ff1ac304c02cd2cc7465c395476e2fc7af786"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:caadd1c25af2cadc8c764b215b2a2909f6d7129f1823ce81c0f7800d39f10e2f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c5855829c819860f7fbb48d1a439df7bc75ac041cc3c94b5e4eb48e944708b38"
+            },
+            {
+                "blobSum": "sha256:43ab5179b6d988ae39f603a1eaefda81bffabc4a9b0bd7c3cd9c619f4f753298"
+            },
+            {
+                "blobSum": "sha256:5dc531651b919d3fa1f6609d2d987564d599e2242267e810bfefbc0c17bda41f"
+            },
+            {
+                "blobSum": "sha256:a8a201d237e822f6ed547e107a0afbe9c5ce5203ba4c165d7f480d587bf8369b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6157560b580551edd7d75baf2b19211fae169130737cb98e7379fdffbefee05d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            }
+        ],
+        "name": "publicisworldwide/data-science-python",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIyNzc2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDQ6MThaIn0",
+                "signature": "4fupLmzjYct-oepPvbIyg9N9Le-fK5ldpW6EZJLNxhZgxlu4uleD1YVqdT5Dl8v_HDOGeTyvou2GswjszPN6Ng",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "MEG--KbbbJK_RkPIP9e5fQVuGlo3uimah2uJUFRzuKw",
+                        "kid": "AS5P:WMNA:RSR2:GJR7:SC2U:YXPA:7WEF:WKEX:EAVM:PUHS:YY7E:SNWG",
+                        "x": "OaqjMSsPzUo3jbPCGZ4WryQhjpyFpJS911jrYM9zYL8"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

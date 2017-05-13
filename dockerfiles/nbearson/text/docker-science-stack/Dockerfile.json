@@ -1,0 +1,570 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/hdf4/bin/:/opt/hdf5/bin:/opt/netcdf4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A \\tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \\t90AA470469D3965A87A5DCB494D03953902C9419 \\t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \\t7F74F97C103468EE5D750B583AB00996FC26A641 \\t33C235A34C46AA3FFB293709A328C3A2C3C45C06\",\"GCC_VERSION=6.3.0\",\"BUILD=/build\",\"OPT=/opt\",\"ZLIB_VERSION=1.2.11\",\"JPEG_VERSION=6b\",\"SZIP_VERSION=2.1\",\"HDF4_VERSION=4.2.12\",\"HDF5_VERSION=1.8.17\",\"NC4F_VERSION=4.4.4\",\"NC4C_VERSION=4.4.1\",\"NCO_VERSION=4.6.1\",\"PYHDF_VERSION=0.9.0\",\"NETCDFPY_VERSION=1.2.4rel\",\"HDF4=/opt/hdf4\",\"HDF5=/opt/hdf5\",\"NETCDF=/opt/netcdf4\",\"LD_LIBRARY_PATH=/opt/hdf4/lib:/opt/hdf5/lib:/opt/netcdf4/lib:\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:30ad12768f777ac3764e9a259bec2522ffb70c0d909d724d44e2bf8f289f797d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"527bcd85a20f101f2feb8a560d830f5de2780d57ae418536b548e0bd8685ba7f\",\"container_config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/hdf4/bin/:/opt/hdf5/bin:/opt/netcdf4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A \\tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \\t90AA470469D3965A87A5DCB494D03953902C9419 \\t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \\t7F74F97C103468EE5D750B583AB00996FC26A641 \\t33C235A34C46AA3FFB293709A328C3A2C3C45C06\",\"GCC_VERSION=6.3.0\",\"BUILD=/build\",\"OPT=/opt\",\"ZLIB_VERSION=1.2.11\",\"JPEG_VERSION=6b\",\"SZIP_VERSION=2.1\",\"HDF4_VERSION=4.2.12\",\"HDF5_VERSION=1.8.17\",\"NC4F_VERSION=4.4.4\",\"NC4C_VERSION=4.4.1\",\"NCO_VERSION=4.6.1\",\"PYHDF_VERSION=0.9.0\",\"NETCDFPY_VERSION=1.2.4rel\",\"HDF4=/opt/hdf4\",\"HDF5=/opt/hdf5\",\"NETCDF=/opt/netcdf4\",\"LD_LIBRARY_PATH=/opt/hdf4/lib:/opt/hdf5/lib:/opt/netcdf4/lib:\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"ENV PATH=/opt/hdf4/bin/:/opt/hdf5/bin:/opt/netcdf4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"ArgsEscaped\":true,\"Image\":\"sha256:30ad12768f777ac3764e9a259bec2522ffb70c0d909d724d44e2bf8f289f797d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-25T19:01:49.733693906Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"84352d2a513e105fcdc96e4666eb7ea0054c340ef8d10eefdf0c2047593f4732\",\"os\":\"linux\",\"parent\":\"4c906240b7642bd37a2ebcaef85aeee7e27007789a86330475f664c15ae3358c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4c906240b7642bd37a2ebcaef85aeee7e27007789a86330475f664c15ae3358c\",\"parent\":\"96ae5973c35448cd6af386e69bb5bbb8bf2bcad8c664dde81cd16cfe664f2736\",\"created\":\"2017-04-25T19:01:27.579445194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/opt/hdf4/lib:/opt/hdf5/lib:/opt/netcdf4/lib:\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"96ae5973c35448cd6af386e69bb5bbb8bf2bcad8c664dde81cd16cfe664f2736\",\"parent\":\"a8cefa68d7cebeeaacdc384dcaba789c14e5356be3e8319b09406479cc747d25\",\"created\":\"2017-04-25T19:01:05.831641717Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NETCDF=/opt/netcdf4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a8cefa68d7cebeeaacdc384dcaba789c14e5356be3e8319b09406479cc747d25\",\"parent\":\"ed22bc17bf3241c1b0e93536da167d7364063c196dd23d2ceefb7e5335a66197\",\"created\":\"2017-04-25T19:00:43.941517163Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF5=/opt/hdf5\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed22bc17bf3241c1b0e93536da167d7364063c196dd23d2ceefb7e5335a66197\",\"parent\":\"7c0c9119010c9c6332983e01b497c7c24db2fb2443609f98cd3276d0715d51e8\",\"created\":\"2017-04-25T19:00:21.832860608Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF4=/opt/hdf4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c0c9119010c9c6332983e01b497c7c24db2fb2443609f98cd3276d0715d51e8\",\"parent\":\"6557d1e4598e917bd33eb9e21e4abfcf068833b475b71cc9e5f836233d758203\",\"created\":\"2017-04-25T19:00:03.247245868Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'alias ls=\\\"ls --color=auto\\\"' \\u003e\\u003e ~/.bashrc \\u0026\\u0026     echo 'alias ll=\\\"ls -lGh $@\\\"' \\u003e\\u003e ~/.bashrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6557d1e4598e917bd33eb9e21e4abfcf068833b475b71cc9e5f836233d758203\",\"parent\":\"5653719dfc9305c06c62730544379f17beb514878cef1460bd91d1da6a11d38a\",\"created\":\"2017-04-25T18:59:44.154299726Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q https://github.com/Unidata/netcdf4-python/archive/v${NETCDFPY_VERSION}.tar.gz \\u0026\\u0026     tar xzf v${NETCDFPY_VERSION}.tar.gz \\u0026\\u0026     cd netcdf4-python-${NETCDFPY_VERSION} \\u0026\\u0026     PATH=\\\"${OPT}/netcdf4/bin:$PATH\\\"     python setup.py install \\u0026\\u0026     rm -r ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5653719dfc9305c06c62730544379f17beb514878cef1460bd91d1da6a11d38a\",\"parent\":\"7c25d902bed948cdc10a661611351db09475701bdcbdee91d634af781b9d6907\",\"created\":\"2017-04-25T18:59:11.218620264Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q http://hdfeos.org/software/pyhdf/pyhdf-${PYHDF_VERSION}.tar.gz \\u0026\\u0026     tar xzf pyhdf-${PYHDF_VERSION}.tar.gz \\u0026\\u0026     cd pyhdf-${PYHDF_VERSION} \\u0026\\u0026     INCLUDE_DIRS=\\\"${OPT}/hdf4/include/\\\"     LIBRARY_DIRS=\\\"${OPT}/hdf4/lib/\\\"     python setup.py install \\u0026\\u0026     rm -r ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c25d902bed948cdc10a661611351db09475701bdcbdee91d634af781b9d6907\",\"parent\":\"fa71fefc5b107db1bbbde09ac70ff65d32e6e6155ef664be284e09ea2df125e6\",\"created\":\"2017-04-25T18:58:49.665999256Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c easy_install -f http://larch.ssec.wisc.edu/cgi-bin/repos.cgi uwglance\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa71fefc5b107db1bbbde09ac70ff65d32e6e6155ef664be284e09ea2df125e6\",\"parent\":\"1ddc2dfe5c1e9b2a0b8644e5a3f89eb2be5676302a7ff7ab03b5285024111909\",\"created\":\"2017-04-25T18:58:28.442770159Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python-setuptools python-numpy python-scipy python-matplotlib python-mpltoolkits.basemap\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1ddc2dfe5c1e9b2a0b8644e5a3f89eb2be5676302a7ff7ab03b5285024111909\",\"parent\":\"7529f699e1bde9e59a6d19939cfa18badaa7bb9e54e9504b90aef2666889d2e8\",\"created\":\"2017-04-25T18:56:27.93295234Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/nco \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -qL https://github.com/nco/nco/archive/${NCO_VERSION}.tar.gz \\u0026\\u0026     tar xzf ${NCO_VERSION}.tar.gz \\u0026\\u0026     cd nco-${NCO_VERSION} \\u0026\\u0026     NETCDF_ROOT=${OPT}/netcdf4 ./configure --prefix=${OPT}/nco \\u0026\\u0026     make \\u0026\\u0026 make install \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7529f699e1bde9e59a6d19939cfa18badaa7bb9e54e9504b90aef2666889d2e8\",\"parent\":\"4b1435e1f0e3015d86632af5259e335afbad92c54d08dc12cede851775ccd7bd\",\"created\":\"2017-04-25T18:53:40.052407361Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/netcdf4 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-fortran-${NC4F_VERSION}.tar.gz \\u0026\\u0026     tar xzf netcdf-fortran-${NC4F_VERSION}.tar.gz \\u0026\\u0026     cd netcdf-fortran-${NC4F_VERSION} \\u0026\\u0026     CPPFLAGS=\\\"-I${OPT}/hdf4/include -I${OPT}/hdf5/include -I${OPT}/netcdf4/include\\\"     LDFLAGS=\\\"-L${OPT}/hdf4/lib -L${OPT}/hdf5/lib -L${OPT}/netcdf4/lib\\\"     LD_LIBRARY_PATH=\\\"${OPT}/hdf4/lib:${OPT}/hdf5/lib:${OPT}/netcdf4/lib\\\"     LIBS=\\\"-lnetcdf -ldf -lhdf5_hl -lhdf5 -ljpeg -lm -lz\\\"     ./configure --prefix=\\\"${OPT}/netcdf4\\\" --disable-dap --with-pic \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/netcdf4/config.log-netcdff-${NC4F_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4b1435e1f0e3015d86632af5259e335afbad92c54d08dc12cede851775ccd7bd\",\"parent\":\"2dc199a59f2806f32878b1757c85f6fa39a34a7b2dc0db96269583da3f79f422\",\"created\":\"2017-04-25T18:51:42.596087688Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/netcdf4 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-${NC4C_VERSION}.tar.gz \\u0026\\u0026     tar xzf netcdf-${NC4C_VERSION}.tar.gz \\u0026\\u0026     cd netcdf-${NC4C_VERSION} \\u0026\\u0026     CPPFLAGS=\\\"-I${OPT}/hdf4/include -I${OPT}/hdf5/include\\\"     LDFLAGS=\\\"-L${OPT}/hdf4/lib -L${OPT}/hdf5/lib\\\"     LD_LIBRARY_PATH=\\\"${OPT}/zlib/lib:${OPT}/jpeg/lib:${OPT}/hdf4/lib:${OPT}/hdf5/lib\\\"     LIBS=\\\"-ldf -lhdf5_hl -lhdf5 -ljpeg -lm -lz\\\"     ./configure --prefix=\\\"${OPT}/netcdf4\\\" --enable-hdf4 --disable-dap --with-pic  \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/netcdf4/config.log-netcdf-${NC4C_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2dc199a59f2806f32878b1757c85f6fa39a34a7b2dc0db96269583da3f79f422\",\"parent\":\"b202b3b8397b1a94ce09cb6607f1aa906ed96c01d303cad22bbdd3a08836f4b5\",\"created\":\"2017-04-25T18:50:22.37541021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/hdf5 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-${HDF5_VERSION}/src/hdf5-${HDF5_VERSION}.tar.gz \\u0026\\u0026     tar xzf hdf5-${HDF5_VERSION}.tar.gz \\u0026\\u0026     cd hdf5-${HDF5_VERSION} \\u0026\\u0026     ./configure --prefix=\\\"${OPT}/hdf5\\\" --with-pic --with-zlib=\\\"${OPT}/zlib\\\" --enable-cxx --enable-fortran --enable-fortran2003 --with-pthread \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/hdf5/config.log-hdf5-${HDF5_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b202b3b8397b1a94ce09cb6607f1aa906ed96c01d303cad22bbdd3a08836f4b5\",\"parent\":\"a86bc61144e626b153b4072fc21010085b01343c84ed5c6d1300a810a3946382\",\"created\":\"2017-04-25T18:40:43.780642923Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/hdf4 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q http://www.hdfgroup.org/ftp/HDF/releases/HDF${HDF4_VERSION}/src/hdf-${HDF4_VERSION}.tar.gz \\u0026\\u0026     tar xzf hdf-${HDF4_VERSION}.tar.gz \\u0026\\u0026     cd hdf-${HDF4_VERSION} \\u0026\\u0026     CFLAGS=\\\"-fPIC -DHAVE_NETCDF -fno-strict-aliasing\\\"     CXXFLAGS=\\\"-fPIC -DHAVE_NETCDF -fno-strict-aliasing\\\"     ./configure --prefix=\\\"${OPT}/hdf4\\\" --disable-netcdf --enable-fortran \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     mv ${OPT}/hdf4/bin/ncdump ${OPT}/hdf4/bin/hdfdump \\u0026\\u0026     mv ${OPT}/hdf4/bin/ncgen  ${OPT}/hdf4/bin/hdfgen \\u0026\\u0026     cp config.log ${OPT}/hdf4/config.log-hdf4-${HDF4_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a86bc61144e626b153b4072fc21010085b01343c84ed5c6d1300a810a3946382\",\"parent\":\"6bb252fb7b72603d7638a110c663701761588fe79bd86f01112bffd895f38a0a\",\"created\":\"2017-04-25T18:37:59.893659021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q https://www.hdfgroup.org/ftp/lib-external/jpeg/src/jpegsrc.v${JPEG_VERSION}.tar.gz \\u0026\\u0026     tar xzf jpegsrc.v${JPEG_VERSION}.tar.gz \\u0026\\u0026     cd jpeg-${JPEG_VERSION} \\u0026\\u0026     ./configure \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/config.log-jpeg-${JPEG_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6bb252fb7b72603d7638a110c663701761588fe79bd86f01112bffd895f38a0a\",\"parent\":\"0858c07b5c9c81bede157cb71674a6c087a792b5e4a28860ee1e56c943e4e9df\",\"created\":\"2017-04-25T18:37:26.479445419Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q http://zlib.net/zlib-${ZLIB_VERSION}.tar.gz \\u0026\\u0026     tar xzf zlib-${ZLIB_VERSION}.tar.gz \\u0026\\u0026     cd zlib-${ZLIB_VERSION} \\u0026\\u0026     ./configure \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp configure.log ${OPT}/config.log-zlib-${ZLIB_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0858c07b5c9c81bede157cb71674a6c087a792b5e4a28860ee1e56c943e4e9df\",\"parent\":\"120a4cfc2d85a9fb67810352b46dea244933996d84ec5e4dfcef2bb19827d00a\",\"created\":\"2017-04-25T18:36:50.781473104Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${OPT}\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"120a4cfc2d85a9fb67810352b46dea244933996d84ec5e4dfcef2bb19827d00a\",\"parent\":\"842598571b2fd7a92c431ff1b62bb66af3502f1f20585a33aa89c552a555a57a\",\"created\":\"2017-04-25T18:36:34.079159083Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y vim less tree screen unzip cvs subversion gdb valgrind\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"842598571b2fd7a92c431ff1b62bb66af3502f1f20585a33aa89c552a555a57a\",\"parent\":\"d1934ca61d5e450c89d531e811e931bf05218abd686616726738bb21ab0d95c5\",\"created\":\"2017-04-25T18:35:20.983856047Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y byacc bison diffutils flex make\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d1934ca61d5e450c89d531e811e931bf05218abd686616726738bb21ab0d95c5\",\"parent\":\"f1ff3109cb7cac4f23c6114f2cfb4ed81c2aa2ddf96d40f1e1b58eead8da0a5b\",\"created\":\"2017-04-25T18:34:30.024822523Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NETCDFPY_VERSION=1.2.4rel\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1ff3109cb7cac4f23c6114f2cfb4ed81c2aa2ddf96d40f1e1b58eead8da0a5b\",\"parent\":\"11449298939cd6537f62d024b004ad09f15fc9773383bcba4341d5cafbcd9931\",\"created\":\"2017-04-25T18:34:11.687011838Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYHDF_VERSION=0.9.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"11449298939cd6537f62d024b004ad09f15fc9773383bcba4341d5cafbcd9931\",\"parent\":\"3b155d6fc8100094ff5b063796f420fedb75d981e3c0da15ebc62ab55b3cedef\",\"created\":\"2017-04-25T18:33:53.135805473Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NCO_VERSION=4.6.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3b155d6fc8100094ff5b063796f420fedb75d981e3c0da15ebc62ab55b3cedef\",\"parent\":\"0da18b46dd733f2a511c759bc3f6273d6ba406ef3c6e925b7fc06417ec08b049\",\"created\":\"2017-04-25T18:33:34.72415575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NC4C_VERSION=4.4.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0da18b46dd733f2a511c759bc3f6273d6ba406ef3c6e925b7fc06417ec08b049\",\"parent\":\"96b18ea150708f89e45f2a9d8cdb0ce2e17ac6ca80d05da7f0a38287ca7153cd\",\"created\":\"2017-04-25T18:33:16.173912914Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NC4F_VERSION=4.4.4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"96b18ea150708f89e45f2a9d8cdb0ce2e17ac6ca80d05da7f0a38287ca7153cd\",\"parent\":\"62ca9596b127ddf7e3fcbb9dc28422ae8a94e7e3d3667fe5faaf076a0d35a407\",\"created\":\"2017-04-25T18:32:57.699546415Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF5_VERSION=1.8.17\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"62ca9596b127ddf7e3fcbb9dc28422ae8a94e7e3d3667fe5faaf076a0d35a407\",\"parent\":\"9db5ed4bee6db8d534823f5d9685fa739806736c83ade3363be9477e473ba37a\",\"created\":\"2017-04-25T18:32:39.067090271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF4_VERSION=4.2.12\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9db5ed4bee6db8d534823f5d9685fa739806736c83ade3363be9477e473ba37a\",\"parent\":\"c4805b65ed7012deed0886a68a7680ee6885ba37a8f96f55c00a8e6ab59a3b6d\",\"created\":\"2017-04-25T18:32:20.416375033Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SZIP_VERSION=2.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4805b65ed7012deed0886a68a7680ee6885ba37a8f96f55c00a8e6ab59a3b6d\",\"parent\":\"2dc587ea43919c5a06039224e475cf90fefe849b96091e8f3936e56d3845f1a1\",\"created\":\"2017-04-25T18:32:01.908987978Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV JPEG_VERSION=6b\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2dc587ea43919c5a06039224e475cf90fefe849b96091e8f3936e56d3845f1a1\",\"parent\":\"b981b6c9d19d8d00902b89714e1a23eaa72c0a68c77aa1f3f5d663b27149410b\",\"created\":\"2017-04-25T18:31:43.385501427Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ZLIB_VERSION=1.2.11\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b981b6c9d19d8d00902b89714e1a23eaa72c0a68c77aa1f3f5d663b27149410b\",\"parent\":\"8cd25e78d5b0e1415b91dfcd3464919d862270d359bdc742cd4580bd8f2cf92f\",\"created\":\"2017-04-25T18:31:24.491326424Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OPT=/opt\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8cd25e78d5b0e1415b91dfcd3464919d862270d359bdc742cd4580bd8f2cf92f\",\"parent\":\"e27033fedca6a5a7c4dc0650ff271847547e669dddba2dda3e30ad6526b3341f\",\"created\":\"2017-04-25T18:31:05.267715454Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV BUILD=/build\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e27033fedca6a5a7c4dc0650ff271847547e669dddba2dda3e30ad6526b3341f\",\"parent\":\"3a8bdbcbf0ef1fa78fbf9b3a573c2db309bdf01f9db6c03a912bae19905f94f8\",\"created\":\"2017-04-25T10:05:31.516065887Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -x \\t\\u0026\\u0026 dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc \\t\\u0026\\u0026 dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ \\t\\u0026\\u0026 dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran \\t\\u0026\\u0026 update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3a8bdbcbf0ef1fa78fbf9b3a573c2db309bdf01f9db6c03a912bae19905f94f8\",\"parent\":\"dc97f647ca22cadf0b300290f288c02cf3717896d93d43b732d3427eb779c98a\",\"created\":\"2017-04-25T10:05:30.12517172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '/usr/local/lib64' \\u003e /etc/ld.so.conf.d/local-lib64.conf \\t\\u0026\\u0026 ldconfig -v\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dc97f647ca22cadf0b300290f288c02cf3717896d93d43b732d3427eb779c98a\",\"parent\":\"9389cb64a48a1adfd3b2347f5eda69f9848d73a2f0695ba8c5a2e402353713e7\",\"created\":\"2017-04-25T10:05:23.511028401Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c buildDeps='flex' \\t\\u0026\\u0026 set -x \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\t\\u0026\\u0026 rm -r /var/lib/apt/lists/* \\t\\u0026\\u0026 curl -fSL \\\"http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2\\\" -o gcc.tar.bz2 \\t\\u0026\\u0026 curl -fSL \\\"http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig\\\" -o gcc.tar.bz2.sig \\t\\u0026\\u0026 gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 \\t\\u0026\\u0026 mkdir -p /usr/src/gcc \\t\\u0026\\u0026 tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 \\t\\u0026\\u0026 rm gcc.tar.bz2* \\t\\u0026\\u0026 cd /usr/src/gcc \\t\\u0026\\u0026 ./contrib/download_prerequisites \\t\\u0026\\u0026 { rm *.tar.* || true; } \\t\\u0026\\u0026 dir=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 cd \\\"$dir\\\" \\t\\u0026\\u0026 /usr/src/gcc/configure \\t\\t--disable-multilib \\t\\t--enable-languages=c,c++,fortran,go \\t\\u0026\\u0026 make -j\\\"$(nproc)\\\" \\t\\u0026\\u0026 make install-strip \\t\\u0026\\u0026 cd .. \\t\\u0026\\u0026 rm -rf \\\"$dir\\\" \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9389cb64a48a1adfd3b2347f5eda69f9848d73a2f0695ba8c5a2e402353713e7\",\"parent\":\"7a3bee3ab482fa57f09c8fbd692a782b9464468feb5bcb9e07ea3101835ef9e5\",\"created\":\"2017-04-25T09:04:54.839937771Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GCC_VERSION=6.3.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7a3bee3ab482fa57f09c8fbd692a782b9464468feb5bcb9e07ea3101835ef9e5\",\"parent\":\"5e289536a4cfd92119324dab62ddff232e3238ced9153279ee1ec4dc9aa396f9\",\"created\":\"2017-04-25T07:16:53.362194182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\u0026\\u0026 for key in $GPG_KEYS; do \\t\\tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\"; \\tdone\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e289536a4cfd92119324dab62ddff232e3238ced9153279ee1ec4dc9aa396f9\",\"parent\":\"27f74f49136a1dcc49a67eae575ad2ff6cb4769be1c49b695f5c8ca9a7d5931d\",\"created\":\"2017-04-25T07:16:49.840254071Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A \\tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \\t90AA470469D3965A87A5DCB494D03953902C9419 \\t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \\t7F74F97C103468EE5D750B583AB00996FC26A641 \\t33C235A34C46AA3FFB293709A328C3A2C3C45C06\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27f74f49136a1dcc49a67eae575ad2ff6cb4769be1c49b695f5c8ca9a7d5931d\",\"parent\":\"c673be90e3fa3ff5e451e521f80075fccab586c2d0fbc5e433e5ccec2a879837\",\"created\":\"2017-04-24T22:15:00.409111075Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c673be90e3fa3ff5e451e521f80075fccab586c2d0fbc5e433e5ccec2a879837\",\"parent\":\"3005748d35c3aa79b5d84c93bfe04be5787862e3bf346a7707c9dbb59e24cb15\",\"created\":\"2017-04-24T19:55:32.703666322Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3005748d35c3aa79b5d84c93bfe04be5787862e3bf346a7707c9dbb59e24cb15\",\"parent\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"created\":\"2017-04-24T19:54:25.518836194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"parent\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:42.022627269Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:41.290148217Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:84dbeea5ed84bbecebf837199baa61220e0862ff82fb2aa6239c506e471a92b9"
+            },
+            {
+                "blobSum": "sha256:50c867940a25ab9e37a4f7004d13e3a89ae7fbd012346f6a7403dab6653018fd"
+            },
+            {
+                "blobSum": "sha256:c5397a7c95200b9969c05df87b42b38fadcfa18686bf07b5d0e9b466a5b1a880"
+            },
+            {
+                "blobSum": "sha256:d348f21f7707821b3919339afbdfe67b22310163634d00f359e2bf9574f0b909"
+            },
+            {
+                "blobSum": "sha256:a7e9c2513062517010f4e6ce16af4d7a34d7b083288e74c97937e7f34ac81a79"
+            },
+            {
+                "blobSum": "sha256:c7ca0f63d1dc4f6dd29b3f7bd5d9b8c53db73c439b8d6c90a48c88a25cac8798"
+            },
+            {
+                "blobSum": "sha256:56d0884aa475cfc52abf8cb5023f0903f1ecf3d2d839a642d76bd146cfa96636"
+            },
+            {
+                "blobSum": "sha256:f3dacb717c0542a977b368917eeeeb943b233bec7cf5bc95afff8fc1025b97d1"
+            },
+            {
+                "blobSum": "sha256:446ed2494d5129a9be717536d3785da665942f8deb8a0cc8e5763154c6dbd325"
+            },
+            {
+                "blobSum": "sha256:869f474c281a1488a5452a6d0f0b8e204c5adcea9d81daad6abd6da6a58e7345"
+            },
+            {
+                "blobSum": "sha256:cda11c7a11c4423aad482a3f102f8af23faad3f8cfed5e85e99ea06e7a496e37"
+            },
+            {
+                "blobSum": "sha256:5362d9456e25f17b0038ad71c4bb07d9114e700f8dc26b29444125dfd1ee404f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:da7a2c4f56281ad551b9d9604684aed7482315425d882937550dd8cb524eec5f"
+            },
+            {
+                "blobSum": "sha256:a79af28eb56832657533a1cb25814365b140fa800c92a7d225c9f9520b14bd2c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:26933fdd4fb6e183e58f7ca204dda87f06ad544ff2a8f89eb76044efbbefc42e"
+            },
+            {
+                "blobSum": "sha256:339248b9ecfca4af1f1c7c10b06bb732f2068560e9a1053b9d4e595e77ad512b"
+            },
+            {
+                "blobSum": "sha256:7f1a2329e0fe05f287e7a675edee21e8783dc8009d5476826b626a8c6a527ece"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ca5955eb1884c2d3b4c9cdfc089e6d26bdc01ff71f63f7b6d0deae796f2613d6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4c546d9d6a84ca2a1b7459a47978abe757bf67096d9dd704a9a5a0a786d2d325"
+            },
+            {
+                "blobSum": "sha256:85334a7c200103c122f3cbf56460f28fe688abc52655dc714afa939e49848ba8"
+            },
+            {
+                "blobSum": "sha256:e39c3ffe41332a7a3c7f85f57e547361ec90b6e0091dd6058e06acccde2217d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c"
+            }
+        ],
+        "name": "nbearson/docker-science-stack",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMwNDcyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTA6MDJaIn0",
+                "signature": "6TaiqJhBSs3jogKRSwZq11Cpv7kCZwuzBya_X-LBzXLgMf0pwbGtTZEadaNbdiIi1id9yxdyxnlF3je9TdLOMQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "h7GhpKHUUcpO6bbXscMvouwq1SxgNVgjPGxiGc3D4BY",
+                        "kid": "BZRW:6INW:MZE7:OKEX:DJSK:4FB4:HYSG:UYPV:V24H:YTJV:ZQVU:E4EG",
+                        "x": "bXIIPwqV_I-HDLMKxJQviw0_sbEu6v4eWqvdSbp7-N0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/hdf4/bin/:/opt/hdf5/bin:/opt/netcdf4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A \\tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \\t90AA470469D3965A87A5DCB494D03953902C9419 \\t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \\t7F74F97C103468EE5D750B583AB00996FC26A641 \\t33C235A34C46AA3FFB293709A328C3A2C3C45C06\",\"GCC_VERSION=6.3.0\",\"BUILD=/build\",\"OPT=/opt\",\"ZLIB_VERSION=1.2.11\",\"JPEG_VERSION=6b\",\"SZIP_VERSION=2.1\",\"HDF4_VERSION=4.2.12\",\"HDF5_VERSION=1.8.17\",\"NC4F_VERSION=4.4.4\",\"NC4C_VERSION=4.4.1\",\"NCO_VERSION=4.6.1\",\"PYHDF_VERSION=0.9.0\",\"NETCDFPY_VERSION=1.2.4rel\",\"HDF4=/opt/hdf4\",\"HDF5=/opt/hdf5\",\"NETCDF=/opt/netcdf4\",\"LD_LIBRARY_PATH=/opt/hdf4/lib:/opt/hdf5/lib:/opt/netcdf4/lib:\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:30ad12768f777ac3764e9a259bec2522ffb70c0d909d724d44e2bf8f289f797d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"527bcd85a20f101f2feb8a560d830f5de2780d57ae418536b548e0bd8685ba7f\",\"container_config\":{\"Hostname\":\"607924cbbc93\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/hdf4/bin/:/opt/hdf5/bin:/opt/netcdf4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A \\tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \\t90AA470469D3965A87A5DCB494D03953902C9419 \\t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \\t7F74F97C103468EE5D750B583AB00996FC26A641 \\t33C235A34C46AA3FFB293709A328C3A2C3C45C06\",\"GCC_VERSION=6.3.0\",\"BUILD=/build\",\"OPT=/opt\",\"ZLIB_VERSION=1.2.11\",\"JPEG_VERSION=6b\",\"SZIP_VERSION=2.1\",\"HDF4_VERSION=4.2.12\",\"HDF5_VERSION=1.8.17\",\"NC4F_VERSION=4.4.4\",\"NC4C_VERSION=4.4.1\",\"NCO_VERSION=4.6.1\",\"PYHDF_VERSION=0.9.0\",\"NETCDFPY_VERSION=1.2.4rel\",\"HDF4=/opt/hdf4\",\"HDF5=/opt/hdf5\",\"NETCDF=/opt/netcdf4\",\"LD_LIBRARY_PATH=/opt/hdf4/lib:/opt/hdf5/lib:/opt/netcdf4/lib:\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"ENV PATH=/opt/hdf4/bin/:/opt/hdf5/bin:/opt/netcdf4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"ArgsEscaped\":true,\"Image\":\"sha256:30ad12768f777ac3764e9a259bec2522ffb70c0d909d724d44e2bf8f289f797d\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-25T19:01:49.733693906Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"84352d2a513e105fcdc96e4666eb7ea0054c340ef8d10eefdf0c2047593f4732\",\"os\":\"linux\",\"parent\":\"4c906240b7642bd37a2ebcaef85aeee7e27007789a86330475f664c15ae3358c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4c906240b7642bd37a2ebcaef85aeee7e27007789a86330475f664c15ae3358c\",\"parent\":\"96ae5973c35448cd6af386e69bb5bbb8bf2bcad8c664dde81cd16cfe664f2736\",\"created\":\"2017-04-25T19:01:27.579445194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/opt/hdf4/lib:/opt/hdf5/lib:/opt/netcdf4/lib:\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"96ae5973c35448cd6af386e69bb5bbb8bf2bcad8c664dde81cd16cfe664f2736\",\"parent\":\"a8cefa68d7cebeeaacdc384dcaba789c14e5356be3e8319b09406479cc747d25\",\"created\":\"2017-04-25T19:01:05.831641717Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NETCDF=/opt/netcdf4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a8cefa68d7cebeeaacdc384dcaba789c14e5356be3e8319b09406479cc747d25\",\"parent\":\"ed22bc17bf3241c1b0e93536da167d7364063c196dd23d2ceefb7e5335a66197\",\"created\":\"2017-04-25T19:00:43.941517163Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF5=/opt/hdf5\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ed22bc17bf3241c1b0e93536da167d7364063c196dd23d2ceefb7e5335a66197\",\"parent\":\"7c0c9119010c9c6332983e01b497c7c24db2fb2443609f98cd3276d0715d51e8\",\"created\":\"2017-04-25T19:00:21.832860608Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF4=/opt/hdf4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c0c9119010c9c6332983e01b497c7c24db2fb2443609f98cd3276d0715d51e8\",\"parent\":\"6557d1e4598e917bd33eb9e21e4abfcf068833b475b71cc9e5f836233d758203\",\"created\":\"2017-04-25T19:00:03.247245868Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'alias ls=\\\"ls --color=auto\\\"' \\u003e\\u003e ~/.bashrc \\u0026\\u0026     echo 'alias ll=\\\"ls -lGh $@\\\"' \\u003e\\u003e ~/.bashrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6557d1e4598e917bd33eb9e21e4abfcf068833b475b71cc9e5f836233d758203\",\"parent\":\"5653719dfc9305c06c62730544379f17beb514878cef1460bd91d1da6a11d38a\",\"created\":\"2017-04-25T18:59:44.154299726Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q https://github.com/Unidata/netcdf4-python/archive/v${NETCDFPY_VERSION}.tar.gz \\u0026\\u0026     tar xzf v${NETCDFPY_VERSION}.tar.gz \\u0026\\u0026     cd netcdf4-python-${NETCDFPY_VERSION} \\u0026\\u0026     PATH=\\\"${OPT}/netcdf4/bin:$PATH\\\"     python setup.py install \\u0026\\u0026     rm -r ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5653719dfc9305c06c62730544379f17beb514878cef1460bd91d1da6a11d38a\",\"parent\":\"7c25d902bed948cdc10a661611351db09475701bdcbdee91d634af781b9d6907\",\"created\":\"2017-04-25T18:59:11.218620264Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q http://hdfeos.org/software/pyhdf/pyhdf-${PYHDF_VERSION}.tar.gz \\u0026\\u0026     tar xzf pyhdf-${PYHDF_VERSION}.tar.gz \\u0026\\u0026     cd pyhdf-${PYHDF_VERSION} \\u0026\\u0026     INCLUDE_DIRS=\\\"${OPT}/hdf4/include/\\\"     LIBRARY_DIRS=\\\"${OPT}/hdf4/lib/\\\"     python setup.py install \\u0026\\u0026     rm -r ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c25d902bed948cdc10a661611351db09475701bdcbdee91d634af781b9d6907\",\"parent\":\"fa71fefc5b107db1bbbde09ac70ff65d32e6e6155ef664be284e09ea2df125e6\",\"created\":\"2017-04-25T18:58:49.665999256Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c easy_install -f http://larch.ssec.wisc.edu/cgi-bin/repos.cgi uwglance\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa71fefc5b107db1bbbde09ac70ff65d32e6e6155ef664be284e09ea2df125e6\",\"parent\":\"1ddc2dfe5c1e9b2a0b8644e5a3f89eb2be5676302a7ff7ab03b5285024111909\",\"created\":\"2017-04-25T18:58:28.442770159Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python-setuptools python-numpy python-scipy python-matplotlib python-mpltoolkits.basemap\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1ddc2dfe5c1e9b2a0b8644e5a3f89eb2be5676302a7ff7ab03b5285024111909\",\"parent\":\"7529f699e1bde9e59a6d19939cfa18badaa7bb9e54e9504b90aef2666889d2e8\",\"created\":\"2017-04-25T18:56:27.93295234Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/nco \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -qL https://github.com/nco/nco/archive/${NCO_VERSION}.tar.gz \\u0026\\u0026     tar xzf ${NCO_VERSION}.tar.gz \\u0026\\u0026     cd nco-${NCO_VERSION} \\u0026\\u0026     NETCDF_ROOT=${OPT}/netcdf4 ./configure --prefix=${OPT}/nco \\u0026\\u0026     make \\u0026\\u0026 make install \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7529f699e1bde9e59a6d19939cfa18badaa7bb9e54e9504b90aef2666889d2e8\",\"parent\":\"4b1435e1f0e3015d86632af5259e335afbad92c54d08dc12cede851775ccd7bd\",\"created\":\"2017-04-25T18:53:40.052407361Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/netcdf4 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-fortran-${NC4F_VERSION}.tar.gz \\u0026\\u0026     tar xzf netcdf-fortran-${NC4F_VERSION}.tar.gz \\u0026\\u0026     cd netcdf-fortran-${NC4F_VERSION} \\u0026\\u0026     CPPFLAGS=\\\"-I${OPT}/hdf4/include -I${OPT}/hdf5/include -I${OPT}/netcdf4/include\\\"     LDFLAGS=\\\"-L${OPT}/hdf4/lib -L${OPT}/hdf5/lib -L${OPT}/netcdf4/lib\\\"     LD_LIBRARY_PATH=\\\"${OPT}/hdf4/lib:${OPT}/hdf5/lib:${OPT}/netcdf4/lib\\\"     LIBS=\\\"-lnetcdf -ldf -lhdf5_hl -lhdf5 -ljpeg -lm -lz\\\"     ./configure --prefix=\\\"${OPT}/netcdf4\\\" --disable-dap --with-pic \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/netcdf4/config.log-netcdff-${NC4F_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4b1435e1f0e3015d86632af5259e335afbad92c54d08dc12cede851775ccd7bd\",\"parent\":\"2dc199a59f2806f32878b1757c85f6fa39a34a7b2dc0db96269583da3f79f422\",\"created\":\"2017-04-25T18:51:42.596087688Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/netcdf4 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q ftp://ftp.unidata.ucar.edu/pub/netcdf/netcdf-${NC4C_VERSION}.tar.gz \\u0026\\u0026     tar xzf netcdf-${NC4C_VERSION}.tar.gz \\u0026\\u0026     cd netcdf-${NC4C_VERSION} \\u0026\\u0026     CPPFLAGS=\\\"-I${OPT}/hdf4/include -I${OPT}/hdf5/include\\\"     LDFLAGS=\\\"-L${OPT}/hdf4/lib -L${OPT}/hdf5/lib\\\"     LD_LIBRARY_PATH=\\\"${OPT}/zlib/lib:${OPT}/jpeg/lib:${OPT}/hdf4/lib:${OPT}/hdf5/lib\\\"     LIBS=\\\"-ldf -lhdf5_hl -lhdf5 -ljpeg -lm -lz\\\"     ./configure --prefix=\\\"${OPT}/netcdf4\\\" --enable-hdf4 --disable-dap --with-pic  \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/netcdf4/config.log-netcdf-${NC4C_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2dc199a59f2806f32878b1757c85f6fa39a34a7b2dc0db96269583da3f79f422\",\"parent\":\"b202b3b8397b1a94ce09cb6607f1aa906ed96c01d303cad22bbdd3a08836f4b5\",\"created\":\"2017-04-25T18:50:22.37541021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/hdf5 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q https://www.hdfgroup.org/ftp/HDF5/releases/hdf5-${HDF5_VERSION}/src/hdf5-${HDF5_VERSION}.tar.gz \\u0026\\u0026     tar xzf hdf5-${HDF5_VERSION}.tar.gz \\u0026\\u0026     cd hdf5-${HDF5_VERSION} \\u0026\\u0026     ./configure --prefix=\\\"${OPT}/hdf5\\\" --with-pic --with-zlib=\\\"${OPT}/zlib\\\" --enable-cxx --enable-fortran --enable-fortran2003 --with-pthread \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/hdf5/config.log-hdf5-${HDF5_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b202b3b8397b1a94ce09cb6607f1aa906ed96c01d303cad22bbdd3a08836f4b5\",\"parent\":\"a86bc61144e626b153b4072fc21010085b01343c84ed5c6d1300a810a3946382\",\"created\":\"2017-04-25T18:40:43.780642923Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} ${OPT}/hdf4 \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q http://www.hdfgroup.org/ftp/HDF/releases/HDF${HDF4_VERSION}/src/hdf-${HDF4_VERSION}.tar.gz \\u0026\\u0026     tar xzf hdf-${HDF4_VERSION}.tar.gz \\u0026\\u0026     cd hdf-${HDF4_VERSION} \\u0026\\u0026     CFLAGS=\\\"-fPIC -DHAVE_NETCDF -fno-strict-aliasing\\\"     CXXFLAGS=\\\"-fPIC -DHAVE_NETCDF -fno-strict-aliasing\\\"     ./configure --prefix=\\\"${OPT}/hdf4\\\" --disable-netcdf --enable-fortran \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     mv ${OPT}/hdf4/bin/ncdump ${OPT}/hdf4/bin/hdfdump \\u0026\\u0026     mv ${OPT}/hdf4/bin/ncgen  ${OPT}/hdf4/bin/hdfgen \\u0026\\u0026     cp config.log ${OPT}/hdf4/config.log-hdf4-${HDF4_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a86bc61144e626b153b4072fc21010085b01343c84ed5c6d1300a810a3946382\",\"parent\":\"6bb252fb7b72603d7638a110c663701761588fe79bd86f01112bffd895f38a0a\",\"created\":\"2017-04-25T18:37:59.893659021Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q https://www.hdfgroup.org/ftp/lib-external/jpeg/src/jpegsrc.v${JPEG_VERSION}.tar.gz \\u0026\\u0026     tar xzf jpegsrc.v${JPEG_VERSION}.tar.gz \\u0026\\u0026     cd jpeg-${JPEG_VERSION} \\u0026\\u0026     ./configure \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp config.log ${OPT}/config.log-jpeg-${JPEG_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6bb252fb7b72603d7638a110c663701761588fe79bd86f01112bffd895f38a0a\",\"parent\":\"0858c07b5c9c81bede157cb71674a6c087a792b5e4a28860ee1e56c943e4e9df\",\"created\":\"2017-04-25T18:37:26.479445419Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${BUILD} \\u0026\\u0026 cd ${BUILD} \\u0026\\u0026     wget -q http://zlib.net/zlib-${ZLIB_VERSION}.tar.gz \\u0026\\u0026     tar xzf zlib-${ZLIB_VERSION}.tar.gz \\u0026\\u0026     cd zlib-${ZLIB_VERSION} \\u0026\\u0026     ./configure \\u0026\\u0026 make -j4 \\u0026\\u0026 make install \\u0026\\u0026     cp configure.log ${OPT}/config.log-zlib-${ZLIB_VERSION} \\u0026\\u0026     rm -rf ${BUILD}\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0858c07b5c9c81bede157cb71674a6c087a792b5e4a28860ee1e56c943e4e9df\",\"parent\":\"120a4cfc2d85a9fb67810352b46dea244933996d84ec5e4dfcef2bb19827d00a\",\"created\":\"2017-04-25T18:36:50.781473104Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${OPT}\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"120a4cfc2d85a9fb67810352b46dea244933996d84ec5e4dfcef2bb19827d00a\",\"parent\":\"842598571b2fd7a92c431ff1b62bb66af3502f1f20585a33aa89c552a555a57a\",\"created\":\"2017-04-25T18:36:34.079159083Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y vim less tree screen unzip cvs subversion gdb valgrind\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"842598571b2fd7a92c431ff1b62bb66af3502f1f20585a33aa89c552a555a57a\",\"parent\":\"d1934ca61d5e450c89d531e811e931bf05218abd686616726738bb21ab0d95c5\",\"created\":\"2017-04-25T18:35:20.983856047Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y byacc bison diffutils flex make\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d1934ca61d5e450c89d531e811e931bf05218abd686616726738bb21ab0d95c5\",\"parent\":\"f1ff3109cb7cac4f23c6114f2cfb4ed81c2aa2ddf96d40f1e1b58eead8da0a5b\",\"created\":\"2017-04-25T18:34:30.024822523Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NETCDFPY_VERSION=1.2.4rel\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1ff3109cb7cac4f23c6114f2cfb4ed81c2aa2ddf96d40f1e1b58eead8da0a5b\",\"parent\":\"11449298939cd6537f62d024b004ad09f15fc9773383bcba4341d5cafbcd9931\",\"created\":\"2017-04-25T18:34:11.687011838Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYHDF_VERSION=0.9.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"11449298939cd6537f62d024b004ad09f15fc9773383bcba4341d5cafbcd9931\",\"parent\":\"3b155d6fc8100094ff5b063796f420fedb75d981e3c0da15ebc62ab55b3cedef\",\"created\":\"2017-04-25T18:33:53.135805473Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NCO_VERSION=4.6.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3b155d6fc8100094ff5b063796f420fedb75d981e3c0da15ebc62ab55b3cedef\",\"parent\":\"0da18b46dd733f2a511c759bc3f6273d6ba406ef3c6e925b7fc06417ec08b049\",\"created\":\"2017-04-25T18:33:34.72415575Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NC4C_VERSION=4.4.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0da18b46dd733f2a511c759bc3f6273d6ba406ef3c6e925b7fc06417ec08b049\",\"parent\":\"96b18ea150708f89e45f2a9d8cdb0ce2e17ac6ca80d05da7f0a38287ca7153cd\",\"created\":\"2017-04-25T18:33:16.173912914Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV NC4F_VERSION=4.4.4\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"96b18ea150708f89e45f2a9d8cdb0ce2e17ac6ca80d05da7f0a38287ca7153cd\",\"parent\":\"62ca9596b127ddf7e3fcbb9dc28422ae8a94e7e3d3667fe5faaf076a0d35a407\",\"created\":\"2017-04-25T18:32:57.699546415Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF5_VERSION=1.8.17\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"62ca9596b127ddf7e3fcbb9dc28422ae8a94e7e3d3667fe5faaf076a0d35a407\",\"parent\":\"9db5ed4bee6db8d534823f5d9685fa739806736c83ade3363be9477e473ba37a\",\"created\":\"2017-04-25T18:32:39.067090271Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV HDF4_VERSION=4.2.12\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9db5ed4bee6db8d534823f5d9685fa739806736c83ade3363be9477e473ba37a\",\"parent\":\"c4805b65ed7012deed0886a68a7680ee6885ba37a8f96f55c00a8e6ab59a3b6d\",\"created\":\"2017-04-25T18:32:20.416375033Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV SZIP_VERSION=2.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4805b65ed7012deed0886a68a7680ee6885ba37a8f96f55c00a8e6ab59a3b6d\",\"parent\":\"2dc587ea43919c5a06039224e475cf90fefe849b96091e8f3936e56d3845f1a1\",\"created\":\"2017-04-25T18:32:01.908987978Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV JPEG_VERSION=6b\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2dc587ea43919c5a06039224e475cf90fefe849b96091e8f3936e56d3845f1a1\",\"parent\":\"b981b6c9d19d8d00902b89714e1a23eaa72c0a68c77aa1f3f5d663b27149410b\",\"created\":\"2017-04-25T18:31:43.385501427Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ZLIB_VERSION=1.2.11\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b981b6c9d19d8d00902b89714e1a23eaa72c0a68c77aa1f3f5d663b27149410b\",\"parent\":\"8cd25e78d5b0e1415b91dfcd3464919d862270d359bdc742cd4580bd8f2cf92f\",\"created\":\"2017-04-25T18:31:24.491326424Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV OPT=/opt\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8cd25e78d5b0e1415b91dfcd3464919d862270d359bdc742cd4580bd8f2cf92f\",\"parent\":\"e27033fedca6a5a7c4dc0650ff271847547e669dddba2dda3e30ad6526b3341f\",\"created\":\"2017-04-25T18:31:05.267715454Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV BUILD=/build\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e27033fedca6a5a7c4dc0650ff271847547e669dddba2dda3e30ad6526b3341f\",\"parent\":\"3a8bdbcbf0ef1fa78fbf9b3a573c2db309bdf01f9db6c03a912bae19905f94f8\",\"created\":\"2017-04-25T10:05:31.516065887Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -x \\t\\u0026\\u0026 dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc \\t\\u0026\\u0026 dpkg-divert --divert /usr/bin/g++.orig --rename /usr/bin/g++ \\t\\u0026\\u0026 dpkg-divert --divert /usr/bin/gfortran.orig --rename /usr/bin/gfortran \\t\\u0026\\u0026 update-alternatives --install /usr/bin/cc cc /usr/local/bin/gcc 999\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3a8bdbcbf0ef1fa78fbf9b3a573c2db309bdf01f9db6c03a912bae19905f94f8\",\"parent\":\"dc97f647ca22cadf0b300290f288c02cf3717896d93d43b732d3427eb779c98a\",\"created\":\"2017-04-25T10:05:30.12517172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo '/usr/local/lib64' \\u003e /etc/ld.so.conf.d/local-lib64.conf \\t\\u0026\\u0026 ldconfig -v\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dc97f647ca22cadf0b300290f288c02cf3717896d93d43b732d3427eb779c98a\",\"parent\":\"9389cb64a48a1adfd3b2347f5eda69f9848d73a2f0695ba8c5a2e402353713e7\",\"created\":\"2017-04-25T10:05:23.511028401Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c buildDeps='flex' \\t\\u0026\\u0026 set -x \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\t\\u0026\\u0026 rm -r /var/lib/apt/lists/* \\t\\u0026\\u0026 curl -fSL \\\"http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2\\\" -o gcc.tar.bz2 \\t\\u0026\\u0026 curl -fSL \\\"http://ftpmirror.gnu.org/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.bz2.sig\\\" -o gcc.tar.bz2.sig \\t\\u0026\\u0026 gpg --batch --verify gcc.tar.bz2.sig gcc.tar.bz2 \\t\\u0026\\u0026 mkdir -p /usr/src/gcc \\t\\u0026\\u0026 tar -xf gcc.tar.bz2 -C /usr/src/gcc --strip-components=1 \\t\\u0026\\u0026 rm gcc.tar.bz2* \\t\\u0026\\u0026 cd /usr/src/gcc \\t\\u0026\\u0026 ./contrib/download_prerequisites \\t\\u0026\\u0026 { rm *.tar.* || true; } \\t\\u0026\\u0026 dir=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 cd \\\"$dir\\\" \\t\\u0026\\u0026 /usr/src/gcc/configure \\t\\t--disable-multilib \\t\\t--enable-languages=c,c++,fortran,go \\t\\u0026\\u0026 make -j\\\"$(nproc)\\\" \\t\\u0026\\u0026 make install-strip \\t\\u0026\\u0026 cd .. \\t\\u0026\\u0026 rm -rf \\\"$dir\\\" \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9389cb64a48a1adfd3b2347f5eda69f9848d73a2f0695ba8c5a2e402353713e7\",\"parent\":\"7a3bee3ab482fa57f09c8fbd692a782b9464468feb5bcb9e07ea3101835ef9e5\",\"created\":\"2017-04-25T09:04:54.839937771Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GCC_VERSION=6.3.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7a3bee3ab482fa57f09c8fbd692a782b9464468feb5bcb9e07ea3101835ef9e5\",\"parent\":\"5e289536a4cfd92119324dab62ddff232e3238ced9153279ee1ec4dc9aa396f9\",\"created\":\"2017-04-25T07:16:53.362194182Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\u0026\\u0026 for key in $GPG_KEYS; do \\t\\tgpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$key\\\"; \\tdone\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e289536a4cfd92119324dab62ddff232e3238ced9153279ee1ec4dc9aa396f9\",\"parent\":\"27f74f49136a1dcc49a67eae575ad2ff6cb4769be1c49b695f5c8ca9a7d5931d\",\"created\":\"2017-04-25T07:16:49.840254071Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A \\tB3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 \\t90AA470469D3965A87A5DCB494D03953902C9419 \\t80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C \\t7F74F97C103468EE5D750B583AB00996FC26A641 \\t33C235A34C46AA3FFB293709A328C3A2C3C45C06\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27f74f49136a1dcc49a67eae575ad2ff6cb4769be1c49b695f5c8ca9a7d5931d\",\"parent\":\"c673be90e3fa3ff5e451e521f80075fccab586c2d0fbc5e433e5ccec2a879837\",\"created\":\"2017-04-24T22:15:00.409111075Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\tapt-get update; \\tapt-get install -y --no-install-recommends \\t\\tautoconf \\t\\tautomake \\t\\tbzip2 \\t\\tfile \\t\\tg++ \\t\\tgcc \\t\\timagemagick \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibcurl4-openssl-dev \\t\\tlibdb-dev \\t\\tlibevent-dev \\t\\tlibffi-dev \\t\\tlibgdbm-dev \\t\\tlibgeoip-dev \\t\\tlibglib2.0-dev \\t\\tlibjpeg-dev \\t\\tlibkrb5-dev \\t\\tliblzma-dev \\t\\tlibmagickcore-dev \\t\\tlibmagickwand-dev \\t\\tlibncurses-dev \\t\\tlibpng-dev \\t\\tlibpq-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tlibtool \\t\\tlibwebp-dev \\t\\tlibxml2-dev \\t\\tlibxslt-dev \\t\\tlibyaml-dev \\t\\tmake \\t\\tpatch \\t\\txz-utils \\t\\tzlib1g-dev \\t\\t\\t\\t$( \\t\\t\\tif apt-cache show 'default-libmysqlclient-dev' 2\\u003e/dev/null | grep -q '^Version:'; then \\t\\t\\t\\techo 'default-libmysqlclient-dev'; \\t\\t\\telse \\t\\t\\t\\techo 'libmysqlclient-dev'; \\t\\t\\tfi \\t\\t) \\t; \\trm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c673be90e3fa3ff5e451e521f80075fccab586c2d0fbc5e433e5ccec2a879837\",\"parent\":\"3005748d35c3aa79b5d84c93bfe04be5787862e3bf346a7707c9dbb59e24cb15\",\"created\":\"2017-04-24T19:55:32.703666322Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tbzr \\t\\tgit \\t\\tmercurial \\t\\topenssh-client \\t\\tsubversion \\t\\t\\t\\tprocps \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3005748d35c3aa79b5d84c93bfe04be5787862e3bf346a7707c9dbb59e24cb15\",\"parent\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"created\":\"2017-04-24T19:54:25.518836194Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tcurl \\t\\twget \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"da2946c4fc08ff2d367aca230145bd63b00dc341079ff507a75f6926d5c9be2c\",\"parent\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:42.022627269Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"32a8b9923ae33c5bf8a4f41f780ddf66160770fb2a7ba7d516a40c10059e9830\",\"created\":\"2017-04-24T19:20:41.290148217Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:712c48086043553b85ffb031d8f6c5de857a2e53974df30cdfbc1e85c1b00a25 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:84dbeea5ed84bbecebf837199baa61220e0862ff82fb2aa6239c506e471a92b9"
+            },
+            {
+                "blobSum": "sha256:50c867940a25ab9e37a4f7004d13e3a89ae7fbd012346f6a7403dab6653018fd"
+            },
+            {
+                "blobSum": "sha256:c5397a7c95200b9969c05df87b42b38fadcfa18686bf07b5d0e9b466a5b1a880"
+            },
+            {
+                "blobSum": "sha256:d348f21f7707821b3919339afbdfe67b22310163634d00f359e2bf9574f0b909"
+            },
+            {
+                "blobSum": "sha256:a7e9c2513062517010f4e6ce16af4d7a34d7b083288e74c97937e7f34ac81a79"
+            },
+            {
+                "blobSum": "sha256:c7ca0f63d1dc4f6dd29b3f7bd5d9b8c53db73c439b8d6c90a48c88a25cac8798"
+            },
+            {
+                "blobSum": "sha256:56d0884aa475cfc52abf8cb5023f0903f1ecf3d2d839a642d76bd146cfa96636"
+            },
+            {
+                "blobSum": "sha256:f3dacb717c0542a977b368917eeeeb943b233bec7cf5bc95afff8fc1025b97d1"
+            },
+            {
+                "blobSum": "sha256:446ed2494d5129a9be717536d3785da665942f8deb8a0cc8e5763154c6dbd325"
+            },
+            {
+                "blobSum": "sha256:869f474c281a1488a5452a6d0f0b8e204c5adcea9d81daad6abd6da6a58e7345"
+            },
+            {
+                "blobSum": "sha256:cda11c7a11c4423aad482a3f102f8af23faad3f8cfed5e85e99ea06e7a496e37"
+            },
+            {
+                "blobSum": "sha256:5362d9456e25f17b0038ad71c4bb07d9114e700f8dc26b29444125dfd1ee404f"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:da7a2c4f56281ad551b9d9604684aed7482315425d882937550dd8cb524eec5f"
+            },
+            {
+                "blobSum": "sha256:a79af28eb56832657533a1cb25814365b140fa800c92a7d225c9f9520b14bd2c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:26933fdd4fb6e183e58f7ca204dda87f06ad544ff2a8f89eb76044efbbefc42e"
+            },
+            {
+                "blobSum": "sha256:339248b9ecfca4af1f1c7c10b06bb732f2068560e9a1053b9d4e595e77ad512b"
+            },
+            {
+                "blobSum": "sha256:7f1a2329e0fe05f287e7a675edee21e8783dc8009d5476826b626a8c6a527ece"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ca5955eb1884c2d3b4c9cdfc089e6d26bdc01ff71f63f7b6d0deae796f2613d6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4c546d9d6a84ca2a1b7459a47978abe757bf67096d9dd704a9a5a0a786d2d325"
+            },
+            {
+                "blobSum": "sha256:85334a7c200103c122f3cbf56460f28fe688abc52655dc714afa939e49848ba8"
+            },
+            {
+                "blobSum": "sha256:e39c3ffe41332a7a3c7f85f57e547361ec90b6e0091dd6058e06acccde2217d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:cd0a524342efac6edff500c17e625735bbe479c926439b263bbe3c8518a0849c"
+            }
+        ],
+        "name": "nbearson/docker-science-stack",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjMwNDcyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTA6MDNaIn0",
+                "signature": "-3G1kOu5msOm7bAlt7U3daeYa0y7RT-avQ4PsZ1goog6WZfFOTTBPRoCG_qv1tQwEJK5tT7Zs2oee1Wwpi7XCg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Utb3sahOfqJu7aBnY5xcTocRBVYHtbgoRn-J4k8f4vc",
+                        "kid": "7LSF:N5QK:SS2F:Z4ZS:O3AM:4TQT:RZXF:BY53:BD6Y:4STT:3IZZ:MFPN",
+                        "x": "spr2E2wra1w0t_Yc5zh1fC90fRKNoo2PQMscv4boni0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

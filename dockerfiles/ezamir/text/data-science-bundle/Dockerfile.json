@@ -1,0 +1,222 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3c16f701b8df\",\"Domainname\":\"\",\"User\":\"jupyter\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"DEBIAN_FRONTEND=noninteractive\",\"MINICONDA=Miniconda3-latest-Linux-x86_64.sh\",\"USER=jupyter\",\"HOME=/home/jupyter\"],\"Cmd\":[\"sh\",\"-c\",\"jupyter notebook --ip=*\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c6abb847b8fb586f687b4b4ad7a0508d8658904d8e4f30cb1ef6ff0d802ff29f\",\"Volumes\":{\"/home/jupyter\":{}},\"WorkingDir\":\"/home/jupyter\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"fc7a191045ac8e5dd54453c46f1cb95a42e100c3f488c24948d37c700c895f0a\",\"container_config\":{\"Hostname\":\"3c16f701b8df\",\"Domainname\":\"\",\"User\":\"jupyter\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"DEBIAN_FRONTEND=noninteractive\",\"MINICONDA=Miniconda3-latest-Linux-x86_64.sh\",\"USER=jupyter\",\"HOME=/home/jupyter\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"sh\\\" \\\"-c\\\" \\\"jupyter notebook --ip=*\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c6abb847b8fb586f687b4b4ad7a0508d8658904d8e4f30cb1ef6ff0d802ff29f\",\"Volumes\":{\"/home/jupyter\":{}},\"WorkingDir\":\"/home/jupyter\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-05-24T07:44:16.406981222Z\",\"docker_version\":\"1.11.1\",\"id\":\"54bff59f3aebb92430d8b44f27d067efb443ca49ba1773105d9d3fc64bb82e74\",\"os\":\"linux\",\"parent\":\"e7cfafed9a7a91935ed70647c96190315062025e3717d4d8c954f4cb494351c7\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7cfafed9a7a91935ed70647c96190315062025e3717d4d8c954f4cb494351c7\",\"parent\":\"946b781015333e44b2e04363d1e3d58a3a6ac88765d5368a15ea845dc95693e1\",\"created\":\"2016-05-24T07:44:10.394650665Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home/jupyter\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"946b781015333e44b2e04363d1e3d58a3a6ac88765d5368a15ea845dc95693e1\",\"parent\":\"ca7f6645e97811424cb5c0adaace8a32b81309379caba46a8d767fcbccfd77a8\",\"created\":\"2016-05-24T07:44:04.466314497Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/home/jupyter]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ca7f6645e97811424cb5c0adaace8a32b81309379caba46a8d767fcbccfd77a8\",\"parent\":\"63e31bdcb7c4776576da0ab97537fb08cc3631646e6887a6841654d5fb3b331c\",\"created\":\"2016-05-24T07:43:58.479486543Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63e31bdcb7c4776576da0ab97537fb08cc3631646e6887a6841654d5fb3b331c\",\"parent\":\"5e196a076c9435da62eac26278ddf0b589cd2d02c1282261890ee83d5a8af280\",\"created\":\"2016-05-24T07:43:52.549458467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV HOME=/home/jupyter\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e196a076c9435da62eac26278ddf0b589cd2d02c1282261890ee83d5a8af280\",\"parent\":\"16247142c07a44e042d4b5c8710660555d760d0b2ec058f056c75d4e749b5871\",\"created\":\"2016-05-24T07:43:46.527927488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jupyter]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"16247142c07a44e042d4b5c8710660555d760d0b2ec058f056c75d4e749b5871\",\"parent\":\"defbeb985d5991c48e8088a1dc009df2c4535375b1c3b20e141fcab3489a9a89\",\"created\":\"2016-05-24T07:43:41.085538758Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c export uid=1000 gid=1000 pswd=jupyter \\u0026\\u0026     apt-get update --fix-missing \\u0026\\u0026     apt-get install -y --no-install-recommends sudo \\u0026\\u0026     apt-get clean \\u0026\\u0026     groupadd -g $gid $USER \\u0026\\u0026     useradd -g $USER -G sudo -m -s /bin/bash $USER \\u0026\\u0026     echo \\\"$USER:$pswd\\\" | chpasswd \\u0026\\u0026     mkdir -p /home/$USER \\u0026\\u0026     mkdir -p /etc/sudoers.d \\u0026\\u0026     echo \\\"$USER ALL=(ALL) NOPASSWD: ALL\\\" \\u003e /etc/sudoers.d/$USER \\u0026\\u0026     chmod 0440 /etc/sudoers.d/$USER \\u0026\\u0026     chown ${uid}:${gid} -R /home/$USER \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"defbeb985d5991c48e8088a1dc009df2c4535375b1c3b20e141fcab3489a9a89\",\"parent\":\"b39dc36e2f9867f24463ca99b189674dff342148d06d4c88e8b5cf5260d2f47e\",\"created\":\"2016-05-24T07:43:20.435748159Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV USER=jupyter\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b39dc36e2f9867f24463ca99b189674dff342148d06d4c88e8b5cf5260d2f47e\",\"parent\":\"9e8f3478f28499095cf0c59189dc51f549337fbaafc5a4792f81a2b4daba689c\",\"created\":\"2016-05-24T07:43:14.984572452Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026     apt-get install -y git g++ \\u0026\\u0026     apt-get clean \\u0026\\u0026     pip install git+https://github.com/pymc-devs/pymc3 \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /root/.c*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e8f3478f28499095cf0c59189dc51f549337fbaafc5a4792f81a2b4daba689c\",\"parent\":\"3f9bdfbb447da5f8ca4fc707511733d36f25ff4a5e1b1d804004dca698d1d985\",\"created\":\"2016-05-24T07:36:13.393470815Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3f9bdfbb447da5f8ca4fc707511733d36f25ff4a5e1b1d804004dca698d1d985\",\"parent\":\"0ed1f27124e3fbe281061f838c2e2b9ab493bb7852bf0754d79ea604687c54d2\",\"created\":\"2016-05-24T07:36:09.047216901Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y --no-install-recommends         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont \\u0026\\u0026     /bin/busybox --install \\u0026\\u0026     cp --remove-destination /usr/share/zoneinfo/Japan /etc/localtime \\u0026\\u0026     apt-get --purge autoremove -y tzdata \\u0026\\u0026     apt-get clean \\u0026\\u0026     echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget -q --no-check-certificate             https://repo.continuum.io/miniconda/$MINICONDA \\u0026\\u0026     bash /$MINICONDA -b -p /opt/conda \\u0026\\u0026     conda update -y conda \\u0026\\u0026     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy \\u0026\\u0026     pip install pulp pyjade more-itertools \\u0026\\u0026     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ \\u0026\\u0026     find /opt -name __pycache__ | xargs rm -r \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /$MINICONDA /root/.c* /opt/conda/pkgs/*            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]*            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ed1f27124e3fbe281061f838c2e2b9ab493bb7852bf0754d79ea604687c54d2\",\"parent\":\"37e523112f34d848bd9a677b1aff11649127c3304d6afbba8787d7d6b6441558\",\"created\":\"2016-05-24T07:31:46.291675642Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LANG=C.UTF-8 DEBIAN_FRONTEND=noninteractive MINICONDA=Miniconda3-latest-Linux-x86_64.sh\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37e523112f34d848bd9a677b1aff11649127c3304d6afbba8787d7d6b6441558\",\"parent\":\"646f87c44f4d4197037dc1d0457a2c26487b5ba1e2d329d57de06342e9c7c1ab\",\"created\":\"2016-05-24T05:14:02.254743458Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"646f87c44f4d4197037dc1d0457a2c26487b5ba1e2d329d57de06342e9c7c1ab\",\"comment\":\"Imported from -\",\"created\":\"2016-05-24T05:14:02.143703902Z\",\"container_config\":{\"Cmd\":[\"\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:aa0335c69d80762fdce1c03869a9f6dfa2d37147a745af6f28644a4a93419172"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d32f41547ce8bf61286ef658c047c5f10a5bef63f1b400b6b561628db8fd499c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ed94af199d95640115ad530a42708ba0f1485c23d15a732a0592a2925ee298fc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b69124191789697e4faf001f59361ee6d4fd21154d689ddfc93f1cf427e606b1"
+            }
+        ],
+        "name": "ezamir/data-science-bundle",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEwNDAyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MTFaIn0",
+                "signature": "UEhkLUWAI9nL5gSc28PoHetwtgP7VjzjLWZlkUB-ZZv3PHNLFl5LHQn7NNaU9CxEzRC3lu5NHDGxMpLKdWUSpQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "jKwuTJa5npR7IqP6F_tQ_E6DXjIC00UBL2zpj7vn7ME",
+                        "kid": "6JLX:PQSL:2EMG:WH2Z:Q74M:MGJO:HOEC:LTAQ:2CRD:FLEQ:HGTS:WCT3",
+                        "x": "_GLuuvcq2gBtHMuL96jAOSlux7a9_ghxqSbWkLHkN9g"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"3c16f701b8df\",\"Domainname\":\"\",\"User\":\"jupyter\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"DEBIAN_FRONTEND=noninteractive\",\"MINICONDA=Miniconda3-latest-Linux-x86_64.sh\",\"USER=jupyter\",\"HOME=/home/jupyter\"],\"Cmd\":[\"sh\",\"-c\",\"jupyter notebook --ip=*\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c6abb847b8fb586f687b4b4ad7a0508d8658904d8e4f30cb1ef6ff0d802ff29f\",\"Volumes\":{\"/home/jupyter\":{}},\"WorkingDir\":\"/home/jupyter\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"fc7a191045ac8e5dd54453c46f1cb95a42e100c3f488c24948d37c700c895f0a\",\"container_config\":{\"Hostname\":\"3c16f701b8df\",\"Domainname\":\"\",\"User\":\"jupyter\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"DEBIAN_FRONTEND=noninteractive\",\"MINICONDA=Miniconda3-latest-Linux-x86_64.sh\",\"USER=jupyter\",\"HOME=/home/jupyter\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"sh\\\" \\\"-c\\\" \\\"jupyter notebook --ip=*\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:c6abb847b8fb586f687b4b4ad7a0508d8658904d8e4f30cb1ef6ff0d802ff29f\",\"Volumes\":{\"/home/jupyter\":{}},\"WorkingDir\":\"/home/jupyter\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-05-24T07:44:16.406981222Z\",\"docker_version\":\"1.11.1\",\"id\":\"54bff59f3aebb92430d8b44f27d067efb443ca49ba1773105d9d3fc64bb82e74\",\"os\":\"linux\",\"parent\":\"e7cfafed9a7a91935ed70647c96190315062025e3717d4d8c954f4cb494351c7\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7cfafed9a7a91935ed70647c96190315062025e3717d4d8c954f4cb494351c7\",\"parent\":\"946b781015333e44b2e04363d1e3d58a3a6ac88765d5368a15ea845dc95693e1\",\"created\":\"2016-05-24T07:44:10.394650665Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home/jupyter\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"946b781015333e44b2e04363d1e3d58a3a6ac88765d5368a15ea845dc95693e1\",\"parent\":\"ca7f6645e97811424cb5c0adaace8a32b81309379caba46a8d767fcbccfd77a8\",\"created\":\"2016-05-24T07:44:04.466314497Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) VOLUME [/home/jupyter]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ca7f6645e97811424cb5c0adaace8a32b81309379caba46a8d767fcbccfd77a8\",\"parent\":\"63e31bdcb7c4776576da0ab97537fb08cc3631646e6887a6841654d5fb3b331c\",\"created\":\"2016-05-24T07:43:58.479486543Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"63e31bdcb7c4776576da0ab97537fb08cc3631646e6887a6841654d5fb3b331c\",\"parent\":\"5e196a076c9435da62eac26278ddf0b589cd2d02c1282261890ee83d5a8af280\",\"created\":\"2016-05-24T07:43:52.549458467Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV HOME=/home/jupyter\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e196a076c9435da62eac26278ddf0b589cd2d02c1282261890ee83d5a8af280\",\"parent\":\"16247142c07a44e042d4b5c8710660555d760d0b2ec058f056c75d4e749b5871\",\"created\":\"2016-05-24T07:43:46.527927488Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) USER [jupyter]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"16247142c07a44e042d4b5c8710660555d760d0b2ec058f056c75d4e749b5871\",\"parent\":\"defbeb985d5991c48e8088a1dc009df2c4535375b1c3b20e141fcab3489a9a89\",\"created\":\"2016-05-24T07:43:41.085538758Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c export uid=1000 gid=1000 pswd=jupyter \\u0026\\u0026     apt-get update --fix-missing \\u0026\\u0026     apt-get install -y --no-install-recommends sudo \\u0026\\u0026     apt-get clean \\u0026\\u0026     groupadd -g $gid $USER \\u0026\\u0026     useradd -g $USER -G sudo -m -s /bin/bash $USER \\u0026\\u0026     echo \\\"$USER:$pswd\\\" | chpasswd \\u0026\\u0026     mkdir -p /home/$USER \\u0026\\u0026     mkdir -p /etc/sudoers.d \\u0026\\u0026     echo \\\"$USER ALL=(ALL) NOPASSWD: ALL\\\" \\u003e /etc/sudoers.d/$USER \\u0026\\u0026     chmod 0440 /etc/sudoers.d/$USER \\u0026\\u0026     chown ${uid}:${gid} -R /home/$USER \\u0026\\u0026     rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"defbeb985d5991c48e8088a1dc009df2c4535375b1c3b20e141fcab3489a9a89\",\"parent\":\"b39dc36e2f9867f24463ca99b189674dff342148d06d4c88e8b5cf5260d2f47e\",\"created\":\"2016-05-24T07:43:20.435748159Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV USER=jupyter\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b39dc36e2f9867f24463ca99b189674dff342148d06d4c88e8b5cf5260d2f47e\",\"parent\":\"9e8f3478f28499095cf0c59189dc51f549337fbaafc5a4792f81a2b4daba689c\",\"created\":\"2016-05-24T07:43:14.984572452Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026     apt-get install -y git g++ \\u0026\\u0026     apt-get clean \\u0026\\u0026     pip install git+https://github.com/pymc-devs/pymc3 \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /root/.c*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e8f3478f28499095cf0c59189dc51f549337fbaafc5a4792f81a2b4daba689c\",\"parent\":\"3f9bdfbb447da5f8ca4fc707511733d36f25ff4a5e1b1d804004dca698d1d985\",\"created\":\"2016-05-24T07:36:13.393470815Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3f9bdfbb447da5f8ca4fc707511733d36f25ff4a5e1b1d804004dca698d1d985\",\"parent\":\"0ed1f27124e3fbe281061f838c2e2b9ab493bb7852bf0754d79ea604687c54d2\",\"created\":\"2016-05-24T07:36:09.047216901Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y --no-install-recommends         libglib2.0-0 libxext6 libsm6 libxrender1 tzdata busybox wget fonts-ipaexfont \\u0026\\u0026     /bin/busybox --install \\u0026\\u0026     cp --remove-destination /usr/share/zoneinfo/Japan /etc/localtime \\u0026\\u0026     apt-get --purge autoremove -y tzdata \\u0026\\u0026     apt-get clean \\u0026\\u0026     echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget -q --no-check-certificate             https://repo.continuum.io/miniconda/$MINICONDA \\u0026\\u0026     bash /$MINICONDA -b -p /opt/conda \\u0026\\u0026     conda update -y conda \\u0026\\u0026     conda install -y nomkl pandas matplotlib networkx scikit-learn jupyter blist                      bokeh blaze statsmodels ncurses seaborn dask flask markdown sympy \\u0026\\u0026     pip install pulp pyjade more-itertools \\u0026\\u0026     ln -s /usr/share/fonts/opentype/ipaexfont-gothic/ipaexg.ttf         /opt/conda/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/ \\u0026\\u0026     find /opt -name __pycache__ | xargs rm -r \\u0026\\u0026     rm -rf /var/lib/apt/lists/* /$MINICONDA /root/.c* /opt/conda/pkgs/*            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/[ow]*            /opt/conda/lib/python3.5/site-packages/pulp/solverdir/cbc/linux/32\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ed1f27124e3fbe281061f838c2e2b9ab493bb7852bf0754d79ea604687c54d2\",\"parent\":\"37e523112f34d848bd9a677b1aff11649127c3304d6afbba8787d7d6b6441558\",\"created\":\"2016-05-24T07:31:46.291675642Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin LANG=C.UTF-8 DEBIAN_FRONTEND=noninteractive MINICONDA=Miniconda3-latest-Linux-x86_64.sh\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37e523112f34d848bd9a677b1aff11649127c3304d6afbba8787d7d6b6441558\",\"parent\":\"646f87c44f4d4197037dc1d0457a2c26487b5ba1e2d329d57de06342e9c7c1ab\",\"created\":\"2016-05-24T05:14:02.254743458Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"646f87c44f4d4197037dc1d0457a2c26487b5ba1e2d329d57de06342e9c7c1ab\",\"comment\":\"Imported from -\",\"created\":\"2016-05-24T05:14:02.143703902Z\",\"container_config\":{\"Cmd\":[\"\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:aa0335c69d80762fdce1c03869a9f6dfa2d37147a745af6f28644a4a93419172"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d32f41547ce8bf61286ef658c047c5f10a5bef63f1b400b6b561628db8fd499c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ed94af199d95640115ad530a42708ba0f1485c23d15a732a0592a2925ee298fc"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:b69124191789697e4faf001f59361ee6d4fd21154d689ddfc93f1cf427e606b1"
+            }
+        ],
+        "name": "ezamir/data-science-bundle",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEwNDAyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MTJaIn0",
+                "signature": "yNAi76uQ2Pg0NnXPddEMw6nFzS9M-Luwwbn9s-bGl4UllYeO2PzIwfOESK5cNsetnAFl0lET47bbv16zSi3GhA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "jKwuTJa5npR7IqP6F_tQ_E6DXjIC00UBL2zpj7vn7ME",
+                        "kid": "6JLX:PQSL:2EMG:WH2Z:Q74M:MGJO:HOEC:LTAQ:2CRD:FLEQ:HGTS:WCT3",
+                        "x": "_GLuuvcq2gBtHMuL96jAOSlux7a9_ghxqSbWkLHkN9g"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

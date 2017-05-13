@@ -1,0 +1,318 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"7e84672bec02\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"HOME=/\",\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7ed55383cb02f1575e172606eeb231d55a37ac2fffd6103fa6dd051b29baecdd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"c20edb992e1ba852a3a828d8883f8e11440726b55d99bd30728c2355f4cdd438\",\"container_config\":{\"Hostname\":\"7e84672bec02\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"HOME=/\",\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"conda install -y -q swig\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7ed55383cb02f1575e172606eeb231d55a37ac2fffd6103fa6dd051b29baecdd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T14:01:02.7411558Z\",\"docker_version\":\"1.10.2\",\"id\":\"1bd5e641c01c2cb73c216c9cb135fdaa535ad9b86874ed3553e918317e677661\",\"os\":\"linux\",\"parent\":\"889494d82c94430840e84fc4d5e00774b8f5ed7032c6826115ff63bd224e82e4\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"889494d82c94430840e84fc4d5e00774b8f5ed7032c6826115ff63bd224e82e4\",\"parent\":\"ef5b40bf52c6c92984488e10491340c9e381457dbcd50c681d40363cd9cbe3ed\",\"created\":\"2016-04-11T14:00:53.140154382Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --reinstall gcc gcc-4.7 gcc-4.7-base libgcc1 cpp-4.7 -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ef5b40bf52c6c92984488e10491340c9e381457dbcd50c681d40363cd9cbe3ed\",\"parent\":\"9a72fb9d18ddf7a302391e3461f865115956799312f906dbd8857ec523911460\",\"created\":\"2016-04-11T14:00:45.739190833Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install git -qq -y\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9a72fb9d18ddf7a302391e3461f865115956799312f906dbd8857ec523911460\",\"parent\":\"55f661a8da7ffc0c44b382551913c9f03cb83acd5576eed76ba3f9d4ff7a9aad\",\"created\":\"2016-04-11T14:00:43.25898876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install r rpy2\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55f661a8da7ffc0c44b382551913c9f03cb83acd5576eed76ba3f9d4ff7a9aad\",\"parent\":\"f936e435ccb966ec359822497c6a1efeb5a8995a2db0bceb8545bf8ad5188010\",\"created\":\"2016-04-11T13:59:49.129928166Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels r\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f936e435ccb966ec359822497c6a1efeb5a8995a2db0bceb8545bf8ad5188010\",\"parent\":\"166b89ac07836ed044bc025476e9db9c0a133610de794579712fc5077027d866\",\"created\":\"2016-04-11T13:59:48.331899895Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y -q anaconda-client\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"166b89ac07836ed044bc025476e9db9c0a133610de794579712fc5077027d866\",\"parent\":\"c28d24cf99da1790b1ecbe87db81837ba2e5174099ffb4a41649003838caed1c\",\"created\":\"2016-04-11T13:59:43.755474316Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y -q pandas scikit-learn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c28d24cf99da1790b1ecbe87db81837ba2e5174099ffb4a41649003838caed1c\",\"parent\":\"fb18e9a1fb8122110771040e79f5a5c2f4adce4e6ee1ecb8339d276186155a59\",\"created\":\"2016-04-11T13:59:24.509981017Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y -q conda-build setuptools numpy scipy cython numba matplotlib h5py\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fb18e9a1fb8122110771040e79f5a5c2f4adce4e6ee1ecb8339d276186155a59\",\"parent\":\"7152cc35739568ff4eedccb9f2b38b94a1175f28c2cfa8cc63bfe7ed76320af7\",\"created\":\"2016-04-11T13:57:00.947819357Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda update -y -q conda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7152cc35739568ff4eedccb9f2b38b94a1175f28c2cfa8cc63bfe7ed76320af7\",\"parent\":\"dd970dd955707bb53a8cc1ea2a7141edbb986c6319fb64baa80ed616869a0837\",\"created\":\"2016-04-11T13:56:57.750611103Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes build-essential libc6 gfortran g++\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dd970dd955707bb53a8cc1ea2a7141edbb986c6319fb64baa80ed616869a0837\",\"parent\":\"f438d5140ae7ff8e12627b3381a5ecc8112c23eb03ad85d84385e6bd6081bc91\",\"created\":\"2016-04-11T13:56:36.211483815Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f438d5140ae7ff8e12627b3381a5ecc8112c23eb03ad85d84385e6bd6081bc91\",\"parent\":\"fa35a4e7830077677ee7214ad06931d52a2031fa91c3b2ed174647f1b82d6822\",\"created\":\"2016-04-06T17:05:19.659305101Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa35a4e7830077677ee7214ad06931d52a2031fa91c3b2ed174647f1b82d6822\",\"parent\":\"5c8c327fc933924a8fdacded43787fa92d154f045d9558cbe48fb639f21d7c89\",\"created\":\"2016-04-06T17:05:19.514496804Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/usr/bin/tini\\\" \\\"--\\\"]}\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5c8c327fc933924a8fdacded43787fa92d154f045d9558cbe48fb639f21d7c89\",\"parent\":\"938d5e39370e4efa0706cd9d6e455b1e6e30fb96d385cd523e17f0c09c7c9dc3\",\"created\":\"2016-04-06T17:05:19.393423097Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"938d5e39370e4efa0706cd9d6e455b1e6e30fb96d385cd523e17f0c09c7c9dc3\",\"parent\":\"7a1b1616099161b32c6800e038cd2ed0b0c087411a9e36c33aee7b89283300f2\",\"created\":\"2016-04-06T17:05:19.273563464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7a1b1616099161b32c6800e038cd2ed0b0c087411a9e36c33aee7b89283300f2\",\"parent\":\"5fa939cfabe822b79a5e3c7a49802537e65d9e7e6b3da1024eb4b8b84450ea68\",\"created\":\"2016-04-06T17:05:19.129720726Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y curl grep sed dpkg \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5fa939cfabe822b79a5e3c7a49802537e65d9e7e6b3da1024eb4b8b84450ea68\",\"parent\":\"6a56ab79431416963c74c99d9f6134341ea84a52f530f881aab9229c878b5ad1\",\"created\":\"2016-04-06T17:05:14.47833716Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda2-4.0.5-Linux-x86_64.sh \\u0026\\u0026     /bin/bash /Miniconda2-4.0.5-Linux-x86_64.sh -b -p /opt/conda \\u0026\\u0026     rm Miniconda2-4.0.5-Linux-x86_64.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a56ab79431416963c74c99d9f6134341ea84a52f530f881aab9229c878b5ad1\",\"parent\":\"e42763300cb1275a2705b299f405c1a3da998386b865c16e6ccbf7061ac06fd0\",\"created\":\"2016-04-06T17:04:52.328838935Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e42763300cb1275a2705b299f405c1a3da998386b865c16e6ccbf7061ac06fd0\",\"parent\":\"eebc2dcf8581176943d34183c55b46e6898aa577747b69a15eb94dc5aaa78b8a\",\"created\":\"2016-04-06T17:04:03.467419904Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eebc2dcf8581176943d34183c55b46e6898aa577747b69a15eb94dc5aaa78b8a\",\"parent\":\"bbb1257110f2c0af68e8914f9348ef1652e4b98a43fca71423458ed9dd6da38e\",\"created\":\"2014-04-25T14:35:59.430235099Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [/bin/bash]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbb1257110f2c0af68e8914f9348ef1652e4b98a43fca71423458ed9dd6da38e\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2014-04-25T14:35:53.132789589Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:9123ed8a6f11e9768d55a1a1c0cdbf8193f061510e63f2369a48a012e5f1b05c in /\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Cmd\":[\"\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:de22a7385c7ea856fe0b1ce66d6b33149cdaf12bfab5db17853ff2d9f19efba1"
+            },
+            {
+                "blobSum": "sha256:0774453821effeb73ff4bcd2684a7652eb1edbfcaba6d46166a0dc22b79d0724"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:788053ccdfbf7b87d212a67e612df7164f7807169a49572144350d5e20e2c785"
+            },
+            {
+                "blobSum": "sha256:36fb11b0adbd900abe5e07a6ff029caf5a87254ba1235b926878af4b3f16f009"
+            },
+            {
+                "blobSum": "sha256:c65275aaa5aa71ce1f453f2f5e73234cfc4c04d7dd5278686eefbdcc042b3a1a"
+            },
+            {
+                "blobSum": "sha256:2ff6d7584c831ab1c43716ce8427c87ab3dfbfee011d2853fef8360faf15ddd4"
+            },
+            {
+                "blobSum": "sha256:3510e571e8d3c4c190790b9491eaebb37a8eb71dbf5f8a9467d7184ad84023be"
+            },
+            {
+                "blobSum": "sha256:acfd5053e70b9ad76040affa4060dbd27f749363ba84a4080a8037bd7442a3c7"
+            },
+            {
+                "blobSum": "sha256:af673565a13ea6fb16969cce5225735b1a6c867954abbac1c29d551a12fffc5a"
+            },
+            {
+                "blobSum": "sha256:83f117ceb1bcbbf86970da23ae58b7d64b2bf0711651b4e179524424ca460d1a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2d5ad400f8b3b7b4991f14af3ee80a5575c29ae4f104baa75480caa5000130cb"
+            },
+            {
+                "blobSum": "sha256:b9946f561de758403dfe1e0d9f18743c6c5ce53c262f722b7303aa4cbb388d36"
+            },
+            {
+                "blobSum": "sha256:aa51564dc9faa710d37768bbf479aa2ed7f24036c58724161c86f2d57071c17c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:79362e2488a128fe88cb6bb67758b38090e718a90e7451376893bae03bcb89b3"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            }
+        ],
+        "name": "dhorta/science-conda2",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMjI5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDI6MTRaIn0",
+                "signature": "AkU6bVe4HmrTRNhSMd43UssZ9NQSQkQLofyNoeNVp7_tzNv4_6h4JWEPLL7rszFGUmdjQeTG1PFQICyI8AjLhA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "bZukBmNRUCi_x1Dn0J4fGDvzqpx3NhCg1Xi94FlQrvI",
+                        "kid": "DOJT:3VGK:HR3R:6D2H:F7ZE:NMOW:PRVL:7KIA:KCMG:KYED:TYTB:DHMP",
+                        "x": "lV0_oym6nkoTS4flyw4Y1Td85BdIuvHoxFcqD5jikgw"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"7e84672bec02\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"HOME=/\",\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7ed55383cb02f1575e172606eeb231d55a37ac2fffd6103fa6dd051b29baecdd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"c20edb992e1ba852a3a828d8883f8e11440726b55d99bd30728c2355f4cdd438\",\"container_config\":{\"Hostname\":\"7e84672bec02\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"HOME=/\",\"PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"conda install -y -q swig\"],\"ArgsEscaped\":true,\"Image\":\"sha256:7ed55383cb02f1575e172606eeb231d55a37ac2fffd6103fa6dd051b29baecdd\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":[\"/usr/bin/tini\",\"--\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-11T14:01:02.7411558Z\",\"docker_version\":\"1.10.2\",\"id\":\"1bd5e641c01c2cb73c216c9cb135fdaa535ad9b86874ed3553e918317e677661\",\"os\":\"linux\",\"parent\":\"889494d82c94430840e84fc4d5e00774b8f5ed7032c6826115ff63bd224e82e4\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"889494d82c94430840e84fc4d5e00774b8f5ed7032c6826115ff63bd224e82e4\",\"parent\":\"ef5b40bf52c6c92984488e10491340c9e381457dbcd50c681d40363cd9cbe3ed\",\"created\":\"2016-04-11T14:00:53.140154382Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --reinstall gcc gcc-4.7 gcc-4.7-base libgcc1 cpp-4.7 -qq -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ef5b40bf52c6c92984488e10491340c9e381457dbcd50c681d40363cd9cbe3ed\",\"parent\":\"9a72fb9d18ddf7a302391e3461f865115956799312f906dbd8857ec523911460\",\"created\":\"2016-04-11T14:00:45.739190833Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install git -qq -y\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9a72fb9d18ddf7a302391e3461f865115956799312f906dbd8857ec523911460\",\"parent\":\"55f661a8da7ffc0c44b382551913c9f03cb83acd5576eed76ba3f9d4ff7a9aad\",\"created\":\"2016-04-11T14:00:43.25898876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install r rpy2\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"55f661a8da7ffc0c44b382551913c9f03cb83acd5576eed76ba3f9d4ff7a9aad\",\"parent\":\"f936e435ccb966ec359822497c6a1efeb5a8995a2db0bceb8545bf8ad5188010\",\"created\":\"2016-04-11T13:59:49.129928166Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda config --add channels r\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f936e435ccb966ec359822497c6a1efeb5a8995a2db0bceb8545bf8ad5188010\",\"parent\":\"166b89ac07836ed044bc025476e9db9c0a133610de794579712fc5077027d866\",\"created\":\"2016-04-11T13:59:48.331899895Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y -q anaconda-client\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"166b89ac07836ed044bc025476e9db9c0a133610de794579712fc5077027d866\",\"parent\":\"c28d24cf99da1790b1ecbe87db81837ba2e5174099ffb4a41649003838caed1c\",\"created\":\"2016-04-11T13:59:43.755474316Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y -q pandas scikit-learn\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c28d24cf99da1790b1ecbe87db81837ba2e5174099ffb4a41649003838caed1c\",\"parent\":\"fb18e9a1fb8122110771040e79f5a5c2f4adce4e6ee1ecb8339d276186155a59\",\"created\":\"2016-04-11T13:59:24.509981017Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda install -y -q conda-build setuptools numpy scipy cython numba matplotlib h5py\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fb18e9a1fb8122110771040e79f5a5c2f4adce4e6ee1ecb8339d276186155a59\",\"parent\":\"7152cc35739568ff4eedccb9f2b38b94a1175f28c2cfa8cc63bfe7ed76320af7\",\"created\":\"2016-04-11T13:57:00.947819357Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c conda update -y -q conda\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7152cc35739568ff4eedccb9f2b38b94a1175f28c2cfa8cc63bfe7ed76320af7\",\"parent\":\"dd970dd955707bb53a8cc1ea2a7141edbb986c6319fb64baa80ed616869a0837\",\"created\":\"2016-04-11T13:56:57.750611103Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes build-essential libc6 gfortran g++\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"dd970dd955707bb53a8cc1ea2a7141edbb986c6319fb64baa80ed616869a0837\",\"parent\":\"f438d5140ae7ff8e12627b3381a5ecc8112c23eb03ad85d84385e6bd6081bc91\",\"created\":\"2016-04-11T13:56:36.211483815Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f438d5140ae7ff8e12627b3381a5ecc8112c23eb03ad85d84385e6bd6081bc91\",\"parent\":\"fa35a4e7830077677ee7214ad06931d52a2031fa91c3b2ed174647f1b82d6822\",\"created\":\"2016-04-06T17:05:19.659305101Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa35a4e7830077677ee7214ad06931d52a2031fa91c3b2ed174647f1b82d6822\",\"parent\":\"5c8c327fc933924a8fdacded43787fa92d154f045d9558cbe48fb639f21d7c89\",\"created\":\"2016-04-06T17:05:19.514496804Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENTRYPOINT \\u0026{[\\\"/usr/bin/tini\\\" \\\"--\\\"]}\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5c8c327fc933924a8fdacded43787fa92d154f045d9558cbe48fb639f21d7c89\",\"parent\":\"938d5e39370e4efa0706cd9d6e455b1e6e30fb96d385cd523e17f0c09c7c9dc3\",\"created\":\"2016-04-06T17:05:19.393423097Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"938d5e39370e4efa0706cd9d6e455b1e6e30fb96d385cd523e17f0c09c7c9dc3\",\"parent\":\"7a1b1616099161b32c6800e038cd2ed0b0c087411a9e36c33aee7b89283300f2\",\"created\":\"2016-04-06T17:05:19.273563464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7a1b1616099161b32c6800e038cd2ed0b0c087411a9e36c33aee7b89283300f2\",\"parent\":\"5fa939cfabe822b79a5e3c7a49802537e65d9e7e6b3da1024eb4b8b84450ea68\",\"created\":\"2016-04-06T17:05:19.129720726Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y curl grep sed dpkg \\u0026\\u0026     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o \\\"/v.*\\\\\\\"\\\" | sed 's:^..\\\\(.*\\\\).$:\\\\1:'` \\u0026\\u0026     curl -L \\\"https://github.com/krallin/tini/releases/download/v${TINI_VERSION}/tini_${TINI_VERSION}.deb\\\" \\u003e tini.deb \\u0026\\u0026     dpkg -i tini.deb \\u0026\\u0026     rm tini.deb \\u0026\\u0026     apt-get clean\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5fa939cfabe822b79a5e3c7a49802537e65d9e7e6b3da1024eb4b8b84450ea68\",\"parent\":\"6a56ab79431416963c74c99d9f6134341ea84a52f530f881aab9229c878b5ad1\",\"created\":\"2016-04-06T17:05:14.47833716Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'export PATH=/opt/conda/bin:$PATH' \\u003e /etc/profile.d/conda.sh \\u0026\\u0026     wget --quiet https://repo.continuum.io/miniconda/Miniconda2-4.0.5-Linux-x86_64.sh \\u0026\\u0026     /bin/bash /Miniconda2-4.0.5-Linux-x86_64.sh -b -p /opt/conda \\u0026\\u0026     rm Miniconda2-4.0.5-Linux-x86_64.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a56ab79431416963c74c99d9f6134341ea84a52f530f881aab9229c878b5ad1\",\"parent\":\"e42763300cb1275a2705b299f405c1a3da998386b865c16e6ccbf7061ac06fd0\",\"created\":\"2016-04-06T17:04:52.328838935Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update --fix-missing \\u0026\\u0026 apt-get install -y wget bzip2 ca-certificates     libglib2.0-0 libxext6 libsm6 libxrender1     git mercurial subversion\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e42763300cb1275a2705b299f405c1a3da998386b865c16e6ccbf7061ac06fd0\",\"parent\":\"eebc2dcf8581176943d34183c55b46e6898aa577747b69a15eb94dc5aaa78b8a\",\"created\":\"2016-04-06T17:04:03.467419904Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Kamil Kwiek \\u003ckamil.kwiek@continuum.io\\u003e\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"eebc2dcf8581176943d34183c55b46e6898aa577747b69a15eb94dc5aaa78b8a\",\"parent\":\"bbb1257110f2c0af68e8914f9348ef1652e4b98a43fca71423458ed9dd6da38e\",\"created\":\"2014-04-25T14:35:59.430235099Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [/bin/bash]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbb1257110f2c0af68e8914f9348ef1652e4b98a43fca71423458ed9dd6da38e\",\"parent\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"created\":\"2014-04-25T14:35:53.132789589Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:9123ed8a6f11e9768d55a1a1c0cdbf8193f061510e63f2369a48a012e5f1b05c in /\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3690474eb5b4b26fdfbd89c6e159e8cc376ca76ef48032a30fa6aafd56337880\",\"comment\":\"Imported from -\",\"created\":\"2013-06-13T14:03:50.821769-07:00\",\"container_config\":{\"Cmd\":[\"\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:de22a7385c7ea856fe0b1ce66d6b33149cdaf12bfab5db17853ff2d9f19efba1"
+            },
+            {
+                "blobSum": "sha256:0774453821effeb73ff4bcd2684a7652eb1edbfcaba6d46166a0dc22b79d0724"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:788053ccdfbf7b87d212a67e612df7164f7807169a49572144350d5e20e2c785"
+            },
+            {
+                "blobSum": "sha256:36fb11b0adbd900abe5e07a6ff029caf5a87254ba1235b926878af4b3f16f009"
+            },
+            {
+                "blobSum": "sha256:c65275aaa5aa71ce1f453f2f5e73234cfc4c04d7dd5278686eefbdcc042b3a1a"
+            },
+            {
+                "blobSum": "sha256:2ff6d7584c831ab1c43716ce8427c87ab3dfbfee011d2853fef8360faf15ddd4"
+            },
+            {
+                "blobSum": "sha256:3510e571e8d3c4c190790b9491eaebb37a8eb71dbf5f8a9467d7184ad84023be"
+            },
+            {
+                "blobSum": "sha256:acfd5053e70b9ad76040affa4060dbd27f749363ba84a4080a8037bd7442a3c7"
+            },
+            {
+                "blobSum": "sha256:af673565a13ea6fb16969cce5225735b1a6c867954abbac1c29d551a12fffc5a"
+            },
+            {
+                "blobSum": "sha256:83f117ceb1bcbbf86970da23ae58b7d64b2bf0711651b4e179524424ca460d1a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2d5ad400f8b3b7b4991f14af3ee80a5575c29ae4f104baa75480caa5000130cb"
+            },
+            {
+                "blobSum": "sha256:b9946f561de758403dfe1e0d9f18743c6c5ce53c262f722b7303aa4cbb388d36"
+            },
+            {
+                "blobSum": "sha256:aa51564dc9faa710d37768bbf479aa2ed7f24036c58724161c86f2d57071c17c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:79362e2488a128fe88cb6bb67758b38090e718a90e7451376893bae03bcb89b3"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            }
+        ],
+        "name": "dhorta/science-conda2",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyMjI5LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDI6MTRaIn0",
+                "signature": "s1qzriKZzPtjamFsdmJvoOxdn8FlN0UJodCvDy0bfSISs0CgCGf-KeIRA4NWBu-VFhN4yjxRbaqmV5uGYShTGQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "pNNCRvC2AjRAdZuIaArtMxEyiDGTyUiuPxfoHmzso0U",
+                        "kid": "REPN:HL6K:4QXN:AGOX:OFOL:EXN5:ZICU:TSB4:D6VB:WIBY:7GT5:NVSK",
+                        "x": "X4ly1uDiAUQNkFZnFUHMT8znFZu1fTYRokTc5f69mGg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

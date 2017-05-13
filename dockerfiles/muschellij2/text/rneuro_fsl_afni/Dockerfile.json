@@ -1,0 +1,666 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/fsl/bin\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"R_BASE_VERSION=3.3.2\",\"ZLIB_VERSION=1.2.8\",\"FSLDIR=/usr/local/fsl\",\"FSLSHARE=/usr/share/data\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"LD_LIBRARY_PATH=:/usr/lib/fsl/5.0\"],\"Cmd\":[\"bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:97754720e5419130d009dc2cd1a0c1318ce40ab7ab0f0b8fa200d37b44ea677e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"7a3e4aaab34f410b6aa44bba71c0ed15e447f5806f730e399f32cca29a55e053\",\"container_config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/fsl/bin\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"R_BASE_VERSION=3.3.2\",\"ZLIB_VERSION=1.2.8\",\"FSLDIR=/usr/local/fsl\",\"FSLSHARE=/usr/share/data\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"LD_LIBRARY_PATH=:/usr/lib/fsl/5.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"bash\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:97754720e5419130d009dc2cd1a0c1318ce40ab7ab0f0b8fa200d37b44ea677e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-11T16:26:52.276174344Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"3b83994adcd2c79e369503d8ebd3ed0c575c8a85114c2447326672aac9ba6884\",\"os\":\"linux\",\"parent\":\"fbc777a7a4ab311644fecb5e2fbb4098893a6f486ed1c9fadf46d6bc686e86f1\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fbc777a7a4ab311644fecb5e2fbb4098893a6f486ed1c9fadf46d6bc686e86f1\",\"parent\":\"f8de22e1110e4d22c312564734fd39554a23aefb4fa24f5a835faf71ff21e180\",\"created\":\"2017-05-11T16:26:39.576287763Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y afni\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f8de22e1110e4d22c312564734fd39554a23aefb4fa24f5a835faf71ff21e180\",\"parent\":\"18d94194da59cff238451f829bc0fccc6aaef9f026cbcf5787ef46df49cc32f9\",\"created\":\"2017-05-11T16:00:17.493845657Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"18d94194da59cff238451f829bc0fccc6aaef9f026cbcf5787ef46df49cc32f9\",\"parent\":\"1c992d3e70650272f0a717b5e8cca03aad877fa069ff853ea1716b6b37b6efe7\",\"created\":\"2017-05-11T16:00:05.568521712Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=:/usr/lib/fsl/5.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c992d3e70650272f0a717b5e8cca03aad877fa069ff853ea1716b6b37b6efe7\",\"parent\":\"cba46e0b3c39a2b53b3a99d5c11c76c19fa72116101d10d10c18a45aae7fec0a\",\"created\":\"2017-05-11T15:59:55.060768085Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c usermod -u 504 docker\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cba46e0b3c39a2b53b3a99d5c11c76c19fa72116101d10d10c18a45aae7fec0a\",\"parent\":\"c9e0dde9b41cd6b54426438b110335d450cc0be4130feb88f225374124a00199\",\"created\":\"2017-05-11T15:59:42.943627742Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLOUTPUTTYPE=NIFTI_GZ\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c9e0dde9b41cd6b54426438b110335d450cc0be4130feb88f225374124a00199\",\"parent\":\"baa765c9752b3475779248f6578b34337bf61c8708921f86241ebf4d6639bc9d\",\"created\":\"2017-05-11T15:59:32.66954784Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cp -R ${FSLSHARE}/harvard-oxford-atlases/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/juelich-histological-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/bangor-cerebellar-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/jhu-dti-whitematter-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/forstmann-subthalamic-nucleus-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/fsl-resting-connectivity-parcellation-atlases/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/mni-structural-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/oxford-thalamic-connectivity-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/talairach-daemon-atlas/* ${FSLDIR}/data/atlases/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"baa765c9752b3475779248f6578b34337bf61c8708921f86241ebf4d6639bc9d\",\"parent\":\"337909998f3a0b31266e8609e4a53ca83f423b5f162b49be87cf1b4ccf4e0f33\",\"created\":\"2017-05-11T15:59:20.654974975Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cp -R ${FSLSHARE}/fsl-mni152-templates/* ${FSLDIR}/data/standard/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"337909998f3a0b31266e8609e4a53ca83f423b5f162b49be87cf1b4ccf4e0f33\",\"parent\":\"c79e41bfc6984a6f0b0879f23ee4b9f26933f15081f7087f5337afd52798b2c6\",\"created\":\"2017-05-11T15:59:08.745838392Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${FSLDIR}/data/standard \\u0026\\u0026 mkdir -p ${FSLDIR}/data/atlases\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c79e41bfc6984a6f0b0879f23ee4b9f26933f15081f7087f5337afd52798b2c6\",\"parent\":\"22f6569739fcb1338b9ace7f675786cd0c543b0edc5d6c790da08b1b11ba1381\",\"created\":\"2017-05-11T15:58:58.358202412Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${FSLDIR}/bin  \\u0026\\u0026 cp /usr/lib/fsl/5.0/* ${FSLDIR}/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"22f6569739fcb1338b9ace7f675786cd0c543b0edc5d6c790da08b1b11ba1381\",\"parent\":\"59f1478dfeeae5d08545913c8388341317c4d070bc58590d61b67fba3f184651\",\"created\":\"2017-05-11T15:58:44.907447349Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/fsl/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"59f1478dfeeae5d08545913c8388341317c4d070bc58590d61b67fba3f184651\",\"parent\":\"632c8a6353f168af5bec0979bed7cb1174f43aacf41a2b89a6d80ffaea6b7054\",\"created\":\"2017-05-11T15:58:33.586102443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLSHARE=/usr/share/data\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"632c8a6353f168af5bec0979bed7cb1174f43aacf41a2b89a6d80ffaea6b7054\",\"parent\":\"541866d851b9c2ede7fa3693b0bc5e50337c759527276181430a8ffb3c78fd94\",\"created\":\"2017-05-11T15:58:21.411087471Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLDIR=/usr/local/fsl\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"541866d851b9c2ede7fa3693b0bc5e50337c759527276181430a8ffb3c78fd94\",\"parent\":\"6a23cf3719a92ae607cc4f9d75e1e46c261fcddf683acd53fbe4857641e7ef6c\",\"created\":\"2017-05-11T15:58:09.119333178Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y fsl-complete\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a23cf3719a92ae607cc4f9d75e1e46c261fcddf683acd53fbe4857641e7ef6c\",\"parent\":\"242899fa8cd406f5ea00842cedfe5b406c27e4ff029b1985b6d867a2a58657e3\",\"created\":\"2017-05-11T15:49:43.375053994Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"242899fa8cd406f5ea00842cedfe5b406c27e4ff029b1985b6d867a2a58657e3\",\"parent\":\"d3ae1376d7ad57d3bc89dfc24c8e680ea86bb2adca2a6b0de684fca91616260c\",\"created\":\"2017-05-11T15:49:26.569606259Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 0xA5D32F012649A5A9\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d3ae1376d7ad57d3bc89dfc24c8e680ea86bb2adca2a6b0de684fca91616260c\",\"parent\":\"a040b680da62925e0be3b25eb236bd2ce24c5a0df66769ebe44b90877e58a7c1\",\"created\":\"2017-05-11T15:49:11.533987809Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget -O- http://neuro.debian.net/lists/xenial.us-tn.full | tee /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a040b680da62925e0be3b25eb236bd2ce24c5a0df66769ebe44b90877e58a7c1\",\"parent\":\"8db127d41562915e4207b02bd3a8563395a3d18b0f3b6e77f2f7cca0f8cab125\",\"created\":\"2017-05-11T15:48:59.105596892Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y dirmngr\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8db127d41562915e4207b02bd3a8563395a3d18b0f3b6e77f2f7cca0f8cab125\",\"parent\":\"9c112f6cbb78e7cad721d95e84a4fb10672e971d0ba30932f942eece1ca99ade\",\"created\":\"2017-05-11T15:48:44.584553329Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y gnupg2 gnupg\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9c112f6cbb78e7cad721d95e84a4fb10672e971d0ba30932f942eece1ca99ade\",\"parent\":\"7c6fafc62b9956070374cae498d2bc8945038668e4dcdfa672e3596638f42e69\",\"created\":\"2017-04-14T06:07:23.492790854Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ZLIB_VERSION=1.2.8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c6fafc62b9956070374cae498d2bc8945038668e4dcdfa672e3596638f42e69\",\"parent\":\"1a1c02bc454d5aecb8b6af3421c698fe0da6675b40e858086ca4de37c3e70cc1\",\"created\":\"2017-04-14T06:07:16.729178698Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/fslr\\\")'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a1c02bc454d5aecb8b6af3421c698fe0da6675b40e858086ca4de37c3e70cc1\",\"parent\":\"342268099297b284f3b221176b2e0ee6e8ba570119cd65c44f39f78fd746a18e\",\"created\":\"2017-04-14T06:06:57.109809015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/neurobase\\\")'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"342268099297b284f3b221176b2e0ee6e8ba570119cd65c44f39f78fd746a18e\",\"parent\":\"0ad969c0b6995e13af371dd94ffe5d22378ab565cae1f386b75f9171cb1254b9\",\"created\":\"2017-04-14T06:03:32.988171899Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'library(WhiteStripe); download_img_data()'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ad969c0b6995e13af371dd94ffe5d22378ab565cae1f386b75f9171cb1254b9\",\"parent\":\"c0282be407fc783a623baceca36a65a6448e801741342276f888af846a567bbf\",\"created\":\"2017-04-14T06:03:21.522468743Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     WhiteStripe\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c0282be407fc783a623baceca36a65a6448e801741342276f888af846a567bbf\",\"parent\":\"a115699c0fef7ca50e1b59a22e3abab46eb6cf1307d784b09c9d6e88aacf9877\",\"created\":\"2017-04-14T06:03:03.415953344Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     oro.dicom     oro.nifti\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a115699c0fef7ca50e1b59a22e3abab46eb6cf1307d784b09c9d6e88aacf9877\",\"parent\":\"5a3f9287ef2e78b5e6726a871cd7797083967bbe49b1d0719e58061c3a056427\",\"created\":\"2017-04-14T06:02:28.229999753Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     divest\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a3f9287ef2e78b5e6726a871cd7797083967bbe49b1d0719e58061c3a056427\",\"parent\":\"367023409359529d404337934a41c77e24e508f588b512f8d987ff0a2c16ec5c\",\"created\":\"2017-04-14T06:01:32.382972185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     RNifti\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"367023409359529d404337934a41c77e24e508f588b512f8d987ff0a2c16ec5c\",\"parent\":\"4eaadc6c8fc6e0b1d07b6b830abc68130628e88d296c3a8289ea21ec915d1e67\",\"created\":\"2017-04-14T06:00:55.795717333Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/hcp\\\")'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4eaadc6c8fc6e0b1d07b6b830abc68130628e88d296c3a8289ea21ec915d1e67\",\"parent\":\"2f734c5f329bb15659c841bf8f5eaf7b9b980f4ccb1da838cb4fd20826be6def\",\"created\":\"2017-04-14T05:59:16.878746405Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/dcm2niir\\\")' \\u0026\\u0026 r -e 'library(dcm2niir); install_dcm2nii();'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2f734c5f329bb15659c841bf8f5eaf7b9b980f4ccb1da838cb4fd20826be6def\",\"parent\":\"7733729d3fa77a8afcbb5d651ec509748d744b6544cbdb01fd6c69a56652ed58\",\"created\":\"2017-04-14T05:52:14.012581076Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get build-dep -y r-cran-rgl\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7733729d3fa77a8afcbb5d651ec509748d744b6544cbdb01fd6c69a56652ed58\",\"parent\":\"7aeae796e25c9e2bc7dcac46f71ba7cbde22a1f85f33ae9349e3aa379a107265\",\"created\":\"2017-04-14T05:51:02.791995501Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'library(utils); source(\\\"http://bioconductor.org/biocLite.R\\\"); biocLite(pkgs = c(\\\"Biobase\\\"), suppressUpdates = TRUE, suppressAutoUpdate = TRUE, ask = FALSE)'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7aeae796e25c9e2bc7dcac46f71ba7cbde22a1f85f33ae9349e3aa379a107265\",\"parent\":\"921e2771e69aab9edcce6ef8d3e2572b53dc121fff727f5867d3bf657f8e670d\",\"created\":\"2017-04-14T05:50:39.709378024Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y cmake-curses-gui\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"921e2771e69aab9edcce6ef8d3e2572b53dc121fff727f5867d3bf657f8e670d\",\"parent\":\"2ec53bfb7e905adb6563d1a590c773ba9ddc209da68e96f22925de9e4d8370e4\",\"created\":\"2017-04-14T05:50:22.889161646Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget http://www.cmake.org/files/v2.8/cmake-2.8.9.tar.gz \\u0026\\u0026 tar xzvf cmake-2.8.9.tar.gz \\u0026\\u0026 cd cmake-2.8.9 \\u0026\\u0026 ./configure \\u0026\\u0026 make \\u0026\\u0026 make install \\u0026\\u0026 cd ../\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ec53bfb7e905adb6563d1a590c773ba9ddc209da68e96f22925de9e4d8370e4\",\"parent\":\"27bfc6e211a30e01824ba8859e1483bbf978a5c9c763646ed98af157119e870c\",\"created\":\"2017-04-14T05:42:47.927699265Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y git-core\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27bfc6e211a30e01824ba8859e1483bbf978a5c9c763646ed98af157119e870c\",\"parent\":\"b0e7b1e84836fd9cd8c31b3885123c010bd6121a40ad929aca99045ba0cd9bf3\",\"created\":\"2017-04-14T05:42:28.393472842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     devtools\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0e7b1e84836fd9cd8c31b3885123c010bd6121a40ad929aca99045ba0cd9bf3\",\"parent\":\"40445eb99cb6d5b9a9bc58c53bade63757f53a9bb4b033c6d0eef1856b116587\",\"created\":\"2017-04-14T05:40:04.730795233Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'options(repos = c(CRAN = \\\"https://cran.rstudio.com/\\\"), download.file.method = \\\"wget\\\")' \\u003e\\u003e /etc/R/Rprofile.site         \\u0026\\u0026 echo 'source(\\\"/etc/R/Rprofile.site\\\")' \\u003e\\u003e /etc/littler.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r     \\u0026\\u0026 install.r docopt     \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"40445eb99cb6d5b9a9bc58c53bade63757f53a9bb4b033c6d0eef1856b116587\",\"parent\":\"9e94846422771431b7f66b211aa04c94219b5eba5ea07ed068bf2ef24f6e21d5\",\"created\":\"2017-04-14T05:38:11.275860868Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y     libssl-dev     libcurl4-openssl-dev     zlib1g-dev     libssh2-1-dev     libpq-dev     libxml2-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e94846422771431b7f66b211aa04c94219b5eba5ea07ed068bf2ef24f6e21d5\",\"parent\":\"9f94050640d037792c91be1c33021adc6b778d075caf40d01c5bfbb1d821354e\",\"created\":\"2017-04-14T05:37:48.876540621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y build-essential\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9f94050640d037792c91be1c33021adc6b778d075caf40d01c5bfbb1d821354e\",\"parent\":\"17f22201981564c906fbe5d3907ffbb0bf31a87dc38e84f237b4b0f177993ca8\",\"created\":\"2017-04-14T05:37:12.680977721Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y --no-install-recommends         littler         r-base\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"17f22201981564c906fbe5d3907ffbb0bf31a87dc38e84f237b4b0f177993ca8\",\"parent\":\"2f0675b35ffe7e6aac4975514ef114404a48c51c49973a7fa106d3ef42268547\",\"created\":\"2017-04-14T05:36:28.736847774Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV R_BASE_VERSION=3.3.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2f0675b35ffe7e6aac4975514ef114404a48c51c49973a7fa106d3ef42268547\",\"parent\":\"db368f2430488c1a8ec99ba89faccafc80bfd3f9073c5fef80731c5e68d50e26\",\"created\":\"2017-04-14T05:36:27.631531433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db368f2430488c1a8ec99ba89faccafc80bfd3f9073c5fef80731c5e68d50e26\",\"parent\":\"0a8c4853609b22a84ba108684107a4e10b021a7147b0abe2bfd17f34bc6a59e9\",\"created\":\"2017-04-14T05:36:26.44672305Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0a8c4853609b22a84ba108684107a4e10b021a7147b0abe2bfd17f34bc6a59e9\",\"parent\":\"cccce2611c6febf73f4a2e7c71a82e7630dadfad03075b8af1bbb52370d5aedb\",\"created\":\"2017-04-14T05:36:25.538673571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e\\u003e /etc/locale.gen     \\u0026\\u0026 locale-gen en_US.utf8     \\u0026\\u0026 /usr/sbin/update-locale LANG=en_US.UTF-8\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cccce2611c6febf73f4a2e7c71a82e7630dadfad03075b8af1bbb52370d5aedb\",\"parent\":\"b6deea3a4f412f8fdcda283390f9512e91b82791160c5681ed379a8d2abd1353\",\"created\":\"2017-04-14T05:36:22.611104015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y --no-install-recommends         less         locales         wget         ca-certificates     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b6deea3a4f412f8fdcda283390f9512e91b82791160c5681ed379a8d2abd1353\",\"parent\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"created\":\"2017-04-14T05:36:01.391388023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd docker     \\u0026\\u0026 mkdir /home/docker     \\u0026\\u0026 chown docker:docker /home/docker     \\u0026\\u0026 addgroup docker staff\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"parent\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"created\":\"2017-04-12T21:06:42.400456816Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"parent\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"created\":\"2017-04-12T21:06:40.989728134Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"parent\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"created\":\"2017-04-12T21:06:38.850141436Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"parent\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"created\":\"2017-04-12T21:06:37.566865121Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"parent\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:36.368687679Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:34.139960926Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b8a2c16d65e533a2bcb5820d2bae70f5a80bd2d8c982c93d9a6cdbf22f8f8ee8 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f6e8f955ebddf219c9dcd90e138dc3f55dce3dca30f9d23c2991a0ff0eb787b1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:86fc94d8396068ecee973bb9fcacc5db0d49efeae651aa894cadbaf48d57effb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0960f7073aecdc10eaa5eccdba261375f6d3f51d0fe711bfd221385a18f32cbb"
+            },
+            {
+                "blobSum": "sha256:05d2ea21235b0f8124958041ebdc7d809dfbda058f3340911e10e27f85b326ef"
+            },
+            {
+                "blobSum": "sha256:4bc23ebdcdca11f46da3ca56d619290da588b389214686fbfb6aef4940296073"
+            },
+            {
+                "blobSum": "sha256:d4ba3f333821b9da6e3bdf5583eef06d0a6ae3b1cbb99cd46869b56fcb4cddea"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2b235831b1bf3823951eea2a3ee3ac1175824f99257fd072f174b3d5009f81bb"
+            },
+            {
+                "blobSum": "sha256:86fb37cf7a0b139a85d945b8baf738a6a23662bab76d4e694eba16b95937691a"
+            },
+            {
+                "blobSum": "sha256:33d0c5e7aab98ce6a75533cc3d3cb30b44e932ebd0ee6fe7385f4bb10c610522"
+            },
+            {
+                "blobSum": "sha256:9fcb6ff24aba45a2571f082c6c33406e44d296bfacfebf078d79c6d50ffcb8cb"
+            },
+            {
+                "blobSum": "sha256:1855cf52e5c8e88d8c7e9ea2dec2b24d02caca0392306d1b46d960a1d706e484"
+            },
+            {
+                "blobSum": "sha256:37d26413f307ee5ee4704c26e8a4cafc753f4acd1c89f4aecdd3f34b1e9a5e6a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5f87129cb36839380c61fb8be787da2c80bbc056ab0acc08cfdcaf92abe7d151"
+            },
+            {
+                "blobSum": "sha256:67a95df6433479fe3ee9ee5c826691d701ed0f0b787254288f759f480192e87b"
+            },
+            {
+                "blobSum": "sha256:c240e7c189294367faf7416cc013cdc6b9ca1c0a67534fcb412adb72b5f00069"
+            },
+            {
+                "blobSum": "sha256:d996791f1126ad80e419676cc970b62421ff842327b87c417cd1ab9a5e045124"
+            },
+            {
+                "blobSum": "sha256:bc422601163231625f7e218c166951b255e8af1b245facddc537a12e7b58492c"
+            },
+            {
+                "blobSum": "sha256:8a7c8d2aa5fe90b31d28ba490e4023924efc02cd50b4d3a2db77e83f6667d046"
+            },
+            {
+                "blobSum": "sha256:6512611ccd3bbcb3e516bf085b6ab2b72c85d3fe0e99fe007e5c665edccb9af0"
+            },
+            {
+                "blobSum": "sha256:2743a2f90d5e04155fd9de9a874131917554752aeb57ec20e348cd2727cfd1e6"
+            },
+            {
+                "blobSum": "sha256:348d4cb6457a88a487ec883c4e10ab0ff91ba8fc65c6e76f8111382c1573e66d"
+            },
+            {
+                "blobSum": "sha256:069c5231ecc394dc5362d83fd1c671572c42ae899033278258658effc642c1b4"
+            },
+            {
+                "blobSum": "sha256:49d2aa0d6cdca72bf794eefc7fc3060a273564154dcbbf070a84cb8b38eeb7bc"
+            },
+            {
+                "blobSum": "sha256:e6672af18006937160344a975eb264c833b82a717c035b2c2d1d138f5db2aa2b"
+            },
+            {
+                "blobSum": "sha256:58a0d1761dde6923fd3e94077130f589aa7bf572b091840d7548653eab12ea2b"
+            },
+            {
+                "blobSum": "sha256:ea588efc5bd41d635d8376b4b667eabd10ed6caa110034114b93e13a024b2fcd"
+            },
+            {
+                "blobSum": "sha256:50d18855074d247e43e4ed7486521f29cff26cbec82617bff483d746d60de06d"
+            },
+            {
+                "blobSum": "sha256:6f3af5cc61e4a0ed790c189cbf869f1fbd262d0dd4b51243d5fbfc2455cd15ad"
+            },
+            {
+                "blobSum": "sha256:154e47e4f253dcf11c97cb218e556b3d6fd10085fb0e4bf92716ecb2c91a9518"
+            },
+            {
+                "blobSum": "sha256:c993f24fbe827c627cd76d9710402aa2da19aaa2d57690e5fe8a0d66e1a0a5ae"
+            },
+            {
+                "blobSum": "sha256:c264bedb778b946595b75945a0a318006df552350443292bac4f3d389ab28bcd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6492a7a08794dd255fc185a08db41aefe6dfc507a64738e4fbacfaa2719b80d9"
+            },
+            {
+                "blobSum": "sha256:97416fac846e7d9326f2d9437b2dcdd934aa649982a72a291fc47d8942e49f7a"
+            },
+            {
+                "blobSum": "sha256:64293fdbfa0c04d4dde0f0004a6161e7f58cb74950b5156071ae36a198fe6492"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6b33fd031facf4d7dd97afeea8a93260c2f15c3e795eeccd8969198a3d52678d"
+            },
+            {
+                "blobSum": "sha256:0062f774e9942f61d13928855ab8111adc27def6f41bd6f7902c329ec836882b"
+            },
+            {
+                "blobSum": "sha256:5c9125a401ae0cf5a5b4128633e7a4e84230d3eb4c541c661618a70e5d29aeff"
+            },
+            {
+                "blobSum": "sha256:d4fceeeb758e5103c39daf44c73404bf476ef6fd6b7a9a11e2260fcc1797c806"
+            },
+            {
+                "blobSum": "sha256:c62795f78da9ad31d9669cb4feb4e8fba995a299a0b2bd0f05b10fdc05b1f35e"
+            }
+        ],
+        "name": "muschellij2/rneuro_fsl_afni",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjI4OTY4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDY6NTVaIn0",
+                "signature": "zMEFdzqOmjk6HseMTPw-xrTGbxCI_RlRfdJAxDKM2UG-WKkr77epIMgPfNqn5QTgn0zilhjZPuYvdpiqY8cQSw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "-NNlPrHpudJ8K6ukaQMfwPbkgnxcwJTVd1xNbNHLBXs",
+                        "kid": "JVS5:FLHE:WVYV:CCSG:KI7Y:JKMC:ZS7Z:JBI7:RX7D:T5UV:UIWN:6FNT",
+                        "x": "lBvzgDNIkULNiuDkt8JwYZgCWyRigo35yujUi-XlhpI"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/fsl/bin\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"R_BASE_VERSION=3.3.2\",\"ZLIB_VERSION=1.2.8\",\"FSLDIR=/usr/local/fsl\",\"FSLSHARE=/usr/share/data\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"LD_LIBRARY_PATH=:/usr/lib/fsl/5.0\"],\"Cmd\":[\"bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:97754720e5419130d009dc2cd1a0c1318ce40ab7ab0f0b8fa200d37b44ea677e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"7a3e4aaab34f410b6aa44bba71c0ed15e447f5806f730e399f32cca29a55e053\",\"container_config\":{\"Hostname\":\"922531132c26\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/fsl/bin\",\"LC_ALL=en_US.UTF-8\",\"LANG=en_US.UTF-8\",\"R_BASE_VERSION=3.3.2\",\"ZLIB_VERSION=1.2.8\",\"FSLDIR=/usr/local/fsl\",\"FSLSHARE=/usr/share/data\",\"FSLOUTPUTTYPE=NIFTI_GZ\",\"LD_LIBRARY_PATH=:/usr/lib/fsl/5.0\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"bash\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:97754720e5419130d009dc2cd1a0c1318ce40ab7ab0f0b8fa200d37b44ea677e\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-11T16:26:52.276174344Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"3b83994adcd2c79e369503d8ebd3ed0c575c8a85114c2447326672aac9ba6884\",\"os\":\"linux\",\"parent\":\"fbc777a7a4ab311644fecb5e2fbb4098893a6f486ed1c9fadf46d6bc686e86f1\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fbc777a7a4ab311644fecb5e2fbb4098893a6f486ed1c9fadf46d6bc686e86f1\",\"parent\":\"f8de22e1110e4d22c312564734fd39554a23aefb4fa24f5a835faf71ff21e180\",\"created\":\"2017-05-11T16:26:39.576287763Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y afni\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f8de22e1110e4d22c312564734fd39554a23aefb4fa24f5a835faf71ff21e180\",\"parent\":\"18d94194da59cff238451f829bc0fccc6aaef9f026cbcf5787ef46df49cc32f9\",\"created\":\"2017-05-11T16:00:17.493845657Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"18d94194da59cff238451f829bc0fccc6aaef9f026cbcf5787ef46df49cc32f9\",\"parent\":\"1c992d3e70650272f0a717b5e8cca03aad877fa069ff853ea1716b6b37b6efe7\",\"created\":\"2017-05-11T16:00:05.568521712Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=:/usr/lib/fsl/5.0\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c992d3e70650272f0a717b5e8cca03aad877fa069ff853ea1716b6b37b6efe7\",\"parent\":\"cba46e0b3c39a2b53b3a99d5c11c76c19fa72116101d10d10c18a45aae7fec0a\",\"created\":\"2017-05-11T15:59:55.060768085Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c usermod -u 504 docker\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cba46e0b3c39a2b53b3a99d5c11c76c19fa72116101d10d10c18a45aae7fec0a\",\"parent\":\"c9e0dde9b41cd6b54426438b110335d450cc0be4130feb88f225374124a00199\",\"created\":\"2017-05-11T15:59:42.943627742Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLOUTPUTTYPE=NIFTI_GZ\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c9e0dde9b41cd6b54426438b110335d450cc0be4130feb88f225374124a00199\",\"parent\":\"baa765c9752b3475779248f6578b34337bf61c8708921f86241ebf4d6639bc9d\",\"created\":\"2017-05-11T15:59:32.66954784Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cp -R ${FSLSHARE}/harvard-oxford-atlases/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/juelich-histological-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/bangor-cerebellar-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/jhu-dti-whitematter-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/forstmann-subthalamic-nucleus-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/fsl-resting-connectivity-parcellation-atlases/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/mni-structural-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/oxford-thalamic-connectivity-atlas/* ${FSLDIR}/data/atlases/ \\u0026\\u0026 cp -R ${FSLSHARE}/talairach-daemon-atlas/* ${FSLDIR}/data/atlases/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"baa765c9752b3475779248f6578b34337bf61c8708921f86241ebf4d6639bc9d\",\"parent\":\"337909998f3a0b31266e8609e4a53ca83f423b5f162b49be87cf1b4ccf4e0f33\",\"created\":\"2017-05-11T15:59:20.654974975Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cp -R ${FSLSHARE}/fsl-mni152-templates/* ${FSLDIR}/data/standard/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"337909998f3a0b31266e8609e4a53ca83f423b5f162b49be87cf1b4ccf4e0f33\",\"parent\":\"c79e41bfc6984a6f0b0879f23ee4b9f26933f15081f7087f5337afd52798b2c6\",\"created\":\"2017-05-11T15:59:08.745838392Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${FSLDIR}/data/standard \\u0026\\u0026 mkdir -p ${FSLDIR}/data/atlases\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c79e41bfc6984a6f0b0879f23ee4b9f26933f15081f7087f5337afd52798b2c6\",\"parent\":\"22f6569739fcb1338b9ace7f675786cd0c543b0edc5d6c790da08b1b11ba1381\",\"created\":\"2017-05-11T15:58:58.358202412Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p ${FSLDIR}/bin  \\u0026\\u0026 cp /usr/lib/fsl/5.0/* ${FSLDIR}/bin/\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"22f6569739fcb1338b9ace7f675786cd0c543b0edc5d6c790da08b1b11ba1381\",\"parent\":\"59f1478dfeeae5d08545913c8388341317c4d070bc58590d61b67fba3f184651\",\"created\":\"2017-05-11T15:58:44.907447349Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/fsl/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"59f1478dfeeae5d08545913c8388341317c4d070bc58590d61b67fba3f184651\",\"parent\":\"632c8a6353f168af5bec0979bed7cb1174f43aacf41a2b89a6d80ffaea6b7054\",\"created\":\"2017-05-11T15:58:33.586102443Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLSHARE=/usr/share/data\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"632c8a6353f168af5bec0979bed7cb1174f43aacf41a2b89a6d80ffaea6b7054\",\"parent\":\"541866d851b9c2ede7fa3693b0bc5e50337c759527276181430a8ffb3c78fd94\",\"created\":\"2017-05-11T15:58:21.411087471Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV FSLDIR=/usr/local/fsl\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"541866d851b9c2ede7fa3693b0bc5e50337c759527276181430a8ffb3c78fd94\",\"parent\":\"6a23cf3719a92ae607cc4f9d75e1e46c261fcddf683acd53fbe4857641e7ef6c\",\"created\":\"2017-05-11T15:58:09.119333178Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y fsl-complete\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6a23cf3719a92ae607cc4f9d75e1e46c261fcddf683acd53fbe4857641e7ef6c\",\"parent\":\"242899fa8cd406f5ea00842cedfe5b406c27e4ff029b1985b6d867a2a58657e3\",\"created\":\"2017-05-11T15:49:43.375053994Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"242899fa8cd406f5ea00842cedfe5b406c27e4ff029b1985b6d867a2a58657e3\",\"parent\":\"d3ae1376d7ad57d3bc89dfc24c8e680ea86bb2adca2a6b0de684fca91616260c\",\"created\":\"2017-05-11T15:49:26.569606259Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-key adv --recv-keys --keyserver hkp://pgp.mit.edu:80 0xA5D32F012649A5A9\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d3ae1376d7ad57d3bc89dfc24c8e680ea86bb2adca2a6b0de684fca91616260c\",\"parent\":\"a040b680da62925e0be3b25eb236bd2ce24c5a0df66769ebe44b90877e58a7c1\",\"created\":\"2017-05-11T15:49:11.533987809Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget -O- http://neuro.debian.net/lists/xenial.us-tn.full | tee /etc/apt/sources.list.d/neurodebian.sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a040b680da62925e0be3b25eb236bd2ce24c5a0df66769ebe44b90877e58a7c1\",\"parent\":\"8db127d41562915e4207b02bd3a8563395a3d18b0f3b6e77f2f7cca0f8cab125\",\"created\":\"2017-05-11T15:48:59.105596892Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y dirmngr\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8db127d41562915e4207b02bd3a8563395a3d18b0f3b6e77f2f7cca0f8cab125\",\"parent\":\"9c112f6cbb78e7cad721d95e84a4fb10672e971d0ba30932f942eece1ca99ade\",\"created\":\"2017-05-11T15:48:44.584553329Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y gnupg2 gnupg\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9c112f6cbb78e7cad721d95e84a4fb10672e971d0ba30932f942eece1ca99ade\",\"parent\":\"7c6fafc62b9956070374cae498d2bc8945038668e4dcdfa672e3596638f42e69\",\"created\":\"2017-04-14T06:07:23.492790854Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV ZLIB_VERSION=1.2.8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c6fafc62b9956070374cae498d2bc8945038668e4dcdfa672e3596638f42e69\",\"parent\":\"1a1c02bc454d5aecb8b6af3421c698fe0da6675b40e858086ca4de37c3e70cc1\",\"created\":\"2017-04-14T06:07:16.729178698Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/fslr\\\")'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1a1c02bc454d5aecb8b6af3421c698fe0da6675b40e858086ca4de37c3e70cc1\",\"parent\":\"342268099297b284f3b221176b2e0ee6e8ba570119cd65c44f39f78fd746a18e\",\"created\":\"2017-04-14T06:06:57.109809015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/neurobase\\\")'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"342268099297b284f3b221176b2e0ee6e8ba570119cd65c44f39f78fd746a18e\",\"parent\":\"0ad969c0b6995e13af371dd94ffe5d22378ab565cae1f386b75f9171cb1254b9\",\"created\":\"2017-04-14T06:03:32.988171899Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'library(WhiteStripe); download_img_data()'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ad969c0b6995e13af371dd94ffe5d22378ab565cae1f386b75f9171cb1254b9\",\"parent\":\"c0282be407fc783a623baceca36a65a6448e801741342276f888af846a567bbf\",\"created\":\"2017-04-14T06:03:21.522468743Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     WhiteStripe\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c0282be407fc783a623baceca36a65a6448e801741342276f888af846a567bbf\",\"parent\":\"a115699c0fef7ca50e1b59a22e3abab46eb6cf1307d784b09c9d6e88aacf9877\",\"created\":\"2017-04-14T06:03:03.415953344Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     oro.dicom     oro.nifti\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a115699c0fef7ca50e1b59a22e3abab46eb6cf1307d784b09c9d6e88aacf9877\",\"parent\":\"5a3f9287ef2e78b5e6726a871cd7797083967bbe49b1d0719e58061c3a056427\",\"created\":\"2017-04-14T06:02:28.229999753Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     divest\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5a3f9287ef2e78b5e6726a871cd7797083967bbe49b1d0719e58061c3a056427\",\"parent\":\"367023409359529d404337934a41c77e24e508f588b512f8d987ff0a2c16ec5c\",\"created\":\"2017-04-14T06:01:32.382972185Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     RNifti\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"367023409359529d404337934a41c77e24e508f588b512f8d987ff0a2c16ec5c\",\"parent\":\"4eaadc6c8fc6e0b1d07b6b830abc68130628e88d296c3a8289ea21ec915d1e67\",\"created\":\"2017-04-14T06:00:55.795717333Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/hcp\\\")'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4eaadc6c8fc6e0b1d07b6b830abc68130628e88d296c3a8289ea21ec915d1e67\",\"parent\":\"2f734c5f329bb15659c841bf8f5eaf7b9b980f4ccb1da838cb4fd20826be6def\",\"created\":\"2017-04-14T05:59:16.878746405Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'devtools::install_github(\\\"muschellij2/dcm2niir\\\")' \\u0026\\u0026 r -e 'library(dcm2niir); install_dcm2nii();'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2f734c5f329bb15659c841bf8f5eaf7b9b980f4ccb1da838cb4fd20826be6def\",\"parent\":\"7733729d3fa77a8afcbb5d651ec509748d744b6544cbdb01fd6c69a56652ed58\",\"created\":\"2017-04-14T05:52:14.012581076Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get build-dep -y r-cran-rgl\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7733729d3fa77a8afcbb5d651ec509748d744b6544cbdb01fd6c69a56652ed58\",\"parent\":\"7aeae796e25c9e2bc7dcac46f71ba7cbde22a1f85f33ae9349e3aa379a107265\",\"created\":\"2017-04-14T05:51:02.791995501Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c r -e 'library(utils); source(\\\"http://bioconductor.org/biocLite.R\\\"); biocLite(pkgs = c(\\\"Biobase\\\"), suppressUpdates = TRUE, suppressAutoUpdate = TRUE, ask = FALSE)'\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7aeae796e25c9e2bc7dcac46f71ba7cbde22a1f85f33ae9349e3aa379a107265\",\"parent\":\"921e2771e69aab9edcce6ef8d3e2572b53dc121fff727f5867d3bf657f8e670d\",\"created\":\"2017-04-14T05:50:39.709378024Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y cmake-curses-gui\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"921e2771e69aab9edcce6ef8d3e2572b53dc121fff727f5867d3bf657f8e670d\",\"parent\":\"2ec53bfb7e905adb6563d1a590c773ba9ddc209da68e96f22925de9e4d8370e4\",\"created\":\"2017-04-14T05:50:22.889161646Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget http://www.cmake.org/files/v2.8/cmake-2.8.9.tar.gz \\u0026\\u0026 tar xzvf cmake-2.8.9.tar.gz \\u0026\\u0026 cd cmake-2.8.9 \\u0026\\u0026 ./configure \\u0026\\u0026 make \\u0026\\u0026 make install \\u0026\\u0026 cd ../\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ec53bfb7e905adb6563d1a590c773ba9ddc209da68e96f22925de9e4d8370e4\",\"parent\":\"27bfc6e211a30e01824ba8859e1483bbf978a5c9c763646ed98af157119e870c\",\"created\":\"2017-04-14T05:42:47.927699265Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y git-core\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"27bfc6e211a30e01824ba8859e1483bbf978a5c9c763646ed98af157119e870c\",\"parent\":\"b0e7b1e84836fd9cd8c31b3885123c010bd6121a40ad929aca99045ba0cd9bf3\",\"created\":\"2017-04-14T05:42:28.393472842Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c install.r     devtools\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0e7b1e84836fd9cd8c31b3885123c010bd6121a40ad929aca99045ba0cd9bf3\",\"parent\":\"40445eb99cb6d5b9a9bc58c53bade63757f53a9bb4b033c6d0eef1856b116587\",\"created\":\"2017-04-14T05:40:04.730795233Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo 'options(repos = c(CRAN = \\\"https://cran.rstudio.com/\\\"), download.file.method = \\\"wget\\\")' \\u003e\\u003e /etc/R/Rprofile.site         \\u0026\\u0026 echo 'source(\\\"/etc/R/Rprofile.site\\\")' \\u003e\\u003e /etc/littler.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/install.r /usr/local/bin/install.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/install2.r /usr/local/bin/install2.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/installGithub.r /usr/local/bin/installGithub.r     \\u0026\\u0026 ln -s /usr/share/doc/littler/examples/testInstalled.r /usr/local/bin/testInstalled.r     \\u0026\\u0026 install.r docopt     \\u0026\\u0026 rm -rf /tmp/downloaded_packages/ /tmp/*.rds     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"40445eb99cb6d5b9a9bc58c53bade63757f53a9bb4b033c6d0eef1856b116587\",\"parent\":\"9e94846422771431b7f66b211aa04c94219b5eba5ea07ed068bf2ef24f6e21d5\",\"created\":\"2017-04-14T05:38:11.275860868Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y     libssl-dev     libcurl4-openssl-dev     zlib1g-dev     libssh2-1-dev     libpq-dev     libxml2-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9e94846422771431b7f66b211aa04c94219b5eba5ea07ed068bf2ef24f6e21d5\",\"parent\":\"9f94050640d037792c91be1c33021adc6b778d075caf40d01c5bfbb1d821354e\",\"created\":\"2017-04-14T05:37:48.876540621Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y build-essential\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9f94050640d037792c91be1c33021adc6b778d075caf40d01c5bfbb1d821354e\",\"parent\":\"17f22201981564c906fbe5d3907ffbb0bf31a87dc38e84f237b4b0f177993ca8\",\"created\":\"2017-04-14T05:37:12.680977721Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y --no-install-recommends         littler         r-base\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"17f22201981564c906fbe5d3907ffbb0bf31a87dc38e84f237b4b0f177993ca8\",\"parent\":\"2f0675b35ffe7e6aac4975514ef114404a48c51c49973a7fa106d3ef42268547\",\"created\":\"2017-04-14T05:36:28.736847774Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV R_BASE_VERSION=3.3.2\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2f0675b35ffe7e6aac4975514ef114404a48c51c49973a7fa106d3ef42268547\",\"parent\":\"db368f2430488c1a8ec99ba89faccafc80bfd3f9073c5fef80731c5e68d50e26\",\"created\":\"2017-04-14T05:36:27.631531433Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db368f2430488c1a8ec99ba89faccafc80bfd3f9073c5fef80731c5e68d50e26\",\"parent\":\"0a8c4853609b22a84ba108684107a4e10b021a7147b0abe2bfd17f34bc6a59e9\",\"created\":\"2017-04-14T05:36:26.44672305Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LC_ALL=en_US.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0a8c4853609b22a84ba108684107a4e10b021a7147b0abe2bfd17f34bc6a59e9\",\"parent\":\"cccce2611c6febf73f4a2e7c71a82e7630dadfad03075b8af1bbb52370d5aedb\",\"created\":\"2017-04-14T05:36:25.538673571Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"en_US.UTF-8 UTF-8\\\" \\u003e\\u003e /etc/locale.gen     \\u0026\\u0026 locale-gen en_US.utf8     \\u0026\\u0026 /usr/sbin/update-locale LANG=en_US.UTF-8\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cccce2611c6febf73f4a2e7c71a82e7630dadfad03075b8af1bbb52370d5aedb\",\"parent\":\"b6deea3a4f412f8fdcda283390f9512e91b82791160c5681ed379a8d2abd1353\",\"created\":\"2017-04-14T05:36:22.611104015Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update     \\u0026\\u0026 apt-get install -y --no-install-recommends         less         locales         wget         ca-certificates     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b6deea3a4f412f8fdcda283390f9512e91b82791160c5681ed379a8d2abd1353\",\"parent\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"created\":\"2017-04-14T05:36:01.391388023Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd docker     \\u0026\\u0026 mkdir /home/docker     \\u0026\\u0026 chown docker:docker /home/docker     \\u0026\\u0026 addgroup docker staff\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a2ad8ede7a2a966e59728bde952fb0d73e04a83d31955a2618ceb298f8467428\",\"parent\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"created\":\"2017-04-12T21:06:42.400456816Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ea0322ce8a691dc54bec84b0e84c5fde0b80f7fbcc51bd3dd24064da705e03e\",\"parent\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"created\":\"2017-04-12T21:06:40.989728134Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"311afb88d0415b3665b1576df62328df88eff87af7268187276d2bad0af0e498\",\"parent\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"created\":\"2017-04-12T21:06:38.850141436Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8070fdcb4dff4cf605281ef5f81141484204d64280d303c5395e3fbe8cbec950\",\"parent\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"created\":\"2017-04-12T21:06:37.566865121Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fda5504ec872d368ee0a37f0455b65322a44e21c6b82fc01ca05c16d35ccb4aa\",\"parent\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:36.368687679Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f0ea6429bcad3d955456f12097b82ac4de51af9555aeb730d13aa8e54c57ebee\",\"created\":\"2017-04-12T21:06:34.139960926Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b8a2c16d65e533a2bcb5820d2bae70f5a80bd2d8c982c93d9a6cdbf22f8f8ee8 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:f6e8f955ebddf219c9dcd90e138dc3f55dce3dca30f9d23c2991a0ff0eb787b1"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:86fc94d8396068ecee973bb9fcacc5db0d49efeae651aa894cadbaf48d57effb"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:0960f7073aecdc10eaa5eccdba261375f6d3f51d0fe711bfd221385a18f32cbb"
+            },
+            {
+                "blobSum": "sha256:05d2ea21235b0f8124958041ebdc7d809dfbda058f3340911e10e27f85b326ef"
+            },
+            {
+                "blobSum": "sha256:4bc23ebdcdca11f46da3ca56d619290da588b389214686fbfb6aef4940296073"
+            },
+            {
+                "blobSum": "sha256:d4ba3f333821b9da6e3bdf5583eef06d0a6ae3b1cbb99cd46869b56fcb4cddea"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2b235831b1bf3823951eea2a3ee3ac1175824f99257fd072f174b3d5009f81bb"
+            },
+            {
+                "blobSum": "sha256:86fb37cf7a0b139a85d945b8baf738a6a23662bab76d4e694eba16b95937691a"
+            },
+            {
+                "blobSum": "sha256:33d0c5e7aab98ce6a75533cc3d3cb30b44e932ebd0ee6fe7385f4bb10c610522"
+            },
+            {
+                "blobSum": "sha256:9fcb6ff24aba45a2571f082c6c33406e44d296bfacfebf078d79c6d50ffcb8cb"
+            },
+            {
+                "blobSum": "sha256:1855cf52e5c8e88d8c7e9ea2dec2b24d02caca0392306d1b46d960a1d706e484"
+            },
+            {
+                "blobSum": "sha256:37d26413f307ee5ee4704c26e8a4cafc753f4acd1c89f4aecdd3f34b1e9a5e6a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5f87129cb36839380c61fb8be787da2c80bbc056ab0acc08cfdcaf92abe7d151"
+            },
+            {
+                "blobSum": "sha256:67a95df6433479fe3ee9ee5c826691d701ed0f0b787254288f759f480192e87b"
+            },
+            {
+                "blobSum": "sha256:c240e7c189294367faf7416cc013cdc6b9ca1c0a67534fcb412adb72b5f00069"
+            },
+            {
+                "blobSum": "sha256:d996791f1126ad80e419676cc970b62421ff842327b87c417cd1ab9a5e045124"
+            },
+            {
+                "blobSum": "sha256:bc422601163231625f7e218c166951b255e8af1b245facddc537a12e7b58492c"
+            },
+            {
+                "blobSum": "sha256:8a7c8d2aa5fe90b31d28ba490e4023924efc02cd50b4d3a2db77e83f6667d046"
+            },
+            {
+                "blobSum": "sha256:6512611ccd3bbcb3e516bf085b6ab2b72c85d3fe0e99fe007e5c665edccb9af0"
+            },
+            {
+                "blobSum": "sha256:2743a2f90d5e04155fd9de9a874131917554752aeb57ec20e348cd2727cfd1e6"
+            },
+            {
+                "blobSum": "sha256:348d4cb6457a88a487ec883c4e10ab0ff91ba8fc65c6e76f8111382c1573e66d"
+            },
+            {
+                "blobSum": "sha256:069c5231ecc394dc5362d83fd1c671572c42ae899033278258658effc642c1b4"
+            },
+            {
+                "blobSum": "sha256:49d2aa0d6cdca72bf794eefc7fc3060a273564154dcbbf070a84cb8b38eeb7bc"
+            },
+            {
+                "blobSum": "sha256:e6672af18006937160344a975eb264c833b82a717c035b2c2d1d138f5db2aa2b"
+            },
+            {
+                "blobSum": "sha256:58a0d1761dde6923fd3e94077130f589aa7bf572b091840d7548653eab12ea2b"
+            },
+            {
+                "blobSum": "sha256:ea588efc5bd41d635d8376b4b667eabd10ed6caa110034114b93e13a024b2fcd"
+            },
+            {
+                "blobSum": "sha256:50d18855074d247e43e4ed7486521f29cff26cbec82617bff483d746d60de06d"
+            },
+            {
+                "blobSum": "sha256:6f3af5cc61e4a0ed790c189cbf869f1fbd262d0dd4b51243d5fbfc2455cd15ad"
+            },
+            {
+                "blobSum": "sha256:154e47e4f253dcf11c97cb218e556b3d6fd10085fb0e4bf92716ecb2c91a9518"
+            },
+            {
+                "blobSum": "sha256:c993f24fbe827c627cd76d9710402aa2da19aaa2d57690e5fe8a0d66e1a0a5ae"
+            },
+            {
+                "blobSum": "sha256:c264bedb778b946595b75945a0a318006df552350443292bac4f3d389ab28bcd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6492a7a08794dd255fc185a08db41aefe6dfc507a64738e4fbacfaa2719b80d9"
+            },
+            {
+                "blobSum": "sha256:97416fac846e7d9326f2d9437b2dcdd934aa649982a72a291fc47d8942e49f7a"
+            },
+            {
+                "blobSum": "sha256:64293fdbfa0c04d4dde0f0004a6161e7f58cb74950b5156071ae36a198fe6492"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6b33fd031facf4d7dd97afeea8a93260c2f15c3e795eeccd8969198a3d52678d"
+            },
+            {
+                "blobSum": "sha256:0062f774e9942f61d13928855ab8111adc27def6f41bd6f7902c329ec836882b"
+            },
+            {
+                "blobSum": "sha256:5c9125a401ae0cf5a5b4128633e7a4e84230d3eb4c541c661618a70e5d29aeff"
+            },
+            {
+                "blobSum": "sha256:d4fceeeb758e5103c39daf44c73404bf476ef6fd6b7a9a11e2260fcc1797c806"
+            },
+            {
+                "blobSum": "sha256:c62795f78da9ad31d9669cb4feb4e8fba995a299a0b2bd0f05b10fdc05b1f35e"
+            }
+        ],
+        "name": "muschellij2/rneuro_fsl_afni",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjI4OTY4LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDY6NTZaIn0",
+                "signature": "Y4OSBezsPiRmLmnPzkc1wHDV0YJ6Vl86GRhAC2-kClb_IU6XBo_sqEfhr4PsPDwGzo4q3iZKty6evv5b0PWwSw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "gexshvamq0EnykqEGFOSeD99-7AGkqE6incFkTCesso",
+                        "kid": "O6TH:VVX4:ASKB:FAFK:BRF4:T5GB:CM6A:23ZY:UGPS:NFER:3KXN:TGUA",
+                        "x": "CmI5L7VcBv3lrKKZ8dNJjkam-X8l7gCuwfUeptrBR1I"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\",\"config\":{\"Hostname\":\"ca9015dc6bb1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ca998a003c52f5ae2039fc9271113cfae257126446a0dc4e7b945afbbc141f64\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"5bc150d14485364faf385f1f17194115b909d8bc8b5859269103657a2bfe5f32\",\"container_config\":{\"Hostname\":\"ca9015dc6bb1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y software-properties-common     \\u0026\\u0026 apt-add-repository -y ppa:fkrull/deadsnakes     \\u0026\\u0026 apt-add-repository -y ppa:pypy/ppa     \\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y git     python     python-pip     pypy     python2.3     python2.4     python2.5     python2.6     python3.1     python3.2     python3.3     \\u0026\\u0026 pip install coverage nose tox pytest pytest-cov     \\u0026\\u0026 apt-get purge -y --auto-remove software-properties-common     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ca998a003c52f5ae2039fc9271113cfae257126446a0dc4e7b945afbbc141f64\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-07-23T14:21:20.336646636Z\",\"docker_version\":\"1.11.2\",\"id\":\"4efa56f93472f1dbe7cbb1719c97a784b1093c288ff77856a8e874588a4fc3cb\",\"os\":\"linux\",\"parent\":\"f7cc383cc50a8bf1e280e2a1ec6ccf303909d1ad901a0476de5fcb55c07b49f9\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f7cc383cc50a8bf1e280e2a1ec6ccf303909d1ad901a0476de5fcb55c07b49f9\",\"parent\":\"239e265dfc8278c50ffa51e4a229d0c30ce19495d0fc411d3869e1e21ebf04a4\",\"created\":\"2016-07-23T14:18:06.933270273Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd -r test_user \\u0026\\u0026 useradd -r -g test_user test_user\"]},\"author\":\"Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"239e265dfc8278c50ffa51e4a229d0c30ce19495d0fc411d3869e1e21ebf04a4\",\"parent\":\"93c707c1443831facc7bcf715af6cd82ecfe4646448b58b6549ec009e5213278\",\"created\":\"2016-07-23T14:18:05.24380214Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\"]},\"author\":\"Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93c707c1443831facc7bcf715af6cd82ecfe4646448b58b6549ec009e5213278\",\"parent\":\"a73b3adec5dea50734a5bb2da9c611f4d776965d5575a9978fa0434531f90a94\",\"created\":\"2016-07-22T15:19:13.510288415Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a73b3adec5dea50734a5bb2da9c611f4d776965d5575a9978fa0434531f90a94\",\"parent\":\"8c721b8e6e1c282213ccd8f98780e710e34ffb5e3fca8771db929232cad35534\",\"created\":\"2016-07-22T15:19:12.895625947Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c721b8e6e1c282213ccd8f98780e710e34ffb5e3fca8771db929232cad35534\",\"parent\":\"e2224f46fc07096dce701595e5df0e4c55e432c859b7c495a5e8a5001b017035\",\"created\":\"2016-07-22T15:19:11.200996745Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e2224f46fc07096dce701595e5df0e4c55e432c859b7c495a5e8a5001b017035\",\"parent\":\"8e40f6313e6b04af1c3bd375dc999ead371c30c152bf18aeabe2408fe55cdf4a\",\"created\":\"2016-07-22T15:19:09.514770186Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8e40f6313e6b04af1c3bd375dc999ead371c30c152bf18aeabe2408fe55cdf4a\",\"created\":\"2016-07-08T18:39:16.468883148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:fb51819b6a860da927bab927677e7863347459f662948187bc330d6cfbf1c25d"
+            },
+            {
+                "blobSum": "sha256:e4d060aaec7b46784761e2e2c99c0b2c15a0cfc8c5a3cce20615e431e300943d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:224c42ae46e73ea08ec728b621ac89f2dc8741b2b804fdeec8aa6672aff00513"
+            },
+            {
+                "blobSum": "sha256:3fa871dc8a2b6b81da68842fdc09c8aaf22dd455b00eb6f9489b99ef686f503e"
+            },
+            {
+                "blobSum": "sha256:759aa75f3ceee7f3f8ea4b29b012f025d81fc3302145431930511d0f451ed4b9"
+            },
+            {
+                "blobSum": "sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca"
+            }
+        ],
+        "name": "mykro/python-testbox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjcwOTAsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNToyNloifQ",
+                "signature": "nVrvBMnXV6YNB07fohXDFD0Q14X5fltcOKDh2UuxV6L7bBrZFpY3lm4lTQoY37QEYiYW6LC4eWGumzlPN19xxw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "BOM7dvDBYPGfLNefkXSAi6CW_Z59bDrSVh2ZN1_u6CQ",
+                        "kid": "C2PE:U5AB:OIHJ:TAOQ:3ZGP:JNQ7:7MF5:3GTR:ZIXN:3ZPI:CQDX:VSY6",
+                        "x": "D0XjKxEOAcTvOijHv9fuvlpfSunU-jyPfoY-TSkA37c"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\",\"config\":{\"Hostname\":\"ca9015dc6bb1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ca998a003c52f5ae2039fc9271113cfae257126446a0dc4e7b945afbbc141f64\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"5bc150d14485364faf385f1f17194115b909d8bc8b5859269103657a2bfe5f32\",\"container_config\":{\"Hostname\":\"ca9015dc6bb1\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"apt-get update \\u0026\\u0026 apt-get install -y software-properties-common     \\u0026\\u0026 apt-add-repository -y ppa:fkrull/deadsnakes     \\u0026\\u0026 apt-add-repository -y ppa:pypy/ppa     \\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y git     python     python-pip     pypy     python2.3     python2.4     python2.5     python2.6     python3.1     python3.2     python3.3     \\u0026\\u0026 pip install coverage nose tox pytest pytest-cov     \\u0026\\u0026 apt-get purge -y --auto-remove software-properties-common     \\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"],\"ArgsEscaped\":true,\"Image\":\"sha256:ca998a003c52f5ae2039fc9271113cfae257126446a0dc4e7b945afbbc141f64\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-07-23T14:21:20.336646636Z\",\"docker_version\":\"1.11.2\",\"id\":\"4efa56f93472f1dbe7cbb1719c97a784b1093c288ff77856a8e874588a4fc3cb\",\"os\":\"linux\",\"parent\":\"f7cc383cc50a8bf1e280e2a1ec6ccf303909d1ad901a0476de5fcb55c07b49f9\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f7cc383cc50a8bf1e280e2a1ec6ccf303909d1ad901a0476de5fcb55c07b49f9\",\"parent\":\"239e265dfc8278c50ffa51e4a229d0c30ce19495d0fc411d3869e1e21ebf04a4\",\"created\":\"2016-07-23T14:18:06.933270273Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c groupadd -r test_user \\u0026\\u0026 useradd -r -g test_user test_user\"]},\"author\":\"Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"239e265dfc8278c50ffa51e4a229d0c30ce19495d0fc411d3869e1e21ebf04a4\",\"parent\":\"93c707c1443831facc7bcf715af6cd82ecfe4646448b58b6549ec009e5213278\",\"created\":\"2016-07-23T14:18:05.24380214Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\"]},\"author\":\"Matthew Hartstonge \\u003cmatt@mykro.co.nz\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93c707c1443831facc7bcf715af6cd82ecfe4646448b58b6549ec009e5213278\",\"parent\":\"a73b3adec5dea50734a5bb2da9c611f4d776965d5575a9978fa0434531f90a94\",\"created\":\"2016-07-22T15:19:13.510288415Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a73b3adec5dea50734a5bb2da9c611f4d776965d5575a9978fa0434531f90a94\",\"parent\":\"8c721b8e6e1c282213ccd8f98780e710e34ffb5e3fca8771db929232cad35534\",\"created\":\"2016-07-22T15:19:12.895625947Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8c721b8e6e1c282213ccd8f98780e710e34ffb5e3fca8771db929232cad35534\",\"parent\":\"e2224f46fc07096dce701595e5df0e4c55e432c859b7c495a5e8a5001b017035\",\"created\":\"2016-07-22T15:19:11.200996745Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e2224f46fc07096dce701595e5df0e4c55e432c859b7c495a5e8a5001b017035\",\"parent\":\"8e40f6313e6b04af1c3bd375dc999ead371c30c152bf18aeabe2408fe55cdf4a\",\"created\":\"2016-07-22T15:19:09.514770186Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8e40f6313e6b04af1c3bd375dc999ead371c30c152bf18aeabe2408fe55cdf4a\",\"created\":\"2016-07-08T18:39:16.468883148Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:d5d47c6a963e950e735765bfaf16851fc7297115de6c17bdd61148288e5b8873 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:fb51819b6a860da927bab927677e7863347459f662948187bc330d6cfbf1c25d"
+            },
+            {
+                "blobSum": "sha256:e4d060aaec7b46784761e2e2c99c0b2c15a0cfc8c5a3cce20615e431e300943d"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:224c42ae46e73ea08ec728b621ac89f2dc8741b2b804fdeec8aa6672aff00513"
+            },
+            {
+                "blobSum": "sha256:3fa871dc8a2b6b81da68842fdc09c8aaf22dd455b00eb6f9489b99ef686f503e"
+            },
+            {
+                "blobSum": "sha256:759aa75f3ceee7f3f8ea4b29b012f025d81fc3302145431930511d0f451ed4b9"
+            },
+            {
+                "blobSum": "sha256:7dcf5a4443927558c6720517b7996d912d98288d6f565e99195d1b72431a38ca"
+            }
+        ],
+        "name": "mykro/python-testbox",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjcwOTAsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNToyN1oifQ",
+                "signature": "PWYbcK32UcCOa-Bp3EAS8vb3dFWlGXh6wmAhK-VKt0BJ6wqHKUmghTmI4ZFdWleQVOH4LebY_ERTGBW5yIilRQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Vwsr3t0byNGgidQ4buB9VVkAyuRWG_VBRv2HYKl-4mA",
+                        "kid": "QIWV:6XLS:KYAI:SUTL:2EYN:IL5D:7VJX:FOCY:JUKM:WGXI:LESM:XP3U",
+                        "x": "-yj9Rbw8S1fSGodypf4SDCuleHy8g52pE1H-E_3J8Vs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

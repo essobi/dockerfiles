@@ -1,0 +1,510 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"config\":{\"Hostname\":\"87503d09d967\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"container=docker\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"\\\"/root/default.sh\\\"\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b177e1cfd2a140350ec142b83fa702e3d18eab4175c930bb66bb9848b6962f01\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"6552e260705f0e672d87822020b4c1569d60d0d62cdf5b0d373c11e94f847e5a\",\"container_config\":{\"Hostname\":\"87503d09d967\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"container=docker\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"\\\\\\\"/root/default.sh\\\\\\\"\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b177e1cfd2a140350ec142b83fa702e3d18eab4175c930bb66bb9848b6962f01\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-11-13T03:43:29.727529164Z\",\"docker_version\":\"1.12.3\",\"id\":\"d69ca84498da61e977d09402de81d59e50bdcb11a13a533cf292f57b5367a0cf\",\"os\":\"linux\",\"parent\":\"fff4f7f7021893ad8227d59b76fefc1456f587213bbf5d571ebd6ba9117b1bfb\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fff4f7f7021893ad8227d59b76fefc1456f587213bbf5d571ebd6ba9117b1bfb\",\"parent\":\"e0ed90bb9c18060ace1a99c8ba8ec29a506f619f49f96dfd84b66828c6f676c2\",\"created\":\"2016-11-13T03:43:24.264603615Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 5000/tcp\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0ed90bb9c18060ace1a99c8ba8ec29a506f619f49f96dfd84b66828c6f676c2\",\"parent\":\"169252245a9ccf4b700ba1ea2169b9d751ec4eab981166a47dc398dd199a2f6e\",\"created\":\"2016-11-13T03:43:19.593692122Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:2b45b55ea65a2386182b1dcefe80328ac3b87a497d715bac825b5282e3ca6a91 in /root/webinterface \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"169252245a9ccf4b700ba1ea2169b9d751ec4eab981166a47dc398dd199a2f6e\",\"parent\":\"393a996605258ec9511ae9c8aff8f512c27524416710a68e29126a8ddd387149\",\"created\":\"2016-11-13T03:43:13.977074675Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/default.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"393a996605258ec9511ae9c8aff8f512c27524416710a68e29126a8ddd387149\",\"parent\":\"21267d23e1bf210a1da268c96ad02b9f38749a7b754cc817fffecf535bfa9e9d\",\"created\":\"2016-11-13T03:43:09.073735594Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:14e463e20480a57aef73100e5a63ac7f50bb464c5c51240b296579ad5b97dfc4 in /root/default.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"21267d23e1bf210a1da268c96ad02b9f38749a7b754cc817fffecf535bfa9e9d\",\"parent\":\"861b935f29d5bd889fccb5dde4932b3a1e5e5079d4aa963574f5624814742f97\",\"created\":\"2016-11-13T03:43:03.441965226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/qiime-run.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"861b935f29d5bd889fccb5dde4932b3a1e5e5079d4aa963574f5624814742f97\",\"parent\":\"b524da14d90e2a6b975f2727d0c88e8815c9b533e8436f2a4747d04e0eeebf74\",\"created\":\"2016-11-13T03:42:58.482601845Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9a59ea4d17acf0506f85d9775a8423c680392fd7ca2718e2e7cd33da10cc0cbf in /root/qiime-run.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b524da14d90e2a6b975f2727d0c88e8815c9b533e8436f2a4747d04e0eeebf74\",\"parent\":\"23893ec3f88cb0c73834cb14eb4dfe9ea90cb9090193e14b3d40d5478c688533\",\"created\":\"2016-11-13T03:42:52.954336409Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/mothur-run.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"23893ec3f88cb0c73834cb14eb4dfe9ea90cb9090193e14b3d40d5478c688533\",\"parent\":\"6f60bc501f31926bf07d7017a92dfd7f9039ab583308513fdf3bdc4953bbfa96\",\"created\":\"2016-11-13T03:42:47.989551134Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:6554e4b0461ff15a8b34f8eb3c561cfe8a60650f2cdfbf8b536c6fc5f7deba0f in /root/mothur-run.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f60bc501f31926bf07d7017a92dfd7f9039ab583308513fdf3bdc4953bbfa96\",\"parent\":\"7c730ddda10a3e7cf4199ab2bdcdf1e08488f84a3bc55a45ea29fc547348d187\",\"created\":\"2016-11-13T03:42:42.287291735Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/run.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c730ddda10a3e7cf4199ab2bdcdf1e08488f84a3bc55a45ea29fc547348d187\",\"parent\":\"879a2be309ded829edd732f76614301b2c6f96faa8678c1423a67122292e2979\",\"created\":\"2016-11-13T03:42:37.32480849Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:d1bf2600b362657471121da367ac04eba085212db6fccf343ba4b6e32620097a in /root/run.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"879a2be309ded829edd732f76614301b2c6f96faa8678c1423a67122292e2979\",\"parent\":\"f7fc54fb54d6530ee052bf371208bbc2dbda48a238dcaa2c8faa4dfcc31c2f34\",\"created\":\"2016-11-13T03:42:32.656743464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install flask-WTF\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f7fc54fb54d6530ee052bf371208bbc2dbda48a238dcaa2c8faa4dfcc31c2f34\",\"parent\":\"ea2d5092dcbaafa351adbebe7235f5676a99123fad604c720dae0c3fbdcf6b9e\",\"created\":\"2016-11-13T03:42:18.792543958Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pip --upgrade\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea2d5092dcbaafa351adbebe7235f5676a99123fad604c720dae0c3fbdcf6b9e\",\"parent\":\"12190693c785b71fc184db885b1331cc825f950f2f050ded7085ca081cc4c0e1\",\"created\":\"2016-11-13T03:42:09.322254048Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y gawk mawk\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"12190693c785b71fc184db885b1331cc825f950f2f050ded7085ca081cc4c0e1\",\"parent\":\"c7664ebd88b23cc40175562dd2c136ed18f439cf851f073dfab9aa6bbdb22f69\",\"created\":\"2016-11-13T03:41:59.110297267Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV container=docker\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c7664ebd88b23cc40175562dd2c136ed18f439cf851f073dfab9aa6bbdb22f69\",\"parent\":\"1681e9176a51412886207b93c241ed06bbc2259354b24a6e23a38ee552816009\",\"created\":\"2016-11-13T03:41:53.845737263Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1681e9176a51412886207b93c241ed06bbc2259354b24a6e23a38ee552816009\",\"parent\":\"bd60227395446efe93c0847c891a02045170684d3058ee401469e8f51b7df935\",\"created\":\"2016-11-13T03:41:48.529327478Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\"]},\"author\":\"Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bd60227395446efe93c0847c891a02045170684d3058ee401469e8f51b7df935\",\"parent\":\"9d8768693012972bc66c661ba813a0d8c6afa07e120c79bf21d476342a56425d\",\"created\":\"2016-10-28T17:50:09.623464431Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python-tk\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9d8768693012972bc66c661ba813a0d8c6afa07e120c79bf21d476342a56425d\",\"parent\":\"ad5ce8f5cf27cf66d45ea3a6e2137268c01859b0018b9f5b5680eed5b27911ba\",\"created\":\"2016-10-28T17:49:55.382475577Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:7538d618e693615c3412ca0b7d903e5ef84ebe8539727af3a8c2bd47fa12a414 in /root/silva_lanemask_mothur.txt \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ad5ce8f5cf27cf66d45ea3a6e2137268c01859b0018b9f5b5680eed5b27911ba\",\"parent\":\"302ca752a3c214d93cf34670743c3650078fb4020db12c827e788d98deb1c27e\",\"created\":\"2016-10-28T17:49:51.17013865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd root \\u0026\\u0026 unzip /root/Mothur.linux_64.zip \\u0026\\u0026 rm /root/Mothur.linux_64.zip\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"302ca752a3c214d93cf34670743c3650078fb4020db12c827e788d98deb1c27e\",\"parent\":\"43170857bcb5ce398102dce547584170c548f458d0cfc0ec874a0c88c8e5b0d7\",\"created\":\"2016-10-28T17:49:41.859656436Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:d3ee3240c9b6143e299a7efa29e62aedc17c0a366f60ec890eba668056057d2a in /root/Mothur.linux_64.zip \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"43170857bcb5ce398102dce547584170c548f458d0cfc0ec874a0c88c8e5b0d7\",\"parent\":\"b0e2a3943900497fb0c54ac6a115bddc46de782cdefebbce055c39ca4f688aea\",\"created\":\"2016-10-28T17:49:31.80221315Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd root \\u0026\\u0026 unzip /root/Silva.gold.bacteria.zip \\u0026\\u0026 rm /root/Silva.gold.bacteria.zip\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0e2a3943900497fb0c54ac6a115bddc46de782cdefebbce055c39ca4f688aea\",\"parent\":\"84b9ef22b84173af7f2be30ff1ab3d20e1ec8feaffb2263b9db2d795e6ef97ca\",\"created\":\"2016-10-28T17:49:12.588018132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9ae31664cac53799bc1cc9f39decfb1d1cf28cb2fd1197d3671dec8ab4b1e972 in /root/Silva.gold.bacteria.zip \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"84b9ef22b84173af7f2be30ff1ab3d20e1ec8feaffb2263b9db2d795e6ef97ca\",\"parent\":\"7722bf56663de5ad207a33855db164b14eee4478418ce71f0a9cd245f8450b6d\",\"created\":\"2016-10-28T17:49:07.646258381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd root \\u0026\\u0026 unzip /root/Silva_123_release.zip \\u0026\\u0026 rm /root/Silva_123_release.zip\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7722bf56663de5ad207a33855db164b14eee4478418ce71f0a9cd245f8450b6d\",\"parent\":\"aa42d0bf628b1bd506f529dabbb1c71254a2ed1091d883c5908c6d9beb0d3d81\",\"created\":\"2016-10-28T17:43:08.521573642Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:127361d6b6decb95142642deb1df294d3b7b238aed88ca27e314fe25bcb8f525 in /root/Silva_123_release.zip \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"aa42d0bf628b1bd506f529dabbb1c71254a2ed1091d883c5908c6d9beb0d3d81\",\"parent\":\"3bcd31f638b957be0bcef9941b14014b99c0d5eeb3b20dd614317b9c856ada88\",\"created\":\"2016-10-28T17:42:06.952888755Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install QIIME\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3bcd31f638b957be0bcef9941b14014b99c0d5eeb3b20dd614317b9c856ada88\",\"parent\":\"5acad99b4d5ccdc7e5037b7d42b1fa2db1e1f27e266b236ccffcbddc46214763\",\"created\":\"2016-10-28T17:37:07.725677858Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install numpy\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5acad99b4d5ccdc7e5037b7d42b1fa2db1e1f27e266b236ccffcbddc46214763\",\"parent\":\"bbfbfdf8bd0a7be9c822fafb7e3df35c8cedcc33f1c1a1cae13f5a7acfcb2e07\",\"created\":\"2016-10-28T17:36:51.962849845Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python python-pip unzip wget\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbfbfdf8bd0a7be9c822fafb7e3df35c8cedcc33f1c1a1cae13f5a7acfcb2e07\",\"parent\":\"c6c185bba736e3a79ae2e7695480d0e970218b1136e6227198dc2858e5f54140\",\"created\":\"2016-10-28T17:35:52.058928782Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get clean \\u0026\\u0026 apt-get update\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6c185bba736e3a79ae2e7695480d0e970218b1136e6227198dc2858e5f54140\",\"parent\":\"d0dabc596c481a3a8c8616c74dcd8a610862979e5e5ea8831f1f2f0778adfd1f\",\"created\":\"2016-10-28T17:35:42.141435409Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV container=docker\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d0dabc596c481a3a8c8616c74dcd8a610862979e5e5ea8831f1f2f0778adfd1f\",\"parent\":\"9790d6886da23bd31c7b1c67453b02a1f8781223f79af1962be1ba19fdc79073\",\"created\":\"2016-10-28T17:35:40.850557089Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9790d6886da23bd31c7b1c67453b02a1f8781223f79af1962be1ba19fdc79073\",\"parent\":\"801f200083c1625dcb5eca030bc0365f05dffd2f8336faf7de4dffdc10c05e74\",\"created\":\"2016-10-28T17:35:39.543445574Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\"]},\"author\":\"Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"801f200083c1625dcb5eca030bc0365f05dffd2f8336faf7de4dffdc10c05e74\",\"parent\":\"c53777cbfc31ede9e301ef2d6452c6ad12e75dec11c36f5eb0f60fe1a45a795f\",\"created\":\"2016-10-13T21:13:21.562394737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c53777cbfc31ede9e301ef2d6452c6ad12e75dec11c36f5eb0f60fe1a45a795f\",\"parent\":\"6ed49a73d8f0ce90830e51e9f3281957e75eb66729925228b026d3ffcdc0a431\",\"created\":\"2016-10-13T21:13:21.274471322Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6ed49a73d8f0ce90830e51e9f3281957e75eb66729925228b026d3ffcdc0a431\",\"parent\":\"6571ba684f54b0200982f324b5b84346e4aa0a97fdd006b36d8404eab3e8f6e8\",\"created\":\"2016-10-13T21:13:20.29446866Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6571ba684f54b0200982f324b5b84346e4aa0a97fdd006b36d8404eab3e8f6e8\",\"parent\":\"25810b66099e15e2dfb77854398382225a4fad58569e95371c7a94cdb738e68e\",\"created\":\"2016-10-13T21:13:19.414933547Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25810b66099e15e2dfb77854398382225a4fad58569e95371c7a94cdb738e68e\",\"parent\":\"58488e45273c55f8ea2084f796f1adc64db379dd75578a546b3b1b26d380e416\",\"created\":\"2016-10-13T21:13:18.548723604Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58488e45273c55f8ea2084f796f1adc64db379dd75578a546b3b1b26d380e416\",\"created\":\"2016-10-13T21:13:17.391115077Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b1cd0e54ba28cb1d6db4b93f98d5e02f5e2bcd96c55cb91731ba499861001e30 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5f690c0af7ca0d786bff6ae60679e1a9708c2693176ff262a06eb1c92b440810"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:07861271e06277debb27e2121fad5f837708957227f2f72a377cd6000aa96726"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:aeb5cc261827e07af8fad7e6ae625d3e0808f79414e0897e5e88c16bdc4c4513"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5a7873d8839726f6e4d59f40aac0a1388d6bae32bab01297ddbbd7a05954e52c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:de58952a1aea07555df15e7c3b0f78eebb1a142705acf2ed3da212e47a2f7947"
+            },
+            {
+                "blobSum": "sha256:a1c97bff6cf6456c10681f70e99404d96d94465362a11a67cd72d7be8fb93be1"
+            },
+            {
+                "blobSum": "sha256:407eb5a70b66f4ce2cb30d2b1965700f225c04f545839476f7a5ffdf83b5817b"
+            },
+            {
+                "blobSum": "sha256:970c61ca16b430d46868104c8f0e366f6626ad0be4f5a6175a98e521b8c60c4a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6f56ae703ad20f9bbba442f85e27d7edc617bbb70e8428572d6827398b0b9ba3"
+            },
+            {
+                "blobSum": "sha256:64dce2b7290b7ba68050da20bf95d3534eee18fb3bf2a72597f48858e8258db6"
+            },
+            {
+                "blobSum": "sha256:72e949951414d5afba56f2ef6cdf314883d3d34569559fd01dcff84e59477cd6"
+            },
+            {
+                "blobSum": "sha256:f196d69961723e6c0735e6019b1aa12768bed24bbd1a1fbfe841689d91c1c012"
+            },
+            {
+                "blobSum": "sha256:16d6622d674ddb99d5462133fb5269871cb25c643a7a452df62e5934f3a85e3d"
+            },
+            {
+                "blobSum": "sha256:712abda93055dcb642755d02f871a7e1e4d30727c302cbf748821d7d4230ed68"
+            },
+            {
+                "blobSum": "sha256:787b792e26f1f97b6db3f5aefc28f302a44600fb57fe45f45a925aa5a0e6ef27"
+            },
+            {
+                "blobSum": "sha256:19d1114b0ab492b90b810ea48a6c5f4d5393c6d3ea064da3f28e2eec9ea5ebea"
+            },
+            {
+                "blobSum": "sha256:353b331a17bddba654d1a0c957516fa387f0d89eb396cc9c6921c680cde76f40"
+            },
+            {
+                "blobSum": "sha256:1e7574438e8127d58d161a507d9cdae9ad0c220a88f7b86a4260fd87c2ffde48"
+            },
+            {
+                "blobSum": "sha256:f7a94d3a2275e0db305e88cf0d83532cdd0584d5603fb47c6219f7986c95d33b"
+            },
+            {
+                "blobSum": "sha256:f445425b784ecde9bf53f14bb26013413964ab8d87c9a62dbadff9861c8d0130"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:668604fde02e75dddb4b44c80d4ce20baaac4832c41c3a945f4a236cd7d2f164"
+            },
+            {
+                "blobSum": "sha256:2879a7ad31445fe2cea410b8ba76704003c11ee05c0a4d32d1113009ea1a1aae"
+            },
+            {
+                "blobSum": "sha256:de413bb911fd848383ef2e5068a42c258c898d6ee869fb441fb2391eb327b576"
+            },
+            {
+                "blobSum": "sha256:fc19d60a83f11bbddc7bd2dfca6095b49100314bfde61d83729112a6b6e11d48"
+            },
+            {
+                "blobSum": "sha256:6bbedd9b76a496816d86a0af731ea984f40467ef8fb23be752f801cb80436ac6"
+            }
+        ],
+        "name": "tlitovsk/bioprocesscontaniersr16scripts",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIzMzY0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDY6MjRaIn0",
+                "signature": "LDVc8-W_r_8xsIT5kj4ESV6srTOi3mbmw8fJlve_Vlt87EFAgCkyDtDz__QSLEvYfukV8JwsoKie1oCg4AVN6w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "Utb3sahOfqJu7aBnY5xcTocRBVYHtbgoRn-J4k8f4vc",
+                        "kid": "7LSF:N5QK:SS2F:Z4ZS:O3AM:4TQT:RZXF:BY53:BD6Y:4STT:3IZZ:MFPN",
+                        "x": "spr2E2wra1w0t_Yc5zh1fC90fRKNoo2PQMscv4boni0"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"config\":{\"Hostname\":\"87503d09d967\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"container=docker\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"\\\"/root/default.sh\\\"\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b177e1cfd2a140350ec142b83fa702e3d18eab4175c930bb66bb9848b6962f01\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"6552e260705f0e672d87822020b4c1569d60d0d62cdf5b0d373c11e94f847e5a\",\"container_config\":{\"Hostname\":\"87503d09d967\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"5000/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"container=docker\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"\\\\\\\"/root/default.sh\\\\\\\"\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:b177e1cfd2a140350ec142b83fa702e3d18eab4175c930bb66bb9848b6962f01\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-11-13T03:43:29.727529164Z\",\"docker_version\":\"1.12.3\",\"id\":\"d69ca84498da61e977d09402de81d59e50bdcb11a13a533cf292f57b5367a0cf\",\"os\":\"linux\",\"parent\":\"fff4f7f7021893ad8227d59b76fefc1456f587213bbf5d571ebd6ba9117b1bfb\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fff4f7f7021893ad8227d59b76fefc1456f587213bbf5d571ebd6ba9117b1bfb\",\"parent\":\"e0ed90bb9c18060ace1a99c8ba8ec29a506f619f49f96dfd84b66828c6f676c2\",\"created\":\"2016-11-13T03:43:24.264603615Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 5000/tcp\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e0ed90bb9c18060ace1a99c8ba8ec29a506f619f49f96dfd84b66828c6f676c2\",\"parent\":\"169252245a9ccf4b700ba1ea2169b9d751ec4eab981166a47dc398dd199a2f6e\",\"created\":\"2016-11-13T03:43:19.593692122Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:2b45b55ea65a2386182b1dcefe80328ac3b87a497d715bac825b5282e3ca6a91 in /root/webinterface \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"169252245a9ccf4b700ba1ea2169b9d751ec4eab981166a47dc398dd199a2f6e\",\"parent\":\"393a996605258ec9511ae9c8aff8f512c27524416710a68e29126a8ddd387149\",\"created\":\"2016-11-13T03:43:13.977074675Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/default.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"393a996605258ec9511ae9c8aff8f512c27524416710a68e29126a8ddd387149\",\"parent\":\"21267d23e1bf210a1da268c96ad02b9f38749a7b754cc817fffecf535bfa9e9d\",\"created\":\"2016-11-13T03:43:09.073735594Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:14e463e20480a57aef73100e5a63ac7f50bb464c5c51240b296579ad5b97dfc4 in /root/default.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"21267d23e1bf210a1da268c96ad02b9f38749a7b754cc817fffecf535bfa9e9d\",\"parent\":\"861b935f29d5bd889fccb5dde4932b3a1e5e5079d4aa963574f5624814742f97\",\"created\":\"2016-11-13T03:43:03.441965226Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/qiime-run.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"861b935f29d5bd889fccb5dde4932b3a1e5e5079d4aa963574f5624814742f97\",\"parent\":\"b524da14d90e2a6b975f2727d0c88e8815c9b533e8436f2a4747d04e0eeebf74\",\"created\":\"2016-11-13T03:42:58.482601845Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9a59ea4d17acf0506f85d9775a8423c680392fd7ca2718e2e7cd33da10cc0cbf in /root/qiime-run.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b524da14d90e2a6b975f2727d0c88e8815c9b533e8436f2a4747d04e0eeebf74\",\"parent\":\"23893ec3f88cb0c73834cb14eb4dfe9ea90cb9090193e14b3d40d5478c688533\",\"created\":\"2016-11-13T03:42:52.954336409Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/mothur-run.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"23893ec3f88cb0c73834cb14eb4dfe9ea90cb9090193e14b3d40d5478c688533\",\"parent\":\"6f60bc501f31926bf07d7017a92dfd7f9039ab583308513fdf3bdc4953bbfa96\",\"created\":\"2016-11-13T03:42:47.989551134Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:6554e4b0461ff15a8b34f8eb3c561cfe8a60650f2cdfbf8b536c6fc5f7deba0f in /root/mothur-run.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6f60bc501f31926bf07d7017a92dfd7f9039ab583308513fdf3bdc4953bbfa96\",\"parent\":\"7c730ddda10a3e7cf4199ab2bdcdf1e08488f84a3bc55a45ea29fc547348d187\",\"created\":\"2016-11-13T03:42:42.287291735Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x /root/run.sh\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7c730ddda10a3e7cf4199ab2bdcdf1e08488f84a3bc55a45ea29fc547348d187\",\"parent\":\"879a2be309ded829edd732f76614301b2c6f96faa8678c1423a67122292e2979\",\"created\":\"2016-11-13T03:42:37.32480849Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:d1bf2600b362657471121da367ac04eba085212db6fccf343ba4b6e32620097a in /root/run.sh \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"879a2be309ded829edd732f76614301b2c6f96faa8678c1423a67122292e2979\",\"parent\":\"f7fc54fb54d6530ee052bf371208bbc2dbda48a238dcaa2c8faa4dfcc31c2f34\",\"created\":\"2016-11-13T03:42:32.656743464Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install flask-WTF\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f7fc54fb54d6530ee052bf371208bbc2dbda48a238dcaa2c8faa4dfcc31c2f34\",\"parent\":\"ea2d5092dcbaafa351adbebe7235f5676a99123fad604c720dae0c3fbdcf6b9e\",\"created\":\"2016-11-13T03:42:18.792543958Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install pip --upgrade\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea2d5092dcbaafa351adbebe7235f5676a99123fad604c720dae0c3fbdcf6b9e\",\"parent\":\"12190693c785b71fc184db885b1331cc825f950f2f050ded7085ca081cc4c0e1\",\"created\":\"2016-11-13T03:42:09.322254048Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y gawk mawk\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"12190693c785b71fc184db885b1331cc825f950f2f050ded7085ca081cc4c0e1\",\"parent\":\"c7664ebd88b23cc40175562dd2c136ed18f439cf851f073dfab9aa6bbdb22f69\",\"created\":\"2016-11-13T03:41:59.110297267Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV container=docker\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c7664ebd88b23cc40175562dd2c136ed18f439cf851f073dfab9aa6bbdb22f69\",\"parent\":\"1681e9176a51412886207b93c241ed06bbc2259354b24a6e23a38ee552816009\",\"created\":\"2016-11-13T03:41:53.845737263Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1681e9176a51412886207b93c241ed06bbc2259354b24a6e23a38ee552816009\",\"parent\":\"bd60227395446efe93c0847c891a02045170684d3058ee401469e8f51b7df935\",\"created\":\"2016-11-13T03:41:48.529327478Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\"]},\"author\":\"Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bd60227395446efe93c0847c891a02045170684d3058ee401469e8f51b7df935\",\"parent\":\"9d8768693012972bc66c661ba813a0d8c6afa07e120c79bf21d476342a56425d\",\"created\":\"2016-10-28T17:50:09.623464431Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python-tk\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9d8768693012972bc66c661ba813a0d8c6afa07e120c79bf21d476342a56425d\",\"parent\":\"ad5ce8f5cf27cf66d45ea3a6e2137268c01859b0018b9f5b5680eed5b27911ba\",\"created\":\"2016-10-28T17:49:55.382475577Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:7538d618e693615c3412ca0b7d903e5ef84ebe8539727af3a8c2bd47fa12a414 in /root/silva_lanemask_mothur.txt \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ad5ce8f5cf27cf66d45ea3a6e2137268c01859b0018b9f5b5680eed5b27911ba\",\"parent\":\"302ca752a3c214d93cf34670743c3650078fb4020db12c827e788d98deb1c27e\",\"created\":\"2016-10-28T17:49:51.17013865Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd root \\u0026\\u0026 unzip /root/Mothur.linux_64.zip \\u0026\\u0026 rm /root/Mothur.linux_64.zip\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"302ca752a3c214d93cf34670743c3650078fb4020db12c827e788d98deb1c27e\",\"parent\":\"43170857bcb5ce398102dce547584170c548f458d0cfc0ec874a0c88c8e5b0d7\",\"created\":\"2016-10-28T17:49:41.859656436Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:d3ee3240c9b6143e299a7efa29e62aedc17c0a366f60ec890eba668056057d2a in /root/Mothur.linux_64.zip \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"43170857bcb5ce398102dce547584170c548f458d0cfc0ec874a0c88c8e5b0d7\",\"parent\":\"b0e2a3943900497fb0c54ac6a115bddc46de782cdefebbce055c39ca4f688aea\",\"created\":\"2016-10-28T17:49:31.80221315Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd root \\u0026\\u0026 unzip /root/Silva.gold.bacteria.zip \\u0026\\u0026 rm /root/Silva.gold.bacteria.zip\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b0e2a3943900497fb0c54ac6a115bddc46de782cdefebbce055c39ca4f688aea\",\"parent\":\"84b9ef22b84173af7f2be30ff1ab3d20e1ec8feaffb2263b9db2d795e6ef97ca\",\"created\":\"2016-10-28T17:49:12.588018132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:9ae31664cac53799bc1cc9f39decfb1d1cf28cb2fd1197d3671dec8ab4b1e972 in /root/Silva.gold.bacteria.zip \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"84b9ef22b84173af7f2be30ff1ab3d20e1ec8feaffb2263b9db2d795e6ef97ca\",\"parent\":\"7722bf56663de5ad207a33855db164b14eee4478418ce71f0a9cd245f8450b6d\",\"created\":\"2016-10-28T17:49:07.646258381Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd root \\u0026\\u0026 unzip /root/Silva_123_release.zip \\u0026\\u0026 rm /root/Silva_123_release.zip\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7722bf56663de5ad207a33855db164b14eee4478418ce71f0a9cd245f8450b6d\",\"parent\":\"aa42d0bf628b1bd506f529dabbb1c71254a2ed1091d883c5908c6d9beb0d3d81\",\"created\":\"2016-10-28T17:43:08.521573642Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:127361d6b6decb95142642deb1df294d3b7b238aed88ca27e314fe25bcb8f525 in /root/Silva_123_release.zip \"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"aa42d0bf628b1bd506f529dabbb1c71254a2ed1091d883c5908c6d9beb0d3d81\",\"parent\":\"3bcd31f638b957be0bcef9941b14014b99c0d5eeb3b20dd614317b9c856ada88\",\"created\":\"2016-10-28T17:42:06.952888755Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install QIIME\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3bcd31f638b957be0bcef9941b14014b99c0d5eeb3b20dd614317b9c856ada88\",\"parent\":\"5acad99b4d5ccdc7e5037b7d42b1fa2db1e1f27e266b236ccffcbddc46214763\",\"created\":\"2016-10-28T17:37:07.725677858Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install numpy\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5acad99b4d5ccdc7e5037b7d42b1fa2db1e1f27e266b236ccffcbddc46214763\",\"parent\":\"bbfbfdf8bd0a7be9c822fafb7e3df35c8cedcc33f1c1a1cae13f5a7acfcb2e07\",\"created\":\"2016-10-28T17:36:51.962849845Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python python-pip unzip wget\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bbfbfdf8bd0a7be9c822fafb7e3df35c8cedcc33f1c1a1cae13f5a7acfcb2e07\",\"parent\":\"c6c185bba736e3a79ae2e7695480d0e970218b1136e6227198dc2858e5f54140\",\"created\":\"2016-10-28T17:35:52.058928782Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get clean \\u0026\\u0026 apt-get update\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c6c185bba736e3a79ae2e7695480d0e970218b1136e6227198dc2858e5f54140\",\"parent\":\"d0dabc596c481a3a8c8616c74dcd8a610862979e5e5ea8831f1f2f0778adfd1f\",\"created\":\"2016-10-28T17:35:42.141435409Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV container=docker\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d0dabc596c481a3a8c8616c74dcd8a610862979e5e5ea8831f1f2f0778adfd1f\",\"parent\":\"9790d6886da23bd31c7b1c67453b02a1f8781223f79af1962be1ba19fdc79073\",\"created\":\"2016-10-28T17:35:40.850557089Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\"]},\"author\":\"Anna Litovsky \\u003canna.makhlina@mail.huji.ac.il\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9790d6886da23bd31c7b1c67453b02a1f8781223f79af1962be1ba19fdc79073\",\"parent\":\"801f200083c1625dcb5eca030bc0365f05dffd2f8336faf7de4dffdc10c05e74\",\"created\":\"2016-10-28T17:35:39.543445574Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\"]},\"author\":\"Anatoly Litovsky \\u003canatolylit@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"801f200083c1625dcb5eca030bc0365f05dffd2f8336faf7de4dffdc10c05e74\",\"parent\":\"c53777cbfc31ede9e301ef2d6452c6ad12e75dec11c36f5eb0f60fe1a45a795f\",\"created\":\"2016-10-13T21:13:21.562394737Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c53777cbfc31ede9e301ef2d6452c6ad12e75dec11c36f5eb0f60fe1a45a795f\",\"parent\":\"6ed49a73d8f0ce90830e51e9f3281957e75eb66729925228b026d3ffcdc0a431\",\"created\":\"2016-10-13T21:13:21.274471322Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6ed49a73d8f0ce90830e51e9f3281957e75eb66729925228b026d3ffcdc0a431\",\"parent\":\"6571ba684f54b0200982f324b5b84346e4aa0a97fdd006b36d8404eab3e8f6e8\",\"created\":\"2016-10-13T21:13:20.29446866Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6571ba684f54b0200982f324b5b84346e4aa0a97fdd006b36d8404eab3e8f6e8\",\"parent\":\"25810b66099e15e2dfb77854398382225a4fad58569e95371c7a94cdb738e68e\",\"created\":\"2016-10-13T21:13:19.414933547Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"25810b66099e15e2dfb77854398382225a4fad58569e95371c7a94cdb738e68e\",\"parent\":\"58488e45273c55f8ea2084f796f1adc64db379dd75578a546b3b1b26d380e416\",\"created\":\"2016-10-13T21:13:18.548723604Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58488e45273c55f8ea2084f796f1adc64db379dd75578a546b3b1b26d380e416\",\"created\":\"2016-10-13T21:13:17.391115077Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b1cd0e54ba28cb1d6db4b93f98d5e02f5e2bcd96c55cb91731ba499861001e30 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5f690c0af7ca0d786bff6ae60679e1a9708c2693176ff262a06eb1c92b440810"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:07861271e06277debb27e2121fad5f837708957227f2f72a377cd6000aa96726"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:aeb5cc261827e07af8fad7e6ae625d3e0808f79414e0897e5e88c16bdc4c4513"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:5a7873d8839726f6e4d59f40aac0a1388d6bae32bab01297ddbbd7a05954e52c"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:de58952a1aea07555df15e7c3b0f78eebb1a142705acf2ed3da212e47a2f7947"
+            },
+            {
+                "blobSum": "sha256:a1c97bff6cf6456c10681f70e99404d96d94465362a11a67cd72d7be8fb93be1"
+            },
+            {
+                "blobSum": "sha256:407eb5a70b66f4ce2cb30d2b1965700f225c04f545839476f7a5ffdf83b5817b"
+            },
+            {
+                "blobSum": "sha256:970c61ca16b430d46868104c8f0e366f6626ad0be4f5a6175a98e521b8c60c4a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6f56ae703ad20f9bbba442f85e27d7edc617bbb70e8428572d6827398b0b9ba3"
+            },
+            {
+                "blobSum": "sha256:64dce2b7290b7ba68050da20bf95d3534eee18fb3bf2a72597f48858e8258db6"
+            },
+            {
+                "blobSum": "sha256:72e949951414d5afba56f2ef6cdf314883d3d34569559fd01dcff84e59477cd6"
+            },
+            {
+                "blobSum": "sha256:f196d69961723e6c0735e6019b1aa12768bed24bbd1a1fbfe841689d91c1c012"
+            },
+            {
+                "blobSum": "sha256:16d6622d674ddb99d5462133fb5269871cb25c643a7a452df62e5934f3a85e3d"
+            },
+            {
+                "blobSum": "sha256:712abda93055dcb642755d02f871a7e1e4d30727c302cbf748821d7d4230ed68"
+            },
+            {
+                "blobSum": "sha256:787b792e26f1f97b6db3f5aefc28f302a44600fb57fe45f45a925aa5a0e6ef27"
+            },
+            {
+                "blobSum": "sha256:19d1114b0ab492b90b810ea48a6c5f4d5393c6d3ea064da3f28e2eec9ea5ebea"
+            },
+            {
+                "blobSum": "sha256:353b331a17bddba654d1a0c957516fa387f0d89eb396cc9c6921c680cde76f40"
+            },
+            {
+                "blobSum": "sha256:1e7574438e8127d58d161a507d9cdae9ad0c220a88f7b86a4260fd87c2ffde48"
+            },
+            {
+                "blobSum": "sha256:f7a94d3a2275e0db305e88cf0d83532cdd0584d5603fb47c6219f7986c95d33b"
+            },
+            {
+                "blobSum": "sha256:f445425b784ecde9bf53f14bb26013413964ab8d87c9a62dbadff9861c8d0130"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:668604fde02e75dddb4b44c80d4ce20baaac4832c41c3a945f4a236cd7d2f164"
+            },
+            {
+                "blobSum": "sha256:2879a7ad31445fe2cea410b8ba76704003c11ee05c0a4d32d1113009ea1a1aae"
+            },
+            {
+                "blobSum": "sha256:de413bb911fd848383ef2e5068a42c258c898d6ee869fb441fb2391eb327b576"
+            },
+            {
+                "blobSum": "sha256:fc19d60a83f11bbddc7bd2dfca6095b49100314bfde61d83729112a6b6e11d48"
+            },
+            {
+                "blobSum": "sha256:6bbedd9b76a496816d86a0af731ea984f40467ef8fb23be752f801cb80436ac6"
+            }
+        ],
+        "name": "tlitovsk/bioprocesscontaniersr16scripts",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjIzMzY0LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDY6MjVaIn0",
+                "signature": "JG4zTFPNgJQ9rS3kqI8KjxVEa83l4uXQA9PAKIUM9bhXGqgiymZv8MruEZhXOdf4yv7MP4GqsE7-WmGuCqO6Yg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "r8hqG9BU83c1rtNf3kacyJ_w0brRAw6HseamB7nxpEY",
+                        "kid": "HSLJ:6TGA:ZANK:EYFX:G6KX:VOEA:UBR2:AGR2:5RVX:OTTO:4FBP:2ZM6",
+                        "x": "syXzZ-Bs5DgnuKbHN_9MdWWhXsOxkbVCkvCSMsnJpFs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

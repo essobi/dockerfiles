@@ -1,0 +1,246 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"writingstudio\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"-pdf\",\"output.tex\"],\"ArgsEscaped\":true,\"Image\":\"sha256:52e75d01704ce09bf87cdadbd9015c8037b340d73a58e0639d8dadc592685534\",\"Volumes\":{\"/source\":{}},\"WorkingDir\":\"/source\",\"Entrypoint\":[\"/usr/bin/latexmk\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"1677a6d9c300eb41878dc3e412354f0ff69e9d7cc52ead6e67e05d99fa2f3f1e\",\"container_config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"writingstudio\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"-pdf\\\" \\\"output.tex\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:52e75d01704ce09bf87cdadbd9015c8037b340d73a58e0639d8dadc592685534\",\"Volumes\":{\"/source\":{}},\"WorkingDir\":\"/source\",\"Entrypoint\":[\"/usr/bin/latexmk\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-09T01:01:09.219584172Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"330ab898afc011541f6c3a475bf0448573cba057850e7301a0b5dabcff00dafb\",\"os\":\"linux\",\"parent\":\"56c863ff1cae01911384b2c92eb93697d367670512a4b48a4ade73e6053d5701\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"56c863ff1cae01911384b2c92eb93697d367670512a4b48a4ade73e6053d5701\",\"parent\":\"c7899463ef3e3dce15df962a1891d72a1c03e14bf7cdefe0a507a8fea188a7aa\",\"created\":\"2017-05-09T01:00:46.669040901Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/latexmk\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c7899463ef3e3dce15df962a1891d72a1c03e14bf7cdefe0a507a8fea188a7aa\",\"parent\":\"362938d3852de54ad5db1ba1b4514ba82db9fec148f0e7865f302577fc6183c7\",\"created\":\"2017-05-09T01:00:27.715868951Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /source\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"362938d3852de54ad5db1ba1b4514ba82db9fec148f0e7865f302577fc6183c7\",\"parent\":\"15015161a75e4b4e7177fb4dc03d613177b3015da08e8dec99a9701aab7b5bd9\",\"created\":\"2017-05-09T01:00:05.338811105Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/source]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"15015161a75e4b4e7177fb4dc03d613177b3015da08e8dec99a9701aab7b5bd9\",\"parent\":\"ccac41c81d71ae38ac3057e3c92da1ba5d916f42146b0d79c07101c69fba243e\",\"created\":\"2017-05-09T00:59:42.727948075Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [writingstudio]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ccac41c81d71ae38ac3057e3c92da1ba5d916f42146b0d79c07101c69fba243e\",\"parent\":\"7ed39452eda7399f4004604467234e4915ef914987555398a95c701391457b6f\",\"created\":\"2017-05-09T00:59:24.131465504Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m writingstudio -u 1000\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7ed39452eda7399f4004604467234e4915ef914987555398a95c701391457b6f\",\"parent\":\"f3cd6f74df193cfd677d41a0f67e8ba528c47a59eb836b816a46aec1918baa82\",\"created\":\"2017-05-09T00:59:04.869952978Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mktexlsr /usr/local/share/texmf\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3cd6f74df193cfd677d41a0f67e8ba528c47a59eb836b816a46aec1918baa82\",\"parent\":\"6d2493cd370f72189bda8410c718b40723d54c6bbb7fbc32a1d1bc735a4e3280\",\"created\":\"2017-05-09T00:58:45.756543198Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:a13209be85ab97c65a8c31880b47f5dce364849903e37eed0844663aa93916fe in /usr/local/share/texmf \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6d2493cd370f72189bda8410c718b40723d54c6bbb7fbc32a1d1bc735a4e3280\",\"parent\":\"2bcae218641941aa899ba88590283826b17df0101256469982da1bde26c15803\",\"created\":\"2017-05-09T00:43:02.553747728Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --no-install-recommends -q -y texlive-full\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2bcae218641941aa899ba88590283826b17df0101256469982da1bde26c15803\",\"parent\":\"93942346a34fd15484d7386807520e7e36653adda619f03739572d0893f624df\",\"created\":\"2017-05-09T00:23:37.972836012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --no-install-recommends -q -y ghostscript\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93942346a34fd15484d7386807520e7e36653adda619f03739572d0893f624df\",\"parent\":\"7cc47b5cc2d4a1e511056b46311b1e322159f6c756fc2ad2ca98ba682ef32475\",\"created\":\"2017-05-09T00:23:09.493562808Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get dist-upgrade --no-install-recommends -q -y\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7cc47b5cc2d4a1e511056b46311b1e322159f6c756fc2ad2ca98ba682ef32475\",\"parent\":\"37e1043152130240dbb053b8a7b35d9ff698ba834125647ca42a3deb507b36f1\",\"created\":\"2017-05-09T00:23:02.736034379Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -q -y\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37e1043152130240dbb053b8a7b35d9ff698ba834125647ca42a3deb507b36f1\",\"parent\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"created\":\"2017-05-09T00:22:44.256926071Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"parent\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"created\":\"2017-05-09T00:22:43.073131254Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"parent\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:15.327579341Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:14.437236885Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f4e6551ac34ab446a297849489a5693d67a7e76c9cb9ed9346d82392c9d9a5fe in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4b9d496770ab285b2eeb20d775a92989c9b12c4f252209682f79da6b13e4b3b6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c635aa4f6adce878e0c0e4d9ec56a48ee8393ec1d77d72e5a5574e158f79f842"
+            },
+            {
+                "blobSum": "sha256:a405bd5a222983cd4508731a65c078edc84f6d47977104672d6e43d2961ed337"
+            },
+            {
+                "blobSum": "sha256:4f7a1f4c4194cf6d445830ad5be80e516db40fb349eb775ff55a3ed3551b0f41"
+            },
+            {
+                "blobSum": "sha256:1e517befff31a8bd105d9c6ef822a9ff23edae4df5d8b17e846c22e5ece76313"
+            },
+            {
+                "blobSum": "sha256:b8dce36543dbdccefb88a010d695c2f6ed8edb3eff6260abe90c85b3c14e5113"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d7774accbc96a1c20af6894ffdea688dfea8afc58f62aacea9d1c4f3e51f0334"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:10a267c67f423630f3afe5e04bbbc93d578861ddcc54283526222f3ad5e895b9"
+            }
+        ],
+        "name": "edpsciences/docker-writingstudio-latex",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjkzMzIsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowMjo0M1oifQ",
+                "signature": "9SO0fGKuQk1eakVyJMSRV7Xfio_k9dVi4uySTRllIZge-i9BfYNeGjm9Zz-8PhEKnO3ZuW86cCo7CwgzsWdT5A",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "r8hqG9BU83c1rtNf3kacyJ_w0brRAw6HseamB7nxpEY",
+                        "kid": "HSLJ:6TGA:ZANK:EYFX:G6KX:VOEA:UBR2:AGR2:5RVX:OTTO:4FBP:2ZM6",
+                        "x": "syXzZ-Bs5DgnuKbHN_9MdWWhXsOxkbVCkvCSMsnJpFs"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"writingstudio\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"-pdf\",\"output.tex\"],\"ArgsEscaped\":true,\"Image\":\"sha256:52e75d01704ce09bf87cdadbd9015c8037b340d73a58e0639d8dadc592685534\",\"Volumes\":{\"/source\":{}},\"WorkingDir\":\"/source\",\"Entrypoint\":[\"/usr/bin/latexmk\"],\"OnBuild\":[],\"Labels\":{}},\"container\":\"1677a6d9c300eb41878dc3e412354f0ff69e9d7cc52ead6e67e05d99fa2f3f1e\",\"container_config\":{\"Hostname\":\"200591939db7\",\"Domainname\":\"\",\"User\":\"writingstudio\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"DEBIAN_FRONTEND=noninteractive\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"-pdf\\\" \\\"output.tex\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:52e75d01704ce09bf87cdadbd9015c8037b340d73a58e0639d8dadc592685534\",\"Volumes\":{\"/source\":{}},\"WorkingDir\":\"/source\",\"Entrypoint\":[\"/usr/bin/latexmk\"],\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-09T01:01:09.219584172Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"330ab898afc011541f6c3a475bf0448573cba057850e7301a0b5dabcff00dafb\",\"os\":\"linux\",\"parent\":\"56c863ff1cae01911384b2c92eb93697d367670512a4b48a4ade73e6053d5701\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"56c863ff1cae01911384b2c92eb93697d367670512a4b48a4ade73e6053d5701\",\"parent\":\"c7899463ef3e3dce15df962a1891d72a1c03e14bf7cdefe0a507a8fea188a7aa\",\"created\":\"2017-05-09T01:00:46.669040901Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENTRYPOINT [\\\"/usr/bin/latexmk\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c7899463ef3e3dce15df962a1891d72a1c03e14bf7cdefe0a507a8fea188a7aa\",\"parent\":\"362938d3852de54ad5db1ba1b4514ba82db9fec148f0e7865f302577fc6183c7\",\"created\":\"2017-05-09T01:00:27.715868951Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /source\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"362938d3852de54ad5db1ba1b4514ba82db9fec148f0e7865f302577fc6183c7\",\"parent\":\"15015161a75e4b4e7177fb4dc03d613177b3015da08e8dec99a9701aab7b5bd9\",\"created\":\"2017-05-09T01:00:05.338811105Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/source]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"15015161a75e4b4e7177fb4dc03d613177b3015da08e8dec99a9701aab7b5bd9\",\"parent\":\"ccac41c81d71ae38ac3057e3c92da1ba5d916f42146b0d79c07101c69fba243e\",\"created\":\"2017-05-09T00:59:42.727948075Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  USER [writingstudio]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ccac41c81d71ae38ac3057e3c92da1ba5d916f42146b0d79c07101c69fba243e\",\"parent\":\"7ed39452eda7399f4004604467234e4915ef914987555398a95c701391457b6f\",\"created\":\"2017-05-09T00:59:24.131465504Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c useradd -m writingstudio -u 1000\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7ed39452eda7399f4004604467234e4915ef914987555398a95c701391457b6f\",\"parent\":\"f3cd6f74df193cfd677d41a0f67e8ba528c47a59eb836b816a46aec1918baa82\",\"created\":\"2017-05-09T00:59:04.869952978Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mktexlsr /usr/local/share/texmf\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f3cd6f74df193cfd677d41a0f67e8ba528c47a59eb836b816a46aec1918baa82\",\"parent\":\"6d2493cd370f72189bda8410c718b40723d54c6bbb7fbc32a1d1bc735a4e3280\",\"created\":\"2017-05-09T00:58:45.756543198Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:a13209be85ab97c65a8c31880b47f5dce364849903e37eed0844663aa93916fe in /usr/local/share/texmf \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6d2493cd370f72189bda8410c718b40723d54c6bbb7fbc32a1d1bc735a4e3280\",\"parent\":\"2bcae218641941aa899ba88590283826b17df0101256469982da1bde26c15803\",\"created\":\"2017-05-09T00:43:02.553747728Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --no-install-recommends -q -y texlive-full\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2bcae218641941aa899ba88590283826b17df0101256469982da1bde26c15803\",\"parent\":\"93942346a34fd15484d7386807520e7e36653adda619f03739572d0893f624df\",\"created\":\"2017-05-09T00:23:37.972836012Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --no-install-recommends -q -y ghostscript\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"93942346a34fd15484d7386807520e7e36653adda619f03739572d0893f624df\",\"parent\":\"7cc47b5cc2d4a1e511056b46311b1e322159f6c756fc2ad2ca98ba682ef32475\",\"created\":\"2017-05-09T00:23:09.493562808Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get dist-upgrade --no-install-recommends -q -y\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7cc47b5cc2d4a1e511056b46311b1e322159f6c756fc2ad2ca98ba682ef32475\",\"parent\":\"37e1043152130240dbb053b8a7b35d9ff698ba834125647ca42a3deb507b36f1\",\"created\":\"2017-05-09T00:23:02.736034379Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -q -y\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"37e1043152130240dbb053b8a7b35d9ff698ba834125647ca42a3deb507b36f1\",\"parent\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"created\":\"2017-05-09T00:22:44.256926071Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV DEBIAN_FRONTEND=noninteractive\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"05239aab911980c39fe8abc87ed9979292d24946050ee46c1df7b763c32215c4\",\"parent\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"created\":\"2017-05-09T00:22:43.073131254Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\"]},\"author\":\"Xavier Trochu \\u003cxavier.trochu@edpsciences.org\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"151ec54be366bdaa807ae9f47f3f5d9ddeec3fd2f45ec6d3ba1907937bce364e\",\"parent\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:15.327579341Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"9b2b13cc59ea77ecec25ba36e0a9e0c384ff502e8983bf2ee4fbcd64be02f63a\",\"created\":\"2017-05-08T23:28:14.437236885Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:f4e6551ac34ab446a297849489a5693d67a7e76c9cb9ed9346d82392c9d9a5fe in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4b9d496770ab285b2eeb20d775a92989c9b12c4f252209682f79da6b13e4b3b6"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:c635aa4f6adce878e0c0e4d9ec56a48ee8393ec1d77d72e5a5574e158f79f842"
+            },
+            {
+                "blobSum": "sha256:a405bd5a222983cd4508731a65c078edc84f6d47977104672d6e43d2961ed337"
+            },
+            {
+                "blobSum": "sha256:4f7a1f4c4194cf6d445830ad5be80e516db40fb349eb775ff55a3ed3551b0f41"
+            },
+            {
+                "blobSum": "sha256:1e517befff31a8bd105d9c6ef822a9ff23edae4df5d8b17e846c22e5ece76313"
+            },
+            {
+                "blobSum": "sha256:b8dce36543dbdccefb88a010d695c2f6ed8edb3eff6260abe90c85b3c14e5113"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d7774accbc96a1c20af6894ffdea688dfea8afc58f62aacea9d1c4f3e51f0334"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:10a267c67f423630f3afe5e04bbbc93d578861ddcc54283526222f3ad5e895b9"
+            }
+        ],
+        "name": "edpsciences/docker-writingstudio-latex",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjkzMzIsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowMjo0NFoifQ",
+                "signature": "z_1H2_iJcU09-bvMF2_6oMLvW2uqaOE8OmRfFHzIVwNO5_R4WaiF6OCmpoS7CnVGyi0TwPqmqQFGjylb8SaG6w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "ay0SmJatkJs-JdnW80807CcNPWHElsh6MW_JTh7NdbU",
+                        "kid": "G2JA:NPRD:EWRM:EFEJ:4PHQ:TRZR:6W6O:D5LC:UJ36:RHOE:ZN7D:N55I",
+                        "x": "NrETepARqTLeOBcTdBCE8K8jbQJgiTH1p7XJ78zBxjk"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

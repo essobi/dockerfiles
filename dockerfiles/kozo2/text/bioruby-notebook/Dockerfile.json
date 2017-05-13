@@ -1,0 +1,198 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"5d6665c4dc01\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"iruby notebook --no-browser --ip='*' --port 8888 --notebook-dir='/usr/src/bioruby-notebook'\"],\"ArgsEscaped\":true,\"Image\":\"sha256:a7d3b4aae18ad232c71a2a6707dce309d38e1cc7f47cf48e268989d38f0ac1a1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"4770087b8ba4707d1a776034eaefa275edf90fe038723c695e19e5346d153b42\",\"container_config\":{\"Hostname\":\"5d6665c4dc01\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"iruby notebook --no-browser --ip='*' --port 8888 --notebook-dir='/usr/src/bioruby-notebook'\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:a7d3b4aae18ad232c71a2a6707dce309d38e1cc7f47cf48e268989d38f0ac1a1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-06-14T15:12:10.20598076Z\",\"docker_version\":\"1.11.1\",\"id\":\"803a3f77832d27ee171147cf1ade2c16eb84551915e94e0045d656f1b6a955a4\",\"os\":\"linux\",\"parent\":\"38b4127c62a257b304793efe6ebfbad8ef56e4e6083af70f85813c8332e5d380\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"38b4127c62a257b304793efe6ebfbad8ef56e4e6083af70f85813c8332e5d380\",\"parent\":\"bce5781d243dfa0d94a3922b1fc7d8eb098e9a408bf934c8258bd810c2228358\",\"created\":\"2016-06-14T15:12:03.487803004Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bce5781d243dfa0d94a3922b1fc7d8eb098e9a408bf934c8258bd810c2228358\",\"parent\":\"ce26e54588d227e01b9af4c4e39d6887696112f70add7990bf64491ca8caadb0\",\"created\":\"2016-06-14T15:11:57.92333876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:1dfba68829f374215a7e30204a16e05301d5b06d6a8335f1fc02d1d07a5e2ee5 in /usr/src/bioruby-notebook\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce26e54588d227e01b9af4c4e39d6887696112f70add7990bf64491ca8caadb0\",\"parent\":\"330b8a4f3117fb532f01353dfc55fa87ed9334955c8892bce00819eb053548f1\",\"created\":\"2016-06-14T15:11:52.131106279Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt install -y libzmq3-dev libtool-bin autoconf; gem install rbczmq iruby pry\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"330b8a4f3117fb532f01353dfc55fa87ed9334955c8892bce00819eb053548f1\",\"parent\":\"0866fa213e7a62683008111e346a3ee6e2d719b33e1727c48d9c220d1e0afada\",\"created\":\"2016-06-14T15:07:59.430408242Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd; wget https://bootstrap.pypa.io/get-pip.py; python get-pip.py; pip install jupyter\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0866fa213e7a62683008111e346a3ee6e2d719b33e1727c48d9c220d1e0afada\",\"parent\":\"b04f6bdd204d2df6c7772d4dec947dd1c3ba043c9d658b7dceb55e76affa9f76\",\"created\":\"2016-06-14T15:07:24.096807856Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd; git clone git://github.com/bioruby/bioruby; cd bioruby; gem build bioruby.gemspec; gem install ./bio-1.5.1.20160608.gem\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b04f6bdd204d2df6c7772d4dec947dd1c3ba043c9d658b7dceb55e76affa9f76\",\"parent\":\"0c9485d8727f59c47c49c09846b3386f92589832f2b1417fc2d0253572f67984\",\"created\":\"2016-06-14T15:06:41.094692958Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt update; apt install -y git ruby gcc ruby-dev rake make wget python python-dev g++\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c9485d8727f59c47c49c09846b3386f92589832f2b1417fc2d0253572f67984\",\"parent\":\"308b24a341b2e6581bd59c24b4831ca64420730af1755b4ca537870f73e6d567\",\"created\":\"2016-05-27T14:14:11.963205691Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"308b24a341b2e6581bd59c24b4831ca64420730af1755b4ca537870f73e6d567\",\"parent\":\"4e61612eb794537c8ba35d04a6efdabd63fecf7c9f5a651f174cde6553d45ce9\",\"created\":\"2016-05-27T14:14:11.229181673Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e61612eb794537c8ba35d04a6efdabd63fecf7c9f5a651f174cde6553d45ce9\",\"parent\":\"cfe36be25470c0e7f9b2e5e3f3ecbee1047f2324bae52caa3a2c2fc00ab61ae5\",\"created\":\"2016-05-27T14:14:09.517172083Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfe36be25470c0e7f9b2e5e3f3ecbee1047f2324bae52caa3a2c2fc00ab61ae5\",\"parent\":\"4ccc3c6c8328b7f66b3b9bd2a739aac527fc65a0a2606a6f7aa1b39d70eb6232\",\"created\":\"2016-05-27T14:14:07.713245157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4ccc3c6c8328b7f66b3b9bd2a739aac527fc65a0a2606a6f7aa1b39d70eb6232\",\"created\":\"2016-05-27T14:14:03.773457805Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:84b77061366c2a6f78b20df785d2b40a29879dd8f421f05e849595bd82395e81 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6e0af71081cea3be7c74af04c301603b48b8ee10303e71b9a211bca6aa9a96eb"
+            },
+            {
+                "blobSum": "sha256:999db289040abd045e7c793ae41bc55bd3c828229b22f946f096980b843a5517"
+            },
+            {
+                "blobSum": "sha256:38c2818fbf5320f1affc153fb433b358db31b9ca1a2f1bfceaf3bb9f55fd882e"
+            },
+            {
+                "blobSum": "sha256:0f981263cbc401ec0534a1c8e53b50d3b07521d7d422059dca245f354b963c21"
+            },
+            {
+                "blobSum": "sha256:8c4b8f7e78ff421cf3e6ff21c8ff9a95ae73b83d44a274f32ef0745d59efcda2"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d2e175331658e56e1bc3724a7004a6defa99d34a76f5ea2b78c815db6e79ff07"
+            },
+            {
+                "blobSum": "sha256:a8c1696a285661c8855bc6de493ff8a37620e4620b1fb21a0018a613db9cff32"
+            },
+            {
+                "blobSum": "sha256:069b60a2d09d65c48cc0893ae52f741cc62b204592a1d9c2db4512dc87c2c359"
+            },
+            {
+                "blobSum": "sha256:21d0055b261479ca85654b5b9b0a66b5548b88a611d93ee181441a17dac7c52b"
+            }
+        ],
+        "name": "kozo2/bioruby-notebook",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjg0OTYsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowMjoxN1oifQ",
+                "signature": "TEFgKqHqxCaej3kQpK_vJJRR11uADkGboKQoTymlkar_7d5ot9XEtttEDPIFhRAjpyf4-s802qFyCpxG6GfyqQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"5d6665c4dc01\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"iruby notebook --no-browser --ip='*' --port 8888 --notebook-dir='/usr/src/bioruby-notebook'\"],\"ArgsEscaped\":true,\"Image\":\"sha256:a7d3b4aae18ad232c71a2a6707dce309d38e1cc7f47cf48e268989d38f0ac1a1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"4770087b8ba4707d1a776034eaefa275edf90fe038723c695e19e5346d153b42\",\"container_config\":{\"Hostname\":\"5d6665c4dc01\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"iruby notebook --no-browser --ip='*' --port 8888 --notebook-dir='/usr/src/bioruby-notebook'\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:a7d3b4aae18ad232c71a2a6707dce309d38e1cc7f47cf48e268989d38f0ac1a1\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-06-14T15:12:10.20598076Z\",\"docker_version\":\"1.11.1\",\"id\":\"803a3f77832d27ee171147cf1ade2c16eb84551915e94e0045d656f1b6a955a4\",\"os\":\"linux\",\"parent\":\"38b4127c62a257b304793efe6ebfbad8ef56e4e6083af70f85813c8332e5d380\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"38b4127c62a257b304793efe6ebfbad8ef56e4e6083af70f85813c8332e5d380\",\"parent\":\"bce5781d243dfa0d94a3922b1fc7d8eb098e9a408bf934c8258bd810c2228358\",\"created\":\"2016-06-14T15:12:03.487803004Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) EXPOSE 8888/tcp\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bce5781d243dfa0d94a3922b1fc7d8eb098e9a408bf934c8258bd810c2228358\",\"parent\":\"ce26e54588d227e01b9af4c4e39d6887696112f70add7990bf64491ca8caadb0\",\"created\":\"2016-06-14T15:11:57.92333876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD dir:1dfba68829f374215a7e30204a16e05301d5b06d6a8335f1fc02d1d07a5e2ee5 in /usr/src/bioruby-notebook\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ce26e54588d227e01b9af4c4e39d6887696112f70add7990bf64491ca8caadb0\",\"parent\":\"330b8a4f3117fb532f01353dfc55fa87ed9334955c8892bce00819eb053548f1\",\"created\":\"2016-06-14T15:11:52.131106279Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt install -y libzmq3-dev libtool-bin autoconf; gem install rbczmq iruby pry\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"330b8a4f3117fb532f01353dfc55fa87ed9334955c8892bce00819eb053548f1\",\"parent\":\"0866fa213e7a62683008111e346a3ee6e2d719b33e1727c48d9c220d1e0afada\",\"created\":\"2016-06-14T15:07:59.430408242Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd; wget https://bootstrap.pypa.io/get-pip.py; python get-pip.py; pip install jupyter\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0866fa213e7a62683008111e346a3ee6e2d719b33e1727c48d9c220d1e0afada\",\"parent\":\"b04f6bdd204d2df6c7772d4dec947dd1c3ba043c9d658b7dceb55e76affa9f76\",\"created\":\"2016-06-14T15:07:24.096807856Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd; git clone git://github.com/bioruby/bioruby; cd bioruby; gem build bioruby.gemspec; gem install ./bio-1.5.1.20160608.gem\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b04f6bdd204d2df6c7772d4dec947dd1c3ba043c9d658b7dceb55e76affa9f76\",\"parent\":\"0c9485d8727f59c47c49c09846b3386f92589832f2b1417fc2d0253572f67984\",\"created\":\"2016-06-14T15:06:41.094692958Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt update; apt install -y git ruby gcc ruby-dev rake make wget python python-dev g++\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0c9485d8727f59c47c49c09846b3386f92589832f2b1417fc2d0253572f67984\",\"parent\":\"308b24a341b2e6581bd59c24b4831ca64420730af1755b4ca537870f73e6d567\",\"created\":\"2016-05-27T14:14:11.963205691Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"308b24a341b2e6581bd59c24b4831ca64420730af1755b4ca537870f73e6d567\",\"parent\":\"4e61612eb794537c8ba35d04a6efdabd63fecf7c9f5a651f174cde6553d45ce9\",\"created\":\"2016-05-27T14:14:11.229181673Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4e61612eb794537c8ba35d04a6efdabd63fecf7c9f5a651f174cde6553d45ce9\",\"parent\":\"cfe36be25470c0e7f9b2e5e3f3ecbee1047f2324bae52caa3a2c2fc00ab61ae5\",\"created\":\"2016-05-27T14:14:09.517172083Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfe36be25470c0e7f9b2e5e3f3ecbee1047f2324bae52caa3a2c2fc00ab61ae5\",\"parent\":\"4ccc3c6c8328b7f66b3b9bd2a739aac527fc65a0a2606a6f7aa1b39d70eb6232\",\"created\":\"2016-05-27T14:14:07.713245157Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"4ccc3c6c8328b7f66b3b9bd2a739aac527fc65a0a2606a6f7aa1b39d70eb6232\",\"created\":\"2016-05-27T14:14:03.773457805Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:84b77061366c2a6f78b20df785d2b40a29879dd8f421f05e849595bd82395e81 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6e0af71081cea3be7c74af04c301603b48b8ee10303e71b9a211bca6aa9a96eb"
+            },
+            {
+                "blobSum": "sha256:999db289040abd045e7c793ae41bc55bd3c828229b22f946f096980b843a5517"
+            },
+            {
+                "blobSum": "sha256:38c2818fbf5320f1affc153fb433b358db31b9ca1a2f1bfceaf3bb9f55fd882e"
+            },
+            {
+                "blobSum": "sha256:0f981263cbc401ec0534a1c8e53b50d3b07521d7d422059dca245f354b963c21"
+            },
+            {
+                "blobSum": "sha256:8c4b8f7e78ff421cf3e6ff21c8ff9a95ae73b83d44a274f32ef0745d59efcda2"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:d2e175331658e56e1bc3724a7004a6defa99d34a76f5ea2b78c815db6e79ff07"
+            },
+            {
+                "blobSum": "sha256:a8c1696a285661c8855bc6de493ff8a37620e4620b1fb21a0018a613db9cff32"
+            },
+            {
+                "blobSum": "sha256:069b60a2d09d65c48cc0893ae52f741cc62b204592a1d9c2db4512dc87c2c359"
+            },
+            {
+                "blobSum": "sha256:21d0055b261479ca85654b5b9b0a66b5548b88a611d93ee181441a17dac7c52b"
+            }
+        ],
+        "name": "kozo2/bioruby-notebook",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjg0OTYsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowMjoxN1oifQ",
+                "signature": "-M05oolr329nMc3tu79FMJtWr03UrKC2bVbYGLkrLnF7-vt3iXK_A9Ua_I8mIVsBGXGvclP_KziZzI1C90H46A",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "MEG--KbbbJK_RkPIP9e5fQVuGlo3uimah2uJUFRzuKw",
+                        "kid": "AS5P:WMNA:RSR2:GJR7:SC2U:YXPA:7WEF:WKEX:EAVM:PUHS:YY7E:SNWG",
+                        "x": "OaqjMSsPzUo3jbPCGZ4WryQhjpyFpJS911jrYM9zYL8"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

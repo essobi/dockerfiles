@@ -1,0 +1,282 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"config\":{\"Hostname\":\"f25d06743c2c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.1\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"jupyter\",\"notebook\"],\"ArgsEscaped\":true,\"Image\":\"sha256:db6c7492c9cb3badd964ce4d1d2ef30d29b419975c3779eac012c6f7dad08a1a\",\"Volumes\":null,\"WorkingDir\":\"/app\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"e7e46ed3d693a961047231cf6b2c82750f40f58f42cc597e8dc629e4ed72f84f\",\"container_config\":{\"Hostname\":\"f25d06743c2c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.1\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"jupyter\\\" \\\"notebook\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:db6c7492c9cb3badd964ce4d1d2ef30d29b419975c3779eac012c6f7dad08a1a\",\"Volumes\":null,\"WorkingDir\":\"/app\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-11T22:53:10.016093285Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"b225ce8178cbfac1dcdc1540d92be3ef51e27ad4edda2be8869b8e56caa5eafa\",\"os\":\"linux\",\"parent\":\"d892d9ebe50a7f8f17d20626ceec2c6e7b18047638a309f70b88c6e8ad5e34ed\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d892d9ebe50a7f8f17d20626ceec2c6e7b18047638a309f70b88c6e8ad5e34ed\",\"parent\":\"3527e5f5bfe9ddd1b51a4ab41b68633bf8143ce46bc3b36b9286b3629a13c491\",\"created\":\"2017-05-11T22:53:08.336363982Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3527e5f5bfe9ddd1b51a4ab41b68633bf8143ce46bc3b36b9286b3629a13c491\",\"parent\":\"3d27cafaaf848046e2d6a75fd80db5b3a4945241dd800c9d60e45f547259c5cd\",\"created\":\"2017-05-11T22:53:06.864717969Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p -m 700 /root/.jupyter/ \\u0026\\u0026         echo \\\"c.NotebookApp.ip = '*'\\\" \\u003e\\u003e /root/.jupyter/jupyter_notebook_config.py\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3d27cafaaf848046e2d6a75fd80db5b3a4945241dd800c9d60e45f547259c5cd\",\"parent\":\"2ce93c96e97b63f58bb3ecf72492aaa6be3ef343193deeb45fa280c6ea0b699a\",\"created\":\"2017-05-11T22:53:04.880212141Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex         \\u0026\\u0026 apk add --no-cache --virtual .build-deps                  bash                 gcc                 g++                 libc-dev                 make                 ncurses-dev                 readline-dev         \\u0026\\u0026 pip install -r requirements.txt         \\u0026\\u0026 runDeps=\\\"$(             scanelf --needed --nobanner --recursive /usr/local                 | awk '{ gsub(/,/, \\\"\\\\nso:\\\", $2); print \\\"so:\\\" $2 }'                 | sort -u                 | xargs -r apk info --installed                 | sort -u         )\\\"         \\u0026\\u0026 apk add --virtual .rundeps $runDeps         \\u0026\\u0026 apk del .build-deps         \\u0026\\u0026 rm -rf /root/.cache\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ce93c96e97b63f58bb3ecf72492aaa6be3ef343193deeb45fa280c6ea0b699a\",\"parent\":\"1526798aead9db7f31b935f6807ebca78f982b31a1e9a12e2f6c7c7d5568ff51\",\"created\":\"2017-05-11T22:49:46.272592168Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /app\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1526798aead9db7f31b935f6807ebca78f982b31a1e9a12e2f6c7c7d5568ff51\",\"parent\":\"8a9ad449c22d4e27540cd134458af31d31753cd532e3a144695aa2036a0cfbf8\",\"created\":\"2017-05-11T22:49:45.479104876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:0003b94c3f4d7f79d488561abe430c502260dfec8837d0947709f5853a0fda7d in /app/ \"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a9ad449c22d4e27540cd134458af31d31753cd532e3a144695aa2036a0cfbf8\",\"parent\":\"140de8304dcbd1690bfb7a85c639c767dd9715789ef9501c4ffccf4dcb677c87\",\"created\":\"2017-05-11T22:49:44.538512067Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"140de8304dcbd1690bfb7a85c639c767dd9715789ef9501c4ffccf4dcb677c87\",\"parent\":\"f1521f10a1c958dd442eb0ca0830f28608dcdfefa1957ab3ba5ddaeffc697672\",\"created\":\"2017-05-11T22:20:31.762849839Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python3\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1521f10a1c958dd442eb0ca0830f28608dcdfefa1957ab3ba5ddaeffc697672\",\"parent\":\"6c2807f35881201add0350ebd1e87cbe4271aa3bd81651c93479edcf9b2aa338\",\"created\":\"2017-05-11T22:20:31.076416524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\t\\tapk add --no-cache --virtual .fetch-deps openssl; \\t\\twget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; \\t\\tapk del .fetch-deps; \\t\\tpython get-pip.py \\t\\t--disable-pip-version-check \\t\\t--no-cache-dir \\t\\t\\\"pip==$PYTHON_PIP_VERSION\\\" \\t; \\tpip --version; \\t\\tfind /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' +; \\trm -f get-pip.py\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c2807f35881201add0350ebd1e87cbe4271aa3bd81651c93479edcf9b2aa338\",\"parent\":\"5731ee12dba5a2f614f2c028125a77caec00c9353c65796efb96c110fee0a646\",\"created\":\"2017-05-11T22:20:23.698741859Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5731ee12dba5a2f614f2c028125a77caec00c9353c65796efb96c110fee0a646\",\"parent\":\"ea46c217f8102968859af408fda5b87eecb20532a49cd50ad5857d14544a638b\",\"created\":\"2017-05-11T22:20:22.996715646Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin \\t\\u0026\\u0026 ln -s idle3 idle \\t\\u0026\\u0026 ln -s pydoc3 pydoc \\t\\u0026\\u0026 ln -s python3 python \\t\\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea46c217f8102968859af408fda5b87eecb20532a49cd50ad5857d14544a638b\",\"parent\":\"82a08564737e75c1ab82a4a95fd10d2a6726b201c38e84d6334008c5d6731b46\",\"created\":\"2017-05-11T22:20:21.608057734Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 apk add --no-cache --virtual .fetch-deps \\t\\tgnupg \\t\\topenssl \\t\\ttar \\t\\txz \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 apk add --no-cache --virtual .build-deps  \\t\\tbzip2-dev \\t\\tcoreutils \\t\\tdpkg-dev dpkg \\t\\tgcc \\t\\tgdbm-dev \\t\\tlibc-dev \\t\\tlinux-headers \\t\\tmake \\t\\tncurses-dev \\t\\topenssl \\t\\topenssl-dev \\t\\tpax-utils \\t\\treadline-dev \\t\\tsqlite-dev \\t\\ttcl-dev \\t\\ttk \\t\\ttk-dev \\t\\txz-dev \\t\\tzlib-dev \\t\\u0026\\u0026 apk del .fetch-deps \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 gnuArch=\\\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\\\" \\t\\u0026\\u0026 ./configure \\t\\t--build=\\\"$gnuArch\\\" \\t\\t--enable-loadable-sqlite-extensions \\t\\t--enable-shared \\t\\t--without-ensurepip \\t\\u0026\\u0026 make -j \\\"$(nproc)\\\" \\t\\u0026\\u0026 make install \\t\\t\\u0026\\u0026 runDeps=\\\"$( \\t\\tscanelf --needed --nobanner --recursive /usr/local \\t\\t\\t| awk '{ gsub(/,/, \\\"\\\\nso:\\\", $2); print \\\"so:\\\" $2 }' \\t\\t\\t| sort -u \\t\\t\\t| xargs -r apk info --installed \\t\\t\\t| sort -u \\t)\\\" \\t\\u0026\\u0026 apk add --virtual .python-rundeps $runDeps \\t\\u0026\\u0026 apk del .build-deps \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 rm -rf /usr/src/python\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"82a08564737e75c1ab82a4a95fd10d2a6726b201c38e84d6334008c5d6731b46\",\"parent\":\"b89dcad52c73bc7d5baf53455d43e87ad892b5f37f1fc7d7be6da035dacdf4da\",\"created\":\"2017-05-10T19:42:09.344406769Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.6.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b89dcad52c73bc7d5baf53455d43e87ad892b5f37f1fc7d7be6da035dacdf4da\",\"parent\":\"b631b8966aa1c139ee23158222908cf2b6f3901f48988642845d736be0284a8a\",\"created\":\"2017-05-10T19:42:08.611557512Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b631b8966aa1c139ee23158222908cf2b6f3901f48988642845d736be0284a8a\",\"parent\":\"54cc487c14440c6f7754a952d07de6c48c412cc48f65b5456b9a529271a98143\",\"created\":\"2017-05-10T19:31:51.203033851Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache ca-certificates\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"54cc487c14440c6f7754a952d07de6c48c412cc48f65b5456b9a529271a98143\",\"parent\":\"473c147cb323e2af52d24ee628eebf32ea77399f7bb5d7ef7b6904609c32debf\",\"created\":\"2017-05-10T19:31:48.914947188Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"473c147cb323e2af52d24ee628eebf32ea77399f7bb5d7ef7b6904609c32debf\",\"parent\":\"afb46c69edc0f73a1c54cbc390d761bed17979d653aa568d067b9482883575b6\",\"created\":\"2017-05-10T19:31:47.698533371Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"afb46c69edc0f73a1c54cbc390d761bed17979d653aa568d067b9482883575b6\",\"parent\":\"1486fe9a5f49f0c387ad7a40aac8bb58c2df0ff1f0cf9d54c003d338ab0b4fae\",\"created\":\"2017-05-10T16:37:37.725800827Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1486fe9a5f49f0c387ad7a40aac8bb58c2df0ff1f0cf9d54c003d338ab0b4fae\",\"created\":\"2017-05-10T16:37:36.972381583Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:9c596c6cb8ba1d7f93d4dc5fc3f42bfcd5edca57d5be5d60ea04ef42f55fb7a8 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2021048339b9650b000208a0344ce3870a943a04ed095bdb1f4409bc292a9ee2"
+            },
+            {
+                "blobSum": "sha256:121670f54f5189a9a32e24b795a9a7427feff967d9ba6f335623bec206acb91a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:85fce151e9787853b1ee674ae7a83b755d7160167c3d2127a2777dc3e3fb95ce"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:bcd83fe4359ec05c1323882251f44fa7d39bbddb917b8522fd26df9293ff50e3"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:70b4de28adfd4eb4401b7f53b44601ffe7eb1a195373193d872757114907c62f"
+            },
+            {
+                "blobSum": "sha256:ada98fe44e3a755b5e83d1a2e9020bcfdb947d0aa50bcb9823168b6e285c3b9b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:581a2604819e4cb5997a23050465a850a728e19ddf896f87fa4d434a680a34bf"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:79650cf9cc01ddb17cb9c4036ba9268528b775fe0322f347d15b5e4176928f34"
+            }
+        ],
+        "name": "camphor/python-tutorial",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE0NTI3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDc6MDFaIn0",
+                "signature": "Dul5M-fj0ilm7A3XN-Z2LYvxzD7IoPBEQTW6JS67l8JoTad8i1CSfDY0uOUklqOjAv9-DsfAdQdzfAMp7zZHjA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"config\":{\"Hostname\":\"f25d06743c2c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.1\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"jupyter\",\"notebook\"],\"ArgsEscaped\":true,\"Image\":\"sha256:db6c7492c9cb3badd964ce4d1d2ef30d29b419975c3779eac012c6f7dad08a1a\",\"Volumes\":null,\"WorkingDir\":\"/app\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"e7e46ed3d693a961047231cf6b2c82750f40f58f42cc597e8dc629e4ed72f84f\",\"container_config\":{\"Hostname\":\"f25d06743c2c\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\"PYTHON_VERSION=3.6.1\",\"PYTHON_PIP_VERSION=9.0.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"jupyter\\\" \\\"notebook\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:db6c7492c9cb3badd964ce4d1d2ef30d29b419975c3779eac012c6f7dad08a1a\",\"Volumes\":null,\"WorkingDir\":\"/app\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-05-11T22:53:10.016093285Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"b225ce8178cbfac1dcdc1540d92be3ef51e27ad4edda2be8869b8e56caa5eafa\",\"os\":\"linux\",\"parent\":\"d892d9ebe50a7f8f17d20626ceec2c6e7b18047638a309f70b88c6e8ad5e34ed\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d892d9ebe50a7f8f17d20626ceec2c6e7b18047638a309f70b88c6e8ad5e34ed\",\"parent\":\"3527e5f5bfe9ddd1b51a4ab41b68633bf8143ce46bc3b36b9286b3629a13c491\",\"created\":\"2017-05-11T22:53:08.336363982Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  EXPOSE 8888/tcp\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3527e5f5bfe9ddd1b51a4ab41b68633bf8143ce46bc3b36b9286b3629a13c491\",\"parent\":\"3d27cafaaf848046e2d6a75fd80db5b3a4945241dd800c9d60e45f547259c5cd\",\"created\":\"2017-05-11T22:53:06.864717969Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p -m 700 /root/.jupyter/ \\u0026\\u0026         echo \\\"c.NotebookApp.ip = '*'\\\" \\u003e\\u003e /root/.jupyter/jupyter_notebook_config.py\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"3d27cafaaf848046e2d6a75fd80db5b3a4945241dd800c9d60e45f547259c5cd\",\"parent\":\"2ce93c96e97b63f58bb3ecf72492aaa6be3ef343193deeb45fa280c6ea0b699a\",\"created\":\"2017-05-11T22:53:04.880212141Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex         \\u0026\\u0026 apk add --no-cache --virtual .build-deps                  bash                 gcc                 g++                 libc-dev                 make                 ncurses-dev                 readline-dev         \\u0026\\u0026 pip install -r requirements.txt         \\u0026\\u0026 runDeps=\\\"$(             scanelf --needed --nobanner --recursive /usr/local                 | awk '{ gsub(/,/, \\\"\\\\nso:\\\", $2); print \\\"so:\\\" $2 }'                 | sort -u                 | xargs -r apk info --installed                 | sort -u         )\\\"         \\u0026\\u0026 apk add --virtual .rundeps $runDeps         \\u0026\\u0026 apk del .build-deps         \\u0026\\u0026 rm -rf /root/.cache\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2ce93c96e97b63f58bb3ecf72492aaa6be3ef343193deeb45fa280c6ea0b699a\",\"parent\":\"1526798aead9db7f31b935f6807ebca78f982b31a1e9a12e2f6c7c7d5568ff51\",\"created\":\"2017-05-11T22:49:46.272592168Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /app\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1526798aead9db7f31b935f6807ebca78f982b31a1e9a12e2f6c7c7d5568ff51\",\"parent\":\"8a9ad449c22d4e27540cd134458af31d31753cd532e3a144695aa2036a0cfbf8\",\"created\":\"2017-05-11T22:49:45.479104876Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY dir:0003b94c3f4d7f79d488561abe430c502260dfec8837d0947709f5853a0fda7d in /app/ \"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"8a9ad449c22d4e27540cd134458af31d31753cd532e3a144695aa2036a0cfbf8\",\"parent\":\"140de8304dcbd1690bfb7a85c639c767dd9715789ef9501c4ffccf4dcb677c87\",\"created\":\"2017-05-11T22:49:44.538512067Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\"]},\"author\":\"Yusuke Miyazaki \\u003cmiyazaki.dev@gmail.com\\u003e\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"140de8304dcbd1690bfb7a85c639c767dd9715789ef9501c4ffccf4dcb677c87\",\"parent\":\"f1521f10a1c958dd442eb0ca0830f28608dcdfefa1957ab3ba5ddaeffc697672\",\"created\":\"2017-05-11T22:20:31.762849839Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"python3\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f1521f10a1c958dd442eb0ca0830f28608dcdfefa1957ab3ba5ddaeffc697672\",\"parent\":\"6c2807f35881201add0350ebd1e87cbe4271aa3bd81651c93479edcf9b2aa338\",\"created\":\"2017-05-11T22:20:31.076416524Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex; \\t\\tapk add --no-cache --virtual .fetch-deps openssl; \\t\\twget -O get-pip.py 'https://bootstrap.pypa.io/get-pip.py'; \\t\\tapk del .fetch-deps; \\t\\tpython get-pip.py \\t\\t--disable-pip-version-check \\t\\t--no-cache-dir \\t\\t\\\"pip==$PYTHON_PIP_VERSION\\\" \\t; \\tpip --version; \\t\\tfind /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' +; \\trm -f get-pip.py\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6c2807f35881201add0350ebd1e87cbe4271aa3bd81651c93479edcf9b2aa338\",\"parent\":\"5731ee12dba5a2f614f2c028125a77caec00c9353c65796efb96c110fee0a646\",\"created\":\"2017-05-11T22:20:23.698741859Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_PIP_VERSION=9.0.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5731ee12dba5a2f614f2c028125a77caec00c9353c65796efb96c110fee0a646\",\"parent\":\"ea46c217f8102968859af408fda5b87eecb20532a49cd50ad5857d14544a638b\",\"created\":\"2017-05-11T22:20:22.996715646Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c cd /usr/local/bin \\t\\u0026\\u0026 ln -s idle3 idle \\t\\u0026\\u0026 ln -s pydoc3 pydoc \\t\\u0026\\u0026 ln -s python3 python \\t\\u0026\\u0026 ln -s python3-config python-config\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ea46c217f8102968859af408fda5b87eecb20532a49cd50ad5857d14544a638b\",\"parent\":\"82a08564737e75c1ab82a4a95fd10d2a6726b201c38e84d6334008c5d6731b46\",\"created\":\"2017-05-11T22:20:21.608057734Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 apk add --no-cache --virtual .fetch-deps \\t\\tgnupg \\t\\topenssl \\t\\ttar \\t\\txz \\t\\t\\u0026\\u0026 wget -O python.tar.xz \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" \\t\\u0026\\u0026 wget -O python.tar.xz.asc \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 apk add --no-cache --virtual .build-deps  \\t\\tbzip2-dev \\t\\tcoreutils \\t\\tdpkg-dev dpkg \\t\\tgcc \\t\\tgdbm-dev \\t\\tlibc-dev \\t\\tlinux-headers \\t\\tmake \\t\\tncurses-dev \\t\\topenssl \\t\\topenssl-dev \\t\\tpax-utils \\t\\treadline-dev \\t\\tsqlite-dev \\t\\ttcl-dev \\t\\ttk \\t\\ttk-dev \\t\\txz-dev \\t\\tzlib-dev \\t\\u0026\\u0026 apk del .fetch-deps \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 gnuArch=\\\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\\\" \\t\\u0026\\u0026 ./configure \\t\\t--build=\\\"$gnuArch\\\" \\t\\t--enable-loadable-sqlite-extensions \\t\\t--enable-shared \\t\\t--without-ensurepip \\t\\u0026\\u0026 make -j \\\"$(nproc)\\\" \\t\\u0026\\u0026 make install \\t\\t\\u0026\\u0026 runDeps=\\\"$( \\t\\tscanelf --needed --nobanner --recursive /usr/local \\t\\t\\t| awk '{ gsub(/,/, \\\"\\\\nso:\\\", $2); print \\\"so:\\\" $2 }' \\t\\t\\t| sort -u \\t\\t\\t| xargs -r apk info --installed \\t\\t\\t| sort -u \\t)\\\" \\t\\u0026\\u0026 apk add --virtual .python-rundeps $runDeps \\t\\u0026\\u0026 apk del .build-deps \\t\\t\\u0026\\u0026 find /usr/local -depth \\t\\t\\\\( \\t\\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t\\t-o \\t\\t\\t\\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t\\\\) -exec rm -rf '{}' + \\t\\u0026\\u0026 rm -rf /usr/src/python\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"82a08564737e75c1ab82a4a95fd10d2a6726b201c38e84d6334008c5d6731b46\",\"parent\":\"b89dcad52c73bc7d5baf53455d43e87ad892b5f37f1fc7d7be6da035dacdf4da\",\"created\":\"2017-05-10T19:42:09.344406769Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PYTHON_VERSION=3.6.1\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b89dcad52c73bc7d5baf53455d43e87ad892b5f37f1fc7d7be6da035dacdf4da\",\"parent\":\"b631b8966aa1c139ee23158222908cf2b6f3901f48988642845d736be0284a8a\",\"created\":\"2017-05-10T19:42:08.611557512Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"b631b8966aa1c139ee23158222908cf2b6f3901f48988642845d736be0284a8a\",\"parent\":\"54cc487c14440c6f7754a952d07de6c48c412cc48f65b5456b9a529271a98143\",\"created\":\"2017-05-10T19:31:51.203033851Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apk add --no-cache ca-certificates\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"54cc487c14440c6f7754a952d07de6c48c412cc48f65b5456b9a529271a98143\",\"parent\":\"473c147cb323e2af52d24ee628eebf32ea77399f7bb5d7ef7b6904609c32debf\",\"created\":\"2017-05-10T19:31:48.914947188Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV LANG=C.UTF-8\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"473c147cb323e2af52d24ee628eebf32ea77399f7bb5d7ef7b6904609c32debf\",\"parent\":\"afb46c69edc0f73a1c54cbc390d761bed17979d653aa568d067b9482883575b6\",\"created\":\"2017-05-10T19:31:47.698533371Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"afb46c69edc0f73a1c54cbc390d761bed17979d653aa568d067b9482883575b6\",\"parent\":\"1486fe9a5f49f0c387ad7a40aac8bb58c2df0ff1f0cf9d54c003d338ab0b4fae\",\"created\":\"2017-05-10T16:37:37.725800827Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/sh\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1486fe9a5f49f0c387ad7a40aac8bb58c2df0ff1f0cf9d54c003d338ab0b4fae\",\"created\":\"2017-05-10T16:37:36.972381583Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:9c596c6cb8ba1d7f93d4dc5fc3f42bfcd5edca57d5be5d60ea04ef42f55fb7a8 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:2021048339b9650b000208a0344ce3870a943a04ed095bdb1f4409bc292a9ee2"
+            },
+            {
+                "blobSum": "sha256:121670f54f5189a9a32e24b795a9a7427feff967d9ba6f335623bec206acb91a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:85fce151e9787853b1ee674ae7a83b755d7160167c3d2127a2777dc3e3fb95ce"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:bcd83fe4359ec05c1323882251f44fa7d39bbddb917b8522fd26df9293ff50e3"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:70b4de28adfd4eb4401b7f53b44601ffe7eb1a195373193d872757114907c62f"
+            },
+            {
+                "blobSum": "sha256:ada98fe44e3a755b5e83d1a2e9020bcfdb947d0aa50bcb9823168b6e285c3b9b"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:581a2604819e4cb5997a23050465a850a728e19ddf896f87fa4d434a680a34bf"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:79650cf9cc01ddb17cb9c4036ba9268528b775fe0322f347d15b5e4176928f34"
+            }
+        ],
+        "name": "camphor/python-tutorial",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjE0NTI3LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MDc6MDJaIn0",
+                "signature": "G9NGbicTTYfpUsXK4k6O1lI1WU4loptorhHRRPokMiVj2kT7eQjDJXbHFHyvXooNhVPK5A5KdVriFxl_Ko8T1w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "ln4q8RDpVzbqW_aN-hFN-uije9CEv10_QNZGNhRW4k4",
+                        "kid": "2MTC:TFLN:VZFM:7MHE:NIXC:UZCN:MW4M:SCAC:BNUR:X2Z3:OB6Y:XEQ4",
+                        "x": "XPfhiU9oKPNI10iavI-G3BvWRjRcDAKYkv4l6vuH-Wg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

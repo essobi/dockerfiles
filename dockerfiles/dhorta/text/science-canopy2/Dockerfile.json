@@ -1,0 +1,246 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"f5ee59d47428\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5294c39675272ff945134603cf7b9f6ed78149f78db303085e82aa26278210c2\",\"Volumes\":null,\"WorkingDir\":\"/home\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"352f6e9782b3063f1e49a256a2f96a3264977354989d42570f4dc289c6e5ec02\",\"container_config\":{\"Hostname\":\"f5ee59d47428\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"/usr/local/Canopy_64bit/System/bin/enpkg scipy h5py matplotlib pandas     --no-autoupdate --forceall --yes\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5294c39675272ff945134603cf7b9f6ed78149f78db303085e82aa26278210c2\",\"Volumes\":null,\"WorkingDir\":\"/home\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-01T21:28:51.286124382Z\",\"docker_version\":\"1.10.2\",\"id\":\"6d7a0c532b4f1e9738a13da9dc0a8ad3003819431977cbb753d7d538e446cabd\",\"os\":\"linux\",\"parent\":\"a27f5632c53711391a0a2ba6d9f58e0d6a78600cab23cc69054851a2f2113505\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a27f5632c53711391a0a2ba6d9f58e0d6a78600cab23cc69054851a2f2113505\",\"parent\":\"31b979ef41a599a9e9cd2a3583a32f5888e6eea3eacfb2bf2c7b1d53d8c43a84\",\"created\":\"2016-04-01T21:26:25.81609985Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /usr/local/Canopy_64bit/System/bin/enpkg cython --no-autoupdate     --forceall --yes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31b979ef41a599a9e9cd2a3583a32f5888e6eea3eacfb2bf2c7b1d53d8c43a84\",\"parent\":\"e1d8f192e7a2ea5f4b8de87f572db2de58caf8a782d57c717e2087ccecd72c89\",\"created\":\"2016-04-01T21:26:16.4690796Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /usr/local/Canopy_64bit/System/bin/enpkg --update-all --yes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e1d8f192e7a2ea5f4b8de87f572db2de58caf8a782d57c717e2087ccecd72c89\",\"parent\":\"283afa59d48ec8846cb10dcd1648303830d9d9011d4adeadfedf60ff55146c5d\",\"created\":\"2016-04-01T21:26:08.137981441Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"EPD_auth = 'aG9ydGFAZWJpLmFjLnVrOkVpbnN0ZWluZnR3MTIzIQ=='\\\"     \\u003e\\u003e /root/.enstaller4rc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"283afa59d48ec8846cb10dcd1648303830d9d9011d4adeadfedf60ff55146c5d\",\"parent\":\"83ce43226fd04c766c18aacee2cbb202de10989a6619cbee98926afb9197fbf5\",\"created\":\"2016-04-01T21:26:07.623515946Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export PATH=/usr/local/Canopy_64bit/System/bin:$PATH\\\" \\u003e\\u003e /root/.bashrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"83ce43226fd04c766c18aacee2cbb202de10989a6619cbee98926afb9197fbf5\",\"parent\":\"d2fcda8d23f87e1e55221b33212869903ea617e45852279b23b646971b439658\",\"created\":\"2016-04-01T21:26:05.489070377Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /root/Canopy/canopy_cli --no-gui-setup --install-dir /usr/local\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d2fcda8d23f87e1e55221b33212869903ea617e45852279b23b646971b439658\",\"parent\":\"f336af2bd2e09fd154042fca0da209213c5d00fb3a7f6e0efd9f8bf6d0998f05\",\"created\":\"2016-04-01T21:24:18.22027132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./canopy.sh -b\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f336af2bd2e09fd154042fca0da209213c5d00fb3a7f6e0efd9f8bf6d0998f05\",\"parent\":\"0ea8b107c98bd57ce1e8448fbfb2fb67e213bcaefb7c9c2942ae78ccd12d14c8\",\"created\":\"2016-04-01T21:22:59.239280442Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x canopy.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ea8b107c98bd57ce1e8448fbfb2fb67e213bcaefb7c9c2942ae78ccd12d14c8\",\"parent\":\"e13573b732bb1babadd70cc3fd0dee63a3bff1219b376467d27a8695b801f49b\",\"created\":\"2016-04-01T21:22:38.82678624Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget https://store.enthought.com/downloads/canopy/rh5/64/free/     -O canopy.sh -nv\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e13573b732bb1babadd70cc3fd0dee63a3bff1219b376467d27a8695b801f49b\",\"parent\":\"ad4aadcf1f3d41e9a4973cee80676f99a9f950059d1413f49bbe252f2a243398\",\"created\":\"2016-04-01T21:22:11.265993974Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ad4aadcf1f3d41e9a4973cee80676f99a9f950059d1413f49bbe252f2a243398\",\"parent\":\"78517cf838654899ab28f38114e8d64a06d0825301ffe3edc067936fe2ae3041\",\"created\":\"2016-04-01T21:22:10.923920788Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes build-essential libc6 gfortran g++ wget\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78517cf838654899ab28f38114e8d64a06d0825301ffe3edc067936fe2ae3041\",\"parent\":\"6dcf641459c9b10496648bc714111fc94984fdb29aed425c862eb9ac8fe3c632\",\"created\":\"2016-04-01T21:21:33.48633585Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6dcf641459c9b10496648bc714111fc94984fdb29aed425c862eb9ac8fe3c632\",\"parent\":\"1fbe3bd23e5c8b87d9a0c55a7d7b4ed28823fa5394452ae9869533b3e1abc9d9\",\"created\":\"2016-03-18T18:24:28.818918568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1fbe3bd23e5c8b87d9a0c55a7d7b4ed28823fa5394452ae9869533b3e1abc9d9\",\"parent\":\"5d48199ced94641b9adfb8bff76982027a7ae99d8a984b6a43b069d778b32083\",\"created\":\"2016-03-18T18:24:28.321137172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5d48199ced94641b9adfb8bff76982027a7ae99d8a984b6a43b069d778b32083\",\"parent\":\"91f7f9444ee1305921aa584bb4806c40bcece5c618f83ac383e105b23bdb6aad\",\"created\":\"2016-03-18T18:24:26.825346052Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91f7f9444ee1305921aa584bb4806c40bcece5c618f83ac383e105b23bdb6aad\",\"created\":\"2016-03-18T18:24:21.897338633Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:9ec5a6050fe4811730c624da6d716dc4825c8db57e0e0f057b7e1fd4c3afea51"
+            },
+            {
+                "blobSum": "sha256:18958b6709ff6c73429350d0d5eefa5f490be9ad7582c6e2ba4086de8f21b72e"
+            },
+            {
+                "blobSum": "sha256:1c6acb3ec4ea4c1ffae0d1ada73fc832fd071f51faac3c4fb5ffe3ce5ef216b3"
+            },
+            {
+                "blobSum": "sha256:ab8dd5c51eebca411a976159e60cb01a1cf63592bd87b17a8f47e7eb5e87081b"
+            },
+            {
+                "blobSum": "sha256:2bf99670188473fbe55487a94bf072c21a85c713ba27f0bf2ac4f78d6c9a0058"
+            },
+            {
+                "blobSum": "sha256:88dbe97aa28a91eeb59dad5ae431c6571de7c211fd24118e1a88868117e7df31"
+            },
+            {
+                "blobSum": "sha256:6c4b0b1b04391e6e2ccb5748699612163c9b1e9d0d3398d88b9c82cb5b58a5a8"
+            },
+            {
+                "blobSum": "sha256:698c5af2c33f32ad1634472c6adb778f278fae7b8b3762d434725596649119dd"
+            },
+            {
+                "blobSum": "sha256:1bf3e16fe5499c5a1e35dc0fbfefe0adc3b5acbcf31b08a45809046216503a20"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:87428f1aa4079f870bf366ffdebdac6e67a2ce8cad3ef6acac6a3ab9a6d39177"
+            },
+            {
+                "blobSum": "sha256:8e619929c136fa97d3c05177c46f3e30800bcc61d6e2dfe10842a5ba48aeb9dd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f"
+            },
+            {
+                "blobSum": "sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2"
+            },
+            {
+                "blobSum": "sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06"
+            }
+        ],
+        "name": "dhorta/science-canopy2",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEwMDIyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MjJaIn0",
+                "signature": "JzIPev_Ge68tgpnTuUKeguSo3YPux5wiJqLkrzwU5lZgoZKru_3kd9wpYXZ162w0hUDCdZNLkLmd-fvNK_dNYA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "RBJtkKTCFBrjVjhdE2lQPdtu96DvJGVL6y9WXXmjduw",
+                        "kid": "YALU:NGK3:6FMK:L2BW:UHIF:LCG6:A4XV:GPJN:LN5Q:HJIL:4EK2:5HIZ",
+                        "x": "QAQl2e7lyLK3M_1zpiXZiuFGWQFFfONYFit-oVL5FQU"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"f5ee59d47428\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5294c39675272ff945134603cf7b9f6ed78149f78db303085e82aa26278210c2\",\"Volumes\":null,\"WorkingDir\":\"/home\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"352f6e9782b3063f1e49a256a2f96a3264977354989d42570f4dc289c6e5ec02\",\"container_config\":{\"Hostname\":\"f5ee59d47428\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"/usr/local/Canopy_64bit/System/bin/enpkg scipy h5py matplotlib pandas     --no-autoupdate --forceall --yes\"],\"ArgsEscaped\":true,\"Image\":\"sha256:5294c39675272ff945134603cf7b9f6ed78149f78db303085e82aa26278210c2\",\"Volumes\":null,\"WorkingDir\":\"/home\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-01T21:28:51.286124382Z\",\"docker_version\":\"1.10.2\",\"id\":\"6d7a0c532b4f1e9738a13da9dc0a8ad3003819431977cbb753d7d538e446cabd\",\"os\":\"linux\",\"parent\":\"a27f5632c53711391a0a2ba6d9f58e0d6a78600cab23cc69054851a2f2113505\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a27f5632c53711391a0a2ba6d9f58e0d6a78600cab23cc69054851a2f2113505\",\"parent\":\"31b979ef41a599a9e9cd2a3583a32f5888e6eea3eacfb2bf2c7b1d53d8c43a84\",\"created\":\"2016-04-01T21:26:25.81609985Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /usr/local/Canopy_64bit/System/bin/enpkg cython --no-autoupdate     --forceall --yes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"31b979ef41a599a9e9cd2a3583a32f5888e6eea3eacfb2bf2c7b1d53d8c43a84\",\"parent\":\"e1d8f192e7a2ea5f4b8de87f572db2de58caf8a782d57c717e2087ccecd72c89\",\"created\":\"2016-04-01T21:26:16.4690796Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /usr/local/Canopy_64bit/System/bin/enpkg --update-all --yes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e1d8f192e7a2ea5f4b8de87f572db2de58caf8a782d57c717e2087ccecd72c89\",\"parent\":\"283afa59d48ec8846cb10dcd1648303830d9d9011d4adeadfedf60ff55146c5d\",\"created\":\"2016-04-01T21:26:08.137981441Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"EPD_auth = 'aG9ydGFAZWJpLmFjLnVrOkVpbnN0ZWluZnR3MTIzIQ=='\\\"     \\u003e\\u003e /root/.enstaller4rc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"283afa59d48ec8846cb10dcd1648303830d9d9011d4adeadfedf60ff55146c5d\",\"parent\":\"83ce43226fd04c766c18aacee2cbb202de10989a6619cbee98926afb9197fbf5\",\"created\":\"2016-04-01T21:26:07.623515946Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c echo \\\"export PATH=/usr/local/Canopy_64bit/System/bin:$PATH\\\" \\u003e\\u003e /root/.bashrc\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"83ce43226fd04c766c18aacee2cbb202de10989a6619cbee98926afb9197fbf5\",\"parent\":\"d2fcda8d23f87e1e55221b33212869903ea617e45852279b23b646971b439658\",\"created\":\"2016-04-01T21:26:05.489070377Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c /root/Canopy/canopy_cli --no-gui-setup --install-dir /usr/local\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"d2fcda8d23f87e1e55221b33212869903ea617e45852279b23b646971b439658\",\"parent\":\"f336af2bd2e09fd154042fca0da209213c5d00fb3a7f6e0efd9f8bf6d0998f05\",\"created\":\"2016-04-01T21:24:18.22027132Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c ./canopy.sh -b\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"f336af2bd2e09fd154042fca0da209213c5d00fb3a7f6e0efd9f8bf6d0998f05\",\"parent\":\"0ea8b107c98bd57ce1e8448fbfb2fb67e213bcaefb7c9c2942ae78ccd12d14c8\",\"created\":\"2016-04-01T21:22:59.239280442Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c chmod +x canopy.sh\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ea8b107c98bd57ce1e8448fbfb2fb67e213bcaefb7c9c2942ae78ccd12d14c8\",\"parent\":\"e13573b732bb1babadd70cc3fd0dee63a3bff1219b376467d27a8695b801f49b\",\"created\":\"2016-04-01T21:22:38.82678624Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c wget https://store.enthought.com/downloads/canopy/rh5/64/free/     -O canopy.sh -nv\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e13573b732bb1babadd70cc3fd0dee63a3bff1219b376467d27a8695b801f49b\",\"parent\":\"ad4aadcf1f3d41e9a4973cee80676f99a9f950059d1413f49bbe252f2a243398\",\"created\":\"2016-04-01T21:22:11.265993974Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /home\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"ad4aadcf1f3d41e9a4973cee80676f99a9f950059d1413f49bbe252f2a243398\",\"parent\":\"78517cf838654899ab28f38114e8d64a06d0825301ffe3edc067936fe2ae3041\",\"created\":\"2016-04-01T21:22:10.923920788Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install --yes build-essential libc6 gfortran g++ wget\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"78517cf838654899ab28f38114e8d64a06d0825301ffe3edc067936fe2ae3041\",\"parent\":\"6dcf641459c9b10496648bc714111fc94984fdb29aed425c862eb9ac8fe3c632\",\"created\":\"2016-04-01T21:21:33.48633585Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update -y\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6dcf641459c9b10496648bc714111fc94984fdb29aed425c862eb9ac8fe3c632\",\"parent\":\"1fbe3bd23e5c8b87d9a0c55a7d7b4ed28823fa5394452ae9869533b3e1abc9d9\",\"created\":\"2016-03-18T18:24:28.818918568Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1fbe3bd23e5c8b87d9a0c55a7d7b4ed28823fa5394452ae9869533b3e1abc9d9\",\"parent\":\"5d48199ced94641b9adfb8bff76982027a7ae99d8a984b6a43b069d778b32083\",\"created\":\"2016-03-18T18:24:28.321137172Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5d48199ced94641b9adfb8bff76982027a7ae99d8a984b6a43b069d778b32083\",\"parent\":\"91f7f9444ee1305921aa584bb4806c40bcece5c618f83ac383e105b23bdb6aad\",\"created\":\"2016-03-18T18:24:26.825346052Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"91f7f9444ee1305921aa584bb4806c40bcece5c618f83ac383e105b23bdb6aad\",\"created\":\"2016-03-18T18:24:21.897338633Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:e01d51d39ea04c8efbd2114aa7400f37d23ce053822405ce3ebb0c416aa47a4b in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:9ec5a6050fe4811730c624da6d716dc4825c8db57e0e0f057b7e1fd4c3afea51"
+            },
+            {
+                "blobSum": "sha256:18958b6709ff6c73429350d0d5eefa5f490be9ad7582c6e2ba4086de8f21b72e"
+            },
+            {
+                "blobSum": "sha256:1c6acb3ec4ea4c1ffae0d1ada73fc832fd071f51faac3c4fb5ffe3ce5ef216b3"
+            },
+            {
+                "blobSum": "sha256:ab8dd5c51eebca411a976159e60cb01a1cf63592bd87b17a8f47e7eb5e87081b"
+            },
+            {
+                "blobSum": "sha256:2bf99670188473fbe55487a94bf072c21a85c713ba27f0bf2ac4f78d6c9a0058"
+            },
+            {
+                "blobSum": "sha256:88dbe97aa28a91eeb59dad5ae431c6571de7c211fd24118e1a88868117e7df31"
+            },
+            {
+                "blobSum": "sha256:6c4b0b1b04391e6e2ccb5748699612163c9b1e9d0d3398d88b9c82cb5b58a5a8"
+            },
+            {
+                "blobSum": "sha256:698c5af2c33f32ad1634472c6adb778f278fae7b8b3762d434725596649119dd"
+            },
+            {
+                "blobSum": "sha256:1bf3e16fe5499c5a1e35dc0fbfefe0adc3b5acbcf31b08a45809046216503a20"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:87428f1aa4079f870bf366ffdebdac6e67a2ce8cad3ef6acac6a3ab9a6d39177"
+            },
+            {
+                "blobSum": "sha256:8e619929c136fa97d3c05177c46f3e30800bcc61d6e2dfe10842a5ba48aeb9dd"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:933ae24861296b2c7df7b354b68c60547f93261ecf9cc0cf012cf852f7ad448f"
+            },
+            {
+                "blobSum": "sha256:2ff1bbbe93101da42edab8368bb0f4f63f6c3f2febc1ac4ea3222805cbb7a5f2"
+            },
+            {
+                "blobSum": "sha256:203137e8afd55ac373c62f47e6e7ed6c0f54ed2c7695b864c761242827f29a06"
+            }
+        ],
+        "name": "dhorta/science-canopy2",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEwMDIyLCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTU6MjNaIn0",
+                "signature": "cNEuRwQ3bdo7aY1kCtwh0dGIE6JkKyYOlzWSBytGcYfztFjaAzoiRSbyVeeuRrHLO9-8nus8X4gpAlE9-Esorg",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "pNNCRvC2AjRAdZuIaArtMxEyiDGTyUiuPxfoHmzso0U",
+                        "kid": "REPN:HL6K:4QXN:AGOX:OFOL:EXN5:ZICU:TSB4:D6VB:WIBY:7GT5:NVSK",
+                        "x": "X4ly1uDiAUQNkFZnFUHMT8znFZu1fTYRokTc5f69mGg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

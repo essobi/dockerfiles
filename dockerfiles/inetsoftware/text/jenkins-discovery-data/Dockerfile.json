@@ -1,0 +1,150 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"tail -f /dev/null\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1b8c4ca005a68d31b45ba2c2d519ceff08740bd67408742bfce7858dda1e011f\",\"Volumes\":{\"/etc/consul-template/conf\":{},\"/etc/consul-template/output\":{},\"/etc/consul-template/templates\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{},\"StopSignal\":\"SIGTERM\"},\"container\":\"39bbf5478424751ad3a97d909fc2a93e4ab3363044cc001d210c6356aa6a1d7b\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"tail -f /dev/null\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1b8c4ca005a68d31b45ba2c2d519ceff08740bd67408742bfce7858dda1e011f\",\"Volumes\":{\"/etc/consul-template/conf\":{},\"/etc/consul-template/output\":{},\"/etc/consul-template/templates\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{},\"StopSignal\":\"SIGTERM\"},\"created\":\"2017-04-24T08:40:54.349626853Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"901cf725aed7b49dbc89438e9a1c695f65f00b92673261f1e6fd3c06b50f45ef\",\"os\":\"linux\",\"parent\":\"16d86325824fcaf71adaa255dc5da6d52833f48beb686c2611fa33cfe77f5a2c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"16d86325824fcaf71adaa255dc5da6d52833f48beb686c2611fa33cfe77f5a2c\",\"parent\":\"64ed9d424f86dcfca6b484fd2d0b07069d61fa1111e1464d1f79fcb5b7392138\",\"created\":\"2017-04-24T08:40:53.268256906Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  STOPSIGNAL [SIGTERM]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64ed9d424f86dcfca6b484fd2d0b07069d61fa1111e1464d1f79fcb5b7392138\",\"parent\":\"e7fa50827c18c29893d66a16c80e724597e8af4787701db1025346162044cad9\",\"created\":\"2017-04-24T08:40:52.468112103Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY multi:d464d0aee54d7c2e075b659e53c75e568f43c3f86fa0535612402f54ff698ad1 in /etc/consul-template/templates/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7fa50827c18c29893d66a16c80e724597e8af4787701db1025346162044cad9\",\"parent\":\"7b6417db49c6e1ad7f890761cfab1a0a6628a05089211d5375bb548a0a14bd98\",\"created\":\"2017-04-24T08:40:51.235653453Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:3674583c90c5d680d62afdf013a82f30a7737cf6f0c4d5b4f003293ceb7e8011 in /etc/consul-template/conf/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7b6417db49c6e1ad7f890761cfab1a0a6628a05089211d5375bb548a0a14bd98\",\"parent\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"created\":\"2017-04-24T08:40:50.179603038Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/etc/consul-template/output]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-04-24T08:40:49.201794334Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/etc/consul-template/conf]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-04-24T08:40:48.823824526Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/etc/consul-template/templates]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:faa4a2642f069ca93c280a19da987aec9373bc18f6f89c0c60623507e22d76b6"
+            },
+            {
+                "blobSum": "sha256:2557e1e2b73c4747ffe0cac61e889fe612167fcf6684ad4240ca0c0be0ebc0da"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "inetsoftware/jenkins-discovery-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjU0MzUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNjowNloifQ",
+                "signature": "rRrlp1AapypR0Ci5k_d4Q0MKmWDdRlwrIz4ijXQjBOEoJLKArC1ZRC62LCJ0WXuExCLtBpW2kv1SXFeEHzAqGw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "3zc5A0pzakYODgjiJULERofLpAxUx-tYZe7lP2SWPyw",
+                        "kid": "LV6N:V2UD:26K4:LN5B:Q4M4:UNCG:F6SD:DYPD:MDAV:L5WU:DU5K:IPBS",
+                        "x": "uOpo3UKUYJCcTgfR1o9pD2jGOcz_JhWiu4heWg-7qCc"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"tail -f /dev/null\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1b8c4ca005a68d31b45ba2c2d519ceff08740bd67408742bfce7858dda1e011f\",\"Volumes\":{\"/etc/consul-template/conf\":{},\"/etc/consul-template/output\":{},\"/etc/consul-template/templates\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{},\"StopSignal\":\"SIGTERM\"},\"container\":\"39bbf5478424751ad3a97d909fc2a93e4ab3363044cc001d210c6356aa6a1d7b\",\"container_config\":{\"Hostname\":\"84baa8e89c00\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) \",\"CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"tail -f /dev/null\\\"]\"],\"ArgsEscaped\":true,\"Image\":\"sha256:1b8c4ca005a68d31b45ba2c2d519ceff08740bd67408742bfce7858dda1e011f\",\"Volumes\":{\"/etc/consul-template/conf\":{},\"/etc/consul-template/output\":{},\"/etc/consul-template/templates\":{}},\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{},\"StopSignal\":\"SIGTERM\"},\"created\":\"2017-04-24T08:40:54.349626853Z\",\"docker_version\":\"17.03.1-ee-2\",\"id\":\"901cf725aed7b49dbc89438e9a1c695f65f00b92673261f1e6fd3c06b50f45ef\",\"os\":\"linux\",\"parent\":\"16d86325824fcaf71adaa255dc5da6d52833f48beb686c2611fa33cfe77f5a2c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"16d86325824fcaf71adaa255dc5da6d52833f48beb686c2611fa33cfe77f5a2c\",\"parent\":\"64ed9d424f86dcfca6b484fd2d0b07069d61fa1111e1464d1f79fcb5b7392138\",\"created\":\"2017-04-24T08:40:53.268256906Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  STOPSIGNAL [SIGTERM]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"64ed9d424f86dcfca6b484fd2d0b07069d61fa1111e1464d1f79fcb5b7392138\",\"parent\":\"e7fa50827c18c29893d66a16c80e724597e8af4787701db1025346162044cad9\",\"created\":\"2017-04-24T08:40:52.468112103Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY multi:d464d0aee54d7c2e075b659e53c75e568f43c3f86fa0535612402f54ff698ad1 in /etc/consul-template/templates/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e7fa50827c18c29893d66a16c80e724597e8af4787701db1025346162044cad9\",\"parent\":\"7b6417db49c6e1ad7f890761cfab1a0a6628a05089211d5375bb548a0a14bd98\",\"created\":\"2017-04-24T08:40:51.235653453Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) COPY file:3674583c90c5d680d62afdf013a82f30a7737cf6f0c4d5b4f003293ceb7e8011 in /etc/consul-template/conf/ \"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7b6417db49c6e1ad7f890761cfab1a0a6628a05089211d5375bb548a0a14bd98\",\"parent\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"created\":\"2017-04-24T08:40:50.179603038Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/etc/consul-template/output]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"72b305c88c904ab66423e360fb44a344c87302bdca980d728448c50ef9790261\",\"parent\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"created\":\"2017-04-24T08:40:49.201794334Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/etc/consul-template/conf]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"1c5b6b6632a066d4d25286ba83088ac783e9fd843604e30750f74332c8274e1a\",\"parent\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-04-24T08:40:48.823824526Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  VOLUME [/etc/consul-template/templates]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"10dd75e40ed7057fae6f8e40c5db413d4e33aa71bfdada7ec48962fbff10df4f\",\"created\":\"2017-03-03T20:32:37.723773456Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:730030a984f5f0c5dc9b15ab61da161082b5c0f6e112a9c921b42321140c3927 in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:faa4a2642f069ca93c280a19da987aec9373bc18f6f89c0c60623507e22d76b6"
+            },
+            {
+                "blobSum": "sha256:2557e1e2b73c4747ffe0cac61e889fe612167fcf6684ad4240ca0c0be0ebc0da"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:627beaf3eaaff1c0bc3311d60fb933c17ad04fe377e1043d9593646d8ae3bfe1"
+            }
+        ],
+        "name": "inetsoftware/jenkins-discovery-data",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjU0MzUsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNjowN1oifQ",
+                "signature": "1ULjXA9O6SMBtIExLgG85XP1ni8J77Sw-f9FrR1qr5RzUNQ_9MeQE5-sRGIWtbQS-SQmOgcmiQu6m5n2mIXxZQ",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "GPidct-zVsMl1rFGkejTmG554XLRLaVCVqL4nV1zUCc",
+                        "kid": "2XCT:4V4N:WRTN:GFZV:FAIV:WPKE:RPEC:7FXL:N2PO:BP7I:C5YB:XWE7",
+                        "x": "fcpoqUUb-BqBsUFoNRteVxWQooO6QUKed7neS--Blyg"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

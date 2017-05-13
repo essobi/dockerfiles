@@ -1,0 +1,258 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jack Kwong\",\"config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.11\",\"PYTHON_PIP_VERSION=8.1.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"/bin/bash -c \\\"jupyter notebook --NotebookApp.ip='*' --MultiKernelManager.default_kernel_name='py2' -y --no-browser --notebook-dir='/root/notebooks' --port=8888\\\"\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bcec61ea45bf75982eca488c1e28a4cf6ab069d3462290ae60e11e9a1df11e72\",\"Volumes\":null,\"WorkingDir\":\"/root/notebooks/course\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"e94fbf04aa13540cdb66eaa993e8e555e96ea16e4ee2231848bd0d75e4335b1d\",\"container_config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.11\",\"PYTHON_PIP_VERSION=8.1.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 8888/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bcec61ea45bf75982eca488c1e28a4cf6ab069d3462290ae60e11e9a1df11e72\",\"Volumes\":null,\"WorkingDir\":\"/root/notebooks/course\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-01T06:16:32.888474528Z\",\"docker_version\":\"1.10.2\",\"id\":\"4e565f1cbd67a02da5703515a87b868eb6f4a462aa8c5ee05abd65ab95f20f52\",\"os\":\"linux\",\"parent\":\"7e9ca910274c9274cbb862c7c62e4b88ec843322b11ab042114b1af3036aa38b\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e9ca910274c9274cbb862c7c62e4b88ec843322b11ab042114b1af3036aa38b\",\"parent\":\"a971397035b4d07e66157fd73e1205185fc7b331fc193d1771f767e76752acbf\",\"created\":\"2016-04-01T06:16:32.784324985Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"/bin/bash -c \\\\\\\"jupyter notebook --NotebookApp.ip='*' --MultiKernelManager.default_kernel_name='py2' -y --no-browser --notebook-dir='/root/notebooks' --port=8888\\\\\\\"\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a971397035b4d07e66157fd73e1205185fc7b331fc193d1771f767e76752acbf\",\"parent\":\"36f1c9a96d4e36779ec4920a5370a33bc62113a74ede518e60a14716875e27d4\",\"created\":\"2016-04-01T06:16:32.434810858Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/cs109/2015lab1 \\u0026\\u0026     git clone https://github.com/cs109/2015lab2 \\u0026\\u0026     git clone https://github.com/cs109/2015lab3 \\u0026\\u0026     git clone https://github.com/cs109/2015lab4 \\u0026\\u0026     git clone https://github.com/cs109/2015lab5 \\u0026\\u0026     git clone https://github.com/cs109/2015lab6 \\u0026\\u0026     git clone https://github.com/cs109/2015lab7 \\u0026\\u0026     git clone https://github.com/cs109/2015lab8 \\u0026\\u0026     git clone https://github.com/cs109/2015lab9 \\u0026\\u0026     git clone https://github.com/cs109/2015lab10 \\u0026\\u0026     git clone https://github.com/cs109/2015lab11 \\u0026\\u0026     git clone https://github.com/cs109/cs109_data \\u0026\\u0026     git clone https://github.com/cs109/2015.git\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"36f1c9a96d4e36779ec4920a5370a33bc62113a74ede518e60a14716875e27d4\",\"parent\":\"36464cc89b0fa6f129341af007f43000a8363a01bc3bf8905720ac181c0ed974\",\"created\":\"2016-04-01T06:15:53.914251065Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /root/notebooks/course\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"36464cc89b0fa6f129341af007f43000a8363a01bc3bf8905720ac181c0ed974\",\"parent\":\"c4d4d9ff73de1a86448d152d81e21fc8b1dec7b4f2e081469f2eb254606e9df2\",\"created\":\"2016-04-01T06:15:53.808051282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /root/notebooks/course\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4d4d9ff73de1a86448d152d81e21fc8b1dec7b4f2e081469f2eb254606e9df2\",\"parent\":\"cfafb1744ce76132f3546d11441f6d948aa2854a33437dadc83b02784d542526\",\"created\":\"2016-04-01T06:15:51.646732606Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y --fix-missing curl git vim build-essential python-dev pkg-config libfreetype6-dev libpng-dev libblas-dev liblapack-dev gfortran libxml2-dev libxslt1-dev libjpeg62-turbo-dev r-base \\u0026\\u0026     apt-get clean \\u0026\\u0026     pip install notebook ipykernel pandas numpy scipy seaborn pyquery beautifulsoup4 numexpr requests scikit-learn statsmodels Pillow simplejson gensim rpy2 findspark secret \\u0026\\u0026     apt-get autoremove -y --purge build-essential python-dev pkg-config libfreetype6-dev libpng-dev libblas-dev liblapack-dev gfortran libxml2-dev libxslt1-dev libjpeg62-turbo-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfafb1744ce76132f3546d11441f6d948aa2854a33437dadc83b02784d542526\",\"parent\":\"6ec2bb72f78d18094c1358f97d21e1d2d7b2e7e8b29289109cdfca22a27cda16\",\"created\":\"2016-04-01T05:03:47.75574076Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jack Kwong\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6ec2bb72f78d18094c1358f97d21e1d2d7b2e7e8b29289109cdfca22a27cda16\",\"parent\":\"a1fc0feb652c705afd22db6d4614497b6b00bdccae1d82ef3a9a824534a302a6\",\"created\":\"2016-03-19T01:11:42.603165939Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"python2\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a1fc0feb652c705afd22db6d4614497b6b00bdccae1d82ef3a9a824534a302a6\",\"parent\":\"e10231e4d8922bbd426fb033056f9988afd2c9b489b31fc6eed1063e84295922\",\"created\":\"2016-03-19T01:11:41.145141637Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\tcurl \\t\\tgcc \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibncurses-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tmake \\t\\txz-utils \\t\\tzlib1g-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\u0026\\u0026 curl -fSL \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" -o python.tar.xz \\t\\u0026\\u0026 curl -fSL \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" -o python.tar.xz.asc \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure --enable-shared --enable-unicode=ucs4 \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\u0026\\u0026 curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 \\t\\u0026\\u0026 pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \\t\\u0026\\u0026 find /usr/local \\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t-o \\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t-exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e10231e4d8922bbd426fb033056f9988afd2c9b489b31fc6eed1063e84295922\",\"parent\":\"58a11921cfabeb632bac820a7353c8f5040302a140b5ecfff481f2d4c236f03e\",\"created\":\"2016-03-19T01:08:38.346900585Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PYTHON_PIP_VERSION=8.1.1\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58a11921cfabeb632bac820a7353c8f5040302a140b5ecfff481f2d4c236f03e\",\"parent\":\"5814c5dae2bcb2f7ecfe1887abb3cdd5bf9f1c6d6544e7f33cc8ca7190ae84bf\",\"created\":\"2016-03-02T14:05:34.959501998Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PYTHON_VERSION=2.7.11\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5814c5dae2bcb2f7ecfe1887abb3cdd5bf9f1c6d6544e7f33cc8ca7190ae84bf\",\"parent\":\"e3104897e4e998c5a8705af19277850f33c4efb7554ab235d1d59d9af947cb31\",\"created\":\"2016-03-02T14:05:34.367577698Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e3104897e4e998c5a8705af19277850f33c4efb7554ab235d1d59d9af947cb31\",\"parent\":\"620c8de2477945882e763ff7107d5e288894b788c6c5b94989358df4022aa392\",\"created\":\"2016-03-02T14:05:33.605654237Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tlibsqlite3-0 \\t\\tlibssl1.0.0 \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"620c8de2477945882e763ff7107d5e288894b788c6c5b94989358df4022aa392\",\"parent\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"created\":\"2016-03-02T13:54:39.287285447Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=C.UTF-8\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"parent\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"created\":\"2016-03-02T13:54:38.713578986Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get purge -y python.*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"parent\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:14.143360029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:11.375621601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:3f811a66ed0a00ba248c9f6c210969ffdda2635444842b8c0a8a1e49a2326101"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ea1c6f117f8d345fe83a1b8261581ff5cc7fdb5455651a24c7b4cc6cc7cf3f1a"
+            },
+            {
+                "blobSum": "sha256:e6759728477a5e3541cab7e9e6fe03e7571948bd3bd54e641fe35d2331683bb9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:09da9edcb0b41319f47a56f0a67bc370aee08cae742ce4a16708e08647718203"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42"
+            }
+        ],
+        "name": "kwong999999/data-science-study-env-for-cs109",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyODc2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6MzVaIn0",
+                "signature": "5lIw2qO1ZYGeiTG7cZgOlZacn3Qsr_SN4-xVYhwiKz2aN8hvnpcCK2Ajzio-f83--K-onj2wCvDpfiuwu_Z4dw",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "quD509_uBzNqK6dZBZuuWa4S7ronABZ1s6n1Y_XeHfY",
+                        "kid": "VNJX:OJX6:VLWJ:2Z3U:MNIO:RMJY:CWTW:SXPJ:NTW5:Z5PN:DJ52:6XWH",
+                        "x": "nXY0zFLFdRRI0Nljiv1Ju0jJAzp-vQWM0yQAiSYwD5E"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Jack Kwong\",\"config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.11\",\"PYTHON_PIP_VERSION=8.1.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"/bin/bash -c \\\"jupyter notebook --NotebookApp.ip='*' --MultiKernelManager.default_kernel_name='py2' -y --no-browser --notebook-dir='/root/notebooks' --port=8888\\\"\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bcec61ea45bf75982eca488c1e28a4cf6ab069d3462290ae60e11e9a1df11e72\",\"Volumes\":null,\"WorkingDir\":\"/root/notebooks/course\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"e94fbf04aa13540cdb66eaa993e8e555e96ea16e4ee2231848bd0d75e4335b1d\",\"container_config\":{\"Hostname\":\"e5c68db50333\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"ExposedPorts\":{\"8888/tcp\":{}},\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"LANG=C.UTF-8\",\"GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\",\"PYTHON_VERSION=2.7.11\",\"PYTHON_PIP_VERSION=8.1.1\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"#(nop) EXPOSE 8888/tcp\"],\"ArgsEscaped\":true,\"Image\":\"sha256:bcec61ea45bf75982eca488c1e28a4cf6ab069d3462290ae60e11e9a1df11e72\",\"Volumes\":null,\"WorkingDir\":\"/root/notebooks/course\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2016-04-01T06:16:32.888474528Z\",\"docker_version\":\"1.10.2\",\"id\":\"4e565f1cbd67a02da5703515a87b868eb6f4a462aa8c5ee05abd65ab95f20f52\",\"os\":\"linux\",\"parent\":\"7e9ca910274c9274cbb862c7c62e4b88ec843322b11ab042114b1af3036aa38b\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"7e9ca910274c9274cbb862c7c62e4b88ec843322b11ab042114b1af3036aa38b\",\"parent\":\"a971397035b4d07e66157fd73e1205185fc7b331fc193d1771f767e76752acbf\",\"created\":\"2016-04-01T06:16:32.784324985Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/sh\\\" \\\"-c\\\" \\\"/bin/bash -c \\\\\\\"jupyter notebook --NotebookApp.ip='*' --MultiKernelManager.default_kernel_name='py2' -y --no-browser --notebook-dir='/root/notebooks' --port=8888\\\\\\\"\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a971397035b4d07e66157fd73e1205185fc7b331fc193d1771f767e76752acbf\",\"parent\":\"36f1c9a96d4e36779ec4920a5370a33bc62113a74ede518e60a14716875e27d4\",\"created\":\"2016-04-01T06:16:32.434810858Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c git clone https://github.com/cs109/2015lab1 \\u0026\\u0026     git clone https://github.com/cs109/2015lab2 \\u0026\\u0026     git clone https://github.com/cs109/2015lab3 \\u0026\\u0026     git clone https://github.com/cs109/2015lab4 \\u0026\\u0026     git clone https://github.com/cs109/2015lab5 \\u0026\\u0026     git clone https://github.com/cs109/2015lab6 \\u0026\\u0026     git clone https://github.com/cs109/2015lab7 \\u0026\\u0026     git clone https://github.com/cs109/2015lab8 \\u0026\\u0026     git clone https://github.com/cs109/2015lab9 \\u0026\\u0026     git clone https://github.com/cs109/2015lab10 \\u0026\\u0026     git clone https://github.com/cs109/2015lab11 \\u0026\\u0026     git clone https://github.com/cs109/cs109_data \\u0026\\u0026     git clone https://github.com/cs109/2015.git\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"36f1c9a96d4e36779ec4920a5370a33bc62113a74ede518e60a14716875e27d4\",\"parent\":\"36464cc89b0fa6f129341af007f43000a8363a01bc3bf8905720ac181c0ed974\",\"created\":\"2016-04-01T06:15:53.914251065Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) WORKDIR /root/notebooks/course\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"36464cc89b0fa6f129341af007f43000a8363a01bc3bf8905720ac181c0ed974\",\"parent\":\"c4d4d9ff73de1a86448d152d81e21fc8b1dec7b4f2e081469f2eb254606e9df2\",\"created\":\"2016-04-01T06:15:53.808051282Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /root/notebooks/course\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4d4d9ff73de1a86448d152d81e21fc8b1dec7b4f2e081469f2eb254606e9df2\",\"parent\":\"cfafb1744ce76132f3546d11441f6d948aa2854a33437dadc83b02784d542526\",\"created\":\"2016-04-01T06:15:51.646732606Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026     apt-get install -y --fix-missing curl git vim build-essential python-dev pkg-config libfreetype6-dev libpng-dev libblas-dev liblapack-dev gfortran libxml2-dev libxslt1-dev libjpeg62-turbo-dev r-base \\u0026\\u0026     apt-get clean \\u0026\\u0026     pip install notebook ipykernel pandas numpy scipy seaborn pyquery beautifulsoup4 numexpr requests scikit-learn statsmodels Pillow simplejson gensim rpy2 findspark secret \\u0026\\u0026     apt-get autoremove -y --purge build-essential python-dev pkg-config libfreetype6-dev libpng-dev libblas-dev liblapack-dev gfortran libxml2-dev libxslt1-dev libjpeg62-turbo-dev\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"cfafb1744ce76132f3546d11441f6d948aa2854a33437dadc83b02784d542526\",\"parent\":\"6ec2bb72f78d18094c1358f97d21e1d2d7b2e7e8b29289109cdfca22a27cda16\",\"created\":\"2016-04-01T05:03:47.75574076Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) MAINTAINER Jack Kwong\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"6ec2bb72f78d18094c1358f97d21e1d2d7b2e7e8b29289109cdfca22a27cda16\",\"parent\":\"a1fc0feb652c705afd22db6d4614497b6b00bdccae1d82ef3a9a824534a302a6\",\"created\":\"2016-03-19T01:11:42.603165939Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"python2\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"a1fc0feb652c705afd22db6d4614497b6b00bdccae1d82ef3a9a824534a302a6\",\"parent\":\"e10231e4d8922bbd426fb033056f9988afd2c9b489b31fc6eed1063e84295922\",\"created\":\"2016-03-19T01:11:41.145141637Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -ex \\t\\u0026\\u0026 buildDeps=' \\t\\tcurl \\t\\tgcc \\t\\tlibbz2-dev \\t\\tlibc6-dev \\t\\tlibncurses-dev \\t\\tlibreadline-dev \\t\\tlibsqlite3-dev \\t\\tlibssl-dev \\t\\tmake \\t\\txz-utils \\t\\tzlib1g-dev \\t' \\t\\u0026\\u0026 apt-get update \\u0026\\u0026 apt-get install -y $buildDeps --no-install-recommends \\u0026\\u0026 rm -rf /var/lib/apt/lists/* \\t\\u0026\\u0026 curl -fSL \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\\\" -o python.tar.xz \\t\\u0026\\u0026 curl -fSL \\\"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\\\" -o python.tar.xz.asc \\t\\u0026\\u0026 export GNUPGHOME=\\\"$(mktemp -d)\\\" \\t\\u0026\\u0026 gpg --keyserver ha.pool.sks-keyservers.net --recv-keys \\\"$GPG_KEY\\\" \\t\\u0026\\u0026 gpg --batch --verify python.tar.xz.asc python.tar.xz \\t\\u0026\\u0026 rm -r \\\"$GNUPGHOME\\\" python.tar.xz.asc \\t\\u0026\\u0026 mkdir -p /usr/src/python \\t\\u0026\\u0026 tar -xJC /usr/src/python --strip-components=1 -f python.tar.xz \\t\\u0026\\u0026 rm python.tar.xz \\t\\t\\u0026\\u0026 cd /usr/src/python \\t\\u0026\\u0026 ./configure --enable-shared --enable-unicode=ucs4 \\t\\u0026\\u0026 make -j$(nproc) \\t\\u0026\\u0026 make install \\t\\u0026\\u0026 ldconfig \\t\\u0026\\u0026 curl -fSL 'https://bootstrap.pypa.io/get-pip.py' | python2 \\t\\u0026\\u0026 pip install --no-cache-dir --upgrade pip==$PYTHON_PIP_VERSION \\t\\u0026\\u0026 find /usr/local \\t\\t\\\\( -type d -a -name test -o -name tests \\\\) \\t\\t-o \\\\( -type f -a -name '*.pyc' -o -name '*.pyo' \\\\) \\t\\t-exec rm -rf '{}' + \\t\\u0026\\u0026 apt-get purge -y --auto-remove $buildDeps \\t\\u0026\\u0026 rm -rf /usr/src/python\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e10231e4d8922bbd426fb033056f9988afd2c9b489b31fc6eed1063e84295922\",\"parent\":\"58a11921cfabeb632bac820a7353c8f5040302a140b5ecfff481f2d4c236f03e\",\"created\":\"2016-03-19T01:08:38.346900585Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PYTHON_PIP_VERSION=8.1.1\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"58a11921cfabeb632bac820a7353c8f5040302a140b5ecfff481f2d4c236f03e\",\"parent\":\"5814c5dae2bcb2f7ecfe1887abb3cdd5bf9f1c6d6544e7f33cc8ca7190ae84bf\",\"created\":\"2016-03-02T14:05:34.959501998Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV PYTHON_VERSION=2.7.11\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5814c5dae2bcb2f7ecfe1887abb3cdd5bf9f1c6d6544e7f33cc8ca7190ae84bf\",\"parent\":\"e3104897e4e998c5a8705af19277850f33c4efb7554ab235d1d59d9af947cb31\",\"created\":\"2016-03-02T14:05:34.367577698Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV GPG_KEY=C01E1CAD5EA2C4F0B8E3571504C367C218ADD4FF\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"e3104897e4e998c5a8705af19277850f33c4efb7554ab235d1d59d9af947cb31\",\"parent\":\"620c8de2477945882e763ff7107d5e288894b788c6c5b94989358df4022aa392\",\"created\":\"2016-03-02T14:05:33.605654237Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update \\u0026\\u0026 apt-get install -y --no-install-recommends \\t\\tca-certificates \\t\\tlibsqlite3-0 \\t\\tlibssl1.0.0 \\t\\u0026\\u0026 rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"620c8de2477945882e763ff7107d5e288894b788c6c5b94989358df4022aa392\",\"parent\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"created\":\"2016-03-02T13:54:39.287285447Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ENV LANG=C.UTF-8\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"51470ecf81f57b4f99f413c282f6f28dfd1bcf600cb2725da1ea508dc2792eac\",\"parent\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"created\":\"2016-03-02T13:54:38.713578986Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get purge -y python.*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"df4594476bac39bceace2319bd473d5ee1bf6c6e0c4359d27f0f5c3a449d57b7\",\"parent\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:14.143360029Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) CMD [\\\"/bin/bash\\\"]\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"de71d31c0d5b564cf656b5f01fddf152e9811c3b9a753f25afa1ff0976c97cf9\",\"created\":\"2016-03-01T18:51:11.375621601Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:b5391cb13172fb513dbfca0b8471ea02bffa913ffdab94ad864d892d129318c6 in /\"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:3f811a66ed0a00ba248c9f6c210969ffdda2635444842b8c0a8a1e49a2326101"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:ea1c6f117f8d345fe83a1b8261581ff5cc7fdb5455651a24c7b4cc6cc7cf3f1a"
+            },
+            {
+                "blobSum": "sha256:e6759728477a5e3541cab7e9e6fe03e7571948bd3bd54e641fe35d2331683bb9"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:09da9edcb0b41319f47a56f0a67bc370aee08cae742ce4a16708e08647718203"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:4acc72bc5fffd1b887fde7bc1d80914ac3d66efc4bdabccc30113b8642fd4331"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:fdd5d7827f33ef075f45262a0f74ac96ec8a5e687faeb40135319764963dcb42"
+            }
+        ],
+        "name": "kwong999999/data-science-study-env-for-cs109",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjEyODc2LCJmb3JtYXRUYWlsIjoiQ24wIiwidGltZSI6IjIwMTctMDUtMTNUMDM6MTM6MzVaIn0",
+                "signature": "-vwa_yqYpe0DHzJYFDiGidRd6OdLBeXNW_l6gkBgw4vO4x-WxBpxyfHmVkKezIGuYitealVvlhTxyZX8eWxZJA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "UO58s2qNtEnLRp90DFpz8DI1dgJOZiP2uh5Fsgq9s1U",
+                        "kid": "6WVX:P6FY:RUWS:DPAK:NPLX:SIT6:EK7D:HNQT:QWWA:M2MQ:FMIN:OO2S",
+                        "x": "P-dDuy7jI_a8A__Hj3rlZUtx5UQwp-G6fkeU881gW8Y"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}

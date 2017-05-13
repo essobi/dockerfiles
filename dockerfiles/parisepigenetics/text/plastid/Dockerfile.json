@@ -1,0 +1,210 @@
+{
+    "v1": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\",\"config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:0a6c284aee8e511beffbd40300ba3da3bc92fc9d1818ea0f61ca291350597662\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"4f4467a6c558dd4d5479003b79deff3f0e08256f81dfee4168c915f4601f9b1b\",\"container_config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"export PATH=~/bin:~/.local.bin:/usr/local/bin:$PATH\"],\"ArgsEscaped\":true,\"Image\":\"sha256:0a6c284aee8e511beffbd40300ba3da3bc92fc9d1818ea0f61ca291350597662\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-03T18:39:05.670639705Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"f6bb44fa09e8f2c6ed4ba190972906d706695834b07d63b0e467e4e05e5a414c\",\"os\":\"linux\",\"parent\":\"625fed693904b827940b96643cf7e2dd442102781d8fd3bd03c805f1aeeb787c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"625fed693904b827940b96643cf7e2dd442102781d8fd3bd03c805f1aeeb787c\",\"parent\":\"bfc7cfd350dc5b78b8143743fa4dbf98f8efd09b17b65ef747fb1c030edce3e6\",\"created\":\"2017-04-03T18:39:01.003595781Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install plastid\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bfc7cfd350dc5b78b8143743fa4dbf98f8efd09b17b65ef747fb1c030edce3e6\",\"parent\":\"fd71b5dd772fcd5637bab39a44995e73e48ea897bc6e6e0a734014d7a558a76c\",\"created\":\"2017-04-03T18:35:04.747108261Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install numpy pysam cython\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fd71b5dd772fcd5637bab39a44995e73e48ea897bc6e6e0a734014d7a558a76c\",\"parent\":\"db72dfd402ef2e8d1eed4510b2c8ae9a7e06913ee2a9703cf545ba25c1714adf\",\"created\":\"2017-04-03T18:34:42.931844686Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db72dfd402ef2e8d1eed4510b2c8ae9a7e06913ee2a9703cf545ba25c1714adf\",\"parent\":\"c2cf89d7ac87783aaf8364901fda604a2521a124af19b0a6dfb2cd1dab31c054\",\"created\":\"2017-04-03T18:34:14.75667676Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python python-pip\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c2cf89d7ac87783aaf8364901fda604a2521a124af19b0a6dfb2cd1dab31c054\",\"parent\":\"5e3e8ad665c020c14cf4816d03fab015dc568e64938a3c3ee801da7197c33ade\",\"created\":\"2017-04-03T18:28:55.057181703Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e3e8ad665c020c14cf4816d03fab015dc568e64938a3c3ee801da7197c33ade\",\"parent\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"created\":\"2017-04-03T18:28:45.069200895Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"parent\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"created\":\"2017-02-27T19:42:10.522384312Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"parent\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"created\":\"2017-02-27T19:41:56.729994037Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"parent\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"created\":\"2017-02-27T19:41:55.567190314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"parent\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"created\":\"2017-02-27T19:41:54.422121618Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"parent\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:53.273203152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:42.322618191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:efb254bc677d66d6af39893698d55c79bf13f4daee5053601c5c17df91657e6e in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:50137833be0796a00dc7ef20a562886937ec5acee030dfeffec0a2123c2eca22"
+            },
+            {
+                "blobSum": "sha256:040161a5fdb8b93e5027367ded84fb7f3c4368d1500e9ac60ffd111310ac2699"
+            },
+            {
+                "blobSum": "sha256:12af07eb5cff68762388d142893ed430cb11e24b5c6caa7c21854fbe534e7836"
+            },
+            {
+                "blobSum": "sha256:38954e50e1b8648af1d17ce427f7f22964407c0a90fe42bcdbe8aa4c43d70972"
+            },
+            {
+                "blobSum": "sha256:57c5516a9bec8b9929b0897c32f1e9870ef61d046e79ae690eae10442a2b620a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6d9ef359eaaa311860550b478790123c4b22a2eaede8f8f46691b0b4433c08cf"
+            },
+            {
+                "blobSum": "sha256:9654c40e9079e3d5b271ec71f6d83f8ce80cfa6f09d9737fc6bfd4d2456fed3f"
+            },
+            {
+                "blobSum": "sha256:e8db7bf7c39fab6fec91b1b61e3914f21e60233c9823dd57c60bc360191aaf0d"
+            },
+            {
+                "blobSum": "sha256:f8b845f45a87dc7c095b15f3d9661e640ebc86f42cd8e8ab36674846472027f7"
+            },
+            {
+                "blobSum": "sha256:d54efb8db41d4ac23d29469940ec92da94c9a6c2d9e26ec060bebad1d1b0e48d"
+            }
+        ],
+        "name": "parisepigenetics/plastid",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjkxNzAsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNTo0NVoifQ",
+                "signature": "sRNgy-wDQLlnUSQgtuAYnIkQrioJKdqd4uc8jgvp5BBlhT6QsNvEtTER5gGV_vj0g13-AqV0Ddbn7UxYz3RJ3w",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "jKwuTJa5npR7IqP6F_tQ_E6DXjIC00UBL2zpj7vn7ME",
+                        "kid": "6JLX:PQSL:2EMG:WH2Z:Q74M:MGJO:HOEC:LTAQ:2CRD:FLEQ:HGTS:WCT3",
+                        "x": "_GLuuvcq2gBtHMuL96jAOSlux7a9_ghxqSbWkLHkN9g"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    },
+    "v2": {
+        "schemaVersion": 1,
+        "tag": "latest",
+        "architecture": "amd64",
+        "history": [
+            {
+                "v1Compatibility": "{\"architecture\":\"amd64\",\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\",\"config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/bash\"],\"ArgsEscaped\":true,\"Image\":\"sha256:0a6c284aee8e511beffbd40300ba3da3bc92fc9d1818ea0f61ca291350597662\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"container\":\"4f4467a6c558dd4d5479003b79deff3f0e08256f81dfee4168c915f4601f9b1b\",\"container_config\":{\"Hostname\":\"bbdeb8fab105\",\"Domainname\":\"\",\"User\":\"\",\"AttachStdin\":false,\"AttachStdout\":false,\"AttachStderr\":false,\"Tty\":false,\"OpenStdin\":false,\"StdinOnce\":false,\"Env\":[\"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\"],\"Cmd\":[\"/bin/sh\",\"-c\",\"export PATH=~/bin:~/.local.bin:/usr/local/bin:$PATH\"],\"ArgsEscaped\":true,\"Image\":\"sha256:0a6c284aee8e511beffbd40300ba3da3bc92fc9d1818ea0f61ca291350597662\",\"Volumes\":null,\"WorkingDir\":\"\",\"Entrypoint\":null,\"OnBuild\":[],\"Labels\":{}},\"created\":\"2017-04-03T18:39:05.670639705Z\",\"docker_version\":\"1.12.6-cs6\",\"id\":\"f6bb44fa09e8f2c6ed4ba190972906d706695834b07d63b0e467e4e05e5a414c\",\"os\":\"linux\",\"parent\":\"625fed693904b827940b96643cf7e2dd442102781d8fd3bd03c805f1aeeb787c\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"625fed693904b827940b96643cf7e2dd442102781d8fd3bd03c805f1aeeb787c\",\"parent\":\"bfc7cfd350dc5b78b8143743fa4dbf98f8efd09b17b65ef747fb1c030edce3e6\",\"created\":\"2017-04-03T18:39:01.003595781Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install plastid\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"bfc7cfd350dc5b78b8143743fa4dbf98f8efd09b17b65ef747fb1c030edce3e6\",\"parent\":\"fd71b5dd772fcd5637bab39a44995e73e48ea897bc6e6e0a734014d7a558a76c\",\"created\":\"2017-04-03T18:35:04.747108261Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c pip install numpy pysam cython\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fd71b5dd772fcd5637bab39a44995e73e48ea897bc6e6e0a734014d7a558a76c\",\"parent\":\"db72dfd402ef2e8d1eed4510b2c8ae9a7e06913ee2a9703cf545ba25c1714adf\",\"created\":\"2017-04-03T18:34:42.931844686Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y libpq-dev python-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev libffi-dev\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"db72dfd402ef2e8d1eed4510b2c8ae9a7e06913ee2a9703cf545ba25c1714adf\",\"parent\":\"c2cf89d7ac87783aaf8364901fda604a2521a124af19b0a6dfb2cd1dab31c054\",\"created\":\"2017-04-03T18:34:14.75667676Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get install -y python python-pip\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c2cf89d7ac87783aaf8364901fda604a2521a124af19b0a6dfb2cd1dab31c054\",\"parent\":\"5e3e8ad665c020c14cf4816d03fab015dc568e64938a3c3ee801da7197c33ade\",\"created\":\"2017-04-03T18:28:55.057181703Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c apt-get update\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"5e3e8ad665c020c14cf4816d03fab015dc568e64938a3c3ee801da7197c33ade\",\"parent\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"created\":\"2017-04-03T18:28:45.069200895Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  MAINTAINER Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\"]},\"author\":\"Alexandra Bomane, alexandra.bomane@univ-paris-diderot.fr\",\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"20cbccfbf9708cc00bf0f28e2dfcbfc5a74ad3daeb077456a71cf17d012f6a8d\",\"parent\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"created\":\"2017-02-27T19:42:10.522384312Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop)  CMD [\\\"/bin/bash\\\"]\"]},\"throwaway\":true}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"109d5efde28acf25520b698c48f405325500007620eba44f3956abc727f312fe\",\"parent\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"created\":\"2017-02-27T19:41:56.729994037Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c mkdir -p /run/systemd \\u0026\\u0026 echo 'docker' \\u003e /run/systemd/container\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"c4cb212fd6fe2e4c89c5b05db3c8257f6f7fff51fd7395e4fa2e66196b1b9e7a\",\"parent\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"created\":\"2017-02-27T19:41:55.567190314Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c sed -i 's/^#\\\\s*\\\\(deb.*universe\\\\)$/\\\\1/g' /etc/apt/sources.list\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"0ce8ddcea42185aac1b68778a6cf9058904ce17b3a975b2fd73f98fec0086844\",\"parent\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"created\":\"2017-02-27T19:41:54.422121618Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c rm -rf /var/lib/apt/lists/*\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"fa1b78b7309e4392bde7dc46fdf59553df54b0325eb104f4597f8eb8c08374ce\",\"parent\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:53.273203152Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c set -xe \\t\\t\\u0026\\u0026 echo '#!/bin/sh' \\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 echo 'exit 101' \\u003e\\u003e /usr/sbin/policy-rc.d \\t\\u0026\\u0026 chmod +x /usr/sbin/policy-rc.d \\t\\t\\u0026\\u0026 dpkg-divert --local --rename --add /sbin/initctl \\t\\u0026\\u0026 cp -a /usr/sbin/policy-rc.d /sbin/initctl \\t\\u0026\\u0026 sed -i 's/^exit.*/exit 0/' /sbin/initctl \\t\\t\\u0026\\u0026 echo 'force-unsafe-io' \\u003e /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \\t\\t\\u0026\\u0026 echo 'DPkg::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'APT::Update::Post-Invoke { \\\"rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true\\\"; };' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\u0026\\u0026 echo 'Dir::Cache::pkgcache \\\"\\\"; Dir::Cache::srcpkgcache \\\"\\\";' \\u003e\\u003e /etc/apt/apt.conf.d/docker-clean \\t\\t\\u0026\\u0026 echo 'Acquire::Languages \\\"none\\\";' \\u003e /etc/apt/apt.conf.d/docker-no-languages \\t\\t\\u0026\\u0026 echo 'Acquire::GzipIndexes \\\"true\\\"; Acquire::CompressionTypes::Order:: \\\"gz\\\";' \\u003e /etc/apt/apt.conf.d/docker-gzip-indexes \\t\\t\\u0026\\u0026 echo 'Apt::AutoRemove::SuggestsImportant \\\"false\\\";' \\u003e /etc/apt/apt.conf.d/docker-autoremove-suggests\"]}}"
+            },
+            {
+                "v1Compatibility": "{\"id\":\"2a2723a6e3286dcee5e6f7f9009b98c76eb31ae8e9d5dc5fab9a5d9db383b1ec\",\"created\":\"2017-02-27T19:41:42.322618191Z\",\"container_config\":{\"Cmd\":[\"/bin/sh -c #(nop) ADD file:efb254bc677d66d6af39893698d55c79bf13f4daee5053601c5c17df91657e6e in / \"]}}"
+            }
+        ],
+        "fsLayers": [
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:50137833be0796a00dc7ef20a562886937ec5acee030dfeffec0a2123c2eca22"
+            },
+            {
+                "blobSum": "sha256:040161a5fdb8b93e5027367ded84fb7f3c4368d1500e9ac60ffd111310ac2699"
+            },
+            {
+                "blobSum": "sha256:12af07eb5cff68762388d142893ed430cb11e24b5c6caa7c21854fbe534e7836"
+            },
+            {
+                "blobSum": "sha256:38954e50e1b8648af1d17ce427f7f22964407c0a90fe42bcdbe8aa4c43d70972"
+            },
+            {
+                "blobSum": "sha256:57c5516a9bec8b9929b0897c32f1e9870ef61d046e79ae690eae10442a2b620a"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:a3ed95caeb02ffe68cdd9fd84406680ae93d633cb16422d00e8a7c22955b46d4"
+            },
+            {
+                "blobSum": "sha256:6d9ef359eaaa311860550b478790123c4b22a2eaede8f8f46691b0b4433c08cf"
+            },
+            {
+                "blobSum": "sha256:9654c40e9079e3d5b271ec71f6d83f8ce80cfa6f09d9737fc6bfd4d2456fed3f"
+            },
+            {
+                "blobSum": "sha256:e8db7bf7c39fab6fec91b1b61e3914f21e60233c9823dd57c60bc360191aaf0d"
+            },
+            {
+                "blobSum": "sha256:f8b845f45a87dc7c095b15f3d9661e640ebc86f42cd8e8ab36674846472027f7"
+            },
+            {
+                "blobSum": "sha256:d54efb8db41d4ac23d29469940ec92da94c9a6c2d9e26ec060bebad1d1b0e48d"
+            }
+        ],
+        "name": "parisepigenetics/plastid",
+        "signatures": [
+            {
+                "protected": "eyJmb3JtYXRMZW5ndGgiOjkxNzAsImZvcm1hdFRhaWwiOiJDbjAiLCJ0aW1lIjoiMjAxNy0wNS0xM1QwMzowNTo0NloifQ",
+                "signature": "2va9ffUXiMgXaN86-2xgBfDp516LJtbBKwoHNEcwpkCiHNxiQZ6sI11gT0G6A4N7k_x8VfJIV81hcCT8SK4QqA",
+                "header": {
+                    "jwk": {
+                        "kty": "EC",
+                        "crv": "P-256",
+                        "y": "naPQv9XEAvtdUs71nIMB9nUhA4JEk6CLGn9mhpuNj30",
+                        "kid": "M64Q:NC3Z:IUT3:CTC3:WUFI:RIZV:4WLX:LSZT:ECT7:JETI:HOXX:MVAS",
+                        "x": "VZ-aVJjfVug7_HNbPx3MOgdK-LLJDq0zAInXMRMPc_o"
+                    },
+                    "alg": "ES256"
+                }
+            }
+        ]
+    }
+}
