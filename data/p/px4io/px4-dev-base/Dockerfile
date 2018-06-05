@@ -1,0 +1,77 @@
+#  
+# PX4 base development environment  
+#  
+FROM ubuntu:xenial  
+MAINTAINER Daniel Agar <daniel@agar.ca>  
+  
+RUN apt-get update \  
+&& DEBIAN_FRONTEND=noninteractive apt-get -y --quiet --no-install-recommends
+install \  
+bzip2 \  
+ca-certificates \  
+ccache \  
+cmake \  
+curl \  
+default-jre-headless \  
+doxygen \  
+gdb \  
+g++ \  
+gcc \  
+git \  
+gosu \  
+lcov \  
+make \  
+ninja-build \  
+python-pip \  
+python-setuptools \  
+rsync \  
+unzip \  
+wget \  
+xsltproc \  
+zip \  
+&& apt-get -y autoremove \  
+&& apt-get clean autoclean \  
+&& rm -rf /var/lib/apt/lists/{apt,dpkg,cache,log} /tmp/* /var/tmp/*  
+  
+RUN python -m pip install --upgrade pip==9.0.3 \  
+&& pip install setuptools wheel \  
+&& pip install argparse jinja2 empy numpy requests serial toml  
+  
+# manual ccache setup  
+RUN ln -s /usr/bin/ccache /usr/lib/ccache/cc \  
+&& ln -s /usr/bin/ccache /usr/lib/ccache/c++  
+  
+# astyle v2.06  
+RUN wget -q
+https://downloads.sourceforge.net/project/astyle/astyle/astyle%202.06/astyle_2.06_linux.tar.gz
+-O /tmp/astyle.tar.gz \  
+&& cd /tmp && tar zxf astyle.tar.gz && cd astyle/src \  
+&& make -f ../build/gcc/Makefile && cp bin/astyle /usr/local/bin \  
+&& rm -rf /tmp/*  
+  
+# Fast-RTPS  
+RUN wget -q
+"http://www.eprosima.com/index.php/component/ars/repository/eprosima-fast-
+rtps/eprosima-fast-rtps-1-5-0/eprosima_fastrtps-1-5-0-linux-tar-gz?format=raw"
+-O /tmp/eprosima_fastrtps.tar.gz \  
+&& cd /tmp && tar zxf eprosima_fastrtps.tar.gz \  
+&& mkdir -p /usr/local/share/fastrtps \  
+&& cp eProsima_FastRTPS-1.5.0-Linux/share/fastrtps/fastrtpsgen.jar
+/usr/local/share/fastrtps/fastrtpsgen.jar \  
+&& cp eProsima_FastRTPS-1.5.0-Linux/bin/fastrtpsgen /usr/local/bin/fastrtpsgen
+\  
+&& rm -rf /tmp/*  
+  
+ENV PATH="/usr/lib/ccache:$PATH"  
+ENV TERM=xterm  
+  
+# SITL UDP PORTS  
+EXPOSE 14556/udp  
+EXPOSE 14557/udp  
+  
+# create and start as LOCAL_USER_ID  
+COPY scripts/entrypoint.sh /usr/local/bin/entrypoint.sh  
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]  
+  
+CMD ["/bin/bash"]  
+

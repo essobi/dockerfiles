@@ -1,0 +1,22 @@
+FROM alpine:latest  
+MAINTAINER "The Packer Team <packer@hashicorp.com>"  
+ENV PACKER_VERSION=1.2.4  
+ENV
+PACKER_SHA256SUM=258d1baa23498932baede9b40f2eca4ac363b86b32487b36f48f5102630e9fbb  
+  
+RUN apk add --update git bash wget openssl  
+  
+ADD
+https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip
+./  
+ADD
+https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_SHA256SUMS
+./  
+  
+RUN sed -i '/.*linux_amd64.zip/!d' packer_${PACKER_VERSION}_SHA256SUMS  
+RUN sha256sum -cs packer_${PACKER_VERSION}_SHA256SUMS  
+RUN unzip packer_${PACKER_VERSION}_linux_amd64.zip -d /bin  
+RUN rm -f packer_${PACKER_VERSION}_linux_amd64.zip  
+  
+ENTRYPOINT ["/bin/packer"]  
+

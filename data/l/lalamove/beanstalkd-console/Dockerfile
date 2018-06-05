@@ -1,0 +1,6 @@
+FROM schickling/beanstalkd-console  
+  
+CMD sh -c "AUTH=$AUTH AUTH_USERNAME=$AUTH_USERNAME
+AUTH_PASSWORD=$AUTH_PASSWORD BEANSTALK_SERVERS=$BEANSTALK_SERVERS php -S
+0.0.0.0:2080 -t /source/public"  
+

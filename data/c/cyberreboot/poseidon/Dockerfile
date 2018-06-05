@@ -1,0 +1,32 @@
+FROM alpine:3.7  
+LABEL maintainer="clewis@iqt.org"  
+  
+RUN apk upgrade --no-cache && \  
+apk add --no-cache \  
+build-base \  
+python3 \  
+python3-dev \  
+py3-paramiko \  
+tini \  
+yaml-dev && \  
+pip3 install --no-cache-dir --trusted-host pypi.python.org --upgrade pip && \  
+rm -rf /var/cache/* && \  
+rm -rf /root/.cache/*  
+  
+COPY . /tmp/poseidonWork  
+WORKDIR /tmp/poseidonWork  
+ENV PYTHONPATH /tmp/poseidonWork/poseidon:$PYTHONPATH  
+ENV POSEIDON_CONFIG /tmp/poseidonWork/config/poseidon.config  
+ENV POSEIDON_LOGGER /tmp/poseidonWork/logging.json  
+  
+# install dependencies of poseidon modules for poseidon  
+RUN find . -name requirements.txt -type f -exec pip3 install -r {} \;  
+  
+ENV PYTHONUNBUFFERED 0  
+ENV SYS_LOG_HOST NOT_CONFIGURED  
+ENV SYS_LOG_PORT 514  
+EXPOSE 9304  
+ENTRYPOINT ["tini", "--"]  
+CMD ["/usr/bin/python3",
+"/tmp/poseidonWork/poseidon/poseidonMonitor/poseidonMonitor.py"]  
+

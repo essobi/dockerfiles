@@ -1,0 +1,2 @@
+FROM appropriate/curl:latest
+

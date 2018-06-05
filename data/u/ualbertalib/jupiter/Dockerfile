@@ -1,0 +1,47 @@
+FROM ruby:2.3.4  
+LABEL maintainer="University of Alberta Libraries"  
+  
+# Need to add jessie-backports repo so we can get FFMPEG, doesn't come with
+jessie debian by default  
+# RUN echo 'deb http://ftp.debian.org/debian jessie-backports main' >>
+/etc/apt/sources.list  
+RUN apt-get update -qq \  
+&& apt-get install -y build-essential \  
+libpq-dev \  
+nodejs \  
+tzdata \  
+# libreoffice \  
+# imagemagick \  
+# ghostscript \  
+# unzip \  
+# ffmpeg \  
+&& rm -rf /var/lib/apt/lists/*  
+  
+# install fits  
+# RUN mkdir -p /usr/local/fits \  
+# && cd /usr/local/fits \  
+# && wget http://projects.iq.harvard.edu/files/fits/files/fits-1.0.6.zip \  
+# && unzip fits-1.0.6.zip \  
+# && rm fits-1.0.6.zip \  
+# && chmod a+x /usr/local/fits/fits-1.0.6/fits.sh \  
+# && ln -s /usr/local/fits/fits-1.0.6/fits.sh /usr/bin/fits  
+ENV APP_ROOT /app  
+RUN mkdir -p $APP_ROOT  
+WORKDIR $APP_ROOT  
+  
+# Preinstall gems in an earlier layer so we don't reinstall every time any
+file changes.  
+COPY Gemfile $APP_ROOT  
+COPY Gemfile.lock $APP_ROOT  
+RUN bundle install --without development test \--jobs=3 --retry=3  
+  
+# *NOW* we copy the codebase in  
+COPY . $APP_ROOT  
+  
+# Precompile Rails assets. We set a dummy database url/token key  
+RUN RAILS_ENV=uat DATABASE_URL=postgresql://user:pass@127.0.0.1/dbname
+SECRET_KEY_BASE=pickasecuretoken bundle exec rake assets:precompile  
+  
+EXPOSE 3000  
+CMD bundle exec puma -C config/puma.rb  
+

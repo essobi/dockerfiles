@@ -19,6 +19,8 @@ for name,content in dockerfiles.items():
     if not os.path.exists(repo_folder):
         os.mkdir(repo_folder)
     dockerfile = "%s/Dockerfile" %(repo_folder)
+    os.remove(dockerfile)
+    dockerfile = "%s/Dockerfile.txt" %(repo_folder)
     with open(dockerfile,'w') as filey:
         filey.writelines(content)
 

@@ -1,0 +1,2 @@
+FROM agaveapi/beanstalkd-console
+
