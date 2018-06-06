@@ -1,0 +1,49 @@
+FROM golang:1.9 as builder  
+WORKDIR /go/src/  
+RUN go get github.com/BurntSushi/toml  
+RUN git clone https://github.com/Praqma/helmsman.git  
+RUN go get github.com/Praqma/helmsman/gcs  
+RUN go get github.com/Praqma/helmsman/aws  
+# build a statically linked binary so that it works on stripped linux images
+such as alpine/busybox.  
+RUN cd helmsman \  
+&& LastTag=$(git describe --abbrev=0 --tags) \  
+&& TAG=$LastTag-$(date +"%d%m%y") \  
+&& LT_SHA=$(git rev-parse ${LastTag}^{}) \  
+&& LC_SHA=$(git rev-parse HEAD) \  
+&& if [ ${LT_SHA} != ${LC_SHA} ]; then TAG=latest-$(date +"%d%m%y"); fi \  
+&& CGO_ENABLED=0 GOOS=linux go install -a -ldflags '-X main.version='$TAG'
+-extldflags "-static"' .  
+  
+FROM alpine:3.6 as kube  
+ENV KUBE_LATEST_VERSION="v1.10.0"  
+RUN apk add --update ca-certificates  
+RUN apk add --update -t deps curl  
+RUN curl -L https://storage.googleapis.com/kubernetes-
+release/release/${KUBE_LATEST_VERSION}/bin/linux/amd64/kubectl -o
+/usr/local/bin/kubectl  
+RUN chmod +x /usr/local/bin/kubectl  
+  
+# The image to keep  
+FROM alpine:3.7  
+RUN apk add --update --no-cache ca-certificates git  
+  
+ARG HELM_VERSION=v2.8.1  
+RUN apk --no-cache update \  
+&& rm -rf /var/cache/apk/* \  
+&& apk add --update -t deps curl tar gzip make bash \  
+&& curl -L http://storage.googleapis.com/kubernetes-
+helm/helm-${HELM_VERSION}-linux-amd64.tar.gz | tar zxv -C /tmp \  
+&& mv /tmp/linux-amd64/helm /usr/local/bin/helm \  
+&& chmod +x /usr/local/bin/helm \  
+&& mkdir -p ~/.helm/plugins \  
+&& helm plugin install https://github.com/hypnoglow/helm-s3.git \  
+&& helm plugin install https://github.com/nouney/helm-gcs \  
+&& rm -rf /tmp/linux-amd64  
+  
+COPY \--from=kube /usr/local/bin/kubectl /bin/kubectl  
+COPY \--from=builder /go/bin/helmsman /bin/helmsman  
+  
+WORKDIR /tmp  
+# ENTRYPOINT ["/bin/helmsman"]  
+

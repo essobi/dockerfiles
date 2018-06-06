@@ -1,0 +1,2 @@
+from docker.io/cilium/cilium:v1.0.0-rc4  
+
