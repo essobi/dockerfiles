@@ -1,0 +1,8 @@
+FROM ubuntu:16.04  
+  
+# install compile deps  
+# additional rpm to build rpm packages  
+RUN apt-get update && apt-get install -y git cmake python3-dev qtbase5-dev
+libqt5serialport5-dev build-essential libusb-1.0-0-dev libavahi-core-dev
+libavahi-compat-libdnssd-dev libxrender-dev rpm  
+

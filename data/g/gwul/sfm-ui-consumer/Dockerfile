@@ -1,0 +1,18 @@
+FROM gwul/sfm-
+base@sha256:07b3495d4496d603d464b3f829f92e61c6d27da8b773e1076e1b6ffcfd643eaf  
+MAINTAINER Justin Littman <justinlittman@gwu.edu>  
+  
+ADD . /opt/sfm-ui/  
+WORKDIR /opt/sfm-ui  
+RUN pip install -r requirements/common.txt -r requirements/release.txt  
+  
+RUN pip install django-finalware==0.1.0  
+  
+ADD docker/consumer/invoke_consumer.sh /opt/sfm-setup/  
+RUN chmod +x /opt/sfm-setup/invoke_consumer.sh  
+  
+ENV DJANGO_SETTINGS_MODULE=sfm.settings.docker_settings  
+ENV LOAD_FIXTURES=false  
+  
+CMD ["/opt/sfm-setup/invoke_consumer.sh"]
+
