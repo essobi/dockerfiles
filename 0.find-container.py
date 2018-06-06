@@ -37,4 +37,4 @@ for w in range(start, len(words)):
     count+=1
 
 # One final save!
-pickle.dump(containers, open('containers.pkl','wb'))
+pickle.dump(containers, open('containers_%s.pkl' %save_index, 'wb'))

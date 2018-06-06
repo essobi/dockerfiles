@@ -14,7 +14,7 @@ containers = pickle.load(open('containers.pkl', 'rb'))
 # Make a data folder
 os.system('mkdir -p data')
 
-start = 371
+start = 0
 for c in range(start,len(containers)):
 
     container = containers[c]
