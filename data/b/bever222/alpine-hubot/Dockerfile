@@ -31,7 +31,7 @@ ADD hubot/hubot-scripts.json /hubot/
 ADD hubot/external-scripts.json /hubot/  
 COPY scripts scripts/  
   
-ENV HUBOT_SLACK_TOKEN xoxb-164473103668-pf24YScuu9wJpiczcUEazBY3  
+ENV HUBOT_SLACK_TOKEN xxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
 ENV HUBOT_AUTH_ADMIN U4DGCGX36  
 ENV HUBOT_CYCLE_TZ_NAME America/Chicago  
   

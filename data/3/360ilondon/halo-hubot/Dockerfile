@@ -37,7 +37,7 @@ RUN yo hubot --owner="Niki Wiles <niki.wiles@360i.com>" \--name="halo"
 COPY halo.coffee /halo/scripts/halo.coffee  
   
 # Hubot env-vars  
-ENV HUBOT_SLACK_TOKEN="xoxb-12284526871-fKocGPxDOW4F9373E3Wzc0Vz"  
+ENV HUBOT_SLACK_TOKEN="xxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  
 # CMD tail -f /dev/null  
 CMD (redis-server &) && sleep 10 && /halo/bin/hubot --name halo --adapter
 slack  
