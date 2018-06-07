@@ -1,0 +1,54 @@
+FROM bitnami/minideb-extras:jessie-r24  
+LABEL maintainer "Bitnami <containers@bitnami.com>"  
+  
+ENV BITNAMI_PKG_CHMOD="-R g+rwX" \  
+HOME="/"  
+# Install required system packages and dependencies  
+RUN bitnami-pkg install java-1.8.161-0 --checksum
+eb289afc43eda33d5920294460dc256f6543318506ca5a540bba9073412cfd06  
+RUN bitnami-pkg unpack kafka-1.0.0-3 --checksum
+ea0d23753d1df82179ffe005f6df2d2d0d8a8e5ef25feb6aeb4214372469db7c  
+  
+COPY rootfs /  
+  
+ENV ALLOW_PLAINTEXT_LISTENER="yes" \  
+BITNAMI_APP_NAME="kafka" \  
+BITNAMI_IMAGE_VERSION="1.0.0-r5" \  
+KAFKA_ADVERTISED_LISTENERS="PLAINTEXT://:9092" \  
+KAFKA_ADVERTISED_HOST_NAME="http://kafka-try-kafka-project-1.b9ad.pro-us-
+east-1.openshiftapps.com" \  
+KAFKA_BROKER_ID="-1" \  
+KAFKA_BROKER_PASSWORD="bitnami" \  
+KAFKA_BROKER_USER="user" \  
+KAFKA_DELETE_TOPIC_ENABLE="false" \  
+KAFKA_HEAP_OPTS="-Xmx1024m -Xms1024m" \  
+KAFKA_INTER_BROKER_PASSWORD="bitnami" \  
+KAFKA_INTER_BROKER_USER="admin" \  
+KAFKA_LISTENERS="PLAINTEXT://:9092" \  
+KAFKA_LOGS_DIRS="/opt/bitnami/kafka/data" \  
+KAFKA_LOG_FLUSH_INTERVAL_MESSAGES="10000" \  
+KAFKA_LOG_FLUSH_INTERVAL_MS="1000" \  
+KAFKA_LOG_RETENTION_BYTES="1073741824" \  
+KAFKA_LOG_RETENTION_CHECK_INTERVALS_MS="300000" \  
+KAFKA_LOG_RETENTION_HOURS="168" \  
+KAFKA_NUM_IO_THREADS="8" \  
+KAFKA_NUM_NETWORK_THREADS="3" \  
+KAFKA_NUM_PARTITIONS="1" \  
+KAFKA_NUM_RECOVERY_THREADS_PER_DATA_DIR="1" \  
+KAFKA_PORT_NUMBER="9092" \  
+KAFKA_SEGMENT_BYTES="1073741824" \  
+KAFKA_SOCKET_RECEIVE_BUFFER_BYTES="102400" \  
+KAFKA_SOCKET_REQUEST_MAX_BYTES="104857600" \  
+KAFKA_SOCKET_SEND_BUFFER_BYTES="102400" \  
+KAFKA_ZOOKEEPER_CONNECT="zookeeper-master.kafka-project-1.svc:2181" \  
+KAFKA_ZOOKEEPER_CONNECT_TIMEOUT_MS="6000" \  
+KAFKA_ZOOKEEPER_PASSWORD="" \  
+KAFKA_ZOOKEEPER_USER="" \  
+PATH="/opt/bitnami/java/bin:/opt/bitnami/kafka/bin:$PATH"  
+  
+EXPOSE 9092  
+  
+USER 1001  
+ENTRYPOINT ["/app-entrypoint.sh"]  
+CMD ["/run.sh"]  
+

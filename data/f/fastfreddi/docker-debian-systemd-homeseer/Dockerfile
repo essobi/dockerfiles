@@ -1,0 +1,82 @@
+  
+FROM debian:jessie  
+  
+ENV DEBIAN_FRONTEND noninteractive  
+ENV container docker  
+  
+MAINTAINER FastFreddi  
+  
+# add contrib, non-free and backports repositories  
+ADD sources.list /etc/apt/sources.list  
+# pin stable repositories  
+ADD preferences /etc/apt/preferences  
+  
+# clean out, update and install some base utilities  
+#RUN apt-get -y remove exim4-base exim4-config  
+RUN apt-get -y update && apt-get -y upgrade && apt-get clean && \  
+apt-get -y install apt-utils lsb-release curl git cron at logrotate rsyslog \  
+unattended-upgrades ssmtp lsof procps \  
+initscripts libsystemd0 libudev1 systemd sysvinit-utils udev util-linux && \  
+apt-get clean  
+  
+# set random root password  
+RUN P="$(dd if=/dev/random bs=1 count=8 2>/dev/null | base64)" ; echo $P &&
+echo "root:$P" | chpasswd  
+# set to foobar  
+#RUN P="foobar" ; echo $P && echo "root:$P" | chpasswd  
+# unattended upgrades & co  
+ADD apt_unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades  
+ADD apt_periodic /etc/apt/apt.conf.d/02periodic  
+  
+RUN cd /lib/systemd/system/sysinit.target.wants/ && \  
+ls | grep -v systemd-tmpfiles-setup.service | xargs rm -f && \  
+rm -f /lib/systemd/system/sockets.target.wants/*udev* && \  
+systemctl mask -- \  
+tmp.mount \  
+etc-hostname.mount \  
+etc-hosts.mount \  
+etc-resolv.conf.mount \  
+-.mount \  
+swap.target \  
+getty.target \  
+getty-static.service \  
+dev-mqueue.mount \  
+systemd-tmpfiles-setup-dev.service \  
+systemd-remount-fs.service \  
+systemd-ask-password-wall.path \  
+systemd-logind.service && \  
+systemctl set-default multi-user.target || true  
+  
+RUN sed -ri /etc/systemd/journald.conf \  
+-e 's!^#?Storage=.*!Storage=volatile!'  
+ADD container-boot.service /etc/systemd/system/container-boot.service  
+RUN mkdir -p /etc/container-boot.d && \  
+systemctl enable container-boot.service  
+  
+# stuff for HomeSeer  
+RUN apt-get update && apt-get upgrade -y && \  
+apt-get install -y mono-vbnc libmono-system-web4.0.cil libmono-system-
+design4.0.cil \  
+libmono-system-web-extensions4.0-cil libmono-system-runtime-caching4.0-cil
+flite chromium \  
+libmono-system-data-datasetextensions4.0-cil libmono-system-xml-linq4.0-cil
+mono-complete sudo wget vim && \  
+apt-get update -y && apt-get clean  
+  
+# HomeSeer Install  
+RUN wget http://homeseer.com/updates3/hs3_linux_3_0_0_312.tar.gz && \  
+tar xvf hs3_linux_3_0_0_312.tar.gz -C /usr/local && rm
+hs3_linux_3_0_0_312.tar.gz  
+  
+# run stuff  
+ADD configurator.sh configurator_dumpenv.sh /root/  
+ADD homeseer.service configurator.service configurator_dumpenv.service
+/etc/systemd/system/  
+RUN chmod 700 /root/configurator.sh /root/configurator_dumpenv.sh && \  
+systemctl enable configurator.service configurator_dumpenv.service
+homeseer.service  
+  
+VOLUME [ "/sys/fs/cgroup", "/run", "/run/lock", "/tmp" ]  
+CMD ["/lib/systemd/systemd"]  
+  
+

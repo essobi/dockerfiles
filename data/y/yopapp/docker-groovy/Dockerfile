@@ -1,0 +1,3 @@
+FROM groovy  
+USER root
+

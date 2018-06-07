@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-from sregistry.main import get_client
-from sregistry.utils import ( write_file, write_json )
+from sregistry.utils import write_file
 from bs4 import BeautifulSoup
 import html2text
 import pickle
@@ -9,7 +8,7 @@ import requests
 import os
 
 # Load in the yuuge list of Docker images
-containers = pickle.load(open('containers.pkl', 'rb'))
+containers = pickle.load(open('containers_2.pkl', 'rb'))
 
 # Make a data folder
 os.system('mkdir -p data')

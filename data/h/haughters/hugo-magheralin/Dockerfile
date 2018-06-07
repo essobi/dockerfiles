@@ -1,0 +1,2 @@
+FROM haughters/hugo  
+

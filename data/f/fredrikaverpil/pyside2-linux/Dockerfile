@@ -1,0 +1,48 @@
+# Always review the official build instructions before updating:  
+# https://wiki.qt.io/PySide2_GettingStarted#Building_PySide2  
+# https://wiki.qt.io/PySide2_X11  
+  
+FROM centos:6.6  
+  
+RUN yum install -y deltarpm && \  
+yum install -y epel-release && \  
+yum groupinstall "Development Tools" -y && \  
+yum install -y clang && \  
+yum install -y mesa-libGL-devel && \  
+yum install -y fontconfig freetype freetype-devel fontconfig-devel libstdc++
+&& \  
+yum install -y python-libs python-devel python-pip && \  
+yum install -y https://centos6.iuscommunity.org/ius-release.rpm && \  
+yum \--enablerepo=ius-archive install -y python27-libs python27-devel
+python27-pip && \  
+yum \--enablerepo=ius-archive install -y python35u-libs python35u-devel
+python35u-pip && \  
+yum \--enablerepo=ius-archive install -y python36u-libs python36u-devel
+python36u-pip && \  
+yum install -y libxslt libxml2 libxml2-devel libxslt-devel cmake3 openssl && \  
+yum erase -y git && \  
+yum \--enablerepo=ius-archive install -y git2u && \  
+yum install -y which curl p7zip  
+  
+WORKDIR /workdir  
+  
+ENV CC="/usr/bin/gcc"  
+ENV CXX="/usr/bin/g++"  
+  
+ADD qt-installer-5.6.3-noninteractive.qs /tmp  
+# Qt 5.6  
+RUN curl -L -o /tmp/qt-installer.run
+https://download.qt.io/archive/qt/5.6/5.6.3/qt-opensource-linux-x64-5.6.3.run
+&& \  
+chmod +x /tmp/*.run && \  
+/tmp/qt-installer.run \--script /tmp/qt-installer-5.6.3-noninteractive.qs
+-platform minimal && \  
+rm -rf /tmp/qt-installer.run  
+# Pip requirements (Python 2.6 not supported)  
+RUN /usr/bin/pip2.7 install \--user \--upgrade pip && \  
+/usr/bin/pip3.5 install \--user \--upgrade pip && \  
+/usr/bin/pip3.6 install \--user \--upgrade pip && \  
+/usr/bin/pip2.7 install \--user \--upgrade setuptools wheel && \  
+/usr/bin/pip3.5 install \--user \--upgrade setuptools wheel && \  
+/usr/bin/pip3.6 install \--user \--upgrade setuptools wheel  
+

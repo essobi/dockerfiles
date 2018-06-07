@@ -1,0 +1,43 @@
+FROM docker:1.13.0-rc2-dind  
+  
+ENV DOCKER_STORAGE_DRIVER=overlay2  
+  
+RUN apk add --no-cache git tmux py-pip apache2-utils vim build-base gettext-
+dev curl bash  
+  
+# Install Compose and Machine  
+RUN pip install docker-compose==1.9.0  
+RUN curl -L
+https://github.com/docker/machine/releases/download/v0.9.0-rc1/docker-machine-
+Linux-x86_64 \  
+-o /usr/bin/docker-machine && chmod +x /usr/bin/docker-machine  
+  
+# Compile and install httping  
+# (used in orchestration workshop, and very useful anyway)  
+RUN mkdir -p /opt && cd /opt && \  
+curl https://www.vanheusden.com/httping/httping-2.5.tgz | \  
+tar -zxf- && cd httping-2.5 && \  
+./configure && make install LDFLAGS=-lintl && \  
+rm -rf httping-2.5  
+  
+# Replace modprobe with a no-op to get rid of spurious warnings  
+# (note: we can't just symlink to /bin/true because it might be busybox)  
+RUN rm /sbin/modprobe && echo '#!/bin/true' >/sbin/modprobe && chmod +x
+/sbin/modprobe  
+  
+# Install a nice vimrc file and prompt (by soulshake)  
+COPY ["docker-prompt","/usr/local/bin/"]  
+COPY [".vimrc",".bashrc", ".inputrc", "./root/"]  
+  
+# Move to our home  
+WORKDIR /root  
+  
+# Remove IPv6 alias for localhost and start docker in the background ...  
+CMD cat /etc/hosts >/etc/hosts.bak && \  
+sed 's/^::1.*//' /etc/hosts.bak > /etc/hosts && \  
+dockerd -g /graph --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375
+\  
+\--storage-driver=$DOCKER_STORAGE_DRIVER &>/docker.log & \  
+while true ; do /bin/bash ; done  
+# ... and then put a shell in the foreground, restarting it if it exits  
+

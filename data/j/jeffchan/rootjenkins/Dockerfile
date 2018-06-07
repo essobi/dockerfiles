@@ -1,0 +1,4 @@
+FROM jenkins  
+USER root  
+  
+

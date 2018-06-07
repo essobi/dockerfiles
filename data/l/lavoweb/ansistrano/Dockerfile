@@ -1,0 +1,3 @@
+FROM lavoweb/ansistrano  
+RUN apk add openssh-client
+

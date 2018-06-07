@@ -1,0 +1,2 @@
+FROM gcr.io/google_samples/node-hello:1.0
+

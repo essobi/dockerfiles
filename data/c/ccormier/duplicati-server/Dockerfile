@@ -1,0 +1,37 @@
+FROM mono:4  
+MAINTAINER Chris C <ccormier@gmail.com>  
+  
+ENV DUPLICATI_VER 2.0.0.99_preview_2016-02-15  
+RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup  
+RUN echo "Acquire::http {No-Cache=True;};" > /etc/apt/apt.conf.d/no-cache  
+ENV DEBIAN_FRONTEND noninteractive  
+  
+ENV HOME /root  
+  
+RUN apt-get update && \  
+apt-get -y -o Dpkg::Options::="--force-confold" install --no-install-
+recommends \  
+libsqlite3-0 \  
+unzip && \  
+curl -sSL http://updates.duplicati.com/preview/duplicati-${DUPLICATI_VER}.zip
+-o /duplicati-${DUPLICATI_VER}.zip && \  
+unzip duplicati-${DUPLICATI_VER}.zip -d /app && \  
+rm duplicati-${DUPLICATI_VER}.zip && \  
+apt-get purge -y --auto-remove unzip && \  
+apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*  
+  
+# Issues with CloudFiles, Skydrive, GoogleDocs and S3  
+# CloudFiles, Skydrive, GoogleDocs and S3 use SSL which requires you to trust
+their certificate issuer.  
+# Run this command to let Mono use the same certificates that Mozilla
+(Firefox) uses:  
+#
+https://code.google.com/p/duplicati/wiki/LinuxHowto#Issues_with_,_Skydrive,_and_S3  
+RUN /usr/bin/mozroots --import --sync  
+  
+VOLUME ["/root/.config/Duplicati/"]  
+  
+EXPOSE 8200  
+CMD ["mono", "/app/Duplicati.Server.exe", "--webservice-port=8200", "--
+webservice-interface=*"]  
+

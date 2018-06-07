@@ -1,0 +1,33 @@
+FROM rabbitmq:3.7  
+RUN rabbitmq-plugins enable \--offline rabbitmq_management  
+  
+# extract "rabbitmqadmin" from inside the "rabbitmq_management-X.Y.Z.ez"
+plugin zipfile  
+# see https://github.com/docker-library/rabbitmq/issues/207  
+RUN set -eux; \  
+erl -noinput -eval ' \  
+{ ok, AdminBin } = zip:foldl(fun(FileInArchive, GetInfo, GetBin, Acc) -> \  
+case Acc of \  
+"" -> \  
+case lists:suffix("/rabbitmqadmin", FileInArchive) of \  
+true -> GetBin(); \  
+false -> Acc \  
+end; \  
+_ -> Acc \  
+end \  
+end, "", init:get_plain_arguments()), \  
+io:format("~s", [ AdminBin ]), \  
+init:stop(). \  
+' \-- /plugins/rabbitmq_management-*.ez > /usr/local/bin/rabbitmqadmin; \  
+[ -s /usr/local/bin/rabbitmqadmin ]; \  
+chmod +x /usr/local/bin/rabbitmqadmin; \  
+apt-get update; \  
+apt-get install -y --no-install-recommends python curl; \  
+rm -rf /var/lib/apt/lists/*; \  
+rabbitmqadmin --version  
+  
+HEALTHCHECK \--interval=10s --timeout=5s --retries=10 \  
+CMD curl -f http://localhost:15672/ || exit 1  
+  
+EXPOSE 15671 15672
+

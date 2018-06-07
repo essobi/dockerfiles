@@ -1,0 +1,15 @@
+FROM mysql/mysql-server:5.7  
+#RUN yum -y update  
+RUN yum -y install cronie  
+  
+ADD start.sh /  
+RUN chmod 755 /start.sh  
+  
+ENV DB_HOST=db  
+ENV CRON_EXPR="0 0/12 * *"  
+ENV BACKUP_DIR=/backup  
+ENV BACKUP_FILE=mysql  
+  
+ENTRYPOINT  
+CMD /start.sh  
+

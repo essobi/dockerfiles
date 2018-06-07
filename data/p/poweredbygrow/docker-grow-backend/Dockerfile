@@ -1,0 +1,53 @@
+FROM openjdk:8-jdk-stretch  
+  
+ARG MAVEN_VERSION=3.5.3  
+ARG USER_HOME_DIR="/root"  
+ARG SHA=b52956373fab1dd4277926507ab189fb797b3bc51a2a267a193c931fffad8408  
+ARG
+BASE_URL=http://mirror.its.dal.ca/apache/maven/maven-3/${MAVEN_VERSION}/binaries  
+  
+ARG CLOUD_SDK_VERSION=200.0.0  
+RUN apt-get -qqy update && apt-get install -qqy \  
+curl \  
+gcc \  
+python-dev \  
+python-setuptools \  
+apt-transport-https \  
+openssh-client \  
+git \  
+python3 \  
+python3-setuptools \  
+python3-pip \  
+apt-utils \  
+git-crypt  
+  
+RUN pip3 install requests  
+  
+RUN mkdir -p /usr/share/maven /usr/share/maven/ref \  
+&& curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-
+maven-${MAVEN_VERSION}-bin.tar.gz \  
+&& echo "${SHA} /tmp/apache-maven.tar.gz" | sha256sum -c - \  
+&& tar -xzf /tmp/apache-maven.tar.gz -C /usr/share/maven --strip-components=1
+\  
+&& rm -f /tmp/apache-maven.tar.gz \  
+&& ln -s /usr/share/maven/bin/mvn /usr/bin/mvn  
+  
+RUN export CLOUD_SDK_REPO="cloud-sdk-jessie" \  
+&& echo "deb https://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" >
+/etc/apt/sources.list.d/google-cloud-sdk.list \  
+&& curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+\  
+&& apt-get update \  
+&& apt-get install -y google-cloud-sdk=${CLOUD_SDK_VERSION}-0 google-cloud-
+sdk-app-engine-java  
+  
+ENV MAVEN_HOME /usr/share/maven  
+ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"  
+COPY mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh  
+COPY settings-docker.xml /usr/share/maven/ref/  
+  
+VOLUME "$USER_HOME_DIR/.m2"  
+  
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]  
+CMD ["mvn"]  
+

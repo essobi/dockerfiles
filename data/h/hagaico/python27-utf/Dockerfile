@@ -1,0 +1,9 @@
+FROM python:2.7-alpine  
+  
+# Export Enviorment  
+ENV PYTHONUNBUFFERED 1  
+ENV PYTHONIOENCODING=UTF-8  
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8  
+
