@@ -1,0 +1,18 @@
+#USE BLAST BINARIES FROM UMMIDOCK REPO  
+FROM ummidock/blast_binaries:2.6.0-binaries  
+MAINTAINER Diogo N Silva, diogosilva@medicina.ulisboa.pt  
+  
+WORKDIR /NGStools/  
+  
+RUN apt-get update && apt-get install -y \  
+libmoo-perl \  
+liblist-moreutils-perl \  
+libjson-perl \  
+libfile-slurp-perl \  
+file \  
+git \  
+gzip  
+  
+RUN git clone https://github.com/tseemann/mlst.git  
+ENV PATH="/NGStools/mlst/bin:${PATH}"  
+

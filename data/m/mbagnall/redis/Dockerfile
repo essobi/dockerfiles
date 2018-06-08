@@ -1,0 +1,36 @@
+FROM bitnami/minideb-extras:jessie-r22  
+LABEL maintainer "Michael R. Bagnall <mbagnall@gmail.com>"  
+  
+COPY rootfs /  
+  
+RUN useradd -ms /bin/bash redis  
+  
+RUN mkdir /bitnami  
+RUN mkdir /.nami  
+RUN chmod -R 777 /.nami  
+RUN chown -R redis:redis /.nami  
+RUN chmod -R 777 /opt  
+RUN chown -R redis:redis /opt  
+RUN chown -R redis:redis /bitnami  
+  
+USER redis  
+  
+ENV BITNAMI_PKG_CHMOD="-R g+rwX" \  
+HOME="/"  
+# Install required system packages and dependencies  
+RUN bitnami-pkg unpack redis-4.0.2-1 --checksum
+263ffd64c6d99b9a68d911d6e263e05d4e96f6c1288c1b38a042e504a954129e  
+  
+ENV ALLOW_EMPTY_PASSWORD="no" \  
+BITNAMI_APP_NAME="redis" \  
+BITNAMI_IMAGE_VERSION="4.0.2-r1" \  
+PATH="/opt/bitnami/redis/bin:$PATH" \  
+REDIS_MASTER_HOST="" \  
+REDIS_MASTER_PASSWORD="" \  
+REDIS_MASTER_PORT_NUMBER="6379" \  
+REDIS_PASSWORD="" \  
+REDIS_REPLICATION_MODE=""  
+EXPOSE 6379  
+ENTRYPOINT ["/app-entrypoint.sh"]  
+CMD ["/run.sh"]  
+

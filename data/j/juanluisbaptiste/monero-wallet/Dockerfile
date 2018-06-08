@@ -1,0 +1,32 @@
+FROM juanluisbaptiste/xpra-base:latest  
+MAINTAINER Juan Luis Baptiste <juan.baptiste@gmail.com>  
+ENV MONERO_VERSION "0.11.1.0"  
+ENV MONERO_GUI_DOWNLOAD_URL https://downloads.getmonero.org/gui/monero-gui-
+linux-x64-v${MONERO_VERSION}.tar.bz2  
+ENV DISPLAY=:100  
+ENV WEB_VIEW_PORT 10000  
+ENV DEBIAN_FRONTEND noninteractive  
+  
+RUN apt-get update  
+RUN apt-get install -y curl bzip2 libfontconfig1 libfreetype6 libegl1-mesa \  
+libgl1-mesa-glx libqt5core5a libqt5qml5 qt5-default \  
+qml-module-qtquick-controls qml-module-qtquick-xmllistmodel \  
+qttools5-dev-tools qml-module-qtquick-dialogs libx11-6 \  
+libxcb1 libxcb-glx0 libx11-xcb1 wget && \  
+apt-get clean && \  
+useradd -ms /bin/bash -G xpra monero  
+COPY local-entrypoint.sh /  
+RUN chmod 755 /local-entrypoint.sh  
+  
+USER monero  
+WORKDIR /home/monero  
+RUN curl ${MONERO_GUI_DOWNLOAD_URL} -O && \  
+tar -xjf monero-gui-linux-x64-v${MONERO_VERSION}.tar.bz2 && \  
+rm monero-gui-linux-x64-v${MONERO_VERSION}.tar.bz2 && \  
+mv monero-gui-v${MONERO_VERSION} monero-gui && \  
+mkdir -p /home/monero/.config/monero-project  
+COPY monero-core.conf /home/monero/.config/monero-project/  
+  
+CMD ["/local-entrypoint.sh"]  
+EXPOSE 10000  
+

@@ -1,0 +1,2 @@
+FROM rychipman/jekyll-base  
+

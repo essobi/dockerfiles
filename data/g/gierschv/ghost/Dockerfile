@@ -1,0 +1,42 @@
+#  
+# Ghost Dockerfile  
+#  
+# https://github.com/dockerfile/ghost  
+#  
+# Pull base image.  
+FROM dockerfile/nodejs  
+  
+# Install Ghost  
+RUN \  
+cd /tmp && \  
+wget https://ghost.org/zip/ghost-latest.zip && \  
+unzip ghost-latest.zip -d /ghost && \  
+rm -f ghost-latest.zip && \  
+cd /ghost && \  
+npm install --production && \  
+sed 's/127.0.0.1/0.0.0.0/' /ghost/config.example.js > /ghost/config.js && \  
+mkdir /ghost-override && \  
+useradd ghost --home /ghost && \  
+chown -R ghost:ghost /ghost /ghost-override /data  
+  
+# Add files.  
+ADD start.bash /ghost-start  
+  
+# Set environment variables.  
+ENV NODE_ENV production  
+  
+# Define mountable directories.  
+VOLUME ["/data", "/ghost-override"]  
+  
+# Define working directory.  
+WORKDIR /ghost  
+  
+# Define default command.  
+CMD ["bash", "/ghost-start"]  
+  
+# Run as ghost  
+USER ghost  
+  
+# Expose ports.  
+EXPOSE 2368  
+

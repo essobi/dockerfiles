@@ -1,0 +1,21 @@
+FROM python:alpine3.6  
+  
+LABEL maintainer="Leonid S Shestera"  
+  
+ENV PYTHONFAULTHANDLER=1 \  
+PYTHONHASHSEED=random \  
+PIP_NO_CACHE_DIR=off \  
+PIP_DISABLE_PIP_VERSION_CHECK=on \  
+PIP_DEFAULT_TIMEOUT=100 \  
+PIPENV_SHELL_COMPAT=true \  
+PIPENV_COLORBLIND=true \  
+PIPENV_NOSPIN=true  
+# System deps:  
+RUN apk update \  
+&& apk --no-cache add musl-dev postgresql-dev gcc \  
+git curl bash build-base gettext linux-headers  
+  
+  
+# Install pipenv:  
+RUN pip install pipenv  
+

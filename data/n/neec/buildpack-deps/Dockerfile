@@ -1,0 +1,40 @@
+FROM neec/buildpack-deps:scm  
+RUN apk add --no-cache --virtual .buildpack-deps \  
+autoconf \  
+automake \  
+bzip2 \  
+file \  
+g++ \  
+gcc \  
+imagemagick \  
+bzip2-dev \  
+libc-dev \  
+linux-headers \  
+curl-dev \  
+db-dev \  
+libevent-dev \  
+libffi-dev \  
+gdbm-dev \  
+geoip-dev \  
+glib-dev \  
+jpeg-dev \  
+krb5-dev \  
+xz-dev \  
+imagemagick-dev \  
+mariadb-dev \  
+ncurses-dev \  
+libpng-dev \  
+postgresql-dev \  
+readline-dev \  
+sqlite-dev \  
+libressl-dev \  
+libtool \  
+libwebp-dev \  
+libxml2-dev \  
+libxslt-dev \  
+yaml-dev \  
+make \  
+patch \  
+xz \  
+zlib-dev
+

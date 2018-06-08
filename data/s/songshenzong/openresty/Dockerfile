@@ -1,0 +1,2 @@
+FROM openresty/openresty:alpine  
+

@@ -1,0 +1,2 @@
+FROM stockflare/base:node  
+

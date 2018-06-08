@@ -1,0 +1,13 @@
+FROM mysql/mysql-server:5.7  
+ENV MYSQL_ROOT_PASSWORD=root\  
+MYSQL_DATABASE=database\  
+MYSQL_USER=user\  
+MYSQL_PASSWORD=pass  
+RUN echo $'sql_mode="\  
+STRICT_TRANS_TABLES,\  
+NO_ZERO_IN_DATE,\  
+NO_ZERO_DATE,\  
+ERROR_FOR_DIVISION_BY_ZERO,\  
+NO_AUTO_CREATE_USER,\  
+NO_ENGINE_SUBSTITUTION"' >> /etc/my.cnf
+

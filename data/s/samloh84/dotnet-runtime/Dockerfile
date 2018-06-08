@@ -1,0 +1,34 @@
+FROM samloh84/centos:7  
+  
+ARG VENDOR=microsoft  
+ARG PRODUCT=dotnet-runtime  
+ARG PRODUCT_VERSION=1.1.2  
+ARG TEMP_DIR_ROOT=/tmp/${VENDOR}-${PRODUCT}  
+ARG TEMP_DIR=/${TEMP_DIR_ROOT}/${PRODUCT_VERSION}  
+ARG INSTALL_DIR_ROOT=/opt/${VENDOR}-${PRODUCT}  
+ARG INSTALL_DIR=${INSTALL_DIR_ROOT}/${PRODUCT_VERSION}  
+  
+ARG
+DOTNET_INSTALL_TARGZ_URL="https://download.microsoft.com/download/D/7/A/D7A9E4E9-5D25-4F0C-B071-210CB8267943/dotnet-
+centos-x64.1.1.2.tar.gz"  
+ARG DOTNET_INSTALL_TARGZ=dotnet-centos-x64.1.1.2.tar.gz  
+ARG
+DOTNET_SHA256SUM=49c54129b39a4a873074b80691733d68ba596782f411cc6565d601aeb6229d1e  
+  
+USER ${ROOT_UID}  
+RUN \  
+mkdir -p ${TEMP_DIR} ${INSTALL_DIR} && \  
+pushd ${TEMP_DIR} && \  
+curl -LjSs \  
+${DOTNET_INSTALL_TARGZ_URL} -o ${DOTNET_INSTALL_TARGZ} && \  
+tar -xf ${DOTNET_INSTALL_TARGZ} -C ${INSTALL_DIR} && \  
+fix-ownership ${INSTALL_DIR} && \  
+fix-permissions ${INSTALL_DIR} && \  
+popd && \  
+rm -rf ${TEMP_DIR_ROOT}  
+  
+ENV DOTNET_HOME ${INSTALL_DIR}  
+ENV PATH ${DOTNET_HOME}:${PATH}  
+  
+USER ${APP_UID}  
+

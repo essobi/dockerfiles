@@ -1,0 +1,16 @@
+FROM frolvlad/alpine-oraclejdk8:latest  
+MAINTAINER Paul Ambrose "pambrose@mac.com"  
+WORKDIR /prometheus-proxy  
+  
+COPY . /prometheus-proxy/  
+  
+RUN ./mvnw -DskipTests=true clean package && \  
+rm -rf /root/.m2 .mvn etc src target/*.jar target/protoc* target/maven*
+target/generated* target/archive* target/test-classes  
+  
+EXPOSE 8080  
+EXPOSE 8082  
+EXPOSE 8092  
+EXPOSE 50051  
+ENTRYPOINT ["/prometheus-proxy/target/bin/proxy.sh"]
+

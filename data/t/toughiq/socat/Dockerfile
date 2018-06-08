@@ -1,0 +1,14 @@
+FROM alpine:latest  
+MAINTAINER toughiq@gmail.com  
+  
+RUN apk add \--update socat  
+  
+ENV LISTEN_PROTO=TCP4 \  
+LISTEN_PORT=80 \  
+TARGET_PROTO=TCP6 \  
+TARGET_HOST=[2a00:1450:400d:803::200e] \  
+TARGET_PORT=80  
+  
+CMD socat $LISTEN_PROTO-LISTEN:$LISTEN_PORT,fork,su=nobody
+$TARGET_PROTO:$TARGET_HOST:$TARGET_PORT  
+

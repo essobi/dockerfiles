@@ -1,0 +1,37 @@
+# Using official ubuntu runtime base image  
+FROM centos:centos7  
+  
+MAINTAINER "Kazumichi Yamamoto <yamamoto.febc@gmail.com>"  
+# Set username/password login as a default  
+# public authentication will be enabled with AUTHORIZED_KEY ENV  
+ENV ROOT_PWD default  
+ENV AUTHORIZED_KEY none  
+  
+# Install openssh, openssh-clients, openssh-server  
+# Generate ssh key without passphrases  
+# Configure sshd.conf  
+# Then cleanup  
+RUN yum -y install openssh openssh-clients openssh-server && \  
+yum -y install httpd httpd-devel && \  
+ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key && \  
+ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key && \  
+ssh-keygen -q -N "" -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key && \  
+ssh-keygen -A && \  
+sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/'
+/etc/ssh/sshd_config && \  
+sed -i "s/UsePAM.*/UsePAM yes/g" /etc/ssh/sshd_config && \  
+sed -i 's/session\s*required\s*pam_loginuid.so/session optional
+pam_loginuid.so/g' /etc/pam.d/sshd && \  
+yum autoremove -y && \  
+yum clean all && \  
+rm -rf /var/cache/yum/*  
+  
+# Make start.sh excutable  
+COPY start.sh /start.sh  
+RUN chmod +x /start.sh  
+  
+# Expose 22 for SSH access  
+EXPOSE 22 80  
+# Start supervisord to controll processes  
+CMD ["./start.sh", "-bash"]  
+

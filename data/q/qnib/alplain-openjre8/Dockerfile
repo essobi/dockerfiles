@@ -1,0 +1,7 @@
+ARG DOCKER_REGISTRY=docker.io  
+ARG DOCKER_IMG_TAG=":2018-04-25_7df6db5aa61a"  
+ARG
+DOCKER_IMG_HASH="@sha256:0a32f90d39c55c5c40ddf6307faf17c1758cce40b33b21ed0d11d63d274357c1"  
+FROM ${DOCKER_REGISTRY}/qnib/alplain-init${DOCKER_IMG_TAG}${DOCKER_IMG_HASH}  
+RUN apk --no-cache add openjdk8-jre  
+

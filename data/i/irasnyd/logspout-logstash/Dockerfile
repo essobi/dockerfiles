@@ -1,0 +1,2 @@
+FROM irasnyd/logspout:latest  
+

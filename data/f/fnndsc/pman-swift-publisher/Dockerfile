@@ -1,0 +1,27 @@
+#  
+# Dockerfile for the pman-swift-publisher image.  
+#  
+# Build with  
+#  
+# docker build -t <name> .  
+#  
+# For example if building a local version, you could do:  
+#  
+# docker build -t local/pman-swift-publisher .  
+#  
+FROM fnndsc/ubuntu-python3:latest  
+MAINTAINER fnndsc "dev@babymri.org"  
+RUN apt-get update \  
+&& apt-get install -y curl \  
+&& pip3 install keystoneauth1 \  
+&& pip3 install python-swiftclient \  
+&& pip3 install kubernetes  
+  
+  
+ARG APPROOT="/usr/src/pman-swift-publisher"  
+ARG VERSION="0.1"  
+COPY ["get_data.py", "put_data.py", "swift_handler.py", "watch.py",
+"${APPROOT}/"]  
+  
+WORKDIR $APPROOT  
+

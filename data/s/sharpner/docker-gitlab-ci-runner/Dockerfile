@@ -1,0 +1,42 @@
+FROM sameersbn/ubuntu:14.04.20141001  
+MAINTAINER sameer@damagehead.com  
+  
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv E1DF1F24 \  
+&& echo "deb http://ppa.launchpad.net/git-core/ppa/ubuntu trusty main" >>
+/etc/apt/sources.list \  
+&& apt-key adv --keyserver keyserver.ubuntu.com --recv C3173AA6 \  
+&& echo "deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main" >>
+/etc/apt/sources.list \  
+&& apt-get update \  
+&& apt-get install -y supervisor git-core openssh-client ruby2.1 \  
+zlib1g libyaml-0-2 libssl1.0.0 \  
+libgdbm3 libreadline6 libncurses5 libffi6 make \  
+libxml2 libxslt1.1 libcurl3 libicu52 curl mercurial bzr \  
+&& gem install --no-document bundler \  
+&& rm -rf /var/lib/apt/lists/* # 20140918  
+ADD assets/setup/ /app/setup/  
+RUN chmod 755 /app/setup/install  
+RUN /app/setup/install  
+  
+ENV GOPATH /opt/go  
+ENV PATH
+/opt/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games  
+  
+RUN mkdir -p /opt/go  
+  
+RUN curl -o /opt/go/godeb-amd64.tar.gz https://godeb.s3.amazonaws.com/godeb-
+amd64.tar.gz \  
+&& tar xvzf /opt/go/godeb-amd64.tar.gz -C /opt/go/ \  
+&& cd /opt/go \  
+&& ./godeb install  
+  
+ADD assets/init /app/init  
+RUN chmod 755 /app/init  
+  
+RUN chmod 777 -R /opt/go/  
+  
+VOLUME ["/home/gitlab_ci_runner/data"]  
+  
+ENTRYPOINT ["/app/init"]  
+CMD ["app:start"]  
+

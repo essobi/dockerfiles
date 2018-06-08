@@ -1,0 +1,17 @@
+FROM elasticsearch:5.6.4  
+MAINTAINER Nuxeo <packagers@nuxeo.com>  
+  
+ENV ES_JAVA_OPTS -Xms512m -Xmx512m  
+ENV CLUSTER_NAME elasticsearch-default  
+ENV DISCOVERY_SERVICE elasticsearch-discovery  
+ENV NODE_MASTER true  
+ENV NODE_DATA true  
+ENV HTTP_ENABLE true  
+ENV NETWORK_HOST _site_  
+ENV HTTP_CORS_ENABLE true  
+ENV HTTP_CORS_ALLOW_ORIGIN *  
+ENV NUMBER_OF_MASTERS 1  
+ENV NUMBER_OF_SHARDS 1  
+ENV NUMBER_OF_REPLICAS 0  
+ENV MEMORY_LOCK false  
+

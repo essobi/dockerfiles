@@ -1,0 +1,3 @@
+FROM solsson/kafka-
+initutils@sha256:c98d7fb5e9365eab391a5dcd4230fc6e72caf929c60f29ff091e3b0215124713
+

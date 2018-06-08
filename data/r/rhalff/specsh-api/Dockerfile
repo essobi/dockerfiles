@@ -1,0 +1,28 @@
+FROM mhart/alpine-node  
+  
+RUN mkdir -p /app  
+  
+COPY . /app/  
+  
+WORKDIR /app  
+  
+RUN npm install && npm build  
+  
+ENV VERBOSE 0  
+ENV SPECSH_APP_ID myAppId  
+ENV SPECSH_APP_NAME myAppName  
+ENV SPECSH_MASTER_KEY myMasterKey  
+ENV SPECSH_DATABASE_URI mongodb://localhost:27017/parse  
+ENV SPECSH_COLLECTION_PREFIX APS  
+ENV SPECSH_PUBLIC_SERVER_URL https://localhost:1337  
+ENV SPECSH_MAX_UPLOAD_SIZE 20mb  
+ENV SPECSH_PORT 1337  
+ENV SPECSH_SERVER_URL http://localhost:1337  
+ENV SPECSH_ALLOW_CLIENT_CLASS_CREATION true  
+ENV SPECSH_ENABLE_ANONYMOUS_USERS true  
+ENV SPECSH_VERIFY_USER_EMAILS true  
+  
+EXPOSE 1337  
+CMD ["npm", "start"]  
+  
+

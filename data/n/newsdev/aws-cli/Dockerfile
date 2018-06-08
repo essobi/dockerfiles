@@ -1,0 +1,5 @@
+FROM python:3.4.3  
+RUN pip install --upgrade pip  
+RUN pip install awscli==1.7.23  
+ENTRYPOINT ["aws"]  
+

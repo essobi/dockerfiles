@@ -1,0 +1,30 @@
+##  
+# BUILD CONTAINER  
+##  
+FROM golang:1.9.2 as builder  
+  
+WORKDIR /go/src/github.com/mvisonneau/strongbox  
+  
+COPY Makefile .  
+RUN \  
+make setup  
+  
+COPY . .  
+RUN \  
+make deps ;\  
+make build  
+  
+##  
+# RELEASE CONTAINER  
+##  
+FROM busybox:1.28-glibc  
+  
+WORKDIR /  
+  
+COPY \--from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/  
+COPY \--from=builder /go/src/github.com/mvisonneau/strongbox/strongbox
+/usr/local/bin/  
+  
+ENTRYPOINT ["/usr/local/bin/strongbox"]  
+CMD [""]  
+

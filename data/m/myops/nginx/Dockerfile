@@ -1,0 +1,121 @@
+FROM debian:stretch-slim  
+  
+LABEL maintainer="https://github.com/weixu365/nginx"  
+  
+ENV NGINX_VERSION 1.13.6-1~stretch  
+ENV NJS_VERSION 1.13.6.0.1.14-1~stretch  
+  
+ADD patches /tmp/patches  
+RUN set -x \  
+&& apt-get update \  
+&& apt-get install --no-install-recommends --no-install-suggests -y gnupg1
+procps \  
+&& \  
+NGINX_GPGKEY=573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62; \  
+found=''; \  
+for server in \  
+ha.pool.sks-keyservers.net \  
+hkp://keyserver.ubuntu.com:80 \  
+hkp://p80.pool.sks-keyservers.net:80 \  
+pgp.mit.edu \  
+; do \  
+echo "Fetching GPG key $NGINX_GPGKEY from $server"; \  
+apt-key adv --keyserver "$server" \--keyserver-options timeout=10 \--recv-keys
+"$NGINX_GPGKEY" && found=yes && break; \  
+done; \  
+test -z "$found" && echo >&2 "error: failed to fetch GPG key $NGINX_GPGKEY" &&
+exit 1; \  
+apt-get remove --purge --auto-remove -y gnupg1 && rm -rf /var/lib/apt/lists/*
+\  
+&& dpkgArch="$(dpkg --print-architecture)" \  
+&& nginxPackages=" \  
+nginx=${NGINX_VERSION} \  
+" \  
+&& nginxModulePackages=" \  
+nginx-module-xslt=${NGINX_VERSION} \  
+nginx-module-geoip=${NGINX_VERSION} \  
+nginx-module-image-filter=${NGINX_VERSION} \  
+nginx-module-njs=${NJS_VERSION} \  
+" \  
+&& \  
+# let's build binaries from the published source packages  
+echo "deb-src http://nginx.org/packages/mainline/debian/ stretch nginx" >>
+/etc/apt/sources.list \  
+\  
+# new directory for storing sources and .deb files  
+&& tempDir="$(mktemp -d)" \  
+&& chmod 777 "$tempDir" \  
+# (777 to ensure APT's "_apt" user can access it too)  
+\  
+# save list of currently-installed packages so build dependencies can be
+cleanly removed later  
+&& savedAptMark="$(apt-mark showmanual)" \  
+\  
+# build .deb files from upstream's source packages (which are verified by apt-
+get)  
+&& apt-get update \  
+&& apt-get build-dep -y $nginxPackages $nginxModulePackages \  
+&& ( \  
+cd "$tempDir" \  
+&& DEB_BUILD_OPTIONS="nocheck parallel=$(nproc)" \  
+apt-get source -d nginx=${NGINX_VERSION} \  
+&& tar -xzvf nginx_1.13.6.orig.tar.gz \  
+&& tar xf nginx_${NGINX_VERSION}.debian.tar.xz -C nginx-1.13.6 \  
+&& cp -r /tmp/patches nginx-1.13.6/debian \  
+&& (cd nginx-1.13.6 && cp -r /tmp/patches debian && dpkg-buildpackage -us -uc
+) \  
+# && dpkg -i nginx_${NGINX_VERSION}_amd64.deb \  
+&& apt-get source --compile $nginxModulePackages \  
+) \  
+# we don't remove APT lists here because they get re-downloaded and removed
+later  
+\  
+# reset apt-mark's "manual" list so that "purge --auto-remove" will remove all
+build dependencies  
+# (which is done after we install the built packages so we don't have to
+redownload any overlapping dependencies)  
+&& apt-mark showmanual | xargs apt-mark auto > /dev/null \  
+&& { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; } \  
+\  
+# create a temporary local APT repo to install from (so that dependency
+resolution can be handled by APT, as it should be)  
+&& ls -lAFh "$tempDir" \  
+&& ( cd "$tempDir" && dpkg-scanpackages . > Packages ) \  
+&& grep '^Package: ' "$tempDir/Packages" \  
+&& echo "deb [ trusted=yes ] file://$tempDir ./" >
+/etc/apt/sources.list.d/temp.list \  
+# work around the following APT issue by using "Acquire::GzipIndexes=false"
+(overriding "/etc/apt/apt.conf.d/docker-gzip-indexes")  
+# Could not open file
+/var/lib/apt/lists/partial/_tmp_tmp.ODWljpQfkE_._Packages - open (13:
+Permission denied)  
+# ...  
+# E: Failed to fetch
+store:/var/lib/apt/lists/partial/_tmp_tmp.ODWljpQfkE_._Packages Could not open
+file /var/lib/apt/lists/partial/_tmp_tmp.ODWljpQfkE_._Packages - open (13:
+Permission denied)  
+&& apt-get -o Acquire::GzipIndexes=false update \  
+\  
+&& apt-get install --no-install-recommends --no-install-suggests -y \  
+$nginxPackages $nginxModulePackages \  
+gettext-base \  
+&& rm -rf /var/lib/apt/lists/* \  
+\  
+# if we have leftovers from building, let's purge them (including extra,
+unnecessary build deps)  
+&& if [ -n "$tempDir" ]; then \  
+apt-get purge -y --auto-remove \  
+&& rm -rf "$tempDir" /etc/apt/sources.list.d/temp.list; \  
+fi \  
+&& rm -rf /tmp/patches  
+  
+# forward request and error logs to docker log collector  
+RUN ln -sf /dev/stdout /var/log/nginx/access.log \  
+&& ln -sf /dev/stderr /var/log/nginx/error.log  
+  
+EXPOSE 80  
+  
+STOPSIGNAL SIGTERM  
+  
+CMD ["nginx", "-g", "daemon off;"]  
+

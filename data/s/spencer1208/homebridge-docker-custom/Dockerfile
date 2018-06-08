@@ -1,0 +1,55 @@
+FROM nodesource/xenial  
+  
+MAINTAINER Christian Endres  
+  
+##################################################  
+# Set environment variables #  
+##################################################  
+  
+ENV DEBIAN_FRONTEND noninteractive  
+ENV TERM xterm  
+  
+##################################################  
+# Install tools #  
+##################################################  
+  
+RUN apt-get update  
+RUN apt-get install -y apt-utils  
+RUN apt-get install -y apt-transport-https  
+RUN apt-get install -y locales  
+#RUN apt-get install -y curl wget git python build-essential make g++
+libavahi-compat-libdnssd-dev libkrb5-dev vim net-tools nano  
+RUN apt-get install -y curl wget git python libavahi-compat-libdnssd-dev
+libkrb5-dev vim net-tools nano  
+RUN alias ll='ls -alG'  
+  
+##################################################  
+# Install homebridge #  
+##################################################  
+  
+RUN npm install -g homebridge --unsafe-perm  
+  
+# depending on your config.json you have to add your modules here!  
+#RUN npm install -g homebridge-philipshue --unsafe-perm  
+RUN npm install -g homebridge-hue --unsafe-perm  
+RUN npm install -g homebridge-yamaha --unsafe-perm  
+RUN npm install -g homebridge-harmonyhub --unsafe-perm  
+RUN npm install -g homebridge-netatmo --unsafe-perm  
+RUN npm install -g homebridge-synology --unsafe-perm  
+RUN npm install -g homebridge-fritz --unsafe-perm  
+#RUN npm install -g homebridge-tesla --unsafe-perm  
+#RUN npm install -g homebridge-mqttswitch --unsafe-perm  
+#RUN npm install -g homebridge-edomoticz --unsafe-perm  
+  
+##################################################  
+# Start #  
+##################################################  
+  
+USER root  
+RUN mkdir -p /var/run/dbus  
+  
+ADD image/run.sh /root/run.sh  
+  
+EXPOSE 5353 51826  
+CMD ["/root/run.sh"]  
+
