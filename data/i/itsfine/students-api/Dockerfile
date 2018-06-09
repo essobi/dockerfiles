@@ -1,0 +1,14 @@
+﻿FROM microsoft/aspnetcore-build:2.0 AS build-environment  
+WORKDIR /app  
+  
+COPY *.csproj ./  
+RUN dotnet restore  
+  
+COPY . ./  
+RUN dotnet publish -c Release -o out  
+  
+FROM microsoft/aspnetcore:2.0  
+WORKDIR /app  
+COPY \--from=build-environment /app/out .  
+ENTRYPOINT ["dotnet", "Students.WebApi.dll"]
+

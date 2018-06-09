@@ -1,0 +1,3 @@
+FROM gcr.io/google_containers/k8s-dns-sidecar-arm64:1.14.4  
+MAINTAINER Jason.lui <piml.lui@gmail.com>  
+

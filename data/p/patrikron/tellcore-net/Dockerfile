@@ -1,0 +1,33 @@
+# Based on the Hass.io base image and Tellstick addon  
+FROM alpine:3.7  
+LABEL maintainer="Patrik"  
+  
+RUN apk add --no-cache bash tzdata eudev ca-certificates  
+  
+ENV LANG C.UTF-8  
+# Install Telldus library for TellStick  
+RUN apk add --no-cache \  
+confuse libftdi1 libstdc++ jq socat \  
+&& apk add --no-cache --virtual .build-dependencies \  
+cmake build-base gcc doxygen confuse-dev argp-standalone libftdi1-dev git \  
+&& ln -s /usr/include/libftdi1/ftdi.h /usr/include/ftdi.h \  
+&& mkdir -p /usr/src \  
+&& cd /usr/src \  
+&& git clone -b master --depth 1 https://github.com/telldus/telldus \  
+&& cd telldus/telldus-core \  
+&& sed -i "/\<sys\/socket.h\>/a \\#include \<sys\/select.h\>"
+common/Socket_unix.cpp \  
+&& cmake . -DBUILD_LIBTELLDUS-CORE=ON -DBUILD_TDADMIN=OFF -DBUILD_TDTOOL=ON
+-DGENERATE_MAN=OFF -DFORCE_COMPILE_FROM_TRUNK=ON
+-DFTDI_LIBRARY=/usr/lib/libftdi1.so \  
+&& make \  
+&& make install \  
+&& apk del .build-dependencies \  
+&& rm -rf /usr/src/telldus  
+RUN apk add --update bash && rm -rf /var/cache/apk/*  
+COPY run.sh /run.sh  
+  
+RUN chmod a+x /run.sh  
+  
+#CMD [ "/run.sh" ]  
+

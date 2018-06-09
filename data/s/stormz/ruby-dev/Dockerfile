@@ -1,0 +1,9 @@
+FROM ruby:2.3  
+ENV APP_ROOT /code  
+ENV BUNDLE_APP_CONFIG ${APP_ROOT}/.bundle  
+  
+WORKDIR ${APP_ROOT}  
+VOLUME ${APP_ROOT}  
+  
+EXPOSE 9292  
+
