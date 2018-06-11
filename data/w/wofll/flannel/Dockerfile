@@ -1,0 +1,6 @@
+FROM quay.io/coreos/flannel:v0.10.0-s390x  
+MAINTAINER fulinlin <fulinlin@foxmail.com>  
+  
+  
+  
+

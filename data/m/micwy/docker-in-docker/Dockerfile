@@ -1,0 +1,2 @@
+FROM docker:stable-dind  
+

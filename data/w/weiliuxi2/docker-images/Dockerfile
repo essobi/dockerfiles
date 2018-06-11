@@ -1,0 +1,3 @@
+FROM quay.io/calico/node:v3.1.1  
+MAINTAINER wlx
+

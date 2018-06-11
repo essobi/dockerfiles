@@ -1,0 +1,53 @@
+FROM resin/armv7hf-debian:buster  
+  
+ENV UAB_TITLE "System monitoring"  
+ENV UAB_PROVIDERS ""  
+ENV UAB_CSS "./assets/css/zapatista.css"  
+ENV UAB_CACHE_ID "uab_"  
+ENV UAB_CACHE_TTL 60  
+ENV UAB_CACHE "file"  
+ENV UAB_REDIS_HOST "localhost"  
+ENV UAB_REDIS_PORT 6379  
+ENV UAB_TOR_MANAGEMENT_PORT 9052  
+ENV UAB_TOR_PASSWORD ""  
+ENV UAB_PROXY ""  
+ENV UAB_EXPOSE_URLS 1  
+RUN [ "cross-build-start" ]  
+  
+RUN echo "deb http://deb.debian.org/debian stretch main contrib non-free" >>
+/etc/apt/sources.list  
+RUN usermod -u 1000 www-data \  
+&& groupmod -g 1000 www-data \  
+&& apt-get update \  
+&& apt-get install --assume-yes cron supervisor rsyslog git nano nginx make \  
+unzip nginx procps php7.2 php7.2-opcache php7.2-sqlite3 php7.2-xml php7.2-cli
+php7.2-bz2 \  
+php7.2-readline php7.2-curl php7.2-fpm php7.2-json php7.2-mbstring php7.2-zip
+\  
+&& apt-get clean \  
+&& php7.2 -r "copy('https://getcomposer.org/installer', 'composer-
+setup.php');" \  
+&& php7.2 composer-setup.php \  
+&& mv composer.phar /usr/bin/composer \  
+&& rm composer-setup.php \  
+&& chmod +x /usr/bin/composer  
+  
+ADD docker/etc/supervisor/conf.d/supervisord.conf
+/etc/supervisor/conf.d/supervisord.conf  
+ADD docker/etc/nginx/nginx.conf /etc/nginx/nginx.conf  
+ADD docker/etc/nginx/sites-enabled/default etc/nginx/sites-enabled/default  
+ADD docker/entrypoint.sh /entrypoint.sh  
+ADD docker/entrypoint.d/* /entrypoint.d/  
+RUN chmod +x /entrypoint.sh && mkdir /run/php/ -p && chown www-data:www-data
+/run/php  
+  
+ADD . /var/www  
+RUN cd /var/www && make deploy  
+  
+RUN [ "cross-build-end" ]  
+  
+VOLUME ["/var/www"]  
+EXPOSE 80  
+EXPOSE 9000  
+ENTRYPOINT /entrypoint.sh  
+
